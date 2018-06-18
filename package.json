@@ -1,0 +1,57 @@
+{
+  "name": "jibrel-website-new",
+  "version": "0.1.0",
+  "description": "Jibrel website landing page",
+  "private": true,
+  "homepage": "https://jibrel.network/",
+  "main": "server.js",
+  "engines": {
+    "node": "8.2.1",
+    "npm": "5.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jibrelnetwork/jibrel-website-new.git"
+  },
+  "author": "Jibrel Network",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jibrelnetwork/jibrel-website-new/issues"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "lint:js": "./node_modules/.bin/eslint src/js/*.js",
+    "lint:css": "./node_modules/.bin/stylelint src/styles/*.scss",
+    "build": "./node_modules/.bin/gulp",
+    "build:prod": "./node_modules/.bin/gulp prod",
+    "watch": "./node_modules/.bin/gulp watch",
+    "postinstall": "npm run build:prod",
+    "precommit": "./node_modules/.bin/lint-staged"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.9.1",
+    "express": "4.15.3",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-concat": "2.6.1",
+    "gulp-copy": "1.0.1",
+    "gulp-less": "3.3.2",
+    "gulp-minify-css": "1.2.4",
+    "gulp-nunjucks": "3.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "3.0.0",
+    "merge-stream": "1.0.1",
+    "ramda": "0.25.0",
+    "serve-static": "1.12.3",
+    "stylelint": "9.3.0",
+    "stylelint-config-jibrel": "1.0.0"
+  },
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0"
+  }
+}

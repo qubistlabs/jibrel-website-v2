@@ -1,0 +1,13 @@
+# JetBrains
+*.iml
+*.ipr
+*.iws
+.idea
+
+node_modules
+npm-debug.log
+
+# produced by gulp
+public/assets/css
+public/assets/js
+public/index.html
