@@ -1,18 +1,14 @@
 # jibrel-website
 
-## Information about tars
-[TARS](https://github.com/tars/tars) is a builder for modern frontend of any complexity, which is based on Gulp.js. It facilitates and accelerates process of web-development. TARS will be suitable for teams and individual developers. It solves the most routine cases associated with web-development and brings you more pleasure from work.
-[Documentation](https://github.com/tars/tars#documentation)
-
 ## Development
 
 * `npm i`
-* `tars dev -l` - start dev server with livereload (`localhost:3005`)
+* `./node_modules/.bin/tars -l` - start dev server with livereload (`localhost:3005`)
 
 ## Production
 
 * `npm i`
-* `tars build -r` - build public html and minified assets
+* `./node_modules/.bin/tars -m` - build public html and minified assets
 * share static from `./public` dir
 
 ### Project structure
@@ -23,7 +19,28 @@
 ├── package.json            # Basic dependencies
 ├── .babelrc                # Config for Babel
 ├── .eslintrc               # Config for eslint
+├── .stylelintrc            # Config for stylelin
+├── .eslintignore           # List eslint of ignored files
+├── .editorconfig
+├── .lintstagedrc
+├── crowdin.yml
+├── Dockerfile
+├── gulpfile.js
+├── LICENSE
+├── nginx.conf
+├── package.json
+├── package-lock.json       # Fixed dependencies
+├── plugins-config.json     # Config for gulp plugin
 ├── user-package.json       # User dependencies
+├── Procfile
+├── README.md               # Readme project
+├── run.sh
+├── server.js
+├── tars-config.js          # Config for tars
+├── tars.json               # Config for tars
+├── version.txt
+├── version.txt
+├── webpack.config.js
 └── tars/                   # Tasks and helpers for gulp
     └── helpers/            # Helpers
     └── tasks/              # System tasks
@@ -40,7 +57,7 @@
 
 ### Сomponent
 
-Component is an independent unit of the page. Example component - "mainHeader" or "mainFooter". Each page consists of components. Any component may include other components and can be included into each other.
+Component is an independent unit of the page. Example component - "mainHeader" or "MainFooter". Each page consists of components. Any component may include other components and can be included into each other.
 
 ```
 ExampleComponent/                           # Component example
@@ -49,9 +66,9 @@ ExampleComponent/                           # Component example
     └── data/                               # Folder for component's data
         ├── data.js                         # Data for component (there is an example for data in _template component)
     ├── ExampleComponent.html               # Handlebars-represention of component
-    ├── ExampleComponent.scss               # Css-representation of component scss
-    ├── ExampleComponent.js                 # Js-represent
-    ├── EnotherComponentFolder
+    ├── exampleComponent.scss               # Css-representation of component scss
+    ├── exampleComponent.js                 # Js-represent
+    ├── childComponentFolder
 ```
 
 ### Folder structure for static files
@@ -101,18 +118,18 @@ In some of yours ComponentName (`./data/data.js`) file you have:
 ```js
 ComponentName: {
     dataType: {
-        property: value
+        title: 'value'
     }
 }
 ```
 
-So, you can use it in nunjucks template this way:
+So, you can use it in handelbars template this way:
 ```handlebars
-<title>{{title}}</title>
+<title>{{ComponentName.dataType.title}}</title>
 ```
-
-```handlebars
-<title>{{head.defaults.title}}</title>
+=>
+```HTML
+<title>value</title>
 ```
 
 For more information you can refer to the [documentation](https://github.com/tars/tars/blob/master/docs/en/html-processing.md)
@@ -156,6 +173,9 @@ Using in handlebars:
 We use `gulp` for bundling.
 
 All assets must be minified for `production`.
+
+[TARS](https://github.com/tars/tars) is a builder for modern frontend of any complexity, which is based on Gulp.js. It facilitates and accelerates process of web-development. TARS will be suitable for teams and individual developers. It solves the most routine cases associated with web-development and brings you more pleasure from work.
+[Documentation](https://github.com/tars/tars#documentation)
 
 ### linting
 

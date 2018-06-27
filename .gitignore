@@ -8,7 +8,6 @@
 
 node_modules
 npm-debug.log
-
 dev
 docs
 public
@@ -23,6 +22,7 @@ appveyor.yml
 .idea
 npm-debug.log
 phantomjsdriver.log
+.travis.yml
 /nbproject/*
 
 **/sprite_96.*
