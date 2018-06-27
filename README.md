@@ -12,7 +12,7 @@
 ## Production
 
 * `npm i`
-* `tars build --min` - build public html and minified assets
+* `tars build -r` - build public html and minified assets
 * share static from `./public` dir
 
 ### Project structure
@@ -43,15 +43,15 @@
 Component is an independent unit of the page. Example component - "mainHeader" or "mainFooter". Each page consists of components. Any component may include other components and can be included into each other.
 
 ```
-exampleComponent/                           # Component example
+ExampleComponent/                           # Component example
     └── assets/                             # Static files for current component (files with any extension) Subdirectories unsupport
     └── ie/                                 # Styles for IE9.scss IE8.scss
     └── data/                               # Folder for component's data
         ├── data.js                         # Data for component (there is an example for data in _template component)
-    ├── exampleComponent.html               # Handlebars-represention of component
-    ├── exampleComponent.scss               # Css-representation of component scss
-    ├── exampleComponent.js                 # Js-represent
-    ├── anotherComponentFolder
+    ├── ExampleComponent.html               # Handlebars-represention of component
+    ├── ExampleComponent.scss               # Css-representation of component scss
+    ├── ExampleComponent.js                 # Js-represent
+    ├── EnotherComponentFolder
 ```
 
 ### Folder structure for static files
@@ -97,22 +97,25 @@ We use handelbars templating. Replacing of variables is provided by gulp.
 
 For example:
 
-In some of yours i18n json (`data.json`) file you have:
+In some of yours ComponentName (`./data/data.js`) file you have:
 ```js
-componentName: {
+ComponentName: {
     dataType: {
         property: value
     }
 }
+```
 
 So, you can use it in nunjucks template this way:
 ```handlebars
 <title>{{title}}</title>
 ```
+
 ```handlebars
 <title>{{head.defaults.title}}</title>
 ```
-For more information you can refer to the  ./doc/en/html-processing.html, ./doc/en/handlebars-helpers.md or ./doc/ru/handlebars-helpers.md, ./doc/ru/html-processing.html,
+
+For more information you can refer to the [documentation](https://github.com/tars/tars/blob/master/docs/en/html-processing.md)
 
 * each component must be placed in directory named as per component, e.g. `ComponentName`
 * file with component must be named by its name, e.g. `ComponentName.html`
@@ -123,9 +126,15 @@ For more information you can refer to the  ./doc/en/html-processing.html, ./doc/
 
 We use `scss` [pre-processor](https://sass-lang.com/) with `rscss` [naming convention](http://rscss.io/)
 
-* each component must be isolated. Unique behaviour/appearance in any place and case. So we must reset all styles that can be inherited from parent blocks/components (for example, using `all: initial` css property).
+* each component must be isolated. Unique behaviour/appearance in any place and case. So all styles must be resetted to prevent inheriting from parent blocks/components (for example, using `all: initial` css property).
 * each file with styles must be placed in correspond directory of the component, and then included in main `core.scss`
 * all general things like color, icons must be grouped and placed in separate file
+* main `rscss` points:
+  * name of `component` consists at least two words, words should be splitted with dash
+  * name of `element` consists only one word
+  * name of `variant` consists at least one word, and must be started with dash
+  * `helpers` mustn't be used from `rscss` convention (`scss` `mixins` must be used instead of them)
+
 
 ### js
 
@@ -151,3 +160,24 @@ All assets must be minified for `production`.
 ### linting
 
 We use `eslint` for js and `stylelint` for css. `git` commit will fail if any of linters find an error.
+
+[eslint-config-jibrelnetwork](https://github.com/jibrelnetwork/eslint-config-jibrelnetwork)
+[stylelint-config-jibrelnetwork](https://github.com/jibrelnetwork/stylelint-config-jibrelnetwork)
+
+These two packages must be included in `devDependencies` of `package.json`.
+
+`html` files should follow these rules:
+1) spaces, not tabs
+2) 1 tab = 2 spaces
+3) max line length = 100 symbols
+4) single quotes, not double
+
+### working with branches
+
+* `master` branch is for `production`.
+* `develop` branch is for `development`.
+* two types of developer branches:
+  * `feature/<feature-name>`
+  * `fixup/<fixup-name>`
+
+Every task/feature/fix must be implemented in separate branch, and then merged via PR to `develop`. Once changes have been reviewed and tested on `develop`, PR to `master` must be created.
