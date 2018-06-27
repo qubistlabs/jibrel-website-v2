@@ -4,10 +4,13 @@
 *.iws
 .idea
 
+
+
 node_modules
 npm-debug.log
 
 dev
+doc
 .DS_Store
 ._.DS_Store
 

@@ -1,18 +1,18 @@
 # jibrel-website
 
+## Information about tars
+[TARS](https://github.com/tars/tars) is a builder for modern frontend of any complexity, which is based on Gulp.js. It facilitates and accelerates process of web-development. TARS will be suitable for teams and individual developers. It solves the most routine cases associated with web-development and brings you more pleasure from work.
+[Documentation](https://github.com/tars/tars#documentation)
+
 ## Development
 
 * `npm i`
 * `tars dev -l` - start dev server with livereload (`localhost:3005`)
-* `tars build` - build a project with the option of selecting parameters in the console  (`folder: ./public`)
-
-[There is demo](https://jibrel-website.herokuapp.com/) on heroku instance, that hooks on push to `dev` branch.
 
 ## Production
 
 * `npm i`
 * `tars build --min` - build public html and minified assets
-* `tars build --relize` - do not choose `--relize`
 * share static from `./public` dir
 
 ### Project structure
@@ -37,21 +37,21 @@
     └── assets/             # Static-files (css, js and so on)
 └── docs/                   # Documentation tars
 ```
-### component
+
+### Сomponent
 
 Component is an independent unit of the page. Example component - "mainHeader" or "mainFooter". Each page consists of components. Any component may include other components and can be included into each other.
 
 ```
 exampleComponent/                           # Component example
     └── assets/                             # Static files for current component (files with any extension) Subdirectories unsupport
-    └── ie/                                 # Styles for IE9.scss|sass|less|styl и IE8.scss|sass|less|styl)
+    └── ie/                                 # Styles for IE9.scss IE8.scss
     └── data/                               # Folder for component's data
         ├── data.js                         # Data for component (there is an example for data in _template component)
     ├── exampleComponent.html               # Handlebars-represention of component
     ├── exampleComponent.scss               # Css-representation of component scss
     ├── exampleComponent.js                 # Js-represent
     ├── anotherComponentFolder
-
 ```
 
 ### Folder structure for static files
