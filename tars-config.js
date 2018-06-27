@@ -45,7 +45,7 @@ module.exports = {
     },
     "minifyHtml": false,
     "generateStaticPath": true,
-    "buildPath": "./build/",
+    "buildPath": "./public/",
     "useBuildVersioning": false,
     "useArchiver": false,
     "ulimit": 4096,
