@@ -15,8 +15,8 @@
 * `tars build --relize` - do not choose `--relize`
 * share static from `./public` dir
 
-## Project structure
-
+### Project structure
+```
 ├── gulpfile.js             # gulpfile of builder
 ├── tars.json               # System file with info about builder
 ├── tars-config.js          # Config file
@@ -36,7 +36,7 @@
     └── pages/              # Page's templates
     └── assets/             # Static-files (css, js and so on)
 └── docs/                   # Documentation tars
-
+```
 ### component
 
 Component is an independent unit of the page. Example component - "mainHeader" or "mainFooter". Each page consists of components. Any component may include other components and can be included into each other.
