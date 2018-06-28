@@ -182,6 +182,7 @@ All assets must be minified for `production`.
 We use `eslint` for js and `stylelint` for css. `git` commit will fail if any of linters find an error.
 
 [eslint-config-jibrelnetwork](https://github.com/jibrelnetwork/eslint-config-jibrelnetwork)
+
 [stylelint-config-jibrelnetwork](https://github.com/jibrelnetwork/stylelint-config-jibrelnetwork)
 
 These two packages must be included in `devDependencies` of `package.json`.
