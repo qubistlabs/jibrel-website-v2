@@ -3,12 +3,12 @@
 ## Development
 
 * `npm i`
-* `./node_modules/.bin/tars -l` - start dev server with livereload (`localhost:3005`)
+* `./node_modules/.bin/tars dev -l` - start dev server with livereload (`localhost:3005`)
 
 ## Production
 
 * `npm i`
-* `./node_modules/.bin/tars -m` - build public html and minified assets
+* `./node_modules/.bin/tars build -r` - build public html and minified assets
 * share static from `./public` dir
 
 ### Project structure
@@ -23,7 +23,6 @@
 ├── .eslintignore           # List eslint of ignored files
 ├── .editorconfig
 ├── .lintstagedrc
-├── crowdin.yml
 ├── Dockerfile
 ├── gulpfile.js
 ├── LICENSE
@@ -31,11 +30,9 @@
 ├── package.json
 ├── package-lock.json       # Fixed dependencies
 ├── plugins-config.json     # Config for gulp plugin
-├── user-package.json       # User dependencies
-├── Procfile
+├── user-package.json       # User
 ├── README.md               # Readme project
 ├── run.sh
-├── server.js
 ├── tars-config.js          # Config for tars
 ├── tars.json               # Config for tars
 ├── version.txt
@@ -57,7 +54,7 @@
 
 ### Сomponent
 
-Component is an independent unit of the page. Example component - "mainHeader" or "MainFooter". Each page consists of components. Any component may include other components and can be included into each other.
+Component is an independent unit of the page. Example component - "MainHeader" or "MainFooter". Each page consists of components. Any component may include other components and can be included into each other.
 
 ```
 ExampleComponent/                           # Component example
@@ -67,8 +64,8 @@ ExampleComponent/                           # Component example
         ├── data.js                         # Data for component (there is an example for data in _template component)
     ├── ExampleComponent.html               # Handlebars-represention of component
     ├── exampleComponent.scss               # Css-representation of component scss
-    ├── exampleComponent.js                 # Js-represent
-    ├── childComponentFolder
+    ├── ExampleComponent.js                 # Js-represent
+    ├── ChildComponentFolder
 ```
 
 ### Folder structure for static files
