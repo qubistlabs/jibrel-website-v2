@@ -30,12 +30,10 @@
 ├── package.json
 ├── package-lock.json       # Fixed dependencies
 ├── plugins-config.json     # Config for gulp plugin
-├── user-package.json       # User
 ├── README.md               # Readme project
 ├── run.sh
 ├── tars-config.js          # Config for tars
 ├── tars.json               # Config for tars
-├── version.txt
 ├── version.txt
 ├── webpack.config.js
 └── tars/                   # Tasks and helpers for gulp
