@@ -3,12 +3,12 @@
 ## Development
 
 * `npm i`
-* `start` or `dev` - start dev server with livereload (`localhost:3005`)
+* `npm run start` or `npm run dev` - start dev server with livereload (`localhost:3005`)
 
 ## Production
 
 * `npm i`
-* `build` - build public html and minified assets
+* `npm run build` - build public html and minified assets
 * share static from `./public` dir
 
 ### Project structure
