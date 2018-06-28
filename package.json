@@ -1,6 +1,6 @@
 {
-  "name": "jibrel-website-new",
-  "version": "0.1.0",
+  "name": "jibrel-website",
+  "version": "0.1.2",
   "description": "Jibrel website landing page",
   "private": true,
   "homepage": "https://jibrel.network/",
@@ -11,47 +11,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jibrelnetwork/jibrel-website-new.git"
+    "url": "git+https://github.com/jibrelnetwork/jibrel-website.git"
   },
   "author": "Jibrel Network",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/jibrelnetwork/jibrel-website-new/issues"
+    "url": "https://github.com/jibrelnetwork/jibrel-website/issues"
   },
   "scripts": {
-    "start": "node server.js",
-    "lint:js": "./node_modules/.bin/eslint src/js/*.js",
-    "lint:css": "./node_modules/.bin/stylelint src/styles/*.scss",
-    "build": "./node_modules/.bin/gulp",
-    "build:prod": "./node_modules/.bin/gulp prod",
-    "watch": "./node_modules/.bin/gulp watch",
-    "postinstall": "npm run build:prod",
-    "precommit": "./node_modules/.bin/lint-staged"
+    "start": "./node_modules/.bin/tars dev -l",
+    "dev": "./node_modules/.bin/tars dev -l",
+    "build": "./node_modules/.bin/tars build -r",
   },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.9.1",
-    "express": "4.15.3",
+    "babel-preset-es2015": "6.24.1",
+    "eslint": "5.0.1",
+    "eslint-config-jibrelnetwork": "1.0.2",
     "gulp": "3.9.1",
-    "gulp-clean-css": "3.9.0",
-    "gulp-concat": "2.6.1",
-    "gulp-copy": "1.0.1",
-    "gulp-less": "3.3.2",
-    "gulp-minify-css": "1.2.4",
-    "gulp-nunjucks": "3.0.0",
-    "gulp-rename": "1.2.2",
-    "gulp-uglify": "3.0.0",
-    "merge-stream": "1.0.1",
-    "ramda": "0.25.0",
-    "serve-static": "1.12.3",
     "stylelint": "9.3.0",
-    "stylelint-config-jibrel": "1.0.0"
-  },
-  "dependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.0"
+    "stylelint-config-jibrelnetwork": "1.0.1",
+    "tars-cli": "1.9.6"
   }
 }

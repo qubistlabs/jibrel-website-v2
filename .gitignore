@@ -4,10 +4,29 @@
 *.iws
 .idea
 
+
+
 node_modules
 npm-debug.log
+dev
+docs
+public
+/data/*
+appveyor.yml
 
-# produced by gulp
-public/assets/css
-public/assets/js
-public/index.html
+.DS_Store
+._.DS_Store
+
+.tmpTemplater
+.tmpPreproc
+.idea
+npm-debug.log
+phantomjsdriver.log
+.travis.yml
+/nbproject/*
+
+**/sprite_96.*
+**/svg-fallback-sprite.*
+**/svg-sprite.*
+
+.vscode
