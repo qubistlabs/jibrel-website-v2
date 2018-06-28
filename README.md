@@ -3,12 +3,12 @@
 ## Development
 
 * `npm i`
-* `./node_modules/.bin/tars dev -l` - start dev server with livereload (`localhost:3005`)
+* `start` or `dev` - start dev server with livereload (`localhost:3005`)
 
 ## Production
 
 * `npm i`
-* `./node_modules/.bin/tars build -r` - build public html and minified assets
+* `build` - build public html and minified assets
 * share static from `./public` dir
 
 ### Project structure
