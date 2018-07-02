@@ -1,0 +1,171 @@
+.section-content {
+  // @extend ._all-reset;
+  text-align: center;
+  position: relative;
+  // Main setting block
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+  }
+  &.-full-screen {
+    height: 100vh;
+  }
+  &.-center-child-box {
+    font-size: 0;
+    text-align: center;
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0;
+    }
+  }
+  &.-up-card {
+    margin-top: -255px;
+  }
+  &.-offset-top,
+  > .-offset-top {
+    padding-top: 110px;
+    @media (max-width: 768px) {
+      padding-top: 40px;
+    }
+  }
+  &.-offset-bottom,
+  > .-offset-bottom {
+    padding-bottom: 110px;
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  // BG setting block
+  &.-bg-cover {
+    @include bg-cover
+  }
+  &.-bg-gexagrid {
+    background-position: center 95px;
+  }
+  &.-bg-bottom {
+    @include bg-bottom
+  }
+  &.-bg-blue {
+    &:before {
+      @include bg-blue
+    }
+  }
+  &.-bg-gray-gradient {
+    &:before {
+      @include bg-gray-gradient
+    }
+  }
+  &.-bg-light-blue {
+    &:before {
+      @include bg-light-blue
+    }
+  }
+  &.-bg-gray {
+    &:before {
+      @include bg-gray
+    }
+  }
+  &.-bg-dark {
+    &:before {
+      @include bg-dark
+    }
+  }
+
+  // Element blocl
+
+  .-center-box {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: middle;
+    text-align: left;
+  }
+  > .container {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      content: '';
+      z-index: -1;
+    }
+    &.-bg-blue {
+      &:before {
+        @include bg-blue
+      }
+    }
+    &.-bg-gray-gradient {
+      &:before {
+        @include bg-gray-gradient
+      }
+    }
+    &.-bg-light-blue {
+      &:before {
+        @include bg-light-blue
+      }
+    }
+    &.-bg-gray {
+      &:before {
+        @include bg-gray
+      }
+    }
+    &.-bg-dark {
+      &:before {
+        @include bg-dark
+      }
+    }
+    > .title {
+      font-size: 24px;
+      line-height: (36/24);
+      font-weight: normal;
+      max-width: 800px;
+      &.-small {
+        max-width: 700px;
+      }
+      &.-text-center {
+        text-align: center;
+      }
+      &.-white {
+        color: #fff;
+      }
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      ~ .descr {
+        margin-top: 30px;
+      }
+    }
+    > .descr {
+      max-width: 800px;
+      font-size: 14px;
+      font-weight: normal;
+      color: rgba($base, .6);
+      line-height: (24/14);
+      &.-text-center {
+        text-align: center;
+      }
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    > .img {
+      max-width: 100%;
+    }
+  }
+}
