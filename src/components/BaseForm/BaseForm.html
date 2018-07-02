@@ -1,0 +1,18 @@
+<div class='base-form'>
+  <div class='container'>
+    <h2 class="title">Product & Sales Enquiry Form</h2>
+    <form action='' class="form">
+      {{#each BaseForm.base}}
+      <label class="item">
+        <p class="label">{{label}}</p>
+        {{#is fieldType '==' '-input'}}
+        <input type="text" class="field -input">
+        {{/is}}
+        {{#is fieldType '==' '-textarea'}}
+        <textarea class="field -textarea"></textarea>
+        {{/is}}
+      </label>
+      {{/each}}
+    </form>
+  </div>
+</div>
