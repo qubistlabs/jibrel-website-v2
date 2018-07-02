@@ -1,0 +1,26 @@
+.project-logo {
+  // @extend ._all-reset;
+  font-size: 0;
+  &.-color {
+    > .text {
+      fill: $black;
+    }
+    > .icon {
+      fill: $blue;
+    }
+  }
+  &.-white {
+    > .icon,
+    > .text {
+      fill: #fff;
+    }
+  }
+  > .icon,
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  > .text {
+    margin-left: 10px;
+  }
+}
