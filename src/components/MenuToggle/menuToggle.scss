@@ -1,0 +1,30 @@
+.menu-toggle {
+  // @extend ._all-reset;
+  font-size: 0;
+  &.-color {
+    > .icon {
+      fill: $base;
+    }
+    > .text {
+      color: $base;
+    }
+  }
+  &.-white {
+    > .icon {
+      fill:#fff;
+    }
+    > .text {
+      color: #fff;
+    }
+  }
+  > .icon,
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  > .text {
+    margin-right: 20px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
