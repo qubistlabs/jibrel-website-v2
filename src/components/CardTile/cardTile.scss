@@ -1,0 +1,215 @@
+.card-tile {
+  // @extend ._all-reset;
+  font-size: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  &.-offset-top {
+    padding-top: 80px;
+  }
+  &.-box-shadow {
+    box-shadow: 0 3px 45px rgba($base, .1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &.-inner-border-gray {
+    &.-inner-border-vertical,
+    &.-inner-grid {
+      > .item {
+        border-color: #f0f1f3;
+      }
+    }
+  }
+  &.-inner-border-white {
+    &.-inner-border-vertical,
+    &.-inner-grid {
+      > .item {
+        border-color: rgba(#fff, .1);
+      }
+    }
+  }
+  &.-inner-grid {
+    > .item {
+      border-right-width: 1px;
+      border-top-width: 1px;
+      border-right-style: solid;
+      border-top-style: solid;
+      @media (min-width: 1025px) {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-top-width: 0;
+        }
+        &:nth-child(3n) {
+          border-right-width: 0;
+        }
+      }
+    }
+  }
+  &.-inner-border-vertical {
+    > .item {
+      border-right-width: 1px;
+      border-right-style: solid;
+      &:first-child {
+        border-left-width: 1px;
+        border-left-style: solid;
+      }
+    }
+  }
+  > .item {
+    display: inline-block;
+    vertical-align: top;
+    &.-three-col {
+      width: 33.333%;
+    }
+    &.-two-col {
+      width: 50%;
+    }
+    > .box {
+      padding-left: 60px;
+      padding-right: 60px;
+      display: block;
+      position: relative;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &.-bg-white {
+        background-color: #fff;
+      }
+      &.-square {
+        height: 360px;
+        padding-top: 95px;
+        padding-bottom: 60px;
+        // display: -webkit-flex;
+        // display: -ms-flex;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+      }
+      &.-color {
+        > {
+          .title,
+          .sub-title {
+            color: $base;
+          }
+          .descr {
+            color: $base-o;
+          }
+        }
+        > .img {
+          // border: 1px solid #000;
+          > .icon {
+            &.-stroke {
+              stroke: $blue;
+            }
+          }
+        }
+      }
+      &.-white {
+        > {
+          .title,
+          .sub-title {
+            color: #fff;
+          }
+          .descr {
+            color: rgba(#fff, .6);
+          }
+        }
+        > .img {
+          > .icon {
+            &.-stroke {
+              stroke: #fff;
+            }
+          }
+        }
+      }
+      &.-is-hover-overlay {}
+      > .img {
+        margin-bottom: 35px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.-logo-project {
+          height: 90px;
+        }
+        &.-base-icon {
+          height: 60px;
+        }
+        > .icon {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          &.-stroke {
+            fill: none;
+            stroke-width: 2px;
+          }
+        }
+      }
+      > .title,
+      > .sub-title,
+      > .descr {
+        text-align: center;
+      }
+      > .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: (30/16);
+      }
+      > .sub-title {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: (24/13);
+        padding-bottom: 5px;
+      }
+      > .descr {
+        // padding-top: 15px;
+        font-size: 13px;
+        line-height: (24/13);
+      }
+      > .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &.-bg-light-blue {
+          @extend ._bg-light-blue;
+          > .icon {
+            stroke: rgba(#fff, .5);
+            margin-bottom: 15px;
+          }
+          > .text {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+        > .icon {
+          fill: none;
+        }
+        > .text {}
+      }
+      &:hover {
+        > .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

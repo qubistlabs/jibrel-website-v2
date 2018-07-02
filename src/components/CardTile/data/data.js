@@ -1,0 +1,176 @@
+CardTile: {
+  project: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jwalet.svg',
+      imgW: '111',
+      imgH: '84',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jcash.svg',
+      imgW: '92',
+      imgH: '86',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jnode.svg',
+      imgW: '89',
+      imgH: '89',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/minified-svg/i-search.svg',
+      imgW: '57',
+      imgH: '57',
+      title: 'Jibrel Search',
+      subTitle: 'Analytics',
+      descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/minified-svg/i-clear.svg',
+      imgW: '62',
+      imgH: '62',
+      title: 'Jibrel Clear',
+      subTitle: 'Compliance',
+      descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/minified-svg/i-core.svg',
+      imgW: '56',
+      imgH: '56',
+      title: 'Jibrel Core',
+      subTitle: 'Infrastructure',
+      descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
+      isHoverBox: 'true'
+    },
+  ],
+  homeData1: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="57" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-business-bag-cash"></use></svg>',
+      title: 'Enterprise Ready',
+      subTitle: 'false',
+      descr: 'Jibrel solutions meet the highest standards in technology, security and compliance',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-notebook-favorite"></use></svg>',
+      title: 'User Friendly',
+      subTitle: 'false',
+      descr: 'No blockchain experience? No problem. All solutions are straightforward and simple to use.',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-expand"></use></svg>',
+      title: 'Scalable',
+      subTitle: 'false',
+      descr: 'Using Jibrel off-chain modules, users can scale their infrastructure to their needs',
+      isHoverBox: 'false'
+    },
+  ],
+  homeData2: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="57" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-bank"></use></svg>',
+      title: 'Banks & Non-bank FIs',
+      subTitle: 'false',
+      descr: 'Financial Institutions are using Jibrel to streamline transacting traditional and digital assets.',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-store"></use></svg>',
+      title: 'Small & Medium Enterprises',
+      subTitle: 'false',
+      descr: 'SMEs are capitalizing on low cost, instant settlement, global payments and transfers.',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-goverment"></use></svg>',
+      title: 'Governments & Regulators    ',
+      subTitle: 'false',
+      descr: 'Public sector users are using Jibrel to increase operational efficiency, transparency and oversight.',
+      isHoverBox: 'false'
+    },
+  ],
+  about: [
+    {
+      cardModClass: '-two-col',
+      boxModClass: '-color',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="56" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-business-female-chat"></use></svg>',
+      title: 'Consumer Products & Services',
+      subTitle: 'false',
+      descr: 'Jibrel is dedicated to providing institutional-grade blockchain and Distributed Ledger Technology (DLT) solutions to the community',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-two-col',
+      boxModClass: '-color',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class="icon -stroke" width="56" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-business-statistics"></use></svg>',
+      title: 'Enterprise Solutions',
+      subTitle: 'false',
+      descr: 'We’re working with corporates, regulators and governments to bring increased efficiency and transparency to financial services',
+      isHoverBox: 'false'
+    },
+  ],
+}

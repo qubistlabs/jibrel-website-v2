@@ -1,0 +1,26 @@
+<div class='item {{cardModClass}}'>
+  <div class='box {{boxModClass}}'>
+    <div class='img {{modClassImg}}'>
+      {{#is imgType '==' 'img'}}
+      <img src='{{img}}' class='icon' width='{{imgW}}' height='{{imgH}}' alt=''>
+      {{else}}
+      {{{img}}}
+      {{/is}}
+    </div>
+    {{#is title '!=' 'false'}}
+    <h2 class='title'>{{title}}</h2>
+    {{/is}}
+    {{#is subTitle '!=' 'false'}}
+    <h3 class='subtitle'>{{subTitle}}</h3>
+    {{/is}}
+    {{#is descr '!=' 'false'}}
+    <p class='descr'>{{descr}}</p>
+    {{/is}}
+    {{#is isHoverBox '==' 'true'}}
+    <a href='#' class='overlay -bg-light-blue'>
+      {{Icon iconName='i-hand-tablet' className='icon' iconWidth='' iconHeight=''}}
+      <span class='text'>More info</span>
+    </a>
+    {{/is}}
+  </div>
+</div>
