@@ -3,7 +3,7 @@
 ## Development
 
 * `npm i`
-* `npm run start` or `npm run dev` - start dev server with livereload (`localhost:3005`)
+* `npm run dev` - start dev server with livereload (`localhost:3005`)
 
 ## Production
 
@@ -152,7 +152,7 @@ We use `scss` [pre-processor](https://sass-lang.com/) with `rscss` [naming conve
 
 We use ES6+ standard features and compile them to ES2015 syntax.
 
-Vendor files with scripts must be placed in `src/js/plugins` dir.
+Vendor files with scripts must be placed in `src/assets/js` dir.
 
 ### svg
 
@@ -166,8 +166,6 @@ Using in handlebars:
 ### bundling
 
 We use `gulp` for bundling.
-
-All assets must be minified for `production`.
 
 [TARS](https://github.com/tars/tars) is a builder for modern frontend of any complexity, which is based on Gulp.js. It facilitates and accelerates process of web-development. TARS will be suitable for teams and individual developers. It solves the most routine cases associated with web-development and brings you more pleasure from work.
 [Documentation](https://github.com/tars/tars#documentation)
@@ -194,6 +192,6 @@ These two packages must be included in `devDependencies` of `package.json`.
 * `develop` branch is for `development`.
 * two types of developer branches:
   * `feature/<feature-name>`
-  * `fixup/<fixup-name>`
+  * `hotfix/<hotfix-name>`
 
 Every task/feature/fix must be implemented in separate branch, and then merged via PR to `develop`. Once changes have been reviewed and tested on `develop`, PR to `master` must be created.
