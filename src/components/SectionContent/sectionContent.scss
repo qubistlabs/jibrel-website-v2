@@ -107,6 +107,12 @@
         @include bg-blue
       }
     }
+    &.-single-visual-center {
+      padding-top: 5vh;
+    }
+    &.-visual-center-with-cards {
+      padding-bottom: 25vh;
+    }
     &.-bg-gray-gradient {
       &:before {
         @include bg-gray-gradient
