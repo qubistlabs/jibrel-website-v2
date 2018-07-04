@@ -1,3 +1,10 @@
 {
-  "extends": ["eslint-config-jibrelnetwork"]
+  "extends": [
+    "jibrelnetwork",
+  ],
+  "globals": {
+  },
+  "rules": {
+    "more/no-c-like-loops": 0
+  }
 }
