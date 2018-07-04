@@ -1,0 +1,71 @@
+.j-button {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  border-radius: 3px;
+  height: 48px;
+  font-size: 13px;
+  max-width: 240px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  &.-fill-blue,
+  &.-fill-white {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  &.-fill-blue {
+    background-color: $blue;
+    color: #fff;
+    fill: #fff;
+  }
+  &.-fill-blue-disabled {
+    color: rgba(#fff, .7);
+    fill: rgba(#fff, .4);
+    background-color: rgba($base, .2);
+  }
+  &.-fill-white {
+    background-color: #fff;
+    color: $base;
+    fill: $base;
+    box-shadow: 0 6px 12px 0 rgba($base, .3);
+    &:hover {
+      color: #fff;
+      background-color: #00C1FF;
+      box-shadow: 0 6px 12px 0 rgba(#00C1FF, .25);
+    }
+    &:active {
+      color: #fff;
+      background-color: rgba(#00C1FF, .75);
+    }
+  }
+  &.-fill-white-disabled {
+    color: #CED5DF;
+    fill: rgba(#fff, .4);
+    background-color: rgba(#CED5DF, .2);
+    box-shadow: 0 6px 12px 0 rgba(#003DC6, .25);
+  }
+
+
+
+  > .icon {
+    display: inline-block;
+    vertical-align: middle;
+    + .text {
+      margin-left: 10px;
+    }
+  }
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    + .icon {
+      margin-left: 10px;
+    }
+  }
+}
