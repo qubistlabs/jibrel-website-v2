@@ -1,36 +1,44 @@
 .menu-toggle {
   // @extend ._all-reset;
   font-size: 0;
-  &.-color {
-    > .icon {
-      fill: $base;
-    }
-    > .text {
-      color: $base;
-    }
-  }
-  &.-white {
-    > .icon {
-      fill:#fff;
-    }
-    > .text {
-      color: #fff;
-    }
-  }
+
   > .icon,
   > .text {
     display: inline-block;
     vertical-align: middle;
   }
+
   > .icon {
-    transition: fill .2s ease-in-out;
+    transition: fill 0.2s ease-in-out;
   }
+
   > .text {
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
     margin-right: 20px;
     font-size: 11px;
     font-weight: 600;
-    @include ls(50); 
+
+    @include ls(50);
+  }
+
+  &.-color {
+    > .icon {
+      fill: $base;
+    }
+
+    > .text {
+      color: $base;
+    }
+  }
+
+  &.-white {
+    > .icon {
+      fill: #fff;
+    }
+
+    > .text {
+      color: #fff;
+    }
   }
 
   &:hover {
@@ -39,19 +47,22 @@
       > .icon {
         fill: $light-blue;
       }
+
       > .text {
         color: $light-blue;
       }
     }
   }
+
   &:active {
     &.-color,
     &.-white {
       > .icon {
-        fill: rgba($light-blue, .5);
+        fill: rgba($light-blue, 0.5);
       }
+
       > .text {
-        color: rgba($light-blue, .5);
+        color: rgba($light-blue, 0.5);
       }
     }
   }

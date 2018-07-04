@@ -1,13 +1,15 @@
 .partners-card {
-  // @extend ._all-reset;
   font-size: 0;
+  // @extend ._all-reset;
   &.-offset-top {
     padding-top: 40px;
   }
+
   > .item {
     display: inline-block;
     vertical-align: top;
     width: 25%;
+
     > .logo {
       width: 100%;
     }

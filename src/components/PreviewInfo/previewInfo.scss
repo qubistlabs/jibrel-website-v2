@@ -7,69 +7,83 @@
     align-items: center;
     font-size: 0;
   }
+
+  > .text {
+    padding-right: 30px;
+
+    &.-up-visual-center {
+      padding-bottom: 30px;
+    }
+
+    > .title,
+    > .descr {
+      &.-white {
+        color: #fff;
+      }
+
+      &.-color {
+        color: $base;
+      }
+
+      &.-text-center {
+        text-align: center;
+      }
+    }
+
+    > .title {
+      line-height: (48/36);
+      font-size: 36px;
+      font-weight: normal;
+
+      @include ls(25);
+    }
+
+    > .descr {
+      font-size: 14px;
+      line-height: (24/14);
+      max-width: 800px;
+      width: 100%;
+      margin-top: 33px;
+      padding-bottom: 40px;
+
+      @include ls(10);
+
+      &.-white {
+        opacity: 0.8;
+      }
+
+      &.-color {
+        opacity: 0.6;
+      }
+
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.-medium-size {
+        max-width: 510px;
+      }
+
+      &.-small-size {
+        max-width: 320px;
+      }
+    }
+  }
+
+  > .picture {
+    > .img {
+      max-width: 100%;
+    }
+  }
+
   > .text,
   > .picture {
     &.-w50 {
       font-size: 1rem;
       display: inline-block;
       vertical-align: middle;
-    }
-    &.-w50 {
       width: 50%;
-    }
-  }
-  > .text {
-    padding-right: 30px;
-    &.-up-visual-center {
-      padding-bottom: 30px;
-    }
-    > .title,
-    > .descr {
-      &.-white {
-        color:#fff;
-      }
-      &.-color {
-        color: $base;
-      }
-      &.-text-center {
-        text-align: center;
-      }
-    }
-    > .title {
-      @include ls(25);
-      line-height: (48/36);
-      font-size: 36px;
-      font-weight: normal;
-    }
-    > .descr {
-      font-size: 14px;
-      @include ls(10);
-      line-height: (24/14);
-      max-width: 800px;
-      width: 100%;
-      margin-top: 33px;
-      padding-bottom: 40px;
-      &.-white {
-        opacity: .8;
-      }
-      &.-color {
-        opacity: .6;
-      }
-      &.-box-center {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      &.-medium-size {
-        max-width: 510px;
-      }
-      &.-small-size {
-        max-width: 320px;
-      }
-    }
-  }
-  > .picture {
-    > .img {
-      max-width: 100%;
     }
   }
 }
