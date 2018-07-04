@@ -21,7 +21,7 @@
   "scripts": {
     "start": "./node_modules/.bin/tars dev -l",
     "dev": "./node_modules/.bin/tars dev -l",
-    "build": "./node_modules/.bin/tars build -r",
+    "build": "./node_modules/.bin/tars build -r"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.24.1",
