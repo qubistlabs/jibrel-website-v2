@@ -22,9 +22,37 @@
     display: inline-block;
     vertical-align: middle;
   }
+  > .icon {
+    transition: fill .2s ease-in-out;
+  }
   > .text {
+    transition: color .2s ease-in-out;
     margin-right: 20px;
     font-size: 11px;
     font-weight: 600;
+    @include ls(50); 
+  }
+
+  &:hover {
+    &.-color,
+    &.-white {
+      > .icon {
+        fill: $light-blue;
+      }
+      > .text {
+        color: $light-blue;
+      }
+    }
+  }
+  &:active {
+    &.-color,
+    &.-white {
+      > .icon {
+        fill: rgba($light-blue, .5);
+      }
+      > .text {
+        color: rgba($light-blue, .5);
+      }
+    }
   }
 }
