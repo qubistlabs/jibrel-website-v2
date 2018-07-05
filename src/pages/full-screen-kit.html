@@ -1,0 +1,83 @@
+<!doctype html>
+<html class='no-js' lang='ru'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -single-visual-center -center-box _container-fix'>
+      <p class='title -white -text-center -box-center'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</p>
+    </div>
+  </section>
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid _relative' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    {{> MainHeader/MainHeader MainHeader.color}}
+    <div class='container -center-box _container-fix'>
+      <div class="preview-info -row">
+        {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -center-box _container-fix'>
+      <div class="preview-info">
+        {{> PreviewInfo/PreviewInfo PreviewInfo.about}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid _relative' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    {{> MainHeader/MainHeader MainHeader.color}}
+    <div class='container -center-box _container-fix'>
+      <div class="preview-info -row">
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jsearch}}
+      </div>
+    </div>
+  </section>
+
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -center-box _container-fix'>
+      <div class="preview-info -row">
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jwalet}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray'></section>
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -visual-center-with-cards -center-box _container-fix'>
+      <p class='title -white -text-center -box-center'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</p>
+    </div>
+  </section>
+  <div class='section-content -up-card -offset-bottom _container-fix'>
+    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+      {{#each CardTile.project}}
+      {{> CardTile/CardTile}}
+      {{/each}}
+    </div>
+  </div>
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -center-box _container-fix'>
+      <div class="preview-info -row">
+        {{> PreviewInfo/PreviewInfo PreviewInfo.products}}
+      </div>
+    </div>
+  </section>
+
+
+  {{> MainFooter/MainFooter}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
