@@ -30,7 +30,7 @@
     "tars-cli": "1.9.8"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015": "6.24.1",
     "eslint": "4.18.2",
     "eslint-config-jibrelnetwork": "1.0.3",
     "husky": "0.14.3",
