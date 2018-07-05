@@ -8,6 +8,7 @@ $error: red;
 // Fonts
 $font-size: 16px;
 $ff-m: 'Open Sans';
+
 @mixin font {
   font-family: $ff-m, 'Arial', sans-serif;
 }
