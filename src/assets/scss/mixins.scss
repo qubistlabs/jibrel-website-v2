@@ -21,98 +21,79 @@
   background-color: $base;
 }
 
-
 @mixin hid {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 @mixin vis {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 @mixin optional-at-root($sel) {
-    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
-        @content;
-    }
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
 }
 
 @mixin placeholder {
-    @include optional-at-root('::-webkit-input-placeholder') {
-        @content;
-    }
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
 
-    @include optional-at-root(':-moz-placeholder') {
-        @content;
-    }
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
 
-    @include optional-at-root('::-moz-placeholder') {
-        @content;
-    }
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
 
-    @include optional-at-root(':-ms-input-placeholder') {
-        @content;
-    }
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
 }
 
 @mixin multi-ellipsis($font-size, $line-height, $lines-to-show) {
-    display: block;
-    display: -webkit-box;
-    max-height: $font-size*$line-height*$lines-to-show+px;
-    font-size: $font-size+px;
-    line-height: $line-height;
-    -webkit-line-clamp: $lines-to-show;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show+px;
+  font-size: $font-size+px;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @mixin anim($time) {
-    transition: all ($time)+s cubic-bezier(.25,.1,.25,1);
+  transition: all ($time)+s cubic-bezier(.25,.1,.25,1);
 }
 
 @mixin ls($fz) {
-    letter-spacing: ($fz/1000)+em;
+  letter-spacing: ($fz/1000)+em;
 }
 
 @function r($pxw) {
-    @return ($pxw/24)+rem;
+  @return ($pxw/24)+rem;
 }
 
-
-// =============================================================================
-// Font Face
-// =============================================================================
-
-// $name - название для font-family
-// $path - путь к шрифту без формата
-// $weight - font-weight
-// $style - font-style
-// $exts - форматы шрифта, которые используются
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-    $src: null;
+  $src: null;
+  $extmods: (eot: "?", svg: "#" + str-replace($name, " ", "_"));
+  $formats: (otf: "opentype", ttf: "truetype");
 
-    $extmods: (
-    eot: "?",
-    svg: "#" + str-replace($name, " ", "_")
-    );
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
 
-    $formats: (
-    otf: "opentype",
-    ttf: "truetype"
-    );
-
-    @each $ext in $exts {
-        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-    }
-
-    @font-face {
-        font-family: quote($name);
-        font-style: $style;
-        font-weight: $weight;
-        src: $src;
-    }
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
 }

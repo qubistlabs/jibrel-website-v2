@@ -1,24 +1,16 @@
-// File for scss-vars.
-// For example: main colors, paddings and so on.
-
-$base: #3D4F6C;
-$base-o: rgba(#3D4F6C, .6);
-$light-blue: #00C1FF;
-$blue: #003DC6;
-$light-gray: #F5F6FA;
-$black: #0F1B38;
-
-
-// $error: $acc;
-
-
+$base: #3d4f6c;
+$base-o: rgba(#3d4f6c, 0.6);
+$light-blue: #00c1ff;
+$blue: #003dc6;
+$light-gray: #f5f6fa;
+$black: #0f1b38;
+$error: red;
 // Fonts
 $font-size: 16px;
 $ff-m: 'Open Sans';
-
-@mixin font {font-family: $ff-m, 'Arial', sans-serif;}
-
-
+@mixin font {
+  font-family: $ff-m, 'Arial', sans-serif;
+}
 // Base layout
 $inner-width: calc(100% - 40px);
 $limit-inner-width-small: 1218px;

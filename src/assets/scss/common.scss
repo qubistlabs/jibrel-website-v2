@@ -1,9 +1,6 @@
-// Common styles of the project
 /*
 Base settings
 */
-
-* {outline: none;box-sizing: border-box;margin: 0;padding: 0;}
 html {
   font-family: sans-serif;
   min-height: 100%;
@@ -11,14 +8,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   @include font;
   color: $base;
   min-height: 100%;
   line-height: (20/14);
-
-  &[scroll="false"] {
-    height: 100vh;overflow: hidden;
+  &.-scroll-lock {
+    height: 100vh;
+    overflow: hidden;
   }
 }
 
@@ -26,6 +24,7 @@ body {
 a {
   text-decoration: none;
 }
+
 button {
   cursor: pointer;
   margin: 0;
@@ -34,15 +33,30 @@ button {
   background-color: transparent;
   border-radius: 0;
 }
-input,textarea,select,button {
+
+input,
+textarea,
+select,
+button {
   -webkit-appearance: none;
 }
 
 input::-ms-clear {
   display: none;
 }
-p,ul,h1,h2,h3,h4 {margin: 0;}
-img {display: block;}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
 
 ._container-fluid,
 ._container-fix {
@@ -50,6 +64,7 @@ img {display: block;}
   margin-right: auto;
   width: $inner-width;
 }
+
 ._container-fix {
   max-width: $limit-inner-width-normal;
 }
