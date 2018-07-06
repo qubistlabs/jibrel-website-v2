@@ -1,4 +1,6 @@
 .base-form {
+  @extend ._all-reset;
+
   > .container {
     max-width: 690px;
     width: 100%;

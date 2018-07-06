@@ -1,6 +1,8 @@
 .project-logo {
+  @extend ._all-reset;
+
   font-size: 0;
-  // @extend ._all-reset;
+
   > .icon,
   > .text {
     display: inline-block;

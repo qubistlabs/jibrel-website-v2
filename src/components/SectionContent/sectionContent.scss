@@ -1,7 +1,10 @@
 .section-content {
+  @extend ._all-reset;
+
   text-align: center;
   position: relative;
-  // @extend ._all-reset;
+  line-height: (20/14);
+
   &::before {
     position: absolute;
     width: 100%;

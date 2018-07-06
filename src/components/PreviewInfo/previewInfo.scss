@@ -1,4 +1,6 @@
 .preview-info {
+  @extend ._all-reset;
+
   &.-row {
     display: -webkit-flex;
     display: -ms-flex;
