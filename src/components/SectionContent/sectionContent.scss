@@ -1,6 +1,8 @@
 .section-content {
   @extend ._all-reset;
 
+  display: block;
+  width: 100%;
   text-align: center;
   position: relative;
   line-height: (20/14);

@@ -1,6 +1,8 @@
 .team-list {
   @extend ._all-reset;
 
+  display: block;
+  width: 100%;
   font-size: 0;
   max-width: 1000px;
   margin-left: auto;

@@ -1,6 +1,7 @@
 .menu-toggle {
   @extend ._all-reset;
 
+  display: inline-block;
   font-size: 0;
 
   > .icon,

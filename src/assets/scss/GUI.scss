@@ -1,8 +1,6 @@
 ._all-reset {
   all: initial;
   color: $base;
-  display: block;
-  width: 100%;
 
   @include font;
 }

@@ -1,6 +1,7 @@
 .card-tile {
   @extend ._all-reset;
 
+  width: 100%;
   font-size: 0;
   display: -webkit-flex;
   display: -ms-flex;
