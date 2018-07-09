@@ -1,18 +1,21 @@
 <div class='base-form'>
   <div class='container'>
-    <h2 class="title">Product & Sales Enquiry Form</h2>
-    <form action='' class="form">
+    <h2 class='title'>Product & Sales Enquiry Form</h2>
+    <form action='' class='form'>
       {{#each BaseForm.base}}
-      <label class="item">
-        <p class="label">{{label}}</p>
+      <label class='item'>
+        <p class='label'>{{label}}</p>
         {{#is fieldType '==' '-input'}}
-        <input type="text" class="field -input">
+        <input type='text' class='field -input' required>
         {{/is}}
         {{#is fieldType '==' '-textarea'}}
-        <textarea class="field -textarea"></textarea>
+        <textarea class='field -textarea' required></textarea>
         {{/is}}
       </label>
       {{/each}}
+      <div class='button'>
+        <button class='j-button -fill-on-white-bg -w100'><span class='text'>Send</span></button>
+      </div>
     </form>
   </div>
 </div>
