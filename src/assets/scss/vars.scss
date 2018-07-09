@@ -1,18 +1,18 @@
 $base: #3d4f6c;
 $base-o: rgba(#3d4f6c, 0.6);
 $light-blue: #00c1ff;
+$h-light-blue: #7edfff;
 $blue: #003dc6;
 $light-gray: #f5f6fa;
 $black: #0f1b38;
 $error: red;
-// Fonts
+// fonts
 $font-size: 16px;
-$ff-m: 'Open Sans';
+$ff-m: 'open sans';
 
 @mixin font {
-  font-family: $ff-m, 'Arial', sans-serif;
+  font-family: $ff-m, 'arial', sans-serif;
 }
-// Base layout
-$inner-width: calc(100% - 40px);
-$limit-inner-width-small: 1218px;
+// base layout
+$inner-width: calc(100% - 200px);
 $limit-inner-width-normal: 1160px;
