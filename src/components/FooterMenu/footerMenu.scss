@@ -1,0 +1,63 @@
+.footer-menu {
+  @extend ._all-reset;
+
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  > .box {
+    > .title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: (30/16);
+      padding-bottom: 16px;
+    }
+
+    > .item {
+      &.-box-inline {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      > .link {
+        display: inline-block;
+        color: $base-o;
+        line-height: (30/13);
+        font-size: 13px;
+        transition: color 0.2s ease-in-out;
+
+        > .icon {
+          display: inline-block;
+          vertical-align: top;
+          fill: $base;
+          border-radius: 100px;
+          transition: fill 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        &:hover {
+          color: $light-blue;
+
+          > .icon {
+            box-shadow: 0 2px 4px 0 rgba($light-blue, 0.25);
+            fill: $light-blue;
+          }
+        }
+
+        &:active {
+          color: rgba($light-blue, 0.5);
+
+          > .icon {
+            box-shadow: 0 2px 4px 0 transparent;
+            fill: rgba($light-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
