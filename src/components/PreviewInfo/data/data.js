@@ -23,18 +23,6 @@ PreviewInfo: {
     img: '/assets/img/content/desktop-1x.png',
     img2x: '/assets/img/content/desktop-2x.png 2x'
   },
-  jwalet: {
-    modClassText: '-w50 -up-visual-center',
-    modClassPicture: '-w50',
-    modClassTitle: '-white',
-    modClassDescr: '-white -small-size',
-    title: 'Jibrel Wallet',
-    descr: 'Official ERC-20 wallet of the Jibrel Network',
-    img: '/assets/img/content/preview-jwalet.png',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
-    buttonClass: '-fill-white',
-    buttonText: 'Try it now',
-  },
   products: {
     modClassText: '-w50 -up-visual-center',
     modClassPicture: '-w50',
@@ -44,7 +32,19 @@ PreviewInfo: {
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
     img: '/assets/img/content/preview-jwalet.png',
     img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
-    buttonClass: '-fill-white',
+    buttonClass: '-fill-on-blue-bg -w-limit-240',
+    buttonText: 'Try it now',
+  },
+  jwalet: {
+    modClassText: '-w50 -up-visual-center',
+    modClassPicture: '-w50',
+    modClassTitle: '-white',
+    modClassDescr: '-white -small-size',
+    title: 'Jibrel Wallet',
+    descr: 'Official ERC-20 wallet of the Jibrel Network',
+    img: '/assets/img/content/preview-jwalet.png',
+    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    buttonClass: '-fill-on-blue-bg -w-limit-240',
     buttonText: 'Try it now',
   },
   jsearch: {
@@ -56,7 +56,7 @@ PreviewInfo: {
     descr: 'Jibrel is organizing the world’s blockchain data in a useful way. Search is Jibrel’s proprietary, blockchain agnostic, block explorer.',
     img: '/assets/img/content/desktop-1x.png',
     img2x: '/assets/img/content/desktop-2x.png 2x',
-    buttonClass: '-fill-white',
+    buttonClass: '-fill-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
   },
 }
