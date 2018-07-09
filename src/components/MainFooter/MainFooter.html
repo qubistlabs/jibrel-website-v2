@@ -1,8 +1,23 @@
 <footer class='main-footer'>
   <div class='container _container-fix'>
-    <a href='/' class='project-logo -color'>
-      {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
-      {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
-    </a>
+    <div class='top'>
+      <div class='logo'>
+        <a href='/' class='project-logo -color'>
+          {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
+          {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
+        </a>
+      </div>
+      <div class='navigation'>
+        {{> FooterMenu/FooterMenu}}
+      </div>
+    </div>
+    <div class='bottom'>
+      <div class='copyright'>© 2017 Jibrel Network. All Rights Reserved.</div>
+      <div class='policies'>
+        <a href='#' class='policy'>Terms & Policies</a>
+        <a href='#' class='policy'>Privacy Policy</a>
+        <a href='#' class='policy'>Cookie Policy</a>
+      </div>
+    </div>
   </div>
 </footer>
