@@ -1,11 +1,10 @@
 FROM node:8-onbuild AS build
 
-RUN npm run build:prod
+RUN npm run build
 
 FROM nginx:alpine
 
 COPY --from=build /usr/src/app/public/. /app/
-COPY white_paper /white_paper
 COPY version.txt /app/
 COPY nginx.conf /etc/nginx/
 COPY run.sh /bin/run.sh
