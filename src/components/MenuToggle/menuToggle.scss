@@ -1,17 +1,23 @@
 .menu-toggle {
   @extend ._all-reset;
 
+  cursor: pointer;
   display: inline-block;
   font-size: 0;
 
   > .icon,
-  > .text {
+  > .text,
+  > .cross {
     display: inline-block;
     vertical-align: middle;
   }
 
   > .icon {
     transition: fill 0.2s ease-in-out;
+  }
+
+  > .cross {
+    transition: stroke 0.2s ease-in-out;
   }
 
   > .text {
@@ -43,11 +49,24 @@
     }
   }
 
+  &.-color,
+  &.-white {
+    > .cross {
+      fill: none;
+      stroke-width: 2px;
+      stroke: $blue;
+    }
+  }
+
   &:hover {
     &.-color,
     &.-white {
       > .icon {
         fill: $light-blue;
+      }
+
+      > .cross {
+        stroke: $light-blue;
       }
 
       > .text {
@@ -61,6 +80,10 @@
     &.-white {
       > .icon {
         fill: rgba($light-blue, 0.5);
+      }
+
+      > .cross {
+        stroke: rgba($light-blue, 0.5);
       }
 
       > .text {
