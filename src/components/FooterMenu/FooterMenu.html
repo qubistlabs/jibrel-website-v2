@@ -5,11 +5,14 @@
     {{#each this.links}}
     <div class='item {{modClass}}'>
       <a href='{{this.link}}' class='link'>
-        {{#is text '!=' ''}}{{this.text}}{{/is}}
-        {{#is socialIcon '!=' ''}}{{{this.socialIcon}}}{{/is}}
+        {{this.text}}
       </a>
     </div>
     {{/each}}
   </div>
   {{/each}}
+  <div class='box'>
+    <div class='title'>Social</div>
+    {{> CircleSocial/CircleSocial}}
+  </div>
 </div>

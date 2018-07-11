@@ -1,8 +1,12 @@
 MainHeader: {
   color: {
-    modClass: '-color'
+    modClass: '-color',
   },
   white: {
-    modClass: '-white'
+    modClass: '-white',
+  },
+  menu: {
+    modClass: '-color',
+    openMenu: 'true'
   },
 }

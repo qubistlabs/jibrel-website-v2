@@ -1,0 +1,112 @@
+.main-menu {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+  font-size: 0;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-top: 60px;
+
+  > .projects {
+    width: 75%;
+
+    > .box {
+      width: 33.333%;
+      display: inline-block;
+      vertical-align: top;
+
+      > .descr {
+        min-height: 82px;
+        max-width: 180px;
+      }
+
+      > .link {
+        font-weight: 600;
+        font-size: 13px;
+        color: $blue;
+        line-height: (15/13);
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $light-blue;
+        }
+
+        &:active {
+          color: rgba($light-blue, 0.5);
+        }
+      }
+
+      > .soon {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  > .pages {
+    width: 25%;
+    border-left: 1px solid rgba($base, 0.1);
+
+    > .box {
+      min-height: 161px;
+
+      > .item {
+        margin-bottom: 5px;
+
+        > .link {
+          transition: color 0.2s ease-in-out;
+          font-size: 13px;
+          color: $base-o;
+          line-height: (24/13);
+
+          &:hover {
+            color: $light-blue;
+          }
+
+          &:active {
+            color: rgba($light-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  > .projects,
+  > .pages {
+    display: inline-block;
+    vertical-align: top;
+
+    > .box {
+      margin-bottom: 80px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      > .name {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: (36/24);
+        margin-bottom: 20px;
+      }
+    }
+
+    > .projects {
+      > .box {
+        &.-project {
+          width: 33.333%;
+        }
+      }
+    }
+  }
+
+  > .projects > .box > .descr,
+  > .projects > .box > .soon {
+    font-size: 13px;
+    color: $base-o;
+    line-height: (24/13);
+  }
+
+  > .networks {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
