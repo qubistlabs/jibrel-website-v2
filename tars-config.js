@@ -6,7 +6,7 @@ module.exports = {
         "symbolsConfig": {
             "loadingType": "separate-file-with-link",
             "usePolyfillForExternalSymbols": true,
-            "pathToExternalSymbolsFile": "static/img/"
+            "pathToExternalSymbolsFile": "assets/img/"
         }
     },
     "css": {
@@ -15,7 +15,7 @@ module.exports = {
     "js": {
         "workflow": "modular",
         "bundler": "webpack",
-        "lint": true,
+        "lint": false,
         "useBabel": true,
         "removeConsoleLog": true,
         "webpack": {

@@ -1,0 +1,60 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.white}}
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    <div class='container -center-box _container-fix'>
+      <h1 class='title -white -text-center -box-center'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</h1>
+    </div>
+  </section>
+
+  <div class='section-content -up-card -offset-bottom _container-fix'>
+    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+      {{#each CardTile.project}}
+      {{> CardTile/CardTile}}
+      {{/each}}
+    </div>
+  </div>
+
+  <section class='section-content -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -small -text-center -box-center'>Learn more about how you can better manage digital assets using Jibrel infrastructure, products and solutions</p>
+      <div class='card-tile -offset-top'>
+        {{#each CardTile.homeData1}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <p class='title -white -text-center -box-center'>Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</p>
+      <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.homeData2}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -text-center -box-center'>Jibrel is trusted by market leaders across industries, as well as governments and regulators across the globe</p>
+      <div class='partners-card -offset-top'>
+        {{> PartnersCard/PartnersCard}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

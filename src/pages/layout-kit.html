@@ -1,0 +1,139 @@
+<!doctype html>
+<html class='no-js' lang='ru'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.color}}
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    <div class='container -center-box _container-fix'>
+      <img src="/assets/img/content/desktop-1x.png" srcset="/assets/img/content/desktop-2x.png 2x" class="img" alt="">
+    </div>
+  </section>
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    <div class='container -center-box _container-fix'>
+      <p class='title'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</p>
+    </div>
+  </section>
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> MainHeader/MainHeader MainHeader.white}}
+    <div class='container -center-box _container-fix'>
+      <p class='title -white -text-center -box-center'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</p>
+    </div>
+  </section>
+
+  <div class='section-content -up-card -offset-bottom _container-fix'>
+    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+      {{#each CardTile.project}}
+      {{> CardTile/CardTile}}
+      {{/each}}
+    </div>
+  </div>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'></section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray _container-fix'></section>
+
+  <section class='section-content -offset-top -offset-bottom _container-fix'>
+    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+      {{#each CardTile.project}}
+      {{> CardTile/CardTile}}
+      {{/each}}
+    </div>
+  </section>
+
+  <section class='section-content -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -white -text-center -box-center'>Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</p>
+      <div class='card-tile -inner-border-vertical -inner-border-gray'>
+        {{#each CardTile.homeData1}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <div class='card-tile -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.homeData2}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix -bg-gray'>
+      <div class='card-tile -inner-border-vertical -inner-border-gray'>
+        {{#each card.about}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray-gradient'>
+    <div class='container _container-fix'>
+      <div>
+        <button class='j-button -fill-blue'><span class='text'>Button blue fill</span></button>
+        <button class='j-button -fill-blue-disabled'><span class='text'>Button blue fill disabled</span></button>
+        <button class='j-button -fill-white'><span class='text'>Button white fill</span></button>
+        <button class='j-button -fill-white-disabled'><span class='text'>Button white fill disabled</span></button>
+        <br>
+        <br>
+        <button class='j-button -fill-blue'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn blue with icon</span>
+        </button>
+        <button class='j-button -fill-blue-disabled'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn blue with icon</span>
+        </button>
+        <button class='j-button -fill-white'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white opacity with icon</span>
+        </button>
+        <button class='j-button -fill-white-disabled'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white with icon</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -text-center -box-center'>Jibrel is trusted by market leaders across industries, as well as governments and regulators across the globe</p>
+      <div class='partners-card -offset-top'>
+        {{> PartnersCard/PartnersCard}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+    <div class='container _container-fix'>
+      {{> BaseForm/BaseForm}}
+    </div>
+  </section>
+
+  <section class='section-content'>
+    <div class="container _container-fix -bg-gray -offset-top">
+      <div class="title -text-center -box-center">Our Team</div>
+      <div class="descr -text-center -box-center">Jibrel is being developed by a group of experienced professionals who combine a deep understanding of financial services with technical expertise in Distributed Ledger Technology (DLT)</div>
+      <div class="team-list -offset-top">
+        {{> TeamList/TeamList}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

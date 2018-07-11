@@ -1,0 +1,122 @@
+.j-button {
+  @extend ._all-reset;
+
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+  border-radius: 3px;
+  height: 48px;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out, fill 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &.-w-limit-240 {
+    max-width: 240px;
+  }
+
+  &.-fill-on-dark-bg,
+  &.-fill-disabled-on-dark-bg,
+  &.-fill-on-blue-bg,
+  &.-fill-disabled-on-blue-bg,
+  &.-fill-on-white-bg,
+  &.-fill-on-gray-bg,
+  &.-fill-disabled-on-gray-bg {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &.-fill-on-gray-bg {
+    box-shadow: 0 6px 12px 0 rgba(61, 79, 108, 0.08);
+  }
+
+  &.-fill-on-blue-bg {
+    box-shadow: 0 6px 12px 0 rgba(9, 52, 155, 0.3);
+  }
+
+  &.-fill-on-dark-bg,
+  &.-fill-on-white-bg {
+    background-color: $blue;
+    color: #fff;
+    fill: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0, 61, 198, 0.25);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-blue;
+      box-shadow: 0 6px 12px 0 rgba(0, 193, 255, 0.25);
+    }
+  }
+
+  &.-fill-on-dark-bg:active {
+    background-color: rgba($light-blue, 0.75);
+  }
+
+  &.-fill-on-white-bg:active {
+    background-color: rgba($light-blue, 0.5);
+  }
+
+  &.-fill-on-gray-bg,
+  &.-fill-on-blue-bg {
+    background-color: #fff;
+    color: $base;
+    fill: $base;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      fill: #fff;
+      background-color: #00c1ff;
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.25);
+    }
+
+    &:active {
+      background-color: rgba(#00c1ff, 0.75);
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.15);
+    }
+  }
+  // disabled button
+  &.-fill-disabled-on-dark-bg {
+    color: rgba(#fff, 0.4);
+    fill: rgba(#fff, 0.4);
+    background-color: #5a6a83;
+  }
+
+  &.-fill-disabled-on-white-bg {
+    color: rgba(#fff, 0.7);
+    fill: rgba(#fff, 0.7);
+    background-color: #d6dae0;
+  }
+
+  &.-fill-disabled-on-blue-bg {
+    color: rgba(#fff, 0.4);
+    fill: rgba(#fff, 0.4);
+    background-color: #295bcb;
+  }
+
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+  // Button with icon
+  > .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  > .icon + .text {
+    margin-left: 10px;
+  }
+
+  > .text + .icon {
+    margin-left: 10px;
+  }
+}
