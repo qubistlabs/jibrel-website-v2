@@ -50,24 +50,4 @@ FooterMenu: [
       },
     ]
   },
-  {
-    title: "Social",
-    links: [
-      {
-        link: "#",
-        modClass: "-box-inline",
-        socialIcon: "<svg class='icon' width='24' height='24'><use xlink:href='assets/img/svg-symbols.svg#s-c-facebook'></use></svg>"
-      },
-      {
-        link: "#",
-        modClass: "-box-inline",
-        socialIcon: "<svg class='icon' width='24' height='24'><use xlink:href='assets/img/svg-symbols.svg#s-c-twitter'></use></svg>"
-      },
-      {
-        link: "#",
-        modClass: "-box-inline",
-        socialIcon: "<svg class='icon' width='24' height='24'><use xlink:href='assets/img/svg-symbols.svg#s-c-linkedin'></use></svg>"
-      },
-    ]
-  },
 ]
