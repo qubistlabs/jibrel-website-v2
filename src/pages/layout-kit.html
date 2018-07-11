@@ -8,6 +8,7 @@
 <body>
   %=symbols=%
   {{> MainHeader/MainHeader MainHeader.color}}
+  {{> MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
     <div class='container -center-box _container-fix'>
@@ -28,11 +29,13 @@
     </div>
   </section>
 
-  <div class='section-content -up-card -offset-bottom _container-fix'>
-    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
-      {{#each CardTile.project}}
-      {{> CardTile/CardTile}}
-      {{/each}}
+  <div class='section-content -up-card -offset-bottom'>
+    <div class='container _container-fix'>
+      <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+        {{#each CardTile.project}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
     </div>
   </div>
 
@@ -40,11 +43,13 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-gray _container-fix'></section>
 
-  <section class='section-content -offset-top -offset-bottom _container-fix'>
-    <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
-      {{#each CardTile.project}}
-      {{> CardTile/CardTile}}
-      {{/each}}
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
+        {{#each CardTile.project}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
     </div>
   </section>
 
@@ -69,38 +74,77 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom'>
-    <div class='container _container-fix -bg-gray'>
+  <section class='section-content'>
+    <div class='container -bg-gray -offset-top -offset-bottom _container-fix'>
       <div class='card-tile -inner-border-vertical -inner-border-gray'>
-        {{#each card.about}}
+        {{#each CardTile.about}}
         {{> CardTile/CardTile}}
         {{/each}}
       </div>
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom -bg-gray-gradient'>
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
     <div class='container _container-fix'>
       <div>
-        <button class='j-button -fill-blue'><span class='text'>Button blue fill</span></button>
-        <button class='j-button -fill-blue-disabled'><span class='text'>Button blue fill disabled</span></button>
-        <button class='j-button -fill-white'><span class='text'>Button white fill</span></button>
-        <button class='j-button -fill-white-disabled'><span class='text'>Button white fill disabled</span></button>
-        <br>
-        <br>
-        <button class='j-button -fill-blue'>
+        <button class='j-button -w-limit-240 -fill-on-dark-bg'><span class='text'>Button blue fill</span></button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-dark-bg'><span class='text'>Button blue fill disabled</span></button>
+        <button class='j-button -w-limit-240 -fill-on-dark-bg'>
           {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
           <span class='text'>Btn blue with icon</span>
         </button>
-        <button class='j-button -fill-blue-disabled'>
+        <button class='j-button -w-limit-240 -fill-disabled-on-dark-bg'>
           {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
           <span class='text'>Btn blue with icon</span>
         </button>
-        <button class='j-button -fill-white'>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-blue'>
+    <div class='container _container-fix'>
+      <div>
+        <button class='j-button -w-limit-240 -fill-on-blue-bg'><span class='text'>Button white fill</span></button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-blue-bg'><span class='text'>Button white fill disabled</span></button>
+        <button class='j-button -w-limit-240 -fill-on-blue-bg'>
           {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
           <span class='text'>Btn white opacity with icon</span>
         </button>
-        <button class='j-button -fill-white-disabled'>
+        <button class='j-button -w-limit-240 -fill-disabled-on-blue-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white with icon</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <div>
+        <button class='j-button -w-limit-240 -fill-on-white-bg'><span class='text'>Button white fill</span></button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-white-bg'><span class='text'>Button white fill disabled</span></button>
+        <button class='j-button -w-limit-240 -fill-on-white-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white opacity with icon</span>
+        </button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-white-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white with icon</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray'>
+    <div class='container _container-fix'>
+      <div>
+        <button class='j-button -w-limit-240 -fill-on-gray-bg'><span class='text'>Button white fill</span></button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-gray-bg'><span class='text'>Button white fill disabled</span></button>
+        <button class='j-button -w-limit-240 -fill-on-gray-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Btn white opacity with icon</span>
+        </button>
+        <button class='j-button -w-limit-240 -fill-disabled-on-gray-bg'>
           {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
           <span class='text'>Btn white with icon</span>
         </button>

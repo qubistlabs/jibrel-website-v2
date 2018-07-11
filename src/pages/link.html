@@ -1,0 +1,28 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.color}}
+  {{> MainMenu/MainMenu}}
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <ul>
+        {{#each __pages}}
+        <li>
+          <a href="{{this.href}}">{{this.name}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
