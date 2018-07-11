@@ -27,6 +27,7 @@
 
     &.-hide {
       @include hid;
+      z-index: -1;
     }
   }
 
