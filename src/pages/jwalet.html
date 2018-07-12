@@ -48,6 +48,32 @@
     </div>
   </section>
 
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <h2 class='title -white -text-center -box-center'>Choose a better way to manage your tokens</h2>
+      <div class='descr -white -text-center -box-center -offset-bottom'>Future is already here – manage and monitor your tokens on the move</div>
+      <div class='j-buttons -center'>
+        <a href='#' class='j-button -w-limit-180 -fill-on-dark-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Open Web App</span>
+        </a>
+        <a href='#' class='j-button -w-limit-180 -fill-disabled-on-dark-bg'><span class='text'>iOS Coming soon</span></a>
+        <a href='#' class='j-button -w-limit-180 -fill-disabled-on-dark-bg'><span class='text'>Android Coming soon</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix -offset-top -offset-bottom -bg-gray'>
+      <h2 class='title -text-center -box-center'>Frequently Asked Questions</h2>
+      <div class='content-faq -offset-top'>
+        {{#each ContentFaq.jwalet}}
+        {{> ContentFaq/ContentFaq}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
   <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
       {{> BaseForm/BaseForm}}
