@@ -5,10 +5,6 @@
   display: inline-block;
   font-size: 0;
 
-  &:active {
-    user-select: none;
-  }
-
   > .icon,
   > .text,
   > .cross {
@@ -80,6 +76,8 @@
   }
 
   &:active {
+    user-select: none;
+
     &.-color,
     &.-white {
       > .icon {

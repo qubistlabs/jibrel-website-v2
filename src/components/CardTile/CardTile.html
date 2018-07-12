@@ -25,5 +25,14 @@
       <span class='text'>More info</span>
     </a>
     {{/is}}
+    {{#is buttons '!=' ''}}
+    {{#each this.buttons}}
+    <div class='button'>
+      {{#is this.type '==' 'link'}}
+      <a href='{{this.link}}' class='j-button {{this.class}}'><span class='text'>{{this.text}}</span></a>
+      {{/is}}
+    </div>
+    {{/each}}
+    {{/is}}
   </div>
 </div>

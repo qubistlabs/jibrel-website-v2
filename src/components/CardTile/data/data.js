@@ -213,6 +213,150 @@ CardTile: {
     },
   ],
 
+  jCoreRowOne: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/presentation-bar-graph.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Designed by Finance Professionals',
+      subTitle: 'false',
+      descr: 'Jibrel Core is designed specifically for financial services, with plug and play modules for core banking solutions',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/link.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Built by Blockchain Experts',
+      subTitle: 'false',
+      descr: 'Our blockchain focused development team provide hands-on integration support every step of the way',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/server-favorite-heart.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Loved by Enterprise Users',
+      subTitle: 'false',
+      descr: 'With scalable, easy to use distributed ledger infrastructure, it’s easy to see why Enterprise users love Jibrel Core',
+      isHoverBox: 'false'
+    },
+  ],
+
+  jCoreRowTwo: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/bancking.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Core Banking',
+      subTitle: 'false',
+      descr: 'Build digital and virtual banking infrastructure in days, not months. Jibrel Core provides the core banking modules required to power a complete digital banking solution',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/protection-check.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Built by Blockchain Experts',
+      subTitle: 'false',
+      descr: 'With Jibrel Clear built-in, all activity on Jibrel Core chains is screened and filtered against OFAC, PEP, sanction lists, and other watch lists. Malicious activity is quarantined to ensure ongoing compliance',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/book-edit.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Loved by Enterprise Users',
+      subTitle: 'false',
+      descr: 'Using Jibrel Search and Clear modules, Enterprise users have audit reports at the touch of a button. Reports can be generated on a one-off as well as batch basis, using the Jibrel web portal',
+      isHoverBox: 'false'
+    },
+  ],
+
+  jCoreUseCase: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -padding-small',
+      imgType: 'svg',
+      modClassImg: '',
+      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-location-pin-direction"></use></svg>',
+      title: 'Designed by Finance Professionals',
+      subTitle: 'false',
+      descr: 'Jibrel Core is designed specifically for financial services, with plug and play modules for core banking solutions',
+      isHoverBox: 'false',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-limit-240 -fill-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -padding-small',
+      imgType: 'svg',
+      modClassImg: '',
+      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-fingerprint-login"></use></svg>',
+      title: 'Built by Blockchain Experts',
+      subTitle: 'false',
+      descr: 'Our blockchain focused development team provide hands-on integration support every step of the way',
+      isHoverBox: 'false',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-limit-240 -fill-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -padding-small',
+      imgType: 'svg',
+      modClassImg: '',
+      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-coin-receive"></use></svg>',
+      title: 'Loved by Enterprise Users',
+      subTitle: 'false',
+      descr: 'With scalable, easy to use distributed ledger infrastructure, it’s easy to see why Enterprise users love Jibrel Core',
+      isHoverBox: 'false',
+      buttons: [
+        {
+          type: 'link',
+          class: '-w-limit-240 -fill-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
+    },
+  ],
+
 
   compliteEterpriseSolution: [
     {

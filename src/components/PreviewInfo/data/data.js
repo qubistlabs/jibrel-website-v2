@@ -59,4 +59,16 @@ PreviewInfo: {
     buttonClass: '-fill-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
   },
+  jcore: {
+    modClassText: '-w50 -up-visual-center',
+    modClassPicture: '-w50',
+    modClassTitle: '',
+    modClassDescr: '-small-size',
+    title: 'Jibrel Core',
+    descr: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Lorem dolor sit amet, consectetu incididunt ut labore et dolore magna aliqua.',
+    img: '/assets/img/content/desktop-1x.png',
+    img2x: '/assets/img/content/desktop-2x.png 2x',
+    buttonClass: '-fill-on-gray-bg -w-limit-240',
+    buttonText: 'Try it now',
+  },
 }
