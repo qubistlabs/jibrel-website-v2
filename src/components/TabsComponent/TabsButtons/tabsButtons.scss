@@ -1,0 +1,51 @@
+.tabs-buttons {
+  font-size: 0;
+
+  &.-center {
+    text-align: center;
+  }
+
+  > .item {
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &.-active {
+      cursor: default;
+    }
+
+    &.-white {
+      color: #fff;
+
+      &.-active {
+        color: #fff;
+        border-bottom-color: #fff;
+      }
+    }
+
+    &.-color {
+      color: #fff;
+
+      &.-active {
+        color: $blue;
+        border-bottom-color: $blue;
+      }
+    }
+
+    &:hover {
+      border-color: $light-blue;
+      color: $light-blue;
+    }
+
+    &:active {
+      border-color: rgba($light-blue, 0.5);
+      color: rgba($light-blue, 0.5);
+    }
+  }
+}
