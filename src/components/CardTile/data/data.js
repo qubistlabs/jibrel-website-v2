@@ -123,6 +123,48 @@ CardTile: {
     },
   ],
 
+  productsCompany: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jwalet.svg',
+      imgW: '111',
+      imgH: '84',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jcash.svg',
+      imgW: '92',
+      imgH: '86',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
+      isHoverBox: 'true'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-square -color -is-hover-overlay -bg-white',
+      imgType: 'img',
+      modClassImg: '-logo-project',
+      img: '/assets/img/general/icon/jnode.svg',
+      imgW: '89',
+      imgH: '89',
+      title: 'false',
+      subTitle: 'false',
+      descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
+      isHoverBox: 'true'
+    },
+  ],
+
 
   projectJwalet: [
     {
