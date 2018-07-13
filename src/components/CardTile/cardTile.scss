@@ -114,6 +114,10 @@
           &.-stroke {
             fill: none;
             stroke-width: 2px;
+
+            &.-on-hover {
+              transition: stroke 0.2s ease-in-out;
+            }
           }
         }
 
@@ -243,9 +247,23 @@
         }
       }
 
+      > .button {
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+      }
+
       &:hover {
         > .overlay {
           opacity: 1;
+        }
+
+        > .img {
+          > .icon.-on-hover {
+            &.-stroke {
+              stroke: $light-blue;
+            }
+          }
         }
       }
 

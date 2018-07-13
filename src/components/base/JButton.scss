@@ -1,3 +1,14 @@
+.j-buttons {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+
+  &.-center {
+    text-align: center;
+  }
+}
+
 .j-button {
   @extend ._all-reset;
 
@@ -18,8 +29,16 @@
     margin-right: 20px;
   }
 
+  &.-w-limit-180 {
+    max-width: 180px;
+  }
+
   &.-w-limit-240 {
     max-width: 240px;
+  }
+
+  &.-w-auto {
+    width: auto;
   }
 
   &.-fill-on-dark-bg,

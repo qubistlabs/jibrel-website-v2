@@ -27,6 +27,8 @@
 
     &.-hide {
       @include hid;
+
+      z-index: -1;
     }
   }
 
@@ -230,6 +232,18 @@
       font-weight: normal;
       color: rgba($base, 0.6);
       line-height: (24/14);
+
+      &.-white {
+        color: #fff;
+      }
+
+      &.-offset-bottom {
+        margin-bottom: 50px;
+      }
+
+      &.-w-limit-650 {
+        max-width: 650px;
+      }
 
       &.-w-limit {
         max-width: 360px;

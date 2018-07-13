@@ -76,6 +76,8 @@
   }
 
   &:active {
+    user-select: none;
+
     &.-color,
     &.-white {
       > .icon {
