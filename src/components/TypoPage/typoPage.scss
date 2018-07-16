@@ -1,6 +1,5 @@
 .typo-page {
   @extend ._all-reset;
-
   @extend .list-vacancies;
 
   display: block;
@@ -30,6 +29,7 @@
 
     > .data {
       padding-top: 9px;
+
       > .date {
         font-size: 13px;
         line-height: (24/13);

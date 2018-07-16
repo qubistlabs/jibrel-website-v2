@@ -135,30 +135,6 @@
     background-color: #295bcb;
   }
 
-  &.-border-on-blue-bg {
-    border: 1px solid #80a6ec;
-    color: #fff;
-
-    &:hover {
-      border-color: #fff;
-    }
-
-    &:active {
-      border-color: #809ee3;
-      color: #809ee3;
-    }
-  }
-
-  &.-border-on-white-bg {
-    border: 1px solid rgba($blue, .5);
-    color: $blue;
-
-    &:hover {
-      border: 1px solid rgba($light-blue, .5);
-      color: $light-blue;
-    }
-  }
-
   &.-border-on-blue-bg,
   &.-border-on-white-bg {
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -181,6 +157,30 @@
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
       }
+    }
+  }
+
+  &.-border-on-blue-bg {
+    border: 1px solid #80a6ec;
+    color: #fff;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &:active {
+      border-color: #809ee3;
+      color: #809ee3;
+    }
+  }
+
+  &.-border-on-white-bg {
+    border: 1px solid rgba($blue, 0.5);
+    color: $blue;
+
+    &:hover {
+      border: 1px solid rgba($light-blue, 0.5);
+      color: $light-blue;
     }
   }
 

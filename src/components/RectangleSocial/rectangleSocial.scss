@@ -21,8 +21,10 @@
 
       &:active {
         background-color: #072b83;
+        box-shadow: 0 3px 6px transparent;
       }
     }
+
     &.-twitter {
       background-color: #1da1f3;
 
@@ -32,8 +34,10 @@
 
       &:active {
         background-color: #1891dd;
+        box-shadow: 0 3px 6px transparent;
       }
     }
+
     &.-linkedin {
       background-color: #2e92b7;
 
@@ -43,13 +47,6 @@
 
       &:active {
         background-color: #2383a7;
-      }
-    }
-
-    &.-facebook,
-    &.-twitter,
-    &.-linkedin {
-      &:active {
         box-shadow: 0 3px 6px transparent;
       }
     }
