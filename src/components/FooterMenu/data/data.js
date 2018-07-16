@@ -1,52 +1,52 @@
 FooterMenu: [
   {
-    title: "Company",
+    title: 'Company',
     links: [
       {
-        link: "#",
-        text: "About Jibrel"
+        link: '#',
+        text: 'About Jibrel'
       },
       {
-        link: "#",
-        text: "Press & Media"
+        link: '#',
+        text: 'Press & Media'
       },
       {
-        link: "#",
-        text: "Careers"
+        link: '#',
+        text: 'Careers'
       },
     ]
   },
   {
-    title: "Products",
+    title: 'Products',
     links: [
       {
-        link: "#",
-        text: "About Jibrel"
+        link: '#',
+        text: 'About Jibrel'
       },
       {
-        link: "#",
-        text: "Press & Media"
+        link: '#',
+        text: 'Press & Media'
       },
       {
-        link: "#",
-        text: "Careers"
+        link: '#',
+        text: 'Careers'
       },
     ]
   },
   {
-    title: "Enterprise",
+    title: 'Enterprise',
     links: [
       {
-        link: "#",
-        text: "Jibrel Search"
+        link: '#',
+        text: 'Jibrel Search'
       },
       {
-        link: "#",
-        text: "Jibrel Clear"
+        link: '#',
+        text: 'Jibrel Clear'
       },
       {
-        link: "#",
-        text: "Jibrel Core"
+        link: '#',
+        text: 'Jibrel Core'
       },
     ]
   },
