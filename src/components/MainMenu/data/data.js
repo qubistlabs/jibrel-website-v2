@@ -3,14 +3,13 @@ MainMenu: {
     {
       name: 'Jwallet',
       descr: 'User-friendly and secure wallet to manage digital assets',
-      link: '#',
+      link: 'jwalet.html',
       text: 'More info'
     },
     {
       name: 'Jcash',
       descr: 'Stable currencies on the Ethereum blockchain',
-      link: '#',
-      text: 'More info'
+      text: 'Coming soon'
     },
     {
       name: 'Jnode',
@@ -30,7 +29,8 @@ MainMenu: {
     {
       name: 'Jcore',
       descr: 'Blockchain platform developed specifically for Financial Services',
-      text: 'Coming soon'
+      link: 'jcore.html',
+      text: 'More info'
     },
   ],
   otherSection: [
@@ -38,15 +38,15 @@ MainMenu: {
       name: 'Company',
       pages: [
         {
-          link: '#',
+          link: 'about.html',
           name: 'About Jibrel',
         },
         {
-          link: '#',
+          link: 'press.html',
           name: 'Press & Media',
         },
         {
-          link: '#',
+          link: 'careers.html',
           name: 'Careers',
         },
       ]
@@ -55,15 +55,15 @@ MainMenu: {
       name: 'Contact',
       pages: [
         {
-          link: '#',
+          link: 'products.html',
           name: 'Product team',
         },
         {
-          link: '#',
+          link: 'media-team.html',
           name: 'Media team',
         },
         {
-          link: '#',
+          link: 'support.html',
           name: 'Support',
         },
       ]
