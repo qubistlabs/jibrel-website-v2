@@ -1,66 +1,76 @@
 TabsComponent: {
-  TabsButtons: {
+  TabLinks: {
     jWallet: [
       {
         item: 'Insights',
-        modClass: '-white -active'
+        modClass: '-white js-tab-select -active js-tab-select'
       },
       {
         item: 'Dashboards',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
       {
         item: 'Sending Funds',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
       {
         item: 'Templates',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
     ],
     jCash: [
       {
         item: 'Clear Simplicity',
-        modClass: '-white -active'
+        modClass: '-white -active js-tab-select'
       },
       {
         item: 'KYS Adress Registration',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
       {
         item: 'Convertation',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
       {
         item: 'Refund System',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
     ],
     jNode: [
       {
         item: 'Screen One',
-        modClass: '-white -active'
+        modClass: '-white -active js-tab-select'
       },
       {
         item: 'Other Screen',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
       {
         item: 'Next Third',
-        modClass: '-white'
+        modClass: '-white js-tab-select'
       },
     ],
     contact: [
       {
         item: 'General Overview',
-        modClass: '-color -active'
+        modClass: '-color -active js-tab-select'
       },
       {
         item: 'CryptoDepository Receipts',
-        modClass: '-color'
-      },
+        modClass: '-color js-tab-select'
+      }, 
       {
         item: 'Jibrel Network Token (JNT)',
+        modClass: '-color js-tab-select'
+      },
+    ],
+    policies: [
+      {
+        item: 'Privacy Policy',
+        modClass: '-color -active'
+      },
+      {
+        item: 'Cookies Policy',
         modClass: '-color'
       },
     ]
