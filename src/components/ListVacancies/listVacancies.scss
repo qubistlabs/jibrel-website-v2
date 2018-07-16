@@ -1,0 +1,93 @@
+.list-vacancies {
+  padding: 100px 100px 90px 100px;
+
+  > .title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: (48/36);
+    margin-bottom: 63px;
+  }
+
+  > .item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba($base, 0.08);
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    > .header {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      > .position {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: (30/16);
+        color: $base;
+        max-width: 375px;
+        transition: color 0.2s ease-in-out;
+      }
+
+      > .info {
+        white-space: nowrap;
+        position: relative;
+        top: 5px;
+
+        > .time,
+        > .place {
+          font-size: 13px;
+          line-height: (24/13);
+          color: $base;
+          display: inline-block;
+          vertical-align: middle;
+
+          @include ls(10);
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+
+          > .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            fill: $blue;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
+
+    > .body {
+      margin-top: 15px;
+
+      > .descr {
+        font-size: 13px;
+        line-height: (24/13);
+        color: $base-o;
+      }
+    }
+
+    &:hover {
+      > .header {
+        > .position {
+          color: $light-blue;
+        }
+      }
+    }
+
+    &:active {
+      > .header {
+        > .position {
+          color: $h-light-blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="list-vacancies">
+  <h1 class="title">Open Positions</h1>
+  {{#each ListVacancies}}
+  <a href="vacancy.html" class="item">
+    <div class="header">
+      <div class="position">{{this.position}}</div>
+      <div class="info">
+        <div class="time">{{Icon iconName='i-clock' className='icon' iconWidth='' iconHeight=''}} {{this.time}}</div>
+        <div class="place">{{Icon iconName='i-pin' className='icon' iconWidth='' iconHeight=''}} {{this.place}}</div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="descr">{{this.descr}}</div>
+    </div>
+  </a>
+  {{/each}}
+</div>

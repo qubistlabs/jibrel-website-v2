@@ -1,0 +1,23 @@
+<div class="team-slider">
+  <div class="swiper-container -team-slider">
+    <div class="swiper-wrapper">
+      {{#each ProjectSlider.teamSlide}}
+      <div class="swiper-slide -team-slide">
+        {{> ProjectSlider/TeamSlide/TeamSlide}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="swiper-prev">
+    {{Icon iconName='arr-l' className='icon -color' iconWidth='' iconHeight=''}}
+    <div class="avatar">
+      <img src="/assets/img/general/team/avatar-12.png" srcset="/assets/img/general/team/avatar-12@2x.png 2x" alt="" class="img">
+    </div>
+  </div>
+  <div class="swiper-next">
+    <div class="avatar">
+      <img src="/assets/img/general/team/avatar-2.png" srcset="/assets/img/general/team/avatar-2@2x.png 2x" alt="" class="img">
+    </div>
+    {{Icon iconName='arr-r' className='icon -color' iconWidth='' iconHeight=''}}
+  </div>
+</div>
