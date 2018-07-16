@@ -68,7 +68,8 @@ img {
 }
 
 ._container-fluid,
-._container-fix {
+._container-fix,
+._container-fix-small {
   margin-left: auto;
   margin-right: auto;
   width: $inner-width;
@@ -76,6 +77,10 @@ img {
 
 ._container-fix {
   max-width: $limit-inner-width-normal;
+}
+
+._container-fix-small {
+  max-width: 1045px;
 }
 
 ._main {
