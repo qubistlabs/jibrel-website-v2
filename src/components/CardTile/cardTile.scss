@@ -34,6 +34,10 @@
     display: inline-block;
     vertical-align: top;
 
+    &.-four-col {
+      width: 25%;
+    }
+
     &.-three-col {
       width: 33.333%;
     }

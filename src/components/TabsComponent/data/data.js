@@ -49,6 +49,20 @@ TabsComponent: {
         item: 'Next Third',
         modClass: '-white'
       },
+    ],
+    contact: [
+      {
+        item: 'General Overview',
+        modClass: '-color -active'
+      },
+      {
+        item: 'CryptoDepository Receipts',
+        modClass: '-color'
+      },
+      {
+        item: 'Jibrel Network Token (JNT)',
+        modClass: '-color'
+      },
     ]
   },
   TabsContent: {
