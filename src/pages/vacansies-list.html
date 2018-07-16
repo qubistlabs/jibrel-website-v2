@@ -12,11 +12,11 @@
 
   <div class='section-content -bg-gray'>
     <div class='container _container-fix'>
-      {{> PageHeader/PageHeader}}
+      {{> PageHeader/PageHeader PageHeader.sharePage}}
     </div>
   </div>
 
-  <section class='section-content -offset-top -offset-bottom -bg-gray'>
+  <section class='section-content -offset-bottom -bg-gray'>
     <div class='container _container-fix-small -bg-white'>
       {{> ListVacancies/ListVacancies}}
     </div>
@@ -34,8 +34,8 @@
   </section>
 
   <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/general-app.jpg);'>
-    <div class='container _container-fix'>
-      {{> GoForm}}
+    <div class='container _container-fix -offset-top -offset-bottom'>
+      {{> ContentMessage/ContentMessage}}
     </div>
   </section>
 
