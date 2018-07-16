@@ -80,7 +80,6 @@ CardTile: {
     },
   ],
 
-
   projectEnterprize: [
     {
       cardModClass: '-three-col',
@@ -164,7 +163,6 @@ CardTile: {
       isHoverBox: 'true'
     },
   ],
-
 
   projectJwalet: [
     {
@@ -399,6 +397,102 @@ CardTile: {
     },
   ],
 
+  contactMainPage: [
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/zug.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Zug',
+      subTitle: 'false',
+      descr: 'Baarerstrasse 10 6302, Canton of Zug Switzerland <br> +41 44-296-8787',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/new-york.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'New York',
+      subTitle: 'false',
+      descr: '135 Madison Avenue New York, 10016 NY, United States <br>+1 929-262-1817',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/peters.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'St. Petersburg',
+      subTitle: 'false',
+      descr: 'Nevsky Avenue, 153 St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/dubai.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Dubai',
+      subTitle: 'false',
+      descr: 'Burjuman Business Tower Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      isHoverBox: 'false',
+    },
+  ],
+
+  whyWorkJibrel: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/computer-chip.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Innovative Technology',
+      subTitle: 'false',
+      descr: 'As part of the Jibrel team, you will get the opportunity to work with the latest technologies to deliver cross-industry, cross-geography, measurable impact.',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/boat.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Work / Life Flexibility',
+      subTitle: 'false',
+      descr: 'With an output-driven culture, <i>Jibrelites</i> are given complete freedom as to how they approach their work. Delivering results while maintaining integrity is the only yardstick.',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/firewall.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'No Artificial Barriers',
+      subTitle: 'false',
+      descr: 'We don’t believe in hierarchy. With our flat structure, merit, skill-sets and expertise are the metrics that will dictate the content you work on and the responsibilities you are given',
+      isHoverBox: 'false',
+    },
+  ],
 
   compliteEterpriseSolution: [
     {
