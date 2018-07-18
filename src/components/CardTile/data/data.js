@@ -11,7 +11,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -24,7 +25,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -37,7 +39,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -50,7 +53,8 @@ CardTile: {
       title: 'Jibrel Search',
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -63,7 +67,8 @@ CardTile: {
       title: 'Jibrel Clear',
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -76,7 +81,8 @@ CardTile: {
       title: 'Jibrel Core',
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
 
@@ -92,7 +98,8 @@ CardTile: {
       title: 'Jibrel Search',
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -105,7 +112,8 @@ CardTile: {
       title: 'Jibrel Clear',
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -118,7 +126,8 @@ CardTile: {
       title: 'Jibrel Core',
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
 
@@ -134,7 +143,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -147,7 +157,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -160,7 +171,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
 
@@ -449,6 +461,65 @@ CardTile: {
       subTitle: 'false',
       descr: 'Burjuman Business Tower Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
       isHoverBox: 'false',
+    },
+  ],
+
+  mediaAndPress: [
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/book-disk.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Jibrel Logos',
+      subTitle: '.svg, 10 Kb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/file-text-document.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Press Boilerplates',
+      subTitle: '.jpg, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col', 
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/file-binary-download.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Media Policy',
+      subTitle: '.pdf, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/jLogo.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Brand Guidelines',
+      subTitle: '.pdf, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
     },
   ],
 
