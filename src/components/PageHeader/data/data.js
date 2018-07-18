@@ -4,5 +4,8 @@ PageHeader: {
   },
   policyPage: {
     typePage: 'policyPage'
+  },
+  newsPage: {
+    typePage: 'newsPage'
   }
 }
