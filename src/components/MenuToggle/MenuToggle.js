@@ -21,11 +21,17 @@ function enableScroll() {
 function menuToggleFN() {
   if (menuPopup.classList.contains('-hide')) {
     menuPopup.classList.remove('-hide')
+    setTimeout(() => {
+      menuPopup.classList.remove('-animation-hide')
+    }, 10)
     disableScroll()
     return
   }
   enableScroll()
-  menuPopup.classList.add('-hide')
+  menuPopup.classList.add('-animation-hide')
+  setTimeout(() => {
+    menuPopup.classList.add('-hide')
+  }, 200)
 }
 
 menuToggle.forEach((element) => {

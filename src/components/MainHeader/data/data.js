@@ -9,4 +9,8 @@ MainHeader: {
     modClass: '-color',
     openMenu: 'true'
   },
+  small: {
+    modClass: '-color',
+    modClassContainer: '-small -bg-white'
+  },
 }

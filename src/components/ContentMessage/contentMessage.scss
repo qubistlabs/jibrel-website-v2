@@ -1,0 +1,25 @@
+.content-message {
+  text-align: center;
+
+  > .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: normal;
+    line-height: (36/24);
+  }
+
+  > .descr {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 14px;
+    line-height: (24/10);
+
+    @include ls(10);
+  }
+
+  > .button {
+    margin-top: 50px;
+  }
+}

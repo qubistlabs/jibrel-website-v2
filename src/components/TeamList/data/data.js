@@ -1,7 +1,7 @@
 TeamList: [
   {
     img: 'avatar-1.png',
-    img2x: 'avatar-1@2x@2x.png',
+    img2x: 'avatar-1@2x.png',
     name: 'Yazan',
     position: 'Project Lead'
   },

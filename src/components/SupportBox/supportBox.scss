@@ -1,0 +1,34 @@
+.support-box {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  > .descr {
+    font-size: 14px;
+    line-height: (24/14);
+    margin-bottom: 30px;
+
+    @include ls(10);
+  }
+
+  > .link {
+    color: $blue;
+    font-size: 36px;
+    line-height: (48/36);
+
+    @include ls(25);
+  }
+
+  > .button {
+    margin-top: 40px;
+    margin-bottom: 37px;
+    text-align: center;
+  }
+
+  > .info {
+    font-size: 13px;
+    color: $base-o;
+  }
+}

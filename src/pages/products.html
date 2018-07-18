@@ -34,13 +34,13 @@
       <h2 class='title -white -text-center -box-center'>jWallet — Official ERC-20 wallet of the Jibrel Network</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>jWallet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
 
-      <div class="tabs-component -offset-top">
-        <div class="tabs-buttons -center">
-          {{#each TabsComponent.TabsButtons.jWallet}}
-          {{> TabsComponent/TabsButtons/TabsButtons}}
+      <div class='tabs-component -offset-top'>
+        <div class='tab-links -center'>
+          {{#each TabsComponent.TabLinks.jWallet}}
+          {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class="tabs-content">
+        <div class='tabs-content'>
           {{#each TabsComponent.TabsContent.jWallet}}
           {{> TabsComponent/TabsContent/TabsContent}}
           {{/each}}
@@ -52,13 +52,13 @@
       <h2 class='title -white -text-center -box-center'>jCash — Stable currencies on the Ethereum Blockchain</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel is dedicated to providing blockchain-powered digital currency solutions to enterprise and individual users, allowing smart contract technology to be used in traditional finance.</p>
 
-      <div class="tabs-component -offset-top">
-        <div class="tabs-buttons -center">
-          {{#each TabsComponent.TabsButtons.jCash}}
-          {{> TabsComponent/TabsButtons/TabsButtons}}
+      <div class='tabs-component -offset-top'>
+        <div class='tab-links -center'>
+          {{#each TabsComponent.TabLinks.jCash}}
+          {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class="tabs-content">
+        <div class='tabs-content'>
           {{#each TabsComponent.TabsContent.jCash}}
           {{> TabsComponent/TabsContent/TabsContent}}
           {{/each}}
@@ -70,13 +70,13 @@
       <h2 class='title -white -text-center -box-center'>jNode — Enterprise-grade, easily set-up, Ethereum access</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel provides plug-and-play Ethereum access, with enterprise-grade up-time. Get your business on-chain without any blockchain development experience.</p>
 
-      <div class="tabs-component -offset-top">
-        <div class="tabs-buttons -center">
-          {{#each TabsComponent.TabsButtons.jNode}}
-          {{> TabsComponent/TabsButtons/TabsButtons}}
+      <div class='tabs-component -offset-top'>
+        <div class='tab-links -center'>
+          {{#each TabsComponent.TabLinks.jNode}}
+          {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class="tabs-content">
+        <div class='tabs-content'>
           {{#each TabsComponent.TabsContent.jNode}}
           {{> TabsComponent/TabsContent/TabsContent}}
           {{/each}}
@@ -86,11 +86,9 @@
   </section>
 
   <section class='section-content'>
-    <div class='container _container-fix -bg-gray -offset-top'>
-      <div class='title -text-center -box-center'>Our Team</div>
-      <div class='descr -text-center -box-center'>Jibrel is being developed by a group of experienced professionals who combine a deep understanding of financial services with technical expertise in Distributed Ledger Technology (DLT)</div>
-      <div class='team-list -offset-top'>
-        {{> TeamList/TeamList}}
+    <div class='container _container-fix -offset-top -offset-bottom'>
+      <div class='team-list'>
+        {{> ProjectSlider/TeamSlider/TeamSlider}}
       </div>
     </div>
   </section>

@@ -2,7 +2,7 @@
   <div class='box {{boxModClass}}'>
     <div class='img {{modClassImg}}'>
       {{#is imgType '==' 'img'}}
-      <img src='{{img}}' class='icon' width='{{imgW}}' height='{{imgH}}' alt=''>
+      <img src='{{img}}' class='icon' width='{{imgW}}' height='{{imgH}}' alt='icon'>
       {{else}}
       {{{img}}}
       {{/is}}
@@ -17,12 +17,12 @@
     <h3 class='subtitle'>{{subTitle}}</h3>
     {{/is}}
     {{#is descr '!=' 'false'}}
-    <p class='descr'>{{descr}}</p>
+    <p class='descr'>{{{descr}}}</p>
     {{/is}}
     {{#is isHoverBox '==' 'true'}}
     <a href='#' class='overlay -bg-light-blue'>
       {{Icon iconName='i-hand-tablet' className='hand' iconWidth='' iconHeight=''}}
-      <span class='text'>More info</span>
+      <span class='text'>{{this.hoverText}}</span>
     </a>
     {{/is}}
     {{#is buttons '!=' ''}}

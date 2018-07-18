@@ -11,7 +11,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -24,7 +25,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -37,7 +39,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -50,7 +53,8 @@ CardTile: {
       title: 'Jibrel Search',
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -63,7 +67,8 @@ CardTile: {
       title: 'Jibrel Clear',
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -76,10 +81,10 @@ CardTile: {
       title: 'Jibrel Core',
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
-
 
   projectEnterprize: [
     {
@@ -93,7 +98,8 @@ CardTile: {
       title: 'Jibrel Search',
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -106,7 +112,8 @@ CardTile: {
       title: 'Jibrel Clear',
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -119,7 +126,8 @@ CardTile: {
       title: 'Jibrel Core',
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
 
@@ -135,7 +143,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -148,7 +157,8 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
     {
       cardModClass: '-three-col',
@@ -161,10 +171,10 @@ CardTile: {
       title: 'false',
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
-      isHoverBox: 'true'
+      isHoverBox: 'true',
+      hoverText: 'More info'
     },
   ],
-
 
   projectJwalet: [
     {
@@ -345,7 +355,7 @@ CardTile: {
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-location-pin-direction"></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-location-pin-direction\'></use></svg>',
       title: 'Designed by Finance Professionals',
       subTitle: 'false',
       descr: 'Jibrel Core is designed specifically for financial services, with plug and play modules for core banking solutions',
@@ -364,7 +374,7 @@ CardTile: {
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-fingerprint-login"></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-fingerprint-login\'></use></svg>',
       title: 'Built by Blockchain Experts',
       subTitle: 'false',
       descr: 'Our blockchain focused development team provide hands-on integration support every step of the way',
@@ -383,7 +393,7 @@ CardTile: {
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class="icon -stroke -on-hover" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-coin-receive"></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-coin-receive\'></use></svg>',
       title: 'Loved by Enterprise Users',
       subTitle: 'false',
       descr: 'With scalable, easy to use distributed ledger infrastructure, it’s easy to see why Enterprise users love Jibrel Core',
@@ -399,6 +409,161 @@ CardTile: {
     },
   ],
 
+  contactMainPage: [
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/zug.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Zug',
+      subTitle: 'false',
+      descr: 'Baarerstrasse 10 6302, Canton of Zug Switzerland <br> +41 44-296-8787',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/new-york.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'New York',
+      subTitle: 'false',
+      descr: '135 Madison Avenue New York, 10016 NY, United States <br>+1 929-262-1817',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/peters.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'St. Petersburg',
+      subTitle: 'false',
+      descr: 'Nevsky Avenue, 153 St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/dubai.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Dubai',
+      subTitle: 'false',
+      descr: 'Burjuman Business Tower Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      isHoverBox: 'false',
+    },
+  ],
+
+  mediaAndPress: [
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/book-disk.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Jibrel Logos',
+      subTitle: '.svg, 10 Kb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/file-text-document.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Press Boilerplates',
+      subTitle: '.jpg, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col', 
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/file-binary-download.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Media Policy',
+      subTitle: '.pdf, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-square-tiny -color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/jLogo.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Brand Guidelines',
+      subTitle: '.pdf, 2.0 Mb',
+      descr: 'false',
+      isHoverBox: 'true',
+      hoverText: 'Download'
+    },
+  ],
+
+  whyWorkJibrel: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/computer-chip.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Innovative Technology',
+      subTitle: 'false',
+      descr: 'As part of the Jibrel team, you will get the opportunity to work with the latest technologies to deliver cross-industry, cross-geography, measurable impact.',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/boat.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Work / Life Flexibility',
+      subTitle: 'false',
+      descr: 'With an output-driven culture, <i>Jibrelites</i> are given complete freedom as to how they approach their work. Delivering results while maintaining integrity is the only yardstick.',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/firewall.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'No Artificial Barriers',
+      subTitle: 'false',
+      descr: 'We don’t believe in hierarchy. With our flat structure, merit, skill-sets and expertise are the metrics that will dictate the content you work on and the responsibilities you are given',
+      isHoverBox: 'false',
+    },
+  ],
 
   compliteEterpriseSolution: [
     {
@@ -486,7 +651,7 @@ CardTile: {
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="57" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-business-bag-cash"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-business-bag-cash\'></use></svg>',
       title: 'Enterprise Ready',
       subTitle: 'false',
       descr: 'Jibrel solutions meet the highest standards in technology, security and compliance',
@@ -497,7 +662,7 @@ CardTile: {
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-notebook-favorite"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-notebook-favorite\'></use></svg>',
       title: 'User Friendly',
       subTitle: 'false',
       descr: 'No blockchain experience? No problem. All solutions are straightforward and simple to use.',
@@ -508,7 +673,7 @@ CardTile: {
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-expand"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-expand\'></use></svg>',
       title: 'Scalable',
       subTitle: 'false',
       descr: 'Using Jibrel off-chain modules, users can scale their infrastructure to their needs',
@@ -521,7 +686,7 @@ CardTile: {
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="57" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-bank"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-bank\'></use></svg>',
       title: 'Banks & Non-bank FIs',
       subTitle: 'false',
       descr: 'Financial Institutions are using Jibrel to streamline transacting traditional and digital assets.',
@@ -532,7 +697,7 @@ CardTile: {
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-store"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-store\'></use></svg>',
       title: 'Small & Medium Enterprises',
       subTitle: 'false',
       descr: 'SMEs are capitalizing on low cost, instant settlement, global payments and transfers.',
@@ -543,7 +708,7 @@ CardTile: {
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="60" height="60"><use xlink:href="assets/img/svg-symbols.svg#i-goverment"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-goverment\'></use></svg>',
       title: 'Governments & Regulators    ',
       subTitle: 'false',
       descr: 'Public sector users are using Jibrel to increase operational efficiency, transparency and oversight.',
@@ -569,7 +734,7 @@ CardTile: {
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class="icon -stroke" width="56" height="57"><use xlink:href="assets/img/svg-symbols.svg#i-business-statistics"></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'56\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-business-statistics\'></use></svg>',
       title: 'Enterprise Solutions',
       subTitle: 'false',
       descr: 'We’re working with corporates, regulators and governments to bring increased efficiency and transparency to financial services',

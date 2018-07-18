@@ -13,11 +13,19 @@
     border-radius: 3px;
     padding: 65px 30px 70px 30px;
 
+    &.-no-offset-top {
+      padding-top: 0;
+    }
+
     > .title {
       font-size: 24px;
       font-weight: normal;
       text-align: center;
       margin-bottom: 55px;
+
+      &.-offset-small {
+        margin-bottom: 40px;
+      }
     }
 
     > .form {
@@ -26,12 +34,22 @@
       margin-left: auto;
       margin-right: auto;
 
+      &.-w-large {
+        max-width: 600px;
+      }
+
       > .item {
         position: relative;
         display: block;
 
         &:not(:last-child) {
           margin-bottom: 16px;
+        }
+
+        &.-no-offset {
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
         }
 
         > .label {
@@ -46,12 +64,18 @@
           width: 100%;
           border-width: 0;
           border-bottom: 1px solid rgba($base, 0.2);
-          font-size: 13px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $base;
 
           @include font;
 
           &.-input {
             height: 70px;
+
+            &.-small {
+              height: 50px;
+            }
           }
 
           &.-textarea {
@@ -66,7 +90,7 @@
         max-width: 360px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 15px;
+        margin-top: 30px;
       }
     }
   }

@@ -1,0 +1,45 @@
+.team-slide {
+  @extend ._all-reset;
+
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  > .avatar {
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    > .img {
+      width: 100%;
+    }
+  }
+
+  > .name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: (30/16);
+    padding-top: 15px;
+  }
+
+  > .position {
+    @include ls(10);
+
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: $base;
+    line-height: (24/13);
+  }
+
+  > .descr {
+    @include ls(10);
+
+    font-size: 14px;
+    line-height: (24/14);
+    color: $base-o;
+    margin-top: 20px;
+  }
+}

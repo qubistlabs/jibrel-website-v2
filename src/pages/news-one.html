@@ -1,0 +1,42 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.sharePage}}
+    </div>
+  </div>
+
+  <section class='section-content -offset-bottom -bg-gray'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> TypoPage/TypoPage TypoPage.news}}
+
+      <div class='base-form'>
+        <div class='container -no-offset-top'>
+          <h2 class='title -offset-small'>Subscribe to our weekly newsletter</h2>
+          <form action='' class='form -w-large'>
+            <label class="item -no-offset">
+              <input type="text" class="field -input -small" required="" placeholder="Email Address *">
+            </label>
+            <div class='button'>
+              <button class='j-button -fill-on-white-bg -w100'><span class='text'>Subscribe</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

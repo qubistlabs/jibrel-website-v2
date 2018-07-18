@@ -1,0 +1,63 @@
+.list-vacancies {
+  padding: 80px 100px 90px 100px;
+
+  > .title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: (48/36);
+    margin-bottom: 63px;
+  }
+
+  > .item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba($base, 0.08);
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    > .header {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      > .position {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: (30/16);
+        color: $base;
+        padding-right: 30px;
+        transition: color 0.2s ease-in-out;
+      }
+    }
+
+    > .body {
+      margin-top: 15px;
+
+      > .descr {
+        font-size: 13px;
+        line-height: (24/13);
+        color: $base-o;
+      }
+    }
+
+    &:hover {
+      > .header {
+        > .position {
+          color: $light-blue;
+        }
+      }
+    }
+
+    &:active {
+      > .header {
+        > .position {
+          color: $h-light-blue;
+        }
+      }
+    }
+  }
+}
