@@ -1,0 +1,13 @@
+<div class='row -offset-top'>
+  <div class='box -text-inside'>
+    <h2 class='title'>{{this.title}}</h2>
+    <ul>
+      {{#each this.list}}
+      <li>{{this.item}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class='box -image-inside'>
+    <img src='{{this.img}}' srcset='{{this.img2x}} 2x' alt='{{this.title}}' class='img'>
+  </div>
+</div>
