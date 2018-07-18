@@ -42,7 +42,7 @@ MainMenu: {
           name: 'About Jibrel',
         },
         {
-          link: 'press.html',
+          link: 'news.html',
           name: 'Press & Media',
         },
         {
