@@ -1,11 +1,8 @@
 FooterMenu: [
   {
-    title: 'Company',
+    title: 'About',
+    link: 'about.html',
     links: [
-      {
-        link: 'about.html',
-        text: 'About Jibrel'
-      },
       {
         link: '.html',
         text: 'Press & Media'
@@ -14,10 +11,15 @@ FooterMenu: [
         link: '.html',
         text: 'Careers'
       },
+      {
+        link: 'vacansies-list.html',
+        text: 'Vacancies'
+      },
     ]
   },
   {
-    title: 'Products',
+    title: 'Consumer',
+    link: 'products.html',
     links: [
       {
         link: 'jwalet.html',
@@ -35,6 +37,7 @@ FooterMenu: [
   },
   {
     title: 'Enterprise',
+    link: 'enterprize.html',
     links: [
       {
         link: 'jsearch.html',
@@ -47,6 +50,24 @@ FooterMenu: [
       {
         link: 'jcore.html',
         text: 'Jibrel Core'
+      },
+    ]
+  },
+  {
+    title: 'Contact',
+    link: 'contact-us.html',
+    links: [
+      {
+        modal: '#popup-product',
+        text: 'Product team'
+      },
+      {
+        modal: '#popup-media',
+        text: 'Media team'
+      },
+      {
+        modal: '#popup-support',
+        text: 'Support'
       },
     ]
   },

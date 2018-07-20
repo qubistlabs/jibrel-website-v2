@@ -1,31 +1,31 @@
 InnerMenu: {
   contacts: [
     {
-      link: '#',
+      attr: '#popup-media',
       text: 'Media & PR Inquiries',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
     },
     {
-      link: '#',
+      attr: '#popup-support',
       text: 'Technical Support',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
     },
     {
-      link: '#',
+      attr: '#popup-product',
       text: 'Product & Sales Enquiry',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
     },
   ],
   careers: [
     {
-      link: '#',
+      attr: 'data-scroll-to=\'#list-vacancies\'',
       text: 'See open positions',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-scroll-to'
     },
     {
-      link: '#',
+      attr: 'data-popup-id=\'#popup-apply-resume\'',
       text: 'Apply with resume',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open'
     },
   ]
 }

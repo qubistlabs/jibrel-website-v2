@@ -1,7 +1,7 @@
 TypoPage: {
   vacancy: {
     title: 'Industry Program Digital Manager, Manufacturing, Services',
-    data: '<a href=\'#\' class=\'j-button -w-auto -border-on-white-bg\'>Apply with resume</a>',
+    data: '<button class=\'j-button -w-auto -border-on-white-bg\'>Apply with resume</button>',
     jobInfo: 'true',
     wysiwyg: '<h2>Job Description</h2>\
     <p>Fueled by a fundamental belief that having access to financial services creates opportunity, PayPal (NASDAQ: PYPL) is committed to democratizing financial services and empowering people and businesses to join and thrive in the global economy.</p>\
@@ -51,6 +51,7 @@ TypoPage: {
   news: {
     title: 'Jibrel Network Is Bridging The Gap Between Crypto And Traditional Markets',
     data: 'false',
+    date: 'true',
     wysiwyg: '  <p>Blockchain protocol development organization Devvio announced on Monday that its Devcash blockchain has achieved impressive results. It notched up over 2.5 million on-chain transactions per second, compared to the five transactions per second currently processed by the Bitcoin network and an estimated 24,000 transactions per second processed by Visa.</p>\
       <img src=\'/assets/img/content/news-one.jpg\' alt=\'/\'>\
       <p>Devvio CEO Tom Anderson stated, “These results let us build a business upon the most scalable blockchain protocol in existence. When you combine this level of scalability with our stability solution, our fraud/theft/loss protections, and our privacy approach, our protocol represents a viable solution for the future of financial transactions across the world, including areas such as payment processing and Forex trading. I feel we have the most exciting technology in one of the most important up-and-coming technological fields.”</p>\
