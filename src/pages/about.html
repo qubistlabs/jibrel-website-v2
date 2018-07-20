@@ -8,7 +8,7 @@
 <body>
   %=symbols=%
   {{> MainHeader/MainHeader MainHeader.white}}
-  {{> MainMenu/MainMenu}}
+  {{> PopUp/MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
     <div class='container -center-box _container-fix'>
@@ -81,11 +81,12 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
-      {{> BaseForm/BaseForm}}
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
     </div>
   </section>
 
   {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
   {{> ProjectStatic/ProjectStatic}}
 </body>
 </html>

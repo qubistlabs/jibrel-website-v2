@@ -8,7 +8,7 @@
 <body>
   %=symbols=%
   {{> MainHeader/MainHeader MainHeader.color}}
-  {{> MainMenu/MainMenu}}
+  {{> PopUp/MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
     <div class='container -center-box _container-fix'>
@@ -163,7 +163,7 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
-      {{> BaseForm/BaseForm}}
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
     </div>
   </section>
 
@@ -189,6 +189,7 @@
   </section>
 
   {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
   {{> ProjectStatic/ProjectStatic}}
 </body>
 </html>

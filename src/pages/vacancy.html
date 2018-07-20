@@ -8,7 +8,7 @@
 <body>
   %=symbols=%
   {{> MainHeader/MainHeader MainHeader.small}}
-  {{> MainMenu/MainMenu}}
+  {{> PopUp/MainMenu/MainMenu}}
 
   <div class='section-content -bg-gray'>
     <div class='container _container-fix'>
@@ -20,7 +20,7 @@
     <div class='container _container-fix-small -bg-white'>
       {{> TypoPage/TypoPage TypoPage.vacancy}}
 
-      <div class='base-form'>
+      <div class='project-form'>
         <div class='container -no-offset-top'>
           <h2 class='title -offset-small'>Apply for this position</h2>
           <form action='' class='form -w-large'>
@@ -31,7 +31,7 @@
               <input type="text" class="field -input -small" required="" placeholder="Email Address *">
             </label>
             <div class='button'>
-              <button class='j-button -fill-on-white-bg -w100'><span class='text'>Submit application</span></button>
+              <button class='j-button -fill-on-white-bg -w100 js-send-form'><span class='text'>Submit application</span></button>
             </div>
           </form>
         </div>
@@ -40,6 +40,7 @@
   </section>
 
   {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
   {{> ProjectStatic/ProjectStatic}}
 </body>
 </html>
