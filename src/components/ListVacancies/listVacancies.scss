@@ -1,6 +1,10 @@
 .list-vacancies {
   padding: 80px 100px 90px 100px;
 
+  &.-small-offset {
+    padding: 50px 100px 50px 100px;
+  }
+
   > .title {
     font-weight: normal;
     font-size: 36px;

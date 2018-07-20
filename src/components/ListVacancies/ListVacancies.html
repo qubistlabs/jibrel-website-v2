@@ -1,14 +1,12 @@
-<div class='list-vacancies'>
-  <h1 class='title'>Open Positions</h1>
-  {{#each ListVacancies}}
-  <a href='vacancy.html' class='item'>
-    <div class='header'>
-      <div class='position'>{{this.position}}</div>
-      {{> JobInfo/JobInfo JobInfo.vacanciesList}}
-    </div>
-    <div class='body'>
-      <div class='descr'>{{this.descr}}</div>
-    </div>
-  </a>
-  {{/each}}
-</div>
+
+{{#each ListVacancies}}
+<a href='vacancy.html' class='item'>
+  <div class='header'>
+    <div class='position'>{{this.position}}</div>
+    {{> JobInfo/JobInfo JobInfo.vacanciesList}}
+  </div>
+  <div class='body'>
+    <div class='descr'>{{this.descr}}</div>
+  </div>
+</a>
+{{/each}}
