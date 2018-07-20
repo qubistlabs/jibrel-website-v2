@@ -1,0 +1,10 @@
+.career-slider {
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.career-slide {
+  > .img {
+    width: 100%;
+  }
+}
