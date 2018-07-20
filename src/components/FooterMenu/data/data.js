@@ -3,15 +3,15 @@ FooterMenu: [
     title: 'Company',
     links: [
       {
-        link: '#',
+        link: 'about.html',
         text: 'About Jibrel'
       },
       {
-        link: '#',
+        link: '.html',
         text: 'Press & Media'
       },
       {
-        link: '#',
+        link: '.html',
         text: 'Careers'
       },
     ]
@@ -20,16 +20,16 @@ FooterMenu: [
     title: 'Products',
     links: [
       {
-        link: '#',
-        text: 'About Jibrel'
+        link: 'jwalet.html',
+        text: 'Jibrel Wallet'
       },
       {
         link: '#',
-        text: 'Press & Media'
+        text: 'Jibrel Cash'
       },
       {
         link: '#',
-        text: 'Careers'
+        text: 'Jibrel Node'
       },
     ]
   },
@@ -37,15 +37,15 @@ FooterMenu: [
     title: 'Enterprise',
     links: [
       {
-        link: '#',
+        link: 'jsearch.html',
         text: 'Jibrel Search'
       },
       {
-        link: '#',
+        link: 'jclear.html',
         text: 'Jibrel Clear'
       },
       {
-        link: '#',
+        link: 'jcore.html',
         text: 'Jibrel Core'
       },
     ]

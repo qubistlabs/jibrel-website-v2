@@ -84,5 +84,37 @@ ProjectSlider: {
       position: 'UX/UI Designer',
       descr: '“For companies looking to incorporate blockchain technology in their operating models, integration can be a challenge. Our solution allows institutions to use tokens in the back-end, capitalizing on the benefits of blockchain, without the need to build-out dedicated functionalities and competencies.”'
     },
+  ],
+  careerSlide: [
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'una'
+    },
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'dos'
+    },
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'tres'
+    },
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'una'
+    },
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'dos'
+    },
+    {
+      img: 'career-slide-2@2x.jpg',
+      img2x: 'career-slide-2@2x.jpg',
+      class: 'tres'
+    },
   ]
 }

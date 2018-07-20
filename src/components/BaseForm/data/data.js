@@ -2,11 +2,13 @@ BaseForm: {
   base: [
     {
       label: 'First Name *',
-      fieldType: '-input'
+      fieldType: '-input',
+      type: 'text'
     },
     {
       label: 'Business Email Address *',
-      fieldType: '-input'
+      fieldType: '-input',
+      type: 'email'
     },
     {
       label: 'Message *',
