@@ -21,6 +21,10 @@
   &.-team-slider {
     max-width: 800px;
   }
+  &.-career-slider {
+    max-width: 690px;
+    overflow: visible;
+  }
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -255,17 +259,22 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  width: 100%;
   &.swiper-pagination-hidden {
     opacity: 0;
+  }
+  &.-career-slider {
+    position: static;
+    margin-top: 82px;
   }
 }
 
 /* Common Styles */
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100
 }
 
 /* Bullets */
@@ -307,12 +316,15 @@
 }
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
+  background: $base;
+  opacity: 0.1;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 button.swiper-pagination-bullet {
@@ -332,7 +344,6 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
@@ -701,6 +712,20 @@ button.swiper-pagination-bullet {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+
+.swiper-slide {
+  &.-career-slide {
+    opacity: .5;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+}
+.swiper-slide-active {
+  &.-career-slide {
+    opacity: 1;
+    transform: scale(1.2);
+    z-index: 10;
   }
 }
 
