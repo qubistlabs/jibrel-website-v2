@@ -19,12 +19,14 @@ MainMenu: {
     {
       name: 'Jsearch',
       descr: 'Block Explorer with financial audit and reporting capabilities',
-      text: 'Coming soon'
+      link: 'jsearch.html',
+      text: 'More info'
     },
     {
       name: 'Jclear',
       descr: 'Fully compliant KYC / AML solution for digital assets',
-      text: 'Coming soon'
+      link: 'jclear.html',
+      text: 'More info'
     },
     {
       name: 'Jcore',
@@ -59,11 +61,11 @@ MainMenu: {
           name: 'Product team',
         },
         {
-          link: 'media-team.html',
+          link: '#',
           name: 'Media team',
         },
         {
-          link: 'support.html',
+          link: 'contact-us.html',
           name: 'Support',
         },
       ]
