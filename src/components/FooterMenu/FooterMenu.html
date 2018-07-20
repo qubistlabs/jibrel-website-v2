@@ -1,12 +1,15 @@
 <div class='footer-menu'>
   {{#each FooterMenu}}
   <div class='box'>
-    <div class='title'>{{this.title}}</div>
+    <a href="{{this.link}}" class='title -link'>{{this.title}}</a>
     {{#each this.links}}
     <div class='item {{modClass}}'>
-      <a href='{{this.link}}' class='link'>
-        {{this.text}}
-      </a>
+      {{#is this.link '!=' ''}}
+      <a href='{{this.link}}' class='link'>{{this.text}}</a>
+      {{/is}}
+      {{#is this.modal '!=' ''}}
+      <button class='link js-popup-open' data-popup-id='{{this.modal}}'>{{this.text}}</button>
+      {{/is}}
     </div>
     {{/each}}
   </div>

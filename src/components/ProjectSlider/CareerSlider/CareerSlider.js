@@ -1,7 +1,6 @@
 import Swiper from 'swiper'
 
 const CareerSlider = new Swiper('.career-slider .swiper-container', {
-  init: false,
   loop: true,
   spaceBetween: 0,
   centeredSlides: true,
@@ -13,5 +12,3 @@ const CareerSlider = new Swiper('.career-slider .swiper-container', {
     clickable: true,
   },
 })
-
-CareerSlider.init()

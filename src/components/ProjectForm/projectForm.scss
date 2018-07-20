@@ -1,0 +1,176 @@
+.project-form {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+
+  > .container {
+    max-width: 690px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    padding: 65px 30px 70px 30px;
+
+    &.-bg-white {
+      background-color: #fff;
+    }
+
+    &.-no-offset-top {
+      padding-top: 0;
+    }
+
+    > .title {
+      font-size: 24px;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 55px;
+
+      &.-on-blue-bg {
+        color: #fff;
+      }
+
+      &.-offset-small {
+        margin-bottom: 40px;
+      }
+    }
+
+    > .form {
+      max-width: 455px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0;
+
+      &.-w-large {
+        max-width: 600px;
+      }
+
+      > .item {
+        position: relative;
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+
+        &.-split {
+          width: calc(50% - 5px);
+          display: inline-block;
+        }
+
+        &.-offset-right {
+          margin-right: 10px;
+        }
+
+        &.-no-offset {
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+
+        > .label {
+          font-size: 14px;
+          opacity: 0.6;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          &.-on-blue-bg {
+            color: rgba(#fff, 0.8);
+          }
+        }
+
+        > .field {
+          width: 100%;
+          border-width: 0;
+          border-bottom: 1px solid rgba($base, 0.2);
+          font-size: 16px;
+          font-weight: 600;
+          color: $base;
+          transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+          @include placeholder {
+            color: $base-o;
+            font-weight: normal;
+          }
+
+          &.-upload-sibling {
+            padding-right: 100px;
+          }
+
+          &.-on-blue-bg {
+            color: #fff;
+            border-color: rgba(#fff, 0.15);
+            background-color: transparent;
+
+            @include placeholder {
+              color: rgba(#fff, 0.8);
+              font-weight: normal;
+            }
+          }
+
+          &.-error {
+            color: $error;
+            border-color: $error;
+          }
+
+          @include font;
+
+          &.-input {
+            height: 70px;
+
+            &.-small {
+              height: 60px;
+              font-size: 14px;
+
+              @include ls(10);
+            }
+          }
+
+          &.-textarea {
+            height: 120px;
+            resize: none;
+            padding-top: 25px;
+          }
+        }
+
+        > .upload {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          &.-white {
+            color: #fff;
+          }
+
+          > .field {
+            position: absolute;
+            left: -999999px;
+            opacity: 0;
+          }
+
+          > .label {
+            font-size: 14px;
+            font-weight: normal;
+            display: block;
+          }
+        }
+      }
+
+      > .button {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }
+    }
+  }
+}
