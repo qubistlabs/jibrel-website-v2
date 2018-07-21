@@ -14,6 +14,20 @@
       font-weight: 600;
       line-height: (30/16);
       padding-bottom: 16px;
+      color: $base;
+      display: inline-block;
+
+      &.-link {
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $light-blue;
+        }
+
+        &:active {
+          color: rgba($light-blue, 0.5);
+        }
+      }
     }
 
     > .item {

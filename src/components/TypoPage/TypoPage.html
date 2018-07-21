@@ -5,7 +5,9 @@
       {{#is data '!=' 'false'}}
       <div class='data'>
         {{{data}}}
+        {{#is date '!=' ''}}
         <div class='date'>{{Icon iconName='i-calendar' className='icon' iconWidth='' iconHeight=''}} Effective date: April 16, 2018</div>
+        {{/is}}
       </div>
       {{/is}}
     </div>

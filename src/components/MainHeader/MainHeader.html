@@ -5,16 +5,15 @@
       {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
       {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
     </a>
-    {{#is openMenu '==' ''}}
-    <button class='menu-toggle {{modClass}}'>
+    <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
+      {{#is openPopup '==' ''}}
       <span class='text'>MENU</span>
       {{Icon iconName='i-menu' className='icon' iconWidth='' iconHeight=''}}
-    </button>
-    {{else}}
-    <button class='menu-toggle {{modClass}}'>
+      {{else}}
       <span class='text'>CLOSE</span>
       {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
+      {{/is}}
     </button>
-    {{/is}}
+
   </div>
 </header>

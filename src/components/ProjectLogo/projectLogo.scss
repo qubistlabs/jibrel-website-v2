@@ -31,4 +31,11 @@
       fill: #fff;
     }
   }
+
+  &.-popup-color {
+    > .icon,
+    > .text {
+      fill: rgba(#fff, 0.3);
+    }
+  }
 }

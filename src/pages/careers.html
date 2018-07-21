@@ -8,7 +8,7 @@
 <body>
   %=symbols=%
   {{> MainHeader/MainHeader MainHeader.white}}
-  {{> MainMenu/MainMenu}}
+  {{> PopUp/MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/contact.jpg);'>
     <div class='container -center-box _container-fix'>
@@ -40,7 +40,7 @@
     </div>
   </section>
 
-  <section class='section-content'>
+  <section class='section-content' id='list-vacancies'>
     <div class='container _container-fix -offset-top -offset-bottom -bg-gray'>
       <h2 class='title -color -text-center -box-center'>Your career in blockchain starts here</h2>
       <p class='descr -text-center -box-center -w-limit-650 -offset-bottom'>No blockchain experience? No problem. All new joiners are given a comprehensive six week course to bring them up to speed.</p>
@@ -61,11 +61,12 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
-      {{> BaseForm/BaseForm}}
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
     </div>
   </section>
 
   {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
   {{> ProjectStatic/ProjectStatic}}
 </body>
 </html>
