@@ -1,20 +1,21 @@
 const popUpOpen = document.querySelectorAll('.js-popup-open')
 const popUpClose = document.querySelectorAll('.js-popup-close')
 
+
 function getParents(element, selector) {
-  const elements = [];
-  let elem = element;
-  const isWithSelector = selector !== undefined;
+  const elements = []
+  let elem = element 
+  const isWithSelector = selector !== undefined
 
   while ((elem = elem.parentElement) !== null) {
     if (elem.nodeType === Node.ELEMENT_NODE) {
       if (!isWithSelector || elem.matches(selector)) {
-        elements.push(elem);
+        elements.push(elem)
       }
     }
   }
 
-  return elements;
+  return elements
 }
 
 function preventDefault(e) {

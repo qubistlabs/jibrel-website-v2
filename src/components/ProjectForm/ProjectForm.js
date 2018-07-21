@@ -40,7 +40,6 @@ const validation = {
     }
   },
   testEmail(field) {
-    console.log(field);
     const filter = '^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9])+$'
     if (!filter.test(field.value)) {
       this.fieldError(field)
