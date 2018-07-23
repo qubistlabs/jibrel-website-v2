@@ -4,7 +4,7 @@ function tabEvent(event) {
   const tabContainer = this.closest('.tabs-component')
   const scopeTabButton = tabContainer.querySelectorAll('.js-tab-select')
   const scopeTabContent = tabContainer.querySelectorAll('.tabs-content .tab')
-  const index = Array.prototype.indexOf.call(tabButton, event.target)
+  const index = Array.prototype.indexOf.call(scopeTabButton, event.target)
 
   scopeTabButton.forEach((element) => {
     element.classList.remove('-active')
