@@ -1,19 +1,19 @@
 InnerMenu: {
   contacts: [
     {
-      attr: '#popup-media',
+      attr: 'data-popup-id=\'#popup-media\'',
       text: 'Media & PR Inquiries',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open'
     },
     {
-      attr: '#popup-support',
+      attr: 'data-popup-id=\'#popup-support\'',
       text: 'Technical Support',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open'
     },
     {
-      attr: '#popup-product',
+      attr: 'data-popup-id=\'#popup-product\'',
       text: 'Product & Sales Enquiry',
-      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open"'
+      modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-popup-open'
     },
   ],
   careers: [

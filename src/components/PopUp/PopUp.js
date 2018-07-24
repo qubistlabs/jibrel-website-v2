@@ -4,12 +4,15 @@ const popUpClose = document.querySelectorAll('.js-popup-close')
 
 function getParents(element, selector) {
   const elements = []
-  let elem = element 
+  // eslint-disable-next-line fp/no-let
+  let elem = element
   const isWithSelector = selector !== undefined
 
+  // eslint-disable-next-line no-cond-assign, fp/no-mutation
   while ((elem = elem.parentElement) !== null) {
     if (elem.nodeType === Node.ELEMENT_NODE) {
       if (!isWithSelector || elem.matches(selector)) {
+        // eslint-disable-next-line fp/no-mutating-methods
         elements.push(elem)
       }
     }

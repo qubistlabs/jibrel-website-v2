@@ -4,11 +4,11 @@ FooterMenu: [
     link: 'about.html',
     links: [
       {
-        link: '.html',
+        link: 'news.html',
         text: 'Press & Media'
       },
       {
-        link: '.html',
+        link: 'careers.html',
         text: 'Careers'
       },
       {

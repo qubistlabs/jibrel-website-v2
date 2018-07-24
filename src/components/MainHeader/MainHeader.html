@@ -5,15 +5,26 @@
       {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
       {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
     </a>
-    <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
+    <div class='actions'>
       {{#is openPopup '==' ''}}
-      <span class='text'>MENU</span>
-      {{Icon iconName='i-menu' className='icon' iconWidth='' iconHeight=''}}
-      {{else}}
-      <span class='text'>CLOSE</span>
-      {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
+      <div class='select-language'>
+        <button class='toggle'>
+          <span class='current {{modClass}}'>ENGLISH</span>
+          <svg class='icon {{modClass}}' width='7.5px' height='4.5px'><use xlink:href='assets/img/svg-symbols.svg#i-che-b'></use></svg>
+        </button>
+        {{> SelectLanguage/SelectLanguage}}
+      </div>
       {{/is}}
-    </button>
+      <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
+        {{#is openPopup '==' ''}}
+        <span class='text'>MENU</span>
+        {{Icon iconName='i-menu' className='icon' iconWidth='' iconHeight=''}}
+        {{else}}
+        <span class='text'>CLOSE</span>
+        {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
+        {{/is}}
+      </button>
+    </div>
 
   </div>
 </header>

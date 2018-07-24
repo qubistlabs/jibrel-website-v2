@@ -1,6 +1,7 @@
 import Swiper from 'swiper'
 
-const CareerSlider = new Swiper('.career-slider .swiper-container', {
+// eslint-disable-next-line no-unused-vars
+const careerSlider = new Swiper('.career-slider .swiper-container', {
   loop: true,
   spaceBetween: 0,
   centeredSlides: true,

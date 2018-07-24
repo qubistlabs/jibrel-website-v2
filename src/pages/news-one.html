@@ -17,10 +17,11 @@
   </div>
 
   <section class='section-content -offset-bottom -bg-gray'>
+    {{> SectionName/SectionName SectionName.news}}
     <div class='container _container-fix-small -bg-white'>
       {{> TypoPage/TypoPage TypoPage.news}}
 
-      <div class='base-form'>
+      <div class='project-form'>
         <div class='container -no-offset-top'>
           <h2 class='title -offset-small'>Subscribe to our weekly newsletter</h2>
           <form action='' class='form -w-large'>
@@ -28,7 +29,7 @@
               <input type="text" class="field -input -small" required="" placeholder="Email Address *">
             </label>
             <div class='button'>
-              <button class='j-button -fill-on-white-bg -w100'><span class='text'>Subscribe</span></button>
+              <button class='j-button -fill-on-white-bg -w100 js-send-form'><span class='text'>Subscribe</span></button>
             </div>
           </form>
         </div>

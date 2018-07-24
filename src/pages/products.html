@@ -11,6 +11,7 @@
   {{> PopUp/MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> SectionName/SectionName SectionName.products}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info -row'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.products}}
@@ -30,58 +31,91 @@
   </section>
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
+
     <div class='container _container-fix'>
       <h2 class='title -white -text-center -box-center'>jWallet — Official ERC-20 wallet of the Jibrel Network</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>jWallet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
+    </div>
 
-      <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top'>
+
+      <div class='container _container-fix'>
         <div class='tab-links -center'>
           {{#each TabsComponent.TabLinks.jWallet}}
           {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class='tabs-content'>
-          {{#each TabsComponent.TabsContent.jWallet}}
-          {{> TabsComponent/TabsContent/TabsContent}}
-          {{/each}}
+      </div>
+
+      <div class="_relative">
+        {{> SectionName/SectionName SectionName.productsCompanySection1}}
+        <div class='container _container-fix'>
+          <div class='tabs-content'>
+            {{#each TabsComponent.TabsContent.jWallet}}
+            {{> TabsComponent/TabsContent/TabsContent}}
+            {{/each}}
+          </div>
         </div>
       </div>
+
     </div>
+
+
 
     <div class='container -offset-top _container-fix'>
       <h2 class='title -white -text-center -box-center'>jCash — Stable currencies on the Ethereum Blockchain</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel is dedicated to providing blockchain-powered digital currency solutions to enterprise and individual users, allowing smart contract technology to be used in traditional finance.</p>
+    </div>
 
-      <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top'>
+
+      <div class='container _container-fix'>
         <div class='tab-links -center'>
           {{#each TabsComponent.TabLinks.jCash}}
           {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class='tabs-content'>
-          {{#each TabsComponent.TabsContent.jCash}}
-          {{> TabsComponent/TabsContent/TabsContent}}
-          {{/each}}
+      </div>
+
+      <div class="_relative">
+        {{> SectionName/SectionName SectionName.productsCompanySection2}}
+        <div class='container _container-fix'>
+          <div class='tabs-content'>
+            {{#each TabsComponent.TabsContent.jCash}}
+            {{> TabsComponent/TabsContent/TabsContent}}
+            {{/each}}
+          </div>
         </div>
       </div>
+
     </div>
 
     <div class='container -offset-top _container-fix'>
       <h2 class='title -white -text-center -box-center'>jNode — Enterprise-grade, easily set-up, Ethereum access</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel provides plug-and-play Ethereum access, with enterprise-grade up-time. Get your business on-chain without any blockchain development experience.</p>
+    </div>
 
-      <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top'>
+
+      <div class='container _container-fix'>
         <div class='tab-links -center'>
           {{#each TabsComponent.TabLinks.jNode}}
           {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
-        <div class='tabs-content'>
-          {{#each TabsComponent.TabsContent.jNode}}
-          {{> TabsComponent/TabsContent/TabsContent}}
-          {{/each}}
+      </div>
+
+      <div class="_relative">
+        {{> SectionName/SectionName SectionName.productsCompanySection3}}
+        <div class='container _container-fix'>
+          <div class='tabs-content'>
+            {{#each TabsComponent.TabsContent.jNode}}
+            {{> TabsComponent/TabsContent/TabsContent}}
+            {{/each}}
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
