@@ -12,8 +12,14 @@
     border-bottom: 1px solid transparent;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
+    @include to-mobile {
+      width: 100%;
+    }
+
     &:not(:last-child) {
-      margin-right: 30px;
+      @include from-mobile {
+        margin-right: 30px;
+      }
     }
 
     &.-active {
@@ -46,6 +52,33 @@
     &:active {
       border-color: rgba($light-blue, 0.5);
       color: rgba($light-blue, 0.5);
+    }
+
+    @include to-mobile {
+      border-bottom: 1px solid rgba($base, 0.08);
+      padding-top: 8px;
+      height: 48px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+
+      &:first-child {
+        border-top: 1px solid rgba($base, 0.08);
+      }
+
+      &:last-child {
+        border-bottom-color: transparent;
+      }
+
+      &.-color.-active,
+      &.-white.-active,
+      &:hover,
+      &:active {
+        border-bottom-color: rgba($base, 0.08);
+
+        &:last-child {
+          border-bottom-color: transparent;
+        }
+      }
     }
   }
 }
