@@ -1,6 +1,10 @@
 .main-footer {
   background-color: #f5f6fa;
 
+  @include to-mobile {
+    display: none;
+  }
+
   > .container {
     > .bottom,
     > .top {
@@ -11,7 +15,7 @@
 
     > .top {
       padding-top: 90px;
-      padding-bottom: 50px;
+      padding-bottom: 120px;
       border-bottom: 1px solid rgba($base, 0.1);
 
       > .logo {
