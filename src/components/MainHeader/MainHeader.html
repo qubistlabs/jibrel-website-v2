@@ -6,21 +6,22 @@
       {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
     </a>
     <div class='actions'>
-      {{#is openPopup '==' ''}}
-      <div class='select-language'>
+      {{!-- {{#is openPopups '==' ''}}
+      <div class='select-language -in-header'>
         <button class='toggle'>
           <span class='current {{modClass}}'>ENGLISH</span>
           <svg class='icon {{modClass}}' width='7.5px' height='4.5px'><use xlink:href='assets/img/svg-symbols.svg#i-che-b'></use></svg>
         </button>
         {{> SelectLanguage/SelectLanguage}}
       </div>
-      {{/is}}
+      {{/is}} --}}
       <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
         {{#is openPopup '==' ''}}
         <span class='text'>MENU</span>
-        {{Icon iconName='i-menu' className='icon' iconWidth='' iconHeight=''}}
+        {{Icon iconName='i-menu' className='icon -mobile-hide' iconWidth='' iconHeight=''}}
+        <div class='hamburger'></div>
         {{else}}
-        <span class='text'>CLOSE</span>
+        {{!--<span class='text'>CLOSE</span>--}}
         {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
         {{/is}}
       </button>

@@ -1,28 +1,41 @@
 .news-preview {
   @extend ._all-reset;
 
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-left: -10px;
-  margin-right: -10px;
+  @include from-mobile {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 
   > .item {
-    width: 33.333%;
-    padding-left: 10px;
-    padding-right: 10px;
     box-sizing: border-box;
-    margin-bottom: 50px;
+
+    @include from-mobile {
+      margin-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 33.333%;
+    }
+
+    @include to-mobile {
+      margin-bottom: 20px;
+    }
 
     > .box {
       height: 100%;
       display: block;
-      border: 1px solid rgba($base, 0.1);
       border-radius: 3px;
+      background-color: #fff;
+
+      @include to-mobile {
+        background-color: #fff;
+      }
 
       > .pic {
         > .img {
@@ -34,6 +47,10 @@
 
       > .body {
         padding: 35px 40px;
+
+        @include to-mobile {
+          padding: 15px 20px;
+        }
 
         > .date {
           font-size: 13px;
@@ -51,6 +68,10 @@
           margin-top: 10px;
           font-weight: 600;
           transition: color 0.2s ease-in-out;
+
+          @include to-mobile {
+            font-size: 14px;
+          }
         }
 
         > .descr {
@@ -59,6 +80,10 @@
           color: $base-o;
 
           @include ls(10);
+
+          @include to-mobile {
+            @include multi-ellipsis(13, 1.846, 2);
+          }
         }
       }
 

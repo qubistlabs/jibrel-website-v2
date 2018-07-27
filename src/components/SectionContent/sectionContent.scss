@@ -16,6 +16,11 @@
     z-index: -1;
   }
 
+  &.-overflow-hidden {
+    overflow: hidden;
+    width: 100%;
+  }
+
   &.-popup {
     position: fixed;
     top: 0;
@@ -59,12 +64,24 @@
     margin-top: -255px;
   }
 
+  &.-offset-page {
+    padding-top: 195px;
+
+    @include to-mobile {
+      padding-top: 130px;
+    }
+  }
+
   &.-offset-top,
   > .-offset-top {
     padding-top: 110px;
 
-    @media (max-width: 768px) {
-      padding-top: 40px;
+    @include to-mobile {
+      padding-top: 50px;
+
+      &.-mobile-collapse-offset {
+        padding-top: 0;
+      }
     }
   }
 
@@ -72,8 +89,12 @@
   > .-offset-top-small {
     padding-top: 60px;
 
-    @media (max-width: 768px) {
-      padding-top: 40px;
+    @include to-mobile {
+      padding-top: 50px;
+
+      &.-mobile-collapse-offset {
+        padding-top: 0;
+      }
     }
   }
 
@@ -81,8 +102,15 @@
   > .-offset-bottom {
     padding-bottom: 110px;
 
-    @media (max-width: 768px) {
-      padding-bottom: 40px;
+    @include to-mobile {
+      padding-bottom: 50px;
+
+      &.-mobile-collapse-offset,
+      &.-mobile-collapse-bottom-offset,
+      > .-mobile-collapse-offset,
+      > .-mobile-collapse-bottom-offset {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -90,13 +118,22 @@
   > .-offset-bottom-small {
     padding-bottom: 60px;
 
-    @media (max-width: 768px) {
-      padding-bottom: 40px;
+    @include to-mobile {
+      padding-bottom: 50px;
     }
   }
   // BG setting block
   &.-bg-cover {
     @include bg-cover;
+  }
+
+  &.-bg-menu {
+    background-color: rgba(#fff, 0.7);
+  }
+
+  &.-bg-grid {
+    background-image: url(../img/general/bg/faded-grid-white.png);
+    background-position: top center;
   }
 
   &.-bg-gexagrid {
@@ -110,6 +147,10 @@
   &.-bg-blue {
     &::before {
       @include bg-blue;
+    }
+
+    &.-bg-grid {
+      background-image: url(../img/general/bg/faded-grid-white-o.png);
     }
   }
 
@@ -140,6 +181,36 @@
   &.-bg-white {
     &::before {
       background-color: #fff;
+    }
+  }
+
+  @include to-mobile {
+    &.-mobile-offset-top {
+      padding-top: 43px;
+    }
+
+    &.-mobile-offset-bottom {
+      padding-bottom: 50px;
+    }
+
+    &.-mobile-bg-gray {
+      &::before {
+        @include bg-gray;
+      }
+    }
+
+    &.-mobile-bg-blue {
+      background-image: none !important;
+
+      &::before {
+        @include bg-blue;
+      }
+    }
+
+    &.-mobile-bg-white {
+      &::before {
+        background-color: #fff;
+      }
     }
   }
   // Element blocl
@@ -210,11 +281,38 @@
       }
     }
 
+    @include to-mobile {
+      &.-mobile-bg-gray {
+        &::before {
+          @include bg-gray;
+        }
+      }
+
+      &.-mobile-bg-white {
+        &::before {
+          background-color: #fff;
+        }
+      }
+
+      &.-mobile-bg-blue {
+        background-image: none !important;
+
+        &::before {
+          @include bg-blue;
+        }
+      }
+    }
+
     > .title {
       font-size: 24px;
       line-height: (36/24);
       font-weight: normal;
       max-width: 800px;
+
+      @include to-mobile {
+        font-size: 16px;
+        font-weight: 600;
+      }
 
       &.-small {
         max-width: 700px;
@@ -251,6 +349,10 @@
 
       &.-offset-bottom {
         margin-bottom: 50px;
+
+        @include to-mobile {
+          margin-bottom: 30px;
+        }
       }
 
       &.-w-limit-650 {
@@ -273,6 +375,10 @@
 
     > .title ~ .descr {
       margin-top: 30px;
+
+      @include to-mobile {
+        margin-top: 20px;
+      }
     }
 
     > .img {
