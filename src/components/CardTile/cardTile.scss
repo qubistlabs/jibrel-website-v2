@@ -22,6 +22,10 @@
 
   &.-offset-top {
     padding-top: 80px;
+
+    @include to-mobile {
+      padding-top: 37px;
+    }
   }
 
   &.-box-shadow {
@@ -34,34 +38,53 @@
     display: inline-block;
     vertical-align: top;
 
-    &.-four-col {
-      width: 25%;
+    @include to-mobile {
+      &:not(:first-child) {
+        padding-top: 35px;
+      }
     }
 
-    &.-three-col {
-      width: 33.333%;
+    @include from-mobile {
+      &.-four-col {
+        width: 25%;
+      }
+
+      &.-three-col {
+        width: 33.333%;
+      }
+
+      &.-two-col {
+        width: 50%;
+      }
     }
 
-    &.-two-col {
-      width: 50%;
+    @include to-mobile {
+      width: 100%;
     }
 
     &.-base-offset {
       padding-top: 70px;
+
+      @include to-mobile {
+        padding-top: 40px;
+      }
     }
 
     > .box {
-      padding-left: 70px;
-      padding-right: 70px;
       display: block;
       position: relative;
       max-width: 420px;
       margin-left: auto;
       margin-right: auto;
 
-      &.-padding-small {
-        padding-left: 40px;
-        padding-right: 40px;
+      @include from-mobile {
+        padding-left: 70px;
+        padding-right: 70px;
+
+        &.-padding-small {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
       }
 
       &.-bg-white {
@@ -71,26 +94,34 @@
       &.-square,
       &.-square-slim,
       &.-square-tiny {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include from-mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
       }
 
       &.-square {
-        height: 360px;
+        @include from-mobile {
+          height: 360px;
+        }
       }
 
       &.-square-slim {
-        height: 340px;
+        @include from-mobile {
+          height: 340px;
+        }
       }
 
       &.-square-tiny {
-        height: 290px;
+        @include from-mobile {
+          height: 290px;
+        }
       }
 
       > .img {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
         font-size: 0;
         width: 100%;
         text-align: center;
@@ -99,12 +130,21 @@
           @extend ._v-center::after;
         }
 
+        @include to-mobile {
+          margin-bottom: 15px;
+        }
+
         &.-with-subtitle {
           display: -webkit-flex;
           display: -ms-flex;
           display: flex;
           justify-content: center;
           align-items: center;
+          width: 100%;
+
+          @include to-mobile {
+            margin-bottom: 5px;
+          }
         }
 
         &.-logo-project {
@@ -119,6 +159,7 @@
           @extend ._v-center;
 
           max-height: 100%;
+          max-width: 100%;
 
           &.-stroke {
             fill: none;
@@ -129,18 +170,20 @@
             }
           }
         }
+      }
 
-        > .subinfo {
-          font-size: 36px;
-          margin-left: 25px;
-          font-weight: normal;
-        }
+      > .subinfo {
+        font-size: 36px;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 10px;
       }
 
       > .title,
       > .subtitle,
       > .descr {
         text-align: center;
+        width: 100%;
       }
 
       > .title {
@@ -149,9 +192,20 @@
         line-height: (30/16);
 
         &.-large-size {
-          font-size: 24px;
-          line-height: (36/24);
-          padding-bottom: 10px;
+          @include from-mobile {
+            font-size: 24px;
+            line-height: (36/24);
+            padding-bottom: 10px;
+            font-weight: normal;
+          }
+
+          @include to-mobile {
+            font-size: 16px;
+          }
+        }
+
+        @include to-mobile {
+          font-size: 14px;
         }
       }
 
@@ -162,8 +216,13 @@
       }
 
       > .descr {
-        font-size: 13px;
-        line-height: (24/13);
+        font-size: 14px;
+        line-height: (24/14);
+
+        &.-large-size {
+          font-size: 18px;
+          line-height: (24/18);
+        }
       }
 
       > .subtitle ~ .descr {
@@ -190,10 +249,10 @@
               stroke: $blue;
             }
           }
+        }
 
-          > .subinfo {
-            color: $blue;
-          }
+        > .subinfo {
+          color: $blue;
         }
       }
 
@@ -213,10 +272,10 @@
               stroke: #fff;
             }
           }
+        }
 
-          > .subinfo {
-            color: #fff;
-          }
+        > .subinfo {
+          color: #fff;
         }
       }
 
@@ -235,6 +294,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @include to-mobile {
+          display: none;
+        }
 
         > .hand {
           fill: none;
@@ -260,6 +323,16 @@
         text-align: center;
         margin-top: 50px;
         width: 100%;
+
+        @include to-mobile {
+          margin-top: 15px;
+        }
+
+        &.-mobile-visible {
+          @include from-mobile {
+            display: none;
+          }
+        }
       }
 
       &:hover {
@@ -285,65 +358,84 @@
   }
 
   &.-inner-grid {
-    > .item {
-      border-width: 1px;
-      border-style: solid;
-      // margin-right: -1px;
-      // margin-bottom: -1px;
+    @include from-mobile {
+      > .item {
+        border-width: 1px;
+        border-style: solid;
+        // margin-right: -1px;
+        // margin-bottom: -1px;
 
-      // @media (min-width: 1025px) {
-      //   &:nth-child(1),
-      //   &:nth-child(2),
-      //   &:nth-child(3) {
-      //     border-top-width: 0;
-      //   }
-      //
-      //   &:nth-child(3n) {
-      //     border-right-width: 0;
-      //   }
-      // }
+        // @media (min-width: 1025px) {
+        //   &:nth-child(1),
+        //   &:nth-child(2),
+        //   &:nth-child(3) {
+        //     border-top-width: 0;
+        //   }
+        //
+        //   &:nth-child(3n) {
+        //     border-right-width: 0;
+        //   }
+        // }
+      }
     }
   }
 
   &.-inner-border-vertical {
-    > .item {
-      border-right-width: 1px;
-      border-right-style: solid;
+    @include from-mobile {
+      > .item {
+        border-right-width: 1px;
+        border-right-style: solid;
 
-      &:first-child {
-        border-left-width: 1px;
-        border-left-style: solid;
+        &:first-child {
+          border-left-width: 1px;
+          border-left-style: solid;
+        }
       }
     }
   }
 
   &.-inner-border-separator {
-    > .item:not(:last-child) {
-      border-right-width: 1px;
-      border-right-style: solid;
+    @include from-mobile {
+      > .item:not(:last-child) {
+        border-right-width: 1px;
+        border-right-style: solid;
+      }
     }
   }
 
   &.-inner-border-gray {
-    &.-inner-border-vertical,
-    &.-inner-border-separator {
-      > .item {
-        border-color: #dcdee5;
+    @include from-mobile {
+      &.-inner-border-vertical,
+      &.-inner-border-separator {
+        > .item {
+          border-color: #dcdee5;
+        }
+      }
+
+      &.-inner-grid {
+        > .item {
+          border-color: #f3f4f6;
+        }
       }
     }
 
-    &.-inner-grid {
+    @include to-mobile {
       > .item {
-        border-color: #f3f4f6;
+        &:not(:last-child) {
+          padding-bottom: 25px;
+          border-bottom: 1px solid #fff;
+        }
       }
     }
   }
 
   &.-inner-border-white {
-    &.-inner-border-vertical,
-    &.-inner-grid {
-      > .item {
-        border-color: rgba(#fff, 0.1);
+    @include from-mobile {
+      &.-inner-border-vertical,
+      &.-inner-grid {
+        > .item {
+          border-color: rgba(#fff, 0.1);
+        }
       }
     }
   }
