@@ -39,6 +39,18 @@
   visibility: visible;
 }
 
+@mixin from-mobile {
+  @media (min-width: #{$mobile-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin to-mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
 @mixin optional-at-root($sel) {
   @at-root #{if(not &, $sel, selector-append(&, $sel))} {
     @content;

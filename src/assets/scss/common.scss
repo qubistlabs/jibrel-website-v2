@@ -73,12 +73,22 @@ img {
   position: relative;
 }
 
+._mobile-hide {
+  @include to-mobile {
+    display: none;
+  }
+}
+
 ._container-fluid,
 ._container-fix,
 ._container-fix-small {
   margin-left: auto;
   margin-right: auto;
   width: $inner-width;
+
+  @media (max-width: 1475px) {
+    width: calc(100% - 60px);
+  }
 }
 
 ._container-fix {
