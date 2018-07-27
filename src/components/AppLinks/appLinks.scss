@@ -19,16 +19,30 @@
 
     &:not(:last-child) {
       margin-right: 25px;
+
+      @include to-mobile {
+        margin-right: 10px;
+      }
     }
 
     > .apple {
       width: 140px;
       height: 40px;
+
+      @include to-mobile {
+        width: 120px;
+        height: 35px;
+      }
     }
 
     > .google {
       width: 135px;
       height: 40px;
+
+      @include to-mobile {
+        width: 120px;
+        height: 35px;
+      }
     }
   }
 }
