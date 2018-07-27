@@ -2,53 +2,47 @@
   @extend ._all-reset;
 
   display: block;
-  width: 100%;
   font-size: 0;
-  margin-left: -50px;
-  margin-right: -50px;
-  padding-top: 60px;
+  padding-top: 50px;
+  height: 100%;
+  width: 300px;
+  margin-left: auto;
+  background-color: $base;
+  position: relative;
 
-  > .projects {
-    width: 75%;
+  @include to-mobile {
+    width: 100%;
+    padding-top: 39px;
+  }
 
-    > .box {
-      width: 33.333%;
-      display: inline-block;
-      vertical-align: top;
+  > .close {
+    position: absolute;
+    top: 50px;
+    left: -60px;
 
-      > .descr {
-        min-height: 82px;
-        max-width: 180px;
-      }
-
-      > .link {
-        font-weight: 600;
-        font-size: 13px;
-        color: $blue;
-        line-height: (15/13);
-        transition: color 0.2s ease-in-out;
-
-        &:hover {
-          color: $light-blue;
-        }
-
-        &:active {
-          color: rgba($light-blue, 0.5);
-        }
-      }
-
-      > .soon {
-        opacity: 0.5;
-      }
+    @include to-mobile {
+      right: 32px;
+      left: auto;
+      top: 42px;
     }
   }
 
-  > .pages {
-    width: 25%;
-    border-left: 1px solid rgba($base, 0.1);
+  > .container {
+    height: calc(100% - 90px);
+    overflow: auto;
 
     > .box {
-      min-height: 161px;
+      margin-bottom: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      > .name {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: (30/13);
+        margin-bottom: 10px;
+        color: #fff;
+      }
 
       > .item {
         margin-bottom: 5px;
@@ -56,7 +50,7 @@
         > .link {
           transition: color 0.2s ease-in-out;
           font-size: 13px;
-          color: $base-o;
+          color: rgba(#fff, 0.6);
           line-height: (24/13);
 
           &:hover {
@@ -69,44 +63,5 @@
         }
       }
     }
-  }
-
-  > .projects,
-  > .pages {
-    display: inline-block;
-    vertical-align: top;
-
-    > .box {
-      margin-bottom: 80px;
-      padding-left: 50px;
-      padding-right: 50px;
-
-      > .name {
-        font-size: 24px;
-        font-weight: normal;
-        line-height: (36/24);
-        margin-bottom: 20px;
-      }
-    }
-
-    > .projects {
-      > .box {
-        &.-project {
-          width: 33.333%;
-        }
-      }
-    }
-  }
-
-  > .projects > .box > .descr,
-  > .projects > .box > .soon {
-    font-size: 13px;
-    color: $base-o;
-    line-height: (24/13);
-  }
-
-  > .networks {
-    text-align: center;
-    padding-top: 40px;
   }
 }

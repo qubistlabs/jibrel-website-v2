@@ -14,12 +14,26 @@
 
   > .icon {
     transition: fill 0.2s ease-in-out;
+
+    &.-mobile-hide {
+      @include to-mobile {
+        display: none;
+      }
+    }
   }
 
   > .cross {
     transition: stroke 0.2s ease-in-out;
     fill: none;
     stroke-width: 2px;
+
+    &.-gray {
+      stroke: rgba($base, 0.6);
+
+      @include to-mobile {
+        stroke: rgba(#fff, 0.6);
+      }
+    }
   }
 
   > .text {
@@ -29,6 +43,40 @@
     font-weight: 600;
 
     @include ls(50);
+
+    @include to-mobile {
+      display: none;
+    }
+  }
+
+  > .hamburger {
+    height: 2px;
+    width: 28px;
+    border-radius: 100px;
+
+    @include from-mobile {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      border-radius: 100px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -6px;
+    }
   }
 
   &.-color {
@@ -39,6 +87,12 @@
     > .text {
       color: $base;
     }
+
+    > .hamburger,
+    > .hamburger::before,
+    > .hamburger::after {
+      background-color: $base;
+    }
   }
 
   &.-white {
@@ -48,6 +102,12 @@
 
     > .text {
       color: #fff;
+    }
+
+    > .hamburger,
+    > .hamburger::before,
+    > .hamburger::after {
+      background-color: #fff;
     }
   }
 
@@ -90,6 +150,14 @@
       }
 
       > .cross {
+        stroke: rgba(#fff, 1);
+      }
+    }
+
+    > .cross.-gray {
+      stroke: rgba($base, 1);
+
+      @include to-mobile {
         stroke: rgba(#fff, 1);
       }
     }
