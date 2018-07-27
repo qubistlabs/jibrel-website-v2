@@ -179,22 +179,34 @@
 
 .swiper-prev, .swiper-next {
   position: absolute;
-  top: 50%;
   width: 27px;
   height: 44px;
-  margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  background-size: 27px 44px;
-  background-position: center;
-  background-repeat: no-repeat;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-items: center;
 
+  @include from-mobile {
+    margin-top: -22px;
+    top: 50%;
+  }
+
+  @include to-mobile {
+    top: 0;
+    height: 110px;
+    width: 110px;
+  }
+
   > .icon {
     flex-shrink: 0;
+
+    .team-slider & {
+      @include to-mobile {
+        display: none;
+      }
+    }
 
     &.-white {
       fill: #fff;
@@ -212,20 +224,44 @@
     opacity: 0.6;
     transition: opacity 0.2s ease-in-out;
 
+    @include to-mobile {
+      width: 110px;
+      height: 110px;
+    }
+
     > .img {
       width: 100%;
     }
   }
   > .avatar ~ .icon {
-    margin-left: 30px;
+    @include from-mobile {
+      margin-left: 30px;
+    }
   }
   > .icon ~ .avatar {
-    margin-left: 30px;
+    @include from-mobile {
+      margin-left: 30px;
+    }
   }
 
   &:hover {
     > .avatar {
       opacity: 1;
+    }
+  }
+}
+
+.swiper-prev {
+  .team-slider & {
+    @include to-mobile {
+      left: -85px;
+    }
+  }
+}
+.swiper-next {
+  .team-slider & {
+    @include to-mobile {
+      right: -85px;
     }
   }
 }
@@ -266,6 +302,10 @@
   &.-career-slider {
     position: static;
     margin-top: 82px;
+
+    @include to-mobile {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -324,6 +364,57 @@
   opacity: 0.1;
   &:not(:last-child) {
     margin-right: 10px;
+  }
+  .products-pagination.-white & {
+    color: #fff;
+  }
+
+  .products-pagination & {
+    width: auto;
+    height: auto;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-radius: 0;
+    opacity: 1;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      border-color: $light-blue;
+      color: $light-blue;
+    }
+    &:active {
+      border-color: rgba($light-blue, 0.5);
+      color: rgba($light-blue, 0.5);
+    }
+  }
+
+}
+.products-pagination {
+  padding-top: 40px;
+
+  @include to-mobile {
+    display: none;
+  }
+}
+.swiper-pagination-bullet-active {
+  .products-pagination & {
+    cursor: default;
+  }
+  .products-pagination.-white & {
+    border-bottom-color: #fff;
+  }
+  &:hover,
+  &:active {
+    .products-pagination.-white & {
+      border-bottom-color: #fff;
+      color: #fff;
+    }
   }
 }
 
@@ -720,12 +811,23 @@ button.swiper-pagination-bullet {
     opacity: .5;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
+
+  &.-product-mobile {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.2;
+  }
+
 }
+
 .swiper-slide-active {
   &.-career-slide {
     opacity: 1;
     transform: scale(1.2);
     z-index: 10;
+  }
+
+  &.-product-mobile {
+    opacity: 1;
   }
 }
 
