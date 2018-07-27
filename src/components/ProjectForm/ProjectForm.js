@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
+
 const forms = document.querySelectorAll('.form')
 
 const validation = {
@@ -40,7 +43,8 @@ const validation = {
     }
   },
   testEmail(field) {
-    const filter = '^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9])+$'
+    // eslint-disable-next-line no-useless-escape
+    const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/
     if (!filter.test(field.value)) {
       this.fieldError(field)
     } else {
