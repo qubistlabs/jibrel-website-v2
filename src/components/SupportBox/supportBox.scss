@@ -8,23 +8,45 @@
   > .descr {
     font-size: 14px;
     line-height: (24/14);
-    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
 
     @include ls(10);
   }
 
   > .link {
     color: $blue;
-    font-size: 36px;
-    line-height: (48/36);
+    font-size: 24px;
+    line-height: (36/24);
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
 
-    @include ls(25);
+    &:hover {
+      color: $light-blue;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.5);
+    }
+
+    @include to-mobile {
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   > .button {
     margin-top: 40px;
     margin-bottom: 37px;
     text-align: center;
+
+    @include to-mobile {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   > .info {

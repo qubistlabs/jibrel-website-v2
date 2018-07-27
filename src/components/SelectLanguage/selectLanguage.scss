@@ -2,6 +2,12 @@
   position: relative;
   margin-right: 40px;
 
+  &.-in-header {
+    @include to-mobile {
+      display: none;
+    }
+  }
+
   > .toggle {
     > .current {
       @include ls(50);
