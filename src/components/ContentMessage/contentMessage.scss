@@ -6,6 +6,12 @@
     color: #fff;
     font-weight: normal;
     line-height: (36/24);
+    margin-bottom: 15px;
+
+    @include to-mobile {
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   > .descr {
@@ -14,9 +20,13 @@
     margin-right: auto;
     color: #fff;
     font-size: 14px;
-    line-height: (24/10);
+    line-height: (21/14);
 
     @include ls(10);
+
+    @include to-mobile {
+      font-size: 13px;
+    }
   }
 
   > .button {
