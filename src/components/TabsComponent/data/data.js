@@ -1,6 +1,6 @@
 TabsComponent: {
   TabLinks: {
-    jWallet: [
+    Jwalet: [
       {
         item: 'Insights',
         modClass: '-white js-tab-select -active js-tab-select'
@@ -76,7 +76,7 @@ TabsComponent: {
     ]
   },
   TabsContent: {
-    jWallet: [
+    Jwalet: [
       {
         imgContent: '<img src=\'/assets/img/content/tab-jwalet.png\' srcset=\'/assets/img/content/tab-jwalet@2x.png 2x\' class=\'img\'>',
         modClass: '-active'

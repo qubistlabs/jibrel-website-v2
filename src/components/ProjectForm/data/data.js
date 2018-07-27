@@ -1,32 +1,30 @@
 ProjectForm: {
-  base: {
-    title: 'Media & PR Inquiries',
-    textButton: 'Send',
-    modClassContainer: '-bg-white',
-    modClassButton: '-fill-on-white-bg',
-    fields: [
-      {
-        label: 'First Name *',
-        fieldType: '-input',
-        type: 'text'
-      },
-      {
-        label: 'Business Email Address *',
-        fieldType: '-input',
-        type: 'email'
-      },
-      {
-        label: 'Message *',
-        fieldType: '-textarea'
-      },
-    ]
+  baseForm: {
+    support: {
+      title: 'Technical Support'
+    },
+    media: {
+      title: 'Media & PR Inquiries'
+    },
+    product: {
+      title: 'Product & Sales Enquiry'
+    },
+    sendMessage: {
+      title: 'Send message'
+    },
+    productAndSale: {
+      title: 'Product & Sales Enquiry Form'
+    },
+    mediaAndPR: {
+      title: 'Media & PR Inquiries'
+    },
   },
   applyResume: {
     title: 'Apply for this position',
     modClassTitle: '-on-blue-bg',
     textButton: 'Send',
     modClassContainer: '',
-    modClassButton: '-fill-on-blue-bg',
+    modClassButton: '-fill-on-blue-bg ',
     fields: [
       {
         placeholder: 'Full Name *',

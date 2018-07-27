@@ -20,7 +20,9 @@ MainHeader: {
     openPopup: 'true'
   },
   small: {
-    modClass: '-color js-popup-open',
+    modClass: '-color',
+    popUpClass: 'js-popup-open',
+    popUpId: '#popup-menu',
     modClassContainer: '-small -bg-white'
   },
 }
