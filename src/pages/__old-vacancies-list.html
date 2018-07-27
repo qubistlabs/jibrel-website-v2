@@ -1,0 +1,50 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.sharePage}}
+    </div>
+  </div>
+
+  <section class='section-content -offset-bottom -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacansiesList}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class='list-vacancies'>
+        <h1 class='title'>Open Positions</h1>
+        {{> ListVacancies/ListVacancies}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center -offset-bottom'>Why work at Jibrel?</h2>
+      <div class='card-tile'>
+        {{#each CardTile.whyWorkJibrel}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/general-app.jpg);'>
+    <div class='container _container-fix -offset-top -offset-bottom'>
+      {{> ContentMessage/ContentMessage}}
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
