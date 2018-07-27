@@ -1,11 +1,19 @@
 <div class='footer-menu'>
   {{#each FooterMenu}}
   <div class='box'>
+    {{this.link}}
+    {{#is this.link '!=' ''}}
     <a href="{{this.link}}" class='title -link'>{{this.title}}</a>
+    {{else}}
+    <div class='title'>{{this.title}}</div>
+    {{/is}}
     {{#each this.links}}
     <div class='item {{modClass}}'>
       {{#is this.link '!=' ''}}
-      <a href='{{this.link}}' class='link'>{{this.text}}</a>
+      <a href='{{this.link}}' class='link' {{#is this.externalLink '==' 'true'}}target='_blank' {{/is}}>
+        {{this.text}}
+        {{!--{{#is this.externalLink '==' 'true'}} {{Icon iconName='i-external-link' className='icom' iconWidth='15' iconHeight='9'}} {{/is}}--}}
+      </a>
       {{/is}}
       {{#is this.modal '!=' ''}}
       <button class='link js-popup-open' data-popup-id='{{this.modal}}'>{{this.text}}</button>
