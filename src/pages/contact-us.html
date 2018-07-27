@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <section class='section-content'>
+  <section class='section-content -mobile-collapse-offset -mobile-bg-gray'>
     {{> SectionName/SectionName SectionName.contactSection1}}
     <div class='container _container-fix -offset-top -offset-bottom -bg-gray'>
       <h2 class='title -color -text-center -box-center'>Know more about us with Frequently Asked Questions</h2>
@@ -48,21 +48,21 @@
         </div>
         <div class="tabs-content">
           <div class="tab -active">
-            <div class='content-faq -offset-top'>
+            <div class='content-faq -offset-top -mobile-collapse-offset'>
               {{#each ContentFaq.contact}}
               {{> ContentFaq/ContentFaq}}
               {{/each}}
             </div>
           </div>
           <div class="tab">
-            <div class='content-faq -offset-top'>
+            <div class='content-faq -offset-top -mobile-collapse-offset'>
               {{#each ContentFaq.contact}}
               {{> ContentFaq/ContentFaq}}
               {{/each}}
             </div>
           </div>
           <div class="tab">
-            <div class='content-faq -offset-top'>
+            <div class='content-faq -offset-top -mobile-collapse-offset'>
               {{#each ContentFaq.contact}}
               {{> ContentFaq/ContentFaq}}
               {{/each}}
@@ -81,10 +81,9 @@
   </section>
 
 
-  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
       {{> ProjectForm/ProjectForm ProjectForm.base}}
-
     </div>
   </section>
 

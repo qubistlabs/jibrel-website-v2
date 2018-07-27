@@ -16,25 +16,10 @@
     </div>
   </div>
 
-  <section class='section-content -offset-bottom -bg-gray'>
+  <section class='section-content -bg-gray'>
     {{> SectionName/SectionName SectionName.news}}
-    <div class='container _container-fix-small -bg-white'>
+    <div class='container _container-fix-small -offset-bottom-small -bg-white -mobile-bg-gray'>
       {{> TypoPage/TypoPage TypoPage.news}}
-
-      <div class='project-form'>
-        <div class='container -no-offset-top'>
-          <h2 class='title -offset-small'>Subscribe to our weekly newsletter</h2>
-          <form action='' class='form -w-large'>
-            <label class="item -no-offset">
-              <input type="text" class="field -input -small" required="" placeholder="Email Address *">
-            </label>
-            <div class='button'>
-              <button class='j-button -fill-on-white-bg -w100 js-send-form'><span class='text'>Subscribe</span></button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
   </section>
 
   {{> MainFooter/MainFooter}}
