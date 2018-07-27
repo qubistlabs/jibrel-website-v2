@@ -1,18 +1,40 @@
 .content-faq {
-  padding-left: 40px;
-  padding-right: 40px;
   max-width: 880px;
   margin-left: auto;
   margin-right: auto;
 
+  @include from-mobile {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   &.-offset-top {
     margin-top: 40px;
+
+    @include to-mobile {
+      margin-top: 30px;
+
+      &.-mobile-collapse-offset {
+        margin: 0;
+      }
+    }
   }
 
   > .item {
     border-bottom: 1px solid rgba($base, 0.1);
     padding-top: 25px;
     padding-bottom: 25px;
+
+    @include to-mobile {
+      width: calc(100% + 60px);
+      margin-left: -30px;
+      padding: 20px 30px;
+      box-sizing: border-box;
+
+      &:first-child {
+        border-top: 1px solid rgba($base, 0.1);
+      }
+    }
 
     > .toggle {
       cursor: pointer;
@@ -46,6 +68,11 @@
         font-weight: 600;
         line-height: (30/16);
         transition: color 0.2s ease-in-out;
+        padding-right: 25px;
+
+        @include to-mobile {
+          font-size: 14px;
+        }
       }
 
       &:hover {
@@ -78,10 +105,17 @@
 
         @include ls(10);
 
+        @include to-mobile {
+          font-size: 13px;
+        }
         /* stylelint-disable */
         p {
           &:not(:last-child) {
             padding-bottom: 26px;
+
+            @include to-mobile {
+              padding-bottom: 17px;
+            }
           }
         }
         /* stylelint-enable */
