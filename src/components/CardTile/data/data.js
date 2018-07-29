@@ -880,8 +880,8 @@ CardTile: {
   ],
   homeData11: [
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -893,8 +893,8 @@ CardTile: {
       isHoverBox: 'false'
     },
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -906,8 +906,8 @@ CardTile: {
       isHoverBox: 'false'
     },
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -957,7 +957,7 @@ CardTile: {
   about: [
     {
       cardModClass: '-two-col',
-      boxModClass: '-color -padding-small', 
+      boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '-base-icon',
       img: '/assets/img/minified-svg/i-business-female-chat.svg',
