@@ -16,6 +16,16 @@
       width: 25%;
       height: 160px;
       text-align: center;
+      opacity: 0.3;
+      transition: opacity 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.45;
+      }
 
       &::after {
         @extend ._v-center::after;
