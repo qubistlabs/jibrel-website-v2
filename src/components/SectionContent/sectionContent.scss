@@ -213,6 +213,14 @@
       }
     }
   }
+
+  > .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
   // Element blocl
   > .container {
     display: inline-block;
@@ -344,7 +352,7 @@
       line-height: (24/14);
 
       &.-white {
-        color: #fff;
+        color: rgba(#fff, 0.6);
       }
 
       &.-offset-bottom {

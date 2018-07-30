@@ -1,13 +1,19 @@
 .card-tile {
   @extend ._all-reset;
 
-  width: 100%;
-  font-size: 0;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  @include from-mobile {
+    width: 100%;
+    font-size: 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    &.-distribute-evenly {
+      justify-content: space-between;
+    }
+  }
 
   &.-w-limit {
     max-width: 860px;
@@ -58,6 +64,10 @@
       }
     }
 
+    &.-w-limit-320 {
+      max-width: 320px;
+    }
+
     @include to-mobile {
       width: 100%;
     }
@@ -80,6 +90,11 @@
       @include from-mobile {
         padding-left: 70px;
         padding-right: 70px;
+
+        &.-no-offset {
+          padding-left: 0;
+          padding-right: 0;
+        }
 
         &.-padding-small {
           padding-left: 30px;
@@ -173,7 +188,7 @@
       }
 
       > .subinfo {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center;
         font-weight: normal;
         margin-bottom: 10px;
@@ -415,6 +430,32 @@
       &.-inner-grid {
         > .item {
           border-color: #f3f4f6;
+        }
+      }
+    }
+
+    @include to-mobile {
+      > .item {
+        &:not(:last-child) {
+          padding-bottom: 25px;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  &.-inner-border-light-gray {
+    @include from-mobile {
+      &.-inner-border-vertical,
+      &.-inner-border-separator {
+        > .item {
+          border-color: #f5f6fa;
+        }
+      }
+
+      &.-inner-grid {
+        > .item {
+          border-color: #f5f6fa;
         }
       }
     }

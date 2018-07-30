@@ -2,7 +2,7 @@
   @extend ._all-reset;
 
   @include from-mobile {
-    width: 100%;
+    width: calc(100% + 20px);
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -10,7 +10,6 @@
     align-items: stretch;
     flex-wrap: wrap;
     margin-left: -10px;
-    margin-right: -10px;
   }
 
   > .item {
@@ -32,6 +31,11 @@
       display: block;
       border-radius: 3px;
       background-color: #fff;
+
+      &.-border {
+        border: 2px solid #f5f6fa;
+        border-top-width: 0;
+      }
 
       @include to-mobile {
         background-color: #fff;

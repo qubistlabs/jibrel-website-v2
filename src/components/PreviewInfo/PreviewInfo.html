@@ -3,12 +3,12 @@
   <div class='descr {{this.modClassDescr}}'>{{this.descr}}</div>
   {{#is buttonText '!=' ''}}
   <div class='btns'>
-    <a href='#' class='j-button {{buttonClass}}'><span class='text'>{{buttonText}}</span></a>
+    <a href='{{buttonLink}}' class='j-button {{buttonClass}}'><span class='text'>{{buttonText}}</span></a>
   </div>
   {{/is}}
 </div>
 {{#is img '!=' ''}}
 <div class='picture'>
-  <img src='{{img}}' srcset='{{img2x}}' class='img' alt='{{this.title}}'>
+  <img src='{{img}}' srcset='{{img2x}}' class='img {{modClassImg}}' alt='{{this.title}}'>
 </div>
 {{/is}}

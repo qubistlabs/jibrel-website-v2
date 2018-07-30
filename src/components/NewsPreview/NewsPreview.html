@@ -1,7 +1,6 @@
-<div class='news-preview'>
-  {{#each NewsPreview}}
+
   <div class='item'>
-    <a href='news-one.html' class='box'>
+    <a href='news-one.html' class='box {{modClassBox}}'>
       <div class='pic'><img src='{{this.img}}' srcset='{{this.img2x}} 2x' alt='{{this.title}}' class='img'></div>
       <div class='body'>
         <time class='date'>{{this.date}}</time>
@@ -10,5 +9,3 @@
       </div>
     </a>
   </div>
-  {{/each}}
-</div>
