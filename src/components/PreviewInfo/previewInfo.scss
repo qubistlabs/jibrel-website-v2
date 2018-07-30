@@ -22,7 +22,7 @@
         &.-reverse {
           flex-direction: row-reverse;
           padding-left: 0;
-          padding-right: 35px;
+          padding-right: 55px;
         }
       }
     }
@@ -75,7 +75,7 @@
 
     > .title {
       line-height: (48/36);
-      font-size: 36px;
+      font-size: 32px;
       font-weight: normal;
 
       @include ls(25);
@@ -97,14 +97,7 @@
       max-width: 930px;
       width: 100%;
       margin-top: 33px;
-
-      &.-white {
-        opacity: 0.8;
-      }
-
-      &.-color {
-        opacity: 0.6;
-      }
+      opacity: 0.6;
 
       &.-box-center {
         margin-left: auto;
@@ -147,6 +140,17 @@
 
     > .img {
       max-width: 100%;
+      position: relative;
+
+      &.-jwalet {
+        @include from-mobile {
+          right: -20px;
+        }
+      }
+
+      &.-jcash {
+        left: -70px;
+      }
     }
   }
 

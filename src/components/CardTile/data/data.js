@@ -528,7 +528,7 @@ CardTile: {
       imgH: '60',
       title: 'Zug',
       subTitle: 'false',
-      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland <br> +41 44-296-8787',
+      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland ',
       isHoverBox: 'false',
     },
     {
@@ -541,7 +541,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue New York, <br>10016 NY, United States <br>+1 929-262-1817',
+      descr: '135 Madison Avenue New York, <br>10016 NY, United States ',
       isHoverBox: 'false',
     },
     {
@@ -554,7 +554,7 @@ CardTile: {
       imgH: '60',
       title: 'St. Petersburg',
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  ',
       isHoverBox: 'false',
     },
     {
@@ -567,7 +567,7 @@ CardTile: {
       imgH: '60',
       title: 'Dubai',
       subTitle: 'false',
-      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE',
       isHoverBox: 'false',
     },
   ],
@@ -582,7 +582,7 @@ CardTile: {
       imgH: '60',
       title: 'Zug',
       subTitle: 'false',
-      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland <br> +41 44-296-8787',
+      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland ',
       isHoverBox: 'false',
     },
     {
@@ -595,7 +595,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue New York, <br>10016 NY, United States <br>+1 929-262-1817',
+      descr: '135 Madison Avenue New York, <br>10016 NY, United States ',
       isHoverBox: 'false',
     },
     {
@@ -608,7 +608,7 @@ CardTile: {
       imgH: '60',
       title: 'St. Petersburg',
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  ',
       isHoverBox: 'false',
     },
     {
@@ -621,7 +621,7 @@ CardTile: {
       imgH: '60',
       title: 'Dubai',
       subTitle: 'false',
-      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE ',
       isHoverBox: 'false',
     },
   ],
@@ -787,7 +787,7 @@ CardTile: {
       imgH: '48',
       title: 'KYC / AML Compliant',
       subTitle: 'false',
-      descr: 'Remain compliant on-chain. Jibrel provides plug-and-play KYC / AML modules.',
+      descr: 'Remain compliant on-chain. Jibrel provides plug-and-play KYC / AML.',
       isHoverBox: 'false'
     },
     {
@@ -880,8 +880,8 @@ CardTile: {
   ],
   homeData11: [
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -893,8 +893,8 @@ CardTile: {
       isHoverBox: 'false'
     },
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -906,8 +906,8 @@ CardTile: {
       isHoverBox: 'false'
     },
     {
-      cardModClass: '-three-col',
-      boxModClass: '-color',
+      cardModClass: '-three-col -w-limit-320',
+      boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
       imgH: '60',
@@ -957,7 +957,7 @@ CardTile: {
   about: [
     {
       cardModClass: '-two-col',
-      boxModClass: '-color -padding-small', 
+      boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '-base-icon',
       img: '/assets/img/minified-svg/i-business-female-chat.svg',
