@@ -31,9 +31,9 @@
     </div>
   </section>
 
-  <section class='section-content -offset-bottom -offset-top'>
+  <section class='section-content -offset-bottom -offset-top' data-aos="fade-in" data-aos-delay="150">
     <div class='container _container-fix'>
-      <div class='card-tile'>
+      <div class='card-tile -distribute-evenly'>
         {{#each CardTile.homeData11}}
         {{> CardTile/CardTile}}
         {{/each}}
@@ -69,7 +69,12 @@
   <section class='section-content -offset-bottom -mobile-bg-gray'>
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
-      {{> NewsPreview/NewsPreview}}
+      <div class='news-preview'>
+        {{#each NewsPreview.borderStyle}}
+        {{> NewsPreview/NewsPreview}}
+        {{/each}}
+      </div>
+
       <div class='j-buttons -center'>
         <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
       </div>

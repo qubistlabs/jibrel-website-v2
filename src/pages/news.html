@@ -13,8 +13,12 @@
   <section class='section-content -offset-page -offset-bottom -bottom-separator -bg-gray'>
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
-      {{> NewsPreview/NewsPreview}}
-      {{> NewsPreview/NewsPreview}}
+      <div class='news-preview'>
+        {{#each NewsPreview.bgStyle}}
+        {{> NewsPreview/NewsPreview}}
+        {{> NewsPreview/NewsPreview}}
+        {{/each}}
+      </div>
       <div class='j-buttons -center'>
         <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
       </div>
