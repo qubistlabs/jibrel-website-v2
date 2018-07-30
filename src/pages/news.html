@@ -10,15 +10,10 @@
   {{> MainHeader/MainHeader MainHeader.small}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <div class='section-content'>
-    <div class='container _container-fix'>
-      {{> PageHeader/PageHeader PageHeader.newsPage}}
-    </div>
-  </div>
-
-  <section class='section-content -offset-bottom -bottom-separator'>
+  <section class='section-content -offset-page -offset-bottom -bottom-separator -bg-gray'>
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
+      {{> NewsPreview/NewsPreview}}
       {{> NewsPreview/NewsPreview}}
       <div class='j-buttons -center'>
         <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
@@ -26,21 +21,9 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom'>
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
     <div class='container _container-fix'>
-      <h2 class='title -text-center -box-center'>Media & Press Resources</h2>
-      <p class='descr -text-center -box-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-      <div class='card-tile -offset-top -inner-grid -inner-border-gray'>
-        {{#each CardTile.mediaAndPress}}
-        {{> CardTile/CardTile}}
-        {{/each}}
-      </div>
-    </div>
-  </section>
-
-  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
-    <div class='container _container-fix'>
-      {{> ProjectForm/ProjectForm ProjectForm.base}}
+      {{> ProjectForm/BaseForm/BaseForm ProjectForm.baseForm.mediaAndPR}}
     </div>
   </section>
 

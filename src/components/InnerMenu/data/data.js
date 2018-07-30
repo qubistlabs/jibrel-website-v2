@@ -18,7 +18,7 @@ InnerMenu: {
   ],
   careers: [
     {
-      attr: 'data-scroll-to=\'#list-vacancies\'',
+      attr: 'data-scroll-to=\'list-vacancies\'',
       text: 'See open positions',
       modClass: '-three-col -inline -w-limit-320 -border-on-blue-bg js-scroll-to'
     },

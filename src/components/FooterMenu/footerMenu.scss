@@ -46,12 +46,26 @@
         font-size: 13px;
         transition: color 0.2s ease-in-out;
 
+        > .icom {
+          fill: none;
+          stroke: $base-o;
+          transition: stroke 0.2s ease-in-out;
+        }
+
         &:hover {
           color: $light-blue;
+
+          > .icom {
+            stroke: $light-blue;
+          }
         }
 
         &:active {
           color: rgba($light-blue, 0.5);
+
+          > .icom {
+            stroke: rgba($light-blue, 0.5);
+          }
         }
       }
     }

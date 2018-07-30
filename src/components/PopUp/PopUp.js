@@ -1,28 +1,15 @@
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
+
 const popUpOpen = document.querySelectorAll('.js-popup-open')
 const popUpClose = document.querySelectorAll('.js-popup-close')
 
-
-function getParents(element, selector) {
-  const elements = []
-  // eslint-disable-next-line fp/no-let
-  let elem = element
-  const isWithSelector = selector !== undefined
-
-  // eslint-disable-next-line no-cond-assign, fp/no-mutation
-  while ((elem = elem.parentElement) !== null) {
-    if (elem.nodeType === Node.ELEMENT_NODE) {
-      if (!isWithSelector || elem.matches(selector)) {
-        // eslint-disable-next-line fp/no-mutating-methods
-        elements.push(elem)
-      }
-    }
-  }
-
-  return elements
-}
-
 function preventDefault(e) {
   e.preventDefault()
+}
+
+function noscroll(scrollTop) {
+  window.scrollTo(0, scrollTop)
 }
 
 const popUp = {
@@ -37,50 +24,38 @@ const popUp = {
     this.disableScroll()
   },
 
-  closePopup(popUpButton) {
-
+  closePopup() {
     this.enableScroll()
-    getParents(popUpButton, '.section-content.-popup').forEach((popUpContainer) => {
+    // getParents(popUpButton, '.section-content.-popup').forEach((popUpContainer) => {
+    document.querySelectorAll('.section-content.-popup').forEach((popUpContainer) => {
       popUpContainer.classList.add('-animation-hide')
       setTimeout(() => {
         popUpContainer.classList.add('-hide')
       }, 200)
     })
-
   },
 
   disableScroll() {
-    if (window.innerWidth < 767) {
-      document.body.addEventListener('touchmove', preventDefault, { passive: false })
-    } else {
-      document.body.classList.add('-scroll-lock')
-    }
+    document.body.addEventListener('touchmove', preventDefault, { passive: false })
+    window.addEventListener('scroll', noscroll)
   },
 
   enableScroll() {
     document.body.removeEventListener('touchmove', preventDefault, { passive: false })
-    document.body.classList.remove('-scroll-lock')
+    window.removeEventListener('scroll', noscroll)
   },
 }
 
-function popUpOpenFN(popUpButton) {
+popUpOpen.forEach((popUpButton) => {
   popUpButton.addEventListener('click', (event) => {
     event.preventDefault()
     popUp.openPopup(popUpButton)
   })
-}
-
-function popUpCloseFN(popUpButton) {
-  popUpButton.addEventListener('click', (event) => {
-    event.preventDefault()
-    popUp.closePopup(popUpButton)
-  })
-}
-
-popUpOpen.forEach((popUpButton) => {
-  popUpOpenFN(popUpButton)
 })
 
 popUpClose.forEach((popUpButton) => {
-  popUpCloseFN(popUpButton)
+  popUpButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    popUp.closePopup()
+  })
 })

@@ -12,7 +12,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -26,7 +35,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -40,7 +58,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -54,7 +81,16 @@ CardTile: {
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -68,7 +104,16 @@ CardTile: {
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -82,7 +127,16 @@ CardTile: {
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
   ],
 
@@ -99,7 +153,16 @@ CardTile: {
       subTitle: 'Analytics',
       descr: 'Run advanced analytics on transactions and addresses, all through an easy to use API.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -113,7 +176,16 @@ CardTile: {
       subTitle: 'Compliance',
       descr: 'Conduct KYC / AML due diligence on blockchain activity, including blacklist address screening.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -127,7 +199,16 @@ CardTile: {
       subTitle: 'Infrastructure',
       descr: 'Supercharge your business with Jibrel Core. Set-up your own blockchain, purpose built for Financial Services.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
   ],
 
@@ -144,7 +225,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Official ERC-20 wallet of the Jibrel Network. An enterprise-grade token storage solution.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -158,7 +248,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Stable currencies, as standard ERC-20 tokens, on the Ethereum Blockchain.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-three-col',
@@ -172,7 +271,16 @@ CardTile: {
       subTitle: 'false',
       descr: 'Enterprise-grade, easily set-up, Ethereum access. No blockchain expertise required.',
       isHoverBox: 'true',
-      hoverText: 'More info'
+      hoverText: 'More info',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'More',
+          href: '#'
+        }
+      ]
     },
   ],
 
@@ -187,7 +295,7 @@ CardTile: {
       imgH: '60',
       title: 'Anywhere, anytime',
       subTitle: 'false',
-      descr: 'The jWallet is mobile friendly, so you can access your tokens everywhere you go. The web-version works on desktop and mobile browsers.',
+      descr: 'The Jwalet is mobile friendly, so you can access your tokens everywhere you go. The web-version works on desktop and mobile browsers.',
       isHoverBox: 'false'
     },
     {
@@ -213,7 +321,7 @@ CardTile: {
       imgH: '60',
       title: 'Made by geeks. Made for users',
       subTitle: 'false',
-      descr: 'We’ve done the complicated stuff so you won’t have to. the jWallet introduces new features to Ethereum, like a standard URI scheme',
+      descr: 'We’ve done the complicated stuff so you won’t have to. the Jwalet introduces new features to Ethereum, like a standard URI scheme',
       isHoverBox: 'false'
     },
   ],
@@ -227,7 +335,7 @@ CardTile: {
       img: '/assets/img/general/jwalet-demo/jwalet-demo-1.png',
       title: 'Stocked and ready to go',
       subTitle: 'false',
-      descr: 'The jWallet is preconfigured to be compatible with all Ethereum tokens and Ethereum itself, straight out of the box, no configuration necessary.',
+      descr: 'The Jwalet is preconfigured to be compatible with all Ethereum tokens and Ethereum itself, straight out of the box, no configuration necessary.',
       isHoverBox: 'false'
     },
     {
@@ -363,7 +471,7 @@ CardTile: {
       buttons: [
         {
           type: 'link',
-          class: 'j-button -w-limit-240 -fill-on-white-bg',
+          class: 'j-button -w-limit-240 -fill-on-white-bg -mobile-border-on-white-bg',
           text: 'More',
           href: '#'
         }
@@ -382,7 +490,7 @@ CardTile: {
       buttons: [
         {
           type: 'link',
-          class: 'j-button -w-limit-240 -fill-on-white-bg',
+          class: 'j-button -w-limit-240 -fill-on-white-bg -mobile-border-on-white-bg',
           text: 'More',
           href: '#'
         }
@@ -401,7 +509,7 @@ CardTile: {
       buttons: [
         {
           type: 'link',
-          class: '-w-limit-240 -fill-on-white-bg',
+          class: 'j-button -w-limit-240 -fill-on-white-bg -mobile-border-on-white-bg',
           text: 'More',
           href: '#'
         }
@@ -420,7 +528,7 @@ CardTile: {
       imgH: '60',
       title: 'Zug',
       subTitle: 'false',
-      descr: 'Baarerstrasse 10 6302, Canton of Zug Switzerland <br> +41 44-296-8787',
+      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland <br> +41 44-296-8787',
       isHoverBox: 'false',
     },
     {
@@ -433,7 +541,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue New York, 10016 NY, United States <br>+1 929-262-1817',
+      descr: '135 Madison Avenue New York, <br>10016 NY, United States <br>+1 929-262-1817',
       isHoverBox: 'false',
     },
     {
@@ -446,7 +554,7 @@ CardTile: {
       imgH: '60',
       title: 'St. Petersburg',
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  <br> +7 926-595-9706',
       isHoverBox: 'false',
     },
     {
@@ -459,7 +567,61 @@ CardTile: {
       imgH: '60',
       title: 'Dubai',
       subTitle: 'false',
-      descr: 'Burjuman Business Tower Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
+      isHoverBox: 'false',
+    },
+  ],
+  aboutContact: [
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/zug-w.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Zug',
+      subTitle: 'false',
+      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland <br> +41 44-296-8787',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/new-york-w.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'New York',
+      subTitle: 'false',
+      descr: '135 Madison Avenue New York, <br>10016 NY, United States <br>+1 929-262-1817',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/peters-w.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'St. Petersburg',
+      subTitle: 'false',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  <br> +7 926-595-9706',
+      isHoverBox: 'false',
+    },
+    {
+      cardModClass: '-four-col',
+      boxModClass: '-white -padding-small',
+      imgType: 'img',
+      modClassImg: '',
+      img: '/assets/img/general/icon/dubai-w.svg',
+      imgW: '60',
+      imgH: '60',
+      title: 'Dubai',
+      subTitle: 'false',
+      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE <br> +971 4 325-2444',
       isHoverBox: 'false',
     },
   ],
@@ -477,7 +639,16 @@ CardTile: {
       subTitle: '.svg, 10 Kb',
       descr: 'false',
       isHoverBox: 'true',
-      hoverText: 'Download'
+      hoverText: 'Download',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'Download',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-four-col',
@@ -491,10 +662,19 @@ CardTile: {
       subTitle: '.jpg, 2.0 Mb',
       descr: 'false',
       isHoverBox: 'true',
-      hoverText: 'Download'
+      hoverText: 'Download',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'Download',
+          href: '#'
+        }
+      ]
     },
     {
-      cardModClass: '-four-col', 
+      cardModClass: '-four-col',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -505,7 +685,16 @@ CardTile: {
       subTitle: '.pdf, 2.0 Mb',
       descr: 'false',
       isHoverBox: 'true',
-      hoverText: 'Download'
+      hoverText: 'Download',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'Download',
+          href: '#'
+        }
+      ]
     },
     {
       cardModClass: '-four-col',
@@ -519,7 +708,16 @@ CardTile: {
       subTitle: '.pdf, 2.0 Mb',
       descr: 'false',
       isHoverBox: 'true',
-      hoverText: 'Download'
+      hoverText: 'Download',
+      buttonClass: '-mobile-visible',
+      buttons: [
+        {
+          type: 'link',
+          class: 'j-button -w-100 -border-on-white-bg',
+          text: 'Download',
+          href: '#'
+        }
+      ]
     },
   ],
 
@@ -680,6 +878,47 @@ CardTile: {
       isHoverBox: 'false'
     },
   ],
+  homeData11: [
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'img',
+      imgW: '60',
+      imgH: '60',
+      modClassImg: '',
+      img: '/assets/img/general/icon/scale.svg',
+      title: 'Stable',
+      subTitle: 'false',
+      descr: 'Jibrel Network offers stable tokens tethered to currencies, commodities and bonds, as standard ERC-20 tokens, on the Ethereum blockchain',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'img',
+      imgW: '60',
+      imgH: '60',
+      modClassImg: '',
+      img: '/assets/img/general/icon/passport.svg',
+      title: 'Compliant',
+      subTitle: 'false',
+      descr: 'All network users and digital asset transfers are screened in accordance with relevant KYC, AML, ATF regulation, policies and procedures',
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      boxModClass: '-color',
+      imgType: 'img',
+      imgW: '60',
+      imgH: '60',
+      modClassImg: '',
+      img: '/assets/img/general/icon/cloud-data.svg',
+      title: 'Convenient',
+      subTitle: 'false',
+      descr: 'Accessing stable tokens is straightforward. Simply exchange your volatile digital assets for stable tethered tokens by using jCash smart contracts',
+      isHoverBox: 'false'
+    },
+  ],
   homeData2: [
     {
       cardModClass: '-three-col',
@@ -718,7 +957,7 @@ CardTile: {
   about: [
     {
       cardModClass: '-two-col',
-      boxModClass: '-color',
+      boxModClass: '-color -padding-small', 
       imgType: 'img',
       modClassImg: '-base-icon',
       img: '/assets/img/minified-svg/i-business-female-chat.svg',
@@ -731,7 +970,7 @@ CardTile: {
     },
     {
       cardModClass: '-two-col',
-      boxModClass: '-color',
+      boxModClass: '-color -padding-small',
       imgType: 'svg',
       modClassImg: '-base-icon',
       img: '<svg class=\'icon -stroke\' width=\'56\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-business-statistics\'></use></svg>',
@@ -745,43 +984,31 @@ CardTile: {
     {
       cardModClass: '-three-col',
       boxModClass: '-color',
-      imgType: 'img',
-      modClassImg: '-base-icon -with-subtitle',
-      img: '/assets/img/minified-svg/i-folder-check.svg',
-      imgW: '46',
-      imgH: '46',
       subinfo: '12',
       title: 'false',
       subTitle: 'false',
-      descr: 'Banks and non-bank pilots',
+      descr: 'Banks and non-bank <br> pilots',
+      modClassDescr: '-large-size',
       isHoverBox: 'false'
     },
     {
       cardModClass: '-three-col',
       boxModClass: '-color',
-      imgType: 'img',
-      modClassImg: '-base-icon -with-subtitle',
-      img: '/assets/img/minified-svg/i-file-stamp.svg',
-      imgW: '46',
-      imgH: '46',
       subinfo: '6',
       title: 'false',
       subTitle: 'false',
-      descr: 'Licenses and regulatory approvals',
+      descr: 'Licenses and regulatory <br> approvals',
+      modClassDescr: '-large-size',
       isHoverBox: 'false'
     },
     {
       cardModClass: '-three-col',
       boxModClass: '-color',
-      imgType: 'img',
-      modClassImg: '-base-icon -with-subtitle',
-      img: '/assets/img/minified-svg/i-business-user.svg',
-      imgW: '46',
-      imgH: '46',
       subinfo: '8,000',
       title: 'false',
       subTitle: 'false',
-      descr: 'Individual and enterprise users',
+      descr: 'Individual and enterprise <br> users',
+      modClassDescr: '-large-size',
       isHoverBox: 'false'
     },
   ],

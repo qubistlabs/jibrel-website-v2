@@ -33,15 +33,15 @@
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
 
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center'>jWallet — Official ERC-20 wallet of the Jibrel Network</h2>
-      <p class='descr -white -text-center -box-center -w-limit-650'>jWallet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
+      <h2 class='title -white -text-center -box-center'>Jwalet — Official ERC-20 wallet of the Jibrel Network</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650'>Jwalet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
     </div>
 
-    <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top _mobile-hide'>
 
       <div class='container _container-fix'>
         <div class='tab-links -center'>
-          {{#each TabsComponent.TabLinks.jWallet}}
+          {{#each TabsComponent.TabLinks.Jwalet}}
           {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
@@ -51,7 +51,7 @@
         {{> SectionName/SectionName SectionName.productsCompanySection1}}
         <div class='container _container-fix'>
           <div class='tabs-content'>
-            {{#each TabsComponent.TabsContent.jWallet}}
+            {{#each TabsComponent.TabsContent.Jwalet}}
             {{> TabsComponent/TabsContent/TabsContent}}
             {{/each}}
           </div>
@@ -60,14 +60,20 @@
 
     </div>
 
-
+    <div class='product-mobile'>
+      <div class="container swiper-container">
+        <div class='wrapper swiper-wrapper'>
+          {{> ProjectSlider/ProductMobile/ProductMobile ProjectSlider.productMobile.Jwalet}}
+        </div>
+      </div>
+    </div>
 
     <div class='container -offset-top _container-fix'>
       <h2 class='title -white -text-center -box-center'>jCash — Stable currencies on the Ethereum Blockchain</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel is dedicated to providing blockchain-powered digital currency solutions to enterprise and individual users, allowing smart contract technology to be used in traditional finance.</p>
     </div>
 
-    <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top _mobile-hide'>
 
       <div class='container _container-fix'>
         <div class='tab-links -center'>
@@ -90,12 +96,20 @@
 
     </div>
 
+    <div class='product-mobile'>
+      <div class="container swiper-container">
+        <div class='wrapper swiper-wrapper'>
+          {{> ProjectSlider/ProductMobile/ProductMobile ProjectSlider.productMobile.jCash}}
+        </div>
+      </div>
+    </div>
+
     <div class='container -offset-top _container-fix'>
       <h2 class='title -white -text-center -box-center'>jNode — Enterprise-grade, easily set-up, Ethereum access</h2>
       <p class='descr -white -text-center -box-center -w-limit-650'>Jibrel provides plug-and-play Ethereum access, with enterprise-grade up-time. Get your business on-chain without any blockchain development experience.</p>
     </div>
 
-    <div class='tabs-component -offset-top'>
+    <div class='tabs-component -offset-top _mobile-hide'>
 
       <div class='container _container-fix'>
         <div class='tab-links -center'>
@@ -117,9 +131,18 @@
       </div>
 
     </div>
+
+    <div class='product-mobile'>
+      <div class="container swiper-container">
+        <div class='wrapper swiper-wrapper'>
+          {{> ProjectSlider/ProductMobile/ProductMobile ProjectSlider.productMobile.jNode}}
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <section class='section-content'>
+  <section class='section-content -overflow-hidden'>
     <div class='container _container-fix -offset-top -offset-bottom'>
       <div class='team-list'>
         {{> ProjectSlider/TeamSlider/TeamSlider}}
@@ -127,7 +150,7 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
     <div class='container _container-fix'>
       {{> ProjectForm/ProjectForm ProjectForm.base}}
     </div>

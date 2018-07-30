@@ -1,6 +1,7 @@
 .job-info {
   white-space: nowrap;
   position: relative;
+  font-size: 0;
 
   &.-in-vacancies-list {
     top: 5px;
@@ -18,6 +19,10 @@
     display: inline-block;
     vertical-align: middle;
 
+    @include to-mobile {
+      color: $blue;
+    }
+
     @include ls(10);
 
     &:not(:last-child) {
@@ -31,6 +36,10 @@
       fill: $blue;
       position: relative;
       top: -1px;
+
+      @include to-mobile {
+        display: none;
+      }
     }
   }
 }

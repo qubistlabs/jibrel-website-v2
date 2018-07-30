@@ -1,14 +1,32 @@
 .page-header {
   padding-top: 195px;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 50px;
+
+  @include from-mobile {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include to-mobile {
+    padding-top: 106px;
+    padding-bottom: 39px;
+  }
 
   > .back {
     font-size: 0;
+
+    @include to-mobile {
+      display: block;
+      width: calc(100% + 60px);
+      margin-left: -30px;
+      background-color: #fff;
+      text-align: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
 
     > .icon {
       width: 11px;

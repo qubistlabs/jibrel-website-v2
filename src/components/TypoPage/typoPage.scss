@@ -6,14 +6,25 @@
   width: 100%;
   box-sizing: border-box;
 
+  @include to-mobile {
+    padding-bottom: 21px;
+  }
+
   > .header {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     width: 100%;
     padding-bottom: 40px;
+
+    @include from-mobile {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @include to-mobile {
+      padding-bottom: 11px;
+    }
 
     > .title {
       font-weight: normal;
@@ -21,9 +32,15 @@
       font-size: 36px;
       line-height: (48/36);
 
+      @include to-mobile {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
       &.-offset-right {
-        max-width: 570px;
-        padding-right: 30px;
+        @include from-mobile {
+          padding-right: 30px;
+        }
       }
     }
 
@@ -56,17 +73,29 @@
       font-weight: 600;
       margin-top: 65px;
 
+      @include to-mobile {
+        margin-top: 30px;
+      }
+
       &:not(:last-child) {
         margin-bottom: 32px;
+        @include to-mobile {
+          margin-bottom: 15px;
+        }
       }
     }
 
     img {
       max-width: 100%;
       padding-top: 5px;
+      border-radius: 3px;
 
       &:not(:last-child) {
         margin-bottom: 76px;
+
+        @include to-mobile {
+          margin-bottom: 30px;
+        }
       }
     }
 
@@ -75,6 +104,9 @@
       color: rgba($base, 0.8);
       line-height: (24/14);
       margin-bottom: 25px;
+      @include to-mobile {
+        margin-bottom: 20px;
+      }
 
       @include ls(10)
     }
@@ -83,6 +115,11 @@
       position: relative;
       padding-left: 35px;
       list-style: none;
+
+      @include to-mobile {
+        padding-left: 25px;
+      }
+
 
       &::before {
         content: '';

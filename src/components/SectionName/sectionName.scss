@@ -4,8 +4,16 @@
   width: 100%;
   text-align: left;
 
+  @media (max-width: 1475px) {
+    display: none;
+  }
+
   &.-bottom-70 {
     bottom: 70px;
+
+    @include to-mobile {
+      bottom: 52px;
+    }
   }
 
   &.-bottom-460 {
@@ -18,6 +26,10 @@
 
   &.-top-110 {
     top: 110px;
+  }
+
+  &.-center {
+    top: 50%;
   }
 
   > .container {
@@ -45,6 +57,7 @@
 
       &.-top {
         // transform-origin: right bottom;
+        transform: translate(-100%, 0) rotate(-90deg);
         transform: translate(calc(-100% + -5px), 0) rotate(-90deg);
         transform-origin: right top;
       }
@@ -63,12 +76,31 @@
       fill: none;
       stroke-width: 2px;
 
+      @include to-mobile {
+        opacity: 0.6;
+      }
+
       &.-white {
         stroke: #fff;
       }
 
       &.-color {
         stroke: $base;
+      }
+    }
+  }
+
+  &.-mobile-visible {
+    @include to-mobile {
+      > .container {
+        > .title {
+          display: none;
+        }
+
+        > .arrow {
+          right: 50%;
+          transform: translateX(50%);
+        }
       }
     }
   }

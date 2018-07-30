@@ -10,6 +10,10 @@
 
   &.-offset-top {
     margin-top: 70px;
+
+    @include to-mobile {
+      margin-top: 40px;
+    }
   }
 
   > .item {
@@ -17,6 +21,11 @@
     display: inline-block;
     vertical-align: top;
     margin-bottom: 80px;
+
+    @include to-mobile {
+      width: 50%;
+      margin-bottom: 45px;
+    }
 
     > .avatar {
       width: 110px;
@@ -63,6 +72,10 @@
       font-weight: 600;
       line-height: (30/16);
       padding-top: 15px;
+
+      @include to-mobile {
+        font-size: 14px;
+      }
     }
 
     > .position {

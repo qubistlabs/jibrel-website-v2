@@ -7,44 +7,52 @@
 
 <body>
   %=symbols=%
-  {{> MainHeader/MainHeader MainHeader.white}}
+  {{> MainHeader/MainHeader MainHeader.color}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-grid'>
     {{> SectionName/SectionName SectionName.welcome}}
-    <div class='container -center-box -visual-center-with-cards _container-fix'>
-      <h1 class='title -white -text-center -box-center'>The Jibrel Network provides currencies, equities, commodities and other financial assets and instruments as standard ERC-20 tokens on the Ethereum blockchain.</h1>
-    </div>
-  </section>
-
-  <div class='section-content -up-card -offset-bottom'>
-    <div class='container _container-fix'>
-      <div class='card-tile -inner-grid -inner-border-gray -box-shadow'>
-        {{#each CardTile.project}}
-        {{> CardTile/CardTile}}
-        {{/each}}
-      </div>
-    </div>
-  </div>
-
-  <section class='section-content -offset-bottom'>
-    <div class='container _container-fix'>
-      <h2 class='title -small -text-center -box-center'>Learn more about how you can better manage digital assets using Jibrel infrastructure, products and solutions</h2>
-      <div class='card-tile -offset-top'>
-        {{#each CardTile.homeData1}}
-        {{> CardTile/CardTile}}
-        {{/each}}
+    <div class='container -center-box _container-fix'>
+      <div class='preview-info'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.home}}
+        <div class='form'>
+          <div class='project-form'>
+            <div class='container -no-offset'>
+              <form action='' class='form _relative'>
+                <label class='item'>
+                  <input type='email' class='field -input -fill -button-sibling' placeholder='Email Address' required=''>
+                </label>
+                <button class='send -text -inline js-send-form'>Join us</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+  <section class='section-content -offset-bottom -offset-top'>
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center'>Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</h2>
-      <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
-        {{#each CardTile.homeData2}}
+      <div class='card-tile'>
+        {{#each CardTile.homeData11}}
         {{> CardTile/CardTile}}
         {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
+    <div class='container -center-box _container-fix -bg-gray'>
+      <div class='preview-info -row -inner -mobile-offset-bottom-collapse'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jWaletInner}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -center-child-box -mobile-bg-gray'>
+    <div class='container -center-box _container-fix -bg-gray'>
+      <div class='preview-info -row -inner -reverse -mobile-offset-top-collapse'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jCashInner}}
       </div>
     </div>
   </section>
@@ -58,9 +66,25 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+  <section class='section-content -offset-bottom -mobile-bg-gray'>
+    {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
-      {{> ProjectForm/ProjectForm ProjectForm.base}}
+      {{> NewsPreview/NewsPreview}}
+      <div class='j-buttons -center'>
+        <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <h2 class='title -white -text-center -box-center'>Jibrel Global Presence</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom'>Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
     </div>
   </section>
 

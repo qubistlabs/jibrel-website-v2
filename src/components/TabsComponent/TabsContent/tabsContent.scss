@@ -1,6 +1,13 @@
 .tabs-content {
   position: relative;
 
+  @include to-mobile {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   > .tab {
     position: absolute;
     width: 100%;

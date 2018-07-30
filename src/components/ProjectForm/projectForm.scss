@@ -5,19 +5,21 @@
   width: 100%;
 
   > .container {
-    max-width: 690px;
+    max-width: 455px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 3px;
-    padding: 65px 30px 70px 30px;
 
     &.-bg-white {
       background-color: #fff;
     }
 
-    &.-no-offset-top {
-      padding-top: 0;
+    @include to-mobile {
+      padding: 0;
+
+      &.-mobile-bg-blue {
+        @include bg-blue;
+      }
     }
 
     > .title {
@@ -26,8 +28,20 @@
       text-align: center;
       margin-bottom: 55px;
 
-      &.-on-blue-bg {
+      @include to-mobile {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      &.-white {
         color: #fff;
+      }
+
+      &.-mobile-white {
+        @include to-mobile {
+          color: #fff;
+        }
       }
 
       &.-offset-small {
@@ -76,8 +90,14 @@
           top: 0;
           left: 0;
 
-          &.-on-blue-bg {
+          &.-white {
             color: rgba(#fff, 0.8);
+          }
+
+          &.-mobile-white {
+            @include to-mobile {
+              color: rgba(#fff, 0.8);
+            }
           }
         }
 
@@ -85,10 +105,16 @@
           width: 100%;
           border-width: 0;
           border-bottom: 1px solid rgba($base, 0.2);
+          border-radius: 0;
           font-size: 16px;
           font-weight: 600;
           color: $base;
           transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          background-color: transparent;
+
+          @include to-mobile {
+            font-size: 14px;
+          }
 
           @include placeholder {
             color: $base-o;
@@ -99,7 +125,7 @@
             padding-right: 100px;
           }
 
-          &.-on-blue-bg {
+          &.-white {
             color: #fff;
             border-color: rgba(#fff, 0.15);
             background-color: transparent;
@@ -110,6 +136,19 @@
             }
           }
 
+          &.-mobile-white {
+            @include to-mobile {
+              color: #fff;
+              border-color: rgba(#fff, 0.15);
+              background-color: transparent;
+
+              @include placeholder {
+                color: rgba(#fff, 0.8);
+                font-weight: normal;
+              }
+            }
+          }
+
           &.-error {
             color: $error;
             border-color: $error;
@@ -117,8 +156,33 @@
 
           @include font;
 
+          &.-fill {
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 6px 12px rgba($base, 0.15);
+          }
+
           &.-input {
             height: 70px;
+
+            &.-fill {
+              height: 56px;
+              font-size: 13px;
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+
+            &.-button-sibling {
+              padding-right: 135px;
+            }
+
+            @include to-mobile {
+              height: 60px;
+
+              &.-fill {
+                height: 56px;
+              }
+            }
 
             &.-small {
               height: 60px;
@@ -162,6 +226,33 @@
             font-weight: normal;
             display: block;
           }
+        }
+      }
+
+      > .send {
+        &.-text {
+          color: $blue;
+          transition: color 0.2s ease-in-out;
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        &:hover {
+          color: $light-blue;
+        }
+
+        &:active {
+          color: rgba($light-blue, 0.5);
+        }
+
+        &.-inline {
+          position: absolute;
+          height: 26px;
+          top: 50%;
+          right: 0;
+          margin-top: -13px;
+          border-left: 1px solid rgba($base, 0.1);
+          width: 125px;
         }
       }
 

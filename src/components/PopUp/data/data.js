@@ -1,19 +1,8 @@
 PopUp: {
-  baseForm: {
-    support: {
-      title: 'Technical Support'
-    },
-    media: {
-      title: 'Media & PR Inquiries'
-    },
-    product: {
-      title: 'Product & Sales Enquiry'
-    },
-  },
   MainMenu: {
     project: [
       {
-        name: 'Jwallet',
+        name: 'Jwalet',
         descr: 'User-friendly and secure wallet to manage digital assets',
         link: 'jwalet.html',
         text: 'More info'
@@ -49,18 +38,37 @@ PopUp: {
     ],
     otherSection: [
       {
+        name: 'Products',
+        pages: [
+          {
+            link: 'enterprise.html',
+            name: 'Enterprise',
+          },
+          {
+            link: '#',
+            name: 'Jwallet',
+            externalLink: 'true'
+          },
+          {
+            link: '#',
+            name: 'Jcash',
+            externalLink: 'true'
+          },
+        ]
+      },
+      {
         name: 'Company',
         pages: [
           {
             link: 'about.html',
-            name: 'About Jibrel',
+            name: 'About Us',
           },
           {
             link: 'news.html',
             name: 'Press & Media',
           },
           {
-            link: 'careers.html',
+            link: 'vacancies-list.html',
             name: 'Careers',
           },
         ]
@@ -69,20 +77,23 @@ PopUp: {
         name: 'Contact',
         pages: [
           {
-            link: 'products.html',
-            name: 'Product team',
+            modal: '#send-message',
+            name: 'Send a message',
           },
           {
             link: '#',
-            name: 'Media team',
+            name: 'Facebook',
           },
           {
-            link: 'contact-us.html',
-            name: 'Support',
+            link: '#',
+            name: 'Twitter',
+          },
+          {
+            link: '#',
+            name: 'Instagram',
           },
         ]
       }
     ]
   },
-
 }

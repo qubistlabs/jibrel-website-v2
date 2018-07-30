@@ -1,4 +1,131 @@
 ProjectSlider: {
+  productMobile: {
+    Jwalet: {
+      content: [
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Insights'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Dashboards'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Sending Funds'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Templates'
+        },
+      ]
+    },
+    jCash: {
+      content: [
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Clear Simplicity'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'KYS Adress Registration'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Convertation'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Refund System'
+        },
+      ]
+    },
+    jNode: {
+      content: [
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Screen One'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Other Screen'
+        },
+        {
+          img: '/assets/img/content/jwalet-m.png',
+          title: 'Next Third'
+        },
+      ]
+    },
+  },
+  productContent: {
+    Jwalet: {
+      content: [
+        {
+          img: '/assets/img/content/tab-jwalet.png',
+          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          title: 'Insights'
+        },
+        {
+          img: '/assets/img/content/tab-jwalet.png',
+          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          title: 'Dashboards'
+        },
+        {
+          img: '/assets/img/content/tab-jwalet.png',
+          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          title: 'Sending Funds'
+        },
+        {
+          img: '/assets/img/content/tab-jwalet.png',
+          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          title: 'Templates'
+        },
+      ]
+    },
+    jCash: {
+      content: [
+        {
+          img: '/assets/img/content/tab-jcash.png',
+          img2x: '/assets/img/content/tab-jcash@2x.png 2x',
+          title: 'Clear Simplicity'
+        },
+        {
+          img: '/assets/img/content/tab-jcash.png',
+          img2x: '/assets/img/content/tab-jcash@2x.png 2x',
+          title: 'KYS Adress Registration'
+        },
+        {
+          img: '/assets/img/content/tab-jcash.png',
+          img2x: '/assets/img/content/tab-jcash@2x.png 2x',
+          title: 'Convertation'
+        },
+        {
+          img: '/assets/img/content/tab-jcash.png',
+          img2x: '/assets/img/content/tab-jcash@2x.png 2x',
+          title: 'Refund System'
+        },
+      ]
+    },
+    jNode: {
+      content: [
+        {
+          img: '/assets/img/content/tab-jnode.png',
+          img2x: '/assets/img/content/tab-jnode@2x.png 2x',
+          title: 'Screen One'
+        },
+        {
+          img: '/assets/img/content/tab-jnode.png',
+          img2x: '/assets/img/content/tab-jnode@2x.png 2x',
+          title: 'Other Screen'
+        },
+        {
+          img: '/assets/img/content/tab-jnode.png',
+          img2x: '/assets/img/content/tab-jnode@2x.png 2x',
+          title: 'Next Third'
+        },
+      ]
+    },
+  },
   teamSlide: [
     {
       img: 'avatar-1.png',

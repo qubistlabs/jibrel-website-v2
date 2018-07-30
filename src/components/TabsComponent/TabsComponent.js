@@ -1,23 +1,32 @@
-const tabButton = document.querySelectorAll('.js-tab-select')
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
 
-function tabEvent(event) {
-  const tabContainer = this.closest('.tabs-component')
-  const scopeTabButton = tabContainer.querySelectorAll('.js-tab-select')
-  const scopeTabContent = tabContainer.querySelectorAll('.tabs-content .tab')
-  const index = Array.prototype.indexOf.call(scopeTabButton, event.target)
+const tabContainer = document.querySelectorAll('.tabs-component')
 
-  scopeTabButton.forEach((element) => {
-    element.classList.remove('-active')
+function tabEvent(container) {
+  // const tabContainer = this.closest('.tabs-component')
+  const tabButton = container.querySelectorAll('.js-tab-select')
+
+  tabButton.forEach((element) => {
+    element.addEventListener('click', (event) => {
+      event.preventDefault()
+      const scopeTabContent = container.querySelectorAll('.tabs-content .tab')
+      const index = Array.prototype.indexOf.call(tabButton, event.target)
+
+      tabButton.forEach((e) => {
+        e.classList.remove('-active')
+      })
+
+      scopeTabContent.forEach((e) => {
+        e.classList.remove('-active')
+      })
+
+      element.classList.add('-active')
+      scopeTabContent[index].classList.add('-active')
+    })
   })
-
-  scopeTabContent.forEach((element) => {
-    element.classList.remove('-active')
-  })
-
-  this.classList.add('-active')
-  scopeTabContent[index].classList.add('-active')
 }
 
-tabButton.forEach((element) => {
-  element.addEventListener('click', tabEvent, { passive: false })
+tabContainer.forEach((container) => {
+  tabEvent(container)
 })

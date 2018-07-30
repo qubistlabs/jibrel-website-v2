@@ -16,26 +16,27 @@
     </div>
   </div>
 
-  <section class='section-content -offset-bottom -bg-gray'>
+  <section class='section-content -bg-gray'>
     {{> SectionName/SectionName SectionName.vacancy}}
-    <div class='container _container-fix-small -bg-white'>
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
       {{> TypoPage/TypoPage TypoPage.vacancy}}
+    </div>
+  </section>
 
-      <div class='project-form'>
-        <div class='container -no-offset-top'>
-          <h2 class='title -offset-small'>Apply for this position</h2>
-          <form action='' class='form -w-large'>
-            <label class="item -no-offset">
-              <input type="text" class="field -input -small" required="" placeholder="Full Name *">
-            </label>
-            <label class="item -no-offset">
-              <input type="text" class="field -input -small" required="" placeholder="Email Address *">
-            </label>
-            <div class='button'>
-              <button class='j-button -fill-on-white-bg -w100 js-send-form'><span class='text'>Submit application</span></button>
-            </div>
-          </form>
-        </div>
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -offset-top-small -offset-bottom-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <h2 class='title -white -text-center -box-center'>Jibrel Global Presence</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom'>Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
       </div>
     </div>
   </section>

@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
+
 const languagesBox = document.querySelector('.select-language')
 const languageToggle = languagesBox.querySelector('.toggle')
 const languageCurrent = languagesBox.querySelector('.current')
@@ -31,7 +34,6 @@ const selectLanguage = {
     languagesHide.classList.remove('-active')
   },
 }
-
 
 languages.forEach((language) => {
   language.addEventListener('click', () => {

@@ -4,15 +4,15 @@ SectionName: {
     title: 'WELCOME',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-color'
   },
 
   about: {
-    positionContainer: '-bottom-70',
+    positionContainer: '-bottom-70 -mobile-visible',
     title: 'WHAT WE DO —',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-color'
   },
   aboutSection1: {
     positionContainer: '-top-110',
@@ -31,14 +31,14 @@ SectionName: {
 
   products: {
     positionContainer: '-bottom-70',
-    title: 'JWALLET — JCASH — JNODE',
+    title: 'Jwalet — JCASH — JNODE',
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white'
   },
   productsCompanySection1: {
     positionContainer: '-top-0',
-    title: 'MEET JWALLET',
+    title: 'MEET Jwalet',
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-white'
@@ -59,8 +59,8 @@ SectionName: {
   },
 
   jwalet: {
-    positionContainer: '-bottom-70',
-    title: 'JWALLET — ',
+    positionContainer: '-bottom-70 -mobile-visible',
+    title: 'Jwalet — ',
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white'
@@ -82,13 +82,13 @@ SectionName: {
 
   enterprize: {
     positionContainer: '-bottom-70',
-    title: 'SEARCH — CLEAR — CORE',
+    title: 'ENTERPRISE SOLUTION',
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color'
   },
   projectEnterprizeSection1: {
-    positionContainer: '-top-110',
+    positionContainer: '-center',
     title: 'ENTERPRISE SOLUTION',
     positionTitle: '-top',
     arrow: 'up',

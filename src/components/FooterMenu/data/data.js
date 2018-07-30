@@ -1,73 +1,46 @@
 FooterMenu: [
   {
-    title: 'About',
-    link: 'about.html',
+    title: 'Company',
     links: [
+      {
+        link: 'about.html',
+        text: 'About Jibrel'
+      },
       {
         link: 'news.html',
         text: 'Press & Media'
       },
       {
-        link: 'careers.html',
+        link: 'vacancies-list.html',
         text: 'Careers'
       },
-      {
-        link: 'vacansies-list.html',
-        text: 'Vacancies'
-      },
     ]
   },
   {
-    title: 'Consumer',
-    link: 'products.html',
+    title: 'Products',
     links: [
       {
-        link: 'jwalet.html',
-        text: 'Jibrel Wallet'
+        link: 'enterprise.html',
+        text: 'Enterprise',
       },
       {
         link: '#',
-        text: 'Jibrel Cash'
+        text: 'Jwallet',
+        externalLink: 'true'
       },
       {
         link: '#',
-        text: 'Jibrel Node'
-      },
-    ]
-  },
-  {
-    title: 'Enterprise',
-    link: 'enterprize.html',
-    links: [
-      {
-        link: 'jsearch.html',
-        text: 'Jibrel Search'
-      },
-      {
-        link: 'jclear.html',
-        text: 'Jibrel Clear'
-      },
-      {
-        link: 'jcore.html',
-        text: 'Jibrel Core'
+        text: 'Jcash',
+        externalLink: 'true'
       },
     ]
   },
   {
     title: 'Contact',
-    link: 'contact-us.html',
     links: [
       {
-        modal: '#popup-product',
-        text: 'Product team'
-      },
-      {
-        modal: '#popup-media',
-        text: 'Media team'
-      },
-      {
-        modal: '#popup-support',
-        text: 'Support'
+        modal: '#send-message',
+        text: 'Send a message'
       },
     ]
   },

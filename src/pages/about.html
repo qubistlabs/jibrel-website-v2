@@ -7,10 +7,10 @@
 
 <body>
   %=symbols=%
-  {{> MainHeader/MainHeader MainHeader.white}}
+  {{> MainHeader/MainHeader MainHeader.color}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-grid'>
     {{> SectionName/SectionName SectionName.about}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info'>
@@ -19,7 +19,7 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top-small -offset-bottom-small'>
+  <section class='section-content -offset-top -offset-bottom'>
     <div class='container _container-fix'>
       <div class='card-tile'>
         {{#each CardTile.aboutMessage}}
@@ -29,10 +29,11 @@
     </div>
   </section>
 
-  <section class='section-content -offset-bottom'>
-    <div class='container -bg-gray -offset-top-small -offset-bottom-small _container-fix'>
-      <div class='card-tile -inner-border-separator -inner-border-gray'>
-        {{#each CardTile.aboutInfo}}
+  <section class='section-content -mobile-bg-gray -offset-bottom'>
+    <div class='container -bg-gray -offset-top -offset-bottom _container-fix'>
+      <h2 class='title -text-center -box-center'>Jibrel provides both Consumer and Enterprise solutions</h2>
+      <div class='card-tile -inner-border-separator -inner-border-gray -offset-top'>
+        {{#each CardTile.about}}
         {{> CardTile/CardTile}}
         {{/each}}
       </div>
@@ -52,10 +53,9 @@
 
   <section class='section-content -offset-top'>
     {{> SectionName/SectionName SectionName.aboutSection1}}
-    <div class='container -bg-gray -offset-top -offset-bottom _container-fix'>
-      <h2 class='title -text-center -box-center'>Jibrel provides both Consumer and Enterprise solutions</h2>
-      <div class='card-tile -inner-border-separator -inner-border-gray -offset-top'>
-        {{#each CardTile.about}}
+    <div class='container -bg-gray -offset-top-small -offset-bottom-small _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-gray'>
+        {{#each CardTile.aboutInfo}}
         {{> CardTile/CardTile}}
         {{/each}}
       </div>
@@ -64,28 +64,17 @@
 
   <section class='section-content -offset-top -offset-bottom'>
     <div class='container _container-fix'>
-      <p class='title -text-center -box-center'>Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
-      <div class='partners-card -offset-top'>
-        {{> PartnersCard/PartnersCard}}
+      <h2 class='title -text-center -box-center'>Jibrel Global Presence</h2>
+      <p class='descr -text-center -box-center -w-limit-650 -offset-bottom'>Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
+      <div class='card-tile'>
+        {{#each CardTile.contactMainPage}}
+        {{> CardTile/CardTile}}
+        {{/each}}
       </div>
-    </div>
-  </section>
-
-  <section class='section-content -offset-bottom'>
-    {{> SectionName/SectionName SectionName.aboutSection2}}
-    <div class='container _container-fix -bg-gray -offset-top'>
-      <div class='title -text-center -box-center'>Our Team</div>
-      <div class='descr -text-center -box-center'>Jibrel is being developed by a group of experienced professionals who combine a deep understanding of financial services with technical expertise in Distributed Ledger Technology (DLT)</div>
-      <div class='team-list -offset-top'>
-        {{> TeamList/TeamList}}
+      {{!--<div class="j-buttons -center -offset-top">
+        <a href="vacancies-list.html" class="j-button -border-on-white-bg -w-limit-360"><span class="text">Careers</span></a>
       </div>
-    </div>
-  </section>
-
-  <section class='section-content -offset-top -offset-bottom -bg-cover' style='background-image: url(/assets/img/general/bg/form.jpg);'>
-    <div class='container _container-fix'>
-      {{> ProjectForm/ProjectForm ProjectForm.base}}
-    </div>
+    </div>--}}
   </section>
 
   {{> MainFooter/MainFooter}}

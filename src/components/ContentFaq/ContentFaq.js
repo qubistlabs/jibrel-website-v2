@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
+
 const actionObj = document.querySelectorAll('.js-toggle-next-box')
 
 function slideBoxFN() {

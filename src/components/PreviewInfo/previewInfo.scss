@@ -11,13 +11,51 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0;
+
+    @include from-mobile {
+      &.-inner {
+        padding-left: 95px;
+        box-sizing: border-box;
+        padding-top: 65px;
+        padding-bottom: 65px;
+
+        &.-reverse {
+          flex-direction: row-reverse;
+          padding-left: 0;
+          padding-right: 35px;
+        }
+      }
+    }
+
+    @include to-mobile {
+      height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 70px;
+      box-sizing: border-box;
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &.-inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+      }
+
+      &.-mobile-offset-top-collapse {
+        padding-top: 0;
+      }
+
+      &.-mobile-offset-bottom-collapse {
+        padding-bottom: 0;
+      }
+    }
   }
 
   > .text {
-    padding-right: 30px;
-
     &.-up-visual-center {
-      padding-bottom: 30px;
+      @include from-mobile {
+        padding-bottom: 30px;
+      }
     }
 
     > .title,
@@ -41,17 +79,24 @@
       font-weight: normal;
 
       @include ls(25);
+
+      &.-neighbor-img {
+        @include from-mobile {
+          padding-right: 20px;
+        }
+      }
+
+      @include to-mobile {
+        font-size: 16px;
+      }
     }
 
     > .descr {
-      font-size: 14px;
+      font-size: 18px;
       line-height: (24/14);
-      max-width: 800px;
+      max-width: 930px;
       width: 100%;
       margin-top: 33px;
-      padding-bottom: 40px;
-
-      @include ls(10);
 
       &.-white {
         opacity: 0.8;
@@ -67,16 +112,39 @@
       }
 
       &.-medium-size {
-        max-width: 510px;
+        max-width: 700px;
       }
 
       &.-small-size {
         max-width: 320px;
       }
+
+      &.-small-text {
+        font-size: 14px;
+      }
+
+      @include to-mobile {
+        margin-top: 20px;
+        font-size: 13px;
+      }
+    }
+
+    > .btns {
+      padding-top: 40px;
+
+      @include to-mobile {
+        padding-top: 30px;
+      }
     }
   }
 
   > .picture {
+    padding-left: 30px;
+
+    @include to-mobile {
+      margin-bottom: 30px;
+    }
+
     > .img {
       max-width: 100%;
     }
@@ -84,11 +152,39 @@
 
   > .text,
   > .picture {
+    &.-w40,
     &.-w50 {
-      font-size: 1rem;
-      display: inline-block;
-      vertical-align: middle;
-      width: 50%;
+      @include from-mobile {
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
+
+    &.-w40 {
+      @include from-mobile {
+        width: 40%;
+      }
+    }
+
+    &.-w50 {
+      @include from-mobile {
+        width: 50%;
+      }
+    }
+  }
+
+  &.-reverse {
+    > .picture {
+      padding-left: 0;
+      padding-right: 30px;
+    }
+  }
+
+  > .form {
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
   }
 }
