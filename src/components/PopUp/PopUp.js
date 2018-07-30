@@ -8,14 +8,18 @@ function preventDefault(e) {
   e.preventDefault()
 }
 
-function noscroll(scrollTop) {
-  window.scrollTo(0, scrollTop)
+// eslint-disable-next-line  fp/no-let
+let scrolled
+function stopScroll() {
+  window.scrollTo(0, scrolled)
 }
-
 const popUp = {
   openPopup(popUpButton) {
     const popUpID = popUpButton.getAttribute('data-popup-id')
     const popUpContainer = document.querySelector(popUpID)
+
+    // eslint-disable-next-line fp/no-mutation
+    scrolled = window.pageYOffset || document.documentElement.scrollTop
 
     popUpContainer.classList.remove('-hide')
     setTimeout(() => {
@@ -37,12 +41,12 @@ const popUp = {
 
   disableScroll() {
     document.body.addEventListener('touchmove', preventDefault, { passive: false })
-    window.addEventListener('scroll', noscroll)
+    window.addEventListener('scroll', stopScroll)
   },
 
   enableScroll() {
     document.body.removeEventListener('touchmove', preventDefault, { passive: false })
-    window.removeEventListener('scroll', noscroll)
+    window.removeEventListener('scroll', stopScroll)
   },
 }
 
