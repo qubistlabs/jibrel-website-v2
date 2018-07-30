@@ -27,6 +27,7 @@
     "postcheckout": "npm i"
   },
   "dependencies": {
+    "aos": "^2.3.3",
     "babel-preset-es2015": "^6.24.1",
     "ramda": "^0.25.0",
     "swiper": "4.3.3",

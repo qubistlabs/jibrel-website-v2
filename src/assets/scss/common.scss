@@ -24,6 +24,10 @@ body {
 
   @include font;
 
+  @media (min-width: 768px) {
+    min-width: 1150px;
+  }
+
   &.-scroll-lock {
     height: 100vh;
     overflow: hidden;

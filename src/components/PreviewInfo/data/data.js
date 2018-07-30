@@ -85,8 +85,10 @@ PreviewInfo: {
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
     img: '/assets/img/general/chess/jwalet.png',
     img2x: '/assets/img/general/chess/jwalet@2x.png 2x',
+    modClassImg: '-jwalet',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
+    buttonLink: 'https://jwallet.network'
   },
   jCashInner: {
     modClassText: '-w40',
@@ -97,8 +99,10 @@ PreviewInfo: {
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
     img: '/assets/img/general/chess/jcash.png',
     img2x: '/assets/img/general/chess/jcash@2x.png 2x',
-    buttonClass: '-fill-on-blue-bg -w-limit-240',
+    modClassImg: '-jcash',
+    buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
+    buttonLink: 'https://jcash.network'
   },
   jsearch: {
     modClassText: '-w50 -up-visual-center',
