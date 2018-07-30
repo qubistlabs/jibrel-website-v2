@@ -23,7 +23,7 @@
   }
 
   > .cross {
-    transition: stroke 0.2s ease-in-out;
+    transition: stroke 0.2s ease-in-out, opacity 0.2s ease-in-out;
     fill: none;
     stroke-width: 2px;
 
@@ -117,7 +117,8 @@
     }
 
     > .cross {
-      stroke: rgba(#fff, 0.3);
+      stroke: #fff;
+      opacity: 0.3;
     }
   }
 
@@ -150,7 +151,7 @@
       }
 
       > .cross {
-        stroke: rgba(#fff, 1);
+        opacity: 1;
       }
     }
 
