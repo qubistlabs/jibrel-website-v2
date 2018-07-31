@@ -11,7 +11,7 @@ FooterMenu: [
         text: 'Press & Media'
       },
       {
-        link: 'vacancies-list.html',
+        link: 'vacancies.html',
         text: 'Careers'
       },
     ]

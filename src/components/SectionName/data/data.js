@@ -4,7 +4,9 @@ SectionName: {
     title: 'WELCOME',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="500" data-aos-offset="0"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="600"'
   },
 
   about: {

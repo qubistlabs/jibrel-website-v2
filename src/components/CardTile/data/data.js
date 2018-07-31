@@ -2,6 +2,7 @@ CardTile: {
   project: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -25,6 +26,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -48,6 +50,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -71,6 +74,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -94,6 +98,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -117,6 +122,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -143,6 +149,7 @@ CardTile: {
   projectEnterprize: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -166,6 +173,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -189,6 +197,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -215,6 +224,7 @@ CardTile: {
   productsCompany: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -238,6 +248,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -261,6 +272,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -287,6 +299,7 @@ CardTile: {
   projectJwalet: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -300,6 +313,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -313,6 +327,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -329,6 +344,7 @@ CardTile: {
   projectJwaletDemo: [
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -340,6 +356,7 @@ CardTile: {
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -351,6 +368,7 @@ CardTile: {
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -362,6 +380,7 @@ CardTile: {
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -376,6 +395,7 @@ CardTile: {
   jCoreRowOne: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -389,6 +409,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -402,6 +423,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -418,6 +440,7 @@ CardTile: {
   jCoreRowTwo: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -431,6 +454,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -444,6 +468,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -460,6 +485,7 @@ CardTile: {
   jCoreUseCase: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
@@ -479,6 +505,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
@@ -498,6 +525,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
@@ -520,6 +548,7 @@ CardTile: {
   contactMainPage: [
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -533,6 +562,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -546,6 +576,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -559,6 +590,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -574,6 +606,7 @@ CardTile: {
   aboutContact: [
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -587,6 +620,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="450"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -600,6 +634,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -608,11 +643,12 @@ CardTile: {
       imgH: '60',
       title: 'St. Petersburg',
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  ',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia',
       isHoverBox: 'false',
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="750"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -629,6 +665,7 @@ CardTile: {
   mediaAndPress: [
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -652,6 +689,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -675,6 +713,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -698,6 +737,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: '',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -724,6 +764,7 @@ CardTile: {
   whyWorkJibrel: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -737,6 +778,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -750,6 +792,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -766,6 +809,7 @@ CardTile: {
   compliteEterpriseSolution: [
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -779,6 +823,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -792,6 +837,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -805,6 +851,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -818,6 +865,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -831,6 +879,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: '',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -846,6 +895,7 @@ CardTile: {
   homeData1: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -857,6 +907,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -868,6 +919,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -881,6 +933,7 @@ CardTile: {
   homeData11: [
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -894,6 +947,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -907,6 +961,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -922,6 +977,7 @@ CardTile: {
   homeData2: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -933,6 +989,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -944,6 +1001,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -957,6 +1015,7 @@ CardTile: {
   about: [
     {
       cardModClass: '-two-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -970,6 +1029,7 @@ CardTile: {
     },
     {
       cardModClass: '-two-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       imgType: 'svg',
       modClassImg: '-base-icon',
@@ -983,6 +1043,7 @@ CardTile: {
   aboutInfo: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color',
       subinfo: '12',
       title: 'false',
@@ -993,6 +1054,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color',
       subinfo: '6',
       title: 'false',
@@ -1003,6 +1065,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color',
       subinfo: '8,000',
       title: 'false',
@@ -1015,6 +1078,7 @@ CardTile: {
   aboutMessage: [
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       title: 'Mission',
       modClassTitle: '-large-size',
@@ -1024,6 +1088,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       title: 'Vision',
       modClassTitle: '-large-size',
@@ -1033,6 +1098,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: '',
       boxModClass: '-color -padding-small',
       title: 'Values',
       modClassTitle: '-large-size',

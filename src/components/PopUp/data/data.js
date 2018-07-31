@@ -68,7 +68,7 @@ PopUp: {
             name: 'Press & Media',
           },
           {
-            link: 'vacancies-list.html',
+            link: 'vacancies.html',
             name: 'Careers',
           },
         ]

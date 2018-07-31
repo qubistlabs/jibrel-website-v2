@@ -5,6 +5,10 @@ PreviewInfo: {
     modClassDescr: '-medium-size -color -text-center -box-center',
     title: 'Compliant Stable Coins',
     descr: 'JThe Jibrel Network provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+    aosAnimationTitle: 'data-aos="fade-up" data-aos-duration="300"',
+    aosAnimationDescr: 'data-aos="fade-up" data-aos-duration="450"',
+    aosAnimationBtn: '',
+    aosAnimationImg: '',
   },
   about: {
     modClassText: '',
@@ -34,7 +38,8 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Transaction & Data Analytics',
     descr: 'Looking for digital asset transaction and data analytics? Jsearch provides transfer and smart contract data via an easily configurable API. Jibrel analytics solution also has compliance built-in, powered by Jclear, Jibrel’s digital asset AML / KYC solution',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    img: '/assets/img/general/enterprise-1.svg',
+    modClassImg: '-enterprise-right',
   },
   enterprise2: {
     modClassText: '-w50 -up-visual-center',
@@ -43,7 +48,8 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Real-time Digital Asset Price Feeds',
     descr: 'Keeping up-to-date with latest digital currency exchange prices feeds can be a challenge. With Jticker, you can ensure your trading desks and algorithms have reliable and verifiable price feeds',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    img: '/assets/img/general/enterprise-2.svg',
+    modClassImg: '-enterprise-left',
   },
   enterprise3: {
     modClassText: '-w50 -up-visual-center',
@@ -52,7 +58,8 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Reliable Ethereum Connectivity',
     descr: 'Contact us to learn more about Jnode, an Enterprise-grade Ethereum connection, with 99.99% Uptime, it is the most secure and reliable solution for scalable Ethereum infrastructure',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    img: '/assets/img/general/enterprise-3.svg',
+    modClassImg: '-enterprise-right',
   },
   products: {
     modClassText: '-w50 -up-visual-center',
@@ -88,7 +95,11 @@ PreviewInfo: {
     modClassImg: '-jwalet',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
-    buttonLink: 'https://jwallet.network'
+    buttonLink: 'https://jwallet.network',
+    aosAnimationTitle: 'data-aos="fade-right" data-aos-duration="300"',
+    aosAnimationDescr: 'data-aos="fade-right" data-aos-duration="450"',
+    aosAnimationBtn: 'data-aos="fade-right" data-aos-duration="600"',
+    aosAnimationImg: 'data-aos="fade-up" data-aos-duration="600"',
   },
   jCashInner: {
     modClassText: '-w40',
@@ -102,7 +113,11 @@ PreviewInfo: {
     modClassImg: '-jcash',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
-    buttonLink: 'https://jcash.network'
+    buttonLink: 'https://jcash.network',
+    aosAnimationTitle: 'data-aos="fade-left" data-aos-duration="300"',
+    aosAnimationDescr: 'data-aos="fade-left" data-aos-duration="450"',
+    aosAnimationBtn: 'data-aos="fade-left" data-aos-duration="600"',
+    aosAnimationImg: 'data-aos="fade-right" data-aos-duration="600"',
   },
   jsearch: {
     modClassText: '-w50 -up-visual-center',

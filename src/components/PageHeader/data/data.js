@@ -1,6 +1,6 @@
 PageHeader: {
-  sharePage: {
-    typePage: 'sharePage'
+  vacancy: {
+    typePage: 'vacancy'
   },
   policyPage: {
     typePage: 'policyPage'
