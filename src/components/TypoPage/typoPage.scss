@@ -46,23 +46,42 @@
 
     > .data {
       padding-top: 9px;
+    }
+  }
 
-      > .date {
-        font-size: 13px;
-        line-height: (24/13);
+  > .date {
+    font-size: 13px;
+    color: $base-o;
+    margin-bottom: 40px;
 
-        @include ls(10);
+    @include ls(10);
+  }
 
-        > .icon {
-          display: inline-block;
-          vertical-align: middle;
-          position: relative;
-          top: -2px;
-          margin-right: 7px;
-          fill: none;
-          stroke: $blue;
-        }
-      }
+  > .source {
+    color: $blue;
+    fill: none;
+    stroke: $blue;
+    transition: color 0.2s ease-in-out, stroke 0.2s ease-in-out;
+    margin-top: 20px;
+    font-size: 13px;
+    display: inline-block;
+
+    > .icon {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      color: $light-blue;
+      stroke: $light-blue;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.5);
+      stroke: rgba($light-blue, 0.5);
     }
   }
   /* stylelint-disable */
@@ -71,10 +90,15 @@
       font-size: 16px;
       line-height: (30/16);
       font-weight: 600;
-      margin-top: 65px;
+
+      &:not(:first-child) {
+        margin-top: 65px;
+      }
 
       @include to-mobile {
-        margin-top: 30px;
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
       }
 
       &:not(:last-child) {
@@ -85,10 +109,25 @@
       }
     }
 
+    a {
+      color: $blue;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $light-blue;
+      }
+
+      &:active {
+        color: rgba($light-blue, 0.5);
+      }
+    }
+
     img {
       max-width: 100%;
       padding-top: 5px;
       border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
 
       &:not(:last-child) {
         margin-bottom: 76px;
@@ -99,11 +138,23 @@
       }
     }
 
+    .caption {
+      margin-top: -60px;
+      margin-bottom: 76px;
+      font-size: 13px;
+      color: $base-o;
+      display: block;
+
+      @include to-mobile {
+        margin-top: -20px;
+        margin-bottom: 30px;
+      }
+    }
+
     p,li {
       font-size: 14px;
       color: rgba($base, 0.8);
       line-height: (24/14);
-      margin-bottom: 25px;
       @include to-mobile {
         margin-bottom: 20px;
       }
@@ -111,7 +162,20 @@
       @include ls(10)
     }
 
-    ul li {
+    p,ul,ol  {
+      margin-bottom: 25px;
+    }
+
+    li {
+      margin-bottom: 20px;
+
+      @include to-mobile {
+        margin-bottom: 15px;
+      }
+    }
+
+    ul li,
+    ol li {
       position: relative;
       padding-left: 35px;
       list-style: none;
@@ -119,8 +183,9 @@
       @include to-mobile {
         padding-left: 25px;
       }
+    }
 
-
+    ul li {
       &::before {
         content: '';
         position: absolute;
@@ -130,6 +195,70 @@
         background-color: rgba($base, 0.3);
         top: 10px;
         left: 0;
+      }
+    }
+
+    ol li {
+      counter-increment: item;
+
+      &:before {
+        content: counter(item);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgba($base, 0.3);
+      }
+    }
+
+    blockquote {
+      display: block;
+      width: calc(100% + 200px);
+      margin-left: -100px;
+      background-color: $base;
+      background-image: url(../img/general/icon/bubble-chat.svg);
+      background-repeat: no-repeat;
+      background-position: center 80px;
+      background-size: 46px 42px;
+      padding: 180px 100px 80px 100px;
+
+      &:last-child {
+        margin-bottom: -60px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 35px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
+      > p,
+      > h3,
+      > h4 {
+        color: #fff;
+        text-align: center;
+      }
+
+      > p {
+        font-style: italic;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+
+      > h3 {
+        margin-bottom: 5px !important;
+        font-weight: 600;
+        line-height: (30/16);
+        margin-top: 0;
+      }
+
+      > h4 {
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: (30/16);
+        margin-top: 0;
       }
     }
   }

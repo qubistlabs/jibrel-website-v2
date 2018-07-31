@@ -8,6 +8,10 @@
   padding-top: 50px;
   z-index: 1000;
 
+  @include from-mobile {
+    min-width: 1150px;
+  }
+
   @include to-mobile {
     padding-top: 20px;
   }

@@ -1,6 +1,6 @@
 <div class='page-header'>
-  {{#is typePage '==' 'sharePage'}}
-  <a href='#' class='back'>
+  {{#is typePage '==' 'vacancy'}}
+  <a href='/vacancies.html' class='back'>
     {{Icon iconName='arr-l' className='icon -color' iconWidth='11' iconHeight='11'}}
     <span class='text'>Back to careers</span>
   </a>
@@ -17,10 +17,17 @@
   {{/is}}
 
   {{#is typePage '==' 'newsPage'}}
-  <div class='tab-links'>
+  {{!--<div class='tab-links'>
       <a href='#' class='item -color -active'>Latest News</a>
       <a href='#' class='item -color'>Media Resources</a>
       <a href='#' class='item -color'>Social Channels</a>
+  </div>--}}
+  <a href='/news.html' class='back'>
+    {{Icon iconName='arr-l' className='icon -color' iconWidth='11' iconHeight='11'}}
+    <span class='text'>Back to news</span>
+  </a>
+  <div class='soc _mobile-hide'>
+    {{> RectangleSocial/RectangleSocial}}
   </div>
   {{/is}}
 </div>

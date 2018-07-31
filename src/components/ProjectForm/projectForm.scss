@@ -160,6 +160,11 @@
             background-color: #fff;
             border-radius: 3px;
             box-shadow: 0 6px 12px rgba($base, 0.15);
+            transition: box-shadow 0.2s ease-in-out;
+
+            &:focus {
+              box-shadow: 0 6px 12px rgba($base, 0.25);
+            }
           }
 
           &.-input {

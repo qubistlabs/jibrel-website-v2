@@ -11,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0;
+    overflow: hidden;
+    position: relative;
 
     @include from-mobile {
       &.-inner {
@@ -150,6 +152,37 @@
 
       &.-jcash {
         left: -70px;
+      }
+
+      &.-enterprise-left,
+      &.-enterprise-right {
+        width: 435px;
+        height: 482px;
+
+        @include from-mobile {
+          // position: absolute;
+          position: relative;
+          margin-top: -30px;
+          margin-bottom: -120px;
+        }
+        @include to-mobile {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &.-enterprise-left {
+        @include from-mobile {
+          // top: 50px;
+          left: -30px;
+        }
+      }
+
+      &.-enterprise-right {
+        @include from-mobile {
+          // top: 50px;
+          right: -30px;
+        }
       }
     }
   }
