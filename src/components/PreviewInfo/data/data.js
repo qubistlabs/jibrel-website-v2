@@ -5,8 +5,8 @@ PreviewInfo: {
     modClassDescr: '-medium-size -color -text-center -box-center',
     title: 'Compliant Stable Coins',
     descr: 'JThe Jibrel Network provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-    aosAnimationTitle: 'data-aos="fade-up" data-aos-duration="300"',
-    aosAnimationDescr: 'data-aos="fade-up" data-aos-duration="450"',
+    aosAnimationTitle: 'data-aos="fade-up" data-aos-duration="600"',
+    aosAnimationDescr: 'data-aos="fade-up" data-aos-duration="900"',
     aosAnimationBtn: '',
     aosAnimationImg: '',
   },
@@ -38,7 +38,7 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Transaction & Data Analytics',
     descr: 'Looking for digital asset transaction and data analytics? Jsearch provides transfer and smart contract data via an easily configurable API. Jibrel analytics solution also has compliance built-in, powered by Jclear, Jibrel’s digital asset AML / KYC solution',
-    img: '/assets/img/general/enterprise-1.svg',
+    img: '/assets/img/general/chess/enterprise-1.svg',
     modClassImg: '-enterprise-right',
   },
   enterprise2: {
@@ -48,7 +48,7 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Real-time Digital Asset Price Feeds',
     descr: 'Keeping up-to-date with latest digital currency exchange prices feeds can be a challenge. With Jticker, you can ensure your trading desks and algorithms have reliable and verifiable price feeds',
-    img: '/assets/img/general/enterprise-2.svg',
+    img: '/assets/img/general/chess/enterprise-2.svg',
     modClassImg: '-enterprise-left',
   },
   enterprise3: {
@@ -58,7 +58,7 @@ PreviewInfo: {
     modClassDescr: '-small-text -color',
     title: 'Reliable Ethereum Connectivity',
     descr: 'Contact us to learn more about Jnode, an Enterprise-grade Ethereum connection, with 99.99% Uptime, it is the most secure and reliable solution for scalable Ethereum infrastructure',
-    img: '/assets/img/general/enterprise-3.svg',
+    img: '/assets/img/general/chess/enterprise-3.svg',
     modClassImg: '-enterprise-right',
   },
   products: {
@@ -68,38 +68,48 @@ PreviewInfo: {
     modClassDescr: '-white -small-size',
     title: 'Consumer Products &&nbsp;Services',
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
-    img: '/assets/img/content/preview-jwalet.png',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    img: '/assets/img/content/preview-jwallet.png',
+    img2x: '/assets/img/content/preview-jwallet@2x.png 2x',
   },
-  jwalet: {
+  jwallet: {
     modClassText: '-w50 -up-visual-center',
     modClassPicture: '-w40',
     modClassTitle: '-white',
     modClassDescr: '-white -small-size',
     title: 'Jibrel Wallet',
     descr: 'Official ERC-20 wallet of the Jibrel Network',
-    img: '/assets/img/content/preview-jwalet.png',
-    img2x: '/assets/img/content/preview-jwalet@2x.png 2x',
+    img: '/assets/img/content/preview-jwallet.png',
+    img2x: '/assets/img/content/preview-jwallet@2x.png 2x',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
   },
-  jWaletInner: {
+  jwalletInner: {
     modClassText: '-w40',
     modClassPicture: '-w50',
     modClassTitle: '-color',
     modClassDescr: '-color -small-text',
     title: 'Jibrel Wallet',
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
-    img: '/assets/img/general/chess/jwalet.png',
-    img2x: '/assets/img/general/chess/jwalet@2x.png 2x',
-    modClassImg: '-jwalet',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
     buttonLink: 'https://jwallet.network',
     aosAnimationTitle: 'data-aos="fade-right" data-aos-duration="300"',
-    aosAnimationDescr: 'data-aos="fade-right" data-aos-duration="450"',
-    aosAnimationBtn: 'data-aos="fade-right" data-aos-duration="600"',
-    aosAnimationImg: 'data-aos="fade-up" data-aos-duration="600"',
+    aosAnimationDescr: 'data-aos="fade-right" data-aos-duration="600"',
+    aosAnimationBtn: 'data-aos="fade-right" data-aos-duration="900"',
+    images: [
+      {
+        img: '/assets/img/general/chess/jwallet.png',
+        img2x: '/assets/img/general/chess/jwallet@2x.png 2x',
+        modClassImg: '-jwallet-note',
+        aosAnimationImg: 'data-aos="fade-up" data-aos-duration="600"'
+      },
+      {
+        img: '/assets/img/general/chess/jwallet-2.png',
+        img2x: '/assets/img/general/chess/jwallet-2@2x.png 2x',
+        modClassImg: '-jwallet-phone',
+        aosAnimationImg: 'data-aos="fade-down" data-aos-duration="900"'
+      },
+    ]
   },
   jCashInner: {
     modClassText: '-w40',
@@ -108,16 +118,27 @@ PreviewInfo: {
     modClassDescr: '-color -small-text',
     title: 'Jibrel Cash',
     descr: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
-    img: '/assets/img/general/chess/jcash.png',
-    img2x: '/assets/img/general/chess/jcash@2x.png 2x',
     modClassImg: '-jcash',
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
     buttonLink: 'https://jcash.network',
     aosAnimationTitle: 'data-aos="fade-left" data-aos-duration="300"',
-    aosAnimationDescr: 'data-aos="fade-left" data-aos-duration="450"',
-    aosAnimationBtn: 'data-aos="fade-left" data-aos-duration="600"',
-    aosAnimationImg: 'data-aos="fade-right" data-aos-duration="600"',
+    aosAnimationDescr: 'data-aos="fade-left" data-aos-duration="600"',
+    aosAnimationBtn: 'data-aos="fade-left" data-aos-duration="900"',
+    images: [
+      {
+        img: '/assets/img/general/chess/jcash.png',
+        img2x: '/assets/img/general/chess/jcash@2x.png 2x',
+        modClassImg: '-jcash-desk',
+        aosAnimationImg: 'data-aos="fade-down" data-aos-duration="600"'
+      },
+      {
+        img: '/assets/img/general/chess/jcash-2.png',
+        img2x: '/assets/img/general/chess/jcash-2@2x.png 2x',
+        modClassImg: '-jcash-keyboard',
+        aosAnimationImg: 'data-aos="fade-up" data-aos-duration="900"'
+      },
+    ]
   },
   jsearch: {
     modClassText: '-w50 -up-visual-center',

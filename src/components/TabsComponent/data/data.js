@@ -1,6 +1,6 @@
 TabsComponent: {
   TabLinks: {
-    Jwalet: [
+    jwallet: [
       {
         item: 'Insights',
         modClass: '-white js-tab-select -active js-tab-select'
@@ -76,19 +76,19 @@ TabsComponent: {
     ]
   },
   TabsContent: {
-    Jwalet: [
+    jwallet: [
       {
-        imgContent: '<img src=\'/assets/img/content/tab-jwalet.png\' srcset=\'/assets/img/content/tab-jwalet@2x.png 2x\' class=\'img\'>',
+        imgContent: '<img src=\'/assets/img/content/tab-jwallet.png\' srcset=\'/assets/img/content/tab-jwallet@2x.png 2x\' class=\'img\'>',
         modClass: '-active'
       },
       {
-        imgContent: '<img src=\'/assets/img/content/tab-jwalet.png\' srcset=\'/assets/img/content/tab-jwalet@2x.png 2x\' class=\'img\'>',
+        imgContent: '<img src=\'/assets/img/content/tab-jwallet.png\' srcset=\'/assets/img/content/tab-jwallet@2x.png 2x\' class=\'img\'>',
       },
       {
-        imgContent: '<img src=\'/assets/img/content/tab-jwalet.png\' srcset=\'/assets/img/content/tab-jwalet@2x.png 2x\' class=\'img\'>',
+        imgContent: '<img src=\'/assets/img/content/tab-jwallet.png\' srcset=\'/assets/img/content/tab-jwallet@2x.png 2x\' class=\'img\'>',
       },
       {
-        imgContent: '<img src=\'/assets/img/content/tab-jwalet.png\' srcset=\'/assets/img/content/tab-jwalet@2x.png 2x\' class=\'img\'>',
+        imgContent: '<img src=\'/assets/img/content/tab-jwallet.png\' srcset=\'/assets/img/content/tab-jwallet@2x.png 2x\' class=\'img\'>',
       },
     ],
     jCash: [
