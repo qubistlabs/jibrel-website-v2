@@ -15,7 +15,7 @@
     <div class='container -center-box _container-fix'>
       <div class='preview-info'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.home}}
-        <div class='form'>
+        <div class='form' data-aos="fade-in" data-aos-duration="900">
           <div class='project-form'>
             <div class='container -no-offset'>
               <form action='' class='form _relative'>
@@ -31,7 +31,7 @@
     </div>
   </section>
 
-  <section class='section-content -offset-bottom -offset-top' data-aos="fade-in" data-aos-delay="150">
+  <section class='section-content -offset-bottom -offset-top'>
     <div class='container _container-fix'>
       <div class='card-tile -distribute-evenly'>
         {{#each CardTile.homeData11}}
@@ -57,10 +57,10 @@
     </div>
   </section>
 
-  <section class='section-content -offset-top -offset-bottom'>
+  <section class='section-content -offset-top -offset-bottom' data-aos="fade-in" data-aos-duration="600">
     <div class='container _container-fix'>
       <h2 class='title -text-center -box-center'>Jibrel is trusted by market leaders across industries, as well as governments and regulators across the globe</h2>
-      <div class='partners-card -offset-top'>
+      <div class='partners-card -offset-top swiper-container'>
         {{> PartnersCard/PartnersCard}}
       </div>
     </div>
@@ -75,16 +75,16 @@
         {{/each}}
       </div>
 
-      <div class='j-buttons -center'>
-        <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
+      <div class='j-buttons -center' data-aos="fade-in" data-aos-duration="1000">
+        <a href='news.html' class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></a>
       </div>
     </div>
   </section>
 
   <section class='section-content -bg-dark'>
     <div class='container -offset-top -offset-bottom _container-fix'>
-      <h2 class='title -white -text-center -box-center'>Jibrel Global Presence</h2>
-      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom'>Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
+      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900">Jibrel Global Presence</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom' data-aos="fade-in" data-aos-duration="900">Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
       <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
         {{#each CardTile.aboutContact}}
         {{> CardTile/CardTile}}
