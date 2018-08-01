@@ -2,7 +2,7 @@ NewsPreview: {
   borderStyle: [
     {
       link: 'dubai-financial-services-authority-announces-finte.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="300"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-1.png',
       img2x: '/assets/img/content/cover/news-logo-1@2x.png',
       date: 'May 16, 2018',
@@ -12,7 +12,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-launch-institutional-grade-alternat.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="600"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-2.png',
       img2x: '/assets/img/content/cover/news-logo-2@2x.png',
       date: 'May 09, 2018',
@@ -22,7 +22,7 @@ NewsPreview: {
     },
     {
       link: 'jpm-morgan-chase-testing-blockchain-transactions-t.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-3.png',
       img2x: '/assets/img/content/cover/news-logo-3@2x.png',
       date: 'Apr. 29, 2018',
@@ -34,6 +34,7 @@ NewsPreview: {
   previewPage: [
     {
       link: 'dubai-financial-services-authority-announces-finte.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-1.png',
       img2x: '/assets/img/content/cover/news-logo-1@2x.png',
       date: 'May 16, 2018',
@@ -42,6 +43,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-launch-institutional-grade-alternat.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-2.png',
       img2x: '/assets/img/content/cover/news-logo-2@2x.png',
       date: 'May 09, 2018',
@@ -50,6 +52,7 @@ NewsPreview: {
     },
     {
       link: 'jpm-morgan-chase-testing-blockchain-transactions-t.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-3.png',
       img2x: '/assets/img/content/cover/news-logo-3@2x.png',
       date: 'Apr. 29, 2018',
@@ -58,6 +61,7 @@ NewsPreview: {
     },
     {
       link: 'sheikh-saeed-backs-dubai-based-cryptocurrency.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="250"',
       img: '/assets/img/content/cover/news-logo-4.png',
       img2x: '/assets/img/content/cover/news-logo-4@2x.png',
       date: 'Mar. 18, 2018',
@@ -66,6 +70,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-announces-strategic-partnership-see.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"',
       img: '/assets/img/content/cover/news-logo-5.png',
       img2x: '/assets/img/content/cover/news-logo-5@2x.png',
       date: 'Mar. 11, 2018',
@@ -74,6 +79,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-joins-enterprise-ethereum-alliance.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       img: '/assets/img/content/cover/news-logo-6.png',
       img2x: '/assets/img/content/cover/news-logo-6@2x.png',
       date: 'Jun. 05, 2018',
@@ -82,6 +88,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-licensed-financial-intermediary-vqf.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-7.png',
       img2x: '/assets/img/content/cover/news-logo-7@2x.png',
       date: 'May 22, 2018',
@@ -90,6 +97,7 @@ NewsPreview: {
     },
     {
       link: '12-start-ups-zugs-crypto-valley-watch.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-8.png',
       img2x: '/assets/img/content/cover/news-logo-8@2x.png',
       date: 'Apr. 12, 2018',
@@ -98,6 +106,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-launches-jcash-crypto-token-based-r.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-9.png',
       img2x: '/assets/img/content/cover/news-logo-9@2x.png',
       date: 'Jan. 17, 2018',
@@ -106,6 +115,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-announces-jcash-regulated-asset-bac.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-10.png',
       img2x: '/assets/img/content/cover/news-logo-10@2x.png',
       date: 'Jan. 17, 2018',
@@ -114,6 +124,7 @@ NewsPreview: {
     },
     {
       link: 'how-cryptocurrencies-could-take-dollars-euros-and-.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-11.png',
       img2x: '/assets/img/content/cover/news-logo-11@2x.png',
       date: 'Jan 27, 2018',
@@ -122,6 +133,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-has-now-launched-its-first-financia.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-12.png',
       img2x: '/assets/img/content/cover/news-logo-12@2x.png',
       date: 'Jan. 17, 2018',
@@ -130,6 +142,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-launches-jcash-bid-solve-cryptocurrency-vol.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-13.png',
       img2x: '/assets/img/content/cover/news-logo-13@2x.png',
       date: 'Jan. 17, 2018',
@@ -138,6 +151,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-bridging-gap-between-crypto-and-tra.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-14.png',
       img2x: '/assets/img/content/cover/news-logo-14@2x.png',
       date: 'Jan. 22, 2018',
@@ -146,6 +160,7 @@ NewsPreview: {
     },
     {
       link: 'three-blockchain-companies-could-change-everything.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-15.png',
       img2x: '/assets/img/content/cover/news-logo-15@2x.png',
       date: 'Dec. 15, 2017',
@@ -154,6 +169,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-announces-partnership-bitcoin-suiss.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-16.png',
       img2x: '/assets/img/content/cover/news-logo-16@2x.png',
       date: 'Dec. 07, 2017',
@@ -162,6 +178,7 @@ NewsPreview: {
     },
     {
       link: '3-biggest-ways-blockchain-will-change-society.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-17.png',
       img2x: '/assets/img/content/cover/news-logo-17@2x.png',
       date: 'Dec. 01, 2017',
@@ -170,6 +187,7 @@ NewsPreview: {
     },
     {
       link: 'seven-cryptowallets-you-can-start-using-today-digi.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-18.png',
       img2x: '/assets/img/content/cover/news-logo-18@2x.png',
       date: 'Nov. 29, 2017',
@@ -178,6 +196,7 @@ NewsPreview: {
     },
     {
       link: 'what-jwallet.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-19.png',
       img2x: '/assets/img/content/cover/news-logo-19@2x.png',
       date: 'Nov. 24, 2017',
@@ -186,6 +205,7 @@ NewsPreview: {
     },
     {
       link: 'ethereum-wallets-under-constant-attack-jibrel-netw.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-20.png',
       img2x: '/assets/img/content/cover/news-logo-20@2x.png',
       date: 'Nov. 22, 2017',
@@ -194,6 +214,7 @@ NewsPreview: {
     },
     {
       link: 'crypto-trading-and-traditional-assets-new-options-.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-21.png',
       img2x: '/assets/img/content/cover/news-logo-21@2x.png',
       date: 'Nov. 17, 2017',
@@ -202,6 +223,7 @@ NewsPreview: {
     },
     {
       link: 'future-investing-tokenizing-traditional-assets-blo.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-22.png',
       img2x: '/assets/img/content/cover/news-logo-22@2x.png',
       date: 'Nov. 17, 2017',
@@ -210,6 +232,7 @@ NewsPreview: {
     },
     {
       link: 'how-digital-economy-continues-evolve-popularity-an.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-23.png',
       img2x: '/assets/img/content/cover/news-logo-23@2x.png',
       date: 'Nov. 13, 2017',
