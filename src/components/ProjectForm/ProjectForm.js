@@ -62,22 +62,47 @@ const validation = {
       this.fieldSuccess(field)
     }
   },
+  /* eslint-disable prefer-destructuring, no-undef,
+  more/no-void-map, unicorn/no-fn-reference-in-iterator, func-names,
+  prefer-arrow-callback, space-before-function-paren, no-unused-vars,
+  space-before-blocks, fp/no-mutation, dot-notation, object-shorthand, key-spacing */
   ajaxSend() {
-    // const action = this.form.getAttribute('action')
-    // const method = this.form.getAttribute('method')
-    // // this.form.submit()
-    // //
-    // fetch(action, {
-    //   method: method,
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     name: 'Hubot',
-    //     login: 'hubot',
-    //   }),
-    // })
+    const form = this.form
+    const action = this.form.getAttribute('action')
+    const method = this.form.getAttribute('method')
+    const dataForm = $(this.form).serializeArray()
+    const dataJson = {}
+
+    $.map(dataForm, function(n, i){
+      dataJson[n['name']] = n['value']
+    })
+
+    $.ajax({
+      url: action,
+      method: method,
+      data : dataJson,
+      dataType: 'json',
+      success(response) {
+        validation.messageView(form, '.-success')
+      },
+      error(response) {
+        validation.messageView(form, '.-error')
+      },
+    })
   },
+  messageView(form, modClass) {
+    form.querySelector(`.message${modClass}`).classList.add('-opening')
+    form.querySelector(`.message${modClass}`).classList.add('-open')
+
+    setTimeout(() => {
+      form.querySelector(`.message${modClass}`).classList.remove('-open')
+      $(form).find('.field').val('')
+    }, 3000)
+    setTimeout(() => {
+      form.querySelector(`.message${modClass}`).classList.remove('-opening')
+    }, 3300)
+  },
+  /* eslint-enable */
 }
 
 document.querySelectorAll('[required]').forEach((field) => {

@@ -20,7 +20,14 @@ module.exports = {
         "removeConsoleLog": true,
         "webpack": {
             "useHMR": false,
-            "providePlugin": {}
+            "providePlugin": {
+                $: 'jquery',
+                '$': 'jquery',
+                jquery: 'jquery',
+                jQuery: 'jquery',
+                'window.jquery': 'jquery',
+                'window.jQuery': 'jquery',
+            }
         },
         "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,
