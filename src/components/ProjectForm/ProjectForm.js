@@ -13,6 +13,10 @@ const validation = {
       this.test(field)
     })
 
+    if (this.valid) {
+      this.ajaxSend()
+    }
+
   },
   fieldSuccess(field) {
     field.classList.remove('-error')
@@ -57,6 +61,10 @@ const validation = {
     } else {
       this.fieldSuccess(field)
     }
+  },
+  ajaxSend() {
+    // const action = this.form.getAttribute('action')
+    this.form.submit()
   },
 }
 

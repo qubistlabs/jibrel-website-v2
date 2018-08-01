@@ -7,7 +7,9 @@ const careerSlider = new Swiper('.partners-card.swiper-container', {
   autoplay: true,
   speed: 800,
   slidesPerView: 4,
-  767: {
-    slidesPerView: 1,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+    },
   },
 })

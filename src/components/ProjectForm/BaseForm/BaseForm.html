@@ -1,9 +1,11 @@
 
-  <div class='container -center-box _container-fix'>
+  <div class='container -center-box _container-fix' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
     <div class='project-form -w-large'>
       <div class='container'>
         <h2 class='title -white'>{{title}}</h2>
-        <form action='' class='form'>
+        <form action='/' class='form'>
+          <input type='hidden'>
+          <input type='hidden' name='form-name' value='{{formName}}'> 
           <label class='item'>
             <input type='text' class='field -input -white -small ' placeholder='Full Name *' required>
           </label>
