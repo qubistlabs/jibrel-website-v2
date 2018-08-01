@@ -5,18 +5,18 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
 
   pageAbout: {
     positionContainer: '-bottom-70 -mobile-visible',
-    title: 'WHAT WE DO —',
+    title: 'WHAT WE DO',
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   aboutSection1: {
     positionContainer: '-top-110',
@@ -39,8 +39,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   productsCompanySection1: {
     positionContainer: '-top-0',
@@ -70,8 +70,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   jwalletSection1: {
     positionContainer: '-top-0',
@@ -94,8 +94,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   projectEnterprizeSection1: {
     positionContainer: '-center',
@@ -111,8 +111,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   jsearchSection1: {
     positionContainer: '-bottom-460',
@@ -128,8 +128,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   jsearchClear1: {
     positionContainer: '-bottom-460',
@@ -145,8 +145,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
 
   pageContact: {
@@ -155,8 +155,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   contactSection1: {
     positionContainer: '-bottom-460',
@@ -172,8 +172,8 @@ SectionName: {
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   careersSection1: {
     positionContainer: '-top-110',
@@ -189,8 +189,8 @@ SectionName: {
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-color',
-    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0"',
-    aosIcon: 'data-aos="fade-up" data-aos-duration="1500"'
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   vacancy: {
     positionContainer: '-top-110',

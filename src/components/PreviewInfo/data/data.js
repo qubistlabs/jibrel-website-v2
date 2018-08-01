@@ -4,9 +4,9 @@ PreviewInfo: {
     modClassTitle: '-color -text-center',
     modClassDescr: '-medium-size -color -text-center -box-center',
     title: 'Compliant Stable Coins',
-    descr: 'JThe Jibrel Network provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-    aosAnimationTitle: 'data-aos="fade-up" data-aos-duration="600"',
-    aosAnimationDescr: 'data-aos="fade-up" data-aos-duration="900"',
+    descr: 'The Jibrel Network provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+    aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-up\' data-aos-duration=\'900\' data-aos-delay=\'150\'',
     aosAnimationBtn: '',
     aosAnimationImg: '',
   },
@@ -16,6 +16,8 @@ PreviewInfo: {
     modClassDescr: '-color -text-center -box-center',
     title: 'About Jibrel Network',
     descr: 'Jibrel is a blockchain development company that aims to leverage the latest developments in Distributed Ledger Technology (DLT) to build the financial networks of the future. By using Jibrel’s Product and Enterprise suite, governments, regulators and financial institutions can facilitate low cost global payments, instant settlement, and real-time clearing to transact using traditional financial assets more effectively.',
+    aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-up\' data-aos-duration=\'900\' data-aos-delay=\'150\'',
   },
   aboutUp: {
     modClassText: '',
@@ -30,36 +32,93 @@ PreviewInfo: {
     modClassDescr: '-medium-size -text-center -box-center',
     title: 'Digital Asset Solutions',
     descr: 'We’re helping leading Banks, Regulators and Governments implement enterprise-grade digital asset solutions',
+    aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-up\' data-aos-duration=\'900\' data-aos-delay=\'150\'',
   },
   enterprise1: {
-    modClassText: '-w50 -up-visual-center',
+    modClassText: '-w50',
     modClassPicture: '-w40',
     modClassTitle: '',
     modClassDescr: '-small-text -color',
     title: 'Transaction & Data Analytics',
     descr: 'Looking for digital asset transaction and data analytics? Jsearch provides transfer and smart contract data via an easily configurable API. Jibrel analytics solution also has compliance built-in, powered by Jclear, Jibrel’s digital asset AML / KYC solution',
-    img: '/assets/img/general/chess/enterprise-1.svg',
     modClassImg: '-enterprise-right',
+    aosAnimationTitle: 'data-aos=\'fade-right\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    images: [
+      {
+        img: '/assets/img/general/chess/enterprise-1.svg',
+        modClassImg: '-enterprise-right _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+      },
+      {
+        img: '/assets/img/general/chess/promo-1.svg',
+        modClassImg: '_mobile-visible',
+        aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+        size: {
+          w: 60,
+          h: 60
+        }
+      },
+    ]
   },
   enterprise2: {
-    modClassText: '-w50 -up-visual-center',
+    modClassText: '-w50',
     modClassPicture: '-w40',
     modClassTitle: '',
     modClassDescr: '-small-text -color',
     title: 'Real-time Digital Asset Price Feeds',
     descr: 'Keeping up-to-date with latest digital currency exchange prices feeds can be a challenge. With Jticker, you can ensure your trading desks and algorithms have reliable and verifiable price feeds',
-    img: '/assets/img/general/chess/enterprise-2.svg',
-    modClassImg: '-enterprise-left',
+    aosAnimationTitle: 'data-aos=\'fade-left\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationTitle: 'data-aos=\'fade-right\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    images: [
+      {
+        img: '/assets/img/general/chess/enterprise-2.svg',
+        modClassImg: '-enterprise-left _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+      },
+      {
+        img: '/assets/img/general/chess/promo-2.svg',
+        modClassImg: '_mobile-visible',
+        aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+        size: {
+          w: 60,
+          h: 60
+        }
+      },
+    ]
   },
   enterprise3: {
-    modClassText: '-w50 -up-visual-center',
+    modClassText: '-w50',
     modClassPicture: '-w40',
     modClassTitle: '',
     modClassDescr: '-small-text -color',
     title: 'Reliable Ethereum Connectivity',
     descr: 'Contact us to learn more about Jnode, an Enterprise-grade Ethereum connection, with 99.99% Uptime, it is the most secure and reliable solution for scalable Ethereum infrastructure',
-    img: '/assets/img/general/chess/enterprise-3.svg',
     modClassImg: '-enterprise-right',
+    aosAnimationTitle: 'data-aos=\'fade-right\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationTitle: 'data-aos=\'fade-right\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    images: [
+      {
+        img: '/assets/img/general/chess/enterprise-3.svg',
+        modClassImg: '-enterprise-right _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-up-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+      },
+      {
+        img: '/assets/img/general/chess/promo-3.svg',
+        modClassImg: '_mobile-visible',
+        aosAnimationImg: 'data-aos=\'fade-up-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+        size: {
+          w: 60,
+          h: 60
+        }
+      },
+    ]
   },
   products: {
     modClassText: '-w50 -up-visual-center',
@@ -93,21 +152,25 @@ PreviewInfo: {
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
     buttonLink: 'https://jwallet.network',
-    aosAnimationTitle: 'data-aos="fade-right" data-aos-duration="300"',
-    aosAnimationDescr: 'data-aos="fade-right" data-aos-duration="600"',
-    aosAnimationBtn: 'data-aos="fade-right" data-aos-duration="900"',
+    aosAnimationTitle: 'data-aos=\'fade-right\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationBtn: 'data-aos=\'fade-right\' data-aos-duration=\'900\' data-aos-delay=\'150\'',
+    aosAnimationImg: 'data-aos=\'fade-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    modClassImg: '_mobile-visible',
+    img: '/assets/img/general/chess/jwallet-m.png',
+    img2x: '/assets/img/general/chess/jwallet-m@2x.png 2x',
     images: [
       {
         img: '/assets/img/general/chess/jwallet.png',
         img2x: '/assets/img/general/chess/jwallet@2x.png 2x',
-        modClassImg: '-jwallet-note',
-        aosAnimationImg: 'data-aos="fade-up" data-aos-duration="600"'
+        modClassImg: '-jwallet-note _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\''
       },
       {
         img: '/assets/img/general/chess/jwallet-2.png',
         img2x: '/assets/img/general/chess/jwallet-2@2x.png 2x',
-        modClassImg: '-jwallet-phone',
-        aosAnimationImg: 'data-aos="fade-down" data-aos-duration="900"'
+        modClassImg: '-jwallet-phone _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-down\' data-aos-duration=\'900\' data-aos-delay=\'150\''
       },
     ]
   },
@@ -122,21 +185,25 @@ PreviewInfo: {
     buttonClass: '-fill-white-on-gray-bg -w-limit-240',
     buttonText: 'Try it now',
     buttonLink: 'https://jcash.network',
-    aosAnimationTitle: 'data-aos="fade-left" data-aos-duration="300"',
-    aosAnimationDescr: 'data-aos="fade-left" data-aos-duration="600"',
-    aosAnimationBtn: 'data-aos="fade-left" data-aos-duration="900"',
+    aosAnimationTitle: 'data-aos=\'fade-left\' data-aos-duration=\'300\' data-aos-delay=\'150\'',
+    aosAnimationDescr: 'data-aos=\'fade-left\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    aosAnimationBtn: 'data-aos=\'fade-left\' data-aos-duration=\'900\' data-aos-delay=\'150\'',
+    aosAnimationImg: 'data-aos=\'fade-right\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
+    modClassImg: '_mobile-visible',
+    img: '/assets/img/general/chess/jcash-m.png',
+    img2x: '/assets/img/general/chess/jcash-m@2x.png 2x',
     images: [
       {
         img: '/assets/img/general/chess/jcash.png',
         img2x: '/assets/img/general/chess/jcash@2x.png 2x',
-        modClassImg: '-jcash-desk',
-        aosAnimationImg: 'data-aos="fade-down" data-aos-duration="600"'
+        modClassImg: '-jcash-desk _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-down\' data-aos-duration=\'600\' data-aos-delay=\'150\''
       },
       {
         img: '/assets/img/general/chess/jcash-2.png',
         img2x: '/assets/img/general/chess/jcash-2@2x.png 2x',
-        modClassImg: '-jcash-keyboard',
-        aosAnimationImg: 'data-aos="fade-up" data-aos-duration="900"'
+        modClassImg: '-jcash-keyboard _mobile-hide',
+        aosAnimationImg: 'data-aos=\'fade-up\' data-aos-duration=\'900\' data-aos-delay=\'150\''
       },
     ]
   },
