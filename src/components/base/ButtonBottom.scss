@@ -1,0 +1,9 @@
+.button-bottom {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+
+  @include from-mobile {
+    display: none;
+  }
+}
