@@ -106,7 +106,8 @@ function formSubmit(form) {
     validation.init(form)
   })
   const button = form.querySelector('.js-send-form')
-  if (button) {
+
+  if (button !== null) {
     button.addEventListener('click', (event) => {
       event.preventDefault()
       const domEvent = document.createEvent('Event')
