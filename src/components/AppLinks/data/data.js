@@ -1,5 +1,5 @@
 AppLinks: {
-  jwalet: {
+  jwallet: {
     modClass: '-center -offset-top',
     items: [
       {
