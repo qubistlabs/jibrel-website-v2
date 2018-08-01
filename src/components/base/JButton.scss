@@ -206,6 +206,14 @@
   }
 
   &.-border-on-blue-bg,
+  &.-border-on-white-bg,
+  &.-border-on-dark-bg,
+  &.-border-on-white-bg,
+  &.-mobile-border-on-white-bg {
+    padding-top: 10px;
+  }
+
+  &.-border-on-blue-bg,
   &.-border-on-white-bg {
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     position: relative;
