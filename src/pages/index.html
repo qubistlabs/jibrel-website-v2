@@ -10,7 +10,7 @@
   {{> MainHeader/MainHeader MainHeader.color}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-gray-gradient'>
+  <section class='section-content -full-screen -center-child-box -mobile-bottom-child-box -bg-gray-gradient'>
     {{> SectionName/SectionName SectionName.pageHome}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info'>
@@ -22,7 +22,10 @@
                 <label class='item'>
                   <input type='email' class='field -input -fill -button-sibling' placeholder='Email Address' required=''>
                 </label>
-                <button class='send -text -inline js-send-form'>Join us</button>
+                <button class='send -text -inline js-send-form _mobile-hide'>Join us</button>
+                <div class='send -button _mobile-visible'>
+                  <button class='j-button -fill-white-on-gray-bg js-send-form'>Join us</button>
+                </div>
               </form>
             </div>
           </div>
@@ -66,7 +69,7 @@
     </div>
   </section>
 
-  <section class='section-content -offset-bottom -mobile-bg-gray'>
+  <section class='section-content -offset-bottom -mobile-bg-gray -mobile-offset-top'>
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
       <div class='news-preview'>
