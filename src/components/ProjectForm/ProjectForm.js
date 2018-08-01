@@ -64,13 +64,34 @@ const validation = {
   },
   ajaxSend() {
     // const action = this.form.getAttribute('action')
-    this.form.submit()
+    // const method = this.form.getAttribute('method')
+    // // this.form.submit()
+    // //
+    // fetch(action, {
+    //   method: method,
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     name: 'Hubot',
+    //     login: 'hubot',
+    //   }),
+    // })
   },
 }
 
 document.querySelectorAll('[required]').forEach((field) => {
   field.addEventListener('input', () => {
     validation.fieldSuccess(field)
+  })
+})
+document.querySelectorAll('.field').forEach((field) => {
+  field.addEventListener('input', () => {
+    if (field.value !== '') {
+      field.classList.add('-no-empty')
+    } else {
+      field.classList.remove('-no-empty')
+    }
   })
 
   field.addEventListener('change', () => {
@@ -84,12 +105,15 @@ function formSubmit(form) {
     validation.init(form)
   })
   const button = form.querySelector('.js-send-form')
-  button.addEventListener('click', (event) => {
-    event.preventDefault()
-    const domEvent = document.createEvent('Event')
-    domEvent.initEvent('submit', false, true)
-    event.target.closest('form').dispatchEvent(domEvent)
-  })
+
+  if (button !== null) {
+    button.addEventListener('click', (event) => {
+      event.preventDefault()
+      const domEvent = document.createEvent('Event')
+      domEvent.initEvent('submit', false, true)
+      event.target.closest('form').dispatchEvent(domEvent)
+    })
+  }
 }
 
 forms.forEach((form) => {

@@ -12,7 +12,7 @@
 }
 
 @mixin bg-gray-gradient {
-  background: linear-gradient(to top, #fff 0%, #f5f6fa 100%);
+  background: linear-gradient(to bottom, #fff 0%, #f5f6fa 100%);
 }
 
 @mixin bg-light-blue {

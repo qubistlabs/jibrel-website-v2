@@ -13,20 +13,26 @@
   <section class='section-content -full-screen -center-child-box -bg-gray-gradient'>
     {{> SectionName/SectionName SectionName.pageHome}}
     <div class='container -center-box _container-fix'>
-      <div class='preview-info'>
+      <div class='preview-info -mobile-offset'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.home}}
-        <div class='form' data-aos='fade-in' data-aos-duration='1200' data-aos-delay="600">
+        <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay="600">
           <div class='project-form'>
             <div class='container -no-offset'>
               <form action='' class='form _relative'>
                 <label class='item'>
                   <input type='email' class='field -input -fill -button-sibling' placeholder='Email Address' required=''>
                 </label>
-                <button class='send -text -inline js-send-form'>Join us</button>
+                <a href="#" class='send -text -inline'>Join us</a>
               </form>
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+    <div class='button-bottom _mobile-visible'>
+      <div class="_container-fix">
+        <a href="#" class='j-button -fill-on-white-bg'>Join us</a>
       </div>
     </div>
   </section>
@@ -66,7 +72,7 @@
     </div>
   </section>
 
-  <section class='section-content -offset-bottom -mobile-bg-gray'>
+  <section class='section-content -offset-bottom -mobile-bg-gray -mobile-offset-top'>
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
       <div class='news-preview'>

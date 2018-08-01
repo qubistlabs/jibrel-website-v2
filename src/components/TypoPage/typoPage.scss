@@ -64,9 +64,12 @@
     stroke: $blue;
     transition: color 0.2s ease-in-out, stroke 0.2s ease-in-out;
     margin-top: 30px;
-    margin-bottom: 60px;
     font-size: 13px;
     display: inline-block;
+
+    @include from-mobile {
+      margin-bottom: 60px;
+    }
 
     > .icon {
       display: inline-block;

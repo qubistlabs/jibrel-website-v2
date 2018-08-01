@@ -8,6 +8,12 @@
     overflow: hidden;
   }
 
+  &.-mobile-offset {
+    @include to-mobile {
+      padding-bottom: 7%;
+    }
+  }
+
   &.-row {
     display: -webkit-flex;
     display: -ms-flex;
@@ -163,7 +169,7 @@
       }
 
       &.-jcash-desk {
-        left: -34px;
+        left: -124px;
       }
 
       &.-jcash-keyboard {
