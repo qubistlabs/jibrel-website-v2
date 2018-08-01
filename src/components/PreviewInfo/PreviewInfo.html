@@ -9,6 +9,13 @@
 </div>
 {{#is img '!=' ''}}
 <div class='picture'>
-  <img src='{{img}}' srcset='{{img2x}}' class='img {{modClassImg}}' {{{this.aosAnimationImg}}} alt='{{this.title}}'>
+  <img src='{{img}}' {{#is img2x '!=' ''}}srcset='{{img2x}}'{{/is}} class='img {{modClassImg}}' {{{this.aosAnimationImg}}} alt='{{this.title}}'>
+</div>
+{{/is}}
+{{#is images '!=' ''}}
+<div class='picture'>
+  {{#each images}}
+  <img src='{{img}}' {{#is img2x '!=' ''}}srcset='{{img2x}}'{{/is}} {{#is size '!=' ''}}width='{{size.w}}' height='{{size.h}}'{{/is}} class='img {{modClassImg}}' {{{this.aosAnimationImg}}} alt='/'>
+  {{/each}}
 </div>
 {{/is}}

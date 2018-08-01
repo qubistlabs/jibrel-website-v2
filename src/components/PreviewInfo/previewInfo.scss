@@ -4,6 +4,10 @@
   display: block;
   width: 100%;
 
+  &.-closed-perimeter {
+    overflow: hidden;
+  }
+
   &.-row {
     display: -webkit-flex;
     display: -ms-flex;
@@ -11,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0;
-    overflow: hidden;
     position: relative;
 
     @include from-mobile {
@@ -56,20 +59,12 @@
   > .text {
     &.-up-visual-center {
       @include from-mobile {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
       }
     }
 
     > .title,
     > .descr {
-      &.-white {
-        color: #fff;
-      }
-
-      &.-color {
-        color: $base;
-      }
-
       &.-text-center {
         text-align: center;
       }
@@ -79,8 +74,13 @@
       line-height: (48/36);
       font-size: 32px;
       font-weight: normal;
+      color: $base;
 
       @include ls(25);
+
+      &.-white {
+        color: #fff;
+      }
 
       &.-neighbor-img {
         @include from-mobile {
@@ -99,7 +99,11 @@
       max-width: 930px;
       width: 100%;
       margin-top: 33px;
-      opacity: 0.6;
+      color: $base-o;
+
+      &.-white {
+        color: rgba(#fff, 0.6);
+      }
 
       &.-box-center {
         margin-left: auto;
@@ -134,7 +138,9 @@
   }
 
   > .picture {
-    padding-left: 30px;
+    @include from-mobile {
+      padding-left: 30px;
+    }
 
     @include to-mobile {
       margin-bottom: 30px;
@@ -144,14 +150,26 @@
       max-width: 100%;
       position: relative;
 
-      &.-jwalet {
+      &.-jwallet-note {
         @include from-mobile {
-          right: -20px;
+          right: 20px;
         }
       }
 
-      &.-jcash {
-        left: -70px;
+      &.-jwallet-phone {
+        position: absolute;
+        top: 16%;
+        right: -33px;
+      }
+
+      &.-jcash-desk {
+        left: -34px;
+      }
+
+      &.-jcash-keyboard {
+        position: absolute;
+        top: 80%;
+        left: 160px;
       }
 
       &.-enterprise-left,
@@ -160,7 +178,6 @@
         height: 482px;
 
         @include from-mobile {
-          // position: absolute;
           position: relative;
           margin-top: -30px;
           margin-bottom: -120px;
@@ -184,6 +201,11 @@
           // top: 50px;
           right: -30px;
         }
+      }
+
+      @include to-mobile {
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -215,7 +237,10 @@
   &.-reverse {
     > .picture {
       padding-left: 0;
-      padding-right: 30px;
+
+      @include from-mobile {
+        padding-right: 30px;
+      }
     }
   }
 
