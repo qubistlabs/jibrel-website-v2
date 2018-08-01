@@ -1,4 +1,3 @@
-import 'whatwg-fetch'
 // eslint-disable-next-line no-unused-vars
 import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
 
