@@ -1,25 +1,25 @@
 ListVacancies: [
   {
     link: 'senior-qa-automation-engineer-ios.html',
-    place: 'Sankt-Petersburg, Russia',
+    place: 'Saint-Petersburg, Russia',
     position: 'Senior QA Automation Engineer (iOS)',
     descr: 'Senior QA Automation Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
   },
   {
     link: 'senior-qa-automation-engineer-android.html',
-    place: 'Sankt-Petersburg, Russia',
+    place: 'Saint-Petersburg, Russia',
     position: 'Senior QA Automation Engineer (Android)',
     descr: 'Senior QA Automation Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
   },
   {
     link: 'qa-engineer.html',
-    place: 'Sankt-Petersburg, Russia',
+    place: 'Saint-Petersburg, Russia',
     position: 'QA Engineer',
     descr: 'QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development',
   },
   {
     link: 'mobile-qa-engineer.html',
-    place: 'Sankt-Petersburg, Russia',
+    place: 'Saint-Petersburg, Russia',
     position: 'Mobile QA Engineer',
     descr: 'Mobile QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
   },
