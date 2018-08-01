@@ -28,8 +28,12 @@
   }
 
   > .container {
-    height: calc(100% - 133px);
+    height: calc(100% - 158px);
     overflow: auto;
+
+    @include to-mobile {
+      height: calc(100% - 133px);
+    }
 
     > .box {
       padding-left: 50px;
