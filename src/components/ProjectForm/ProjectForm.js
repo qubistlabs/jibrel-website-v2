@@ -106,12 +106,14 @@ function formSubmit(form) {
     validation.init(form)
   })
   const button = form.querySelector('.js-send-form')
-  button.addEventListener('click', (event) => {
-    event.preventDefault()
-    const domEvent = document.createEvent('Event')
-    domEvent.initEvent('submit', false, true)
-    event.target.closest('form').dispatchEvent(domEvent)
-  })
+  if (button) {
+    button.addEventListener('click', (event) => {
+      event.preventDefault()
+      const domEvent = document.createEvent('Event')
+      domEvent.initEvent('submit', false, true)
+      event.target.closest('form').dispatchEvent(domEvent)
+    })
+  }
 }
 
 forms.forEach((form) => {
