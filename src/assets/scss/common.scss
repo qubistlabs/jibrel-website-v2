@@ -24,8 +24,12 @@ body {
 
   @include font;
 
-  @media (min-width: 768px) {
+  @include from-mobile {
     min-width: 1150px;
+  }
+
+  @include to-mobile {
+    overflow-x: hidden;
   }
 
   &.-scroll-lock {
@@ -79,6 +83,12 @@ img {
 
 ._mobile-hide {
   @include to-mobile {
+    display: none;
+  }
+}
+
+._mobile-visible {
+  @include from-mobile {
     display: none;
   }
 }

@@ -1,18 +1,22 @@
 SectionName: {
-  welcome: {
+  pageHome: {
     positionContainer: '-bottom-70',
     title: 'WELCOME',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
 
-  about: {
+  pageAbout: {
     positionContainer: '-bottom-70 -mobile-visible',
-    title: 'WHAT WE DO —',
+    title: 'WHAT WE DO',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   aboutSection1: {
     positionContainer: '-top-110',
@@ -29,16 +33,18 @@ SectionName: {
     modClass: '-color'
   },
 
-  products: {
+  pageProducts: {
     positionContainer: '-bottom-70',
-    title: 'Jwalet — JCASH — JNODE',
+    title: 'jwallet — JCASH — JNODE',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-white',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   productsCompanySection1: {
     positionContainer: '-top-0',
-    title: 'MEET Jwalet',
+    title: 'MEET jwallet',
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-white'
@@ -58,21 +64,23 @@ SectionName: {
     modClass: '-white'
   },
 
-  jwalet: {
+  pageJwallet: {
     positionContainer: '-bottom-70 -mobile-visible',
-    title: 'Jwalet — ',
+    title: 'jwallet — ',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-white',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
-  jwaletSection1: {
+  jwalletSection1: {
     positionContainer: '-top-0',
     title: 'ABOUT JIBREL NETWORK',
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-color'
   },
-  jwaletSection2: {
+  jwalletSection2: {
     positionContainer: '-top-110',
     title: 'CONTACTS',
     positionTitle: '-top',
@@ -80,12 +88,14 @@ SectionName: {
     modClass: '-color'
   },
 
-  enterprize: {
+  pageEnterprize: {
     positionContainer: '-bottom-70',
     title: 'ENTERPRISE SOLUTION',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   projectEnterprizeSection1: {
     positionContainer: '-center',
@@ -95,12 +105,14 @@ SectionName: {
     modClass: '-color'
   },
 
-  jsearch: {
+  pageJsearch: {
     positionContainer: '-bottom-70',
     title: 'JSEARCH — ',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   jsearchSection1: {
     positionContainer: '-bottom-460',
@@ -110,12 +122,14 @@ SectionName: {
     modClass: '-color'
   },
 
-  jclear: {
+  pageJclear: {
     positionContainer: '-bottom-70',
     title: 'JCLEAR — ',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   jsearchClear1: {
     positionContainer: '-bottom-460',
@@ -125,20 +139,24 @@ SectionName: {
     modClass: '-color'
   },
 
-  jcore: {
+  pageJcore: {
     positionContainer: '-bottom-70',
     title: 'JCORE — ',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
 
-  contact: {
+  pageContact: {
     positionContainer: '-bottom-70',
     title: 'JIBREL NETWORK',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-white',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   contactSection1: {
     positionContainer: '-bottom-460',
@@ -148,12 +166,14 @@ SectionName: {
     modClass: '-color'
   },
 
-  careers: {
+  pageCcareers: {
     positionContainer: '-bottom-70',
     title: 'JIBREL NETWORK',
     positionTitle: '-bottom',
     arrow: 'down',
-    modClass: '-white'
+    modClass: '-white',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   careersSection1: {
     positionContainer: '-top-110',
@@ -163,12 +183,14 @@ SectionName: {
     modClass: '-color'
   },
 
-  vacansiesList: {
+  pageVacansies: {
     positionContainer: '-top-110',
     title: 'VACANCIES',
     positionTitle: '-top',
     arrow: 'up',
-    modClass: '-color'
+    modClass: '-color',
+    aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
+    aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   vacancy: {
     positionContainer: '-top-110',

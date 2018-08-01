@@ -1,22 +1,28 @@
 ProjectForm: {
   baseForm: {
     support: {
-      title: 'Technical Support'
+      title: 'Technical Support',
+      formName: 'enquiry'
     },
     media: {
-      title: 'Media & PR Inquiries'
+      title: 'Media & PR Inquiries',
+      formName: 'enquiry'
     },
     product: {
-      title: 'Product & Sales Enquiry'
+      title: 'Product & Sales Enquiry',
+      formName: 'enquiry'
     },
     sendMessage: {
-      title: 'Send message'
+      title: 'Send message',
+      formName: 'message'
     },
     productAndSale: {
-      title: 'Product & Sales Enquiry Form'
+      title: 'Product & Sales Enquiry Form',
+      formName: 'enquiry'
     },
     mediaAndPR: {
-      title: 'Media & PR Inquiries'
+      title: 'Media & PR Inquiries',
+      formName: 'enquiry'
     },
   },
   applyResume: {

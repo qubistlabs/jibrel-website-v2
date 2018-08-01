@@ -1,16 +1,16 @@
 <header class='main-header {{modClassContainer}}'>
   <div class='container _container-fluid'>
 
-    <a href='/' class='project-logo {{modClass}}'>
+    <a href='/' class='project-logo {{modClass}}' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
       {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
       {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
     </a>
-    <div class='actions'>
+    <div class='actions' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
       {{!-- {{#is openPopups '==' ''}}
       <div class='select-language -in-header'>
         <button class='toggle'>
           <span class='current {{modClass}}'>ENGLISH</span>
-          <svg class='icon {{modClass}}' width='7.5px' height='4.5px'><use xlink:href='assets/img/svg-symbols.svg#i-che-b'></use></svg>
+          <svg class='icon {{modClass}}' width='7.5px' height='4.5px'><use xlink:href='#i-che-b'></use></svg>
         </button>
         {{> SelectLanguage/SelectLanguage}}
       </div>

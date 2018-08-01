@@ -1,21 +1,21 @@
 ProjectSlider: {
   productMobile: {
-    Jwalet: {
+    jwallet: {
       content: [
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Insights'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Dashboards'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Sending Funds'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Templates'
         },
       ]
@@ -23,19 +23,19 @@ ProjectSlider: {
     jCash: {
       content: [
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Clear Simplicity'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'KYS Adress Registration'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Convertation'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Refund System'
         },
       ]
@@ -43,41 +43,41 @@ ProjectSlider: {
     jNode: {
       content: [
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Screen One'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Other Screen'
         },
         {
-          img: '/assets/img/content/jwalet-m.png',
+          img: '/assets/img/content/jwallet-m.png',
           title: 'Next Third'
         },
       ]
     },
   },
   productContent: {
-    Jwalet: {
+    jwallet: {
       content: [
         {
-          img: '/assets/img/content/tab-jwalet.png',
-          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          img: '/assets/img/content/tab-jwallet.png',
+          img2x: '/assets/img/content/tab-jwallet@2x.png 2x',
           title: 'Insights'
         },
         {
-          img: '/assets/img/content/tab-jwalet.png',
-          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          img: '/assets/img/content/tab-jwallet.png',
+          img2x: '/assets/img/content/tab-jwallet@2x.png 2x',
           title: 'Dashboards'
         },
         {
-          img: '/assets/img/content/tab-jwalet.png',
-          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          img: '/assets/img/content/tab-jwallet.png',
+          img2x: '/assets/img/content/tab-jwallet@2x.png 2x',
           title: 'Sending Funds'
         },
         {
-          img: '/assets/img/content/tab-jwalet.png',
-          img2x: '/assets/img/content/tab-jwalet@2x.png 2x',
+          img: '/assets/img/content/tab-jwallet.png',
+          img2x: '/assets/img/content/tab-jwallet@2x.png 2x',
           title: 'Templates'
         },
       ]

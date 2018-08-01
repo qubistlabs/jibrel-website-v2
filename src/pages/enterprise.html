@@ -10,8 +10,8 @@
   {{> MainHeader/MainHeader MainHeader.color}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-grid'>
-    {{> SectionName/SectionName SectionName.enterprize}}
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient'>
+    {{> SectionName/SectionName SectionName.pageEnterprize}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise}}
@@ -21,7 +21,7 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center'>Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</h2>
+      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</h2>
       <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
         {{#each CardTile.homeData2}}
         {{> CardTile/CardTile}}
@@ -33,8 +33,8 @@
   <section class='section-content -offset-top -mobile-collapse-offset -mobile-bg-gray'>
     {{> SectionName/SectionName SectionName.projectEnterprizeSection1}}
     <div class='container _container-fix -bg-gray -offset-top -offset-bottom'>
-      <h2 class='title -text-center -box-center'>A Complete Enterprise Solution</h2>
-      <h2 class='descr -text-center -box-center'>Jibrel is being used by companies and governments to build the financial networks of the future. Our enterprise offering meets the highest standards in technology and compliance.</h2>
+      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">A Complete Enterprise Solution</h2>
+      <h2 class='descr -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel is being used by companies and governments to build the financial networks of the future. Our enterprise offering meets the highest standards in technology and compliance.</h2>
       <div class='card-tile'>
         {{#each CardTile.compliteEterpriseSolution}}
         {{> CardTile/CardTile}}
@@ -45,8 +45,8 @@
 
   <section class='section-content -offset-top -offset-bottom'>
     <div class='container _container-fix'>
-      <p class='title -text-center -box-center'>Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
-      <div class='partners-card -offset-top'>
+      <p class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="600" data-aos-delay="150">Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
+      <div class='partners-card -offset-top swiper-container' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
         {{> PartnersCard/PartnersCard}}
       </div>
     </div>
@@ -54,7 +54,7 @@
 
   <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
     <div class='container -center-box _container-fix -bg-gray'>
-      <div class='preview-info -row -inner -mobile-offset-bottom-collapse'>
+      <div class='preview-info -row -inner -mobile-offset-bottom-collapse -closed-perimeter'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise1}}
       </div>
     </div>
@@ -62,7 +62,7 @@
 
   <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
     <div class='container -center-box _container-fix -bg-gray'>
-      <div class='preview-info -row -inner -reverse -mobile-offset-top-collapse'>
+      <div class='preview-info -row -inner -reverse -mobile-offset-top-collapse -closed-perimeter'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise2}}
       </div>
     </div>
@@ -70,16 +70,14 @@
 
   <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
     <div class='container -center-box _container-fix -bg-gray'>
-      <div class='preview-info -row -inner -mobile-offset-top-collapse'>
+      <div class='preview-info -row -inner -mobile-offset-top-collapse -closed-perimeter'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise3}}
       </div>
     </div>
   </section>
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
-    <div class='container _container-fix'>
       {{> ProjectForm/BaseForm/BaseForm ProjectForm.baseForm.productAndSale}}
-    </div>
   </section>
 
   {{> MainFooter/MainFooter}}

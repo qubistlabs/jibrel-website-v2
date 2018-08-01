@@ -1,0 +1,47 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -offset-page -bg-gray'>
+    <div class="_relative">
+      {{> SectionName/SectionName SectionName.pageVacansies}}
+    </div>
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class='list-vacancies'>
+        <h1 class='title'>Open Positions</h1>
+        {{> ListVacancies/ListVacancies}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancies}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <h2 class='title -white -text-center -box-center'>Jibrel Global Presence</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom'>Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

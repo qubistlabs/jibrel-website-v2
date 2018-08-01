@@ -14,19 +14,15 @@
     {{> SectionName/SectionName SectionName.press}}
     <div class='container _container-fix'>
       <div class='news-preview'>
-        {{#each NewsPreview.bgStyle}}
-        {{> NewsPreview/NewsPreview}}
+        {{#each NewsPreview.previewPage}}
         {{> NewsPreview/NewsPreview}}
         {{/each}}
-      </div>
-      <div class='j-buttons -center'>
-        <button class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></button>
       </div>
     </div>
   </section>
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
-    <div class='container _container-fix'>
+    <div class='container _container-fix' >
       {{> ProjectForm/BaseForm/BaseForm ProjectForm.baseForm.mediaAndPR}}
     </div>
   </section>

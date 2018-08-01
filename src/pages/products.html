@@ -11,7 +11,7 @@
   {{> PopUp/MainMenu/MainMenu}}
 
   <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/grid.png);'>
-    {{> SectionName/SectionName SectionName.products}}
+    {{> SectionName/SectionName SectionName.pageProducts}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info -row'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.products}}
@@ -33,15 +33,15 @@
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
 
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center'>Jwalet — Official ERC-20 wallet of the Jibrel Network</h2>
-      <p class='descr -white -text-center -box-center -w-limit-650'>Jwalet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
+      <h2 class='title -white -text-center -box-center'>jwallet — Official ERC-20 wallet of the Jibrel Network</h2>
+      <p class='descr -white -text-center -box-center -w-limit-650'>jwallet is the first product release by the Jibrel Network. An enterprise-grade, user-friendly, token storage and transaction solution.</p>
     </div>
 
     <div class='tabs-component -offset-top _mobile-hide'>
 
       <div class='container _container-fix'>
         <div class='tab-links -center'>
-          {{#each TabsComponent.TabLinks.Jwalet}}
+          {{#each TabsComponent.TabLinks.jwallet}}
           {{> TabsComponent/TabLinks/TabLinks}}
           {{/each}}
         </div>
@@ -51,7 +51,7 @@
         {{> SectionName/SectionName SectionName.productsCompanySection1}}
         <div class='container _container-fix'>
           <div class='tabs-content'>
-            {{#each TabsComponent.TabsContent.Jwalet}}
+            {{#each TabsComponent.TabsContent.jwallet}}
             {{> TabsComponent/TabsContent/TabsContent}}
             {{/each}}
           </div>
@@ -63,7 +63,7 @@
     <div class='product-mobile'>
       <div class="container swiper-container">
         <div class='wrapper swiper-wrapper'>
-          {{> ProjectSlider/ProductMobile/ProductMobile ProjectSlider.productMobile.Jwalet}}
+          {{> ProjectSlider/ProductMobile/ProductMobile ProjectSlider.productMobile.jwallet}}
         </div>
       </div>
     </div>

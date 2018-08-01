@@ -48,6 +48,11 @@
     }
   }
 
+  &.-big-offset {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   &.-w-limit-180 {
     max-width: 180px;
   }
@@ -242,7 +247,7 @@
   }
 
   &.-border-on-blue-bg {
-    border: 1px solid #80a6ec;
+    border: 2px solid #80a6ec;
     color: #fff;
 
     &:hover {
@@ -256,7 +261,7 @@
   }
 
   &.-border-on-dark-bg {
-    border: 1px solid rgba(#f5f6fa, 0.5);
+    border: 2px solid rgba(#f5f6fa, 0.5);
     color: #fff;
 
     &:hover {
@@ -270,11 +275,11 @@
   }
 
   &.-border-on-white-bg {
-    border: 1px solid rgba($blue, 0.5);
+    border: 2px solid rgba($blue, 0.5);
     color: $blue;
 
     &:hover {
-      border: 1px solid rgba($light-blue, 0.5);
+      border-color: rgba($light-blue, 0.5);
       color: $light-blue;
     }
   }
@@ -287,7 +292,7 @@
       color: $blue;
 
       &:hover {
-        border: 1px solid rgba($light-blue, 0.5);
+        border-color: rgba($light-blue, 0.5);
         color: $light-blue;
       }
     }

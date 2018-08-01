@@ -2,9 +2,9 @@ PopUp: {
   MainMenu: {
     project: [
       {
-        name: 'Jwalet',
+        name: 'jwallet',
         descr: 'User-friendly and secure wallet to manage digital assets',
-        link: 'jwalet.html',
+        link: 'jwallet.html',
         text: 'More info'
       },
       {
@@ -41,16 +41,16 @@ PopUp: {
         name: 'Products',
         pages: [
           {
-            link: 'enterprise.html',
+            link: '/enterprise.html',
             name: 'Enterprise',
           },
           {
-            link: '#',
+            link: 'https://jwallet.network',
             name: 'Jwallet',
             externalLink: 'true'
           },
           {
-            link: '#',
+            link: 'https://jcash.network',
             name: 'Jcash',
             externalLink: 'true'
           },
@@ -60,15 +60,15 @@ PopUp: {
         name: 'Company',
         pages: [
           {
-            link: 'about.html',
+            link: '/about.html',
             name: 'About Us',
           },
           {
-            link: 'news.html',
+            link: '/news.html',
             name: 'Press & Media',
           },
           {
-            link: 'vacancies-list.html',
+            link: '/vacancies.html',
             name: 'Careers',
           },
         ]
@@ -81,16 +81,24 @@ PopUp: {
             name: 'Send a message',
           },
           {
-            link: '#',
+            link: 'https://www.facebook.com/jibrelnetwork/',
             name: 'Facebook',
+            externalLink: 'true'
           },
           {
-            link: '#',
+            link: 'https://twitter.com/JibrelNetwork',
             name: 'Twitter',
+            externalLink: 'true'
           },
           {
-            link: '#',
-            name: 'Instagram',
+            link: 'https://www.linkedin.com/company/jibrel-network/',
+            name: 'Linkedin',
+            externalLink: 'true'
+          },
+          {
+            link: 'https://medium.com/@jibrelnetwork',
+            name: 'Medium',
+            externalLink: 'true'
           },
         ]
       }

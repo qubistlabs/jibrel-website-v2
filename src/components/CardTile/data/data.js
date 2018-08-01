@@ -2,10 +2,11 @@ CardTile: {
   project: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
-      img: '/assets/img/general/icon/jwalet.svg',
+      img: '/assets/img/general/icon/jwallet.svg',
       imgW: '111',
       imgH: '84',
       title: 'false',
@@ -25,6 +26,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -48,6 +50,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -71,6 +74,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="250"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -94,6 +98,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -117,6 +122,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -143,6 +149,7 @@ CardTile: {
   projectEnterprize: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -166,6 +173,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -189,6 +197,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-square-slim -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -215,10 +224,11 @@ CardTile: {
   productsCompany: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
-      img: '/assets/img/general/icon/jwalet.svg',
+      img: '/assets/img/general/icon/jwallet.svg',
       imgW: '111',
       imgH: '84',
       title: 'false',
@@ -238,6 +248,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -261,6 +272,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-square -color -is-hover-overlay -bg-white',
       imgType: 'img',
       modClassImg: '-logo-project',
@@ -284,9 +296,10 @@ CardTile: {
     },
   ],
 
-  projectJwalet: [
+  projectjwallet: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -295,11 +308,12 @@ CardTile: {
       imgH: '60',
       title: 'Anywhere, anytime',
       subTitle: 'false',
-      descr: 'The Jwalet is mobile friendly, so you can access your tokens everywhere you go. The web-version works on desktop and mobile browsers.',
+      descr: 'The jwallet is mobile friendly, so you can access your tokens everywhere you go. The web-version works on desktop and mobile browsers.',
       isHoverBox: 'false'
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -313,6 +327,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -321,29 +336,31 @@ CardTile: {
       imgH: '60',
       title: 'Made by geeks. Made for users',
       subTitle: 'false',
-      descr: 'We’ve done the complicated stuff so you won’t have to. the Jwalet introduces new features to Ethereum, like a standard URI scheme',
+      descr: 'We’ve done the complicated stuff so you won’t have to. the jwallet introduces new features to Ethereum, like a standard URI scheme',
       isHoverBox: 'false'
     },
   ],
 
-  projectJwaletDemo: [
+  projectjwalletDemo: [
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
-      img: '/assets/img/general/jwalet-demo/jwalet-demo-1.png',
+      img: '/assets/img/general/jwallet-demo/jwallet-demo-1.png',
       title: 'Stocked and ready to go',
       subTitle: 'false',
-      descr: 'The Jwalet is preconfigured to be compatible with all Ethereum tokens and Ethereum itself, straight out of the box, no configuration necessary.',
+      descr: 'The jwallet is preconfigured to be compatible with all Ethereum tokens and Ethereum itself, straight out of the box, no configuration necessary.',
       isHoverBox: 'false'
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
-      img: '/assets/img/general/jwalet-demo/jwalet-demo-2.png',
+      img: '/assets/img/general/jwallet-demo/jwallet-demo-2.png',
       title: 'Bring Your Own Token',
       subTitle: 'false',
       descr: 'Want to add a token that isn’t listed yet? Add your own in under five seconds using the easy to use custom token feature.',
@@ -351,10 +368,11 @@ CardTile: {
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
-      img: '/assets/img/general/jwalet-demo/jwalet-demo-3.png',
+      img: '/assets/img/general/jwallet-demo/jwallet-demo-3.png',
       title: 'Private keys never leave your device',
       subTitle: 'false',
       descr: 'All key, user and transaction data is stored locally on your device. Ensuring you take full advantage of the security and anonymity of crypto.',
@@ -362,10 +380,11 @@ CardTile: {
     },
     {
       cardModClass: '-two-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
-      img: '/assets/img/general/jwalet-demo/jwalet-demo-4.png',
+      img: '/assets/img/general/jwallet-demo/jwallet-demo-4.png',
       title: 'Institutional-grade tracking tools',
       subTitle: 'false',
       descr: 'See your transaction history, total value summaries and other traditional banking features you\'ve grown accustomed to.',
@@ -376,6 +395,7 @@ CardTile: {
   jCoreRowOne: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -389,6 +409,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -402,6 +423,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -418,6 +440,7 @@ CardTile: {
   jCoreRowTwo: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -431,6 +454,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -444,6 +468,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -460,10 +485,11 @@ CardTile: {
   jCoreUseCase: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-location-pin-direction\'></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'#i-location-pin-direction\'></use></svg>',
       title: 'Designed by Finance Professionals',
       subTitle: 'false',
       descr: 'Jibrel Core is designed specifically for financial services, with plug and play modules for core banking solutions',
@@ -479,10 +505,11 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-fingerprint-login\'></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'#i-fingerprint-login\'></use></svg>',
       title: 'Built by Blockchain Experts',
       subTitle: 'false',
       descr: 'Our blockchain focused development team provide hands-on integration support every step of the way',
@@ -498,10 +525,11 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-square -color -padding-small',
       imgType: 'svg',
       modClassImg: '',
-      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-coin-receive\'></use></svg>',
+      img: '<svg class=\'icon -stroke -on-hover\' width=\'60\' height=\'60\'><use xlink:href=\'#i-coin-receive\'></use></svg>',
       title: 'Loved by Enterprise Users',
       subTitle: 'false',
       descr: 'With scalable, easy to use distributed ledger infrastructure, it’s easy to see why Enterprise users love Jibrel Core',
@@ -520,6 +548,7 @@ CardTile: {
   contactMainPage: [
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -533,6 +562,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -546,6 +576,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -559,6 +590,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="1200" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -574,6 +606,7 @@ CardTile: {
   aboutContact: [
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -587,6 +620,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -600,6 +634,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -608,11 +643,12 @@ CardTile: {
       imgH: '60',
       title: 'St. Petersburg',
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  ',
+      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia',
       isHoverBox: 'false',
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="1200" data-aos-delay="150"',
       boxModClass: '-white -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -629,6 +665,7 @@ CardTile: {
   mediaAndPress: [
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -652,6 +689,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -675,6 +713,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -698,6 +737,7 @@ CardTile: {
     },
     {
       cardModClass: '-four-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="1200" data-aos-delay="150"',
       boxModClass: '-square-tiny -color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -724,6 +764,7 @@ CardTile: {
   whyWorkJibrel: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -737,6 +778,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -750,6 +792,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '',
@@ -766,6 +809,7 @@ CardTile: {
   compliteEterpriseSolution: [
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -779,6 +823,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -792,6 +837,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -805,6 +851,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="250"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -818,6 +865,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -831,6 +879,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -base-offset',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       boxModClass: '-color',
       imgType: 'img',
       modClassImg: '',
@@ -846,10 +895,11 @@ CardTile: {
   homeData1: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-business-bag-cash\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'#i-business-bag-cash\'></use></svg>',
       title: 'Enterprise Ready',
       subTitle: 'false',
       descr: 'Jibrel solutions meet the highest standards in technology, security and compliance',
@@ -857,10 +907,11 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-notebook-favorite\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-notebook-favorite\'></use></svg>',
       title: 'User Friendly',
       subTitle: 'false',
       descr: 'No blockchain experience? No problem. All solutions are straightforward and simple to use.',
@@ -868,10 +919,11 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-expand\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-expand\'></use></svg>',
       title: 'Scalable',
       subTitle: 'false',
       descr: 'Using Jibrel off-chain modules, users can scale their infrastructure to their needs',
@@ -881,6 +933,7 @@ CardTile: {
   homeData11: [
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -894,6 +947,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -907,6 +961,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col -w-limit-320',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -no-offset',
       imgType: 'img',
       imgW: '60',
@@ -922,10 +977,11 @@ CardTile: {
   homeData2: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-bank\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'#i-bank\'></use></svg>',
       title: 'Banks & Non-bank FIs',
       subTitle: 'false',
       descr: 'Financial Institutions are using Jibrel to streamline transacting traditional and digital assets.',
@@ -933,10 +989,11 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-store\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-store\'></use></svg>',
       title: 'Small & Medium Enterprises',
       subTitle: 'false',
       descr: 'SMEs are capitalizing on low cost, instant settlement, global payments and transfers.',
@@ -944,11 +1001,12 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-white',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'assets/img/svg-symbols.svg#i-goverment\'></use></svg>',
-      title: 'Governments & Regulators    ',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-goverment\'></use></svg>',
+      title: 'Governments & Regulators',
       subTitle: 'false',
       descr: 'Public sector users are using Jibrel to increase operational efficiency, transparency and oversight.',
       isHoverBox: 'false'
@@ -957,6 +1015,7 @@ CardTile: {
   about: [
     {
       cardModClass: '-two-col',
+      aosAnimation: 'data-aos="fade-right" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'img',
       modClassImg: '-base-icon',
@@ -970,10 +1029,11 @@ CardTile: {
     },
     {
       cardModClass: '-two-col',
+      aosAnimation: 'data-aos="fade-left" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       imgType: 'svg',
       modClassImg: '-base-icon',
-      img: '<svg class=\'icon -stroke\' width=\'56\' height=\'57\'><use xlink:href=\'assets/img/svg-symbols.svg#i-business-statistics\'></use></svg>',
+      img: '<svg class=\'icon -stroke\' width=\'56\' height=\'57\'><use xlink:href=\'#i-business-statistics\'></use></svg>',
       title: 'Enterprise Solutions',
       subTitle: 'false',
       descr: 'We’re working with corporates, regulators and governments to bring increased efficiency and transparency to financial services',
@@ -983,6 +1043,7 @@ CardTile: {
   aboutInfo: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color',
       subinfo: '12',
       title: 'false',
@@ -993,6 +1054,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color',
       subinfo: '6',
       title: 'false',
@@ -1003,6 +1065,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color',
       subinfo: '8,000',
       title: 'false',
@@ -1015,15 +1078,17 @@ CardTile: {
   aboutMessage: [
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       title: 'Mission',
       modClassTitle: '-large-size',
       subTitle: 'false',
       descr: 'The Jibrel Network aims to leverage the latest advancements in Distributed Ledger Technology (DLT) to develop the financial infrastructure of the future',
-      isHoverBox: 'false'
+      isHoverBox: 'false',
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       title: 'Vision',
       modClassTitle: '-large-size',
@@ -1033,6 +1098,7 @@ CardTile: {
     },
     {
       cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
       title: 'Values',
       modClassTitle: '-large-size',
