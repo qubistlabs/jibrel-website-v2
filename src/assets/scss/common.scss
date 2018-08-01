@@ -28,6 +28,10 @@ body {
     min-width: 1150px;
   }
 
+  @include to-mobile {
+    overflow-x: hidden;
+  }
+
   &.-scroll-lock {
     height: 100vh;
     overflow: hidden;
@@ -79,6 +83,12 @@ img {
 
 ._mobile-hide {
   @include to-mobile {
+    display: none;
+  }
+}
+
+._mobile-visible {
+  @include from-mobile {
     display: none;
   }
 }

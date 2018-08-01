@@ -26,9 +26,9 @@ ContentFaq: {
       <p>These stable tokens can be exchanged for the underlying value at any point in the future, regardless of the price of ETH or BTC at the time.</p>'
     },
   ],
-  jwalet: [
+  jwallet: [
     {
-      question: 'What is Jwalet?',
+      question: 'What is jwallet?',
       answer: '<p>Jibrel provides stable coins representing real world value on the Ethereum blockchain. Using the Jibrel DAO, you can exchange volatile ETH, BTC or other cryptocurrencies for stable tokens like jUSD, jEUR, jGBP, jKRW and others.</p>\
       <p>These stable tokens can be exchanged for the underlying value at any point in the future, regardless of the price of ETH or BTC at the time.</p>'
     },
@@ -38,7 +38,7 @@ ContentFaq: {
       <p>These stable tokens can be exchanged for the underlying value at any point in the future, regardless of the price of ETH or BTC at the time.</p>'
     },
     {
-      question: 'Who is behind Jwalet?',
+      question: 'Who is behind jwallet?',
       answer: '<p>Jibrel provides stable coins representing real world value on the Ethereum blockchain. Using the Jibrel DAO, you can exchange volatile ETH, BTC or other cryptocurrencies for stable tokens like jUSD, jEUR, jGBP, jKRW and others.</p>\
       <p>These stable tokens can be exchanged for the underlying value at any point in the future, regardless of the price of ETH or BTC at the time.</p>'
     },
