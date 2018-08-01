@@ -85,18 +85,20 @@
 
         > .label {
           font-size: 14px;
-          opacity: 0.6;
+          color: rgba($base, 0.6);
           position: absolute;
-          top: 0;
           left: 0;
+          top: 27px;
+          transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+          will-change: transform;
 
           &.-white {
-            color: rgba(#fff, 0.8);
+            color: rgba(#fff, 0.6);
           }
 
           &.-mobile-white {
             @include to-mobile {
-              color: rgba(#fff, 0.8);
+              color: rgba(#fff, 0.6);
             }
           }
         }
@@ -202,6 +204,12 @@
             resize: none;
             padding-top: 25px;
           }
+
+          &.-no-empty ~ .label,
+          &:focus ~ .label {
+            font-size: 13px;
+            transform: translateY(-27px);
+          }
         }
 
         > .upload {
@@ -225,12 +233,6 @@
             left: -999999px;
             opacity: 0;
           }
-
-          > .label {
-            font-size: 14px;
-            font-weight: normal;
-            display: block;
-          }
         }
       }
 
@@ -240,24 +242,28 @@
           transition: color 0.2s ease-in-out;
           font-weight: 600;
           font-size: 13px;
+
+          &:hover {
+            color: $light-blue;
+          }
+
+          &:active {
+            color: rgba($light-blue, 0.5);
+          }
+
+          &.-inline {
+            position: absolute;
+            height: 26px;
+            top: 50%;
+            right: 0;
+            margin-top: -13px;
+            border-left: 1px solid rgba($base, 0.1);
+            width: 125px;
+          }
         }
 
-        &:hover {
-          color: $light-blue;
-        }
-
-        &:active {
-          color: rgba($light-blue, 0.5);
-        }
-
-        &.-inline {
-          position: absolute;
-          height: 26px;
-          top: 50%;
-          right: 0;
-          margin-top: -13px;
-          border-left: 1px solid rgba($base, 0.1);
-          width: 125px;
+        &.-button {
+          margin-top: -6px;
         }
       }
 

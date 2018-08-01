@@ -12,7 +12,7 @@
 
   @include to-mobile {
     width: 100%;
-    padding-top: 39px;
+    padding-top: 25px;
   }
 
   > .close {
@@ -23,12 +23,12 @@
     @include to-mobile {
       right: 32px;
       left: auto;
-      top: 42px;
+      top: 27px;
     }
   }
 
   > .container {
-    height: calc(100% - 150px);
+    height: calc(100% - 133px);
     overflow: auto;
 
     > .box {
@@ -37,6 +37,15 @@
 
       &:not(:last-child) {
         margin-bottom: 50px;
+
+        @include to-mobile {
+          margin-bottom: 30px;
+        }
+      }
+
+      @include to-mobile {
+        padding-left: 30px;
+        padding-right: 30px;
       }
 
       > .name {
@@ -72,5 +81,10 @@
     margin-top: 30px;
     padding-left: 50px;
     padding-right: 50px;
+
+    @include to-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }

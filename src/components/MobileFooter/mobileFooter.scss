@@ -1,6 +1,4 @@
 .mobile-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
   text-align: center;
   background-color: $light-gray;
 
@@ -9,6 +7,10 @@
   }
 
   > .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba($base, 0.08);
+
     > .soc {
       text-align: center;
     }

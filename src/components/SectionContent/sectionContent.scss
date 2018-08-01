@@ -60,6 +60,21 @@
     }
   }
 
+  &.-mobile-bottom-child-box {
+    @include to-mobile {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 14vh;
+      box-sizing: border-box;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
   &.-up-card {
     margin-top: -255px;
   }
@@ -186,7 +201,7 @@
 
   @include to-mobile {
     &.-mobile-offset-top {
-      padding-top: 43px;
+      padding-top: 50px;
     }
 
     &.-mobile-offset-bottom {
