@@ -15,24 +15,23 @@
     <div class='container -center-box _container-fix'>
       <div class='preview-info -mobile-offset'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.home}}
-        <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay="600">
+        <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
           <div class='project-form'>
             <div class='container -no-offset'>
               <form action='' class='form _relative'>
                 <label class='item'>
                   <input type='email' class='field -input -fill -button-sibling' placeholder='Email Address' required=''>
                 </label>
-                <a href="#" class='send -text -inline'>Join us</a>
+                <a href='#' class='send -text -inline'><span class='text'>Sign Up</span></a>
               </form>
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <div class='button-bottom _mobile-visible'>
-      <div class="_container-fix">
-        <a href="#" class='j-button -fill-on-white-bg'>Join us</a>
+      <div class='_container-fix'>
+        <a href='#' class='j-button -fill-on-white-bg'>Sign Up</a>
       </div>
     </div>
   </section>
@@ -64,9 +63,9 @@
   </section>
 
   <section class='section-content -offset-top -offset-bottom'>
-    <div class='container _container-fix' data-aos='fade-in' data-aos-duration='600' data-aos-delay="150">
-      <h2 class='title -text-center -box-center' data-aos='fade-in' data-aos-duration='600' data-aos-delay="150">Jibrel is trusted by market leaders across industries, as well as governments and regulators across the globe</h2>
-      <div class='partners-card -offset-top swiper-container' data-aos='fade-in' data-aos-duration='900' data-aos-delay="150">
+    <div class='container _container-fix' data-aos='fade-in' data-aos-duration='600' data-aos-delay='150'>
+      <h2 class='title -text-center -box-center' data-aos='fade-in' data-aos-duration='600' data-aos-delay='150'>Jibrel is trusted by market leaders across industries, as well as governments and regulators across the globe</h2>
+      <div class='partners-card -offset-top swiper-container' data-aos='fade-in' data-aos-duration='900' data-aos-delay='150'>
         {{> PartnersCard/PartnersCard}}
       </div>
     </div>
@@ -81,7 +80,7 @@
         {{/each}}
       </div>
 
-      <div class='j-buttons -center' data-aos='fade-in' data-aos-duration='1200' data-aos-delay="150">
+      <div class='j-buttons -center' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='150'>
         <a href='news.html' class='j-button -fill-on-white-bg -w-limit-360'><span class='text'>Show more news</span></a>
       </div>
     </div>
@@ -89,8 +88,6 @@
 
   <section class='section-content -bg-dark'>
     <div class='container -offset-top -offset-bottom _container-fix'>
-      <h2 class='title -white -text-center -box-center' data-aos='fade-in' data-aos-duration='900' data-aos-delay="150">Jibrel Global Presence</h2>
-      <p class='descr -white -text-center -box-center -w-limit-650 -offset-bottom' data-aos='fade-in' data-aos-duration='900' data-aos-delay="150">Jibrel takes pride in being a global company with international presence. Find the contact details to our different offices below.</p>
       <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
         {{#each CardTile.aboutContact}}
         {{> CardTile/CardTile}}
