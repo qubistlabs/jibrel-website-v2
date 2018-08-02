@@ -46,6 +46,10 @@
         font-size: 13px;
         transition: color 0.2s ease-in-out;
 
+        &.-small-offset-left {
+          padding-left: 2px;
+        }
+
         > .icom {
           fill: none;
           stroke: $base-o;

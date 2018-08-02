@@ -28,11 +28,13 @@ FooterMenu: [
       {
         link: 'https://jwallet.network',
         text: 'Jwallet',
+        modClass: '-small-offset-left',
         externalLink: 'true'
       },
       {
         link: 'https://jcash.network',
         text: 'Jcash',
+        modClass: '-small-offset-left',
         externalLink: 'true'
       },
     ]
