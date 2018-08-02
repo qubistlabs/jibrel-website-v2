@@ -1,0 +1,74 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+
+<head>
+  {{> ProjectHead/ProjectHead ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.white}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue' style='background-image: url(/assets/img/general/bg/contact.jpg);'>
+    {{> SectionName/SectionName SectionName.pageCcareers}}
+    <div class='container -center-box _container-fix'>
+      <div class='inner-menu -row'>
+        <h1 class="title -white">Careers</h1>
+        <div class="items">
+          {{#each InnerMenu.careers}}
+          {{> InnerMenu/InnerMenu}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center'>Why work at Jibrel?</h2>
+      <div class='card-tile -offset-top'>
+        {{#each CardTile.whyWorkJibrel}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-bottom'>
+    <div class='container _container-fix'>
+      {{> ProjectSlider/CareerSlider/CareerSlider}}
+    </div>
+  </section>
+
+  <section class='section-content -mobile-collapse-offset -mobile-bg-gray' id='list-vacancies'>
+    {{> SectionName/SectionName SectionName.careersSection1}}
+    <div class='container _container-fix -offset-top -offset-bottom -bg-gray'>
+      <h2 class='title -color -text-center -box-center'>Your career in blockchain starts here</h2>
+      <p class='descr -text-center -box-center -w-limit-650 -offset-bottom'>No blockchain experience? No problem. All new joiners are given a comprehensive six week course to bring them up to speed.</p>
+      <div class='list-vacancies -small-offset'>
+        {{> ListVacancies/ListVacancies}}
+      </div>
+      <div class="j-buttons -center">
+        <button class="j-button -fill-on-white-bg -w-limit-360"><span class="text">Load more open positions</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      {{> SupportBox/SupportBox}}
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+    <div class='container _container-fix'>
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
