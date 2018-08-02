@@ -100,10 +100,10 @@ const validation = {
     setTimeout(() => {
       form.querySelector(`.message${modClass}`).classList.remove('-open')
       $(form).find('.field').val('')
-    }, 3000)
+    }, 2000)
     setTimeout(() => {
       form.querySelector(`.message${modClass}`).classList.remove('-opening')
-    }, 3300)
+    }, 2300)
   },
   /* eslint-enable */
 }
