@@ -557,7 +557,7 @@ CardTile: {
       imgH: '60',
       title: 'Zug',
       subTitle: 'false',
-      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland ',
+      descr: 'Baarerstrasse 10, 6302 <br>Canton of Zug, Switzerland',
       isHoverBox: 'false',
     },
     {
@@ -571,7 +571,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue New York, <br>10016 NY, United States ',
+      descr: '135 Madison Avenue, <br>New York, NY 10016, US ',
       isHoverBox: 'false',
     },
     {
@@ -942,7 +942,7 @@ CardTile: {
       img: '/assets/img/general/icon/scale.svg',
       title: 'Stable',
       subTitle: 'false',
-      descr: 'Jibrel Network offers stable tokens tethered to currencies, commodities and bonds, as standard ERC-20 tokens, on the Ethereum blockchain',
+      descr: 'Jibrel offers stable coins tethered to currencies, commodities and bonds, as standard ERC-20 tokens, on the Ethereum blockchain',
       isHoverBox: 'false'
     },
     {
@@ -970,7 +970,7 @@ CardTile: {
       img: '/assets/img/general/icon/cloud-data.svg',
       title: 'Convenient',
       subTitle: 'false',
-      descr: 'Accessing stable tokens is straightforward. Simply exchange your volatile digital assets for stable tethered tokens by using jCash smart contracts',
+      descr: 'Accessing stable tokens is simple. Exchange your volatile digital assets for stable tethered tokens by using jCash smart contracts',
       isHoverBox: 'false'
     },
   ],
@@ -1083,7 +1083,7 @@ CardTile: {
       title: 'Mission',
       modClassTitle: '-large-size',
       subTitle: 'false',
-      descr: 'The Jibrel Network aims to leverage the latest advancements in Distributed Ledger Technology (DLT) to develop the financial infrastructure of the future',
+      descr: 'Jibrel aims to leverage the latest advancements and innovations, in distributed ledger and smart contract technology, to develop the financial infrastructure of the future',
       isHoverBox: 'false',
     },
     {
@@ -1103,7 +1103,7 @@ CardTile: {
       title: 'Values',
       modClassTitle: '-large-size',
       subTitle: 'false',
-      descr: 'We believe that honest and ethical practices are key to long-term sustainable business. In addition, Jibrel places a strong focus on in-sourcing over outsourcing and building over marketing',
+      descr: 'Honest and ethical business practices are key to long-term sustainable business. Jibrel prioritizes in-sourcing over outsourcing, and building over marketing',
       isHoverBox: 'false'
     },
   ],

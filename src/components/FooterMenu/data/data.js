@@ -36,14 +36,14 @@ FooterMenu: [
         externalLink: 'true'
       },
     ]
-  }, 
+  },
   {
     title: 'Contact',
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'900\' data-aos-delay="150"',
     links: [
       {
         modal: '#send-message',
-        text: 'Send a message'
+        text: 'Get in touch'
       },
     ]
   },
