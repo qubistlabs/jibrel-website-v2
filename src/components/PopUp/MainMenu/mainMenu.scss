@@ -43,7 +43,7 @@
         margin-bottom: 50px;
 
         @include to-mobile {
-          margin-bottom: 30px;
+          margin-bottom: 25px;
         }
       }
 
@@ -68,6 +68,12 @@
           font-size: 13px;
           color: rgba(#fff, 0.6);
           line-height: (24/13);
+
+          @include to-mobile {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            display: inline-block;
+          }
 
           &:hover {
             color: $light-blue;

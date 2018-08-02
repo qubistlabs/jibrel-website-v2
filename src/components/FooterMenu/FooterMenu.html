@@ -10,7 +10,7 @@
     {{#each this.links}}
     <div class='item {{modClass}}'>
       {{#is this.link '!=' ''}}
-      <a href='{{this.link}}' class='link' {{#is this.externalLink '==' 'true'}}target='_blank' {{/is}}>
+      <a href='{{this.link}}' class='link {{modClass}}' {{#is this.externalLink '==' 'true'}}target='_blank' {{/is}}>
         {{this.text}}
         {{!--{{#is this.externalLink '==' 'true'}} {{Icon iconName='i-external-link' className='icom' iconWidth='15' iconHeight='9'}} {{/is}}--}}
       </a>

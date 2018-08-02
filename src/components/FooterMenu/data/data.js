@@ -12,7 +12,7 @@ FooterMenu: [
         text: 'Press & Media'
       },
       {
-        link: '/vacancies.html',
+        link: '/careers.html',
         text: 'Careers'
       },
     ]
@@ -28,22 +28,24 @@ FooterMenu: [
       {
         link: 'https://jwallet.network',
         text: 'Jwallet',
+        modClass: '-small-offset-left',
         externalLink: 'true'
       },
       {
         link: 'https://jcash.network',
         text: 'Jcash',
+        modClass: '-small-offset-left',
         externalLink: 'true'
       },
     ]
-  }, 
+  },
   {
     title: 'Contact',
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'900\' data-aos-delay="150"',
     links: [
       {
         modal: '#send-message',
-        text: 'Send a message'
+        text: 'Get in touch'
       },
     ]
   },

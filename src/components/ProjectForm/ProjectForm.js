@@ -83,10 +83,13 @@ const validation = {
       data : dataJson,
       dataType: 'json',
       success(response) {
-        validation.messageView(form, '.-success')
-      },
-      error(response) {
-        validation.messageView(form, '.-error')
+        if (response.status === 'success') {
+          validation.messageView(form, '.-success')
+        } else if (response.status === 'error') {
+          validation.messageView(form, '.-error')
+        } else {
+          console.warn('The response does not contain the required values')
+        }
       },
     })
   },
@@ -97,10 +100,10 @@ const validation = {
     setTimeout(() => {
       form.querySelector(`.message${modClass}`).classList.remove('-open')
       $(form).find('.field').val('')
-    }, 3000)
+    }, 2000)
     setTimeout(() => {
       form.querySelector(`.message${modClass}`).classList.remove('-opening')
-    }, 3300)
+    }, 2300)
   },
   /* eslint-enable */
 }
