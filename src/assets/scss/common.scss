@@ -21,15 +21,12 @@ body {
   min-height: 100%;
   line-height: (20/14);
   margin: 0;
+  overflow-x: hidden;
 
   @include font;
 
   @include from-mobile {
     min-width: 1150px;
-  }
-
-  @include to-mobile {
-    overflow-x: hidden;
   }
 
   &.-scroll-lock {

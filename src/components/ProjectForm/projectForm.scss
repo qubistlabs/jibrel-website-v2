@@ -255,6 +255,10 @@
             height: 120px;
             resize: none;
             padding-top: 25px;
+
+            @include to-mobile {
+              height: 150px;
+            }
           }
 
           &.-no-empty ~ .label,
