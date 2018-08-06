@@ -78,7 +78,7 @@ PopUp: {
         pages: [
           {
             modal: '#send-message',
-            name: 'Send a message',
+            name: 'Contact Us',
           },
           {
             link: 'https://www.facebook.com/jibrelnetwork/',

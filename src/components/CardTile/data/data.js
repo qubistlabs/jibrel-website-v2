@@ -571,7 +571,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue, <br>New York, NY 10016, US ',
+      descr: '135 Madison Avenue, <br>10016 NY, United States ',
       isHoverBox: 'false',
     },
     {
@@ -629,7 +629,7 @@ CardTile: {
       imgH: '60',
       title: 'New York',
       subTitle: 'false',
-      descr: '135 Madison Avenue New York, <br>10016 NY, United States ',
+      descr: '135 Madison Avenue, <br>10016 NY, United States ',
       isHoverBox: 'false',
     },
     {
