@@ -7,14 +7,15 @@
 
 <body>
   %=symbols=%
-  {{> MainHeader/MainHeader MainHeader.color}}
+  {{> MainHeader/MainHeader MainHeader.white}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-gray-gradient'>
+  <section class='section-content -full-screen -center-child-box -bg-black-gradient'>
     {{> SectionName/SectionName SectionName.pageEnterprize}}
     <div class='container -center-box _container-fix'>
-      <div class='preview-info'>
+      <div class='preview-info -mobile-offset'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise}}
+        {{> ProjectForm/FirstScreen/FirstScreen}}
       </div>
     </div>
   </section>

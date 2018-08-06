@@ -175,6 +175,18 @@
     }
   }
 
+  &.-bg-black-gradient {
+    &::before {
+      @include bg-black-gradient;
+    }
+  }
+
+  &.-bg-blue-gradient {
+    &::before {
+      @include bg-blue-gradient;
+    }
+  }
+
   &.-bg-light-blue {
     &::before {
       @include bg-light-blue;
@@ -277,6 +289,18 @@
     &.-bg-gray-gradient {
       &::before {
         @include bg-gray-gradient;
+      }
+    }
+
+    &.-bg-black-gradient {
+      &::before {
+        @include bg-black-gradient;
+      }
+    }
+
+    &.-bg-blue-gradient {
+      &::before {
+        @include bg-blue-gradient;
       }
     }
 

@@ -1,12 +1,13 @@
 <header class='main-header {{modClassContainer}}'>
-  <div class='container _container-fluid'>
-
+  <div class='container _container-fluid {{#is openPopup '==' 'true'}}-reverce{{/is}}'>
+    {{#is openPopup '==' ''}}
     <a href='/' class='project-logo {{modClass}}' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
       {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
       {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
     </a>
+    {{/is}}
     <div class='actions' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-      {{!-- {{#is openPopups '==' ''}}
+      {{!-- {{#is openPopup '==' ''}}
       <div class='select-language -in-header'>
         <button class='toggle'>
           <span class='current {{modClass}}'>ENGLISH</span>
@@ -15,6 +16,7 @@
         {{> SelectLanguage/SelectLanguage}}
       </div>
       {{/is}} --}}
+
       <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
         {{#is openPopup '==' ''}}
         <span class='text'>MENU</span>
