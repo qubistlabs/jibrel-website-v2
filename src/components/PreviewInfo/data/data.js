@@ -1,8 +1,8 @@
 PreviewInfo: {
   home: {
     modClassText: '',
-    modClassTitle: '-color -text-center',
-    modClassDescr: '-medium-size -color -text-center -box-center',
+    modClassTitle: '-color -white -text-center',
+    modClassDescr: '-medium-size -white -color -text-center -box-center',
     title: 'Compliant Stable Coins',
     descr: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
     aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
@@ -12,8 +12,8 @@ PreviewInfo: {
   },
   about: {
     modClassText: '',
-    modClassTitle: '-color -text-center',
-    modClassDescr: '-color -text-center -box-center',
+    modClassTitle: '-color -white -text-center',
+    modClassDescr: '-color -white -text-center -box-center',
     title: 'About Jibrel Network',
     descr: 'Jibrel is a blockchain and smart contract development company. We aim to leverage the latest innovations in cryptography, distributed ledger and smart contract technology to build the financial networks of the future. Using Jibrell\'s Product and Enterprise suite, individuals, business, governments and regulators can transact traditional and digital assets more effectively.',
     aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',
@@ -27,9 +27,9 @@ PreviewInfo: {
     descr: 'Jibrel is a blockchain development company that aims to leverage the latest developments in Distributed Ledger Technology (DLT) to build the financial networks of the future. By using Jibrel’s Product and Enterprise suite, governments, regulators and financial institutions can facilitate low cost global payments, instant settlement, and real-time clearing to transact using traditional financial assets more effectively.',
   },
   enterprise: {
-    modClassText: ' -up-visual-center',
-    modClassTitle: '-text-center',
-    modClassDescr: '-medium-size -text-center -box-center',
+    modClassText: '',
+    modClassTitle: '-text-center -white',
+    modClassDescr: '-medium-size -white -text-center -box-center',
     title: 'Digital Asset Solutions',
     descr: 'We’re helping Bank, Insurers, Regulators and Governments implement enterprise-grade digital asset solutions',
     aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',

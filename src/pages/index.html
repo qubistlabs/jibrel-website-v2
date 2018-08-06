@@ -7,26 +7,15 @@
 
 <body>
   %=symbols=%
-  {{> MainHeader/MainHeader MainHeader.color}}
+  {{> MainHeader/MainHeader MainHeader.white}}
   {{> PopUp/MainMenu/MainMenu}}
 
-  <section class='section-content -full-screen -center-child-box -bg-gray-gradient'>
+  <section class='section-content -full-screen -center-child-box -bg-blue-gradient'>
     {{> SectionName/SectionName SectionName.pageHome}}
     <div class='container -center-box _container-fix'>
       <div class='preview-info -mobile-offset'>
         {{> PreviewInfo/PreviewInfo PreviewInfo.home}}
-        <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-          <div class='project-form'>
-            <div class='container -no-offset'>
-              <form action='' class='form _relative'>
-                <label class='item'>
-                  <input type='email' class='field -input -fill -button-sibling' placeholder='Email Address' required=''>
-                </label>
-                <a href='#' class='send -text -inline'><span class='text'>Sign Up</span></a>
-              </form>
-            </div>
-          </div>
-        </div>
+        {{> ProjectForm/FirstScreen/FirstScreen}}
       </div>
     </div>
     <div class='button-bottom _mobile-visible'>
