@@ -7,7 +7,7 @@ ProjectMenu: {
   Jcash: 'Jcash',
   AboutUs: 'About Us',
   AboutJibrel: 'About Jibrel',
-  PressMedia: 'Press & Media',
+  PressMedia: 'News & Media',
   Careers: 'Careers',
   Contact: 'Contact',
   ContactUs: 'Contact Us',
