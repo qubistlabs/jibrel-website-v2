@@ -1,11 +1,14 @@
 PageHeader: {
   vacancy: {
-    typePage: 'vacancy'
+    typePage: 'vacancy',
+    texts: fullData => fullData.i18n_EnUS_PageHeader
   },
   policyPage: {
-    typePage: 'policyPage'
+    typePage: 'policyPage',
+    texts: fullData => fullData.i18n_EnUS_PageHeader
   },
   newsPage: {
-    typePage: 'newsPage'
+    typePage: 'newsPage',
+    texts: fullData => fullData.i18n_EnUS_PageHeader
   }
 }
