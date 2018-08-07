@@ -27,7 +27,7 @@ PreviewInfo: {
     descr: 'Jibrel is a blockchain development company that aims to leverage the latest developments in Distributed Ledger Technology (DLT) to build the financial networks of the future. By using Jibrel’s Product and Enterprise suite, governments, regulators and financial institutions can facilitate low cost global payments, instant settlement, and real-time clearing to transact using traditional financial assets more effectively.',
   },
   enterprise: {
-    modClassText: '',
+    modClassText: '-up-visual-center',
     modClassTitle: '-text-center -white',
     modClassDescr: '-medium-size -white -text-center -box-center',
     title: fullData => fullData.i18n_EnUS_ScreenPreview.enterprisePage.title,

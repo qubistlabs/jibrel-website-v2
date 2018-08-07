@@ -8,13 +8,18 @@ const validation = {
     this.valid = true
     this.form = form
     const fieldsRequired = this.form.querySelectorAll('[required]')
+    const dataAction = this.form.getAttribute('data-action')
 
     fieldsRequired.forEach((field) => {
       this.test(field)
     })
 
-    if (this.valid) {
+    if (dataAction !== 'external-form' && this.valid) {
       this.ajaxSend()
+    }
+
+    if (dataAction === 'external-form' && this.valid) {
+      this.openExternalForm()
     }
 
   },
@@ -62,10 +67,18 @@ const validation = {
       this.fieldSuccess(field)
     }
   },
+  openExternalForm() {
+    const action = this.form.getAttribute('action')
+    const val = this.form.querySelector('.field').value
+    const url = `${action}?${val}`
+    window.open(url)
+    // eslint-disable-next-line fp/no-mutation
+    this.form.querySelector('.field').value = ''
+  },
   /* eslint-disable prefer-destructuring, no-undef,
   more/no-void-map, unicorn/no-fn-reference-in-iterator, func-names,
   prefer-arrow-callback, space-before-function-paren, no-unused-vars,
-  space-before-blocks, fp/no-mutation, dot-notation, object-shorthand, key-spacing */
+  space-before-blocks, fp/no-mutation, dot-notation, object-shorthand, key-spacing,  no-console */
   ajaxSend() {
     const form = this.form
     const action = this.form.getAttribute('action')
@@ -132,8 +145,8 @@ function formSubmit(form) {
     event.preventDefault()
     validation.init(form)
   })
-  const button = form.querySelector('.js-send-form')
 
+  const button = form.querySelector('.js-send-form')
   if (button !== null) {
     button.addEventListener('click', (event) => {
       event.preventDefault()
