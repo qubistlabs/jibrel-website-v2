@@ -2,7 +2,7 @@
 <html class='no-js' lang='en'>
 
 <head>
-  {{> ProjectHead/ProjectHead ProjectHead.home}}
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectTitle.about}}
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
   <section class='section-content -mobile-bg-gray -offset-bottom'>
     <div class='container -bg-gray -offset-top -offset-bottom _container-fix'>
-      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel provides both Consumer and Enterprise solutions</h2>
+      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_ProvidesConsumerEnterprise.title}}</h2>
       <div class='card-tile -inner-border-separator -inner-border-gray -offset-top'>
         {{#each CardTile.about}}
         {{> CardTile/CardTile}}
@@ -42,7 +42,7 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</h2>
+      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_JibrelIntegratable.title}}</h2>
       <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
         {{#each CardTile.homeData2}}
         {{> CardTile/CardTile}}

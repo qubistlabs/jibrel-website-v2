@@ -1,51 +1,51 @@
 FooterMenu: [
   {
-    title: 'Company',
+    title: fullData => fullData.i18n_EnUS_ProjectMenu.Company,
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'300\' data-aos-delay="150"',
     links: [
       {
         link: '/about.html',
-        text: 'About Jibrel'
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.AboutJibrel,
       },
       {
         link: '/news.html',
-        text: 'Press & Media'
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.PressMedia,
       },
       {
         link: '/careers.html',
-        text: 'Careers'
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.Careers,
       },
     ]
   },
   {
-    title: 'Products',
+    title: fullData => fullData.i18n_EnUS_ProjectMenu.Products,
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'600\' data-aos-delay="150"',
     links: [
       {
         link: '/enterprise.html',
-        text: 'Enterprise',
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
       },
       {
         link: 'https://jwallet.network',
-        text: 'Jwallet',
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.Jwallet,
         modClass: '-small-offset-left',
         externalLink: 'true'
       },
       {
         link: 'https://jcash.network',
-        text: 'Jcash',
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.Jcash,
         modClass: '-small-offset-left',
         externalLink: 'true'
       },
     ]
   },
   {
-    title: 'Contact',
+    title: fullData => fullData.i18n_EnUS_ProjectMenu.Contact,
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'900\' data-aos-delay="150"',
     links: [
       {
         modal: '#send-message',
-        text: 'Get in touch'
+        text: fullData => fullData.i18n_EnUS_ProjectMenu.GetInTouch,
       },
     ]
   },

@@ -9,7 +9,7 @@
 
 * `npm i`
 * `npm run build` - build public html and minified assets
-* share static from `./public` dir
+* share static from `./public/EnUs`, `./public/KoKr` dir (`public/{LANG}`) for each language
 
 ### Project structure
 ```
@@ -153,6 +153,11 @@ We use `scss` [pre-processor](https://sass-lang.com/) with `rscss` [naming conve
 We use ES6+ standard features and compile them to ES2015 syntax.
 
 Vendor files with scripts must be placed in `src/assets/js` dir.
+
+### i18n
+
+For each new language, you need to create language task in the `tars/tasks/user-tasks`.
+Then add this language to `tars-config.json -> buildLang`
 
 ### svg
 

@@ -6,7 +6,7 @@ const preProcName = tars.cssPreproc.name;
 const preprocExtension = tars.cssPreproc.mainExt;
 const spritesCssPath = `./src/${tars.config.fs.staticFolderName}/${preProcName}/sprites-${preProcName}`;
 
-let pathsToDel = [
+const pathsToDel = [
     './dev/',
     `${spritesCssPath}/sprite_96.${preprocExtension}`,
     `${spritesCssPath}/svg-fallback-sprite.${preprocExtension}`,
@@ -20,11 +20,13 @@ let pathsToDel = [
  */
 module.exports = () => {
     return gulp.task('service:clean', done => {
+        const delThis = pathsToDel.slice(0)
+
         if (!tars.config.useBuildVersioning && !tars.options.watch.isActive) {
-            pathsToDel.push(tars.options.build.path);
+            delThis.push(tars.options.build.path);
         }
 
-        del(pathsToDel).then(() => {
+        del(delThis).then(() => {
             done();
         });
     });

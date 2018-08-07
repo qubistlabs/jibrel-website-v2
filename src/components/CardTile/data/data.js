@@ -146,7 +146,7 @@ CardTile: {
     },
   ],
 
-  projectEnterprize: [
+  projectEnterprise: [
     {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
@@ -555,9 +555,9 @@ CardTile: {
       img: '/assets/img/general/icon/zug.svg',
       imgW: '60',
       imgH: '60',
-      title: 'Zug',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.Zug.city,
       subTitle: 'false',
-      descr: 'Baarerstrasse 10, 6302 <br>Canton of Zug, Switzerland',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.Zug.address,
       isHoverBox: 'false',
     },
     {
@@ -569,9 +569,9 @@ CardTile: {
       img: '/assets/img/general/icon/new-york.svg',
       imgW: '60',
       imgH: '60',
-      title: 'New York',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.NewYork.city,
       subTitle: 'false',
-      descr: '135 Madison Avenue, <br>10016 NY, United States ',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.NewYork.address,
       isHoverBox: 'false',
     },
     {
@@ -583,9 +583,9 @@ CardTile: {
       img: '/assets/img/general/icon/peters.svg',
       imgW: '60',
       imgH: '60',
-      title: 'St. Petersburg',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.StPetersburg.city,
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia  ',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.StPetersburg.address,
       isHoverBox: 'false',
     },
     {
@@ -597,9 +597,9 @@ CardTile: {
       img: '/assets/img/general/icon/dubai.svg',
       imgW: '60',
       imgH: '60',
-      title: 'Dubai',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.Dubai.city,
       subTitle: 'false',
-      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.Dubai.address,
       isHoverBox: 'false',
     },
   ],
@@ -613,9 +613,9 @@ CardTile: {
       img: '/assets/img/general/icon/zug-w.svg',
       imgW: '60',
       imgH: '60',
-      title: 'Zug',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.Zug.city,
       subTitle: 'false',
-      descr: 'Baarerstrasse 10 6302, <br>Canton of Zug Switzerland ',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.Zug.address,
       isHoverBox: 'false',
     },
     {
@@ -627,9 +627,9 @@ CardTile: {
       img: '/assets/img/general/icon/new-york-w.svg',
       imgW: '60',
       imgH: '60',
-      title: 'New York',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.NewYork.city,
       subTitle: 'false',
-      descr: '135 Madison Avenue, <br>10016 NY, United States ',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.NewYork.address,
       isHoverBox: 'false',
     },
     {
@@ -641,9 +641,9 @@ CardTile: {
       img: '/assets/img/general/icon/peters-w.svg',
       imgW: '60',
       imgH: '60',
-      title: 'St. Petersburg',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.StPetersburg.city,
       subTitle: 'false',
-      descr: 'Nevsky Avenue, 153 <br>St Petersburg 191167, Russia',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.StPetersburg.address,
       isHoverBox: 'false',
     },
     {
@@ -655,9 +655,9 @@ CardTile: {
       img: '/assets/img/general/icon/dubai-w.svg',
       imgW: '60',
       imgH: '60',
-      title: 'Dubai',
+      title:  fullData => fullData.i18n_EnUS_ProjectContact.Dubai.city,
       subTitle: 'false',
-      descr: 'Burjuman Business Tower <br>Khalifa Bin Zayed Rd. - Dubai, UAE ',
+      descr: fullData => fullData.i18n_EnUS_ProjectContact.Dubai.address,
       isHoverBox: 'false',
     },
   ],
@@ -816,9 +816,9 @@ CardTile: {
       img: '/assets/img/general/icon/stopwatch.svg',
       imgW: '48',
       imgH: '48',
-      title: 'Instant Settlement',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_1.title,
       subTitle: 'false',
-      descr: 'Settle transactions in minutes not days, across industries and use-cases.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_1.description,
       isHoverBox: 'false'
     },
     {
@@ -830,9 +830,9 @@ CardTile: {
       img: '/assets/img/general/icon/login-lock.svg',
       imgW: '48',
       imgH: '48',
-      title: 'KYC / AML Compliant',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_2.title,
       subTitle: 'false',
-      descr: 'Remain compliant on-chain. Jibrel provides plug-and-play KYC / AML.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_2.description,
       isHoverBox: 'false'
     },
     {
@@ -844,9 +844,9 @@ CardTile: {
       img: '/assets/img/general/icon/view.svg',
       imgW: '48',
       imgH: '48',
-      title: 'Increased Transparency',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_3.title,
       subTitle: 'false',
-      descr: 'Provide complete visibility and oversight using blockchain technology.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_3.description,
       isHoverBox: 'false'
     },
     {
@@ -858,9 +858,9 @@ CardTile: {
       img: '/assets/img/general/icon/percent-increase.svg',
       imgW: '48',
       imgH: '48',
-      title: 'Reduced Overhead',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_4.title,
       subTitle: 'false',
-      descr: 'Significantly reduce cost through increased automation and reduced manual involvement.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_4.description,
       isHoverBox: 'false'
     },
     {
@@ -872,9 +872,9 @@ CardTile: {
       img: '/assets/img/general/icon/location-pin.svg',
       imgW: '48',
       imgH: '48',
-      title: 'Perfect Traceability',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_5.title,
       subTitle: 'false',
-      descr: 'Track assets and liabilities in greater detail - across users, geographies, and workflows.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_5.description,
       isHoverBox: 'false'
     },
     {
@@ -886,9 +886,9 @@ CardTile: {
       img: '/assets/img/general/icon/compatible.svg',
       imgW: '48',
       imgH: '48',
-      title: 'Legacy Compatible',
+      title: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_6.title,
       subTitle: 'false',
-      descr: 'Integration with legacy systems is simple. No blockchain expertise required.',
+      descr: fullData => fullData.i18n_EnUS_EnterpriseSolution.card_6.description,
       isHoverBox: 'false'
     },
   ],
@@ -940,9 +940,9 @@ CardTile: {
       imgH: '60',
       modClassImg: '',
       img: '/assets/img/general/icon/scale.svg',
-      title: 'Stable',
+      title: fullData => fullData.i18n_EnUS_FeaturesProject.card_1.title,
       subTitle: 'false',
-      descr: 'Jibrel offers stable coins tethered to currencies, commodities and bonds, as standard ERC-20 tokens, on the Ethereum blockchain',
+      descr: fullData => fullData.i18n_EnUS_FeaturesProject.card_1.description,
       isHoverBox: 'false'
     },
     {
@@ -954,9 +954,9 @@ CardTile: {
       imgH: '60',
       modClassImg: '',
       img: '/assets/img/general/icon/passport.svg',
-      title: 'Compliant',
+      title: fullData => fullData.i18n_EnUS_FeaturesProject.card_2.title,
       subTitle: 'false',
-      descr: 'All network users and digital asset transfers are screened in accordance with relevant KYC, AML, ATF regulation, policies and procedures',
+      descr: fullData => fullData.i18n_EnUS_FeaturesProject.card_2.description,
       isHoverBox: 'false'
     },
     {
@@ -968,9 +968,9 @@ CardTile: {
       imgH: '60',
       modClassImg: '',
       img: '/assets/img/general/icon/cloud-data.svg',
-      title: 'Convenient',
+      title: fullData => fullData.i18n_EnUS_FeaturesProject.card_3.title,
       subTitle: 'false',
-      descr: 'Accessing stable tokens is simple. Exchange your volatile digital assets for stable tethered tokens by using jCash smart contracts',
+      descr: fullData => fullData.i18n_EnUS_FeaturesProject.card_3.description,
       isHoverBox: 'false'
     },
   ],
@@ -982,9 +982,10 @@ CardTile: {
       imgType: 'svg',
       modClassImg: '-base-icon',
       img: '<svg class=\'icon -stroke -dark\' width=\'57\' height=\'57\'><use xlink:href=\'#i-bank\'></use></svg>',
-      title: 'Banks & Non-bank FIs',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_1.title,
+
       subTitle: 'false',
-      descr: 'Financial Institutions are using Jibrel to streamline transacting traditional and digital assets.',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_1.description,
       isHoverBox: 'false'
     },
     {
@@ -994,9 +995,9 @@ CardTile: {
       imgType: 'svg',
       modClassImg: '-base-icon',
       img: '<svg class=\'icon -stroke -dark\' width=\'60\' height=\'60\'><use xlink:href=\'#i-store\'></use></svg>',
-      title: 'Small & Medium Enterprises',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_2.title,
       subTitle: 'false',
-      descr: 'SMEs are capitalizing on low cost, instant settlement, global payments and transfers.',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_2.description,
       isHoverBox: 'false'
     },
     {
@@ -1006,9 +1007,9 @@ CardTile: {
       imgType: 'svg',
       modClassImg: '-base-icon',
       img: '<svg class=\'icon -stroke -dark\' width=\'60\' height=\'60\'><use xlink:href=\'#i-goverment\'></use></svg>',
-      title: 'Governments & Regulators',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_3.title,
       subTitle: 'false',
-      descr: 'Public sector users are using Jibrel to increase operational efficiency, transparency and oversight.',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_3.description,
       isHoverBox: 'false'
     },
   ],
@@ -1022,9 +1023,9 @@ CardTile: {
       img: '/assets/img/minified-svg/i-business-female-chat.svg',
       imgW: '56',
       imgH: '57',
-      title: 'Consumer Products & Services',
+      title: fullData => fullData.i18n_EnUS_ProvidesConsumerEnterprise.card_1.title,
       subTitle: 'false',
-      descr: 'Jibrel is dedicated to providing institutional-grade blockchain and Distributed Ledger Technology (DLT) solutions to the community',
+      descr: fullData => fullData.i18n_EnUS_ProvidesConsumerEnterprise.card_1.description,
       isHoverBox: 'false'
     },
     {
@@ -1034,9 +1035,9 @@ CardTile: {
       imgType: 'svg',
       modClassImg: '-base-icon',
       img: '<svg class=\'icon -stroke\' width=\'56\' height=\'57\'><use xlink:href=\'#i-business-statistics\'></use></svg>',
-      title: 'Enterprise Solutions',
+      title: fullData => fullData.i18n_EnUS_ProvidesConsumerEnterprise.card_2.title,
       subTitle: 'false',
-      descr: 'We’re working with corporates, regulators and governments to bring increased efficiency and transparency to financial services',
+      descr: fullData => fullData.i18n_EnUS_ProvidesConsumerEnterprise.card_2.description,
       isHoverBox: 'false'
     },
   ],
@@ -1080,30 +1081,30 @@ CardTile: {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
-      title: 'Mission',
+      title: fullData => fullData.i18n_EnUS_MissionVisionValues.card_1.title,
       modClassTitle: '-large-size',
       subTitle: 'false',
-      descr: 'Jibrel aims to leverage the latest advancements and innovations, in distributed ledger and smart contract technology, to develop the financial infrastructure of the future',
+      descr: fullData => fullData.i18n_EnUS_MissionVisionValues.card_1.description,
       isHoverBox: 'false',
     },
     {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
-      title: 'Vision',
+      title: fullData => fullData.i18n_EnUS_MissionVisionValues.card_2.title,
       modClassTitle: '-large-size',
       subTitle: 'false',
-      descr: 'Jibrel provides use-case specific blockchain infrastructure components, such as interfaces and explorers, across industries — including; financial services, healthtech and e-governance.',
+      descr: fullData => fullData.i18n_EnUS_MissionVisionValues.card_2.description,
       isHoverBox: 'false'
     },
     {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       boxModClass: '-color -padding-small',
-      title: 'Values',
+      title: fullData => fullData.i18n_EnUS_MissionVisionValues.card_3.title,
       modClassTitle: '-large-size',
       subTitle: 'false',
-      descr: 'Honest and ethical business practices are key to long-term sustainable business. Jibrel prioritizes in-sourcing over outsourcing, and building over marketing',
+      descr: fullData => fullData.i18n_EnUS_MissionVisionValues.card_3.description,
       isHoverBox: 'false'
     },
   ],

@@ -38,66 +38,66 @@ PopUp: {
     ],
     otherSection: [
       {
-        name: 'Products',
+        name: fullData => fullData.i18n_EnUS_ProjectMenu.Products,
         pages: [
           {
             link: '/enterprise.html',
-            name: 'Enterprise',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
           },
           {
             link: 'https://jwallet.network',
-            name: 'Jwallet',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Jwallet,
             externalLink: 'true'
           },
           {
             link: 'https://jcash.network',
-            name: 'Jcash',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Jcash,
             externalLink: 'true'
           },
         ]
       },
       {
-        name: 'Company',
+        name: fullData => fullData.i18n_EnUS_ProjectMenu.Company,
         pages: [
           {
             link: '/about.html',
-            name: 'About Us',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.AboutUs,
           },
           {
             link: '/news.html',
-            name: 'Press & Media',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.PressMedia,
           },
           {
             link: '/careers.html',
-            name: 'Careers',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Careers,
           },
         ]
       },
       {
-        name: 'Contact',
+        name: fullData => fullData.i18n_EnUS_ProjectMenu.Contact,
         pages: [
           {
             modal: '#send-message',
-            name: 'Contact Us',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.ContactUs,
           },
           {
             link: 'https://www.facebook.com/jibrelnetwork/',
-            name: 'Facebook',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Facebook,
             externalLink: 'true'
           },
           {
             link: 'https://twitter.com/JibrelNetwork',
-            name: 'Twitter',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Twitter,
             externalLink: 'true'
           },
           {
             link: 'https://www.linkedin.com/company/jibrel-network/',
-            name: 'Linkedin',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Linkedin,
             externalLink: 'true'
           },
           {
             link: 'https://medium.com/@jibrelnetwork',
-            name: 'Medium',
+            name: fullData => fullData.i18n_EnUS_ProjectMenu.Medium,
             externalLink: 'true'
           },
         ]

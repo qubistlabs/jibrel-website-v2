@@ -2,7 +2,7 @@
   {{#is typePage '==' 'vacancy'}}
   <a href='/careers.html' class='back'>
     {{Icon iconName='arr-l' className='icon -color' iconWidth='11' iconHeight='11'}}
-    <span class='text'>Back to careers</span>
+    <span class='text'>{{texts.backToCareers}}</span>
   </a>
   <div class='soc _mobile-hide'>
     {{> RectangleSocial/RectangleSocial}}
@@ -18,13 +18,13 @@
 
   {{#is typePage '==' 'newsPage'}}
   {{!--<div class='tab-links'>
-      <a href='#' class='item -color -active'>Latest News</a>
-      <a href='#' class='item -color'>Media Resources</a>
-      <a href='#' class='item -color'>Social Channels</a>
+      <a href='#' class='item -color -active'>{{texts.LatestNews}}</a>
+      <a href='#' class='item -color'>{{texts.MediaResources}}</a>
+      <a href='#' class='item -color'>{{texts.SocialChannels}}</a>
   </div>--}}
   <a href='/news.html' class='back'>
     {{Icon iconName='arr-l' className='icon -color' iconWidth='11' iconHeight='11'}}
-    <span class='text'>Back to news</span>
+    <span class='text'>{{texts.backToNews}}</span>
   </a>
   <div class='soc _mobile-hide'>
     {{> RectangleSocial/RectangleSocial}}

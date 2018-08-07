@@ -1,0 +1,21 @@
+ProjectMenu: {
+  menu: 'Ы menu',
+  Products: 'Ы Products',
+  Enterprise: 'Ы Enterprise',
+  Jwallet: 'Ы Jwallet',
+  Company: 'Ы Company',
+  Jcash: 'Ы Jcash',
+  AboutUs: 'Ы About Us',
+  AboutJibrel: 'Ы About Jibrel',
+  PressMedia: 'Ы Press & Media',
+  Careers: 'Ы Careers',
+  Contact: 'Ы Contact',
+  ContactUs: 'Ы Contact Us',
+  GetInTouch: 'Ы GetInTouch',
+  Facebook: 'Ы Facebook',
+  Twitter: 'Ы Twitter',
+  Linkedin: 'Ы Linkedin',
+  Medium: 'Ы Medium',
+  Social: 'Ы Social',
+  SignIn: 'Ы Sign In'
+}

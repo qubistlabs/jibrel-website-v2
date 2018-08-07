@@ -6,6 +6,7 @@ const languageToggle = languagesBox.querySelector('.toggle')
 const languageCurrent = languagesBox.querySelector('.current')
 const languagesHide = languagesBox.querySelector('.hide')
 const languages = languagesBox.querySelectorAll('.item')
+const languagesArr = ['en','ko']
 
 languageToggle.addEventListener('click', () => {
   languagesHide.classList.add('-active')
@@ -21,6 +22,10 @@ const selectLanguage = {
   },
   selectedLanguage(language) {
     const languageName = language.innerText
+    const languageSelect = language.getAttribute('data-language')
+    const path = window.location.pathname.substr(3)
+
+
 
     languages.forEach((item) => {
       item.classList.remove('-current')

@@ -5,6 +5,7 @@ const File = tars.packages.gutil.File;
 const path = require('path');
 const Buffer = require('buffer').Buffer;
 const tarsEnvValue = process.env.TARS_ENV;
+const fs = require('fs')
 
 /**
  * Strip 'const data = {' and '};' from data-file content or just remove last ;
@@ -35,6 +36,21 @@ module.exports = function pagesAndDataFilesProcessing() {
 
         switch (fileName) {
             case 'data.js':
+                // check if it is localisation file
+                // @TODO: this is hack!!!!
+                const i18_language = tars.options.build.lang
+                
+                if (i18_language && i18_language !== 'EnUS' && file.relative.indexOf('EnUS') >= 0) {
+                    const newLocalisationPath = file.base + file.relative.replace('EnUS', i18_language)
+                    if (fs.existsSync(newLocalisationPath)) {
+                        console.log(`REPLACE: ${file.relative} -> ${newLocalisationPath}`)
+                        fileContent = fs.readFileSync(newLocalisationPath, 'utf8')
+                        file.contents = Buffer.from(fileContent)
+                    } else {
+                        console.warn(`No localisation for ${file.relative}`)
+                    }
+                }
+
                 // Create new component name for ready data-file
                 fileContent = namePrefix + dataFileProcessing(fileContent);
 
