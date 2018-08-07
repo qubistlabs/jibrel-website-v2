@@ -228,7 +228,7 @@
             border-radius: 3px;
             box-shadow: 0 6px 12px rgba($base, 0.06);
             transition: box-shadow 0.2s ease-in-out;
-            border-bottom-color: transparent;
+            border: 1px solid transparent;
 
             &.-button-sibling {
               border-top-right-radius: 0;
@@ -237,6 +237,10 @@
 
             &:focus {
               box-shadow: 0 6px 12px rgba($base, 0.15);
+            }
+
+            &.-error {
+              border-color: $error;
             }
           }
 
@@ -320,7 +324,6 @@
           font-weight: 600;
           font-size: 13px;
           text-align: center;
-          padding-top: 11px;
 
           &:hover {
             color: $light-blue;
