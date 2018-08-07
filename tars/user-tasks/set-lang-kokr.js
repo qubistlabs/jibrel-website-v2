@@ -9,6 +9,7 @@ const notifier = tars.helpers.notifier;
 const tarsConfig = tars.config;
 
 const LANG = 'KoKr'
+const BUILD_FOLDER = 'ko'
 
 /**
  * Task description
@@ -17,7 +18,7 @@ module.exports = function () {
 
   return gulp.task('set-lang:'+LANG, function (done) {
     tars.options.build.lang = LANG
-    tars.options.build.path = `${tars.config.buildPath}${LANG}/`;
+    tars.options.build.path = `${tars.config.buildPath}${BUILD_FOLDER}/`;
     
     // You can return callback, if you can't return pipe
     done(null);
