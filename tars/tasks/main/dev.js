@@ -30,7 +30,7 @@ module.exports = () => {
         }
     }
 
-    return gulp.task('main:dev', ['main:build-dev'], () => {
+    return gulp.task('main:dev', ['set-lang:'+tars.config.devLang, 'main:build-dev'], () => {
         tars.options.notify = true;
 
         if (tars.useLiveReload) {

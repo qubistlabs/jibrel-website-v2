@@ -4,20 +4,30 @@ const gulp = tars.packages.gulp;
 const gutil = tars.packages.gutil;
 const runSequence = tars.packages.runSequence.use(gulp);
 
+let runSeq = [];
+tars.config.buildLang.map((lang) => {
+    const seq = [
+        'set-lang:'+lang,
+        'main:build-dev',
+        [
+            'html:modify-html', 'images:minify-images'
+        ],
+        'main:create-build',
+        [
+            'css:compress-css'
+        ],
+        'service:zip-build',
+    ]
+    runSeq = runSeq.concat(seq)
+})
+
 /**
  * Build release version
  */
 module.exports = () => {
-    return gulp.task('main:build', ['main:build-dev'], () => {
+    return gulp.task('main:build', () => {
         runSequence(
-            [
-                'html:modify-html', 'images:minify-images'
-            ],
-            'main:create-build',
-            [
-                'css:compress-css'
-            ],
-            'service:zip-build',
+            ...runSeq,
             () => {
                 console.log(
                     gutil.colors.black.bold('\n------------------------------------------------------------')

@@ -53,6 +53,11 @@ module.exports = {
     "minifyHtml": false,
     "generateStaticPath": true,
     "buildPath": "./public/",
+    "buildLang": [
+        'EnUS',
+        'KoKr'
+    ],
+    "devLang": "KoKr",
     "useBuildVersioning": false,
     "useArchiver": false,
     "ulimit": 4096,
