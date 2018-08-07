@@ -12,10 +12,12 @@ const languageLength = languageSelected.getAttribute('data-language').length
 const languageUrl = window.location.pathname.slice(1, languageLength+1)
 const languageChanged = languagesBox.querySelector(`[data-language='${languageUrl}']`)
 
-languageSelected.classList.remove('-current')
-languageChanged.classList.add('-current')
-console.log(languageChanged.textContent)
-languageCurrent.innerText = languageChanged.textContent
+if (languageChanged) {
+  languageSelected.classList.remove('-current')
+  languageChanged.classList.add('-current')
+  console.log(languageChanged.textContent)
+  languageCurrent.innerText = languageChanged.textContent
+}
 
 
 languageToggle.addEventListener('click', () => {
