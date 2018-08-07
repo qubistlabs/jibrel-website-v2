@@ -1,12 +1,12 @@
 ProductInfo: {
   jwallet: {
     title: 'Jibrel Wallet',
-    description: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
+    description: 'Jwallet provides a user-friendly and secure way to transact your favorite Ethereum tokens',
     button: 'Jwallet Alpha'
   },
   jcash: {
     title: 'Jibrel Cash',
-    description: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
+    description: 'Jcash provides users with the ability to exchange volatile digital assets for currency-backed stable coins',
     button: 'Jcash Alpha'
   },
   enterprise_1: {

@@ -1,14 +1,14 @@
 ProjectTitle: {
-    home: {
-        title: 'Ы Home page',
-    },
-    about: {
-        title: 'Ы about',
-    },
-    enterprise: {
-        title: 'Ы enterprise',
-    },
-    careers: {
-        title: 'Ы careers',
-    }
+  home: {
+      title: '홈페이지',
+  },
+  about: {
+      title: '기업 정보',
+  },
+  enterprise: {
+      title: '엔터프라이즈',
+  },
+  careers: {
+      title: '채용',
+  }
 }
