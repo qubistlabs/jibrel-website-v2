@@ -5,7 +5,7 @@ ScreenPreview: {
   },
   aboutPage: {
       title: 'Ы About Jibrel Network',
-      description: 'Ы Jibrel is a blockchain and smart contract development company. We aim to leverage the latest innovations in cryptography, distributed ledger and smart contract technology to build the financial networks of the future. Using Jibrell\'s Product and Enterprise suite, individuals, business, governments and regulators can transact traditional and digital assets more effectively.',
+      description: 'Ы Jibrel is a blockchain and smart contract development company. We aim to leverage the latest innovations in cryptography, distributed ledger and smart contract technology to build the financial networks of the future. Using Jibrel\'s Product and Enterprise suite, individuals, business, governments and regulators can transact traditional and digital assets more effectively.',
   },
   enterprisePage: {
     title: 'Ы Digital Asset Solutions',

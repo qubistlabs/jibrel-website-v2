@@ -146,7 +146,7 @@ CardTile: {
     },
   ],
 
-  projectEnterprize: [
+  projectEnterprise: [
     {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',

@@ -1,4 +1,5 @@
 ProjectMenu: {
+  menu: 'menu',
   Products: 'Products',
   Enterprise: 'Enterprise',
   Jwallet: 'Jwallet',

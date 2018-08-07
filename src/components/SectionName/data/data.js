@@ -88,18 +88,18 @@ SectionName: {
     modClass: '-color'
   },
 
-  pageEnterprize: {
+  pageEnterprise: {
     positionContainer: '-bottom-70',
-    title: fullData => fullData.i18n_EnUS_SectionName.pageEnterprize,
+    title: fullData => fullData.i18n_EnUS_SectionName.pageEnterprise,
     positionTitle: '-bottom',
     arrow: 'down',
     modClass: '-white',
     aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
     aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
-  projectEnterprizeSection1: {
+  projectenterpriseSection1: {
     positionContainer: '-center',
-    title: fullData => fullData.i18n_EnUS_SectionName.projectEnterprizeSection1,
+    title: fullData => fullData.i18n_EnUS_SectionName.projectenterpriseSection1,
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-color'

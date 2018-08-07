@@ -5,8 +5,8 @@ ProjectTitle: {
     about: {
         title: 'Ы about',
     },
-    enterprize: {
-        title: 'Ы enterprize',
+    enterprise: {
+        title: 'Ы enterprise',
     },
     careers: {
         title: 'Ы careers',
