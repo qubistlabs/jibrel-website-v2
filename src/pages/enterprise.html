@@ -2,7 +2,7 @@
 <html class='no-js' lang='en'>
 
 <head>
-  {{> ProjectHead/ProjectHead ProjectHead.home}}
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectTitle.enterprise}}
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
   <section class='section-content -offset-top -offset-bottom -bg-dark'>
     <div class='container _container-fix'>
-      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments</h2>
+      <h2 class='title -white -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_JibrelIntegratable.title}}</h2>
       <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
         {{#each CardTile.homeData2}}
         {{> CardTile/CardTile}}
@@ -34,8 +34,8 @@
   <section class='section-content -offset-top -mobile-collapse-offset -mobile-bg-gray'>
     {{> SectionName/SectionName SectionName.projectEnterprizeSection1}}
     <div class='container _container-fix -bg-gray -offset-top -offset-bottom'>
-      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">A Complete Enterprise Solution</h2>
-      <h2 class='descr -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">Jibrel is being used by companies and governments to build the financial networks of the future. Our enterprise offering meets the highest standards in technology and compliance.</h2>
+      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_EnterpriseSolution.title}}</h2>
+      <h2 class='descr -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_EnterpriseSolution.description}}</h2>
       <div class='card-tile'>
         {{#each CardTile.compliteEterpriseSolution}}
         {{> CardTile/CardTile}}
@@ -46,7 +46,7 @@
 
   <section class='section-content -offset-top -offset-bottom'>
     <div class='container _container-fix'>
-      <p class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="600" data-aos-delay="150">Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
+      <p class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="600" data-aos-delay="150">{{i18n_EnUS_PartnersData.title}}</p>
       <div class='partners-card -offset-top swiper-container' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
         {{> PartnersCard/PartnersCard}}
       </div>
