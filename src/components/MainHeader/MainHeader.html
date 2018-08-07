@@ -7,7 +7,7 @@
     </a>
     {{/is}}
     <div class='actions' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-      {{!-- {{#is openPopup '==' ''}}
+      {{#is openPopup '==' ''}}
       <div class='select-language -in-header'>
         <button class='toggle'>
           <span class='current {{modClass}}'>ENGLISH</span>
@@ -15,15 +15,15 @@
         </button>
         {{> SelectLanguage/SelectLanguage}}
       </div>
-      {{/is}} --}}
+      {{/is}}
 
       <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
         {{#is openPopup '==' ''}}
-        <span class='text'>MENU</span>
+        <span class='text'>{{textContent.menu}}</span>
         {{Icon iconName='i-menu' className='icon -mobile-hide' iconWidth='' iconHeight=''}}
         <div class='hamburger'></div>
         {{else}}
-        {{!--<span class='text'>CLOSE</span>--}}
+        {{!--<span class='text'>{{textContent.close}}</span>--}}
         {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
         {{/is}}
       </button>

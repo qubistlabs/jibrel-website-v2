@@ -1,0 +1,24 @@
+ProductInfo: {
+  jwallet: {
+    title: 'Jibrel Wallet',
+    description: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
+    button: 'Jwallet Alpha'
+  },
+  jcash: {
+    title: 'Jibrel Cash',
+    description: 'Jibrel is dedicated to building enterprise-grade products for the decentralized economy',
+    button: 'Jcash Alpha'
+  },
+  enterprise_1: {
+    title: 'Transaction & Data Analytics',
+    description: 'Looking for digital asset transaction and data analytics? <strong>Jsearch</strong> provides transfer and smart contract data via an easily configurable API. Jibrel analytics solution also has compliance built-in, powered by <strong>Jclear</strong>, Jibrel’s digital asset AML / KYC solution',
+  },
+  enterprise_2: {
+    title: 'Real-time Digital Asset Price Feeds',
+    description: 'Keeping up-to-date with latest digital currency exchange prices feeds can be a challenge. With <strong>Jticker</strong>, you can ensure your trading desks and algorithms have reliable and verifiable price feeds',
+  },
+  enterprise_3: {
+    title: 'Reliable Ethereum Connectivity',
+    description: 'Contact us to learn more about <strong>Jnode</strong>, an Enterprise-grade Ethereum connection, with 99.99% Uptime, it is the most secure and reliable solution for scalable Ethereum infrastructure',
+  },
+}

@@ -1,0 +1,23 @@
+FormText: {
+  baseForm: {
+    titleSendMessage: 'Send message',
+    titlePupport: 'Technical Support',
+    titleProductAndSale: 'Product & Sales Enquiry Form',
+    titleMediaAndPR: 'Media & PR Inquiries',
+
+    textContent: {
+      name: 'Full Name *',
+      email: 'Email Address *',
+      message: 'Message *',
+      button: 'Send',
+      successTitle: 'Well done.',
+      seccessMsg: 'Message successfully sent!',
+      errorTitle: 'Ooooups!',
+      errorMsg: 'Some error occurred.',
+    }
+  },
+  emailOnly: {
+    email: 'Email Address',
+    button: 'Sign Up'
+  },
+}

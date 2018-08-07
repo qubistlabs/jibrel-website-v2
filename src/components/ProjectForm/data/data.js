@@ -1,28 +1,24 @@
 ProjectForm: {
   baseForm: {
     support: {
-      title: 'Technical Support',
-      formName: 'enquiry'
-    },
-    media: {
-      title: 'Media & PR Inquiries',
-      formName: 'enquiry'
-    },
-    product: {
-      title: 'Product & Sales Enquiry',
-      formName: 'enquiry'
+      title: fullData => fullData.i18n_EnUS_FormText.baseForm.titlePupport,
+      formName: 'enquiry',
+      textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
     sendMessage: {
-      title: 'Send message',
-      formName: 'message'
+      title: fullData => fullData.i18n_EnUS_FormText.baseForm.titleSendMessage,
+      formName: 'message',
+      textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
     productAndSale: {
-      title: 'Product & Sales Enquiry Form',
-      formName: 'enquiry'
+      title: fullData => fullData.i18n_EnUS_FormText.baseForm.titleProductAndSale,
+      formName: 'enquiry',
+      textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
     mediaAndPR: {
-      title: 'Media & PR Inquiries',
-      formName: 'enquiry'
+      title: fullData => fullData.i18n_EnUS_FormText.baseForm.titleMediaAndPR,
+      formName: 'enquiry',
+      textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
   },
   applyResume: {
