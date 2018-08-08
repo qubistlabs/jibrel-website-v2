@@ -1,6 +1,16 @@
 NewsPreview: {
   borderStyle: [
     {
+      link: 'jibrel-licensed-financial-intermediary-vqf.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
+      img: '/assets/img/content/cover/news-logo-1.png',
+      img2x: '/assets/img/content/cover/news-logo-1@2x.png',
+      date: 'May 22, 2018',
+      title: 'Jibrel is Licensed as Financial Intermediary by VQF',
+      modClassBox: '-border',
+      descr: 'The Jibrel Network provides traditional financial assets, such as currencies, bonds, and equities, as standard ERC-20 tokens on the Ethereum blockchain...'
+    },
+    {
       link: 'dubai-financial-services-authority-announces-finte.html',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/news-logo-1.png',
