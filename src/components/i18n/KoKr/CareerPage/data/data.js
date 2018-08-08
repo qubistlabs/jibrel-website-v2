@@ -1,3 +1,3 @@
 CareerPage: {
-  title: 'Ы Open Positions',
+  title: '채용',
 }

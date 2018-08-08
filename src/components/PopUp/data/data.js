@@ -41,7 +41,7 @@ PopUp: {
         name: fullData => fullData.i18n_EnUS_ProjectMenu.Products,
         pages: [
           {
-            link: '/enterprise.html',
+            link: 'enterprise.html',
             name: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
           },
           {
@@ -60,15 +60,15 @@ PopUp: {
         name: fullData => fullData.i18n_EnUS_ProjectMenu.Company,
         pages: [
           {
-            link: '/about.html',
+            link: 'about.html',
             name: fullData => fullData.i18n_EnUS_ProjectMenu.AboutUs,
           },
           {
-            link: '/news.html',
+            link: 'news.html',
             name: fullData => fullData.i18n_EnUS_ProjectMenu.PressMedia,
           },
           {
-            link: '/careers.html',
+            link: 'careers.html',
             name: fullData => fullData.i18n_EnUS_ProjectMenu.Careers,
           },
         ]

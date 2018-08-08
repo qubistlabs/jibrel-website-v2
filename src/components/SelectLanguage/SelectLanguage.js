@@ -4,9 +4,21 @@ import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
 const languagesBox = document.querySelector('.select-language')
 const languageToggle = languagesBox.querySelector('.toggle')
 const languageCurrent = languagesBox.querySelector('.current')
+const languageSelected = languagesBox.querySelector('.-current')
 const languagesHide = languagesBox.querySelector('.hide')
 const languages = languagesBox.querySelectorAll('.item')
-const languagesArr = ['en','ko']
+
+const languageLength = languageSelected.getAttribute('data-language').length
+const languageUrl = window.location.pathname.slice(1, languageLength+1)
+const languageChanged = languagesBox.querySelector(`[data-language='${languageUrl}']`)
+
+if (languageChanged) {
+  languageSelected.classList.remove('-current')
+  languageChanged.classList.add('-current')
+  console.log(languageChanged.textContent)
+  languageCurrent.innerText = languageChanged.textContent
+}
+
 
 languageToggle.addEventListener('click', () => {
   languagesHide.classList.add('-active')
@@ -21,19 +33,10 @@ const selectLanguage = {
     this.selectedLanguage(language)
   },
   selectedLanguage(language) {
-    const languageName = language.innerText
     const languageSelect = language.getAttribute('data-language')
-    const path = window.location.pathname.substr(3)
-
-
-
-    languages.forEach((item) => {
-      item.classList.remove('-current')
-    })
-
-    language.classList.add('-current')
-    languageCurrent.innerText = languageName
-    this.closeSelect()
+    const languageL = languageSelect.length
+    const path = window.location.pathname.substr(languageL+1)
+    document.location.href = `/${languageSelect}${path}`
   },
   closeSelect() {
     languagesHide.classList.remove('-active')

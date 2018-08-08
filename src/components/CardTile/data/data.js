@@ -978,6 +978,45 @@ CardTile: {
     {
       cardModClass: '-three-col',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class=\'icon -stroke\' width=\'57\' height=\'57\'><use xlink:href=\'#i-bank\'></use></svg>',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_1.title,
+
+      subTitle: 'false',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_1.description,
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-store\'></use></svg>',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_2.title,
+      subTitle: 'false',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_2.description,
+      isHoverBox: 'false'
+    },
+    {
+      cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
+      boxModClass: '-white',
+      imgType: 'svg',
+      modClassImg: '-base-icon',
+      img: '<svg class=\'icon -stroke\' width=\'60\' height=\'60\'><use xlink:href=\'#i-goverment\'></use></svg>',
+      title: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_3.title,
+      subTitle: 'false',
+      descr: fullData => fullData.i18n_EnUS_JibrelIntegratable.card_3.description,
+      isHoverBox: 'false'
+    },
+  ],
+  homeData22: [
+    {
+      cardModClass: '-three-col',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       boxModClass: '',
       imgType: 'svg',
       modClassImg: '-base-icon',

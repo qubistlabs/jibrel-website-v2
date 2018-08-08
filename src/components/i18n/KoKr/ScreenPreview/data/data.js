@@ -1,14 +1,14 @@
 ScreenPreview: {
   homePage: {
-      title: 'Ы Compliant Stable Coins',
-      description: 'Ы Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      title: '규정준수 가치안정화폐',
+      description: 'Jibrel Network는 통화, 주식, 상품 및 기타 금융 자산과 상품을 이더리움 블록 체인 표준 ERC-20 토큰으로 제공합니다',
   },
   aboutPage: {
-      title: 'Ы About Jibrel Network',
-      description: 'Ы Jibrel is a blockchain and smart contract development company. We aim to leverage the latest innovations in cryptography, distributed ledger and smart contract technology to build the financial networks of the future. Using Jibrel\'s Product and Enterprise suite, individuals, business, governments and regulators can transact traditional and digital assets more effectively.',
+      title: 'Jibrel Network에 대하여',
+      description: 'Jibrel은 블록 체인 및 스마트 계약 개발 회사입니다. 우리는 암호화, 분배 원장 및 스마트 계약 기술의 최신 혁신을 활용하여 미래의 금융 네트워크를 구축하는 것을 목표로합니다.',
   },
   enterprisePage: {
-    title: 'Ы Digital Asset Solutions',
-    description: 'Ы We’re helping Banks, Insurers, Regulators and Governments implement enterprise-grade digital asset solutions',
+    title: '실시간 디지털 자산 가격 피드',
+    description: '우리는 선도 은행, 규제 기관 및 정부가 엔터프라이즈급 디지털 자산 솔루션을 구현할 수 있도록 지원하고 있습니다.',
   },
 }
