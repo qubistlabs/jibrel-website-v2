@@ -20,7 +20,8 @@ document.querySelectorAll('a').forEach((link) => {
   if (link.getAttribute('target') === null) {
     const href = link.getAttribute('href')
     const prefix = languageSite === 'en' ? '/' : `/${languageSite}/`
-    link.setAttribute('href', prefix + href)
+    const path = href !== '/' ? prefix + href : '/'
+    link.setAttribute('href', path)
   }
 })
 
