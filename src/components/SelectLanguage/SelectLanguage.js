@@ -20,8 +20,7 @@ document.querySelectorAll('a').forEach((link) => {
   if (link.getAttribute('target') === null) {
     const href = link.getAttribute('href')
     const prefix = languageSite === 'en' ? '/' : `/${languageSite}/`
-
-    link.setAttribute('href', prefix+href)
+    link.setAttribute('href', prefix + href)
   }
 })
 
@@ -39,12 +38,11 @@ const selectLanguage = {
   },
   selectedLanguage(language) {
     const languageSelect = language.getAttribute('data-language')
-    const languagePuth = languageSelect === 'en' ? '/' : `/${languageSelect}/`
+    const languagePrefix = languageSelect === 'en' ? '' : `/${languageSelect}/`
     const languageL = languageSelect.length
-    const path = languageSite === 'en' ? window.location.pathname.substr(1) : window.location.pathname.substr(languageL+1)
-    const prefix = languageSelect === 'en' ? '' : `/${languageSelect}/`
-    document.location.href = prefix+path
-    console.log(prefix+path);
+    const location = window.location.pathname
+    const path = languageSite === 'en' ? location.substr(1) : location.substr(languageL + 1)
+    document.location.href = languagePrefix + path
   },
   closeSelect() {
     languagesHide.classList.remove('-active')
