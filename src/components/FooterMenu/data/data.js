@@ -4,15 +4,15 @@ FooterMenu: [
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'300\' data-aos-delay="150"',
     links: [
       {
-        link: '/about.html',
+        link: 'about.html',
         text: fullData => fullData.i18n_EnUS_ProjectMenu.AboutJibrel,
       },
       {
-        link: '/news.html',
+        link: 'news.html',
         text: fullData => fullData.i18n_EnUS_ProjectMenu.PressMedia,
       },
       {
-        link: '/careers.html',
+        link: 'careers.html',
         text: fullData => fullData.i18n_EnUS_ProjectMenu.Careers,
       },
     ]
@@ -22,7 +22,7 @@ FooterMenu: [
     aosAnimation: ' data-aos=\'fade-down\' data-aos-duration=\'600\' data-aos-delay="150"',
     links: [
       {
-        link: '/enterprise.html',
+        link: 'enterprise.html',
         text: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
       },
       {
