@@ -8,17 +8,29 @@ const languageSelected = languagesBox.querySelector('.-current')
 const languagesHide = languagesBox.querySelector('.hide')
 const languages = languagesBox.querySelectorAll('.item')
 
-const languageLength = languageSelected.getAttribute('data-language').length
-const languageUrl = window.location.pathname.slice(1, languageLength+1)
-const languageChanged = languagesBox.querySelector(`[data-language='${languageUrl}']`)
+const languageSite = document.querySelector('html').getAttribute('lang')
 
-if (languageChanged) {
-  languageSelected.classList.remove('-current')
-  languageChanged.classList.add('-current')
-  console.log(languageChanged.textContent)
-  languageCurrent.innerText = languageChanged.textContent
-}
+const languageChanged = languagesBox.querySelector(`[data-language='${languageSite}']`)
 
+languageSelected.classList.remove('-current')
+languageChanged.classList.add('-current')
+languageCurrent.innerText = languageChanged.textContent
+
+document.querySelectorAll('a').forEach((link) => {
+  const href = link.getAttribute('href')
+  if (link.getAttribute('target') !== null
+    || href.indexOf('https://') !== -1
+    || href.indexOf('http://') !== -1
+    || href.indexOf('mailto:') !== -1
+  ) {
+    // continue
+  } else {
+    const prefix = languageSite === 'en' ? '/' : `/${languageSite}/`
+    const path = href !== '/' ? prefix + href : '/'
+    link.setAttribute('href', path)
+  }
+
+})
 
 languageToggle.addEventListener('click', () => {
   languagesHide.classList.add('-active')
@@ -34,9 +46,11 @@ const selectLanguage = {
   },
   selectedLanguage(language) {
     const languageSelect = language.getAttribute('data-language')
+    const languagePrefix = languageSelect === 'en' ? '' : `/${languageSelect}/`
     const languageL = languageSelect.length
-    const path = window.location.pathname.substr(languageL+1)
-    document.location.href = `/${languageSelect}${path}`
+    const location = window.location.pathname
+    const path = languageSite === 'en' ? location.substr(1) : location.substr(languageL + 1)
+    document.location.href = languagePrefix + path
   },
   closeSelect() {
     languagesHide.classList.remove('-active')

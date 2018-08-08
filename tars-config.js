@@ -57,7 +57,7 @@ module.exports = {
         'EnUS',
         'KoKr'
     ],
-    "devLang": "KoKr",
+    "devLang": "EnUS",
     "useBuildVersioning": false,
     "useArchiver": false,
     "ulimit": 4096,

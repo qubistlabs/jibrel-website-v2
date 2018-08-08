@@ -1,7 +1,7 @@
 TypoPage: {
   vacancy: {
     title: 'Industry Program Digital Manager, Manufacturing, Services',
-    data: '<a href=\'mailto:careers@jibrel.network\' class=\'j-button -w-auto -border-on-white-bg\'>Apply Now</a>',
+    data: '<a href=\'mailto:careers@jibrel.network\' class=\'j-button -w-auto -border-on-white-bg\' target=\'_blank\'>Apply Now</a>',  
     jobInfo: 'true',
     wysiwyg: '<h2>Job Description</h2>\
     <p>Fueled by a fundamental belief that having access to financial services creates opportunity, PayPal (NASDAQ: PYPL) is committed to democratizing financial services and empowering people and businesses to join and thrive in the global economy.</p>\
