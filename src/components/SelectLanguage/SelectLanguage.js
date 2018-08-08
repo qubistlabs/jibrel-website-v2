@@ -17,12 +17,19 @@ languageChanged.classList.add('-current')
 languageCurrent.innerText = languageChanged.textContent
 
 document.querySelectorAll('a').forEach((link) => {
-  if (link.getAttribute('target') === null) {
-    const href = link.getAttribute('href')
+  const href = link.getAttribute('href')
+  if (link.getAttribute('target') !== null
+    || href.indexOf('https://') !== -1
+    || href.indexOf('http://') !== -1
+    || href.indexOf('mailto:') !== -1
+  ) {
+    // continue
+  } else {
     const prefix = languageSite === 'en' ? '/' : `/${languageSite}/`
     const path = href !== '/' ? prefix + href : '/'
     link.setAttribute('href', path)
   }
+
 })
 
 languageToggle.addEventListener('click', () => {
