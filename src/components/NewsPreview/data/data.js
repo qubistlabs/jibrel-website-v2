@@ -4,8 +4,8 @@ NewsPreview: {
       link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
       modClassBox: '-border',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/news-logo-25.png',
-      img2x: '/assets/img/content/cover/news-logo-25@2x.png',
+      img: '/assets/img/content/cover/news-logo-26.png',
+      img2x: '/assets/img/content/cover/news-logo-26@2x.png',
       date: 'Jul. 31, 2018',
       title: 'Jibrel – Bringing the benefits of blockchain to the world of commodity trading',
       descr: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining...'
@@ -35,8 +35,8 @@ NewsPreview: {
     {
       link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/news-logo-25.png',
-      img2x: '/assets/img/content/cover/news-logo-25@2x.png',
+      img: '/assets/img/content/cover/news-logo-26.png',
+      img2x: '/assets/img/content/cover/news-logo-26@2x.png',
       date: 'Jul. 31, 2018',
       title: 'Jibrel – Bringing the benefits of blockchain to the world of commodity trading',
       descr: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining...'
