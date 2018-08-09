@@ -12,16 +12,16 @@ ListVacancies: [
     descr: 'Senior QA Automation Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
   },
   {
-    link: 'qa-engineer.html',
+    link: 'senior-qa-engineer.html',
     place: 'Saint-Petersburg, Russia',
-    position: 'QA Engineer',
-    descr: 'QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development',
+    position: 'Senior QA Engineer',
+    descr: 'Senior QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development',
   },
   {
-    link: 'mobile-qa-engineer.html',
+    link: 'senior-mobile-qa-engineer.html',
     place: 'Saint-Petersburg, Russia',
-    position: 'Mobile QA Engineer',
-    descr: 'Mobile QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
+    position: 'Senior Mobile QA Engineer',
+    descr: 'Senior Mobile QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
   },
   {
     link: 'digital-marketing-analyst.html',
