@@ -5,6 +5,12 @@
   display: inline-block;
   font-size: 0;
 
+  @include to-mobile {
+    height: 28px;
+    width: 28px;
+    position: relative;
+  }
+
   > .icon,
   > .text,
   > .cross {
@@ -32,6 +38,9 @@
 
       @include to-mobile {
         stroke: rgba(#fff, 0.6);
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     }
   }
@@ -54,6 +63,10 @@
     height: 2px;
     width: 28px;
     border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1px;
 
     @include from-mobile {
       display: none;
