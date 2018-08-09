@@ -68,15 +68,15 @@ NewsPreview: {
       title: 'Jibrel is Licensed as Financial Intermediary by VQF',
       descr: 'The Jibrel Network provides traditional financial assets, such as currencies, bonds, and equities, as standard ERC-20 tokens on the Ethereum blockchain...'
     },
-    {
-      link: 'dubai-financial-services-authority-announces-finte.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
-      img: '/assets/img/content/cover/news-logo-1.png',
-      img2x: '/assets/img/content/cover/news-logo-1@2x.png',
-      date: 'May 16, 2018',
-      title: 'Dubai Financial Services Authority Announces Fintech Innovation Testing Program Expansion',
-      descr: 'The Dubai Financial Services Authority (DFSA) announced on Wednesday the expansion of its Innovation Testing Licence (ITL)...'
-    },
+    // {
+    //   link: 'dubai-financial-services-authority-announces-finte.html',
+    //   aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
+    //   img: '/assets/img/content/cover/news-logo-1.png',
+    //   img2x: '/assets/img/content/cover/news-logo-1@2x.png',
+    //   date: 'May 16, 2018',
+    //   title: 'Dubai Financial Services Authority Announces Fintech Innovation Testing Program Expansion',
+    //   descr: 'The Dubai Financial Services Authority (DFSA) announced on Wednesday the expansion of its Innovation Testing Licence (ITL)...'
+    // },
     {
       link: 'jibrel-network-launch-institutional-grade-alternat.html',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
