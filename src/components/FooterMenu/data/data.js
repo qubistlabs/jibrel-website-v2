@@ -26,13 +26,13 @@ FooterMenu: [
         text: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
       },
       {
-        link: 'https://jwallet.network',
+        link: fullData => fullData.i18n_EnUS_LinkLanguageVersion.jwallet,
         text: fullData => fullData.i18n_EnUS_ProjectMenu.Jwallet,
         modClass: '-small-offset-left',
         externalLink: 'true'
       },
       {
-        link: 'https://jcash.network',
+        link: fullData => fullData.i18n_EnUS_LinkLanguageVersion.jcash,
         text: fullData => fullData.i18n_EnUS_ProjectMenu.Jcash,
         modClass: '-small-offset-left',
         externalLink: 'true'

@@ -1,10 +1,10 @@
 'use strict';
 
 // plugins
-import ScrollingAnchor from './plugins/ScrollingAnchor';
 import CheckTouch from './plugins/check-touch.js';
 
 // components
+import EventGtm from 'components/EventGtm/EventGtm';
 import PopUp from 'components/PopUp/PopUp';
 import MainHeader from 'components/MainHeader/MainHeader';
 import ContentFaq from 'components/ContentFaq/ContentFaq';

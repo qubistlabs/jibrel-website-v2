@@ -45,12 +45,12 @@ PopUp: {
             name: fullData => fullData.i18n_EnUS_ProjectMenu.Enterprise,
           },
           {
-            link: 'https://jwallet.network',
+            link: fullData => fullData.i18n_EnUS_LinkLanguageVersion.jwallet,
             name: fullData => fullData.i18n_EnUS_ProjectMenu.Jwallet,
             externalLink: 'true'
           },
           {
-            link: 'https://jcash.network',
+            link: fullData => fullData.i18n_EnUS_LinkLanguageVersion.jcash,
             name: fullData => fullData.i18n_EnUS_ProjectMenu.Jcash,
             externalLink: 'true'
           },
