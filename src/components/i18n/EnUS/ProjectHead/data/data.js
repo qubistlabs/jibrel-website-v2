@@ -141,6 +141,16 @@ ProjectHead: {
       description: 'Most people will agree that Ethereum is a valuable addition to the world of cryptocurrency and blockchain. Although the system is not without its flaws, significant progress has been made over the past two and',
       url: 'http://jibrel.network/news/what-jwallet.html'
     },
+    Jibrel_Bringing_the_benefits_of_blockchain_to_the_world_of_commodity_trading: {
+      title: 'Jibrel Network - News & Media - Jibrel – Bringing the benefits of blockchain to the world of commodity trading',
+      description: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining stability in their investment portfolios',
+      url: 'http://jibrel.network/news/jibrel-bringing-benefits-blockchain-world-commodit.html'
+    },
+    Jibrel_Network_joins_The_Enterprise_Ethereum_Alliance: {
+      title: 'Jibrel Network - News & Media - Jibrel Network joins The Enterprise Ethereum Alliance',
+      description: 'Jibrel Network has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the',
+      url: 'http://jibrel.network/news/jibrel-network-announcing-major-projects-middle-ea.html'
+    },
 
     // Vacancies
     Community_Manager: {

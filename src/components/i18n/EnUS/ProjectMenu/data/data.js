@@ -11,7 +11,7 @@ ProjectMenu: {
   Careers: 'Careers',
   Contact: 'Contact',
   ContactUs: 'Contact Us',
-  GetInTouch: 'GetInTouch',
+  GetInTouch: 'Get In Touch',
   Facebook: 'Facebook',
   Twitter: 'Twitter',
   Linkedin: 'Linkedin',
