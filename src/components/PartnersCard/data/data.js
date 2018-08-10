@@ -14,11 +14,11 @@ PartnersCard: [
         img: '/assets/img/general/partners/client-3.png',
         img2x: '/assets/img/general/partners/client-3@2x.png',
     },
-    {
-        link: 'https://www.dfsa.ae/',
-        img: '/assets/img/general/partners/client-4.png',
-        img2x: '/assets/img/general/partners/client-4@2x.png',
-    },
+    // {
+    //     link: 'https://www.dfsa.ae/',
+    //     img: '/assets/img/general/partners/client-4.png',
+    //     img2x: '/assets/img/general/partners/client-4@2x.png',
+    // },
     {
         link: 'http://www.jabbar.com/',
         img: '/assets/img/general/partners/client-5.png',
