@@ -184,16 +184,16 @@ SectionName: {
   },
 
   pageVacansies: {
-    positionContainer: '-top-110',
+    positionContainer: '-bottom-70',
     title: fullData => fullData.i18n_EnUS_SectionName.pageVacansies,
-    positionTitle: '-top',
+    positionTitle: '-bottom',
     arrow: 'up',
     modClass: '-color',
     aosTitle: 'data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0" data-aos-delay="150"',
     aosIcon: 'data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150"',
   },
   vacancy: {
-    positionContainer: '-top-110',
+    positionContainer: '-bottom-70',
     title: fullData => fullData.i18n_EnUS_SectionName.vacancy,
     positionTitle: '-top',
     arrow: 'up',
@@ -207,7 +207,7 @@ SectionName: {
     modClass: '-color'
   },
   news: {
-    positionContainer: '-top-110',
+    positionContainer: '-bottom-460',
     title: fullData => fullData.i18n_EnUS_SectionName.news,
     positionTitle: '-top',
     arrow: 'up',
@@ -215,7 +215,7 @@ SectionName: {
   },
   press: {
     positionContainer: '-bottom-460',
-    title: fullData => fullData.i18n_EnUS_SectionName.press,
+    title: fullData => fullData.i18n_EnUS_SectionName.news,
     positionTitle: '-top',
     arrow: 'up',
     modClass: '-color'

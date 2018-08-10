@@ -62,3 +62,11 @@ languages.forEach((language) => {
     selectLanguage.init(language)
   })
 })
+
+// eslint-disable-next-line no-undef, prefer-arrow-callback, space-before-function-paren, func-names
+$(document).on('click', function(e) {
+  // eslint-disable-next-line no-undef
+  if (!$(e.target).closest(languagesBox).length) {
+    selectLanguage.closeSelect()
+  }
+})
