@@ -18,3 +18,4 @@ import SelectLanguage from 'components/SelectLanguage/SelectLanguage';
 import PartnersCardSlider from 'components/PartnersCard/PartnersCard';
 import SectionContent from 'components/SectionContent/SectionContent';
 import AnimationProject from 'components/AnimationProject/AnimationProject';
+import SectionName from 'components/SectionName/SectionName';
