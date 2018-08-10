@@ -70,10 +70,11 @@ const validation = {
   openExternalForm() {
     const action = this.form.getAttribute('action')
     const val = this.form.querySelector('.field').value
-    const url = `${action}?${val}`
+    const url = `${action}?email=${val}`
     window.open(url)
     // eslint-disable-next-line fp/no-mutation
     this.form.querySelector('.field').value = ''
+    this.form.querySelector('.field').classList.remove('-error')
   },
   /* eslint-disable prefer-destructuring, no-undef,
   more/no-void-map, unicorn/no-fn-reference-in-iterator, func-names,
