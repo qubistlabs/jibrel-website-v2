@@ -72,9 +72,13 @@ const validation = {
     const val = this.form.querySelector('.field').value
     const url = `${action}?email=${val}`
     window.open(url)
+    const event = this.form.getAttribute('data-event')
     // eslint-disable-next-line fp/no-mutation
     this.form.querySelector('.field').value = ''
-    this.form.querySelector('.field').classList.remove('-error')
+    setTimeout(() => {
+      this.form.querySelector('.field').classList.remove('-error')
+    }, 10)
+    this.eventGTM(event)
   },
   /* eslint-disable prefer-destructuring, no-undef,
   more/no-void-map, unicorn/no-fn-reference-in-iterator, func-names,
@@ -84,6 +88,7 @@ const validation = {
     const form = this.form
     const action = this.form.getAttribute('action')
     const method = this.form.getAttribute('method')
+    const event = this.form.getAttribute('data-event')
     const dataForm = $(this.form).serializeArray()
     const dataJson = {}
 
@@ -99,10 +104,12 @@ const validation = {
       success(response) {
         if (response.status === 'success') {
           validation.messageView(form, '.-success')
+          validation.eventGTM(event)
         } else if (response.status === 'error') {
           validation.messageView(form, '.-error')
         } else {
           console.warn('The response does not contain the required values')
+          validation.eventGTM(event)
         }
       },
     })
@@ -120,6 +127,30 @@ const validation = {
     }, 2300)
   },
   /* eslint-enable */
+  eventGTM(event) {
+    function menuDataSend(category, action, label) {
+      // eslint-disable-next-line fp/no-mutating-methods
+      window.dataLayer.push({
+        'event': 'AutoEvent',
+        'eventCategory': category,
+        'eventAction': action,
+        'eventLabel': label,
+        'eventValue': '',
+      })
+    }
+    switch (event) {
+      case 'sign-up-success':
+        menuDataSend('Requests', 'Sign_up_success', 'First_screen_form')
+        break
+      case 'get-in-touch-popup':
+        menuDataSend('Requests', 'Get_in_touch_success', 'Pop_up')
+        break
+      case 'product-and-sale-enterprise':
+        menuDataSend('Requests', 'Get_in_touch_success', 'Enterprise_form')
+        break
+      default: // Empty
+    }
+  },
 }
 
 document.querySelectorAll('[required]').forEach((field) => {

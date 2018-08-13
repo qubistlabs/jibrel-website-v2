@@ -3,6 +3,8 @@ const path = window.location.pathname
 const title = document.querySelector('title').textContent
 
 const mainMenuLinks = document.querySelector('.main-menu').querySelectorAll('.link')
+const menuOpen = document.querySelector('.main-header').querySelector('.js-popup-open')
+const menuClose = document.querySelector('.main-menu').querySelector('.js-popup-close')
 
 // eslint-disable-next-line fp/no-mutating-methods
 window.dataLayer.push({
@@ -12,20 +14,36 @@ window.dataLayer.push({
   'virtualHost': host,
 })
 
-function menuDataSend(label) {
+function menuDataSend(category, action, label) {
   // eslint-disable-next-line fp/no-mutating-methods
   window.dataLayer.push({
     'event': 'AutoEvent',
-    'eventCategory': 'Menu',
-    'eventAction': 'GoTo',
+    'eventCategory': category,
+    'eventAction': action,
     'eventLabel': label,
     'eventValue': '',
   })
+  return true
 }
+
+
+menuOpen.addEventListener('click', () => {
+  menuDataSend('Menu', 'Open_menu', '')
+})
+menuClose.addEventListener('click', () => {
+  menuDataSend('Menu', 'Close_menu', '')
+})
 
 mainMenuLinks.forEach((link) => {
   link.addEventListener('click', () => {
+    // e.preventDefault()
     const label = link.textContent
-    menuDataSend(label)
+    menuDataSend('Menu', 'GoTo', label)
+    // const href = link.getAttribute('href')
+    // if (menuDataSend('Menu', 'GoTo', label)) {
+    //   setTimeout(function () {
+    //     document.location.pathname = href
+    //   }, 1000);
+    // }
   })
 })
