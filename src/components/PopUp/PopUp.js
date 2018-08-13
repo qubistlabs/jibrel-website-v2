@@ -4,9 +4,9 @@ import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
 const popUpOpen = document.querySelectorAll('.js-popup-open')
 const popUpClose = document.querySelectorAll('.js-popup-close')
 
-function preventDefault(e) {
-  e.preventDefault()
-}
+// function preventDefault(e) {
+//   e.preventDefault()
+// }
 
 // eslint-disable-next-line  fp/no-let
 let scrolled
@@ -40,12 +40,12 @@ const popUp = {
   },
 
   disableScroll() {
-    document.body.addEventListener('touchmove', preventDefault, { passive: false })
+    // document.body.addEventListener('touchmove', preventDefault, { passive: false })
     window.addEventListener('scroll', stopScroll)
   },
 
   enableScroll() {
-    document.body.removeEventListener('touchmove', preventDefault, { passive: false })
+    // document.body.removeEventListener('touchmove', preventDefault, { passive: false })
     window.removeEventListener('scroll', stopScroll)
   },
 }
