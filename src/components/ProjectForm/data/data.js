@@ -8,11 +8,13 @@ ProjectForm: {
     sendMessage: {
       title: fullData => fullData.i18n_EnUS_FormText.baseForm.titleSendMessage,
       formName: 'message',
+      event: 'get-in-touch-popup',
       textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
     productAndSale: {
       title: fullData => fullData.i18n_EnUS_FormText.baseForm.titleProductAndSale,
       formName: 'enquiry',
+      event: 'product-and-sale-enterprise',
       textContent: fullData => fullData.i18n_EnUS_FormText.baseForm.textContent
     },
     mediaAndPR: {
