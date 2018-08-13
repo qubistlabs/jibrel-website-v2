@@ -19,5 +19,5 @@ function resizeFullHeight() {
 window.addEventListener(orientationEvent, () => {
   setTimeout(() => {
     resizeFullHeight()
-  }, 50)
+  }, 100)
 }, false)
