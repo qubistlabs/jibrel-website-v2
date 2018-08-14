@@ -316,23 +316,33 @@
           flex-shrink: 0;
           display: inline-block;
           height: 44px;
-          border: 1px solid #fff;
-          color: #fff;
+          background-color: #fff;
+          color: $base;
           width: 125px;
           border-radius: 0 3px 3px 0;
           transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
           font-weight: 600;
           font-size: 13px;
           text-align: center;
+          position: relative;
 
           &:hover {
             color: $light-blue;
-            border-color: $light-blue;
           }
 
           &:active {
             color: rgba($light-blue, 0.5);
-            border-color: rgba($light-blue, 0.5);
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -13px;
+            width: 1px;
+            height: 26px;
+            background-color: rgba($base, 0.1);
           }
         }
 
