@@ -1,0 +1,6 @@
+{{#is link '!=' ''}}
+<a href='{{this.link}}' class='j-button {{this.modClass}}'>{{this.text}}</a>
+{{/is}}
+{{#is attr '!=' ''}}
+<button class='j-button {{this.modClass}}' {{{this.attr}}}>{{this.text}}</button>
+{{/is}}

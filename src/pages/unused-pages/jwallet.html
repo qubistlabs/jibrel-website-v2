@@ -1,0 +1,90 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.white}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -full-screen -center-child-box -bg-cover -bg-blue _relative' style='background-image: url(/assets/img/general/bg/grid.png);'>
+    {{> SectionName/SectionName SectionName.pageJwallet}}
+    <div class='container -center-box _container-fix'>
+      <div class='preview-info -row'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jwallet}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <div class='card-tile'>
+        {{#each CardTile.projectjwallet}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -mobile-collapse-offset -mobile-bg-gray'>
+    {{> SectionName/SectionName SectionName.jwalletSection1}}
+    <div class='container _container-fix -offset-top -offset-bottom -bg-gray'>
+      <h2 class='title -text-center -box-center'>Choose a better way to manage your tokens</h2>
+      <div class='descr -text-center -box-center'>An institutional grade wallet to manage your cryptocurrencies</div>
+      <div class='card-tile -w-limit'>
+        {{#each CardTile.projectjwalletDemo}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content'>
+    <div class='container _container-fix -offset-top -offset-bottom'>
+      <h2 class='title -text-center -box-center'>jwallet is accessible on different devices</h2>
+      <div class='descr -text-center -box-center -w-limit'>The web version of the jwallet works across devices, with native iOS and Android versions coming soon</div>
+      {{> AppLinks/AppLinks AppLinks.jwallet}}
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <h2 class='title -white -text-center -box-center'>Choose a better way to manage your tokens</h2>
+      <div class='descr -white -text-center -box-center -offset-bottom'>Future is already here – manage and monitor your tokens on the move</div>
+      <div class='j-buttons -center'>
+        <a href='#' class='j-button -w-limit-180 -m-w-100 -fill-on-dark-bg'>
+          {{Icon iconName='i-device' className='icon' iconWidth='' iconHeight=''}}
+          <span class='text'>Open Web App</span>
+        </a>
+        <a href='#' class='j-button -w-limit-180 -m-w-100 -fill-disabled-on-dark-bg'><span class='text'>iOS Coming soon</span></a>
+        <a href='#' class='j-button -w-limit-180 -m-w-100 -fill-disabled-on-dark-bg'><span class='text'>Android Coming soon</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -mobile-collapse-offset -mobile-bg-gray'>
+    {{> SectionName/SectionName SectionName.jwalletSection2}}
+    <div class='container _container-fix -offset-top -offset-bottom -bg-gray -mobile-collapse-bottom-offset'>
+      <h2 class='title -text-center -box-center'>Frequently Asked Questions</h2>
+      <div class='content-faq -offset-top'>
+        {{#each ContentFaq.jwallet}}
+        {{> ContentFaq/ContentFaq}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+    <div class='container _container-fix'>
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

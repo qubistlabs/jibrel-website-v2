@@ -1,0 +1,100 @@
+.main-menu {
+  @extend ._all-reset;
+
+  display: block;
+  font-size: 0;
+  padding-top: 40px;
+  height: 100%;
+  width: 300px;
+  margin-left: auto;
+  background-color: $base;
+  position: relative;
+
+  @include to-mobile {
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  > .close {
+    position: absolute;
+    top: 40px;
+    left: -60px;
+
+    @include to-mobile {
+      right: 32px;
+      left: auto;
+      top: 27px;
+    }
+  }
+
+  > .container {
+    height: calc(100% - 158px);
+    overflow: auto;
+
+    @include to-mobile {
+      height: calc(100% - 133px);
+    }
+
+    > .box {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+
+        @include to-mobile {
+          margin-bottom: 25px;
+        }
+      }
+
+      @include to-mobile {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      > .name {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: (30/13);
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      > .item {
+        margin-bottom: 5px;
+
+        > .link {
+          transition: color 0.2s ease-in-out;
+          font-size: 13px;
+          color: rgba(#fff, 0.6);
+          line-height: (24/13);
+
+          @include to-mobile {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            display: inline-block;
+          }
+
+          &:hover {
+            color: $light-blue;
+          }
+
+          &:active {
+            color: rgba($light-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  > .button {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include to-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class='footer-menu'>
+  {{#each FooterMenu}}
+  <div class='box' {{{aosAnimation}}}>
+    {{this.link}}
+    {{#is this.link '!=' ''}}
+    <a href="{{this.link}}" class='title -link'>{{this.title}}</a>
+    {{else}}
+    <div class='title'>{{this.title}}</div>
+    {{/is}}
+    {{#each this.links}}
+    <div class='item {{modClass}}'>
+      {{#is this.link '!=' ''}}
+      <a href='{{this.link}}' class='link {{modClass}}' {{#is this.externalLink '==' 'true'}}target='_blank' {{/is}}>
+        {{this.text}}
+        {{!--{{#is this.externalLink '==' 'true'}} {{Icon iconName='i-external-link' className='icom' iconWidth='15' iconHeight='9'}} {{/is}}--}}
+      </a>
+      {{/is}}
+      {{#is this.modal '!=' ''}}
+      <button class='link js-popup-open' data-popup-id='{{this.modal}}'>{{this.text}}</button>
+      {{/is}}
+    </div>
+    {{/each}}
+  </div>
+  {{/each}}
+  <div class='box' data-aos='fade-down' data-aos-duration='1200' data-aos-delay="150">
+    <div class='title'>{{i18n_EnUS_ProjectMenu.Social}}</div>
+    {{> CircleSocial/CircleSocial}}
+  </div>
+</div>

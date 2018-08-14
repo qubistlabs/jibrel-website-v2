@@ -1,0 +1,37 @@
+
+  <div class='container -center-box _container-fix' data-aos='fade-in' data-aos-duration='900' data-aos-delay='150'>
+    <div class='project-form -w-large'>
+      <div class='container'>
+        <h2 class='title -white'>{{title}}</h2>
+        <form action='https://app.jnode.network/feedback' method='POST' class='form' data-event='{{event}}'>
+          <input type='hidden'>
+          <input type='hidden' name='form-name' value='{{formName}}'>
+          <label class='item'>
+            <input type='text' class='field -input -white' name='full-name' required>
+            <span class='label -white'>{{textContent.name}}</span>
+          </label>
+          <label class='item'>
+            <input type='email' class='field -input -white' name='email' required>
+            <span class='label -white'>{{textContent.email}}</span>
+          </label>
+          <label class='item'>
+              <textarea class='field -textarea -white' name='message' required></textarea>
+              <span class='label -white'>{{textContent.message}}</span>
+            </label>
+          <div class='button'>
+            <button class='j-button -fill-on-gray-bg -w100 js-send-form'><span class='text'>{{textContent.button}}</span></button>
+          </div>
+          <div class='message -success'>
+            {{Icon iconName='smiley-smile' className='icon' iconWidth='60' iconHeight='60'}}
+            <div class='title'>{{textContent.successTitle}}</div>
+            <div class='message'>{{textContent.seccessMsg}}</div>
+          </div>
+          <div class='message -error'>
+            {{Icon iconName='smiley-frown' className='icon' iconWidth='60' iconHeight='60'}}
+            <div class='title'>{{textContent.errorTitle}}</div>
+            <div class='message'>{{textContent.errorMsg}}</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

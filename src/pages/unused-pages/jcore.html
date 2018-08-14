@@ -1,0 +1,80 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.color}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    {{> SectionName/SectionName SectionName.pageJcore}}
+    <div class='container -center-box _container-fix'>
+      <div class='preview-info -row'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jcore}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center'>What is Jibrel Core</h2>
+      <p class='descr -text-center -box-center'>Jibrel Core is a fully scalable, easy to configure, enterprise-grade blockchain solution. Designed specifically for Financial Services, Core allows Banks and Non-bank Financial Institutions to build their own private and permissioned ledgers that can interface with other public blockchains.</p>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top'>
+    <div class='container _container-fix'>
+      <div class='card-tile -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.jCoreRowOne}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center -offset-bottom'>Use Cases</h2>
+      <div class='card-tile -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.jCoreUseCase}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <h2 class='title -small -white -text-center -box-center'>Core is a fully scalable, easy to configure, enterprise-grade blockchain solution</h2>
+      <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.jCoreRowTwo}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -text-center -box-center'>Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
+      <div class='partners-card -offset-top swiper-container'>
+        {{> PartnersCard/PartnersCard}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+    <div class='container _container-fix'>
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

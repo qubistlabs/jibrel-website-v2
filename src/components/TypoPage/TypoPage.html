@@ -1,0 +1,25 @@
+<div class='typo-page'>
+
+    <div class='header'>
+      <h1 class='title {{#is data '!=' 'false'}}-offset-right{{/is}}'>{{title}}</h1>
+      {{#is data '!=' 'false'}}
+      <div class='data'>
+        <div class='button _mobile-hide'> 
+          {{{data}}}
+        </div>
+        {{#is date '!=' ''}}
+        <div class='date'>{{Icon iconName='i-calendar' className='icon' iconWidth='' iconHeight=''}} Effective date: April 16, 2018</div>
+        {{/is}}
+      </div>
+      {{/is}}
+    </div>
+
+    {{#is jobInfo '==' 'true'}}
+    {{> JobInfo/JobInfo JobInfo.vacanciesPage}}
+    {{/is}}
+
+    <div class='wysiwyg'>
+      {{{wysiwyg}}}
+    </div>
+
+</div>

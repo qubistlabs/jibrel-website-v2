@@ -1,0 +1,34 @@
+.tabs-content {
+  position: relative;
+
+  @include to-mobile {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  > .tab {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
+    @include hid;
+
+    &.-active {
+      height: auto;
+      overflow: auto;
+      position: static;
+
+      @include vis;
+    }
+
+    > .img {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+  }
+}

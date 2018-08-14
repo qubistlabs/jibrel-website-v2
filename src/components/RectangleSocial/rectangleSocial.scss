@@ -1,0 +1,69 @@
+.rectangle-social {
+  font-size: 0;
+
+  > .link {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 10px;
+    border-radius: 3px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.-facebook {
+      background-color: #09349b;
+
+      &:hover {
+        box-shadow: 0 3px 6px rgba(#09349b, 0.35);
+      }
+
+      &:active {
+        background-color: #072b83;
+        box-shadow: 0 3px 6px transparent;
+      }
+    }
+
+    &.-twitter {
+      background-color: #1da1f3;
+
+      &:hover {
+        box-shadow: 0 3px 6px rgba(#00c1ff, 0.35);
+      }
+
+      &:active {
+        background-color: #1891dd;
+        box-shadow: 0 3px 6px transparent;
+      }
+    }
+
+    &.-linkedin {
+      background-color: #2e92b7;
+
+      &:hover {
+        box-shadow: 0 3px 6px rgba(#2e92b7, 0.35);
+      }
+
+      &:active {
+        background-color: #2383a7;
+        box-shadow: 0 3px 6px transparent;
+      }
+    }
+
+    > .icon {
+      display: inline-block;
+      vertical-align: middle;
+      fill: #fff;
+    }
+
+    > .text {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+    }
+  }
+}

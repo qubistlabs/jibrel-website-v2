@@ -1,0 +1,121 @@
+.news-preview {
+  @extend ._all-reset;
+
+  @include from-mobile {
+    width: calc(100% + 42px);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -21px;
+  }
+
+  > .item {
+    box-sizing: border-box;
+
+    @include from-mobile {
+      margin-bottom: 50px;
+      padding-left: 21px;
+      padding-right: 21px;
+      width: 33.333%;
+    }
+
+    @include to-mobile {
+      margin-bottom: 20px;
+    }
+
+    > .box {
+      height: 100%;
+      display: block;
+      border-radius: 0 0 3px 3px;
+      background-color: #fff;
+
+      &.-border {
+        border: 2px solid #f5f6fa;
+        border-top-width: 0;
+      }
+
+      @include to-mobile {
+        background-color: #fff;
+      }
+
+      > .pic {
+        height: 245px;
+        overflow: hidden;
+        border-radius: 3px 3px 0 0;
+
+        @include to-mobile {
+          height: 180px;
+        }
+
+        > .img {
+          width: 360px;
+          margin-left: -1px;
+          margin-top: -1px;
+
+          @include to-mobile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      > .body {
+        padding: 35px 40px;
+
+        @include to-mobile {
+          padding: 15px 20px;
+        }
+
+        > .date {
+          font-size: 13px;
+          line-height: (24/13);
+          color: $base-o;
+
+          @include ls(10);
+        }
+
+        > .title {
+          font-size: 16px;
+          color: $base;
+          line-height: (30/16);
+          margin-top: 10px;
+          font-weight: 600;
+          transition: color 0.2s ease-in-out;
+
+          @include to-mobile {
+            font-size: 14px;
+          }
+        }
+
+        > .descr {
+          margin-top: 15px;
+          font-size: 13px;
+          line-height: (24/13);
+          color: $base-o;
+
+          @include ls(10);
+        }
+      }
+
+      &:hover {
+        > .body {
+          > .title {
+            color: $light-blue;
+          }
+        }
+      }
+
+      &:active {
+        > .body {
+          > .title {
+            color: rgba($light-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

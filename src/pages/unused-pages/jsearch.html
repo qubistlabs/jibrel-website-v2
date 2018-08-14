@@ -1,0 +1,82 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.home}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.color}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -full-screen -center-child-box -bg-gray-gradient -bg-cover -bg-gexagrid' style='background-image: url(/assets/img/general/bg/gexagrid-2x.png);'>
+    {{> SectionName/SectionName SectionName.pageJsearch}}
+    <div class='container -center-box _container-fix'>
+      <div class='preview-info -row'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.jsearch}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-gray'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center'>What is Jibrel Search?</h2>
+      <p class='descr -text-center -box-center'>Search is Jibrel’s enterprise-grade block explorer solution. Users can easily search and validate blockchain transactions, as well as smart contract data, on the Ethereum blockchain.</p>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top'>
+    <div class='container _container-fix'>
+      <div class='card-tile -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.jCoreRowOne}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    {{> SectionName/SectionName SectionName.jsearchSection1}}
+    <div class='container -offset-top -offset-bottom -bg-gray _container-fix'>
+      <h2 class='title -text-center -box-center'>Why Jibrel Search</h2>
+      <p class='descr -text-center -box-center'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Lorem dolor sit amet, consectetu incididunt ut labore et dolore magna aliqua. </p>
+      <div class='chess-content -offset-top'>
+        {{#each ChessContent.jsearch}}
+        {{> ChessContent/ChessContent}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    <div class='container _container-fix'>
+      <h2 class='title -small -white -text-center -box-center'>Search is Jibrel’s official block explorer, custom built for business analytics, financial audits and compliance reporting</h2>
+      <div class='card-tile -offset-top -inner-border-vertical -inner-border-white'>
+        {{#each CardTile.jCoreRowTwo}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -text-center -box-center'>Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe</p>
+      <div class='partners-card -offset-top swiper-container'>
+        {{> PartnersCard/PartnersCard}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-cover -mobile-bg-blue' style='background-image: url(/assets/img/general/bg/form.jpg);'>
+    <div class='container _container-fix'>
+      {{> ProjectForm/ProjectForm ProjectForm.base}}
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

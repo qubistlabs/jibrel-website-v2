@@ -1,0 +1,135 @@
+/* stylelint-disable */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+/* stylelint-enable */
+html {
+  font-family: sans-serif;
+  // min-height: 100%;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  // overflow-y: scroll;
+}
+
+body {
+  color: $base;
+  min-height: 100%;
+  line-height: (20/14);
+  margin: 0;
+  overflow-x: hidden;
+
+  @include font;
+
+  @include from-mobile {
+    min-width: 1150px;
+  }
+
+  &.-scroll-lock {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* Global style */
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+._relative {
+  position: relative;
+}
+
+._mobile-hide {
+  @include to-mobile {
+    display: none;
+  }
+}
+
+._mobile-visible {
+  @include from-mobile {
+    display: none;
+  }
+}
+
+._container-fluid,
+._container-fix,
+._container-fix-small {
+  margin-left: auto;
+  margin-right: auto;
+  width: $inner-width;
+
+  @media (max-width: 1475px) {
+    width: calc(100% - 60px);
+  }
+}
+
+._container-fix {
+  max-width: $limit-inner-width-normal;
+}
+
+._container-fix-small {
+  max-width: 1045px;
+}
+
+._main {
+  min-height: 100vh;
+}
+
+._all-reset {
+  all: initial;
+  color: $base;
+
+  @include font;
+}
+
+._v-center {
+  display: inline-block;
+  vertical-align: middle;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+}

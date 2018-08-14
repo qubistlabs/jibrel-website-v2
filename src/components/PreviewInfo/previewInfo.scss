@@ -1,0 +1,259 @@
+.preview-info {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+
+  &.-closed-perimeter {
+    overflow: hidden;
+  }
+
+  &.-mobile-offset {
+    @include to-mobile {
+      padding-bottom: 7%;
+    }
+  }
+
+  &.-row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+    position: relative;
+
+    @include from-mobile {
+      &.-inner {
+        padding-left: 95px;
+        box-sizing: border-box;
+        padding-top: 65px;
+        padding-bottom: 65px;
+
+        &.-reverse {
+          flex-direction: row-reverse;
+          padding-left: 0;
+          padding-right: 55px;
+        }
+      }
+    }
+
+    @include to-mobile {
+      height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 70px;
+      box-sizing: border-box;
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &.-inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+      }
+
+      &.-mobile-offset-top-collapse {
+        padding-top: 0;
+      }
+
+      &.-mobile-offset-bottom-collapse {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  > .text {
+    &.-up-visual-center {
+      @include from-mobile {
+        padding-bottom: 70px;
+      }
+    }
+
+    > .title,
+    > .descr {
+      &.-text-center {
+        text-align: center;
+      }
+    }
+
+    > .title {
+      line-height: (48/36);
+      font-size: 32px;
+      font-weight: normal;
+      color: $base;
+
+      @include ls(25);
+
+      &.-white {
+        color: #fff;
+      }
+
+      &.-neighbor-img {
+        @include from-mobile {
+          padding-right: 20px;
+        }
+      }
+
+      @include to-mobile {
+        font-size: 16px;
+      }
+    }
+
+    > .descr {
+      font-size: 18px;
+      line-height: (24/14);
+      max-width: 930px;
+      width: 100%;
+      margin-top: 33px;
+      color: $base-o;
+
+      &.-white {
+        color: rgba(#fff, 0.6);
+      }
+
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.-medium-size {
+        max-width: 700px;
+      }
+
+      &.-small-size {
+        max-width: 320px;
+      }
+
+      &.-small-text {
+        font-size: 14px;
+      }
+
+      @include to-mobile {
+        margin-top: 20px;
+        font-size: 13px;
+      }
+    }
+
+    > .btns {
+      padding-top: 40px;
+
+      @include to-mobile {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  > .picture {
+    @include from-mobile {
+      padding-left: 30px;
+    }
+
+    @include to-mobile {
+      margin-bottom: 30px;
+    }
+
+    > .img {
+      max-width: 100%;
+      position: relative;
+
+      &.-jwallet-note {
+        @include from-mobile {
+          right: 20px;
+        }
+      }
+
+      &.-jwallet-phone {
+        position: absolute;
+        top: 16%;
+        right: -33px;
+      }
+
+      &.-jcash-desk {
+        left: -124px;
+      }
+
+      &.-jcash-keyboard {
+        position: absolute;
+        top: 80%;
+        left: 160px;
+      }
+
+      &.-enterprise-left,
+      &.-enterprise-right {
+        width: 435px;
+        height: 482px;
+
+        @include from-mobile {
+          position: relative;
+          margin-top: -30px;
+          margin-bottom: -120px;
+        }
+
+        @include to-mobile {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &.-enterprise-left {
+        @include from-mobile {
+          // top: 50px;
+          left: -30px;
+        }
+      }
+
+      &.-enterprise-right {
+        @include from-mobile {
+          // top: 50px;
+          right: -30px;
+        }
+      }
+
+      @include to-mobile {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  > .text,
+  > .picture {
+    &.-w40,
+    &.-w50 {
+      @include from-mobile {
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    &.-w40 {
+      @include from-mobile {
+        width: 40%;
+      }
+    }
+
+    &.-w50 {
+      @include from-mobile {
+        width: 50%;
+      }
+    }
+  }
+
+  &.-reverse {
+    > .picture {
+      padding-left: 0;
+
+      @include from-mobile {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  > .form {
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+}

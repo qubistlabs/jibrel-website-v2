@@ -1,0 +1,28 @@
+EnterpriseSolution: {
+  title: 'A Complete Enterprise Solution',
+  description: 'Jibrel is being used by companies and governments to build the financial networks of the future. Our enterprise offering meets the highest standards in technology and compliance.',
+  card_1: {
+    title: 'Instant Settlement',
+    description: 'Settle transactions in minutes not days, across industries and use-cases.',
+  },
+  card_2: {
+    title: 'KYC / AML Compliant',
+    description: 'Remain compliant on-chain. Jibrel provides plug-and-play KYC / AML.',
+  },
+  card_3: {
+    title: 'Increased Transparency',
+    description: 'Provide complete visibility and oversight using blockchain technology.',
+  },
+  card_4: {
+    title: 'Reduced Overhead',
+    description: 'Significantly reduce cost through increased automation and reduced manual involvement.',
+  },
+  card_5: {
+    title: 'Perfect Traceability',
+    description: 'Track assets and liabilities in greater detail - across users, geographies, and workflows.',
+  },
+  card_6: {
+    title: 'Legacy Compatible',
+    description: 'Integration with legacy systems is simple. No blockchain expertise required.',
+  },
+}

@@ -1,0 +1,37 @@
+<div class='project-form'>
+  <div class='container {{modClassContainer}}'>
+    <h2 class='title {{modClassTitle}}'>{{title}}</h2>
+    <form action='' class='form' autocomplete="off">
+      {{#each fields}}
+      {{#is uploadFile '==' ''}}
+      <label class='item'>
+      {{else}}
+      <div class='item'>
+      {{/is}}
+        {{#is label '!=' ''}}
+        <p class='label {{modClassField}}'>{{this.label}}</p>
+        {{/is}}
+        {{#is fieldType '==' '-input'}}
+        <input type='{{this.type}}' class='field -input {{modClassField}} {{this.uploadFile.uploadClass}}' placeholder="{{placeholder}}" required>
+        {{#is uploadFile '!=' ''}}
+        <label class='upload {{this.uploadFile.modClass}}'>
+          <input type='file' class='field'>
+          <span class='label'>{{this.uploadFile.title}}</span>
+        </label>
+        {{/is}}
+        {{/is}}
+        {{#is fieldType '==' '-textarea'}}
+        <textarea class='field -textarea {{modClassField}}' placeholder="{{placeholder}}" required></textarea>
+        {{/is}}
+        {{#is uploadFile '==' ''}}
+      </label>
+      {{else}}
+      </div>
+      {{/is}}
+      {{/each}}
+      <div class='button'>
+        <button class='j-button {{modClassButton}} -w100 js-send-form'><span class='text'>{{textButton}}</span></button>
+      </div>
+    </form>
+  </div>
+</div>

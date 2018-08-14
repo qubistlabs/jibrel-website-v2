@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+    
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Group_9544" data-name="Group 9544" transform="translate(10312 -4410)">
+    <circle id="Ellipse_1312" data-name="Ellipse 1312" class="cls-1" cx="12" cy="12" r="12" transform="translate(-10312 4410)"/>
+    <path id="iconmonstr-medium-1" class="cls-2" d="M1.525,5.083a.5.5,0,0,0-.162-.42L.162,3.216V3H3.891L6.773,9.321,9.306,3h3.554v.216L11.834,4.2a.3.3,0,0,0-.114.288v7.233a.3.3,0,0,0,.114.288l1,.984v.216H7.793v-.216l1.039-1.009c.1-.1.1-.132.1-.288V5.851L6.046,13.186h-.39L2.294,5.851v4.916a.678.678,0,0,0,.186.564L3.83,12.97v.216H0V12.97l1.351-1.639a.653.653,0,0,0,.174-.564V5.083Z" transform="translate(-10306.5 4414)"/>
+  </g>
+</svg>

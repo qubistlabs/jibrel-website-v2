@@ -1,0 +1,90 @@
+.select-language {
+  position: relative;
+  margin-right: 40px;
+
+  &.-in-header {
+    @include to-mobile {
+      display: none;
+    }
+  }
+
+  > .toggle {
+    > .current {
+      @include ls(50);
+
+      font-size: 11px;
+      font-weight: 600;
+
+      &.-color {
+        color: $base;
+      }
+
+      &.-white {
+        color: #fff;
+      }
+    }
+
+    > .icon {
+      margin-left: 7px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(-1px);
+      opacity: 0.3;
+      transition: opacity 0.2s ease-in-out;
+
+      &.-color {
+        stroke: $base;
+      }
+
+      &.-white {
+        stroke: #fff;
+      }
+    }
+
+    &:hover {
+      > .icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  > .hide {
+    background-color: #fff;
+    position: absolute;
+    top: -14px;
+    width: 110px;
+    left: 50%;
+    margin-left: -55px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
+    @include hid;
+
+    &.-active {
+      @include vis;
+    }
+
+    > .item {
+      display: block;
+      width: 100%;
+      font-size: 11px;
+      transition: color 0.2s ease-in-out;
+      color: $base;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: (15/11);
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @include ls(50);
+
+      &:hover,
+      &.-current {
+        color: $blue;
+      }
+    }
+  }
+}

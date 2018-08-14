@@ -1,0 +1,16 @@
+{{#each TeamList}}
+<div class='item'>
+  <div class='avatar'>
+    <img src='/assets/img/general/team/{{img}}' srcset='/assets/img/general/team/{{img2x}} 2x' alt='{{name}} | {{position}}' class='img'>
+  </div>
+  <div class='name'>{{name}}</div>
+  <div class='position'>{{position}}</div>
+</div>
+{{/each}}
+<a href='#' class='item -action'>
+  <div class='avatar'>
+    <div class='add'></div>
+  </div>
+  <div class='name -color-blue'>Join the team!</div>
+  <div class='position -color-blue'>Apply Now</div>
+</a>

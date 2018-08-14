@@ -1,0 +1,4 @@
+LinkLanguageVersion: {
+  jwallet: 'https://jwallet.network/ko.html',
+  jcash: 'https://jcash.network'
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Senior_QA_Automation_Engineer_iOS}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Senior QA Automation Engineer (iOS)</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}Saint-Petersburg, Russia</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Jibrel is looking for a Senior iOS QA Automation Engineer to join its Saint Petersburg office. Jibrel's Senior iOS QA Automation Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different iOS devices and versions.</p>
+            <h2>Role & Responsibilities</h2>
+            <ul>
+              <li>Analysis of system requirements and producing testing specifications from systems requirements;</li>
+              <li>Design and create test plans/test scenarios;</li>
+              <li>Contribute to the development and enhancement of automation frameworks;</li>
+              <li>Develop iOS UI test automation scenarios and code using tools such as, but not limited to Appium, Selenium, Cucumber;</li>
+              <li>Develop API test automation and tools using Python/JavaScript;</li>
+              <li>Develop, maintain, and execute automated test scripts maximizing reuse of test assets;</li>
+              <li>Participate in analysis on whether features or functions should be automated;</li>
+              <li>Create and manufacture test data needed for execution or database population;</li>
+              <li>Perform exploratory testing in cases where automation is not feasible;</li>
+              <li>Communicate effectively and continuously with QA, Development, and Business team members within an Agile/Scrum team environment;</li>
+              <li>Monitor, consolidate, analyze, debug, and communicate automation test results;</li>
+              <li>Provide vision and direction to the evolution of organization wide automation strategy;</li>
+            </ul>
+
+            <h2>Requirements</h2>
+            <ul>
+              <li>At least 3+ years of mobile applications testing (iOS)</li>
+              <li>Excellent knowledge of iOS mobile platforms capabilities and key differences from the user and QA perspective</li>
+              <li>Knowledge of mobile applications development principals (platform specifics, development tools, testing and profiling tools, app stores distribution)</li>
+              <li>Communication with internal development teams regarding requirements clarifications and quality expectations</li>
+              <li>Ability to work on the minimal supervision level</li>
+              <li>Knowledge of English, sufficient for communication with English-speaking colleagues</li>
+              <li> Experience in Blockchain Technology, Security Testing or Load Testing, a plus</li>
+            </ul>
+
+            <h2>Compensation & Benefits</h2>
+            <ul>
+              <li>Permanent contract (RF Labor Codex), 100% White Salary</li>
+              <li>Competitive salary based on work experience</li>
+              <li>Generous bonuses (cash, equity and tokens)</li>
+              <li>Flexible working hours and option to work remotely</li>
+              <li>Option to work from other offices (Zug, New York, Saint Petersburg, Dubai)</li>
+              <li>Generous relocation package, based on location</li>
+              <li>Health Benefits (Medical Insurance)</li>
+              <li>Latest and greatest Macbook Pro</li>
+              <li>Introduction to blockchain from scratch</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

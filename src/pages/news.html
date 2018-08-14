@@ -1,0 +1,32 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.news}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -offset-page -offset-bottom -bottom-separator -bg-gray'>
+    {{> SectionName/SectionName SectionName.press}}
+    <div class='container _container-fix'>
+      <div class='news-preview'>
+        {{#each NewsPreview.previewPage}}
+        {{> NewsPreview/NewsPreview}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+    {{> ProjectForm/BaseForm/BaseForm ProjectForm.baseForm.mediaAndPR}}
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

@@ -1,0 +1,21 @@
+ProjectMenu: {
+  menu: '메뉴',
+  Products: '제품',
+  Enterprise: '엔터프라이즈',
+  Jwallet: 'Jwallet',
+  Jcash: 'Jcash',
+  Company: '기업',
+  AboutUs: '기업 정보',
+  AboutJibrel: 'Jibrel에 대하여',
+  PressMedia: '뉴스 및 미디어',
+  Careers: '인재모집',
+  Contact: '연락',
+  ContactUs: '연락하기',
+  GetInTouch: '연락하기',
+  Facebook: '페이스북',
+  Twitter: '트위터',
+  Linkedin: '링크드인',
+  Medium: '미디엄',
+  Social: '소셜',
+  SignIn: '로그인'
+}

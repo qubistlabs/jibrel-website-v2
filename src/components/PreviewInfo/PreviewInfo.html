@@ -1,0 +1,21 @@
+<div class='text {{this.modClassText}}'>
+  <h2 class='title {{this.modClassTitle}} {{#is img '!=' ''}}-neighbor-img{{/is}}' {{{this.aosAnimationTitle}}}>{{{this.title}}}</h2>
+  <div class='descr {{{this.modClassDescr}}}' {{{this.aosAnimationDescr}}}>{{{this.descr}}}</div>
+  {{#is buttonText '!=' ''}}
+  <div class='btns' {{{this.aosAnimationBtn}}}>
+    <a href='{{buttonLink}}' class='j-button {{buttonClass}}'><span class='text'>{{buttonText}}</span></a>
+  </div>
+  {{/is}}
+</div>
+{{#is img '!=' ''}}
+<div class='picture'>
+  <img src='{{img}}' {{#is img2x '!=' ''}}srcset='{{img2x}}'{{/is}} class='img {{modClassImg}}' {{{this.aosAnimationImg}}} alt='{{this.title}}'>
+</div>
+{{/is}}
+{{#is images '!=' ''}}
+<div class='picture'>
+  {{#each images}}
+  <img src='{{img}}' {{#is img2x '!=' ''}}srcset='{{img2x}}'{{/is}} {{#is size '!=' ''}}width='{{size.w}}' height='{{size.h}}'{{/is}} class='img {{modClassImg}}' {{{this.aosAnimationImg}}} alt='/'>
+  {{/each}}
+</div>
+{{/is}}

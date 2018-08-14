@@ -1,0 +1,125 @@
+.content-faq {
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include from-mobile {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &.-offset-top {
+    margin-top: 40px;
+
+    @include to-mobile {
+      margin-top: 30px;
+
+      &.-mobile-collapse-offset {
+        margin: 0;
+      }
+    }
+  }
+
+  > .item {
+    border-bottom: 1px solid rgba($base, 0.1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include to-mobile {
+      width: calc(100% + 60px);
+      margin-left: -30px;
+      padding: 20px 30px;
+      box-sizing: border-box;
+
+      &:first-child {
+        border-top: 1px solid rgba($base, 0.1);
+      }
+    }
+
+    > .toggle {
+      cursor: pointer;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 12px;
+        height: 2px;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        margin-top: -1px;
+        transition: transform 0.2s ease-in-out;
+        background-color: #bcc3ce;
+      }
+
+      &::after {
+        transform: rotate(-90deg) scaleX(1);
+      }
+
+      &.-active {
+        &::after {
+          transform: rotate(-90deg) scaleX(0);
+        }
+      }
+
+      > .question {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: (30/16);
+        transition: color 0.2s ease-in-out;
+        padding-right: 25px;
+
+        @include to-mobile {
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        > .question {
+          color: $light-blue;
+        }
+      }
+
+      &:active {
+        user-select: none;
+
+        > .question {
+          color: rgba($light-blue, 0.5);
+        }
+      }
+    }
+
+    > .box {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.4s ease-in-out;
+      will-change: height;
+
+      > .answer {
+        font-size: 14px;
+        color: $base-o;
+        line-height: (28/14);
+        padding-top: 25px;
+        padding-bottom: 10px;
+
+        @include ls(10);
+
+        @include to-mobile {
+          font-size: 13px;
+        }
+        /* stylelint-disable */
+        p {
+          &:not(:last-child) {
+            padding-bottom: 26px;
+
+            @include to-mobile {
+              padding-bottom: 17px;
+            }
+          }
+        }
+        /* stylelint-enable */
+      }
+    }
+  }
+}

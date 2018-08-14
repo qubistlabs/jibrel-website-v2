@@ -1,3 +1,5 @@
 {
-  "extends": ["stylelint-config-jibrel"]
+  "extends": [
+    "stylelint-config-jibrelnetwork"
+  ]
 }

@@ -1,0 +1,107 @@
+.list-vacancies {
+  padding: 80px 100px 0 100px;
+
+  @include to-mobile {
+    padding: 0;
+  }
+
+  &.-small-offset {
+    padding: 50px 100px 50px 100px;
+
+    @include to-mobile {
+      padding: 0;
+    }
+  }
+
+  > .title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: (48/36);
+    margin-bottom: 63px;
+
+    @include to-mobile {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+
+  > .item {
+    padding-bottom: 45px;
+    display: block;
+
+    &:last-child {
+      padding-bottom: 25px;
+    }
+
+    @include to-mobile {
+      padding-bottom: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+      border-bottom: 1px solid rgba($base, 0.08);
+
+      @include to-mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    > .header {
+      @include from-mobile {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      > .position {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: (30/16);
+        color: $base;
+        transition: color 0.2s ease-in-out;
+
+        @include from-mobile {
+          padding-right: 30px;
+        }
+
+        @include to-mobile {
+          margin-bottom: 8px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    > .body {
+      margin-top: 15px;
+
+      @include to-mobile {
+        margin-top: 10px;
+      }
+
+      > .descr {
+        font-size: 13px;
+        line-height: (24/13);
+        color: $base-o;
+      }
+    }
+
+    &:hover {
+      > .header {
+        > .position {
+          color: $light-blue;
+        }
+      }
+    }
+
+    &:active {
+      > .header {
+        > .position {
+          color: $h-light-blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.support-box {
+  @extend ._all-reset;
+
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 85px;
+  position: relative;
+
+  @include to-mobile {
+    padding-top: 50px;
+  }
+
+  @include from-mobile {
+    padding-bottom: 100px;
+    margin-top: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% - 200px);
+      height: 1px;
+      left: 100px;
+      top: 0;
+      background-color: rgba($base, 0.08);
+    }
+  }
+
+  > .descr {
+    font-size: 14px;
+    line-height: (24/14);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+
+    @include ls(10);
+  }
+
+  > .link {
+    color: $blue;
+    font-size: 24px;
+    line-height: (36/24);
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $light-blue;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.5);
+    }
+
+    @include to-mobile {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  > .button {
+    margin-top: 40px;
+    margin-bottom: 37px;
+    text-align: center;
+
+    @include to-mobile {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  > .info {
+    font-size: 13px;
+    color: $base-o;
+  }
+}

@@ -1,0 +1,39 @@
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJL4C88"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class='main-header {{modClassContainer}}'>
+  <div class='container _container-fluid {{#is openPopup '==' 'true'}}-reverce{{/is}}'>
+    {{#is openPopup '==' ''}}
+    <a href='/' class='project-logo {{modClass}}' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
+      {{Icon iconName='logo-icon' className='icon' iconWidth='' iconHeight=''}}
+      {{Icon iconName='logo-text' className='text' iconWidth='' iconHeight=''}}
+    </a>
+    {{/is}}
+    <div class='actions' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
+      {{#is openPopup '==' ''}}
+      <div class='select-language -in-header'>
+        <button class='toggle'>
+          <span class='current {{modClass}}'>ENGLISH</span>
+          <svg class='icon {{modClass}}' width='7.5px' height='4.5px'><use xlink:href='#i-che-b'></use></svg>
+        </button>
+        {{> SelectLanguage/SelectLanguage}}
+      </div>
+      {{/is}}
+
+      <button class='popup-toggle {{modClass}} {{popUpClass}}' {{#is popUpId '!=' ''}}data-popup-id='{{this.popUpId}}'{{/is}}>
+        {{#is openPopup '==' ''}}
+        <span class='text'>{{textContent.menu}}</span>
+        {{Icon iconName='i-menu' className='icon -mobile-hide' iconWidth='' iconHeight=''}}
+        <div class='hamburger'></div>
+        {{else}}
+        {{!--<span class='text'>{{textContent.close}}</span>--}}
+        {{Icon iconName='i-cross' className='cross' iconWidth='' iconHeight=''}}
+        {{/is}}
+      </button>
+    </div>
+
+  </div>
+</header>

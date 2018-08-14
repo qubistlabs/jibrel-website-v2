@@ -1,0 +1,86 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.enterprise}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.white}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <section class='section-content -full-screen -center-child-box -bg-black-gradient'>
+    {{> SectionName/SectionName SectionName.pageEnterprise}}
+    <div class='container -center-box _container-fix'>
+      <div class='preview-info -mobile-offset'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_JibrelIntegratable.title}}</h2>
+      <div class='card-tile -offset-top -inner-border-vertical -inner-border-gray'>
+        {{#each CardTile.homeData22}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -mobile-bg-gray'>
+    <div class='container _container-fix -bg-gray -offset-top -offset-bottom'>
+      <h2 class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_EnterpriseSolution.title}}</h2>
+      <h2 class='descr -text-center -box-center' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">{{i18n_EnUS_EnterpriseSolution.description}}</h2>
+      <div class='card-tile'>
+        {{#each CardTile.compliteEterpriseSolution}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom'>
+    <div class='container _container-fix'>
+      <p class='title -text-center -box-center' data-aos="fade-in" data-aos-duration="600" data-aos-delay="150">{{i18n_EnUS_PartnersData.title}}</p>
+      <div class='partners-card -offset-top swiper-container' data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
+        {{> PartnersCard/PartnersCard}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
+    <div class='container -center-box _container-fix -bg-gray'>
+      <div class='preview-info -row -inner -mobile-offset-bottom-collapse -closed-perimeter'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise1}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
+    <div class='container -center-box _container-fix -bg-gray'>
+      <div class='preview-info -row -inner -reverse -mobile-offset-top-collapse -closed-perimeter'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise2}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -center-child-box -offset-bottom -mobile-bg-gray'>
+    <div class='container -center-box _container-fix -bg-gray'>
+      <div class='preview-info -row -inner -mobile-offset-top-collapse -closed-perimeter'>
+        {{> PreviewInfo/PreviewInfo PreviewInfo.enterprise3}}
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -offset-top -offset-bottom -bg-dark'>
+      {{> ProjectForm/BaseForm/BaseForm ProjectForm.baseForm.productAndSale}}
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
