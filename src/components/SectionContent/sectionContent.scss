@@ -154,9 +154,14 @@
       position: absolute;
       z-index: -1;
       background-color: $base;
-      width: 100%;
-      left: 0;
+      width: 300px;
       right: 0;
+      top: 0;
+      left: auto;
+
+      @include to-mobile {
+        width: 100%;
+      }
     }
   }
 
