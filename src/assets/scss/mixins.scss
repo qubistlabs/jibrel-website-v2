@@ -16,11 +16,11 @@
 }
 
 @mixin bg-blue-gradient {
-  background: linear-gradient(to bottom, #3366cb 0%, #0342be 100%);
+  background: linear-gradient(45deg, rgba(0, 59, 198, 1) 0%, rgba(0, 49, 155, 1) 100%);
 }
 
 @mixin bg-black-gradient {
-  background: linear-gradient(to bottom, #3b3c3d 0%, #000103 100%);
+  background: linear-gradient(45deg, rgba(15, 27, 56, 1) 0%, rgba(15, 27, 56, 1) 100%);
 }
 
 @mixin bg-light-blue {

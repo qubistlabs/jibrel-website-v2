@@ -438,7 +438,7 @@
       &.-inner-border-vertical,
       &.-inner-border-separator {
         > .item {
-          border-color: #dcdee5;
+          border-color: rgba($base, 0.1);
         }
       }
 
@@ -453,7 +453,7 @@
       > .item {
         &:not(:last-child) {
           padding-bottom: 40px;
-          border-bottom: 1px solid #dcdee5;
+          border-bottom: 1px solid rgba($base, 0.1);
         }
       }
     }
