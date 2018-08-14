@@ -1,0 +1,23 @@
+.ya-share2__container_size_m {
+  .ya-share2__item {
+        margin: 5px 10px 5px 0 !important;;
+  }
+  .ya-share2__badge {
+    border-radius: 3px;
+  }
+  .ya-share2__icon {
+    width: 68px !important;
+    background-repeat: no-repeat !important;
+    padding: 4px 25px;
+    &:after {
+      content: 'SHARE';
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+    }
+  }
+
+}

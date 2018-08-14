@@ -25,9 +25,10 @@
     }
 
     > .icon {
-      margin-left: 15px;
+      margin-left: 7px;
       display: inline-block;
       vertical-align: middle;
+      transform: translateY(-1px);
       opacity: 0.3;
       transition: opacity 0.2s ease-in-out;
 
