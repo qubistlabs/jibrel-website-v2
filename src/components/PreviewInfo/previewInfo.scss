@@ -144,6 +144,8 @@
   }
 
   > .picture {
+    position: relative;
+
     @include from-mobile {
       padding-left: 30px;
     }
@@ -158,14 +160,14 @@
 
       &.-jwallet-note {
         @include from-mobile {
-          right: 20px;
+          right: -20px;
         }
       }
 
       &.-jwallet-phone {
         position: absolute;
-        top: 16%;
-        right: -33px;
+        top: 0;
+        right: -20px;
       }
 
       &.-jcash-desk {
@@ -174,8 +176,8 @@
 
       &.-jcash-keyboard {
         position: absolute;
-        top: 80%;
-        left: 160px;
+        top: 84%;
+        left: 116px;
       }
 
       &.-enterprise-left,

@@ -3,6 +3,7 @@
     <div class='project-form -w-large'>
       <div class='container'>
         <h2 class='title -white'>{{title}}</h2>
+         
         <form action='https://app.jnode.network/feedback' method='POST' class='form' data-event='{{event}}'>
           <input type='hidden'>
           <input type='hidden' name='form-name' value='{{formName}}'>
@@ -21,6 +22,9 @@
           <div class='button'>
             <button class='j-button -fill-on-gray-bg -w100 js-send-form'><span class='text'>{{textContent.button}}</span></button>
           </div>
+        </form>
+
+        <div class='messages'>
           <div class='message -success'>
             {{Icon iconName='smiley-smile' className='icon' iconWidth='60' iconHeight='60'}}
             <div class='title'>{{textContent.successTitle}}</div>
@@ -31,7 +35,7 @@
             <div class='title'>{{textContent.errorTitle}}</div>
             <div class='message'>{{textContent.errorMsg}}</div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>

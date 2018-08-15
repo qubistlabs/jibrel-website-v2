@@ -115,16 +115,23 @@ const validation = {
     })
   },
   messageView(form, modClass) {
-    form.querySelector(`.message${modClass}`).classList.add('-opening')
-    form.querySelector(`.message${modClass}`).classList.add('-open')
+    form.classList.add('-hide')
+    const messages = form.parentNode.querySelector('.messages').querySelector(`.message${modClass}`)
+    setTimeout(function () {
+      messages.classList.add('-opening')
+      messages.classList.add('-open')
+    }, 300)
 
     setTimeout(() => {
-      form.querySelector(`.message${modClass}`).classList.remove('-open')
+      messages.classList.remove('-open')
       $(form).find('.field').val('')
-    }, 2000)
+    }, 3000)
     setTimeout(() => {
-      form.querySelector(`.message${modClass}`).classList.remove('-opening')
-    }, 2300)
+      messages.classList.remove('-opening')
+    }, 3300)
+    setTimeout(() => {
+      form.classList.remove('-hide')
+    }, 3600)
   },
   /* eslint-enable */
   eventGTM(event) {
