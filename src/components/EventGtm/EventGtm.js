@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
+
 const host = window.location.hostname
 const path = window.location.pathname
 const title = document.querySelector('title').textContent
@@ -36,14 +39,7 @@ menuClose.addEventListener('click', () => {
 
 mainMenuLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    // e.preventDefault()
     const label = link.textContent
     menuDataSend('Menu', 'GoTo', label)
-    // const href = link.getAttribute('href')
-    // if (menuDataSend('Menu', 'GoTo', label)) {
-    //   setTimeout(function () {
-    //     document.location.pathname = href
-    //   }, 1000);
-    // }
   })
 })
