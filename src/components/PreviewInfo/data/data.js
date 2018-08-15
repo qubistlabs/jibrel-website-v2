@@ -13,7 +13,7 @@ PreviewInfo: {
   about: {
     modClassText: '',
     modClassTitle: '-color -white -text-center',
-    modClassDescr: '-color -white -text-center -box-center',
+    modClassDescr: '-color -white -text-center -box-center -medium-size',
     title: fullData => fullData.i18n_EnUS_ScreenPreview.aboutPage.title,
     descr: fullData => fullData.i18n_EnUS_ScreenPreview.aboutPage.description,
     aosAnimationTitle: 'data-aos=\'fade-up\' data-aos-duration=\'600\' data-aos-delay=\'150\'',

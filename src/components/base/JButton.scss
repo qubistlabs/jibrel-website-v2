@@ -101,12 +101,44 @@
     padding-bottom: 13px;
   }
 
+  &.-fill-on-gray-bg,
+  &.-fill-on-blue-bg {
+    background-color: #fff;
+    color: $base;
+    fill: $base;
+    cursor: pointer;
+  }
+
   &.-fill-on-gray-bg {
     box-shadow: 0 6px 12px 0 rgba(61, 79, 108, 0.08);
+
+    &:hover {
+      color: #fff;
+      fill: #fff;
+      background-color: #00c1ff;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    &:active {
+      background-color: rgba(#00c1ff, 0.75);
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.14);
+    }
   }
 
   &.-fill-on-blue-bg {
     box-shadow: 0 6px 12px 0 rgba(9, 52, 155, 0.3);
+
+    &:hover {
+      color: #fff;
+      fill: #fff;
+      background-color: #00c1ff;
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.25);
+    }
+
+    &:active {
+      background-color: rgba(#00c1ff, 0.75);
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.15);
+    }
   }
 
   &.-fill-white-on-gray-bg {
@@ -146,25 +178,6 @@
     background-color: rgba($light-blue, 0.5);
   }
 
-  &.-fill-on-gray-bg,
-  &.-fill-on-blue-bg {
-    background-color: #fff;
-    color: $base;
-    fill: $base;
-    cursor: pointer;
-
-    &:hover {
-      color: #fff;
-      fill: #fff;
-      background-color: #00c1ff;
-      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.25);
-    }
-
-    &:active {
-      background-color: rgba(#00c1ff, 0.75);
-      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.15);
-    }
-  }
   // disabled button
   &.-fill-disabled-on-dark-bg {
     color: rgba(#fff, 0.4);
