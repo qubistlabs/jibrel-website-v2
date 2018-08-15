@@ -20,7 +20,7 @@
 }
 
 @mixin bg-black-gradient {
-  background: linear-gradient(45deg, rgba(15, 27, 56, 1) 0%, rgba(15, 27, 56, 1) 100%);
+  background: linear-gradient(45deg, rgba(#3d4f6c, 1) 0%, rgba(15, 27, 56, 1) 100%);
 }
 
 @mixin bg-light-blue {
