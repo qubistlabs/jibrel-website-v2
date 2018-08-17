@@ -74,7 +74,7 @@ ProjectHead: {
       url: 'http://jibrel.network/news/how-cryptocurrencies-could-take-dollars-euros-and-.html'
     },
     Jibrel_launches_jCash_in_a_bid_to_solve_cryptocurrency_volatility_by_tokenizing_fiat: {
-      title: 'Jibrel Network - News & Media - Jibrel launches jCash in a bid to solve cryptocurrency volatility by tokenizing fiat',
+      title: 'Jibrel Network - News & Media - Jibrel launches Jcash in a bid to solve cryptocurrency volatility by tokenizing fiat',
       description: 'Cryptocurrencies are starting to become mainstream. Headline-grabbers like Bitcoin and Ethereum, along with up-and-comers like Litecoin and Dash, are increasingly attractive to consumers of all ages.',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/jibrel-launches-jcash-bid-solve-cryptocurrency-vol.html'
@@ -86,8 +86,8 @@ ProjectHead: {
       url: 'http://jibrel.network/news/jibrel-licensed-financial-intermediary-vqf.html'
     },
     Jibrel_Network_Announces_jCash_for_Regulated_Asset_Backed_Smart_Contracts: {
-      title: 'Jibrel Network - News & Media - Jibrel Network Announces jCash for Regulated, Asset-Backed Smart Contracts',
-      description: 'Jibrel Network announced on Wednesday the launch of jCash, the Jibrel Network’s first tokenized asset used to provide an auditable, fiat-backed cryptographic asset existing off-chain',
+      title: 'Jibrel Network - News & Media - Jibrel Network Announces Jcash for Regulated, Asset-Backed Smart Contracts',
+      description: 'Jibrel Network announced on Wednesday the launch of Jcash, the Jibrel Network’s first tokenized asset used to provide an auditable, fiat-backed cryptographic asset existing off-chain',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/jibrel-network-announces-jcash-regulated-asset-bac.html'
     },
@@ -99,7 +99,7 @@ ProjectHead: {
     },
     Jibrel_Network_announces_strategic_partnership_with_the_SEED_Group: {
       title: 'Jibrel Network - News & Media - Jibrel Network announces strategic partnership with the SEED Group',
-      description: 'The Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, to roll-out jCash in the UAE and MENA Region, a solution bridging the gap between cryptocurrencies and traditional markets',
+      description: 'The Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, to roll-out Jcash in the UAE and MENA Region, a solution bridging the gap between cryptocurrencies and traditional markets',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/jibrel-network-announces-strategic-partnership-see.html'
     },
@@ -110,7 +110,7 @@ ProjectHead: {
       url: 'http://jibrel.network/news/jibrel-network-bridging-gap-between-crypto-and-tra.html'
     },
     Jibrel_Network_has_now_launched_its_first_financial_asset_token_jCash: {
-      title: 'Jibrel Network - News & Media - Jibrel Network has now launched its first financial asset token, jCash',
+      title: 'Jibrel Network - News & Media - Jibrel Network has now launched its first financial asset token, Jcash',
       description: 'Will allow users to conduct real world transactions by use of blockchain and smart contracts. What started with cryptocurrencies like Bitcoin, which offered transparent, digital',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/jibrel-network-has-now-launched-its-first-financia.html'
@@ -128,7 +128,7 @@ ProjectHead: {
       url: 'http://jibrel.network/news/jibrel-network-launch-institutional-grade-alternat.html'
     },
     Jibrel_Network_launches_jCash_a_crypto_token_based_on_real_world_assets: {
-      title: 'Jibrel Network - News & Media - Jibrel Network launches jCash, a crypto token based on real world assets',
+      title: 'Jibrel Network - News & Media - Jibrel Network launches Jcash, a crypto token based on real world assets',
       description: 'One of the biggest issues many traditional investors and people have when discussing cryptocurrency is that, for the most part, it’s backed by literally nothing. While we can sit here and debate the value of things, there is',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/jibrel-network-launches-jcash-crypto-token-based-r.html'
@@ -147,7 +147,7 @@ ProjectHead: {
     },
     Sheikh_Saeed_backs_Dubai_based_cryptocurrency: {
       title: 'Jibrel Network - News & Media - Sheikh Saeed backs Dubai-based cryptocurrency',
-      description: 'The Seed Group, a group of diversified companies owned and chaired by the Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, has signed up for a pilot programme with Dubai-based Jibrel Network to develop new cryptocurrency jCash in the UAE.',
+      description: 'The Seed Group, a group of diversified companies owned and chaired by the Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, has signed up for a pilot programme with Dubai-based Jibrel Network to develop new cryptocurrency Jcash in the UAE.',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/news/sheikh-saeed-backs-dubai-based-cryptocurrency.html'
     },
