@@ -1,5 +1,11 @@
 ListVacancies: [
   {
+    link: 'public-relations-marketing-officer.html',
+    place: 'New York, USA',
+    position: 'Public Relations & Marketing Officer',
+    descr: 'Jibrel is a looking for a Public Relations & Marketing Officer to join its New York office. Jibrel\'s Public Relations & Marketing Officer will by coordinating with various technical teams to provide periodic updates on technology build-out.',
+  },
+  {
     link: 'digital-marketing-analyst.html',
     place: 'New York, USA',
     position: 'Digital Marketing Analyst',

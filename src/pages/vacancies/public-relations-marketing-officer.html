@@ -1,0 +1,86 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Community_Manager}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Public Relations & Marketing Officer</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}New York, USA</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Jibrel is a looking for a Public Relations & Marketing Officer to join its New York office. Jibrel's Public Relations & Marketing Officer will by coordinating with various technical teams to provide periodic updates on technology build-out.</p>
+
+            <h2>Role & Responsibilities</h2>
+            <ul>
+              <li>Manage online presence by coordinating with various technical teams to provide periodic updates on technology build-out</li>
+              <li>Work with management team to provide overall community updates, and coordinate with external vendors, such as public relations agencies, to coordinate and execute company's communication and public relations initiatives and outreaches</li>
+              <li>Coordinate production of various content, as needed, for company's various social marketing and public relations initiatives and outreaches</li>
+              <li>Act as the point of communication and contact for company's social engagement initiatives, including by engaging the community across various channels, including, but not limited to: BitcoinTalk, reddit, Facebook, and Twitter</li>
+              <li>Translate community feedback into actionable initiatives and projects, including through outlining requirements as needed and liaising with relevant stakeholders for initiatives and project implementation</li>
+              <li>Manage and direct company's digital marketing strategies, including company's approach to SEO,SEM, and digital advertising, and oversee outsourced and related activities</li>
+              <li>Develop and maintain an operations dashboard to periodically report key performance management metrics to company and escalating various critical issues as needed and directed by management</li>
+            </ul>
+
+            <h2>Requirements</h2>
+            <ul>
+              <li>Education: Master’s degree in Communications and a related field</li>
+              <li>Experience: 12 months in the job offered or communications related occupation</li>
+              <li>Work Hours: Monday-Friday, 9:00am-5:00pm, 40 hours per week</li>
+              <li>Must have proof of legal authority to work in US.</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

@@ -9,6 +9,6 @@ FeaturesProject: {
   },
   card_3: {
     title: 'Convenient',
-    description: 'Accessing stable tokens is simple. Exchange your volatile digital assets for stable tethered tokens by using jCash smart contracts',
+    description: 'Accessing stable tokens is simple. Exchange your volatile digital assets for stable tethered tokens by using Jcash smart contracts',
   },
 }
