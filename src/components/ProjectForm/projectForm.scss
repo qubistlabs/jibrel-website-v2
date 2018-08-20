@@ -212,9 +212,11 @@
 
             @include to-mobile {
               height: 60px;
+            }
 
+            @media (min-width: 1920px) {
               &.-fill {
-                height: 44px;
+                height: 56px;
               }
             }
 
@@ -281,6 +283,10 @@
           font-size: 13px;
           text-align: center;
           position: relative;
+
+          @media (min-width: 1920px) {
+            height: 56px;
+          }
 
           &:hover {
             color: $light-blue;
