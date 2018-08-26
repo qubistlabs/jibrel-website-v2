@@ -63,6 +63,8 @@
   }
 
   > .text {
+    flex-shrink: 0;
+
     &.-up-visual-center {
       @include from-mobile {
         padding-bottom: 70px;
@@ -161,6 +163,7 @@
       &.-jwallet-note {
         @include from-mobile {
           right: -20px;
+          margin-left: auto;
         }
       }
 
