@@ -3,10 +3,18 @@ import polyfillForEach from '../../assets/js/plugins/polyfillForEach'
 
 const popUpOpen = document.querySelectorAll('.js-popup-open')
 const popUpClose = document.querySelectorAll('.js-popup-close')
+const sectionContent = document.querySelectorAll('.section-content')
+const header = document.querySelector('.main-header')
+const footer = document.querySelector('.main-footer')
+const scrollBarSize = window.innerWidth - document.documentElement.clientWidth
+// const styleSize = `${scrollBarSize}px`
 
-// function preventDefault(e) {
-//   e.preventDefault()
-// }
+function scrollBarSizeFN(popupOpen) {
+  if (popupOpen) {
+    return `${scrollBarSize}px`
+  }
+  return 0
+}
 
 // eslint-disable-next-line  fp/no-let
 let scrolled
@@ -40,13 +48,33 @@ const popUp = {
   },
 
   disableScroll() {
-    // document.body.addEventListener('touchmove', preventDefault, { passive: false })
     window.addEventListener('scroll', stopScroll)
+    document.body.classList.add('-scroll-lock')
+    const scrollBarDisabled = scrollBarSizeFN(true)
+    sectionContent.forEach((box) => {
+      const el = box
+      // eslint-disable-next-line  fp/no-mutation
+      el.style.marginRight = scrollBarDisabled
+    })
+    // eslint-disable-next-line  fp/no-mutation
+    header.style.paddingRight = scrollBarDisabled
+    // eslint-disable-next-line  fp/no-mutation
+    footer.style.paddingRight = scrollBarDisabled
   },
 
   enableScroll() {
-    // document.body.removeEventListener('touchmove', preventDefault, { passive: false })
     window.removeEventListener('scroll', stopScroll)
+    document.body.classList.remove('-scroll-lock')
+    const scrollBarEnabled = scrollBarSizeFN(false)
+    sectionContent.forEach((box) => {
+      const el = box
+      // eslint-disable-next-line  fp/no-mutation
+      el.style.marginRight = scrollBarEnabled
+    })
+    // eslint-disable-next-line  fp/no-mutation
+    header.style.paddingRight = scrollBarEnabled
+    // eslint-disable-next-line  fp/no-mutation
+    footer.style.paddingRight = scrollBarEnabled
   },
 }
 
