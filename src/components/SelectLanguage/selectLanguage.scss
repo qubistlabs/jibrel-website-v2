@@ -12,6 +12,7 @@
     // height: 24px;
     display: block;
     font-size: 0;
+    font-family: "open sans", "arial", sans-serif;
 
     > .current {
       @include ls(50);
