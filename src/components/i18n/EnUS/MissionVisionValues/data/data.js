@@ -5,7 +5,7 @@ MissionVisionValues: {
   },
   card_2: {
     title: 'Vision',
-    description: 'Jibrel provides use-case specific blockchain infrastructure components, such as interfaces and explorers, across industries — including; financial services, healthtech and e-governance.',
+    description: 'Jibrel provides use-case specific blockchain infrastructure components, such as interfaces and explorers, across industries — including; financial services, healthtech and e-governance',
   },
   card_3: {
     title: 'Values',
