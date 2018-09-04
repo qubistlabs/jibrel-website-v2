@@ -1,0 +1,96 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Senior_QA_Automation_Engineer_Android}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Senior python developer</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}Saint-Petersburg, Russia</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Jibrel is looking for a Senior python developer to join its Saint-Petersburg office. Successful candidate will develop backend applications that interact with the different blockchains. Candidate will have diverse tasks and, in the long timeline, the opportunity to work on several products that interact with each other.</p>
+
+            <h2>Role & Responsibilities</h2>
+            <ul>
+              <li>Development of backend apps that interact with the Ethereum & Bitcoin blockchains</li>
+              <li>Development of Ethereum smart contracts</li>
+              <li>Interaction with the product & frontend & mobile teams to design backend of the products and clarify requirements</li>
+              <li>Interaction with the devops & QA teams to deploy and assure quality of the products</li>
+            </ul>
+
+            <h2>Requirements</h2>
+            <ul>
+              <li>At least 5+ years of python development</li>
+              <li>Excellent knowledge of python 3.5+, Django, aiohttp, Swagger, PostgreSQL</li>
+              <li>Basic knowledge of docker, ansible, kubernetes etc.</li>
+              <li>Basic knowledge of node.js & go will be a plus</li>
+              <li>Experience with the NoSQL databases will be a plus</li>
+            </ul>
+
+            <h2>Compensation & Benefits</h2>
+            <ul>
+              <li>Permanent contract (RF Labor Codex), 100% White Salary</li>
+              <li>Competitive salary based on work experience</li>
+              <li>Generous bonuses (cash, equity and tokens)</li>
+              <li>Flexible working hours and option to work partly remotely</li>
+              <li>Generous relocation package, based on location</li>
+              <li>Health Benefits (Medical Insurance)</li>
+              <li>Latest and greatest Macbook Pro, perfect external displays</li>
+              <li>Introduction to blockchain from scratch</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
