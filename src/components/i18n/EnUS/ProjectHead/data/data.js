@@ -225,4 +225,10 @@ ProjectHead: {
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'http://jibrel.network/vacancies/senior-qa-automation-engineer-ios.html'
     },
+    Senior_python_developer: {
+      title: 'Senior python developer',
+      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'http://jibrel.network/vacancies/senior-python-developer.html'
+    },
 }
