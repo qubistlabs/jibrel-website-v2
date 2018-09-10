@@ -47,12 +47,12 @@ ListVacancies: [
   //   position: 'Senior QA Engineer',
   //   descr: 'Jibrel is looking for a Senior QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different devices and platforms',
   // },
-  // {
-  //   link: 'senior-mobile-qa-engineer.html',
-  //   place: 'Saint-Petersburg, Russia',
-  //   position: 'Senior Mobile QA Engineer',
-  //   descr: 'Jibrel is looking for a Senior Mobile QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior Mobile QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different mobile devices and platforms (iOS / Android).',
-  // },
+  {
+    link: 'senior-mobile-qa-engineer.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Senior Mobile QA Engineer',
+    descr: 'Jibrel is looking for a Senior Mobile QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior Mobile QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different mobile devices and platforms (iOS / Android).',
+  },
   {
     link: 'financial-controller.html',
     place: 'Dubai, UAE',
