@@ -32,7 +32,7 @@ ListVacancies: [
   {
     link: 'senior-python-developer.html',
     place: 'Saint-Petersburg, Russia',
-    position: 'Senior python developer',
+    position: 'Senior Python Developer',
     descr: 'Jibrel is looking for a Senior python developer to join its Saint-Petersburg office. Successful candidate will develop backend applications that interact with the different blockchains. Candidate will have diverse tasks and, in the long timeline, the opportunity to work on several products that interact with each other.',
   },
   {
