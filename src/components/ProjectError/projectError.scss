@@ -1,0 +1,69 @@
+.project-error {
+  > .info {
+    > .img {
+      width: 90px;
+      height: 90px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 22px;
+    }
+
+    > .title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    > .descr {
+      font-size: 13px;
+      line-height: (24/13);
+      color: rgba(#fff, 0.5);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      @include ls(10);
+
+      &.-e403 {
+        max-width: 350px;
+      }
+
+      &.-e404 {
+        max-width: 265px;
+      }
+
+      &.-e500 {
+        max-width: 320px;
+      }
+    }
+  }
+
+  > .back {
+    text-align: center;
+    padding-top: 20px;
+
+    @media (min-height: 350px) {
+      position: absolute;
+      left: 0;
+      bottom: 55px;
+      width: 100%;
+    }
+
+    > .link {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $light-blue;
+      }
+
+      &:active {
+        color: rgba($light-blue, 0.5);
+      }
+    }
+  }
+}
