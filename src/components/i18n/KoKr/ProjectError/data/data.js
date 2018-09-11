@@ -1,0 +1,15 @@
+ProjectError: {
+  back: 'Back to Home',
+  e404: {
+    title: '404. Page Not Found.',
+    descr: 'The page you\'re looking for can\'t be found. Check the URL and try again.'
+  },
+  e403: {
+    title: '403. Forbidden.',
+    descr: 'Sorry, but you don\'t have permission to access this page.You can do something :)'
+  },
+  e500: {
+    title: '500. Internal Server Error.',
+    descr: 'We are working towards creating something better. Won\'t be long...'
+  }
+}

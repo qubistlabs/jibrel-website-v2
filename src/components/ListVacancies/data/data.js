@@ -23,11 +23,17 @@ ListVacancies: [
     position: 'Community Manager',
     descr: 'Jibrel is a looking for a Community Manager to join its New York office. Jibrel\'s Community Manager will primarily generate and distribute content, as well as moderate user-generated content, across Community Channels (Telegram, KakaoTalk, WeChat, Twitter, Facebook, Medium, Reddit, etc.).',
   },
+  // {
+  //   link: 'senior-qa-automation-engineer-ios.html',
+  //   place: 'Saint-Petersburg, Russia',
+  //   position: 'Senior QA Automation Engineer (iOS)',
+  //   descr: 'Jibrel is looking for a Senior iOS QA Automation Engineer to join its Saint Petersburg office. Jibrel\'s Senior iOS QA Automation Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different iOS devices and versions.',
+  // },
   {
-    link: 'senior-qa-automation-engineer-ios.html',
+    link: 'senior-python-developer.html',
     place: 'Saint-Petersburg, Russia',
-    position: 'Senior QA Automation Engineer (iOS)',
-    descr: 'Jibrel is looking for a Senior iOS QA Automation Engineer to join its Saint Petersburg office. Jibrel\'s Senior iOS QA Automation Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different iOS devices and versions.',
+    position: 'Senior Python Developer',
+    descr: 'Jibrel is looking for a Senior python developer to join its Saint-Petersburg office. Successful candidate will develop backend applications that interact with the different blockchains. Candidate will have diverse tasks and, in the long timeline, the opportunity to work on several products that interact with each other.',
   },
   {
     link: 'senior-qa-automation-engineer-android.html',
@@ -35,12 +41,12 @@ ListVacancies: [
     position: 'Senior QA Automation Engineer (Android)',
     descr: 'Jibrel is looking for a Senior Android QA Automation Engineer to join its Saint Petersburg office. Jibrel\'s Senior Android QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different Android devices and versions.',
   },
-  {
-    link: 'senior-qa-engineer.html',
-    place: 'Saint-Petersburg, Russia',
-    position: 'Senior QA Engineer',
-    descr: 'Jibrel is looking for a Senior QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different devices and platforms',
-  },
+  // {
+  //   link: 'senior-qa-engineer.html',
+  //   place: 'Saint-Petersburg, Russia',
+  //   position: 'Senior QA Engineer',
+  //   descr: 'Jibrel is looking for a Senior QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different devices and platforms',
+  // },
   {
     link: 'senior-mobile-qa-engineer.html',
     place: 'Saint-Petersburg, Russia',
