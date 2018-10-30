@@ -1,0 +1,106 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Product_Manager_UI_UX}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Product Manager (UI/UX)</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}Saint-Petersburg, Russia</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Product Manager (UI/UX) for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You'll need to work on UI/UX of the apps: analyze and develop entirely new features, solve numerous UX issues that arise due to the integration with the blockchain and other complex features, polish UI/UX of the apps, provide specifications for design and development, improve the apps during all the lifecycle. The biggest challenge is that the entire market is quite young and emerging very fast - there are no proven UI/UX patterns, but a lot of tech specificity that needs to be presented to the end users in a convenient form.</p>
+            <p>Our team spread all over the world, tech team is located in Saint-Petersburg. The tech team consists of senior developers with 5+ years of experience, many of them worked for well-known IT companies (Yandex, Lazada, Mera, etc).</p>
+            <p>We develop frontend apps for 3 platforms in parallel - web (React.JS), iOS (Swift), Android (Kotlin). And we use native tech stack for all platforms to achieve the best possible UI/UX.</p>
+            <p>We are currently working on two B2C products that target large existing markets. Also, we have established relationships with several notable financial institutions to work on the integration of blockchain technology into the existing enterprise infrastructure.</p>
+            <p>Investors are from USA, Europe, Asia and Middle East, start-up is fully funded for 3 years of development.</p>
+
+            <h2>What you'll be doing:</h2>
+            <ul>
+              <li>Analytics of new features and products hand-in-hand with the tech founder</li>
+              <li>Analytics of usage statistics</li>
+              <li>Analytics of UX of the apps and generating ideas for improvement</li>
+              <li>Preparation of A/B tests and focus groups</li>
+              <li>Creation of design and development specs</li>
+              <li>Communication with the design, development and QA teams regarding the specs and features in development</li>
+              <li>Communication with bizdev&marketing&founders regarding the development roadmap</li>
+            </ul>
+
+            <h2>What we expect:</h2>
+            <ul>
+              <li>Analytical thinking, skill to write specifications</li>
+              <li>Experience with the web&mobile UI, familiarity with the UI guidelines</li>
+              <li>Experience with the complex UI/UX</li>
+              <li>Very good English, both writing and speaking</li>
+              <li>Design experience is a plus</li>
+              <li>Experience with the fintech products is a plus</li>
+            </ul>
+
+            <h2>Benefits:</h2>
+            <ul>
+              <li>Deep dive into the new and future technologies on a fast-growing market</li>
+              <li>Introduction to the blockchain from scratch</li>
+              <li>Work with a strong tech team</li>
+              <li>High salaries set in USD, permanent contract (RF Labor Codex), 100% white salary</li>
+              <li>Full-time, office in the city center with flexible hours</li>
+              <li>Relocation package is provided for candidates from other regions</li>
+              <li>Bonuses, Medical insurance</li>
+              <li>Latest powerful Macbook and big monitor</li>
+            </ul>
+
+            <p>In the response to this posting, please attach links to your portfolio.</p>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>

@@ -48,10 +48,46 @@ ListVacancies: [
   //   descr: 'Jibrel is looking for a Senior QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different devices and platforms',
   // },
   {
+    link: 'devops-engineer.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'DevOps Engineer',
+    descr: 'DevOps Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
+  },
+  {
+    link: 'frontend-senior-developer-reactjs.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Frontend Senior Developer (React.JS)',
+    descr: 'Frontend senior developer (React.JS) for an international startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to join a small team of React.JS developers, dive deep into the blockchain specificity and develop different frontend apps.',
+  },
+  {
+    link: 'frontend-teamlead-reactjs.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Frontend teamlead (React.JS)',
+    descr: 'Frontend teamlead (React.JS) for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to join a small team of React.JS developers, dive deep into the blockchain specificity and scale team to be able to develop several big React.JS apps in parallel.',
+  },
+  {
+    link: 'junior-devops-engineer.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Junior DevOps Engineer',
+    descr: 'Junior DevOps Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
+  },
+  {
+    link: 'product-manager-ui-ux.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Product Manager (UI/UX)',
+    descr: 'Product Manager (UI/UX) for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to work on UI/UX of the apps: analyze and develop entirely new features, solve numerous UX issues that arise due to the integration with the blockchain and other complex features, polish UI/UX of the apps, provide specifications for design and development, improve the apps during all the lifecycle. The biggest challenge is that the entire market is quite young and emerging very fast - there are no proven UI/UX patterns, but a lot of tech specificity that needs to be presented to the end users in a convenient form.',
+  },
+  {
     link: 'senior-mobile-qa-engineer.html',
     place: 'Saint-Petersburg, Russia',
     position: 'Senior Mobile QA Engineer',
-    descr: 'Jibrel is looking for a Senior Mobile QA Engineer to join its Saint Petersburg office. Jibrel\'s Senior Mobile QA Engineer will primarily analyze system requirements and produce test specifications, cases and reports across different mobile devices and platforms (iOS / Android).',
+    descr: 'Senior Mobile QA Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.',
+  },
+  {
+    link: 'senior-ios-developer.html',
+    place: 'Saint-Petersburg, Russia',
+    position: 'Senior iOS developer',
+    descr: 'iOS senior developer for an international startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to join a small team of iOS developers, dive deep into the blockchain specificity and develop different iOS apps.',
   },
   {
     link: 'financial-controller.html',

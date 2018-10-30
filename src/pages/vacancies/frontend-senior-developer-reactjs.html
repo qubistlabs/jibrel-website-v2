@@ -1,0 +1,100 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Frontend_Senior_Developer_React_JS}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Frontend Senior Developer (React.JS)</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}Saint-Petersburg, Russia</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Frontend senior developer (React.JS) for an international startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You'll need to join a small team of React.JS developers, dive deep into the blockchain specificity and develop different frontend apps.</p>
+            <p>Our team spread all over the world, the tech team is located in Saint-Petersburg. The tech team consists of about 20 senior developers with 5+ years of experience, many of them worked for well-known IT companies (Yandex, Lazada, Mera, etc).</p>
+            <p>Our team spread all over the world, the tech team is located in Saint-Petersburg. The tech team consists of about 20 senior developers with 5+ years of experience, many of them worked for well-known IT companies (Yandex, Lazada, Mera, etc).</p>
+            <p>Investors are from USA, Europe, Asia and Middle East, start-up is fully funded for 3 years of development.</p>
+
+            <h2>What you'll be doing:</h2>
+            <ul></ul>
+              <li>Develop big fronted apps using React.JS tech stack</ul></li>
+              <li>Integrate apps with various blockchain protocols</ul></li>
+              <li>Develop open-source projects (React libraries for blockchain)</ul></li>
+            </ul>
+
+            <h2>What we expect:</h2>
+              <ul>
+              <li>deep knowledge and proficiency with React.JS, UI, front-end architecture, modern libraries</li>
+              <li>js & css3 & html5</li>
+              <li>webpack & gulp/grunt</li>
+              <li>experience with at least one other frontend framework: angular, vue.js, ember etc.</li>
+              <li>experience with different markup approaches: BEM/RSCSS/etc</li>
+              <li>experience with complex front-end UI, including complex API interactions</li>
+              <li>strong development culture: testing, code review, CI/CD, etc.</li>
+              <li>self-motivated professional able to work independently</li>
+              <li>fluent Russian, upper-intermediate English</li>
+            </ul>
+
+            <h2>Benefits</h2>
+            <ul>
+              <li>Introduction to the blockchain from scratch</li>
+              <li>High salaries set in USD, permanent contract (RF Labor Codex), 100% white salary</li>
+              <li>Full-time, office in the city center with flexible hours</li>
+              <li>Relocation package is provided for candidates from other regions</li>
+              <li>Bonuses, Medical insurance</li>
+              <li>Latest powerful MacBook and a big display</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
