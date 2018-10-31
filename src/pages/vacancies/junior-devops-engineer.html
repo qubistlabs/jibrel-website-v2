@@ -1,0 +1,122 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Junior_DevOps_Engineer}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Junior DevOps Engineer</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}Saint-Petersburg, Russia</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Junior DevOps Engineer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. Start-up is fully funded for 3 years of development.</p>
+
+            <h2>What you'll be doing:</h2>
+            <ul>
+              <li>Work in a small devops team with a growing team of developers</li>
+              <li>Use existing infrastructure stack to deploy services and monitor their health</li>
+              <li>Communicate with developers and improve their workflow</li>
+              <li>Troubleshoot existing services</li>
+              <li>Participate in infrastructure expansion and growing</li>
+              <li>Work with CI/CD processes for web and mobile applications</li>
+            </ul>
+
+            <h2>What we use (and what you'll be better to know):</h2>
+            <ul>
+              <li>Baremetal virtualization and containerization</li>
+              <li>AWS and DigitalOcean</li>
+              <li>Debian GNU/Linux</li>
+              <li>Docker</li>
+              <li>Ansible</li>
+              <li>Terraform</li>
+              <li>Jenkins with Jenkins Pipelines</li>
+              <li>Bash</li>
+              <li>Python</li>
+              <li>Groovy DSL</li>
+            </ul>
+
+            <h2>Requirements:</h2>
+            <ul>
+              <li>Linux administration skills with understanding how Linux works (core, network, etc)</li>
+              <li>Coding experience</li>
+            </ul>
+
+            <h2>Will be a plus:</h2>
+            <ul>
+              <li>Experience with real production or own pet project systems</li>
+              <li>Experience with configuration management tools</li>
+              <li>Knowledge of networking stack</li>
+              <li>Experience with writing system scripts on any language</li>
+              <li>Knowledge of containerization technologies</li>
+              <li>Experience with highload infrastructures</li>
+              <li>Knowledge of Blockchain technology</li>
+              <li>Experience with CI/CD for mobile (Android, iOS) platforms</li>
+              <li>Understanding how Jenkins Pipelines work</li>
+              <li>Experience in coding real applications</li>
+              <li>Python knowledge on a developer level</li>
+            </ul>
+
+            <h2>Benefits:</h2>
+            <ul>
+              <li>Deep dive into a new and future technologies</li>
+              <li>Permanent contract (RF Labor Codex), 100% white salary</li>
+              <li>Full-time, office in the city center with flexible hours</li>
+              <li>Relocation package is provided for candidates from other regions</li>
+              <li>Quarter bonuses, Medical insurance</li>
+              <li>Introduction to blockchain from scratch</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
