@@ -1,6 +1,26 @@
 NewsPreview: {
   borderStyle: [
     {
+      link: 'fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/zawya.png',
+      img2x: '/assets/img/content/cover/zawya@2x.png',
+      date: 'Sep. 04, 2018',
+      title: 'FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme',
+      descr: 'Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator...'
+    },
+    {
+      link: 'jibrel-network-connecting-the-traditional-and-cryptocurrency-economies-through-jcash.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/yahoo.png',
+      img2x: '/assets/img/content/cover/yahoo@2x.png',
+      date: 'Aug. 19, 2018',
+      title: 'Jibrel Network: Connecting the Traditional and Cryptocurrency Economies through Jcash',
+      descr: 'One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory compliance standards. This is precisely...'
+    },
+    {
       link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
       modClassBox: '-border',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
@@ -9,30 +29,30 @@ NewsPreview: {
       date: 'Jul. 31, 2018',
       title: 'Jibrel – Bringing the benefits of blockchain to the world of commodity trading',
       descr: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining...'
-    },
-    {
-      link: 'jibrel-network-joins-enterprise-ethereum-alliance.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/zawya.png',
-      img2x: '/assets/img/content/cover/zawya@2x.png',
-      date: 'Jul. 18, 2018',
-      title: 'Jibrel Network joins The Enterprise Ethereum Alliance',
-      descr: 'Jibrel Network has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the region’s leader in blockchain for financial assets...'
-    },
-    {
-      link: 'jibrel-network-announcing-major-projects-middle-ea.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/unlock.png',
-      img2x: '/assets/img/content/cover/unlock@2x.png',
-      date: 'Jun. 05, 2018',
-      title: 'Jibrel Network announcing major projects in the Middle East',
-      descr: 'The EEA\'s industry-focused, member-driven working groups are each tasked with creating and delivering specific advancements to the development and use of ethereum-based technologies...'
     },
   ],
   previewPage: [
     {
+      link: 'fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/zawya.png',
+      img2x: '/assets/img/content/cover/zawya@2x.png',
+      date: 'Sep. 04, 2018',
+      title: 'FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme',
+      descr: 'Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator...'
+    },
+    {
+      link: 'jibrel-network-connecting-the-traditional-and-cryptocurrency-economies-through-jcash.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/yahoo.png',
+      img2x: '/assets/img/content/cover/yahoo@2x.png',
+      date: 'Aug. 19, 2018',
+      title: 'Jibrel Network: Connecting the Traditional and Cryptocurrency Economies through Jcash',
+      descr: 'One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory compliance standards. This is precisely...'
+    },
+    {
       link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       img: '/assets/img/content/cover/thebitcoinnews.png',
@@ -42,22 +62,22 @@ NewsPreview: {
       descr: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining...'
     },
     {
+      link: 'jibrel-network-announcing-major-projects-in-the-middle-east.html',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/unlock.png',
+      img2x: '/assets/img/content/cover/unlock@2x.png',
+      date: 'Jun. 18, 2018',
+      title: 'Jibrel Network announcing major projects in the Middle East',
+      descr: 'The EEA\'s industry-focused, member-driven working groups are each tasked with creating and delivering specific advancements to the development and use of ethereum-based technologies...'
+    },
+    {
       link: 'jibrel-network-joins-enterprise-ethereum-alliance.html',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
-      date: 'Jul. 18, 2018',
+      date: 'Jun. 05, 2018',
       title: 'Jibrel Network joins The Enterprise Ethereum Alliance',
       descr: 'Jibrel Network has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the region’s leader in blockchain for financial assets...'
-    },
-    {
-      link: 'jibrel-network-announcing-major-projects-middle-ea.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/unlock.png',
-      img2x: '/assets/img/content/cover/unlock@2x.png',
-      date: 'Jun. 05, 2018',
-      title: 'Jibrel Network announcing major projects in the Middle East',
-      descr: 'The EEA\'s industry-focused, member-driven working groups are each tasked with creating and delivering specific advancements to the development and use of ethereum-based technologies...'
     },
     {
       link: 'jibrel-licensed-financial-intermediary-vqf.html',

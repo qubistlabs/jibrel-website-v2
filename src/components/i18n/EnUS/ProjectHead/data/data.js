@@ -175,6 +175,24 @@ ProjectHead: {
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'https://jibrel.network/news/jibrel-network-announcing-major-projects-middle-ea.html'
     },
+    Jibrel_Network_announcing_major_projects_in_the_Middle_East: {
+      title: 'Jibrel Network - Jibrel Network announcing major projects in the Middle East',
+      description: 'Jibrel Network has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the region’s leader in blockchain for financial assets.',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/news/jibrel-network-announcing-major-projects-in-the-middle-east.html'
+    },
+    Jibrel_Network_Connecting_the_Traditional_and_Cryptocurrency_Economies_through_Jcash: {
+      title: 'Jibrel Network - Jibrel Network: Connecting the Traditional and Cryptocurrency Economies through Jcash',
+      description: 'One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory compliance standards. This is precisely the issue that Jibrel is aiming to solve.',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/news/jibrel-network-connecting-the-traditional-and-cryptocurrency-economies-through-jcash.html'
+    },
+    FinTech_Hive_welcomes_22_innovative_startups_for_its_2018_accelerator_programme: {
+      title: 'Jibrel Network - FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme',
+      description: 'Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator programme, in partnership with',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/news/fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html'
+    },
 
     // Vacancies
     Community_Manager: {
