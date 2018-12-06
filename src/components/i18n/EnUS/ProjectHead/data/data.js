@@ -193,6 +193,18 @@ ProjectHead: {
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'https://jibrel.network/news/fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html'
     },
+    abu_dhabis_al_hilal_bank_uses_blockchain_to_sell_sukuk_in_secondary_market: {
+      title: 'Abu Dhabi\'s Al Hilal Bank uses blockchain to sell sukuk in secondary market',
+      description: 'Abu Dhabi’s Al Hilal Bank has executed the world’s first sukuk transaction using blockchain technology, it said on Monday. The Islamic bank used the distributed ledger technology',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/news/abu-dhabis-al-hilal-bank-uses-blockchain-to-sell-sukuk-in-secondary-market.html'
+    },
+    al_hilal_bank_executes_the_worlds_first_blockchain_sukuk_transaction: {
+      title: 'Al Hilal Bank executes the world\'s first Blockchain Sukuk transaction',
+      description: 'Abu Dhabi: Al Hilal Bank is the first Islamic bank in the world to leverage Blockchain technology for the resale and settlement of an Islamic Sukuk. Blockchain was used to transact a secondary market deal',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/news/al-hilal-bank-executes-the-worlds-first-blockchain-sukuk-transaction.html'
+    },
 
     // Vacancies
     Community_Manager: {
