@@ -297,4 +297,10 @@ ProjectHead: {
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'https://jibrel.network/vacancies/senior-ios-developer.html'
     },
+    UX_Analyst_and_Designer: {
+      title: 'UX Analyst & Designer',
+      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
+      url: 'https://jibrel.network/vacancies/ux-analyst-and-designer.html'
+    },
 }
