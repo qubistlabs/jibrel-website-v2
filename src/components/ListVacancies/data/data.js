@@ -87,7 +87,7 @@ ListVacancies: [
     link: 'senior-ios-developer.html',
     place: 'Saint-Petersburg, Russia',
     position: 'Senior iOS Developer',
-    descr: 'iOS Senior Developer for an international startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to join a small team of iOS developers, dive deep into the blockchain specificity and develop different iOS apps.',
+    descr: 'Senior iOS Developer for an international startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You\'ll need to join a small team of iOS developers, dive deep into the blockchain specificity and develop different iOS apps.',
   },
   {
     link: 'ux-analyst-and-designer.html',
