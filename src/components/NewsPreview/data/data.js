@@ -1,12 +1,32 @@
 NewsPreview: {
   borderStyle: [
     {
+      link: 'al-hilal-bank-executes-the-worlds-first-blockchain-sukuk-transaction.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/zawya.png',
+      img2x: '/assets/img/content/cover/zawya@2x.png',
+      date: 'Nov. 26, 2018',
+      title: 'Al Hilal Bank executes the world\'s first Blockchain Sukuk transaction',
+      descr: 'Abu Dhabi: Al Hilal Bank is the first Islamic bank in the world to leverage Blockchain technology for the resale and settlement of an Islamic Sukuk. Blockchain was used to transact a secondary market deal...'
+    },
+    {
+      link: 'abu-dhabis-al-hilal-bank-uses-blockchain-to-sell-sukuk-in-secondary-market.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/reuters.png',
+      img2x: '/assets/img/content/cover/reuters@2x.png',
+      date: 'Nov. 26, 2018',
+      title: 'Abu Dhabi\'s Al Hilal Bank uses blockchain to sell sukuk in secondary market',
+      descr: 'Abu Dhabi’s Al Hilal Bank has executed the world’s first sukuk transaction using blockchain technology, it said on Monday. The Islamic bank used the distributed ledger technology...'
+    },
+    {
       link: 'fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html',
       modClassBox: '-border',
       aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
-      date: 'Sep. 04, 2018',
+      date: 'Sep. 05, 2018',
       title: 'FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme',
       descr: 'Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator...'
     },
@@ -32,6 +52,26 @@ NewsPreview: {
     },
   ],
   previewPage: [
+    {
+      link: 'al-hilal-bank-executes-the-worlds-first-blockchain-sukuk-transaction.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/zawya.png',
+      img2x: '/assets/img/content/cover/zawya@2x.png',
+      date: 'Nov. 26, 2018',
+      title: 'Al Hilal Bank executes the world\'s first Blockchain Sukuk transaction',
+      descr: 'Abu Dhabi: Al Hilal Bank is the first Islamic bank in the world to leverage Blockchain technology for the resale and settlement of an Islamic Sukuk. Blockchain was used to transact a secondary market deal...'
+    },
+    {
+      link: 'abu-dhabis-al-hilal-bank-uses-blockchain-to-sell-sukuk-in-secondary-market.html',
+      modClassBox: '-border',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      img: '/assets/img/content/cover/reuters.png',
+      img2x: '/assets/img/content/cover/reuters@2x.png',
+      date: 'Nov. 26, 2018',
+      title: 'Abu Dhabi\'s Al Hilal Bank uses blockchain to sell sukuk in secondary market',
+      descr: 'Abu Dhabi’s Al Hilal Bank has executed the world’s first sukuk transaction using blockchain technology, it said on Monday. The Islamic bank used the distributed ledger technology...'
+    },
     {
       link: 'fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html',
       modClassBox: '-border',
