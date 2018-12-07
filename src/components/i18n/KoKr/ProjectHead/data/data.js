@@ -292,7 +292,7 @@ ProjectHead: {
       url: 'https://jibrel.network/vacancies/product-manager-ui-ux.html'
     },
     Senior_iOS_Developer: {
-      title: 'Senior iOS developer',
+      title: 'Senior iOS Developer',
       description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'https://jibrel.network/vacancies/senior-ios-developer.html'
