@@ -207,17 +207,11 @@ ProjectHead: {
     },
 
     // Vacancies
-    Community_Manager: {
-      title: 'Community Manager',
+    DevOps_Engineer: {
+      title: 'DevOps Engineer',
       description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/community-manager.html'
-    },
-    Digital_Marketing_Analyst: {
-      title: 'Digital Marketing Analyst',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/digital-marketing-analyst.html'
+      url: 'https://jibrel.network/vacancies/devops-engineer.html'
     },
     Financial_Controller: {
       title: 'Financial Controller',
@@ -225,77 +219,11 @@ ProjectHead: {
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
       url: 'https://jibrel.network/vacancies/financial-controller.html'
     },
-    Marketing_PR_Director: {
-      title: 'Marketing & PR Director',
+    Middle_Python_Developer: {
+      title: 'Middle Python Developer',
       description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
       keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/marketing-pr-director.html'
-    },
-    Senior_Mobile_QA_Engineer: {
-      title: 'Senior Mobile QA Engineer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-mobile-qa-engineer.html'
-    },
-    Senior_QA_Engineer: {
-      title: 'Senior QA Engineer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-qa-engineer.html'
-    },
-    Senior_QA_Automation_Engineer_Android: {
-      title: 'Senior QA Automation Engineer (Android)',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-qa-automation-engineer-android.html'
-    },
-    Senior_QA_Automation_Engineer_iOS: {
-      title: 'Senior QA Automation Engineer (iOS)',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-qa-automation-engineer-ios.html'
-    },
-    Senior_python_developer: {
-      title: 'Senior Python Developer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-python-developer.html'
-    },
-    DevOps_Engineer: {
-      title: 'DevOps Engineer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/devops-engineer.html'
-    },
-    Frontend_Senior_Developer_React_JS: {
-      title: 'Frontend Senior Developer (React.JS)',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/frontend-senior-developer-reactjs.html'
-    },
-    Frontend_teamlead_React_JS: {
-      title: 'Frontend teamlead (React.JS)',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/frontend-teamlead-reactjs.html'
-    },
-    Junior_DevOps_Engineer: {
-      title: 'Junior DevOps Engineer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/junior-devops-engineer.html'
-    },
-    Product_Manager_UI_UX: {
-      title: 'Product Manager (UI/UX)',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/product-manager-ui-ux.html'
-    },
-    Senior_iOS_Developer: {
-      title: 'Senior iOS Developer',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      keywords: 'Jibrel Network, stable coin, stable crypto, compliant coin, compliant crypto, blockchain solution, enterprise ledger, enterprise blockchain',
-      url: 'https://jibrel.network/vacancies/senior-ios-developer.html'
+      url: 'https://jibrel.network/vacancies/middle-python-developer.html'
     },
     UX_Analyst_and_Designer: {
       title: 'UX Analyst & Designer',
