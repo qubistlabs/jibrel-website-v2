@@ -3,7 +3,7 @@ NewsPreview: {
     {
       link: 'al-hilal-bank-executes-the-worlds-first-blockchain-sukuk-transaction.html',
       modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="250"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
       date: 'Nov. 26, 2018',
@@ -13,7 +13,7 @@ NewsPreview: {
     {
       link: 'abu-dhabis-al-hilal-bank-uses-blockchain-to-sell-sukuk-in-secondary-market.html',
       modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"',
       img: '/assets/img/content/cover/reuters.png',
       img2x: '/assets/img/content/cover/reuters@2x.png',
       date: 'Nov. 26, 2018',
@@ -30,32 +30,11 @@ NewsPreview: {
       title: 'FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme',
       descr: 'Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator...'
     },
-    {
-      link: 'jibrel-network-connecting-the-traditional-and-cryptocurrency-economies-through-jcash.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/yahoo.png',
-      img2x: '/assets/img/content/cover/yahoo@2x.png',
-      date: 'Aug. 19, 2018',
-      title: 'Jibrel Network: Connecting the Traditional and Cryptocurrency Economies through Jcash',
-      descr: 'One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory compliance standards. This is precisely...'
-    },
-    {
-      link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
-      img: '/assets/img/content/cover/thebitcoinnews.png',
-      img2x: '/assets/img/content/cover/thebitcoinnews@2x.png',
-      date: 'Jul. 31, 2018',
-      title: 'Jibrel – Bringing the benefits of blockchain to the world of commodity trading',
-      descr: 'Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining...'
-    },
   ],
   previewPage: [
     {
       link: 'al-hilal-bank-executes-the-worlds-first-blockchain-sukuk-transaction.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
       date: 'Nov. 26, 2018',
@@ -64,8 +43,7 @@ NewsPreview: {
     },
     {
       link: 'abu-dhabis-al-hilal-bank-uses-blockchain-to-sell-sukuk-in-secondary-market.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/reuters.png',
       img2x: '/assets/img/content/cover/reuters@2x.png',
       date: 'Nov. 26, 2018',
@@ -74,8 +52,7 @@ NewsPreview: {
     },
     {
       link: 'fintech-hive-welcomes-22-innovative-startups-for-its-2018-accelerator-programme.html',
-      modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
       date: 'Sep. 04, 2018',
@@ -85,7 +62,7 @@ NewsPreview: {
     {
       link: 'jibrel-network-connecting-the-traditional-and-cryptocurrency-economies-through-jcash.html',
       modClassBox: '-border',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/yahoo.png',
       img2x: '/assets/img/content/cover/yahoo@2x.png',
       date: 'Aug. 19, 2018',
@@ -94,7 +71,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-bringing-benefits-blockchain-world-commodit.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/thebitcoinnews.png',
       img2x: '/assets/img/content/cover/thebitcoinnews@2x.png',
       date: 'Jul. 31, 2018',
@@ -103,7 +80,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-announcing-major-projects-in-the-middle-east.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/unlock.png',
       img2x: '/assets/img/content/cover/unlock@2x.png',
       date: 'Jun. 18, 2018',
@@ -112,7 +89,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-joins-enterprise-ethereum-alliance.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/zawya.png',
       img2x: '/assets/img/content/cover/zawya@2x.png',
       date: 'Jun. 05, 2018',
@@ -121,7 +98,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-licensed-financial-intermediary-vqf.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/yahoo.png',
       img2x: '/assets/img/content/cover/yahoo@2x.png',
       date: 'May 22, 2018',
@@ -130,7 +107,7 @@ NewsPreview: {
     },
     {
       link: 'dubai-financial-services-authority-announces-finte.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/crowdfundinsinder.png',
       img2x: '/assets/img/content/cover/crowdfundinsinder@2x.png',
       date: 'May 16, 2018',
@@ -139,7 +116,7 @@ NewsPreview: {
     },
     {
       link: 'jibrel-network-launch-institutional-grade-alternat.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"',
       img: '/assets/img/content/cover/seekingalpha.png',
       img2x: '/assets/img/content/cover/seekingalpha@2x.png',
       date: 'May 09, 2018',
@@ -148,7 +125,7 @@ NewsPreview: {
     },
     {
       link: 'jpm-morgan-chase-testing-blockchain-transactions-t.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
       img: '/assets/img/content/cover/seekingalpha.png',
       img2x: '/assets/img/content/cover/seekingalpha@2x.png',
       date: 'Apr. 29, 2018',
@@ -157,7 +134,7 @@ NewsPreview: {
     },
     {
       link: '12-start-ups-zugs-crypto-valley-watch.html',
-      aosAnimation: 'data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"',
+      aosAnimation: 'data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"',
       img: '/assets/img/content/cover/siliconrepublic.png',
       img2x: '/assets/img/content/cover/siliconrepublic@2x.png',
       date: 'Apr. 12, 2018',
