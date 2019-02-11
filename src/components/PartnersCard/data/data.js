@@ -79,4 +79,9 @@ PartnersCard: [
         img: '/assets/img/general/partners/client-16.png',
         img2x: '/assets/img/general/partners/client-16@2x.png',
     },
+    {
+        link: 'https://www.alhilalbank.ae/',
+        img: '/assets/img/general/partners/al-hilal-bank.png',
+        img2x: '/assets/img/general/partners/al-hilal-bank@2x.png',
+    },
 ]
