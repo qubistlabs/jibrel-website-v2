@@ -1,0 +1,99 @@
+<!doctype html>
+<html class='no-js' lang='{{i18n_EnUS_LanguageCurrent.lang}}'>
+
+<head>
+  {{> ProjectHead/ProjectHead i18n_EnUS_ProjectHead.Community_Manager}}
+</head>
+
+<body>
+  %=symbols=%
+  {{> MainHeader/MainHeader MainHeader.small}}
+  {{> PopUp/MainMenu/MainMenu}}
+
+  <div class='section-content -bg-gray'>
+    <div class='container _container-fix'>
+      {{> PageHeader/PageHeader PageHeader.vacancy}}
+    </div>
+  </div>
+
+  <section class='section-content -bg-gray'>
+    {{> SectionName/SectionName SectionName.vacancy}}
+    <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+      <div class="typo-page">
+
+          <div class="header">
+            <h1 class="title -offset-right">Community Manager</h1>
+            <div class="data">
+              <div class="button _mobile-hide">
+                <a href="mailto:careers@jibrel.network" class="j-button -big-offset -border-on-white-bg" target='_blank'><span class='text'>Apply Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class='job-info -in-vacancy-page'>
+            <div class='time'>{{Icon iconName='i-clock' className='icon' iconWidth='15' iconHeight='15'}}Full-Time</div>
+            <div class='place'>{{Icon iconName='i-pin' className='icon' iconWidth='16' iconHeight='16'}}New York, USA</div>
+          </div>
+
+          <div class='wysiwyg'>
+            <p>Jibrel is a looking for a Community Manager to join its New York office. Jibrel's Community Manager will primarily generate and distribute content, as well as moderate user-generated content, across Community Channels (Telegram, KakaoTalk, WeChat, Twitter, Facebook, Medium, Reddit, etc.).</p>
+
+            <h2>Role & Responsibilities</h2>
+            <ul>
+              <li>Moderate user-generated content accordingly for each platform we engage on (Telegram, Twitter, Facebook, Medium, Reddit, etc.)</li>
+              <li>Craft compelling positioning and messaging narratives across different channels (Telegram, Twitter, Facebook, Medium, Reddit, etc.) and match the message accordingly for each platform</li>
+              <li>Work with the Jibrel team to get major announcements out on all platforms in a timely manner (including translation vendor management)</li>
+              <li>Respond to community queries, and collect feedback from the community to help enhance our product</li>
+              <li>Liaise with country community managers who moderate non-English forums (such as WeChat and KakaoTalk)</li>
+            </ul>
+
+            <h2>Requirements</h2>
+            <ul>
+              <li>Experience launching community initiatives (e.g. building an online forum, launching an ambassador program, creating an event series and writing an email newsletter, etc.)</li>
+              <li>Ability to use data and metrics to measure progress and create new campaigns and strategy</li>
+              <li>Excellent social and networking skills, with the ability to influence, persuade and negotiate </li>
+              <li>Experience creating content that drives engagement and lead generation </li>
+              <li>Passion for or knowledge of the blockchain and cryptocurrency space </li>
+              <li>Record of participation in different cryptocurrency social outlets such as Telegram, Reddit, Twitter, or Medium</li>
+              <li>Working knowledge of Korean or Mandarin, a plus
+            </ul>
+
+            <h2>Compensation & Benefits</h2>
+            <ul>
+              <li>Competitive salary based on work experience</li>
+              <li>Generous bonuses (cash, equity and tokens)</li>
+              <li>Flexible working hours and option to work remotely</li>
+              <li>Option to work from other offices (Zug, New York, Saint Petersburg, Dubai)</li>
+              <li>Generous relocation package, based on location</li>
+              <li>Health Benefits (Medical Insurance)</li>
+              <li>Latest and greatest Macbook Pro</li>
+              <li>Introduction to blockchain from scratch</li>
+            </ul>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class='section-content -bg-gray -mobile-bg-white -offset-bottom'>
+    <div class='container _container-fix-small -bg-white'>
+      {{> SupportBox/SupportBox SupportBox.vacancy}}
+    </div>
+  </section>
+
+  <section class='section-content -bg-dark'>
+    <div class='container -offset-top -offset-bottom _container-fix'>
+      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+        {{#each CardTile.aboutContact}}
+        {{> CardTile/CardTile}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> MainFooter/MainFooter}}
+  {{> PopUp/PopUp}}
+  {{> ProjectStatic/ProjectStatic}}
+</body>
+</html>
