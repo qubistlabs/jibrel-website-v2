@@ -1,6 +1,6 @@
 {
-  "name": "jibrel-website-new",
-  "version": "0.1.0",
+  "name": "@jibrelnetwork/website",
+  "version": "1.1.0",
   "description": "Jibrel website landing page",
   "private": true,
   "homepage": "https://jibrel.network/",
