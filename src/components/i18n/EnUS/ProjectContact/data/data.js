@@ -1,15 +1,15 @@
 ProjectContact: {
   Zug: {
     city: 'Zug',
-    address: 'Baarerstrasse 10, 6302 <br>Canton of Zug, Switzerland'
+    address: 'Baarerstrasse 4, 6300 <br>Canton of Zug, Switzerland'
   },
   NewYork: {
     city: 'New York',
-    address: '135 Madison Avenue, <br>10016 NY, United States '
+    address: '17 John Street, <br>10038 NY, United States '
   },
   StPetersburg: {
     city: 'St. Petersburg',
-    address: 'Nevsky Avenue, 153 <br>St. Petersburg 191167, Russia  '
+    address: '63 Zhukovskogo Street <br>St. Petersburg 191036, Russia  '
   },
   Dubai: {
     city: 'Dubai',
