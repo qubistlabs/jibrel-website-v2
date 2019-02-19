@@ -2,7 +2,7 @@ ProductInfo: {
   jwallet: {
     title: 'Jibrel Wallet',
     description: 'Jwallet provides a user-friendly and secure way to transact your favorite Ethereum tokens',
-    button: 'Jwallet Alpha'
+    button: 'Jwallet'
   },
   jcash: {
     title: 'Jibrel Cash',
