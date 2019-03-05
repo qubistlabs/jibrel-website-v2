@@ -1,0 +1,35 @@
+<svg id="graph-bar-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #003dc6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Outline_Icons" transform="translate(1.25 1.25)">
+    <g id="Group_9577" data-name="Group 9577">
+      <line id="Line_4081" data-name="Line 4081" class="cls-1" x2="57.5" transform="translate(0 57.5)"/>
+      <rect id="Rectangle_11422" data-name="Rectangle 11422" class="cls-1" width="7.5" height="12.5" transform="translate(2.5 45)"/>
+      <rect id="Rectangle_11423" data-name="Rectangle 11423" class="cls-1" width="7.5" height="25" transform="translate(17.5 32.5)"/>
+      <rect id="Rectangle_11424" data-name="Rectangle 11424" class="cls-1" width="7.5" height="20" transform="translate(32.5 37.5)"/>
+      <rect id="Rectangle_11425" data-name="Rectangle 11425" class="cls-1" width="7.5" height="37.5" transform="translate(47.5 20)"/>
+      <circle id="Ellipse_1317" data-name="Ellipse 1317" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(3.75 25)"/>
+      <circle id="Ellipse_1318" data-name="Ellipse 1318" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(18.75 12.5)"/>
+      <circle id="Ellipse_1319" data-name="Ellipse 1319" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(33.75 17.5)"/>
+      <circle id="Ellipse_1320" data-name="Ellipse 1320" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(48.75)"/>
+      <line id="Line_4082" data-name="Line 4082" class="cls-1" y1="9.302" x2="11.157" transform="translate(8.172 16.597)"/>
+      <line id="Line_4083" data-name="Line 4083" class="cls-1" x2="10.338" y2="3.445" transform="translate(23.612 15.788)"/>
+      <line id="Line_4084" data-name="Line 4084" class="cls-1" x1="11.75" y2="13.705" transform="translate(37.875 4.395)"/>
+    </g>
+  </g>
+  <g id="Invisibla_Shape">
+    <rect id="Rectangle_11426" data-name="Rectangle 11426" class="cls-2" width="60" height="60"/>
+  </g>
+</svg>

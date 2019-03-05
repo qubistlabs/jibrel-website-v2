@@ -1,0 +1,143 @@
+@mixin bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin bg-bottom {
+  background-position: bottom center;
+}
+
+@mixin bg-blue {
+  background-color: $blue;
+}
+
+@mixin bg-gray-gradient {
+  background: linear-gradient(to bottom, #fff 0%, #f5f6fa 100%);
+}
+
+@mixin bg-blue-gradient {
+  background: linear-gradient(45deg, rgba(0, 59, 198, 1) 0%, rgba(0, 49, 155, 1) 100%);
+}
+
+@mixin bg-black-gradient {
+  background: linear-gradient(45deg, rgba(#3d4f6c, 1) 0%, rgba(15, 27, 56, 1) 100%);
+}
+
+@mixin bg-light-blue {
+  background-color: $light-blue;
+}
+
+@mixin bg-gray {
+  background-color: $light-gray;
+}
+
+@mixin bg-dark {
+  background-color: $base;
+}
+
+@mixin hid {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@mixin vis {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+@mixin from-mobile {
+  @media (min-width: #{$mobile-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin to-mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+@mixin multi-ellipsis($font-size, $line-height, $lines-to-show) {
+  display: block;
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show+px;
+  font-size: $font-size+px;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin anim($time) {
+  transition: all ($time)+s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@mixin ls($fz) {
+  letter-spacing: ($fz/1000)+em;
+}
+
+@function r($pxw) {
+  @return ($pxw/24)+rem;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+  $extmods: (eot: "?", svg: "#" + str-replace($name, " ", "_"));
+  $formats: (otf: "opentype", ttf: "truetype");
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin all-reset {
+  all: initial;
+  color: $base;
+
+  @include font;
+}
+
+@mixin overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

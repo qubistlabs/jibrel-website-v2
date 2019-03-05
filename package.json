@@ -1,0 +1,31 @@
+{
+  "name": "jibrel-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx vuepress dev",
+    "build": "npx vuepress build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "style-resources-loader": "^1.2.1",
+    "svg-sprite-loader": "^4.1.3",
+    "svgo": "^1.2.0",
+    "svgo-loader": "^2.2.0",
+    "vuepress": "^0.14.9"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "lodash-es": "^4.17.11"
+  }
+}
