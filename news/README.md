@@ -1,4 +1,5 @@
 ---
+type: precast-page
 index: true 
 ---
 
