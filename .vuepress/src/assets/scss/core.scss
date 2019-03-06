@@ -1,14 +1,15 @@
-@import 'mixins';
-@import 'vars';
-@import 'base';
-@import 'helpers';
+@import './vars';
+@import './mixins';
+@import './base';
+@import './helpers';
 
-@import 'JButton';
+// GUI
+@import './gui/j-button';
+@import './gui/section-content';
+@import './gui/preview-info';
+@import './gui/project-form';
+@import './gui/typo-page';
+@import './gui/card-tile';
 
-
-@import 'section-content';
-@import 'preview-info';
-@import 'project-form';
-@import 'typo-page';
-
-@import './plugins/aos.scss';
+// Vendor
+@import '~aos/dist/aos.css'
