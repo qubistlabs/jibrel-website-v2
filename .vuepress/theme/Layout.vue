@@ -5,10 +5,21 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <SpriteIcon />
-    <MainHeader :color='getColor()'/>
-    <Content v-if='typePage === "precast-page"' />
-    <NewsPage v-if='typePage === "news"' > <Content /> </NewsPage>
-    <MainFooter />
+    <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' />
+    <Content v-if='typePage === "precast-page"'/>
+    <NewsPage v-if='typePage === "/news/"' > <Content /> </NewsPage>
+    <VacancyPage v-if='typePage === "/careers/"' > <Content /> </VacancyPage>
+    <MainFooter @open="modalOpen"/>
+    <ModalWindow :isOpened='isOpened' @close="isOpened=false">
+      <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
+        <ProjectForm 
+          @close="isOpened=false"
+          eventType='product-and-sale-enterprise'
+          formName='message'
+          :title='$themeLocaleConfig.data.FormText.baseForm.titleSendMessage'
+        />
+      </div>
+    </ModalWindow>
   </div>
 </template>
 <script>
@@ -18,6 +29,10 @@ import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import NewsPage from '@/components/NewsPage/NewsPage.vue'
+import VacancyPage from '@/components/VacancyPage/VacancyPage.vue'
+import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
+import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+
 
 export default {
   components: {
@@ -25,33 +40,55 @@ export default {
     MainFooter,
     SpriteIcon,
     NewsPage,
+    VacancyPage,
+    ModalWindow,
+    ProjectForm,
   },
   data() {
     return {
-      typePage: String
+      typePage: String,
+      headerSize: String,
+      isOpened: false,
     }
   },
   methods: {
-    getColor() {
-      switch (this.$route.path) {
-        case '/':
-          return 'white';
-      default:
-        return 'color';
+    modalOpen() {
+      this.isOpened = true
+    },
+    getHeaderColor() {     
+      if (this.$page.frontmatter.headerColor) {
+        return 'white';
+      }
+      return 'colored';
+    },
+    getTypePage() {
+      const route = this.$route.path
+      if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
+        this.typePage = '/news/'
+      } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
+        this.typePage = '/careers/'
+      } else {
+        this.typePage = 'precast-page'
       }
     },
-    getTypePgae() {
-      this.typePage = this.$page.frontmatter.type
-      console.log(this.$page.frontmatter);
+    getHeaderSize() {
+      const route = this.$route.path
+      if (route.indexOf(/news/) !== -1 || route.indexOf(/careers/) !== -1) {
+        this.headerSize = true
+      } else {
+        this.headerSize = false
+      }
     },
   },
   watch: {
     $page: function (newVal) {
-      this.getTypePgae()
+      this.getTypePage()
+      this.getHeaderSize()
     }
   },
-  created () {
-    this.getTypePgae()
+  created() {    
+    this.getTypePage()
+    this.getHeaderSize()
     AOS.init({
       disable: 'mobile',
     })
