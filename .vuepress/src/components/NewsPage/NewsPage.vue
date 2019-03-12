@@ -1,12 +1,12 @@
 <template>
   <div>
-    <PageHeader typePage='news' />
+    <PageHeader typePage='news' :title='this.$themeLocaleConfig.data.PageHeader.backToNews' />
     <section class='section-content -bg-gray'>
       <SectionName
-        title='NEWS'
+        :title='this.$themeLocaleConfig.data.SectionName.news'
         positionContainer='bottom-460'
         positionTitle='top'
-        color='color'
+        colorTheme='colored'
         arrow='up'
       />
       <div class='container _container-fix-small -offset-bottom-small -bg-white -mobile-bg-gray'>
@@ -18,7 +18,7 @@
           <div class='wysiwyg'>
             <slot />
           </div>
-            <a :href='this.$page.frontmatter.link' class='source' target='_blank' rel='nofollow'>Go to article 
+            <a :href='this.$page.frontmatter.link' class='source' target='_blank' rel='nofollow'>{{this.$themeLocaleConfig.data.ProjectNews.link}}
               <svg class="icon" width="16" height="16"><use xlink:href="#i-external-link"></use></svg>
             </a>
         </div>
