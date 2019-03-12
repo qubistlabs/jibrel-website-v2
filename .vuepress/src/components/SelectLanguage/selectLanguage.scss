@@ -28,7 +28,7 @@
       // position: relative;
       // top: 1px;
 
-      &.-color {
+      &.-colored {
         color: $base;
       }
 
@@ -46,7 +46,7 @@
       opacity: 0.3;
       transition: stroke 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
-      &.-color {
+      &.-colored {
         stroke: $base;
       }
 
@@ -70,10 +70,9 @@
   > .drop {
     background-color: #fff;
     position: absolute;
-    top: -14px;
     width: 110px;
-    left: 50%;
-    margin-left: -55px;
+    top: -15px;
+    right: -28px;
     border-radius: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
