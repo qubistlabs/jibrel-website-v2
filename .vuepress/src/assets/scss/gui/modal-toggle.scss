@@ -1,0 +1,104 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.modal-toggle {
+  @include all-reset;
+
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 24px;
+
+  @include to-mobile {
+    height: 28px;
+    width: 28px;
+    position: relative;
+  }
+
+  > .cross {
+    display: inline-block;
+    vertical-align: middle;
+    transition: stroke 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    fill: none;
+    stroke-width: 2px;
+
+    &.-gray {
+      stroke: rgba($base, 0.6);
+
+      @include to-mobile {
+        stroke: rgba(#fff, 0.6);
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &.-white {
+      stroke: rgba(#fff, 0.6);
+
+      @include to-mobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &.-popup-color {
+    > .cross {
+      stroke: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  &.-color,
+  &.-white {
+    > .cross {
+      stroke: $blue;
+    }
+  }
+
+  &:hover {
+    &.-color,
+    &.-white {
+      > .cross {
+        stroke: $light-blue;
+      }
+    }
+
+    &.-popup-color {
+      > .cross {
+        opacity: 1;
+      }
+    }
+
+    > .cross.-gray {
+      stroke: rgba($base, 1);
+
+      @include to-mobile {
+        stroke: rgba(#fff, 1);
+      }
+    }
+
+    > .cross.-white {
+      stroke: rgba(#fff, 1);
+    }
+  }
+
+  &:active {
+    user-select: none;
+
+    &.-color,
+    &.-white {
+      > .cross {
+        stroke: rgba($light-blue, 0.5);
+      }
+    }
+
+    &.-popup-color {
+      > .cross {
+        stroke: rgba(#fff, 0.5);
+      }
+    }
+  }
+}

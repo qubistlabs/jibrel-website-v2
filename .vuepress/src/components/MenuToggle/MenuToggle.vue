@@ -1,6 +1,6 @@
 <template>
-  <button class='modal-toggle' :class='`-${color}`'>
-    <span class='text'>menu</span>
+  <button class='menu-toggle' :class='`-${color}`'>
+    <span class='text'>{{this.$themeLocaleConfig.data.ProjectMenu.menu}}</span>
     <svg class="icon -mobile-hide" width="24" height="24"><use xlink:href="#i-menu"></use></svg>
     <div class='hamburger'></div>
   </button>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'ModalToggle',
+  name: 'MenuToggle',
   props: {
     color: 'color' | 'white'
   },
@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import './modalToggle';
+  @import './menuToggle';
 </style>
