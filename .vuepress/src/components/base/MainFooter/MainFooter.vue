@@ -3,13 +3,10 @@
     <div class='container _container-fix'>
       <div class='top'>
         <div class='logo'>
-          <a href='/' class='project-logo -color' data-aos='fade-in' data-aos-duration='600' data-aos-delay="150">
-            <svg class="icon" width="41.534px" height="45.558px"><use xlink:href="#logo-icon"></use></svg>
-            <svg class="text" width="68.829px" height="26.945px"><use xlink:href="#logo-text"></use></svg>
-          </a>
+          <ProjectLogo colorTheme='colored' animationType='fade-in'/>
         </div>
         <div class='navigation'>
-          <FooterMenu />
+          <FooterMenu @open="modalOpen"/>
         </div>
       </div>
     </div>
@@ -18,11 +15,18 @@
 
 <script>
 import FooterMenu from '@/components/FooterMenu/FooterMenu.vue'
+import ProjectLogo from '@/components/ProjectLogo/ProjectLogo.vue'
 export default {
   name: 'MainFooter',
   components: {
     FooterMenu,
+    ProjectLogo,
   },
+  methods: {
+    modalOpen() {
+      this.$emit('open')
+    }
+  }
 }
 </script>
 

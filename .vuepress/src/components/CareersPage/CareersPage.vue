@@ -5,7 +5,7 @@
         :title='$themeLocaleConfig.data.SectionName.vacansies'
         positionContainer='bottom-70'
         positionTitle='bottom'
-        color='color'
+        colorTheme='colored'
         arrow='up'
       />
       <div class='container _container-fix-small -bg-white -mobile-bg-gray'>

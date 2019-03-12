@@ -2,11 +2,11 @@
   <div class='section-content -bg-gray'>
     <div class='container _container-fix'>
       <div class='page-header'>
-        <router-link :to='`/${typePage}/`' class='back' v-if='typePage === "news" | typePage === "vacancy"'>
+        <router-link :to='`${$localeConfig.path + typePage}/`' class='back' v-if='typePage === "news" | typePage === "careers"'>
           <svg class="icon -color" width="11" height="11"><use xlink:href="#arr-l"></use></svg>
-          <span class='text'>Back to {{typePage}}</span>
+          <span class='text'>{{title}}</span>
         </router-link>
-        <div class='soc _mobile-hide' v-if='typePage === "news" | typePage === "vacancy"'>
+        <div class='soc _mobile-hide' v-if='typePage === "news" | typePage === "careers"'>
           <div class="ya-share2" data-services="facebook,twitter,linkedin"></div>
         </div>
         <div class='tab-links' v-if='typePage === "policyPage"'>
@@ -22,8 +22,9 @@
 export default {
   name: 'PageHeader',
   props: {
-    typePage: 'vacancy' | 'policyPage' | 'news',
-  }
+    typePage: 'careers' | 'policyPage' | 'news',
+    title: String,
+  },
 }
 </script>
 

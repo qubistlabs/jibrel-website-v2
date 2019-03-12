@@ -1,5 +1,5 @@
 <template>
-  <button class='menu-toggle' :class='`-${color}`'>
+  <button class='menu-toggle' :class='`-${colorTheme}`'>
     <span class='text'>{{this.$themeLocaleConfig.data.ProjectMenu.menu}}</span>
     <svg class="icon -mobile-hide" width="24" height="24"><use xlink:href="#i-menu"></use></svg>
     <div class='hamburger'></div>
@@ -10,7 +10,7 @@
 export default {
   name: 'MenuToggle',
   props: {
-    color: 'color' | 'white'
+    colorTheme: 'colored' | 'white'
   },
 }
 </script>
