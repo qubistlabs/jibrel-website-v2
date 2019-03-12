@@ -1,5 +1,4 @@
 ---
-type: news
 title: 12 start-ups from Zug’s Crypto Valley to watch
 description: The Swiss region of Zug is also known as Crypto Valley because it has become an epicentre of fintech, cryptocurrency and blockchain activity
 date: Apr. 12, 2018
