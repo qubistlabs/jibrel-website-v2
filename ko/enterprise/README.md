@@ -186,7 +186,7 @@ headerColor: white
         />
       </div>
     </section>
-  </div>
+  </div> 
 </template>
 
 <script>

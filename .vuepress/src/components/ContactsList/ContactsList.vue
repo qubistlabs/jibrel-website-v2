@@ -53,6 +53,31 @@ export default {
   props: {
     isWhite: false
   },
-  
+  computed: {
+    contacts() {
+      return [
+        {
+          img: '@/assets/img/general/icon/zug-w.svg',
+          city: this.$localeConfig.data.ProjectContact.Zug.city,
+          address: this.$localeConfig.data.ProjectContact.Zug.address
+        },
+        {
+          img: '@/assets/img/general/icon/new-york-w.svg',
+          city: this.$localeConfig.data.ProjectContact.NewYork.city,
+          address: this.$localeConfig.data.ProjectContact.NewYork.address
+        },
+        {
+          img: '@/assets/img/general/icon/peters-w.svg',
+          city: this.$localeConfig.data.ProjectContact.StPetersburg.city,
+          address: this.$localeConfig.data.ProjectContact.StPetersburg.address
+        },
+        {
+          img: '@/assets/img/general/icon/dubai-w.svg',
+          city: this.$localeConfig.data.ProjectContact.Dubai.city,
+          address: this.$localeConfig.data.ProjectContact.Dubai.address
+        },
+      ]
+    }
+  },
 }
 </script>

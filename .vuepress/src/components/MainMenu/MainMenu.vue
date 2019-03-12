@@ -9,7 +9,7 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Products}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}enterprise.html`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}enterprise/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}</router-link>
         </div>
         <div class='item'>
           <a :href='this.$localeConfig.data.LinkLanguageVersion.jwallet' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Jwallet}}</a>
@@ -21,7 +21,7 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Company}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}about.html`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}about/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}</router-link>
         </div>
         <div class='item'>
           <router-link :to='`${this.$localeConfig.path}news/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.PressMedia}}</router-link>
