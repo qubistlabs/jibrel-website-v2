@@ -3,19 +3,15 @@ index: true
 ---
 
 <template>
-  <section class='section-content -offset-page -offset-bottom -bottom-separator -bg-gray'>
-    <div class='container _container-fix'>
-      <NewsPreviews />
-    </div>
-  </section>
+  <NewsList />
 </template>
 
 
 <script>
-  import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
+  import NewsList from '@/pages/NewsList.vue'
   export default {
   components: {
-      NewsPreviews,
+      NewsList,
     },
   };
 </script>

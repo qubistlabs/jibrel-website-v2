@@ -7,8 +7,8 @@
     <SpriteIcon />
     <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' />
     <Content v-if='typePage === "precast-page"'/>
-    <NewsPage v-if='typePage === "/news/"' > <Content /> </NewsPage>
-    <VacancyPage v-if='typePage === "/careers/"' > <Content /> </VacancyPage>
+    <News v-if='typePage === "/news/"' > <Content /> </News>
+    <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
     <MainFooter @open="modalOpen"/>
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
       <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
@@ -25,11 +25,11 @@
 <script>
 import Vue from 'vue'
 import AOS from 'aos'
+import News from '@/pages/News.vue'
+import Vacancy from '@/pages/Vacancy.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
-import NewsPage from '@/components/NewsPage/NewsPage.vue'
-import VacancyPage from '@/components/VacancyPage/VacancyPage.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
 
@@ -39,8 +39,8 @@ export default {
     MainHeader,
     MainFooter,
     SpriteIcon,
-    NewsPage,
-    VacancyPage,
+    News,
+    Vacancy,
     ModalWindow,
     ProjectForm,
   },

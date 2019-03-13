@@ -8,7 +8,7 @@ index: true
 
 
 <script>
-  import CareersPage from '@/components/CareersPage/CareersPage.vue'
+  import CareersPage from '@/pages/Careers.vue'
   export default {
   components: {
       CareersPage,
