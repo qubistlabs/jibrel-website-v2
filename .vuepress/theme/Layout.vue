@@ -89,9 +89,9 @@ export default {
   created() {    
     this.getTypePage()
     this.getHeaderSize()
-    AOS.init({
-      disable: 'mobile',
-    })
+    // AOS.init({
+    //   disable: 'mobile',
+    // })
   },
 };
 </script>
