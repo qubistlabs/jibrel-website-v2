@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import FooterMenu from '@/components/FooterMenu/FooterMenu.vue'
+import FooterMenu from './FooterMenu/FooterMenu.vue'
 import ProjectLogo from '@/components/ProjectLogo/ProjectLogo.vue'
 export default {
   name: 'MainFooter',

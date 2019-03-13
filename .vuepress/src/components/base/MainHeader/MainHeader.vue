@@ -17,10 +17,10 @@
 
 
 <script>
+import MainMenu from './MainMenu/MainMenu.vue'
+import MenuToggle from './MenuToggle/MenuToggle.vue'
+import SelectLanguage from './SelectLanguage/SelectLanguage.vue'
 import ProjectLogo from '@/components/ProjectLogo/ProjectLogo.vue'
-import SelectLanguage from '@/components/SelectLanguage/SelectLanguage.vue'
-import MenuToggle from '@/components/MenuToggle/MenuToggle.vue'
-import MainMenu from '@/components/MainMenu/MainMenu.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 export default {
   name: 'MainHeader',
