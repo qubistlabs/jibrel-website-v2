@@ -114,8 +114,7 @@ headerColor: white
         <PartnersCard />
       </div>
     </section>
-    <ContactsList isWhite='true' />
-    <section class='section-content -offset-bottom -offset-top -mobile-bg-gray -mobile-offset-top'>
+    <section class='section-content -offset-bottom -mobile-bg-gray -mobile-offset-top'>
       <div class='container _container-fix'>
         <NewsPreviews isBordered='true' limit='3' />
         <div class='j-buttons -center' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='150'>
@@ -125,6 +124,7 @@ headerColor: white
         </div>
       </div>
     </section>
+    <ContactsList isWhite='true' />
   </div>
 </template>
 
