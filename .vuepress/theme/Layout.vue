@@ -23,7 +23,6 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
 import AOS from 'aos'
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
@@ -32,7 +31,6 @@ import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
-
 
 export default {
   components: {
@@ -89,9 +87,7 @@ export default {
   created() {    
     this.getTypePage()
     this.getHeaderSize()
-    // AOS.init({
-    //   disable: 'mobile',
-    // })
+    // app.AOS = new AOS.init({ disable: "mobile" });
   },
 };
 </script>
