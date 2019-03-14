@@ -1,7 +1,6 @@
 ---
-type: news
 title: 3 Biggest Ways Blockchain Will Change Society
-description: The potential of blockchain stretches far beyond and high above any of the buzz you hear surrounding cryptocurrency trading profits and initial coin offering deals. The long term, 25-year view of the technology...
+description: The potential of blockchain stretches far beyond and high above any of the buzz you hear surrounding cryptocurrency trading profits and initial coin offering deals. The long term, 25-year view of the technology
 date: Dec. 01, 2017
 img: /assets/img/cover/inc.png
 img2x: /assets/img/cover/inc@2x.png

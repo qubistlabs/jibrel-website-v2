@@ -1,7 +1,6 @@
 ---
-type: news
 title: Abu Dhabi's Al Hilal Bank uses blockchain to sell sukuk in secondary market
-description: Abu Dhabi’s Al Hilal Bank has executed the world’s first sukuk transaction using blockchain technology, it said on Monday. The Islamic bank used the distributed ledger technology...
+description: Abu Dhabi’s Al Hilal Bank has executed the world’s first sukuk transaction using blockchain technology, it said on Monday. The Islamic bank used the distributed ledger technology
 date: Nov. 26, 2018
 img: /assets/img/cover/reuters.png
 img2x: /assets/img/cover/reuters@2x.png
