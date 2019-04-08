@@ -4,13 +4,16 @@
 .typo-page {
   @include all-reset;
  
-  padding: 80px 100px 0 100px;
   display: block;
   width: 100%;
   box-sizing: border-box;
 
   @include to-mobile {
     padding-bottom: 21px;
+  }
+
+  @include from-mobile {
+    padding: 80px 100px 0 100px;
   }
 
   > .header {

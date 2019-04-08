@@ -10,7 +10,7 @@ headerColor: white
 <script>
   import Home from '@/pages/Home.vue'
   export default {
-  components: {
+    components: {
       Home,
     },
   };
