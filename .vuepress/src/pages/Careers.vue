@@ -26,6 +26,7 @@
 
 
 <script>
+  import MetaInfo from '@/Utils/MetaInfo.js'
   import ListVacancies from '@/components/ListVacancies/ListVacancies.vue'
   import SupportBox from '@/components/SupportBox/SupportBox.vue'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
@@ -37,6 +38,13 @@
       SupportBox,
       SectionName,
       ContactsList,
+    },
+    metaInfo () {
+      return MetaInfo(
+        this.$route.path,
+        `Vacancies`,
+        this.$page.frontmatter.description
+      )
     },
   };
 </script>

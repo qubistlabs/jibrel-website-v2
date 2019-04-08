@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import MetaInfo from '@/Utils/MetaInfo.js'
+
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 export default {
@@ -35,7 +37,14 @@ export default {
   components: {
     PageHeader,
     SectionName,
-  }
+  },
+  metaInfo () {
+    return MetaInfo(
+      this.$route.path,
+      `News - ${this.$page.frontmatter.title}`,
+      this.$page.frontmatter.description
+    )
+  },
 }
 </script>
 

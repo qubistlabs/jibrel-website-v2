@@ -186,6 +186,7 @@
 </template>
 
 <script>
+import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
@@ -194,6 +195,13 @@ export default {
     SectionName,
     PartnersCard,
     ProjectForm,
-  }
+  },
+  metaInfo () {
+    return MetaInfo(
+      this.$route.path,
+      'Enterprise',
+      this.$page.frontmatter.description
+    )
+  },
 }
 </script>

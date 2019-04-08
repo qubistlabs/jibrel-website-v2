@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import MetaInfo from '@/Utils/MetaInfo.js'
 import JobInfo from '@/components/JobInfo/JobInfo.vue'
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
@@ -55,7 +56,14 @@ export default {
     SectionName,
     SupportBox,
     ContactsList,
-  }
+  },
+  metaInfo () {
+    return MetaInfo(
+      this.$route.path,
+      `Vacancy - ${this.$page.frontmatter.title}`,
+      this.$page.frontmatter.description
+    )
+  },
 }
 </script>
 

@@ -8,10 +8,18 @@
 
 
 <script>
+  import MetaInfo from '@/Utils/MetaInfo.js'
+
   import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
   export default {
-  components: {
+    components: {
       NewsPreviews,
+    },
+    metaInfo () {
+      return MetaInfo(
+        this.$route.path,
+        'News',
+      )
     },
   };
 </script>

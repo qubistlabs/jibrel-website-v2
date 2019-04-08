@@ -119,6 +119,7 @@ headerColor: white
 </template>
 
 <script>
+import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
@@ -127,6 +128,13 @@ export default {
     SectionName,
     PartnersCard,
     ContactsList,
-  }
+  },
+  metaInfo () {
+    return MetaInfo(
+      this.$route.path,
+      'About',
+      this.$page.frontmatter.description
+    )
+  },
 }
 </script>
