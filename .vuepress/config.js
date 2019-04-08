@@ -44,8 +44,6 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US', // this will be set as the lang attribute on <html>
-      title: 'Jibrel Network',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
       data: {
         CareerPage: CareerPageEn,
         EnterpriseSolution: EnterpriseSolutionEn,
@@ -63,8 +61,6 @@ module.exports = {
     },
     '/ko/': {
       lang: 'ko-KR',
-      title: 'Jibrel Network',
-      description: 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
       data: {
         CareerPage: CareerPageKo,
         EnterpriseSolution: EnterpriseSolutionKo,
