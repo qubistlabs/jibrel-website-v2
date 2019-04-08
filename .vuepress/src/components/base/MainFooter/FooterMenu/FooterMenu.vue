@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import CircleSocial from './CircleSocial/CircleSocial.vue'
+import CircleSocial from '@/components/CircleSocial/CircleSocial.vue'
 export default {
   name: 'FooterMenu',
   components: {
