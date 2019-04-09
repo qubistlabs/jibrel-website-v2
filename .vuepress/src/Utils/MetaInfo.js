@@ -23,20 +23,19 @@ function MetaInfo(
       {'property': 'og:title', 'content': `Jibrel Network ${titlePage}`},
       {'property': 'og:url', 'content': url},
       {'property': 'og:description', 'content': description},
-      {'property': 'og:image', 'content': '/public/assets/misc/logo.jpg'},
+      {'property': 'og:image', 'content': '/assets/misc/logo.jpg'},
       {'property': 'og:image:type', 'content': 'image/jpeg'},
       {'property': 'og:image:width', 'content': '500'},
       {'property': 'og:image:height', 'content': '250'},
     ],
     link: [
-      { 'rel': 'apple-touch-icon', 'href': '/public/assets/misc/apple-touch-icon.png', 'size': '180x180' },
-      { 'rel': 'icon', 'type': 'image/png', 'href': '/public/assets/misc/favicon-32x32.png', 'size': '32x32' },
-      { 'rel': 'icon', 'type': 'image/png', 'href': '/public/assets/misc/favicon-16x16.png', 'size': '16x16' },
-      { 'rel': 'manifest', 'href': '/public/assets/misc/site.webmanifest' },
-      { 'rel': 'mask-icon', 'href': '/public/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' },
-      { 'rel': 'image_src', 'href': '/public/assets/misc/logo.jpg' },
+      { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'size': '180x180' },
+      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'size': '32x32' },
+      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'size': '16x16' },
+      { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest' },
+      { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' },
+      { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' },
       { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' },
-
     ]
   }
 }

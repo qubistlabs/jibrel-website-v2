@@ -41,9 +41,32 @@ const ProjectNewsKo = require('./i18n/KoKr/theme/ProjectNews.json')
 const SectionNameKo = require('./i18n/KoKr/theme/SectionName.json')
 
 module.exports = {
+  dest: 'build',
+  head: [
+    ['meta', {'http-equiv': 'cleartype', 'content': 'on'}],
+    ['meta', {'name': 'viewport', 'content': 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0'}],
+    ['meta', {'name': 'HandheldFriendly', 'content': 'true'}],
+    ['meta', {'name': 'msapplication-TileColor', 'content': '#da532c'}],
+    ['meta', {'name': 'theme-color', 'content': '#003DC6'}],
+    ['meta', {'name': 'format-detection', 'content': 'telephone=no'}],
+    ['meta', {'property': 'og:site_name', 'content': `Jibrel Network`}],
+    ['meta', {'property': 'og:image', 'content': '/assets/misc/logo.jpg'}],
+    ['meta', {'property': 'og:image:type', 'content': 'image/jpeg'}],
+    ['meta', {'property': 'og:image:width', 'content': '500'}],
+    ['meta', {'property': 'og:image:height', 'content': '250'}],
+    ['link', { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'size': '180x180' }],
+    ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'size': '32x32' }],
+    ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'size': '16x16' }],
+    ['link', { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest' }],
+    ['link', { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' }],
+    ['link', { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' }],
+    ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
+  ],
   locales: {
     '/': {
-      lang: 'en-US', // this will be set as the lang attribute on <html>
+      lang: 'en-US',
+      title: 'VuePress',
+      description: 'Vue-powered Static Site Generator',
       data: {
         CareerPage: CareerPageEn,
         EnterpriseSolution: EnterpriseSolutionEn,
