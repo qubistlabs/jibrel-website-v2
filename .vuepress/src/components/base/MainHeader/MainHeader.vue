@@ -5,7 +5,7 @@
         <ProjectLogo :colorTheme='colorTheme' animationType='fade-down'/>
         <div class='actions' data-aos='fade-down' data-aos-duration='900' data-aos-delay='150'>
           <SelectLanguage :colorTheme='colorTheme'/>
-          <div @click='isOpened = true'>
+          <div @click='openMenu'>
           <MenuToggle :colorTheme='colorTheme' />
           </div>
         </div>
@@ -40,6 +40,18 @@ export default {
       isOpened: false,
     }
   },
+  methods: {
+    openMenu() {
+      this.isOpened = true
+      this.$gtm.trackView({
+        'event': 'AutoEvent',
+        'eventCategory': 'Menu',
+        'eventAction': 'Open_menu',
+        'eventLabel': '',
+        'eventValue': '',
+      });
+    }
+  }
 }
 </script>
 

@@ -65,8 +65,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator',
+      title: 'Jibrel Network',
       data: {
         CareerPage: CareerPageEn,
         EnterpriseSolution: EnterpriseSolutionEn,
@@ -84,6 +83,7 @@ module.exports = {
     },
     '/ko/': {
       lang: 'ko-KR',
+      title: 'Jibrel Network',
       data: {
         CareerPage: CareerPageKo,
         EnterpriseSolution: EnterpriseSolutionKo,
@@ -124,6 +124,7 @@ module.exports = {
       }
     }
   },
+  // plugins: ['vuepress-plugin-google-tag-manager'],
   configureWebpack: {
     resolve: {
       alias: {

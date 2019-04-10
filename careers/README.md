@@ -1,5 +1,6 @@
 ---
 index: true 
+title: Careers
 ---
 
 <template>

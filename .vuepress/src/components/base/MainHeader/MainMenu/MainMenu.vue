@@ -1,7 +1,7 @@
 <template>
   <nav class='main-menu'>
     <div class='close'>
-      <button class='modal-toggle' @click="$emit('close')">
+      <button class='modal-toggle' @click='closeMenu'>
         <svg class="cross -white" width="22.414px" height="22.414px"><use xlink:href="#i-cross"></use></svg>
       </button>
     </div>
@@ -9,25 +9,37 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Products}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}enterprise/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}enterprise/`' @click.native='clickLink("Enterprise")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}
+          </router-link>
         </div>
         <div class='item'>
-          <a :href='this.$localeConfig.data.LinkLanguageVersion.jwallet' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Jwallet}}</a>
+          <a :href='this.$localeConfig.data.LinkLanguageVersion.jwallet' @click='clickLink("Jwallet")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Jwallet}}
+          </a>
         </div>
         <div class='item'>
-          <a :href='this.$localeConfig.data.LinkLanguageVersion.jcash' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Jcash}}</a>
+          <a :href='this.$localeConfig.data.LinkLanguageVersion.jcash' @click='clickLink("Jcash")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Jcash}}
+          </a>
         </div>
       </div>
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Company}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}about/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}about/`' @click.native='clickLink("AboutUs")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}
+          </router-link>
         </div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}news/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.PressMedia}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}news/`' @click.native='clickLink("PressMedia")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.PressMedia}}
+          </router-link>
         </div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}careers/`' class='link' active-class='-current'>{{this.$themeLocaleConfig.data.ProjectMenu.Careers}}</router-link>
+          <router-link :to='`${this.$localeConfig.path}careers/`' @click.native='clickLink("Careers")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
+          </router-link>
         </div>
       </div>
       <div class='box'>
@@ -36,16 +48,24 @@
           <button class='link'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
         </div>
         <div class='item'>
-          <a href='https://www.facebook.com/jibrelnetwork/' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}</a>
+          <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}
+          </a>
         </div>
         <div class='item'>
-          <a href='https://twitter.com/JibrelNetwork' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}</a>
+          <a href='https://twitter.com/JibrelNetwork' @click='clickLink("Twitter")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}
+          </a>
         </div>
         <div class='item'>
-          <a href='https://www.linkedin.com/company/jibrel-network/' class='link' target='_blank' >{{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}</a>
+          <a href='https://www.linkedin.com/company/jibrel-network/' @click='clickLink("Linkedin")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}
+          </a>
         </div>
         <div class='item'>
-          <a href='https://medium.com/@jibrelnetwork' class='link' target='_blank'>{{this.$themeLocaleConfig.data.ProjectMenu.Medium}}</a>
+          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
+          </a>
         </div>
       </div>
     </div>
@@ -58,11 +78,29 @@
 <script>
 export default {
   name: 'MainMenu',
+  methods: {
+    closeMenu() {
+      this.gtmSend('Menu', 'Close_menu', '')
+      this.$emit('close')
+    },
+    clickLink(label) {      
+      this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
+    },
+    gtmSend(category, action, label) {
+      this.$gtm.trackView({
+        'event': 'AutoEvent',
+        'eventCategory': category,
+        'eventAction': action,
+        'eventLabel': label,
+        'eventValue': '',
+      });
+    }
+  },
   watch: {
     $page: function () {      
       this.$emit('close')
     }
-  }
+  },
 }
 </script>
 
