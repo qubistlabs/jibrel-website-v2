@@ -137,20 +137,23 @@
 <script>
 import { keyBy } from 'lodash-es'
 const files = require.context('@/assets/img/svg', true, /.*\.svg$/)
-const icons = keyBy(
+const iconsUI = keyBy(
   files.keys().map((x) => {
-    x.replace('./', '')
-    const filesArray = files(x)
-    // const sizeArray = filesArray.viewBox.split(/(\s+)/).filter(e => e.trim().length > 0)
-    // console.log(filesArray);
-    // filesArray.width = sizeArray[2]
-    // filesArray.height = sizeArray[3]
-    return filesArray
+    const file = files(x)
+    console.log(file);
+    // const icon = require(`@/assets/img/svg/i-arrow-up.svg`).default.url;
+    
+    // const [,, width, height] = file.viewBox.split(/(\s+)/).filter(e => e.trim().length > 0)
+
+    // /* eslint-disable fp/no-mutation */
+    // file.width = width
+    // file.height = height
+    // /* eslint-enable fp/no-mutation */
+
+    return file
   }),
   'id',
 )
-// const icons = keyBy(files.keys().map((x) => {x}))
-// console.log(icons);
 
 export default {
   name: 'SpriteIcon'

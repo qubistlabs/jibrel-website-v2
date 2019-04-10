@@ -7,6 +7,7 @@
       >
         {{title}}
       </div>
+      <!-- <SvgIcon :name='`i-arrow-${arrow}`'/> -->
       <svg class='arrow' 
         :class='[`-${color}`, `-${arrow}`]' 
         width='23'
@@ -20,8 +21,12 @@
 </template>
 
 <script>
+import SvgIcon from '@/components/base/SpriteIcon/SvgIcon.vue'
 export default {
   name: 'SectionName',
+  components: {
+    SvgIcon
+  },
   props: {
     title: String,
     positionContainer: 'bottom-70' | 'bottom-460' | 'top-0' | 'top-110' | 'center',
