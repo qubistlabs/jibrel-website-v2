@@ -29,7 +29,7 @@ Quorum differs from the [Utility Settlement Coin](http://marketmadhouse.com/is-b
 
 The Quorum test is very similar to the [**Jibrel Network**](https://jibrel.network/) **(JNT)** which will use the Ethereum blockchain to transmit debt instruments known as cryptocurrency depository receipts or CryDRs. The CryDRs are designed to be cheaper and faster than standard depository receipts and can be purchased with Jibrel’s JNT ERC20-protocol token.
 
-![/](/assets/img/content/news-384946876965.jpg)
+![](/assets/img/content/news-384946876965.jpg)
 
 Jibrel is testing a solution called jCash that will enable the purchase of CryDRs with US Dollars, Pound Sterling, Rubbles, Euros, Yuan and United Arab Emirates Dirham (NYSE:AED). The Swiss based company is also testing a standalone cryptocurrency wallet that is supposed to be safer than other solutions and plans the Jibrel DAO, a marketplace for CryDRs.
 

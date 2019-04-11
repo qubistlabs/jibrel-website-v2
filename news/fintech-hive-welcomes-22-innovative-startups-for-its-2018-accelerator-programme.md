@@ -8,7 +8,7 @@ source:
 
 ---
 
-![/](/assets/img/content/RIFC_2018_09_04.jpg)
+![Raja Al Mazrouei – EVP of FinTech Hive at DIFC](/assets/img/content/RIFC_2018_09_04.jpg)
 
 *   22 finalists join the 2018 edition, along with 21 partners
 *   The 2018 Programme expands its scope beyond Fintech to include Insurtech, RegTech and Islamic Fintech

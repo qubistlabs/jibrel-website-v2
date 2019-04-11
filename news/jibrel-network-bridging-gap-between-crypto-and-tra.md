@@ -7,7 +7,7 @@ source:
     url: https://www.forbes.com/sites/jessedamiani/2018/01/22/jibrel-network-is-bridging-the-gap-between-crypto-and-traditional-markets/#303c9e1d67d3
 ---
 
-![/](/assets/img/content/973j9uegb3t8y48tq84-09t.jpg)
+![](/assets/img/content/973j9uegb3t8y48tq84-09t.jpg)
 
 **Compliance never looked this sexy.**
 
@@ -41,7 +41,7 @@ This all may sound understandable enough, but ensuring that this is a practical 
 
 Because there is effectively an infinite set of possibilities in terms of how these CryDRs might need to be structured, they have smart regulation baked in, so that real-world regulations can be easily translated into [solidity code](https://blockgeeks.com/guides/solidity/) (a coding language for Ethereum smart contracts). This will be especially appealing for those who see the writing on the wall in terms of regulation in crypto markets.
 
-![https%3A%2F%2Fblogs-images](/assets/img/content/Fphone-new_2.wfwfwf30j.jpg)
+![Example of how Jibrel CryDR smartphone app could look like](/assets/img/content/Fphone-new_2.wfwfwf30j.jpg)
 
 "We're translating real-world regulation into solidity code and deploying it so that these token transfers can always be KYC compliant without a regulator intervening," Barghuthi said. "It’s governance without governance. We can ensure that we still meet the KYC standards, the anti-money laundering, the anti-terrorism financing standards—all without killing the decentralized dream."
 
@@ -55,7 +55,7 @@ For its first roll-out, jCash, an ERC-20 token, will offer USD, GBP, EUR, RUB, 
 
 "All transfers on jCash are always AML KYC compliant,"Barghuthi said. "We do get a bit of backlash from the community, like, 'Yeah, but the whole point about bitcoin is it’s off-grid, etc.' Okay you can stay off-grid, and that’s a $500 billion market. But if you go on-grid, you can start tackling the issues with the $34 trillion global economy."
 
-![https%3A%2F%2Fblogs-images](/assets/img/content/FScreen-Shot-2018-01-21-at-3.19.33-PM-1200x681.jpg)
+![Example of how Jibrel wallet desktop app could look like](/assets/img/content/FScreen-Shot-2018-01-21-at-3.19.33-PM-1200x681.jpg)
 
 jWallet was conceived after the Jibrel team surveyed the crypto wallet landscape and decided that they needed to build one with a higher degree of security.
 

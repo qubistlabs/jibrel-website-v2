@@ -17,7 +17,7 @@ Bitcoin, Ethereum, Ripple, Litecoin, Dash -- there clearly are many cryptocurre
 
 Cryptocurrencies are no exception, suggesting that some investment in certain coins is indiscriminate. The ever-expanding list of alt-coins makes us wonder how this will become a normal part of life any time soon. 
 
-![28a47eba-fd41-11e7-a14a-553c77d22920](//s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/28a47eba-fd41-11e7-a14a-553c77d22920.png)
+![Big price swings have been the norm for Bitcoin](//s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/28a47eba-fd41-11e7-a14a-553c77d22920.png)
 
 Adoption, under the assumption that cryptocurrencies are one, secular group, is accelerating. A study of 2,000 Britons by the London Block Exchange claims that 5% of those studied under the age of 35 already have invested in a cryptocurrency, while 11% say they will" definitely" invest in 2018 and 17% say they are "seriously considering" it. Investing, however, differs from actual use. Practically all cryptocurrencies sit in cryptocurrency wallets but we do expect that to change, albeit slowly.
 

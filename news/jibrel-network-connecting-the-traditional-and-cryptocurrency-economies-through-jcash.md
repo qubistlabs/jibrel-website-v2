@@ -44,5 +44,3 @@ Ultimately, Jibrel is committed to solving these issues that have traditionally 
 More info can be found on [the project website](http://pr.report/pK2c4ke7).
 
 **SOURCE:** Jibrel AG
-
-![spaceball](https://s.yimg.com/g/images/spaceball.gif)

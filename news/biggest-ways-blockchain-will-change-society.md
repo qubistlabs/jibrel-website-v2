@@ -7,7 +7,8 @@ source:
     url: https://www.inc.com/bill-carmody/3-biggest-ways-blockchain-will-change-society.html
 ---
 
-![An img](/assets/img/content/getty_652217936_333984.wd23r35454.jpg)
+![Artistic representation of blockchain society](/assets/img/content/getty_652217936_333984.wd23r35454.jpg)
+
 The potential of blockchain stretches far beyond and high above any of the buzz you hear surrounding cryptocurrency trading profits and initial coin offering deals. The long term, 25-year view of the technology persuasively explains how its core features show the promise to serve, if implemented effectively, as cornerstone solutions to mankind's most foundational problems.
 
 With widely-scaled decentralized systems, we can eradicate fraud, automate manual processes, and control for issues of authentication and trust. The power of blockchain can enable humans to redefine legacy architectures of governance and law, reinvigorating lost concepts of true democracy and meritocracy. 
