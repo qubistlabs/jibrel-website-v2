@@ -1,10 +1,10 @@
 ---
 title: Jibrel launches jCash in a bid to solve cryptocurrency volatility by tokenizing fiat
 description: Cryptocurrencies are starting to become mainstream. Headline-grabbers like Bitcoin and Ethereum, along with up-and-comers like Litecoin and Dash, are increasingly attractive to consumers of all ages
-date: Jan. 17, 2018
-img: /assets/img/cover/vb.png
-img2x: /assets/img/cover/vb@2x.png
-link: https://venturebeat.com/2018/01/17/jibrel-launches-jcash-in-a-bid-to-solve-cryptocurrency-volatility-by-tokenizing-fiat/
+date: 2018-01-17
+source:
+    id: vb
+    url: https://venturebeat.com/2018/01/17/jibrel-launches-jcash-in-a-bid-to-solve-cryptocurrency-volatility-by-tokenizing-fiat/
 ---
 
 ![/](/assets/img/content/jibrel-jcash-cryptocurrency-fiat.hiu98y7.jpg)

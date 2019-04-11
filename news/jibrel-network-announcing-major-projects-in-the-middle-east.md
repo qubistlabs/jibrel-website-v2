@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network announcing major projects in the Middle East
 description: Jibrel Network has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the region’s leader in blockchain
-date: Jul. 18, 2018
-img: /assets/img/cover/unlock.png
-img2x: /assets/img/cover/unlock@2x.png
-link: https://www.unlock-bc.com/news/2018-07-18/jibrel-network-announcing-major-projects-in-the-middle-east
+date: 2018-07-18
+source:
+    id: unlock
+    url: https://www.unlock-bc.com/news/2018-07-18/jibrel-network-announcing-major-projects-in-the-middle-east
 ---
 
 ![/](/assets/img/content/talal-pic.jpg)

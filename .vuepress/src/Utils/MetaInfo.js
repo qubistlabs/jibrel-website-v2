@@ -7,7 +7,7 @@ function MetaInfo(
   url ? url = urlBase + url : url = urlBase
   titlePage ? titlePage = `- ${titlePage}` : titlePage = ''
   description ? description : description = 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain'
-  
+
   return {
     title: 'Jibrel Network',
     titleTemplate: `%s ${titlePage}`,
@@ -32,7 +32,7 @@ function MetaInfo(
       { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'size': '180x180' },
       { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'size': '32x32' },
       { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'size': '16x16' },
-      { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest' },
+      { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' },
       { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' },
       { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' },
       { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' },

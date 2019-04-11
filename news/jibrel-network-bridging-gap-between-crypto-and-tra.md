@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network Is Bridging The Gap Between Crypto And Traditional Markets
 description: Much has been made of all the ways blockchain and cryptocurrencies can potentially displace existing infrastructure. For all the ways it can't—and there are many—Jibrel is leading the way in integrating the cutting
-date: Jan. 22, 2018
-img: /assets/img/cover/forbes.png
-img2x: /assets/img/cover/forbes@2x.png
-link: https://www.forbes.com/sites/jessedamiani/2018/01/22/jibrel-network-is-bridging-the-gap-between-crypto-and-traditional-markets/#303c9e1d67d3
+date: 2018-01-22
+source:
+    id: forbes
+    url: https://www.forbes.com/sites/jessedamiani/2018/01/22/jibrel-network-is-bridging-the-gap-between-crypto-and-traditional-markets/#303c9e1d67d3
 ---
 
 ![/](/assets/img/content/973j9uegb3t8y48tq84-09t.jpg)

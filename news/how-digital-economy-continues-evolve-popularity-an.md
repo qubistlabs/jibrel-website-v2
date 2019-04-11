@@ -1,10 +1,10 @@
 ---
 title: How the digital economy continues to evolve as popularity and interest grows
 description: Blockchain technology has been causing quite a buzz lately - and for good reasons. From its ability to ensure the security of financial transactions, to the elimination of middlemen, blockchain technology is capable of transforming
-date: Nov. 13, 2017
-img: /assets/img/cover/tnw.png
-img2x: /assets/img/cover/tnw@2x.png
-link: https://thenextweb.com/contributors/2017/11/16/digital-economy-continues-evolve-popularity-interest-grows/
+date: 2017-11-13
+source:
+    id: tnw
+    url: https://thenextweb.com/contributors/2017/11/16/digital-economy-continues-evolve-popularity-interest-grows/
 ---
 
 ![/](/assets/img/content/cryptocurrency-tnw-796x466.wdwdw357648.jpg)

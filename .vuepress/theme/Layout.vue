@@ -13,7 +13,7 @@
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
       <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
-        <ProjectForm 
+        <ProjectForm
           @close="isOpened=false"
           eventType='product-and-sale-enterprise'
           formName='message'
@@ -38,7 +38,7 @@ import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
 
 import VueGtm from 'vue-gtm';
-import VueYandexMetrika from 'vue-yandex-metrika'  
+import VueYandexMetrika from 'vue-yandex-metrika'
 // import VueRouter from 'vue-router';
 // const router = new VueRouter({ routes, mode, linkActiveClass });
 
@@ -93,7 +93,7 @@ export default {
     modalOpen() {
       this.isOpened = true
     },
-    getHeaderColor() {     
+    getHeaderColor() {
       if (this.$page.frontmatter.headerColor) {
         return 'white';
       }
@@ -126,7 +126,9 @@ export default {
       });
     },
     ymTracking() {
-      this.$metrika.hit(this.$page.path)
+      if (this.$metrika) {
+        this.$metrika.hit(this.$page.path)
+      }
     }
   },
   watch: {
@@ -137,13 +139,13 @@ export default {
       this.ymTracking()
     }
   },
-  created() {    
+  created() {
     this.getTypePage()
     this.getHeaderSize()
     this.gtmSend()
     this.ymTracking()
     // app.AOS = new AOS.init({ disable: "mobile" });
-  }, 
+  },
 };
 </script>
 

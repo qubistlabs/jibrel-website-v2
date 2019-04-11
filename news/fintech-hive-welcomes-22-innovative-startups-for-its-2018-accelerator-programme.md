@@ -1,10 +1,10 @@
 ---
 title: "FinTech Hive welcomes 22 innovative startups for its 2018 accelerator programme"
 description: "Dubai, UAE: – FinTech Hive, the first and largest financial technology accelerator in the Middle East, Africa and South Asia (MEASA) region, announced today the commencement of the 2018 edition of its accelerator programme, in"
-date:  Sep. 04, 2018
-img:  /assets/img/cover/zawya.png
-img2x:  /assets/img/cover/zawya@2x.png
-link:  https://www.zawya.com/saudi-arabia/en/press-releases/story/FinTech_Hive_welcomes_22_innovative_startups_for_its_2018_accelerator_programme-ZAWYA20180904113144/
+date:  2018-09-04
+source:
+    id: zawya
+    url: https://www.zawya.com/saudi-arabia/en/press-releases/story/FinTech_Hive_welcomes_22_innovative_startups_for_its_2018_accelerator_programme-ZAWYA20180904113144/
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network has now launched its first financial asset token, jCash
 description: Will allow users to conduct real world transactions by use of blockchain and smart contracts. What started with cryptocurrencies like Bitcoin, which offered transparent, digital transactions
-date: Jan. 17, 2018
-img: /assets/img/cover/vator.png
-img2x: /assets/img/cover/vator@2x.png
-link: http://vator.tv/news/2018-01-17-jibrel-network-has-now-launched-their-first-financial-asset-token-jcash#Imxcv2XL7gV66OmE.99%EF%BB%BF
+date: 2018-01-17
+source:
+    id: vator
+    url: http://vator.tv/news/2018-01-17-jibrel-network-has-now-launched-their-first-financial-asset-token-jcash#Imxcv2XL7gV66OmE.99%EF%BB%BF
 ---
 
 Will allow users to conduct real world transactions by use of blockchain and smart contracts

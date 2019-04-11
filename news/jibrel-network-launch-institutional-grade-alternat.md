@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network To Launch Institutional-Grade Alternative To MyEtherWallet
 description: The jWallet is designed to offer institutional grade management of digital assets including cryptocurrencies and tokens. Despite its higher level of security, the jWallet is designed to be very user-friendly
-date: May 09, 2018
-img: /assets/img/cover/seekingalpha.png
-img2x: /assets/img/cover/seekingalpha@2x.png
-link: https://seekingalpha.com/instablog/22912651-daniel-jennings/5157010-jibrel-network-launch-institutional-grade-alternative-myetherwallet
+date: 2018-05-09
+source:
+    id: seekingalpha
+    url: https://seekingalpha.com/instablog/22912651-daniel-jennings/5157010-jibrel-network-launch-institutional-grade-alternative-myetherwallet
 ---
 
 ## Summary

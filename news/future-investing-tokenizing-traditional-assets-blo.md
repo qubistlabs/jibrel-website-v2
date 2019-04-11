@@ -1,10 +1,10 @@
 ---
 "title": "The Future of Investing: Tokenizing Traditional Assets on The Blockchain"
 description: Blockchain technology has been causing quite a buzz lately - and for good reasons. From its ability to ensure the security of financial transactions, to the elimination of middlemen, blockchain technology is capable of transforming
-date: Nov. 17, 2017
-img: /assets/img/cover/huffpost.png
-img2x: /assets/img/cover/huffpost@2x.png
-link: https://www.huffingtonpost.com/entry/5a0f4aaee4b023121e0e927d
+date: 2017-11-17
+source:
+    id: huffpost
+    url: https://www.huffingtonpost.com/entry/5a0f4aaee4b023121e0e927d
 ---
 
 ![/](/assets/img/content/5a0f4c8b1500009d02858aa8.wfwfw.jpeg)

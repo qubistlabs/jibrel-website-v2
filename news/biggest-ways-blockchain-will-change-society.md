@@ -1,10 +1,10 @@
 ---
 title: 3 Biggest Ways Blockchain Will Change Society
 description: The potential of blockchain stretches far beyond and high above any of the buzz you hear surrounding cryptocurrency trading profits and initial coin offering deals. The long term, 25-year view of the technology
-date: Dec. 01, 2017
-img: /assets/img/cover/inc.png
-img2x: /assets/img/cover/inc@2x.png
-link: https://www.inc.com/bill-carmody/3-biggest-ways-blockchain-will-change-society.html
+date: 2017-12-01
+source:
+    id: inc
+    url: https://www.inc.com/bill-carmody/3-biggest-ways-blockchain-will-change-society.html
 ---
 
 ![An img](/assets/img/content/getty_652217936_333984.wd23r35454.jpg)

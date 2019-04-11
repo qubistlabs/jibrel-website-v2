@@ -36,7 +36,7 @@ const SectionNameEn = require('./i18n/EnUS/theme/SectionName.json')
 
 const FormTextKo = require('./i18n/KoKr/theme/FormText.json')
 const ProjectMenuKo = require('./i18n/KoKr/theme/ProjectMenu.json')
-const PageHeaderKo = require('./i18n/KoKr/theme/PageHeader.json') 
+const PageHeaderKo = require('./i18n/KoKr/theme/PageHeader.json')
 const ProjectNewsKo = require('./i18n/KoKr/theme/ProjectNews.json')
 const SectionNameKo = require('./i18n/KoKr/theme/SectionName.json')
 
@@ -57,8 +57,9 @@ module.exports = {
     ['link', { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'size': '180x180' }],
     ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'size': '32x32' }],
     ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'size': '16x16' }],
-    ['link', { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest' }],
+    ['link', { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' }],
     ['link', { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' }],
+    ['link', { 'rel': 'shortcut icon', 'href': '/assets/misc/favicon.ico' }],
     ['link', { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' }],
     ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
   ],
@@ -175,7 +176,7 @@ module.exports = {
         {
           loader: 'css-loader',
           options: {
-           
+
           },
         },
         {
@@ -199,6 +200,13 @@ module.exports = {
         'sass-loader',
       ]
     }]
+  },
+  markdown: {
+    config: md => {
+      md.use(require('markdown-it-implicit-figures'), {
+        figcaption: true,
+      })
+    },
   },
 }
 

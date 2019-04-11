@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network announces partnership with Bitcoin Suisse
 description: Will allow institutional and traditional investors to get in on Jibrel's ongoing ICO. As Bitcoin continues to skyrocket (over $16k at the time of this writing), the crypto world continues to move forward in other
-date: Dec. 07, 2017
-img: /assets/img/cover/vator.png
-img2x: /assets/img/cover/vator@2x.png
-link: http://vator.tv/news/2017-12-07-jibrel-network-announces-partnership-with-bitcoin-suisse
+date: 2017-12-07
+source:
+    id: vator
+    url: http://vator.tv/news/2017-12-07-jibrel-network-announces-partnership-with-bitcoin-suisse
 ---
 
 Will allow institutional and traditional investors to get in on Jibrel's ongoing ICO

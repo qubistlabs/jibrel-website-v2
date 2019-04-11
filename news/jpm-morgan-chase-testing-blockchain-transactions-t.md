@@ -1,10 +1,10 @@
 ---
 title: JPM Morgan Chase Testing Blockchain Transactions, Telegram Has 200 Million Users
 description: "America’s largest bank; JPMorgan Chase (NYSE: JPM) tested a $150 million certificate of deposit (CD) transaction on its Quorum blockchain solution."
-date: Apr. 29, 2018
-img: /assets/img/cover/seekingalpha.png
-img2x: /assets/img/cover/seekingalpha@2x.png
-link: https://seekingalpha.com/instablog/22912651-daniel-jennings/5151780-jpm-morgan-chase-testing-blockchain-transactions-telegram-200-million-users
+date: 2018-04-29
+source:
+    id: seekingalpha
+    url: https://seekingalpha.com/instablog/22912651-daniel-jennings/5151780-jpm-morgan-chase-testing-blockchain-transactions-telegram-200-million-users
 ---
 
 ## Summary

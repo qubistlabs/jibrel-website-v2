@@ -1,10 +1,10 @@
 ---
 title: "Jibrel Network: Connecting the Traditional and Cryptocurrency Economies through Jcash"
 description: ZUG, SWITZERLAND / ACCESSWIRE / August 19, 2018 / One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory
-date: Aug. 19, 2018
-img: /assets/img/cover/yahoo.png
-img2x: /assets/img/cover/yahoo@2x.png
-link: https://finance.yahoo.com/news/jibrel-network-connecting-traditional-cryptocurrency-193500949.html
+date: 2018-08-19
+source:
+    id: yahoo
+    url: https://finance.yahoo.com/news/jibrel-network-connecting-traditional-cryptocurrency-193500949.html
 ---
 
 **ZUG, SWITZERLAND / ACCESSWIRE / August 19, 2018 /** One of the biggest challenges for blockchain projects is how to allow people to safely trade assets in a volatile cryptocurrency market while also meeting regulatory compliance standards. This is precisely the issue that Jibrel is aiming to solve.

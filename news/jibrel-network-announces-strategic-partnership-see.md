@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network announces strategic partnership with the SEED Group
 description: Bringing about much-needed regulation to cryptocurrencies, jCash is now available for licensed entities, regulators and governments to pilot worldwide for optimized transactions
-date: Mar. 11, 2018
-img: /assets/img/cover/zawya.png
-img2x: /assets/img/cover/zawya@2x.png
-link: https://www.zawya.com/mena/en/story/Jibrel_Network_announces_strategic_partnership_with_the_SEED_Group-ZAWYA20180311065811/
+date: 2018-03-11
+source:
+    id: zawya
+    url: https://www.zawya.com/mena/en/story/Jibrel_Network_announces_strategic_partnership_with_the_SEED_Group-ZAWYA20180311065811/
 ---
 
 The Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, to roll-out jCash in the UAE and MENA Region, a solution bridging the gap between cryptocurrencies and traditional markets

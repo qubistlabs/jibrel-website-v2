@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network Announces jCash for Regulated, Asset-Backed Smart Contracts
 description: Jibrel Network announced on Wednesday the launch of jCash, the Jibrel Network’s first tokenized asset used to provide an auditable, fiat-backed cryptographic asset existing off-chain, designed to allow deeper regulatory
-date: Jan. 17, 2018
-img: /assets/img/cover/blockchainnews.png
-img2x: /assets/img/cover/blockchainnews@2x.png
-link: https://www.the-blockchain.com/2018/01/17/jibrel-network-announces-jcash-regulated-asset-backed-smart-contracts/
+date: 2018-01-17
+source:
+    id: blockchainnews
+    url: https://www.the-blockchain.com/2018/01/17/jibrel-network-announces-jcash-regulated-asset-backed-smart-contracts/
 ---
 
 ![/](/assets/img/content/DQLVaapWkAAAENs.wigigyogo872x.jpg)

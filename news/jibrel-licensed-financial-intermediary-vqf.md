@@ -1,10 +1,10 @@
 ---
 title: Jibrel is Licensed as Financial Intermediary by VQF
 description: Jibrel AG is now an official member of the Association for the Quality Assurance of Financial Services (VQF), confirming its status as a licensed financial intermediary in the Swiss para banking sector. VQF is the oldest and largest
-date: May 22, 2018
-img: /assets/img/cover/yahoo.png
-img2x: /assets/img/cover/yahoo@2x.png
-link: https://finance.yahoo.com/news/jibrel-licensed-financial-intermediary-vqf-110000811.html?guccounter=1
+date: 2018-05-22
+source:
+    id: yahoo
+    url: https://finance.yahoo.com/news/jibrel-licensed-financial-intermediary-vqf-110000811.html?guccounter=1
 ---
 
 **The Jibrel Network provides traditional financial assets, such as currencies, bonds, and equities, as standard ERC-20 tokens on the Ethereum blockchain.**
