@@ -1,8 +1,9 @@
 {
-  "name": "jibrel-vue",
+  "name": "@jibrelnetwork/website",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "Jibrel AG Main Website made with Vue.js",
+  "author": "Jibrel AG",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "npx vuepress build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,8 +31,5 @@
     "svgo-loader": "2.2.0",
     "vue-cli-plugin-svg-sprite": "0.3.1",
     "vuepress": "0.14.9"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "main": "index.js"
+  }
 }
