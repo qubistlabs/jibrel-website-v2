@@ -1,4 +1,5 @@
 const path = require('path')
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 // Content files
 const CareerPageEn = require('./i18n/EnUS/content/CareerPage.json')
@@ -124,32 +125,28 @@ module.exports = {
       }
     }
   },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, 'src')
-      },
-    },
-  },
-  module: {
-    rules: [
-    {
-      test: /\.svg$/,
-      include: [
-        path.resolve(__dirname, 'src/img/svg'),
-      ],
-      use: [
-        {
-          loader: 'svg-sprite-loader',
-          options: {
+  chainWebpack: (config, isServer) => {    
+    config.module.rules.delete('svg')
+    config.module
+      .rule('svgSprite')
+        .test(/\.svg$/)
+        .exclude
+          .add(path.resolve(__dirname, 'src/assets/img/general'))
+          .end()
+        .include
+          .add(path.resolve(__dirname, 'src/assets/img/svg'))
+          .end()
+        .use('svg-sprite-loader')
+          .loader('svg-sprite-loader')
+          .options({
             extract: true,
             spriteFilename: '[hash:8].sprite.svg',
-            publicPath: 'src/assets/img/',
-          },
-        },
-        {
-          loader: 'svgo-loader',
-          options: {
+            publicPath: 'assets/img/',
+          })
+          .end()
+        .use('svgo-loader')
+          .loader('svgo-loader')
+          .options({
             plugins: [
               { removeTitle: true },
               { removeDoctype: true },
@@ -164,41 +161,57 @@ module.exports = {
               { removeStyleElement: true },
               { removeAttrs: { attrs: '(fill|stroke)' } },
             ],
-          },
-        },
-      ],
+          })
+          .end()
+
+      config.module
+        .rule('svgImage')
+          .test(/\.(svg)(\?.*)?$/)
+          .exclude
+            .add(path.resolve(__dirname, 'src/assets/img/svg'))
+            .end()
+          .use('file-loader')
+            .loader('file-loader')
+            .options({
+              name: 'assets/img/[name].[hash:8].[ext]'
+            })
+            .end()
+
+
+      config
+        .plugin('SpriteLoaderPlugin')
+          .use(SpriteLoaderPlugin, { plainSprite: true });
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, 'src')
+      },
     },
-    {
-      test: /\.scss$/,
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-           
-          },
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            ident: 'postcss',
-            plugins: () => [
-              require('postcss-flexbugs-fixes'),
-              require('autoprefixer')({
-                browsers: [
-                  '>1%',
-                  'last 19 versions',
-                  'Firefox ESR',
-                  'not ie < 11',
-                ],
-                flexbox: 'no-2009',
-              }),
-            ],
-          },
-        },
-        'sass-loader',
-      ]
-    }]
   },
 }
 
+
+
+// .rule('scss')
+// .test(/\.scss$/)
+// .use('style-loader')
+//   .loader('css-loader')
+//   .end()
+//   .loader('postcss-loader')
+//   .options({
+//     ident: 'postcss',
+//     plugins: () => [
+//       require('postcss-flexbugs-fixes'),
+//       require('autoprefixer')({
+//         browsers: [
+//           '>1%',
+//           'last 19 versions',
+//           'Firefox ESR',
+//           'not ie < 11',
+//         ],
+//         flexbox: 'no-2009',
+//       }),
+//     ],
+//   })
+//   .end()
