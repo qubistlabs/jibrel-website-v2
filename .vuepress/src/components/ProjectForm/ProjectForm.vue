@@ -35,12 +35,12 @@
       </form>
       <div class='messages'>
         <div class='message -success' :class='isSuccess && "-open"'>
-          <svg class="icon" width="60" height="60"><use xlink:href="#smiley-smile"></use></svg>
+          <SpriteIcon name='smiley-smile' class='icon'/>
           <div class='title'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.successTitle}}</div>
           <div class='message'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.seccessMsg}}</div>
         </div>
         <div class='message -error' :class='isError && "-open"'>
-          <svg class="icon" width="60" height="60"><use xlink:href="#smiley-frown"></use></svg>
+          <SpriteIcon name='smiley-frown' class='icon'/>
           <div class='title'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.errorTitle}}</div>
           <div class='message'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.errorMsg}}</div>
         </div>
@@ -52,11 +52,13 @@
 
 <script>
 const action = 'https://jcash.network/auth/signup'
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import axios from 'axios'
 export default {
   name: 'ProjectForm',
   components: {
     axios,
+    SpriteIcon,
   },
   props: {
     isJcashOpen: '',

@@ -2,7 +2,7 @@
   <nav class='main-menu'>
     <div class='close'>
       <button class='modal-toggle' @click='closeMenu'>
-        <svg class="cross -white" width="22.414px" height="22.414px"><use xlink:href="#i-cross"></use></svg>
+        <SpriteIcon name='i-cross' class='cross -white'/>
       </button>
     </div>
     <div class='container'>
@@ -76,8 +76,12 @@
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'MainMenu',
+  components: {
+    SpriteIcon
+  },
   methods: {
     closeMenu() {
       this.gtmSend('Menu', 'Close_menu', '')

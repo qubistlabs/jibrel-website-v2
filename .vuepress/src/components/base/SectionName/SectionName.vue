@@ -7,25 +7,17 @@
       >
         {{title}}
       </div>
-      <!-- <SvgIcon :name='`i-arrow-${arrow}`'/> -->
-      <svg class='arrow' 
-        :class='[`-${color}`, `-${arrow}`]' 
-        width='23'
-        height='22'
-        data-aos='fade-up' data-aos-duration='1500' data-aos-delay='150'
-      >
-        <use :xlink:href='`#i-arrow-${arrow}`'></use>
-      </svg>
+      <SpriteIcon :name='`i-arrow-${arrow}`' :class='[`arrow -${color}`, `-${arrow}`]'/>
     </div>
   </div>
 </template>
 
 <script>
-import SvgIcon from '@/components/base/SpriteIcon/SvgIcon.vue'
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'SectionName',
   components: {
-    SvgIcon
+    SpriteIcon
   },
   props: {
     title: String,

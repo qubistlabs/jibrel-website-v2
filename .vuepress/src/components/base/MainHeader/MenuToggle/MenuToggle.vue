@@ -1,14 +1,18 @@
 <template>
   <button class='menu-toggle' :class='`-${colorTheme}`'>
     <span class='text'>{{this.$themeLocaleConfig.data.ProjectMenu.menu}}</span>
-    <svg class="icon -mobile-hide" width="24" height="24"><use xlink:href="#i-menu"></use></svg>
+    <SpriteIcon name='i-menu' class='icon -mobile-hide'/>
     <div class='hamburger'></div>
   </button>
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'MenuToggle',
+  components: {
+    SpriteIcon
+  },
   props: {
     colorTheme: 'colored' | 'white'
   },

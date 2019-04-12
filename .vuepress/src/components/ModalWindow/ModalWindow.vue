@@ -11,7 +11,7 @@
       <div class="container _container-fluid -reverce">
         <div class="actions aos-init aos-animate" data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
           <button class="modal-toggle" @click="$emit('close')">
-            <svg class="cross -white" width="22.414px" height="22.414px"><use xlink:href="#i-cross"></use></svg>
+            <SpriteIcon name='i-cross' class='icon -white'/>
           </button>
         </div>
       </div>
@@ -21,8 +21,12 @@
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'ModalWindow',
+  components: {
+    SpriteIcon
+  },
   props: {
     isMenu: false,
     isOpened: false,

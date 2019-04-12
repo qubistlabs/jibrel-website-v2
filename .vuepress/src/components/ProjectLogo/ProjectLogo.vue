@@ -1,13 +1,17 @@
 <template>
   <router-link :to='this.$localeConfig.path' class='project-logo' :class='`-${colorTheme}`' :data-aos='animationType' data-aos-duration="600" data-aos-delay="150">
-    <svg class="icon" width="41.534px" height="45.558px"><use xlink:href="#logo-icon"></use></svg>
-    <svg class="text" width="68.829px" height="26.945px"><use xlink:href="#logo-text"></use></svg>
+    <SpriteIcon name='logo-icon' class='icon'/>
+    <SpriteIcon name='logo-text' class='text'/>
   </router-link>
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'ProjectLogo',
+  components: {
+    SpriteIcon
+  },
   props: {
     colorTheme: 'colored' | 'white',
     animationType: 'fade-down' | 'fade-in'

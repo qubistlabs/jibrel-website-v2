@@ -4,7 +4,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=[__GTM_ID__]"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <SpriteIcon />
+    <!-- <SpriteIcon /> -->
     <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' />
     <Content v-if='typePage === "precast-page"'/>
     <News v-if='typePage === "/news/"' > <Content /> </News>

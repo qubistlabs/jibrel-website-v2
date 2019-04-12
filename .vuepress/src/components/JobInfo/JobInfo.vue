@@ -1,19 +1,23 @@
 <template>
     <div class='job-info' :class='onVacanciesList ? "-in-vacancies-list" : "-in-vacancy-page"'>
       <div class='time'>
-        <svg class="icon" width="15px" height="15px"><use xlink:href="#i-clock"></use></svg>
+        <SpriteIcon name='i-clock' class='icon -stroke'/>
         {{ time }}
       </div>
       <div class='place'>
-        <svg class="icon" width="15px" height="15px"><use xlink:href="#i-pin"></use></svg>
+        <SpriteIcon name='i-pin' class='icon'/>
         {{ place }}
       </div>
     </div>
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'JobInfo',
+  components: {
+    SpriteIcon
+  },
   props: {
     time: String,
     place: String,

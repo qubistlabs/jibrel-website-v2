@@ -40,6 +40,11 @@
       position: relative;
       top: -1px;
 
+      &.-stroke {
+        fill: none;
+        stroke: $blue;
+      }
+
       @include to-mobile {
         display: none;
       }

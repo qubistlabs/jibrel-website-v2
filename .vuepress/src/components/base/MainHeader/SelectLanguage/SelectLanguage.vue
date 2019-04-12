@@ -2,7 +2,7 @@
   <div class='select-language -in-header' :class='{"-open": isOpened}'>
     <button class='toggle' @click='isOpened = true'>
       <span class='current' :class='`-${colorTheme}`'>{{language.current}}</span>
-      <svg class='icon' :class='`-${colorTheme}`' width='7.5px' height='4.5px'><use xlink:href='#i-che-b'></use></svg>
+      <SpriteIcon name='i-che-b' :class='`icon -${colorTheme}`'/>
     </button>
     <div class='overlay' @click='isOpened = false'></div>
     <div class='drop'>
@@ -23,8 +23,12 @@
 
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'SelectLanguage',
+  components: {
+    SpriteIcon
+  },
   data() {
     return {
       isOpened: false,

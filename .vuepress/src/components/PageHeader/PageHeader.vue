@@ -3,7 +3,7 @@
     <div class='container _container-fix'>
       <div class='page-header'>
         <router-link :to='`${$localeConfig.path + typePage}/`' class='back' v-if='typePage === "news" | typePage === "careers"'>
-          <svg class="icon -color" width="11" height="11"><use xlink:href="#arr-l"></use></svg>
+          <SpriteIcon name='arr-l' class='icon -color'/>
           <span class='text'>{{title}}</span>
         </router-link>
         <div class='soc _mobile-hide' v-if='typePage === "news" | typePage === "careers"'>
@@ -19,8 +19,12 @@
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'PageHeader',
+  components: {
+    SpriteIcon
+  },
   props: {
     typePage: 'careers' | 'policyPage' | 'news',
     title: String,
