@@ -1,14 +1,14 @@
 ---
 title: Three Blockchain Companies That Could Change Everything in Traditional Lending
 description: More than $3.3 billion was raised with Initial Coin Offerings (ICO) this year alone. Total cryptocurrencies market capitalization recently soared past
-date: Dec. 15, 2017
-img: /assets/img/cover/observer.png
-img2x: /assets/img/cover/observer@2x.png
-link: http://observer.com/2017/12/three-blockchain-companies-change-everything-traditional-lending-cryptocurrencies-jibrel-ethlend-salt-platform/
+date: 2017-12-15
+source:
+    id: observer
+    url: http://observer.com/2017/12/three-blockchain-companies-change-everything-traditional-lending-cryptocurrencies-jibrel-ethlend-salt-platform/
 ---
 
 
-![/](/assets/img/content/block.wdwfwfef80798.png) Blockchain technologies are taking the world by storm. Pxhere
+![](/assets/img/content/block.wdwfwfef80798.png) Blockchain technologies are taking the world by storm. Pxhere
 
 More than [$3.3 billion](https://www.coindesk.com/ico-tracker/) was raised with Initial Coin Offerings (ICO) this year alone. Total cryptocurrencies market capitalization recently soared past [$400 billion](https://cryptovest.com/news/crypto-market-zooms-past-400b--how-big-is-that/) and Bitcoin accounts for more than 60% of it. If these numbers don’t raise your eyebrows, you still have to admit that emergence of Bitcoin and cryptocurrencies is a fascinating event to watch.
 

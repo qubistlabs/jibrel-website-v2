@@ -1,17 +1,17 @@
 ---
 title: Jibrel Network has now launched its first financial asset token, jCash
 description: Will allow users to conduct real world transactions by use of blockchain and smart contracts. What started with cryptocurrencies like Bitcoin, which offered transparent, digital transactions
-date: Jan. 17, 2018
-img: /assets/img/cover/vator.png
-img2x: /assets/img/cover/vator@2x.png
-link: http://vator.tv/news/2018-01-17-jibrel-network-has-now-launched-their-first-financial-asset-token-jcash#Imxcv2XL7gV66OmE.99%EF%BB%BF
+date: 2018-01-17
+source:
+    id: vator
+    url: http://vator.tv/news/2018-01-17-jibrel-network-has-now-launched-their-first-financial-asset-token-jcash#Imxcv2XL7gV66OmE.99%EF%BB%BF
 ---
 
 Will allow users to conduct real world transactions by use of blockchain and smart contracts
 
 What started with cryptocurrencies like Bitcoin, which offered transparent, digital transactions between two people is continuing to evolve and adapt to fit the needs of consumers and investors - and even those still trying to stay within the realm of traditional banking institutions, but who would like some of the advantages of the technologies like blockchain and smart contracts.
 
-![/](/assets/img/content/180117061900600.hthylk7987979rg.jpg)
+![](/assets/img/content/180117061900600.hthylk7987979rg.jpg)
 
 That's the niche the **Jibrel Network** is trying to fill. Basically, by working with banking institutions and the knowledge they have with crypto, they are combining the best of both worlds through the use of their newly launched token, jCash. Announced at the Blockchain Revolution conference in Seoul, not only will jCash allow traditional bank institutions the ability to work within the world of crypto, but the jCash token is backed by real world assets meaning it does not have to deal with the volatility that comes with many of the "traditional" cryptocurrencies on the market.
 

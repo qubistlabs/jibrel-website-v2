@@ -1,10 +1,10 @@
 ---
 title: Seven Cryptowallets You Can Start Using Today For Digital Token Storage
 description: By now, most of you are probably familiar with terms such as cryptocurrency and its most notorious currency, Bitcoin. But once you get into the details, many of us familiar with the terms are entirely lost. One significant aspect of digital
-date: Nov. 29, 2017
-img: /assets/img/cover/buzzfeed.png
-img2x: /assets/img/cover/buzzfeed@2x.png
-link: https://www.buzzfeed.com/marshallmurphy/seven-cryptowallets-you-can-start-using-today-for-38tan?utm_term=.mhyl80162#.gbXMJyZjP
+date: 2017-11-29
+source:
+    id: buzzfeed
+    url: https://www.buzzfeed.com/marshallmurphy/seven-cryptowallets-you-can-start-using-today-for-38tan?utm_term=.mhyl80162#.gbXMJyZjP
 ---
 
 By now, most of you are probably familiar with terms such as cryptocurrency and its most notorious currency, Bitcoin. But once you get into the details, many of us familiar with the terms are entirely lost. One significant aspect of digital currencies is the way in which you store those different tokens. At first, Bitcoin miners and traders saved their coins on programs that resided on their personal computer. Quickly, however, third-party online wallets started popping up that allowed users to store their coins on the online service’s server, making the coins accessible from any device.Wallets have continued to evolve as new coins pop up and user desires shift. With each one offering different experiences for the users, it can sometimes take a long time to find a wallet that fits all of your needs. We’ve compiled a list of some of the wallets that we feel are always a solid choice. You can check them out below!

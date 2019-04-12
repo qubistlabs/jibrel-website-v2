@@ -1,10 +1,10 @@
 ---
 title: How Cryptocurrencies Could Take on Dollars, Euros and the Yen
 description: While traditional and institutional investors are intrigued by the burgeoning crypto-economy, it's clear that many are apprehensive to jump in because of the volatility and uncertainty surrounding it. If the goal is to
-date: Jan. 27, 2018
-img: /assets/img/cover/street.png
-img2x: /assets/img/cover/street@2x.png
-link: https://www.thestreet.com/story/14464166/1/cryptocurrencies-could-take-on-dollars-euros-and-yen.html
+date: 2018-01-27
+source:
+    id: street
+    url: https://www.thestreet.com/story/14464166/1/cryptocurrencies-could-take-on-dollars-euros-and-yen.html
 ---
 
 While traditional and institutional investors are intrigued by the burgeoning crypto-economy, it's clear that many are apprehensive to jump in because of the volatility and uncertainty surrounding it. If the goal is to [make cryptocurrencies into a new normal](https://www.thestreet.com/story/14403920/1/when-will-bitcoin-become-the-norm.html), what, then, would make them as commonly used as dollars, euros and yen for everyday folks?
@@ -17,7 +17,7 @@ Bitcoin, Ethereum, Ripple, Litecoin, Dash -- there clearly are many cryptocurre
 
 Cryptocurrencies are no exception, suggesting that some investment in certain coins is indiscriminate. The ever-expanding list of alt-coins makes us wonder how this will become a normal part of life any time soon. 
 
-![28a47eba-fd41-11e7-a14a-553c77d22920](//s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/28a47eba-fd41-11e7-a14a-553c77d22920.png)
+![Big price swings have been the norm for Bitcoin](//s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/28a47eba-fd41-11e7-a14a-553c77d22920.png)
 
 Adoption, under the assumption that cryptocurrencies are one, secular group, is accelerating. A study of 2,000 Britons by the London Block Exchange claims that 5% of those studied under the age of 35 already have invested in a cryptocurrency, while 11% say they will" definitely" invest in 2018 and 17% say they are "seriously considering" it. Investing, however, differs from actual use. Practically all cryptocurrencies sit in cryptocurrency wallets but we do expect that to change, albeit slowly.
 

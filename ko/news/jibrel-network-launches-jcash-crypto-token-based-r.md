@@ -1,15 +1,15 @@
 ---
 title: Jibrel Network launches jCash, a crypto token based on real world assets
 description: They are currently working with a select number of banking institutions to bring the power of digital currencies to traditional banks. One of the biggest issues many traditional investors and people have when discussing cryptocurrency
-date: Jan. 17, 2018
-img: /assets/img/cover/knowtachie.png
-img2x: /assets/img/cover/knowtachie@2x.png
-link: https://knowtechie.com/jibrel-network-launches-jcash-a-crypto-token-based-on-real-world-assets/
+date: 2018-01-17
+source:
+    id: knowtachie
+    url: https://knowtechie.com/jibrel-network-launches-jcash-a-crypto-token-based-on-real-world-assets/
 ---
 
 They are currently working with a select number of banking institutions to bring the power of digital currencies to traditional banks
 
-![/](/assets/img/content/Screen-Shot-2017-11-14-at-11.17.45-AM.dwdwefwgw445.jpg)
+![](/assets/img/content/Screen-Shot-2017-11-14-at-11.17.45-AM.dwdwefwgw445.jpg)
 
 One of the biggest issues many traditional investors and people have when discussing cryptocurrency is that, for the most part, it’s backed by literally nothing. While we can sit here and debate the value of things, there is [one company](https://knowtechie.com/pre-sales-cryptowallets-upcoming-ico-digital-currency-startup-jibrel-network-continues-push-forward/) that is looking to blend the best of both worlds through the use of a crypto token that is based on real-world assets, but can still take advantage of everything that makes digital currencies so appealing – the blockchain and smart contracts being two examples.
 
