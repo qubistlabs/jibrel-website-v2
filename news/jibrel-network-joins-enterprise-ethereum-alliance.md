@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network joins The Enterprise Ethereum Alliance
 description: The EEA's industry-focused, member-driven working groups are each tasked with creating and delivering specific advancements to the development and use of ethereum-based technologies.
-date: Jun. 05, 2018
-img: /assets/img/cover/zawya.png
-img2x: /assets/img/cover/zawya@2x.png
-link: https://www.zawya.com/mena/en/story/Jibrel_Network_joins_The_Enterprise_Ethereum_Alliance-ZAWYA20180605040943/
+date: 2018-06-05
+source:
+    id: zawya
+    url: https://www.zawya.com/mena/en/story/Jibrel_Network_joins_The_Enterprise_Ethereum_Alliance-ZAWYA20180605040943/
 ---
 
 

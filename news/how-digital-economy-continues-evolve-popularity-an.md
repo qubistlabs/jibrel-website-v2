@@ -1,17 +1,17 @@
 ---
 title: How the digital economy continues to evolve as popularity and interest grows
 description: Blockchain technology has been causing quite a buzz lately - and for good reasons. From its ability to ensure the security of financial transactions, to the elimination of middlemen, blockchain technology is capable of transforming
-date: Nov. 13, 2017
-img: /assets/img/cover/tnw.png
-img2x: /assets/img/cover/tnw@2x.png
-link: https://thenextweb.com/contributors/2017/11/16/digital-economy-continues-evolve-popularity-interest-grows/
+date: 2017-11-13
+source:
+    id: tnw
+    url: https://thenextweb.com/contributors/2017/11/16/digital-economy-continues-evolve-popularity-interest-grows/
 ---
 
-![/](/assets/img/content/cryptocurrency-tnw-796x466.wdwdw357648.jpg)
+![](/assets/img/content/cryptocurrency-tnw-796x466.wdwdw357648.jpg)
 
 You’ve no doubt heard of cryptocurrencies by now – that weird, digital currency that went from being only used for buying drugs and paying off hitmen to now being common talk at restaurants and bars all over the world, with legitimate business groups investing millions into the digital tokens. Values in cryptocurrencies continue to skyrocket and new ICOs are popping up almost daily. Yet, there is still a huge disconnect when it comes to the general public,  traditional banking institutions and investors. Some of this is due to digital currencies still being difficult to spend for the general public, but it is also because traditional investors are still a bit wary to invest in a currency that has almost zero regulation worldwide.
 
-![/](/assets/img/content/cryptocurrency-tnw-body-3w09y907t.jpg)
+![](/assets/img/content/cryptocurrency-tnw-body-3w09y907t.jpg)
 
 It’s also important to note that adoption of cryptocurrencies relies on these factors or else it will never fully reach its potential.  This new era does bring with it one thing – entrepreneurs and startups around the world looking for solutions to these problems. In something as young as digital currencies, these same teams will be the ones to shape this new digital, financial landscape.
 

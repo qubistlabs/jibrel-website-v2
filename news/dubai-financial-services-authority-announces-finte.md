@@ -1,10 +1,10 @@
 ---
 title: Dubai Financial Services Authority Announces Fintech Innovation Testing Program Expansion
 description: Dubai Financial Services Authority (DFSA) announced on Wednesday the expansion of its Innovation Testing Licence (ITL) programme in response to continued interest in fintech and the digital
-date: May 16, 2018
-img: /assets/img/cover/crowdfundinsinder.png
-img2x: /assets/img/cover/crowdfundinsinder@2x.png
-link: https://www.crowdfundinsider.com/2018/05/133527-dubai-financial-services-authority-announces-fintech-innovation-testing-program-expansion/
+date: 2018-05-16
+source:
+    id: crowdfundinsinder
+    url: https://www.crowdfundinsider.com/2018/05/133527-dubai-financial-services-authority-announces-fintech-innovation-testing-program-expansion/
 ---
 
 The [Dubai Financial Services Authority](https://www.dfsa.ae/) (DFSA) announced on Wednesday the expansion of its Innovation Testing Licence (ITL) programme in response to continued interest in fintech and the digital economy. According to DFSA, the ITL program enables firms to test innovations in fintech in or from the Dubai International Financial Centre (DIFC).

@@ -1,10 +1,10 @@
 ---
 title: What Is jWallet?
 description: Most people will agree that Ethereum is a valuable addition to the world of cryptocurrency and blockchain. Although the system is not without its flaws, significant progress has been made over the past two and a half
-date: Nov. 24, 2017
-img: /assets/img/cover/nulltx.png
-img2x: /assets/img/cover/nulltx@2x.png
-link: https://nulltx.com/what-is-jwallet/
+date: 2017-11-24
+source:
+    id: nulltx
+    url: https://nulltx.com/what-is-jwallet/
 ---
 
 **Most people will agree that Ethereum is a valuable addition to the world of cryptocurrency and blockchain. Although the system is not without its flaws, significant progress has been made over the past two and a half years. However, when it comes to Ethereum wallets, there is still some work to be done. Jibrel Network, a Swiss company registered in Zug, is developing the jWallet, a product whose functionality extends far beyond storing cryptocurrencies.**

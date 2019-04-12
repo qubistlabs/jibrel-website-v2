@@ -1,10 +1,10 @@
 ---
 title: Al Hilal Bank executes the world's first Blockchain Sukuk transaction
 description: Abu Dhabi Al Hilal Bank is the first Islamic bank in the world to leverage Blockchain technology for the resale and settlement of an Islamic Sukuk. Blockchain was used to transact a secondary market deal
-date: Nov. 26, 2018
-img: /assets/img/cover/zawya.png
-img2x: /assets/img/cover/zawya@2x.png
-link: https://www.zawya.com/mena/en/companies/story/Al_Hilal_Bank_executes_the_worlds_first_Blockchain_Sukuk_transaction-ZAWYA20181126075902/
+date: 2018-11-26
+source:
+    id: zawya
+    url: https://www.zawya.com/mena/en/companies/story/Al_Hilal_Bank_executes_the_worlds_first_Blockchain_Sukuk_transaction-ZAWYA20181126075902/
 ---
 
 *Blockchain was used to transact a secondary market deal in Al Hilal Bank's Senior Sukuk maturing in September 2023*

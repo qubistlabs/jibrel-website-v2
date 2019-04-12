@@ -1,15 +1,15 @@
 ---
 title: Sheikh Saeed backs Dubai-based cryptocurrency
 description: The Seed Group, a group of diversified companies owned and chaired by the Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, has signed up for a pilot programme with Dubai-based Jibrel Network to develop new cryptocurrency 
-date: Mar. 18, 2018
-img: /assets/img/cover/busines.png
-img2x: /assets/img/cover/busines@2x.png
-link: https://www.arabianbusiness.com/technology/391999-sheikh-saeed-backs-dubai-based-cryptocurrency
+date: 2018-03-18
+source:
+    id: arabianbusiness
+    url: https://www.arabianbusiness.com/technology/391999-sheikh-saeed-backs-dubai-based-cryptocurrency
 ---
 
 ## Crypto news: Is self-regulation coming to cryptocurrencies?
 
-![/](/assets/img/content/Jibrel-SEED-Sheikh-Saeed-Al-Maktoum.wdffwwfr43wfa.jpg) Hisham Al Gurg (right), Sheikh Saad Al Maktoum Private Office CEO and Talal Tabbaa, Jibrel Network Co-founder, shaking hands after signing a strategic partnership agreement for launching jCash in the UAE and MENA regions at the Dubai Seed Group office. Photo: Jibrel Network
+![](/assets/img/content/Jibrel-SEED-Sheikh-Saeed-Al-Maktoum.wdffwwfr43wfa.jpg) Hisham Al Gurg (right), Sheikh Saad Al Maktoum Private Office CEO and Talal Tabbaa, Jibrel Network Co-founder, shaking hands after signing a strategic partnership agreement for launching jCash in the UAE and MENA regions at the Dubai Seed Group office. Photo: Jibrel Network
 
 The Seed Group, a group of diversified companies owned and chaired by the Private Office of Sheikh Saeed Bin Ahmed Al Maktoum, has signed up for a pilot programme with Dubai-based Jibrel Network to develop new cryptocurrency jCash in the UAE.
 

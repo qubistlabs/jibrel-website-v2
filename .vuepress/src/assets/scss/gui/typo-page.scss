@@ -3,7 +3,7 @@
 
 .typo-page {
   @include all-reset;
- 
+
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -60,6 +60,7 @@
     font-size: 13px;
     color: $base-o;
     margin-bottom: 40px;
+    display: block;
 
     @include ls(10);
   }
@@ -133,12 +134,9 @@
       }
     }
 
-    img {
-      max-width: 100%;
+    figure {
+      width: 100%;
       padding-top: 5px;
-      border-radius: 3px;
-      margin-left: auto;
-      margin-right: auto;
 
       &:not(:last-child) {
         margin-bottom: 76px;
@@ -147,6 +145,21 @@
           margin-bottom: 30px;
         }
       }
+
+      figcaption {
+        margin-top: 16px;
+        font-size: 13px;
+        color: $base-o;
+        display: block;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .caption {
@@ -178,7 +191,7 @@
     }
 
     ul ul,
-    ol ol, 
+    ol ol,
     ul ol,
     ol ul {
       margin-top: 25px;

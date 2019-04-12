@@ -1,10 +1,10 @@
 --- 
 title: With Ethereum wallets under constant attack, Jibrel Network decided to build their own
 description: Since blockchain technologies appeared people have been trying to figure out how to put traditional assets like currencies, bonds and other financial instruments onto it in a way which has regulatory compliance and is
-date: Nov. 22, 2017
-img: /assets/img/cover/tc.png
-img2x: /assets/img/cover/tc@2x.png
-link: https://techcrunch.com/2017/11/22/with-ethereum-wallets-under-constant-attack-jibrel-network-decided-to-build-their-own/
+date: 2017-11-22
+source:
+    id: techcrunch
+    url: https://techcrunch.com/2017/11/22/with-ethereum-wallets-under-constant-attack-jibrel-network-decided-to-build-their-own/
 ---
 
 ![With Ethereum wallets under constant attack, Jibrel Network decided to build their own](/assets/img/content/gettyimages-675635665.wfwf3556.jpg)

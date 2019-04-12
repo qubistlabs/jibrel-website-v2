@@ -1,10 +1,10 @@
 ---
 title: Jibrel Network announces partnership with Bitcoin Suisse
 description: Will allow institutional and traditional investors to get in on Jibrel's ongoing ICO. As Bitcoin continues to skyrocket (over $16k at the time of this writing), the crypto world continues to move forward in other
-date: Dec. 07, 2017
-img: /assets/img/cover/vator.png
-img2x: /assets/img/cover/vator@2x.png
-link: http://vator.tv/news/2017-12-07-jibrel-network-announces-partnership-with-bitcoin-suisse
+date: 2017-12-07
+source:
+    id: vator
+    url: http://vator.tv/news/2017-12-07-jibrel-network-announces-partnership-with-bitcoin-suisse
 ---
 
 Will allow institutional and traditional investors to get in on Jibrel's ongoing ICO
@@ -13,7 +13,7 @@ As Bitcoin continues to skyrocket (over $16k at the time of this writing), the c
 
 While the **Jibrel Network** allows for asset-backed tokens in the form of CryptoDepository Receipts, their ongoing ICO requires investments in the form of Bitcoin or Ethereum - something that many institutional and traditional investors may lack. This partnership with [Bitcoin Suisse](https://www.bitcoinsuisse.ch) will eliminate that need by providing a method of purchase through the use of traditional currencies like the US dollar, the British Pound, and the Euro - giving traditional investors a straightforward way to invest in the rising digital world.
 
-![Zug, Switzerland ](/assets/img/content/171207114040976.343fff34t45t.jpg)
+![Zug, Switzerland](/assets/img/content/171207114040976.343fff34t45t.jpg)
 
 "Bitcoin Suisse are considered the gold standard in the crypto industry when it comes to KYC/AML compliance as well as the safety and security of funds,” said Jibrel Network co-founder Talal Tabbaa. “It has always been a part of our plan to list with Bitcoin Suisse. During my first visit to Zug, I was lucky to meet the Bitcoin Suisse team, and I was amazed by their professionalism and extensive understanding of the intricacies of this industry.”
 
