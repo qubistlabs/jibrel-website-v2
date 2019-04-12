@@ -178,10 +178,9 @@ module.exports = {
             })
             .end()
 
-
       config
         .plugin('SpriteLoaderPlugin')
-          .use(SpriteLoaderPlugin, { plainSprite: true });
+          .use(SpriteLoaderPlugin);
   },
   configureWebpack: {
     resolve: {
@@ -189,37 +188,6 @@ module.exports = {
         "@": path.resolve(__dirname, 'src')
       },
     },
-    {
-      test: /\.scss$/,
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-
-          },
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            ident: 'postcss',
-            plugins: () => [
-              require('postcss-flexbugs-fixes'),
-              require('autoprefixer')({
-                browsers: [
-                  '>1%',
-                  'last 19 versions',
-                  'Firefox ESR',
-                  'not ie < 11',
-                ],
-                flexbox: 'no-2009',
-              }),
-            ],
-          },
-        },
-        'sass-loader',
-      ]
-    }]
   },
   markdown: {
     config: md => {
