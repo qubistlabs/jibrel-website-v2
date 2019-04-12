@@ -9,7 +9,7 @@ headerColor: white
         :title='$themeLocaleConfig.data.SectionName.whatWeDo'
         positionContainer='bottom-70'
         positionTitle='bottom'
-        color='white'
+        colorTheme='white'
         arrow='down'
       />
       <div class='container -center-box _container-fix'>
@@ -58,7 +58,7 @@ headerColor: white
           <div class='item -two-col' data-aos="fade-right" data-aos-duration="300" data-aos-delay="150"> 
             <div class='box -color -padding-small'>
               <div class='img -base-icon'>
-                <img src='@/assets/img/svg/i-business-female-chat.svg' class='icon' width='56' height='57' alt='icon'>
+                <img src='@/assets/img/general/icon/i-business-female-chat.svg' class='icon' width='56' height='57' alt='icon'>
               </div>
               <h2 class='title'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.description}}</p>
@@ -67,7 +67,7 @@ headerColor: white
           <div class='item -two-col' data-aos="fade-left" data-aos-duration="600" data-aos-delay="150"> 
             <div class='box -color -padding-small'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke' width='56' height='57'><use xlink:href='#i-business-statistics'></use></svg>
+                <SpriteIcon name='i-business-statistics' class='icon -stroke'/>
               </div>
               <h2 class='title'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_2.title}}</h2>
               <p class='descr'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.description}}</p>
@@ -83,7 +83,7 @@ headerColor: white
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
             <div class='box -white'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke' width='57' height='57'><use xlink:href='#i-bank'></use></svg>
+                <SpriteIcon name='i-bank' class='icon -stroke'/>
               </div>
               <h2 class='title'>{{$localeConfig.data.JibrelIntegratable.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_1.description}}</p>
@@ -92,7 +92,7 @@ headerColor: white
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"> 
             <div class='box -white'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke' width='60' height='60'><use xlink:href='#i-store'></use></svg>
+                <SpriteIcon name='i-store' class='icon -stroke'/>
               </div>
               <h2 class='title'>{{$localeConfig.data.JibrelIntegratable.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_2.description}}</p>
@@ -101,7 +101,7 @@ headerColor: white
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"> 
             <div class='box -white'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke' width='60' height='60'><use xlink:href='#i-goverment'></use></svg>
+                <SpriteIcon name='i-goverment' class='icon -stroke'/>
               </div>
               <h2 class='title'>{{$localeConfig.data.JibrelIntegratable.card_3.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_3.description}}</p>
@@ -123,11 +123,13 @@ import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   components: {
     SectionName,
     PartnersCard,
     ContactsList,
+    SpriteIcon,
   },
   metaInfo () {
     return MetaInfo(

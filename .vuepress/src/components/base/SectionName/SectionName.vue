@@ -2,12 +2,12 @@
   <div class='section-name' :class='`-${positionContainer}`'>
     <div class='container _container-fluid'>
       <div class='title' 
-        :class='[`-${positionTitle}`, `-${color}`]'
+        :class='[`-${positionTitle}`, `-${colorTheme}`]'
         data-aos='fade-up' data-aos-duration='1200' data-aos-delay='150' data-aos-offset='0'
       >
         {{title}}
       </div>
-      <SpriteIcon :name='`i-arrow-${arrow}`' :class='[`arrow -${color}`, `-${arrow}`]'/>
+      <SpriteIcon :name='`i-arrow-${arrow}`' :class='[`arrow -${colorTheme}`, `-${arrow}`]'/>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
     title: String,
     positionContainer: 'bottom-70' | 'bottom-460' | 'top-0' | 'top-110' | 'center',
     positionTitle: 'bottom' | 'top',
-    color: 'white' | 'color',
+    colorTheme: 'white' | 'colored',
     arrow: 'up' | 'down',
     isAnimation: false,
   }

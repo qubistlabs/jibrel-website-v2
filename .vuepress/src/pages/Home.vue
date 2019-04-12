@@ -9,7 +9,7 @@ headerColor: white
         :title='$themeLocaleConfig.data.SectionName.welcome'
         positionContainer='bottom-70'
         positionTitle='bottom'
-        color='white'
+        colorTheme='white'
         arrow='down'
       />
       <div class='container -center-box _container-fix'>

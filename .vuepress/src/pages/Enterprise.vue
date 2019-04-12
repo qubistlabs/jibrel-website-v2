@@ -5,7 +5,7 @@
         :title='$themeLocaleConfig.data.SectionName.enterpriseSolution'
         positionContainer='bottom-70'
         positionTitle='bottom'
-        color='white'
+        colorTheme='white'
         arrow='down'
       />
       <div class='container -center-box _container-fix'>
@@ -28,7 +28,7 @@
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
             <div class='box -color'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke -blue' width='57' height='57'><use xlink:href='#i-bank'></use></svg>
+                <SpriteIcon name='i-bank' class='icon -stroke -blue'/>
               </div>
               <h2 class='title '>{{$localeConfig.data.JibrelIntegratable.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_1.description}}</p>
@@ -37,7 +37,7 @@
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"> 
             <div class='box -color'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke -blue' width='60' height='60'><use xlink:href='#i-store'></use></svg>
+                <SpriteIcon name='i-store' class='icon -stroke -blue'/>
               </div>
               <h2 class='title '>{{$localeConfig.data.JibrelIntegratable.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_2.description}}</p>
@@ -46,7 +46,7 @@
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"> 
             <div class='box -color'>
               <div class='img -base-icon'>
-                <svg class='icon -stroke -blue' width='60' height='60'><use xlink:href='#i-goverment'></use></svg>
+                <SpriteIcon name='i-goverment' class='icon -stroke -blue'/>
               </div>
               <h2 class='title '>{{$localeConfig.data.JibrelIntegratable.card_3.title}}</h2>
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_3.description}}</p>
@@ -186,6 +186,7 @@
 </template>
 
 <script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
@@ -195,6 +196,7 @@ export default {
     SectionName,
     PartnersCard,
     ProjectForm,
+    SpriteIcon,
   },
   metaInfo () {
     return MetaInfo(

@@ -24,7 +24,7 @@
             <slot />
           </div>
             <a :href='this.$page.frontmatter.source.url' class='source' target='_blank' rel='nofollow'>{{this.$themeLocaleConfig.data.ProjectNews.link}}
-              <svg class="icon" width="16" height="16"><use xlink:href="#i-external-link"></use></svg>
+              <SpriteIcon name='i-external-link' class='icon'/>
             </a>
         </div>
       </div>
@@ -37,11 +37,13 @@ import MetaInfo from '@/Utils/MetaInfo.js'
 
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'NewsPage',
   components: {
     PageHeader,
     SectionName,
+    SpriteIcon
   },
   metaInfo () {
     return MetaInfo(
