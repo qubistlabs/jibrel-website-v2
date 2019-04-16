@@ -1,9 +1,18 @@
 {
   "name": "@jibrelnetwork/website",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Jibrel AG Main Website made with Vue.js",
   "author": "Jibrel AG",
-  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://jibrel.network/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jibrelnetwork/jibrel-website-v2.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jibrelnetwork/jibrel-website-v2/issues"
+  },
   "scripts": {
     "build": "./node_modules/.bin/env-cmd env/production npx vuepress build",
     "test": "echo \"Error: no test specified\" && exit 1",
