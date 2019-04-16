@@ -12,25 +12,15 @@ export default {
     className: '',
   },
   data() {
-    return {
-      iconPath: '',
-      iconWidth: '',
-      iconHeight: '',
-    }
-  },
-  methods: {
-    getIconData() {
-      const icon = require(`@/assets/img/svg/${this.name}.svg`).default;
-      const [,, width, height] = icon.viewBox.split(/(\s+)/).filter(e => e.trim().length > 0)
+    const icon = require(`@/assets/img/svg/${this.name}.svg`).default;
+    const [,, width, height] = icon.viewBox.split(/(\s+)/).filter(e => e.trim().length > 0)
 
-      this.iconPath = `/${icon.url}`
-      this.iconWidth = width
-      this.iconHeight = height
+    return {
+      iconPath: `/${icon.url}`,
+      iconWidth: width,
+      iconHeight: height,
     }
   },
-  beforeMount() {
-    this.getIconData()
-  }
 }
 </script>
 
