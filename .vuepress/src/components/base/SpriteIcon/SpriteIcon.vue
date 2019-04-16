@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     getIconData() {
-      const icon = require(`@/assets/img/svg/${this.name}.svg`).default;      
+      const icon = require(`@/assets/img/svg/${this.name}.svg`).default;
       const [,, width, height] = icon.viewBox.split(/(\s+)/).filter(e => e.trim().length > 0)
 
       this.iconPath = `/${icon.url}`

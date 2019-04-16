@@ -37,38 +37,12 @@ import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
 
-import VueGtm from 'vue-gtm';
+import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
 // import VueRouter from 'vue-router';
 // const router = new VueRouter({ routes, mode, linkActiveClass });
 
-function selectGTMID() {
-  const location = window.location.host
-  if (location === 'https://jibrel.network') {
-    return 'GTM-MJ7D3H9'
-  }
-  return 'GTM-WJL4C88'
-}
-
 Vue.use(Meta)
-Vue.use(VueGtm, {
-  id: selectGTMID(), // Your GTM ID
-  enabled: true, // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
-  debug: true, // Whether or not display console logs debugs (optional)
-  // vueRouter: router, // Pass the router instance to automatically sync with router (optional)
-  // ignoredViews: ['homepage'] // If router, you can exclude some routes name (case insensitive) (optional)
-});
-Vue.use(VueYandexMetrika, {
-  id: 47049348,
-  env: process.env.NODE_ENV,
-  debug: true,
-  options: {
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true,
-    webvisor: true
-  }
-})
 
 export default {
   components: {
@@ -86,7 +60,6 @@ export default {
       typePage: String,
       headerSize: String,
       isOpened: false,
-      host: window.location.hostname
     }
   },
   methods: {
@@ -118,12 +91,14 @@ export default {
       }
     },
     gtmSend() {
-      this.$gtm.trackView({
-        'event': 'virtualPageview',
-        'virtualTitle': this.$page.title,
-        'virtualUrl': this.$page.path,
-        'virtualHost': this.host,
-      });
+      if (this.$gtm) {
+        this.$gtm.trackView({
+          'event': 'virtualPageview',
+          'virtualTitle': this.$page.title,
+          'virtualUrl': this.$page.path,
+          'virtualHost': window.location.hostname,
+        });
+      }
     },
     ymTracking() {
       if (this.$metrika) {
@@ -142,13 +117,33 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-    this.gtmSend()
-    this.ymTracking()
     // app.AOS = new AOS.init({ disable: "mobile" });
   },
+  mounted() {
+    Vue.use(VueGtm, {
+      id: process.env.GOOGLE_TAG_MANAGER_ID,
+      enabled: true, // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
+      debug: process.env.NODE_ENV === 'development',
+      // vueRouter: router, // Pass the router instance to automatically sync with router (optional)
+      // ignoredViews: ['homepage'] // If router, you can exclude some routes name (case insensitive) (optional)
+    })
+    Vue.use(VueYandexMetrika, {
+      id: process.env.YANDEX_METRIKA_ID,
+      env: process.env.NODE_ENV,
+      debug: true,
+      options: {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      }
+    })
+    this.gtmSend()
+    this.ymTracking()
+  }
 };
 </script>
 
 <style lang="scss">
-  @import '@/assets/scss/core.scss'
+  @import '@/assets/scss/core.scss';
 </style>

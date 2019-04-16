@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 // Content files
@@ -126,7 +127,7 @@ module.exports = {
       }
     }
   },
-  chainWebpack: (config, isServer) => {    
+  chainWebpack: (config, isServer) => {
     config.module.rules.delete('svg')
     config.module
       .rule('svgSprite')
@@ -180,14 +181,17 @@ module.exports = {
 
       config
         .plugin('SpriteLoaderPlugin')
-          .use(SpriteLoaderPlugin);
+          .use(SpriteLoaderPlugin)
   },
   configureWebpack: {
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, 'src')
+        '@': path.resolve(__dirname, 'src')
       },
     },
+    plugins: [
+      new webpack.EnvironmentPlugin({ ...process.env })
+    ],
   },
   markdown: {
     config: md => {
