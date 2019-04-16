@@ -23,7 +23,7 @@ function MetaInfo(
       {'property': 'og:title', 'content': `Jibrel Network ${titlePage}`},
       {'property': 'og:url', 'content': url},
       {'property': 'og:description', 'content': description},
-      {'property': 'og:image', 'content': '/assets/misc/logo.jpg'},
+      {'property': 'og:image', 'content': 'https://jibrel.network/assets/misc/logo.jpg'},
       {'property': 'og:image:type', 'content': 'image/jpeg'},
       {'property': 'og:image:width', 'content': '500'},
       {'property': 'og:image:height', 'content': '250'},
@@ -35,7 +35,7 @@ function MetaInfo(
       { 'rel': 'shortcut icon', 'href': '/assets/misc/favicon.ico' },
       { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' },
       { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' },
-      { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' },
+      { 'rel': 'image_src', 'href': 'https://jibrel.network/assets/misc/logo.jpg' },
       { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' },
     ]
   }

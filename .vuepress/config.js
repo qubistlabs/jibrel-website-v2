@@ -52,7 +52,7 @@ module.exports = {
     ['meta', {'name': 'theme-color', 'content': '#003DC6'}],
     ['meta', {'name': 'format-detection', 'content': 'telephone=no'}],
     ['meta', {'property': 'og:site_name', 'content': `Jibrel Network`}],
-    ['meta', {'property': 'og:image', 'content': '/assets/misc/logo.jpg'}],
+    ['meta', {'property': 'og:image', 'content': 'https://jibrel.network/assets/misc/logo.jpg'}],
     ['meta', {'property': 'og:image:type', 'content': 'image/jpeg'}],
     ['meta', {'property': 'og:image:width', 'content': '500'}],
     ['meta', {'property': 'og:image:height', 'content': '250'}],
@@ -62,7 +62,7 @@ module.exports = {
     ['link', { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' }],
     ['link', { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' }],
     ['link', { 'rel': 'shortcut icon', 'href': '/assets/misc/favicon.ico' }],
-    ['link', { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' }],
+    ['link', { 'rel': 'image_src', 'href': 'https://jibrel.network/assets/misc/logo.jpg' }],
     ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
   ],
   locales: {
