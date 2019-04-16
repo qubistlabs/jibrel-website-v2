@@ -29,9 +29,10 @@ function MetaInfo(
       {'property': 'og:image:height', 'content': '250'},
     ],
     link: [
-      { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'size': '180x180' },
-      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'size': '32x32' },
-      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'size': '16x16' },
+      { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'sizes': '180x180' },
+      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'sizes': '32x32' },
+      { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'sizes': '16x16' },
+      { 'rel': 'shortcut icon', 'href': '/assets/misc/favicon.ico' },
       { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' },
       { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' },
       { 'rel': 'image_src', 'href': '/assets/misc/logo.jpg' },
