@@ -1,0 +1,113 @@
+<template>
+  <nav class='main-menu'>
+    <div class='close'>
+      <button class='modal-toggle' @click='closeMenu'>
+        <SpriteIcon name='i-cross' class='cross -white'/>
+      </button>
+    </div>
+    <div class='container'>
+      <div class='box'>
+        <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Products}}</div>
+        <div class='item'>
+          <router-link :to='`${this.$localeConfig.path}enterprise/`' @click.native='clickLink("Enterprise")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}
+          </router-link>
+        </div>
+        <div class='item'>
+          <a :href='this.$localeConfig.data.LinkLanguageVersion.jwallet' @click='clickLink("Jwallet")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Jwallet}}
+          </a>
+        </div>
+        <div class='item'>
+          <a :href='this.$localeConfig.data.LinkLanguageVersion.jcash' @click='clickLink("Jcash")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Jcash}}
+          </a>
+        </div>
+      </div>
+      <div class='box'>
+        <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Company}}</div>
+        <div class='item'>
+          <router-link :to='`${this.$localeConfig.path}about/`' @click.native='clickLink("AboutUs")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}
+          </router-link>
+        </div>
+        <div class='item'>
+          <router-link :to='`${this.$localeConfig.path}news/`' @click.native='clickLink("PressMedia")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.PressMedia}}
+          </router-link>
+        </div>
+        <div class='item'>
+          <router-link :to='`${this.$localeConfig.path}careers/`' @click.native='clickLink("Careers")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
+          </router-link>
+        </div>
+      </div>
+      <div class='box'>
+        <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Contact}}</div>
+        <div class='item'>
+          <button class='link'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
+        </div>
+        <div class='item'>
+          <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}
+          </a>
+        </div>
+        <div class='item'>
+          <a href='https://twitter.com/JibrelNetwork' @click='clickLink("Twitter")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}
+          </a>
+        </div>
+        <div class='item'>
+          <a href='https://www.linkedin.com/company/jibrel-network/' @click='clickLink("Linkedin")' class='link' target='_blank' >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}
+          </a>
+        </div>
+        <div class='item'>
+          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='button'>
+      <a href='https://jcash.network/auth/signin' class='j-button -border-on-dark-bg' target='_blank'><span class='text'>{{this.$themeLocaleConfig.data.ProjectMenu.SignIn}}</span></a>
+    </div>
+  </nav>
+</template>
+
+<script>
+import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
+export default {
+  name: 'MainMenu',
+  components: {
+    SpriteIcon
+  },
+  methods: {
+    closeMenu() {
+      this.gtmSend('Menu', 'Close_menu', '')
+      this.$emit('close')
+    },
+    clickLink(label) {      
+      this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
+    },
+    gtmSend(category, action, label) {
+      this.$gtm.trackView({
+        'event': 'AutoEvent',
+        'eventCategory': category,
+        'eventAction': action,
+        'eventLabel': label,
+        'eventValue': '',
+      });
+    }
+  },
+  watch: {
+    $page: function () {      
+      this.$emit('close')
+    }
+  },
+}
+</script>
+
+<style lang="scss">
+  @import './mainMenu.scss'
+</style>

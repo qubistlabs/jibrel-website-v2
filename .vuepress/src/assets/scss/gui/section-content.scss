@@ -1,0 +1,458 @@
+.section-content {
+  @include all-reset;
+
+  display: block;
+  text-align: center;
+  position: relative;
+  line-height: (20/14);
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+  }
+
+  &.-overflow-hidden {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &.-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
+    &::before {
+      height: 150%;
+    }
+
+    &.-animation-hide {
+      @include hid;
+    }
+
+    &.-hide {
+      display: none;
+    }
+  }
+
+  &.-bottom-separator {
+    border-bottom: 1px solid rgba($base, 0.08);
+  }
+
+  &.-full-screen {
+    height: 100vh;
+  }
+
+  &.-center-child-box {
+    font-size: 0;
+    text-align: center;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0;
+    }
+  }
+
+  &.-mobile-bottom-child-box {
+    @include to-mobile {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 14vh;
+      box-sizing: border-box;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &.-up-card {
+    margin-top: -255px;
+  }
+
+  &.-offset-page {
+    padding-top: 195px;
+
+    @include to-mobile {
+      padding-top: 130px;
+    }
+  }
+
+  &.-offset-top,
+  > .-offset-top {
+    padding-top: 110px;
+
+    @include to-mobile {
+      padding-top: 50px;
+
+      &.-mobile-collapse-offset {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &.-offset-top-small,
+  > .-offset-top-small {
+    padding-top: 60px;
+
+    @include to-mobile {
+      padding-top: 50px;
+
+      &.-mobile-collapse-offset {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &.-offset-bottom,
+  > .-offset-bottom {
+    padding-bottom: 110px;
+
+    @include to-mobile {
+      padding-bottom: 50px;
+
+      &.-mobile-collapse-offset,
+      &.-mobile-collapse-bottom-offset,
+      > .-mobile-collapse-offset,
+      > .-mobile-collapse-bottom-offset {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.-offset-bottom-small,
+  > .-offset-bottom-small {
+    padding-bottom: 60px;
+
+    @include to-mobile {
+      padding-bottom: 50px;
+    }
+  }
+  // BG setting block
+  &.-bg-cover {
+    @include bg-cover;
+  }
+
+  &.-bg-menu {
+    background-color: rgba(#0f1b38, 0.8);
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-color: $base;
+      width: 300px;
+      right: 0;
+      top: 0;
+      left: auto;
+
+      @include to-mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &.-bg-grid {
+    background-image: url(../src/assets/img/general/bg/faded-grid-white.png);
+    background-position: top center;
+  }
+
+  &.-bg-gexagrid {
+    background-position: center 95px;
+  }
+
+  &.-bg-bottom {
+    @include bg-bottom;
+  }
+
+  &.-bg-blue {
+    &::before {
+      @include bg-blue;
+    }
+
+    &.-bg-grid {
+      background-image: url(../src/assets/img/general/bg/faded-grid-white-o.png);
+    }
+  }
+
+  &.-bg-gray-gradient {
+    &::before {
+      @include bg-gray-gradient;
+    }
+  }
+
+  &.-bg-black-gradient {
+    &::before {
+      @include bg-black-gradient;
+    }
+  }
+
+  &.-bg-blue-gradient {
+    &::before {
+      @include bg-blue-gradient;
+    }
+  }
+
+  &.-bg-light-blue {
+    &::before {
+      @include bg-light-blue;
+    }
+  }
+
+  &.-bg-gray {
+    &::before {
+      @include bg-gray;
+    }
+  }
+
+  &.-bg-dark {
+    &::before {
+      @include bg-dark;
+    }
+  }
+
+  &.-bg-white {
+    &::before {
+      background-color: #fff;
+    }
+  }
+
+  @include to-mobile {
+    &.-mobile-offset-top {
+      padding-top: 50px;
+    }
+
+    &.-mobile-offset-bottom {
+      padding-bottom: 50px;
+    }
+
+    &.-mobile-bg-gray {
+      &::before {
+        @include bg-gray;
+      }
+    }
+
+    &.-mobile-bg-blue {
+      background-image: none !important;
+
+      &::before {
+        @include bg-blue;
+      }
+    }
+
+    &.-mobile-bg-white {
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  > .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  // Element blocl
+  > .container {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+
+    &.-static {
+      position: static;
+    }
+
+    &.-center-box {
+      display: inline-block;
+      font-size: 1rem;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      content: '';
+      z-index: -1;
+    }
+
+    &.-bg-blue {
+      &::before {
+        @include bg-blue;
+      }
+    }
+
+    &.-single-visual-center {
+      padding-top: 5vh;
+    }
+
+    &.-visual-center-with-cards {
+      padding-bottom: 25vh;
+    }
+
+    &.-bg-gray-gradient {
+      &::before {
+        @include bg-gray-gradient;
+      }
+    }
+
+    &.-bg-black-gradient {
+      &::before {
+        @include bg-black-gradient;
+      }
+    }
+
+    &.-bg-blue-gradient {
+      &::before {
+        @include bg-blue-gradient;
+      }
+    }
+
+    &.-bg-light-blue {
+      &::before {
+        @include bg-light-blue;
+      }
+    }
+
+    &.-bg-gray {
+      &::before {
+        @include bg-gray;
+      }
+    }
+
+    &.-bg-dark {
+      &::before {
+        @include bg-dark;
+      }
+    }
+
+    &.-bg-white {
+      &::before {
+        background-color: #fff;
+      }
+    }
+
+    @include to-mobile {
+      &.-mobile-bg-gray {
+        &::before {
+          @include bg-gray;
+        }
+      }
+
+      &.-mobile-bg-white {
+        &::before {
+          background-color: #fff;
+        }
+      }
+
+      &.-mobile-bg-blue {
+        background-image: none !important;
+
+        &::before {
+          @include bg-blue;
+        }
+      }
+    }
+
+    > .title {
+      font-size: 24px;
+      line-height: (36/24);
+      font-weight: normal;
+      max-width: 800px;
+
+      @include to-mobile {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      &.-small {
+        max-width: 700px;
+      }
+
+      &.-text-center {
+        text-align: center;
+      }
+
+      &.-white {
+        color: #fff;
+      }
+
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.-offset-bottom {
+        padding-bottom: 60px;
+      }
+    }
+
+    > .descr {
+      max-width: 800px;
+      font-size: 14px;
+      font-weight: normal;
+      color: rgba($base, 0.6);
+      line-height: (24/14);
+
+      &.-white {
+        color: rgba(#fff, 0.6);
+      }
+
+      &.-offset-bottom {
+        margin-bottom: 50px;
+
+        @include to-mobile {
+          margin-bottom: 30px;
+        }
+      }
+
+      &.-w-limit-650 {
+        max-width: 650px;
+      }
+
+      &.-w-limit {
+        max-width: 360px;
+      }
+
+      &.-text-center {
+        text-align: center;
+      }
+
+      &.-box-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    > .title ~ .descr {
+      margin-top: 30px;
+
+      @include to-mobile {
+        margin-top: 20px;
+      }
+    }
+
+    > .img {
+      max-width: 100%;
+    }
+  }
+}

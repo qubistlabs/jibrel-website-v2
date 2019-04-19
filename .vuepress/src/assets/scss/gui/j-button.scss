@@ -1,0 +1,340 @@
+.j-buttons {
+  @include all-reset;
+
+  display: block;
+  width: 100%;
+
+  &.-center {
+    text-align: center;
+  }
+
+  &.-offset-top {
+    margin-top: 60px;
+
+    @include to-mobile {
+      margin-top: 35px;
+    }
+  }
+}
+
+.j-button {
+  @include all-reset;
+
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+  border-radius: 3px;
+  height: 48px;
+  font-size: 12px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out, fill 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  @include from-mobile {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include to-mobile {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &.-big-offset {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  &.-w-limit-180 {
+    max-width: 180px;
+  }
+
+  &.-w-limit-240 {
+    max-width: 240px;
+  }
+
+  &.-w-limit-360 {
+    max-width: 360px;
+  }
+
+  &.-w-limit-320 {
+    max-width: 360px;
+  }
+
+  &.-three-col {
+    width: 33.333%;
+
+    @include to-mobile {
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+
+  &.-w-auto {
+    width: auto;
+  }
+
+  @include to-mobile {
+    &.-m-w-100 {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &.-fill-on-dark-bg,
+  &.-fill-disabled-on-dark-bg,
+  &.-fill-on-blue-bg,
+  &.-fill-disabled-on-blue-bg,
+  &.-fill-on-white-bg,
+  &.-fill-on-gray-bg,
+  &.-fill-disabled-on-gray-bg,
+  &.-fill-white-on-gray-bg {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &.-fill-on-gray-bg,
+  &.-fill-on-blue-bg {
+    background-color: #fff;
+    color: $base;
+    fill: $base;
+    cursor: pointer;
+  }
+
+  &.-fill-on-gray-bg {
+    box-shadow: 0 6px 12px 0 rgba(61, 79, 108, 0.08);
+
+    &:hover {
+      color: #fff;
+      fill: #fff;
+      background-color: #00c1ff;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    &:active {
+      background-color: rgba(#00c1ff, 0.75);
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.14);
+    }
+  }
+
+  &.-fill-on-blue-bg {
+    box-shadow: 0 6px 12px 0 rgba(9, 52, 155, 0.3);
+
+    &:hover {
+      color: #fff;
+      fill: #fff;
+      background-color: #00c1ff;
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.25);
+    }
+
+    &:active {
+      background-color: rgba(#00c1ff, 0.75);
+      box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.15);
+    }
+  }
+
+  &.-fill-white-on-gray-bg {
+    box-shadow: 0 6px 12px 0 rgba($base, 0.15);
+    background-color: #fff;
+    color: $blue;
+
+    &:hover {
+      background-color: rgba($light-blue, 0.75);
+      color: #fff;
+    }
+
+    &:active {
+      background-color: rgba($light-blue, 0.5);
+    }
+  }
+
+  &.-fill-on-dark-bg,
+  &.-fill-on-white-bg {
+    background-color: $blue;
+    color: #fff;
+    fill: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0, 61, 198, 0.25);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-blue;
+      box-shadow: 0 6px 12px 0 rgba(0, 193, 255, 0.25);
+    }
+  }
+
+  &.-fill-on-dark-bg:active {
+    background-color: rgba($light-blue, 0.75);
+  }
+
+  &.-fill-on-white-bg:active {
+    background-color: rgba($light-blue, 0.5);
+  }
+
+  // disabled button
+  &.-fill-disabled-on-dark-bg {
+    color: rgba(#fff, 0.4);
+    fill: rgba(#fff, 0.4);
+    background-color: #5a6a83;
+  }
+
+  @include to-mobile {
+    &.-mobile-on-blue-bg {
+      background-color: #fff;
+      color: $base;
+      fill: $base;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        fill: #fff;
+        background-color: #00c1ff;
+        box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.25);
+      }
+
+      &:active {
+        background-color: rgba(#00c1ff, 0.75);
+        box-shadow: 0 6px 12px 0 rgba(#00c1ff, 0.15);
+      }
+    }
+  }
+
+  &.-fill-disabled-on-white-bg {
+    color: rgba(#fff, 0.7);
+    fill: rgba(#fff, 0.7);
+    background-color: #d6dae0;
+  }
+
+  &.-fill-disabled-on-blue-bg {
+    color: rgba(#fff, 0.4);
+    fill: rgba(#fff, 0.4);
+    background-color: #295bcb;
+  }
+
+  &.-border-on-blue-bg,
+  &.-border-on-white-bg,
+  &.-border-on-dark-bg,
+  &.-border-on-white-bg,
+  &.-mobile-border-on-white-bg {
+    // padding-top: 10px;
+  }
+
+  &.-border-on-blue-bg,
+  &.-border-on-white-bg {
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+
+    &.-inline {
+      border-radius: 0;
+
+      @include from-mobile {
+        &:not(:last-child) {
+          margin-right: -1px;
+        }
+
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+
+      @include to-mobile {
+        margin-bottom: -1px;
+
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+        }
+
+        &:last-child {
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+  }
+
+  &.-border-on-blue-bg {
+    border: 2px solid #80a6ec;
+    color: #fff;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &:active {
+      border-color: #809ee3;
+      color: #809ee3;
+    }
+  }
+
+  &.-border-on-dark-bg {
+    border: 2px solid rgba(#f5f6fa, 0.5);
+    color: #fff;
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &:active {
+      border-color: #f5f6fa;
+      color: #f5f6fa;
+    }
+  }
+
+  &.-border-on-white-bg {
+    border: 2px solid rgba($blue, 0.5);
+    color: $blue;
+
+    &:hover {
+      border-color: rgba($light-blue, 0.5);
+      color: $light-blue;
+    }
+  }
+
+  @include to-mobile {
+    &.-mobile-border-on-white-bg {
+      background-color: transparent;
+      border: 1px solid rgba($blue, 0.5);
+      box-shadow: none;
+      color: $blue;
+
+      &:hover {
+        border-color: rgba($light-blue, 0.5);
+        color: $light-blue;
+      }
+    }
+  }
+
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+  // Button with icon
+  > .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  > .icon + .text {
+    margin-left: 10px;
+  }
+
+  > .text + .icon {
+    margin-left: 10px;
+  }
+}

@@ -1,3 +1,0 @@
-LanguageCurrent: {
-  lang: 'ko',
-}
