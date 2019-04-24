@@ -27,6 +27,7 @@
 import Vue from 'vue'
 import Meta from 'vue-meta'
 import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
@@ -117,7 +118,6 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-    // app.AOS = new AOS.init({ disable: "mobile" });
   },
   mounted() {
     Vue.use(VueGtm, {
@@ -140,6 +140,10 @@ export default {
     })
     this.gtmSend()
     this.ymTracking()
+    AOS.init({
+      disable: "mobile",
+      once: true,
+    })
   }
 };
 </script>
