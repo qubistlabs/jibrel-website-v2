@@ -1,6 +1,6 @@
 ---
 index: true 
-title: News
+title: 뉴스 및 미디어
 ---
 
 <template>

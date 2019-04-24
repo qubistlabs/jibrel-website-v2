@@ -1,6 +1,6 @@
 ---
 headerColor: white
-title: Enterprise
+title: 엔터프라이즈
 ---
 
 <template>

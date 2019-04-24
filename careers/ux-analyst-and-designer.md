@@ -1,7 +1,7 @@
 ---
 published: true
 title: UX Analyst & Designer
-description: Jibrel is looking for a Middle Python Developer to join its Saint-Petersburg office. Successful candidate will develop backend applications that interact with the different blockchains.
+description: UI/UX Analyst & Designer for an international blockchain startup that develops tools for Banks and Funds to use blockchain & tokens and comply with the SEC and other regulators. You'll need to work on UI/UX of the apps
 time: Full-Time
 place: Saint-Petersburg, Russia
 ---

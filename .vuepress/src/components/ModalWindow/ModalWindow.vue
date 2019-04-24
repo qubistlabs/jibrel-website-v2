@@ -11,7 +11,7 @@
       <div class="container _container-fluid -reverce">
         <div class="actions aos-init aos-animate" data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
           <button class="modal-toggle" @click="$emit('close')">
-            <SpriteIcon name='i-cross' class='icon -white'/>
+            <SpriteIcon name='i-cross' class='cross -white'/>
           </button>
         </div>
       </div>

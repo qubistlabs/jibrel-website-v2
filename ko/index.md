@@ -1,6 +1,6 @@
 ---
 headerColor: white
-title: Home
+title: 
 ---
 
 <template>

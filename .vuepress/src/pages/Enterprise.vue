@@ -201,7 +201,7 @@ export default {
   metaInfo () {
     return MetaInfo(
       this.$route.path,
-      'Enterprise',
+      this.$page.frontmatter.title,
       this.$page.frontmatter.description
     )
   },

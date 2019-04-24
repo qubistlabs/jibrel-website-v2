@@ -9,7 +9,7 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Products}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}enterprise/`' @click.native='clickLink("Enterprise")' class='link' active-class='-current'>
+          <router-link :to='`${this.$localeConfig.path}enterprise/`' @click.native='clickLink("Enterprise", "enterprise/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Enterprise}}
           </router-link>
         </div>
@@ -27,17 +27,17 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Company}}</div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}about/`' @click.native='clickLink("AboutUs")' class='link' active-class='-current'>
+          <router-link :to='`${this.$localeConfig.path}about/`' @click.native='clickLink("AboutUs", "about/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.AboutUs}}
           </router-link>
         </div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}news/`' @click.native='clickLink("PressMedia")' class='link' active-class='-current'>
+          <router-link :to='`${this.$localeConfig.path}news/`' @click.native='clickLink("PressMedia", "news/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.PressMedia}}
           </router-link>
         </div>
         <div class='item'>
-          <router-link :to='`${this.$localeConfig.path}careers/`' @click.native='clickLink("Careers")' class='link' active-class='-current'>
+          <router-link :to='`${this.$localeConfig.path}careers/`' @click.native='clickLink("Careers", "careers/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
           </router-link>
         </div>
@@ -48,22 +48,22 @@
           <button class='link'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
         </div>
         <div class='item'>
-          <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook")' class='link' target='_blank' >
+          <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook", "close")' class='link' target='_blank' >
             {{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://twitter.com/JibrelNetwork' @click='clickLink("Twitter")' class='link' target='_blank' >
+          <a href='https://twitter.com/JibrelNetwork' @click='clickLink("Twitter", "close")' class='link' target='_blank' >
             {{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://www.linkedin.com/company/jibrel-network/' @click='clickLink("Linkedin")' class='link' target='_blank' >
+          <a href='https://www.linkedin.com/company/jibrel-network/' @click='clickLink("Linkedin", "close")' class='link' target='_blank' >
             {{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium")' class='link' target='_blank'>
+          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium", "close")' class='link' target='_blank'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
           </a>
         </div>
@@ -84,10 +84,12 @@ export default {
   },
   methods: {
     closeMenu() {
-      this.gtmSend('Menu', 'Close_menu', '')
       this.$emit('close')
     },
-    clickLink(label) {      
+    clickLink(label, param) {            
+      if (param === 'close' || this.$localeConfig.path + param === this.$route.path) {
+        this.$emit('close')
+      }
       this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
     },
     gtmSend(category, action, label) {

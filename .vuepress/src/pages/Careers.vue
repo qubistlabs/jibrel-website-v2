@@ -42,7 +42,7 @@
     metaInfo () {
       return MetaInfo(
         this.$route.path,
-        `Vacancies`,
+        this.$page.frontmatter.title,
         this.$page.frontmatter.description
       )
     },

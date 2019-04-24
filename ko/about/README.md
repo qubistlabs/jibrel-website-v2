@@ -1,6 +1,6 @@
 ---
 headerColor: white
-title: About
+title: 기업 정보
 ---
 
 <template>
