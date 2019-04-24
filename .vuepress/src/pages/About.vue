@@ -58,7 +58,7 @@ headerColor: white
           <div class='item -two-col' data-aos="fade-right" data-aos-duration="300" data-aos-delay="150">
             <div class='box -color -padding-small'>
               <div class='img -base-icon'>
-                <SpriteIcon name='i-business-female-chat' class='icon -stroke'/>
+                <img src="@/assets/img/general/icon/i-business-female-chat.svg" class="icon" width="56" height="57" alt="icon">
               </div>
               <h2 class='title'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.description}}</p>
@@ -134,7 +134,7 @@ export default {
   metaInfo () {
     return MetaInfo(
       this.$route.path,
-      'About',
+      this.$page.frontmatter.title,
       this.$page.frontmatter.description
     )
   },

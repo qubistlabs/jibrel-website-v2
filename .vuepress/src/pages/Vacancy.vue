@@ -60,7 +60,7 @@ export default {
   metaInfo () {
     return MetaInfo(
       this.$route.path,
-      `Vacancy - ${this.$page.frontmatter.title}`,
+      this.$page.frontmatter.title,
       this.$page.frontmatter.description
     )
   },

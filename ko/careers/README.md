@@ -1,6 +1,6 @@
 ---
 index: true 
-title: Careers
+title: 채용
 ---
 
 <template>

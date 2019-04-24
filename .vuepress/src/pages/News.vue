@@ -34,7 +34,6 @@
 
 <script>
 import MetaInfo from '@/Utils/MetaInfo.js'
-
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
@@ -48,7 +47,7 @@ export default {
   metaInfo () {
     return MetaInfo(
       this.$route.path,
-      `News - ${this.$page.frontmatter.title}`,
+      this.$page.frontmatter.title,
       this.$page.frontmatter.description
     )
   },

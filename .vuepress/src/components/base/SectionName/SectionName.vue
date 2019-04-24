@@ -7,7 +7,9 @@
       >
         {{title}}
       </div>
-      <SpriteIcon :name='`i-arrow-${arrow}`' :class='[`arrow -${colorTheme}`, `-${arrow}`]'/>
+      <div :class='[`arrow -${colorTheme}`, `-${arrow}`]' @click='scrollTo(arrow)'>
+        <SpriteIcon :name='`i-arrow-${arrow}`' />
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +28,15 @@ export default {
     colorTheme: 'white' | 'colored',
     arrow: 'up' | 'down',
     isAnimation: false,
+  },
+  methods: {
+    scrollTo(direction) {
+      window.scrollTo({
+        'behavior': 'smooth',
+        'left': 0,
+        'top': direction === 'up' ? 0 : window.innerHeight
+      });
+    }
   }
 }
 </script>

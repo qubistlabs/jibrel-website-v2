@@ -11,7 +11,7 @@
         </div>
       </div>
     </header>
-    <ModalWindow :isOpened='isOpened' :isMenu='true' @close="isOpened=false"><MainMenu @close="isOpened=false"/></ModalWindow>
+    <ModalWindow :isOpened='isOpened' :isMenu='true' @close="closeMenu()"><MainMenu @close="closeMenu()"/></ModalWindow>
   </div>
 </template>
 
@@ -41,13 +41,20 @@ export default {
     }
   },
   methods: {
+    closeMenu() {
+      this.isOpened = false
+      this.gtmSend('Menu', 'Close_menu', '')
+    },
     openMenu() {
       this.isOpened = true
+      this.gtmSend('Menu', 'Open_menu', '')
+    },
+    gtmSend(category, action, label) {
       this.$gtm.trackView({
         'event': 'AutoEvent',
-        'eventCategory': 'Menu',
-        'eventAction': 'Open_menu',
-        'eventLabel': '',
+        'eventCategory': category,
+        'eventAction': action,
+        'eventLabel': label,
         'eventValue': '',
       });
     }

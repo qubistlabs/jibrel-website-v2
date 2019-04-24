@@ -116,7 +116,7 @@ module.exports = {
         },
       },
       '/ko/': {
-        selectText: '选择语言',
+        selectText: '한국어',
         data: {
           ProjectMenu: ProjectMenuKo,
           PageHeader: PageHeaderKo,

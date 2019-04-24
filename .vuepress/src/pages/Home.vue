@@ -118,7 +118,7 @@ headerColor: white
       <div class='container _container-fix'>
         <NewsPreviews isBordered='true' limit='3' />
         <div class='j-buttons -center' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='150'>
-          <router-link to="/news/" class='j-button -fill-on-white-bg -w-limit-360' >
+          <router-link :to='`${this.$localeConfig.path}news/`' class='j-button -fill-on-white-bg -w-limit-360' >
             <span class='text'>{{$themeLocaleConfig.data.ProjectNews.showMore}}</span>
           </router-link>
         </div>
@@ -146,7 +146,7 @@ export default {
   metaInfo () {
     return MetaInfo(
       null,
-      'Home',
+      this.$page.frontmatter.title,
     )
   },
 }

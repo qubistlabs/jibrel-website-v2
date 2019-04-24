@@ -1,7 +1,7 @@
 <template>
   <section class='section-content' :class='isWhite && "-bg-dark"'>
     <div class='container _container-fix' :class='isWhite && " -offset-top -offset-bottom"'>
-      <div class='card-tile -inner-border-separator -inner-border-white -inner-border-vertical'>
+      <div class='card-tile -inner-border-separator -inner-border-vertical' :class="isWhite ? '-inner-border-white' : '-inner-border-gray'">
         <div class='item -four-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
           <div class='box -padding-small' :class='isWhite ? "-white" : "-color"'>
             <div class='img '>
