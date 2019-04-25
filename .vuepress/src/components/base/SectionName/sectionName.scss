@@ -53,23 +53,22 @@
 
       @include ls(50);
 
-      &.-bottom {
+      > .-bottom {
         transform-origin: 0 0;
         transform: translate(-4px, 21px) rotate(-90deg);
       }
 
-      &.-top {
-        // transform-origin: right bottom;
+      > .-top {
         transform: translate(-100%, 0) rotate(-90deg);
         transform: translate(calc(-100% + -5px), 0) rotate(-90deg);
         transform-origin: right top;
       }
 
-      &.-white {
+      > .-white {
         color: #fff;
       }
 
-      &.-colored {
+      > .-colored {
         color: $base;
       }
     }

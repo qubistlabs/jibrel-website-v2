@@ -1,11 +1,16 @@
 <template>
   <div class='section-name' :class='`-${positionContainer}`'>
     <div class='container _container-fluid'>
-      <div class='title' 
-        :class='[`-${positionTitle}`, `-${colorTheme}`]'
-        data-aos='fade-up' data-aos-duration='1200' data-aos-delay='150' data-aos-offset='0'
+      <div
+        class='title'
+        data-aos='fade-up'
+        data-aos-duration='1200'
+        data-aos-delay='150'
+        data-aos-offset='0'
       >
-        {{title}}
+        <div
+          :class='[`-${positionTitle}`, `-${colorTheme}`]'
+        >{{title}}</div>
       </div>
       <div :class='[`arrow -${colorTheme}`, `-${arrow}`]' @click='scrollTo(arrow)'>
         <SpriteIcon :name='`i-arrow-${arrow}`' />
