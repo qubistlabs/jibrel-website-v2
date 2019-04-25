@@ -3,10 +3,10 @@
     <header class='main-header' :class='isSmall && "-small -bg-white"'>
       <div class='container _container-fluid'>
         <ProjectLogo :colorTheme='colorTheme' animationType='fade-down'/>
-        <div class='actions' data-aos='fade-down' data-aos-duration='900' data-aos-delay='150'>
+        <div class='actions'>
           <SelectLanguage :colorTheme='colorTheme'/>
           <div @click='openMenu'>
-          <MenuToggle :colorTheme='colorTheme' />
+            <MenuToggle :colorTheme='colorTheme' />
           </div>
         </div>
       </div>

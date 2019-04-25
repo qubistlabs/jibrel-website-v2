@@ -118,6 +118,13 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
+   
+  },
+  beforeMount() {
+     AOS.init({
+      disable: "mobile",
+      once: true,
+    })
   },
   mounted() {
     Vue.use(VueGtm, {
@@ -140,10 +147,6 @@ export default {
     })
     this.gtmSend()
     this.ymTracking()
-    AOS.init({
-      disable: "mobile",
-      once: true,
-    })
   }
 };
 </script>
