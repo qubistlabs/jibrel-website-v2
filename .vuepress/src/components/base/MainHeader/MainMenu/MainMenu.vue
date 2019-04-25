@@ -45,7 +45,7 @@
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Contact}}</div>
         <div class='item'>
-          <button class='link'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
+          <button class='link' @click='modalOpen'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
         </div>
         <div class='item'>
           <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook", "close")' class='link' target='_blank' >
@@ -83,6 +83,9 @@ export default {
     SpriteIcon
   },
   methods: {
+    modalOpen() {
+      this.$emit('open')
+    },
     closeMenu() {
       this.$emit('close')
     },
