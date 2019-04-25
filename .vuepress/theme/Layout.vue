@@ -5,7 +5,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- <SpriteIcon /> -->
-    <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' />
+    <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
     <Content v-if='typePage === "precast-page"'/>
     <News v-if='typePage === "/news/"' > <Content /> </News>
     <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>

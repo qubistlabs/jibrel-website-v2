@@ -158,6 +158,9 @@ export default {
         this.isHideForm = true
         setTimeout(() => {
           this.isHideForm = false
+          this.email = null
+          this.fullName = null
+          this.message = null
         }, 3300)
         setTimeout(() => {
           this.isSuccess = false

@@ -145,8 +145,7 @@ export default {
   },
   metaInfo () {
     return MetaInfo(
-      null,
-      this.$page.frontmatter.title,
+      null
     )
   },
 }

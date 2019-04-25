@@ -11,7 +11,7 @@
         </div>
       </div>
     </header>
-    <ModalWindow :isOpened='isOpened' :isMenu='true' @close="closeMenu()"><MainMenu @close="closeMenu()"/></ModalWindow>
+    <ModalWindow :isOpened='isOpened' :isMenu='true' @close="closeMenu()"><MainMenu @close="closeMenu()" @open="modalOpen"/></ModalWindow>
   </div>
 </template>
 
@@ -41,6 +41,9 @@ export default {
     }
   },
   methods: {
+    modalOpen() {
+      this.$emit('open')
+    },
     closeMenu() {
       this.isOpened = false
       this.gtmSend('Menu', 'Close_menu', '')

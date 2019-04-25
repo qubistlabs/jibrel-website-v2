@@ -6,7 +6,7 @@
       isMenu ? "-bg-menu" : "-bg-black-gradient"
     ]'
   >
-    <div class='overlay' @click="$emit('close')"></div>
+    <div class='overlay' @click="isMenu ? $emit('close') : null"></div>
     <header class="main-header" v-if="!isMenu">
       <div class="container _container-fluid -reverce">
         <div class="actions aos-init aos-animate" data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">

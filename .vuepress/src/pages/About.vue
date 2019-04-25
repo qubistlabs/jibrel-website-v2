@@ -111,9 +111,7 @@ headerColor: white
       </div>
     </section>
     <section class='section-content -offset-top -offset-bottom'>
-      <div class='container _container-fix'>
-        <ContactsList />
-      </div>
+      <ContactsList />
     </section>
   </div>
 </template>
