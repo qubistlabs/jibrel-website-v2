@@ -1,5 +1,9 @@
 <template>
-  <router-link :to='this.$localeConfig.path' class='project-logo' :class='`-${colorTheme}`' :data-aos='animationType' data-aos-duration="600" data-aos-delay="150">
+  <router-link :to='this.$localeConfig.path' class='project-logo' 
+    :class='[`-${colorTheme}`, animationType === "fade-down" && `-${animationType}`]'
+      :data-aos='animationType === "fade-up" && `-${animationType}`'
+      data-aos-duration="600"
+      data-aos-delay="150">
     <SpriteIcon name='logo-icon' class='icon'/>
     <SpriteIcon name='logo-text' class='text'/>
   </router-link>
