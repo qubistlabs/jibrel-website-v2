@@ -70,7 +70,7 @@ headerColor: white
                 <SpriteIcon name='i-business-statistics' class='icon -stroke'/>
               </div>
               <h2 class='title'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_2.title}}</h2>
-              <p class='descr'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_1.description}}</p>
+              <p class='descr'>{{$localeConfig.data.ProvidesConsumerEnterprise.card_2.description}}</p>
             </div>
           </div>
         </div>
