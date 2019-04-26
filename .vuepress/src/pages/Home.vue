@@ -27,14 +27,16 @@ headerColor: white
       </div>
       <div class='button-bottom _mobile-visible'>
         <div class='_container-fix'>
-          <a href='https://jcash.network/auth/signup' class='j-button -fill-on-blue-bg'><span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span></a>
+          <a href='https://jcash.network/auth/signup' target='_blank' class='j-button -fill-on-blue-bg'>
+            <span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span>
+          </a>
         </div>
       </div>
     </section>
     <section class='section-content -offset-bottom -offset-top'>
       <div class='container _container-fix'>
         <div class='card-tile -distribute-evenly'>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
+          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
             <div class='box -color -no-offset'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/scale.svg' class='icon' width='60' height='60' alt='icon'>
@@ -43,7 +45,7 @@ headerColor: white
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_1.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"> 
+          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
             <div class='box -color -no-offset'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/passport.svg' class='icon' width='60' height='60' alt='icon'>
@@ -52,7 +54,7 @@ headerColor: white
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_2.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"> 
+          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
             <div class='box -color -no-offset'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/cloud-data.svg' class='icon' width='60' height='60' alt='icon'>
@@ -93,8 +95,8 @@ headerColor: white
             <h2 class='title -color -neighbor-img' data-aos='fade-left' data-aos-duration='300' data-aos-delay='150'>{{$localeConfig.data.ProductInfo.jcash.title}}</h2>
             <div class='descr -color -small-text' data-aos='fade-left' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ProductInfo.jcash.description}}</div>
             <div class='btns' data-aos='fade-left' data-aos-duration='900' data-aos-delay='150'>
-              <a :href='$localeConfig.data.LinkLanguageVersion.jcash' class='j-button -fill-white-on-gray-bg -w-limit-240'>
-                <span class='text'>{{$localeConfig.data.ProductInfo.jcash.button}}</span> 
+              <a :href='$localeConfig.data.LinkLanguageVersion.jcash' target='_blank' class='j-button -fill-white-on-gray-bg -w-limit-240'>
+                <span class='text'>{{$localeConfig.data.ProductInfo.jcash.button}}</span>
               </a>
             </div>
           </div>
