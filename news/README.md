@@ -1,6 +1,6 @@
 ---
 index: true 
-title: News
+title: News & Media
 ---
 
 <template>
