@@ -63,11 +63,11 @@ export default {
   props: {
     isJcashOpen: '',
     title: '',
+    eventType: String,
+    formName: String,
   },
   data() {
     return {
-      eventType: String,
-      formName: String,
       email: null,
       fullName: null,
       message: null,
@@ -127,48 +127,64 @@ export default {
     },
     ajaxSend() {
       const dataJson = {
-        "form-name": "enquiry",
-        "full-name": this.fullName,
-        "email": this.email,
-        "message": this.message 
+        "request": {
+          "requester": {
+            "name": this.fullName,
+            "email": this.email
+          },
+          "subject": `Web site ticket: ${this.eventType}`,
+          "comment": {
+            "body": this.message
+          },
+          "custom_fields": [
+            {
+              "id": 360012707533,
+              "value": "Other"
+            },
+            {
+              "id": 360013062374,
+              "value": "message-form"
+            }
+          ]
+        }
       }
       
       if (!this.checkForm()) {
         return false
       }
+      
       axios({
         method: "post",
-        url: `https://app.jnode.network/feedback`,
+        url: 'https://jibrel.zendesk.com/api/v2/requests.json',
         data: dataJson
-      }).then(response => {
-        if (response.status === 'success') {
-          setTimeout(() => {
-            this.isSuccess = true
-          }, 300)
-          validation.eventGTM(event)
-        } else if (response.status === 'error') {
-          setTimeout(() => {
-            this.isError = true
-          }, 300)
-        } else {
-          console.warn('The response does not contain the required values')
-          validation.eventGTM(event)
-          return
-        }
-        this.isHideForm = true
-        setTimeout(() => {
-          this.isHideForm = false
+      }).then(response => {        
+        if (response.status === 201 || response.status === 200) {
+          this.isSuccess = true
           this.email = null
           this.fullName = null
           this.message = null
-        }, 3300)
-        setTimeout(() => {
-          this.isSuccess = false
-          this.isError = false
-        }, 3600)
+          this.eventGTM(this.eventType)
+        } else {
+          console.warn(response.statusText)
+          this.isError = true
+          return
+        }
+        this.requestResult()
+      })
+      .catch(response => {
+        this.isError = false
+        this.requestResult()
+        console.error(response.statusText);
       });
     },
-    /* eslint-enable */
+    requestResult() {
+      this.isHideForm = true
+      setTimeout(() => {
+        this.isHideForm = false
+        this.isError = false
+        this.isSuccess = false
+      }, 3300)
+    },
     eventGTM(event) {
       function menuDataSend(category, action, label) {
         // eslint-disable-next-line fp/no-mutating-methods
