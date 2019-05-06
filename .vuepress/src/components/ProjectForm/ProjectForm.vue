@@ -132,7 +132,7 @@ export default {
             "name": this.fullName,
             "email": this.email
           },
-          "subject": `Web site ticket: ${this.eventType}`,
+          "subject": `jibrel.network ${this.$localeConfig.shortLang}: ${this.eventType}`,
           "comment": {
             "body": this.message
           },
@@ -158,18 +158,12 @@ export default {
         url: 'https://jibrel.zendesk.com/api/v2/requests.json',
         data: dataJson
       }).then(response => {        
-        if (response.status === 201 || response.status === 200) {
-          this.isSuccess = true
-          this.email = null
-          this.fullName = null
-          this.message = null
-          this.eventGTM(this.eventType)
-        } else {
-          console.warn(response.statusText)
-          this.isError = true
-          return
-        }
+        this.isSuccess = true
+        this.email = null
+        this.fullName = null
+        this.message = null
         this.requestResult()
+        this.eventGTM(this.eventType)
       })
       .catch(response => {
         this.isError = false

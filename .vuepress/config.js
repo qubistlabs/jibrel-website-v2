@@ -68,6 +68,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
+      shortLang: 'en',
       title: 'Jibrel Network',
       data: {
         CareerPage: CareerPageEn,
@@ -86,6 +87,7 @@ module.exports = {
     },
     '/ko/': {
       lang: 'ko-KR',
+      shortLang: 'ko',
       title: 'Jibrel Network',
       data: {
         CareerPage: CareerPageKo,
