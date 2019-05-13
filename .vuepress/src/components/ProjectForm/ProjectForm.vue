@@ -130,7 +130,6 @@ export default {
       if (this.isSending) {
         return
       }
-      this.isSending = true
       const dataJson = {
         "request": {
           "requester": {
@@ -157,6 +156,7 @@ export default {
       if (!this.checkForm()) {
         return false
       }
+      this.isSending = true
       
       axios({
         method: "post",
