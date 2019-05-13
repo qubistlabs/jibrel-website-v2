@@ -28,7 +28,7 @@
           <span class='label -white'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.message}}</span>
         </label>
         <div class='button'>
-          <button class='j-button -fill-on-gray-bg -w100' type='button' @click='ajaxSend'>
+          <button class='j-button -w100' :class='!isSending ? "-fill-on-gray-bg" : "-fill-disabled-on-gray-bg"' type='button' @click='ajaxSend' >
             <span class='text'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.button}}</span>
           </button>
         </div>
@@ -76,7 +76,8 @@ export default {
       messageError: false,
       isSuccess: false,
       isError: false,
-      isHideForm: false
+      isHideForm: false,
+      isSending: false
     }
   },
   methods: {
@@ -126,6 +127,10 @@ export default {
       return this.valid
     },
     ajaxSend() {
+      if (this.isSending) {
+        return
+      }
+      this.isSending = true
       const dataJson = {
         "request": {
           "requester": {
@@ -164,10 +169,12 @@ export default {
         this.message = null
         this.requestResult()
         this.eventGTM(this.eventType)
+        this.isSending = false
       })
       .catch(response => {
         this.isError = false
         this.requestResult()
+        this.isSending = false
         console.error(response.statusText);
       });
     },
