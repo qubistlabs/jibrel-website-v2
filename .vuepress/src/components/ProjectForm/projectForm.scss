@@ -155,6 +155,8 @@
             color: #fff;
             border-color: rgba(#fff, 0.15);
             background-color: transparent;
+
+            // Change the default text color for auto-fill fields in Google Chrome
             -webkit-text-fill-color: #fff;
 
             @include placeholder {
@@ -168,6 +170,8 @@
               color: #fff;
               border-color: rgba(#fff, 0.15);
               background-color: transparent;
+
+              // Change the default text color for auto-fill fields in Google Chrome
               -webkit-text-fill-color: #fff;
 
               @include placeholder {
@@ -208,6 +212,7 @@
           &.-input {
             height: 70px;
 
+            // Remove backgrounds from auto-fill fields in Google Chrome
             &:-webkit-autofill,
             &:-webkit-autofill:hover, 
             &:-webkit-autofill:focus,
