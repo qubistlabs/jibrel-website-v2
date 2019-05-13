@@ -141,6 +141,12 @@
     }
   }
 
+  &.-fill-disabled-on-gray-bg {
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: default;
+  }
+
   &.-fill-white-on-gray-bg {
     box-shadow: 0 6px 12px 0 rgba($base, 0.15);
     background-color: #fff;
