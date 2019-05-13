@@ -155,6 +155,7 @@
             color: #fff;
             border-color: rgba(#fff, 0.15);
             background-color: transparent;
+            -webkit-text-fill-color: #fff;
 
             @include placeholder {
               color: rgba(#fff, 0.8);
@@ -167,6 +168,7 @@
               color: #fff;
               border-color: rgba(#fff, 0.15);
               background-color: transparent;
+              -webkit-text-fill-color: #fff;
 
               @include placeholder {
                 color: rgba(#fff, 0.8);
@@ -206,6 +208,13 @@
           &.-input {
             height: 70px;
 
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover, 
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+              transition: background-color 500000s ease-in-out 0s;
+            }
+
             &.-fill {
               height: 44px;
               font-size: 13px;
@@ -232,12 +241,12 @@
           }
 
           &.-textarea {
-            height: 120px;
+            height: 90px;
             resize: none;
-            padding-top: 25px;
+            margin-top: 25px;
 
             @include to-mobile {
-              height: 150px;
+              height: 130px;
             }
           }
 
