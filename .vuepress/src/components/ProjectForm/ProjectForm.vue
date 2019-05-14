@@ -47,13 +47,26 @@
       </div>
     </div>
   </div>
-  
 </template>
 
 <script>
 const action = 'https://jcash.network/auth/signup'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import axios from 'axios'
+
+const EMAIL_RE = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+function gtmSendEvent(category, action, label) {
+  // eslint-disable-next-line fp/no-mutating-methods
+  window.dataLayer.push({
+    'event': 'AutoEvent',
+    'eventCategory': category,
+    'eventAction': action,
+    'eventLabel': label,
+    'eventValue': '',
+  })
+}
+
 export default {
   name: 'ProjectForm',
   components: {
@@ -92,10 +105,8 @@ export default {
         this.emailError = true
       }
     },
-    testEmail(email) {      
-      // eslint-disable-next-line no-useless-escape
-      var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return filter.test(email);
+    testEmail(email) {
+      return EMAIL_RE.test(email)
     },
     testCheckbox(field) {
       if (!field.is(':checked')) {
@@ -135,11 +146,12 @@ export default {
         "request": {
           "requester": {
             "name": this.fullName,
-            "email": this.email
+            "email": this.email,
+            "locale": this.$localeConfig.shortLang
           },
-          "subject": `jibrel.network ${this.$localeConfig.shortLang}: ${this.eventType}`,
+          "subject": `jibrel.network: ${this.eventType}`,
           "comment": {
-            "body": this.message
+            "body": `${this.message}\n\n---\n${this.fullName}`
           },
           "custom_fields": [
             {
@@ -153,32 +165,33 @@ export default {
           ]
         }
       }
-      
+
       if (!this.checkForm()) {
         return false
       }
-      
+
       this.isSending = true
-      
+
       axios({
         method: "post",
         url: 'https://jibrel.zendesk.com/api/v2/requests.json',
         data: dataJson
-      }).then(response => {        
-        this.isSuccess = true
-        this.email = null
-        this.fullName = null
-        this.message = null
-        this.requestResult()
-        this.eventGTM(this.eventType)
-        this.isSending = false
       })
-      .catch(response => {
-        this.isError = false
-        this.requestResult()
-        this.isSending = false
-        console.error(response.statusText);
-      });
+        .then(() => {
+          this.isSuccess = true
+          this.email = null
+          this.fullName = null
+          this.message = null
+          this.requestResult()
+          this.eventGTM(this.eventType)
+          this.isSending = false
+        })
+        .catch(response => {
+          this.isError = false
+          this.requestResult()
+          this.isSending = false
+          console.error(response.statusText);
+        })
     },
     requestResult() {
       this.isHideForm = true
@@ -189,25 +202,18 @@ export default {
       }, 3300)
     },
     eventGTM(event) {
-      function menuDataSend(category, action, label) {
-        // eslint-disable-next-line fp/no-mutating-methods
-        window.dataLayer.push({
-          'event': 'AutoEvent',
-          'eventCategory': category,
-          'eventAction': action,
-          'eventLabel': label,
-          'eventValue': '',
-        })
-      }
       switch (event) {
         case 'sign-up-success':
-          menuDataSend('Requests', 'Sign_up_success', 'First_screen_form')
+          gtmSendEvent('Requests', 'Sign_up_success', 'First_screen_form')
           break
-        case 'get-in-touch-popup':
-          menuDataSend('Requests', 'Get_in_touch_success', 'Pop_up')
+        case 'get-in-touch':
+          gtmSendEvent('Requests', 'Get_in_touch_success', 'Pop_up')
           break
         case 'product-and-sale-enterprise':
-          menuDataSend('Requests', 'Get_in_touch_success', 'Enterprise_form')
+          gtmSendEvent('Requests', 'Get_in_touch_success', 'Enterprise_form')
+          break
+        case 'request-media':
+          gtmSendEvent('Requests', 'Get_in_touch_success', 'Media_form')
           break
         default: // Empty
       }
@@ -228,5 +234,5 @@ export default {
 </script>
 
 <style lang='scss'>
-  @import './projectForm.scss'
+  @import './projectForm.scss';
 </style>
