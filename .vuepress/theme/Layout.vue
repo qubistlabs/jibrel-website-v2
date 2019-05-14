@@ -15,7 +15,7 @@
       <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
         <ProjectForm
           @close="isOpened=false"
-          eventType='product-and-sale-enterprise'
+          eventType='get-in-touch'
           formName='message'
           :title='$themeLocaleConfig.data.FormText.baseForm.titleSendMessage'
         />
@@ -118,7 +118,7 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-   
+
   },
   beforeMount() {
      AOS.init({
