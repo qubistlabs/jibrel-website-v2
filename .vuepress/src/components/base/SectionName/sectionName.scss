@@ -1,0 +1,110 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.section-name {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
+
+  &.-bottom-70 {
+    bottom: 70px;
+
+    @include to-mobile {
+      bottom: 52px;
+    }
+  }
+
+  &.-bottom-460 {
+    bottom: 460px;
+  }
+
+  &.-top-0 {
+    top: 0;
+  }
+
+  &.-top-110 {
+    top: 110px;
+  }
+
+  &.-center {
+    top: 50%;
+  }
+
+  > .container {
+    position: relative;
+    height: 1px;
+
+    > .title,
+    > .arrow {
+      position: absolute;
+    }
+
+    > .title {
+      left: 0;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: (15/11);
+      text-transform: uppercase;
+
+      @include ls(50);
+
+      > .-bottom {
+        transform-origin: 0 0;
+        transform: translate(-4px, 21px) rotate(-90deg);
+      }
+
+      > .-top {
+        transform: translate(-100%, 0) rotate(-90deg);
+        transform: translate(calc(-100% + -5px), 0) rotate(-90deg);
+        transform-origin: right top;
+      }
+
+      > .-white {
+        color: #fff;
+      }
+
+      > .-colored {
+        color: $base;
+      }
+    }
+
+    > .arrow {
+      right: 0;
+      fill: none;
+      stroke-width: 2px;
+      cursor: pointer;
+
+      @include to-mobile {
+        opacity: 0.6;
+      }
+
+      &.-white {
+        stroke: #fff;
+      }
+
+      &.-colored {
+        stroke: $base;
+      }
+    }
+  }
+
+  &.-mobile-visible {
+    @include to-mobile {
+      > .container {
+        > .title {
+          display: none;
+        }
+
+        > .arrow {
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.job-info {
+  white-space: nowrap;
+  position: relative;
+  font-size: 0;
+
+  &.-in-vacancies-list {
+    top: 5px;
+  }
+
+  &.-in-vacancy-page {
+    padding-bottom: 50px;
+  }
+
+  > .time,
+  > .place {
+    font-size: 13px;
+    line-height: (24/13);
+    color: $base;
+    display: inline-block;
+    vertical-align: middle;
+
+    @include to-mobile {
+      color: $blue;
+    }
+
+    @include ls(10);
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    > .icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      fill: $blue;
+      position: relative;
+      top: -1px;
+
+      &.-stroke {
+        fill: none;
+        stroke: $blue;
+      }
+
+      @include to-mobile {
+        display: none;
+      }
+    }
+  }
+}

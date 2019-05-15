@@ -1,0 +1,43 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.circle-social {
+  font-size: 0;
+
+  > .link {
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      @include to-mobile {
+        margin-right: 20px;
+      }
+    }
+
+    > .icon {
+      display: inline-block;
+      vertical-align: top;
+      fill: $base;
+      border-radius: 100px;
+      transition: fill 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+      @include to-mobile {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &:hover {
+      > .icon {
+        box-shadow: 0 2px 4px 0 rgba($light-blue, 0.25);
+        fill: $light-blue;
+      }
+    }
+
+    &:active {
+      > .icon {
+        box-shadow: 0 2px 4px 0 transparent;
+        fill: rgba($light-blue, 0.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+  
+.main-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  @include from-mobile {
+    min-width: 1150px;
+  }
+
+  @include to-mobile {
+    padding-top: 20px;
+  }
+
+  &.-small {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f5f6fa;
+  }
+
+  &.-bg-white {
+    background-color: #fff;
+  }
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.-reverce {
+      flex-direction: row-reverse;
+    }
+
+    > .actions {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      animation-name: fadeDown;
+      animation-delay: 0.15s;
+      animation-duration: 0.9s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transform: translate3d(0,-100px,0)
+    }
+  }
+}
+
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0,-100px,0)
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0)
+  }
+}

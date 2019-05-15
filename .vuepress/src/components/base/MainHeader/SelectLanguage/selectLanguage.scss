@@ -1,0 +1,125 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.select-language {
+  position: relative;
+  margin-right: 40px;
+
+  &.-in-header {
+    @include to-mobile {
+      display: none;
+    }
+  }
+
+  > .toggle {
+    display: block;
+    font-size: 0;
+    font-family: "open sans", "arial", sans-serif;
+
+    > .current {
+      @include ls(50);
+
+      vertical-align: middle;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      transition: color 0.2s ease-in-out;
+      margin-right: 7px;
+      // position: relative;
+      // top: 1px;
+
+      &.-colored {
+        color: $base;
+      }
+
+      &.-white {
+        color: #fff;
+      }
+    }
+
+    > .icon {
+      height: 24px;
+      padding-bottom: 1px;
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(1px);
+      opacity: 0.3;
+      transition: stroke 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+      &.-colored {
+        stroke: $base;
+      }
+
+      &.-white {
+        stroke: #fff;
+      }
+    }
+
+    &:hover {
+      > .current {
+        color: $light-blue;
+      }
+
+      > .icon {
+        stroke: $light-blue;
+        opacity: 1;
+      }
+    }
+  }
+
+  > .drop {
+    background-color: #fff;
+    position: absolute;
+    width: 110px;
+    top: -15px;
+    right: -28px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    box-shadow: 0 6px 12px 0 rgba($base, 0.25);
+    text-align: center;
+
+    @include hid;
+
+    > .item {
+      display: block;
+      width: 100%;
+      font-size: 11px;
+      transition: color 0.2s ease-in-out;
+      color: $base;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: (15/11);
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @include ls(50);
+
+      &:hover,
+      &.-current {
+        color: $blue;
+      }
+    }
+  }
+
+  > .overlay {
+    @include overlay;
+  }
+
+  &:hover {
+    > .drop {
+      will-change: opacity, visibility;
+    }
+  }
+
+  &.-open {
+    > .drop {
+      @include vis;
+    }
+    > .overlay {
+      display: block;
+    }
+  }
+}

@@ -1,3 +1,0 @@
-CareerPage: {
-  title: 'Open Positions',
-}

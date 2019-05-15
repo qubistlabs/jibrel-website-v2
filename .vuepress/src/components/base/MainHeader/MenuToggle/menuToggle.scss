@@ -1,0 +1,149 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.menu-toggle {
+  @include all-reset;
+
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 24px;
+
+  @include to-mobile {
+    height: 28px;
+    width: 28px;
+    position: relative;
+  }
+
+  > .icon,
+  > .text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  > .icon {
+    transition: fill 0.2s ease-in-out;
+
+    &.-mobile-hide {
+      @include to-mobile {
+        display: none;
+      }
+    }
+  }
+
+  > .text {
+    transition: color 0.2s ease-in-out;
+    margin-right: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-top: 2px;
+
+    @include ls(50);
+
+    @include to-mobile {
+      display: none;
+    }
+  }
+
+  > .hamburger {
+    height: 2px;
+    width: 28px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1px;
+
+    @include from-mobile {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      border-radius: 100px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -6px;
+    }
+  }
+
+  &.-colored {
+    > .icon {
+      fill: $base;
+    }
+
+    > .text {
+      color: $base;
+    }
+
+    > .hamburger,
+    > .hamburger::before,
+    > .hamburger::after {
+      background-color: $base;
+    }
+  }
+
+  &.-white {
+    > .icon {
+      fill: #fff;
+    }
+
+    > .text {
+      color: #fff;
+    }
+
+    > .hamburger,
+    > .hamburger::before,
+    > .hamburger::after {
+      background-color: #fff;
+    }
+  }
+
+  &:hover {
+    &.-colored,
+    &.-white {
+      > .icon {
+        fill: $light-blue;
+      }
+
+      > .text {
+        color: $light-blue;
+      }
+    } 
+  }
+
+  &:active {
+    user-select: none;
+
+    &.-colored,
+    &.-white {
+      > .icon {
+        fill: rgba($light-blue, 0.5);
+      }
+
+      > .text {
+        color: rgba($light-blue, 0.5);
+      }
+    }
+
+    &.-popup-color {
+      > .text {
+        color: rgba(#fff, 0.5);
+      }
+    }
+  }
+}
