@@ -1,0 +1,87 @@
+.table-of-contents {
+  min-height: 56px;
+  border: 1px solid rgba($base, 0.2);
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: rgba($base, 0.4);
+  }
+
+  > .header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    &:active {
+      user-select: none;
+    }
+ 
+    &:after {
+      content: '';
+      background-image: url(../src/assets/img/general/icon/chevrone.svg);
+      width: 14px;
+      height: 56px;
+      background-repeat: no-repeat;
+      background-size: 14px 8px;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+  }
+
+  + p + h2 {
+    display: none;
+  }
+  
+  > ol {
+    display: none;
+    padding-bottom: 20px;
+  }
+  
+  &.-open {
+    > ol {
+      display: block;
+    }
+
+    > .header {
+      &:after {
+        transform: scaleY(-1);
+      }
+    }
+  }
+}
+
+.article-page > .container > .wysiwyg .table-of-contents {
+  a {
+    color: $base;
+    font-size: 14px;
+    opacity: 0.8;
+    &:hover {
+      color: $light-blue;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.5);
+    }
+  }
+  ol, li {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  li {
+    padding-left: 16px;
+    &:before {
+      position: static;
+      font-size: 14px;
+      color: $base;
+      opacity: 0.8;
+    }
+  }
+}

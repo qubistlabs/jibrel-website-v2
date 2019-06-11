@@ -3,7 +3,14 @@
     <div class='container -no-offset'>
       <form class='form -inline _relative'>
         <label class='item -button-sibling'>
-          <input type='email' v-model='email' class='field -button-sibling -input -fill' :class='emailError && "-error"' :placeholder='$themeLocaleConfig.data.FormText.emailOnly.email' required=''>
+          <input 
+            type='email' 
+            v-model='email' 
+            class='field -button-sibling -input -fill' 
+            :class='emailError && "-error"' 
+            :placeholder='setPlaceholder()'
+            required=''
+          >
         </label>
         <button class='send -inline' type='button' @click='openExternalForm'><span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span></button>
       </form>
@@ -93,7 +100,12 @@ export default {
       isSending: false
     }
   },
+  computed: {
+    },
   methods: {
+    setPlaceholder() {      
+      return this.$route.path !== "/blog/" ? this.$themeLocaleConfig.data.FormText.emailOnly.email : "Sign up to get Jibrel Updates"
+    },
     openExternalForm(eventGTM) {
       if (this.testEmail(this.email)) {
         this.emailError = false

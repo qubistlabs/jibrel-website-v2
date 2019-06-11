@@ -41,6 +41,11 @@
             {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
           </router-link>
         </div>
+        <div class='item' v-if="this.$localeConfig.path === '/'">
+          <router-link to='blog/' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
+          </router-link>
+        </div>
       </div>
       <div class='box'>
         <div class='name'>{{this.$themeLocaleConfig.data.ProjectMenu.Contact}}</div>

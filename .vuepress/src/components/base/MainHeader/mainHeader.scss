@@ -9,6 +9,7 @@
   padding-top: 50px;
   z-index: 1000;
   box-sizing: border-box;
+  position: fixed;
 
   @include from-mobile {
     min-width: 1150px;
