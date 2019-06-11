@@ -28,7 +28,7 @@
                   <div class="fb-share-button" data-layout="button"></div>
                 </div>
                 <div class="item -tw">
-                  <a class="twitter-share-button" :href='getUrl()'></a>
+                  <a class="twitter-share-button" :href='`https://twitter.com/intent/tweet?url=${getUrl()}`'></a>
                 </div>
                 <div class="item -in"></div>
               </div>
@@ -93,7 +93,7 @@ export default {
   },
   methods: {
     getUrl() {
-      return `https://twitter.com/intent/tweet?url=${window.location}`
+      return window.location
     },
     getTagData(path) {
       if (path.indexOf('/blog/how-to-is/') !== -1) {
