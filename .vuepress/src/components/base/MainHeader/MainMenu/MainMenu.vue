@@ -42,7 +42,7 @@
           </router-link>
         </div>
         <div class='item' v-if="this.$localeConfig.path === '/'">
-          <router-link to='blog/' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
+          <router-link to='/blog/' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
           </router-link>
         </div>

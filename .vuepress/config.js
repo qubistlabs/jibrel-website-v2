@@ -203,7 +203,6 @@ module.exports = {
       md.use(require("markdown-it-table-of-contents"), {
         listType: 'ol',
         includeLevel: [2, 3, 4],
-        slugify: uslugify,
         containerHeaderHtml: '<div class="header">Table of Contents</div>'
       })
       md.use(require('markdown-it-implicit-figures'), {

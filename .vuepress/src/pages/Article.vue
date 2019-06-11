@@ -24,9 +24,13 @@
                 <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
               </div>
               <div class="share">
-                <div class="item">
+                <div class="item -fb">
                   <div class="fb-share-button" data-layout="button"></div>
                 </div>
+                <div class="item -tw">
+                  <a class="twitter-share-button" :href='getUrl()'></a>
+                </div>
+                <div class="item -in"></div>
               </div>
             </div>
             <h1 class='title'>{{this.$page.frontmatter.title}}</h1>
@@ -88,6 +92,9 @@ export default {
     )
   },
   methods: {
+    getUrl() {
+      return `https://twitter.com/intent/tweet?url=${window.location}`
+    },
     getTagData(path) {
       if (path.indexOf('/blog/how-to-is/') !== -1) {
         this.tagRootPath = 'blog/how-to-is/'
@@ -145,6 +152,17 @@ export default {
   },
   mounted() {
     this.handlingTOC()
+    const twitterWidgetsAPI = document.createElement('script')
+    twitterWidgetsAPI.setAttribute('src', '//platform.twitter.com/widgets.js')
+    document.head.appendChild(twitterWidgetsAPI)
+    const linkedinWidgetsAPI = document.createElement('script')
+    twitterWidgetsAPI.setAttribute('src', 'https://platform.linkedin.com/in.js')
+    twitterWidgetsAPI.innerText = 'lang: en_US'    
+    document.head.appendChild(twitterWidgetsAPI)
+    const linkedinWidgetsButton = document.createElement('script')
+    linkedinWidgetsButton.setAttribute('type', 'IN/Share')
+    linkedinWidgetsButton.setAttribute('data-url', this.getUrl())
+    document.querySelector('.item.-in').appendChild(linkedinWidgetsButton)
   }
 }
 </script>
