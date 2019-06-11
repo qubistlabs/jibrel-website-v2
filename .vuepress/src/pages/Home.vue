@@ -14,7 +14,8 @@ headerColor: white
       />
       <div class='container -center-box _container-fix'>
         <div class='preview-info -mobile-offset'>
-          <div class='text '>
+          <div class='text'>
+            <h1 class='_visibility-hidden'>Jibrel Network</h1>
             <h2 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ScreenPreview.homePage.title}}</h2>
             <div class='descr -medium-size -white -color -text-center -box-center' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.homePage.description}}
