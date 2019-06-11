@@ -12,6 +12,9 @@
     <a href='https://medium.com/@jibrelnetwork' class='link' target='_blank'>
       <SpriteIcon name='s-c-medium' class='icon'/>
     </a>
+    <a href='https://t.me/jibrel_network' class='link' target='_blank'>
+      <SpriteIcon name='s-c-telegram' class='icon'/>
+    </a>
   </div>
 </template>
 
