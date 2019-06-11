@@ -4,7 +4,7 @@ title: Blog
 ---
 
 <template>
-  <ArticlesList mainBlogPage='true'/>
+  <ArticlesList :mainBlogPage='true'/>
 </template>
 
 

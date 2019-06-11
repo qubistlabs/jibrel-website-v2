@@ -11,7 +11,7 @@
       />
       <ArticlesSubscribe  v-if="this.$route.path === '/blog/'"/>
       <div class='container _container-fix'>
-        <ArticlesPreviews :limit='currentLimit()' />
+        <ArticlesPreviews :limit='limit' />
         <MorePost v-if='isShowMoreInfo'/>
       </div>
     </section>
@@ -50,9 +50,9 @@
       }
     },
     methods: {
-      currentLimit() {        
-        return this.mainBlogPage ? 0 : this.limit
-      }
+      // currentLimit() {        
+      //   return this.mainBlogPage ? 0 : this.limit
+      // }
     },
     created() {
       EventBus.$on('load-limit', data => {      
@@ -63,8 +63,8 @@
       })
     },
     beforeDestroy() {
-      EventBus.$off('load-limit')
-      EventBus.$off('posts-length')
+      // EventBus.$off('load-limit')
+      // EventBus.$off('posts-length')
     },
     metaInfo () {
       return MetaInfo(
