@@ -195,6 +195,11 @@ module.exports = {
       new webpack.EnvironmentPlugin({ ...process.env })
     ],
   },
+  plugins: {
+    'sitemap': {
+      hostname: 'https://jibrel.network'
+    },
+  },
   markdown: {
     config: md => {
       md.use(require('markdown-it-implicit-figures'), {
