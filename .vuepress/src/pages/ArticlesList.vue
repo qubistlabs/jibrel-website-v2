@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class='section-content -offset-blog -offset-bottom -bottom-separator -bg-gray'>
-      <ArticlesHeader :isShowBack='!this.mainBlogPage'/>
+      <ArticlesHeader />
       <SectionName
         :title='$themeLocaleConfig.data.SectionName.blog'
         positionContainer='bottom-460'
@@ -9,9 +9,8 @@
         colorTheme='colored'
         arrow='up'
       />
-      <ArticlesSubscribe  v-if="this.$route.path === '/blog/'"/>
       <div class='container _container-fix'>
-        <ArticlesPreviews :limit='limit' />
+        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='mainBlogPage' />
         <MorePost v-if='isShowMoreInfo'/>
       </div>
     </section>
@@ -28,7 +27,6 @@
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
   import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
-  import ArticlesSubscribe from '@/components/Articles/ArticlesSubscribe/ArticlesSubscribe.vue'
   import MorePost from '@/components/Articles/MorePost/MorePost.vue'
   import ContactsList from '@/components/ContactsList/ContactsList.vue'
   export default {
@@ -36,7 +34,6 @@
       SectionName,
       ArticlesPreviews,
       ArticlesHeader,
-      ArticlesSubscribe,
       MorePost,
       ContactsList,
     },
@@ -50,9 +47,9 @@
       }
     },
     methods: {
-      // currentLimit() {        
-      //   return this.mainBlogPage ? 0 : this.limit
-      // }
+      currentLimit() {        
+        return this.mainBlogPage ? 0 : this.limit
+      }
     },
     created() {
       EventBus.$on('load-limit', data => {      
