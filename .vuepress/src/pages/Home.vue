@@ -21,7 +21,7 @@ headerColor: white
             </div>
           </div>
           <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-            <ProjectForm :isJcashOpen='true' eventType='sign-up-success'/>
+            <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='jcash'/>
           </div>
         </div>
       </div>

@@ -8,6 +8,18 @@
   width: 100%;
   position: relative;
 
+  &.-w-large {
+    > .container {
+      max-width: 600px;
+    }
+  }
+
+  &.-w-full {
+    > .container {
+      max-width: none;
+    }
+  }
+
   > .container {
     max-width: 455px;
     width: 100%;
@@ -55,7 +67,6 @@
     }
 
     > .form {
-      max-width: 455px;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -70,10 +81,6 @@
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
-      }
-
-      &.-w-large {
-        max-width: 600px;
       }
 
       > .item {

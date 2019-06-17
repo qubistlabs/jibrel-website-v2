@@ -1,5 +1,5 @@
 <template>
-  <div class='project-form' v-if='isJcashOpen'>
+  <div class='project-form' :class='templateForm === "subscribe" && "-w-full"' v-if='templateForm === "jcash" || templateForm === "subscribe"'>
     <div class='container -no-offset'>
       <form class='form -inline _relative'>
         <label class='item -button-sibling'>
@@ -8,15 +8,15 @@
             v-model='email' 
             class='field -button-sibling -input -fill' 
             :class='emailError && "-error"' 
-            :placeholder='setPlaceholder()'
+            :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : "Enter your email Address"'
             required=''
-          >
+          > 
         </label>
         <button class='send -inline' type='button' @click='openExternalForm'><span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span></button>
       </form>
     </div>
   </div>
-  <div class='project-form -w-large' v-else-if='!isJcashOpen'>
+  <div class='project-form -w-large' v-else-if='templateForm === "base"'>
     <div class='container'>
       <h2 class='title -white'>{{title}}</h2>
       <form method='POST' class='form' :class='isHideForm && "-hide"'>
@@ -81,7 +81,10 @@ export default {
     SpriteIcon,
   },
   props: {
-    isJcashOpen: '',
+    templateForm: {
+      type: String,
+      default: 'base'
+    },
     title: '',
     eventType: String,
     formName: String,
@@ -97,15 +100,10 @@ export default {
       isSuccess: false,
       isError: false,
       isHideForm: false,
-      isSending: false
+      isSending: false,
     }
   },
-  computed: {
-    },
   methods: {
-    setPlaceholder() {      
-      return this.$route.path !== "/blog/" ? this.$themeLocaleConfig.data.FormText.emailOnly.email : "Sign up to get Jibrel Updates"
-    },
     openExternalForm(eventGTM) {
       if (this.testEmail(this.email)) {
         this.emailError = false
