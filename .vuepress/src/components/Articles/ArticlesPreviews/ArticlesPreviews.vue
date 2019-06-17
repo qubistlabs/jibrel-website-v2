@@ -83,7 +83,7 @@ export default {
     },
     getTagData(path) {
       if (path.indexOf('/blog/how-to-is/') !== -1) {
-        return 'Blockchain Basics'
+        return 'How To’s'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
         return 'Updates'

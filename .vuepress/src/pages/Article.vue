@@ -98,7 +98,7 @@ export default {
     getTagData(path) {
       if (path.indexOf('/blog/how-to-is/') !== -1) {
         this.tagRootPath = 'blog/how-to-is/'
-        this.tagName = 'Blockchain Basics'
+        this.tagName = 'How To’s'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
         this.tagRootPath = 'blog/updates/'
