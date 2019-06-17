@@ -34,7 +34,6 @@ export default {
   props: {
     colorTheme: 'colored' | 'white',
     isSmall: false,
-    isShowBack: false,
   },
   data() {
     return {

@@ -1,6 +1,5 @@
 <template>
   <div class='articles-heaader' :class='isSticky && "-sticky"'>
-    <BackLink v-if='isShowBack' />
     <div class='container _container-fix'>
       <router-link to='/blog/' class="title">Blog</router-link>
       <div class='tabs'>
@@ -14,15 +13,8 @@
 
 <script>
 
-import BackLink from '../BackLink/BackLink.vue'
 export default {
   name: 'ArticlesHeader',
-  components: {
-    BackLink
-  },
-  props: {
-    isShowBack: Boolean,
-  },
   data() {
     return {
       isSticky: false,
@@ -30,15 +22,14 @@ export default {
   },
   methods: {
     getPosition() {      
-      window.addEventListener('scroll', function(e) {               
-        if (window.scrollY > 0) {
+      window.addEventListener('scroll', () => {               
+        if (window.scrollY > 106) {
           this.isSticky = true
         } else {
-
           this.isSticky = false
         }
       })
-    }
+    },
   },
   mounted() {
     this.getPosition()
