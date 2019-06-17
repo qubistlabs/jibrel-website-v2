@@ -22,7 +22,27 @@
       margin-bottom: 50px;
       padding-left: 21px;
       padding-right: 21px;
-      width: 33.333%;
+
+      &:not(.-first-card) {
+        width: 33.333%;
+      }
+    }
+
+    &.-first-card {
+      width: 100%;
+
+      > .box {
+        height: auto;
+
+        > .pic {
+          height: 415px;
+        }
+        > .body {
+          > .row {
+            justify-content: flex-start;
+          }
+        }
+      }
     }
 
     @include to-mobile {
@@ -34,11 +54,6 @@
       display: block;
       border-radius: 0 0 3px 3px;
       background-color: #fff;
-
-      &.-border {
-        border: 2px solid #f5f6fa;
-        border-top-width: 0;
-      }
 
       @include to-mobile {
         background-color: #fff;
@@ -54,7 +69,7 @@
         }
 
         > .img {
-          width: 360px;
+          width: 100%;
           margin-left: -1px;
           margin-top: -1px;
 
@@ -77,10 +92,12 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           > .date {
             font-size: 13px;
             line-height: (24/13);
             color: $base-o;
+            margin-right: 30px;
   
             @include ls(10);
           }
@@ -99,6 +116,11 @@
               color: $base;
               background-color: rgba($base, 0.1);
             }
+          }
+
+          > .more {
+            margin-left: auto;
+            width: 135px;
           }
         }
 
