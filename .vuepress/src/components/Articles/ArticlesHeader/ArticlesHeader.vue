@@ -5,7 +5,7 @@
       <div class='tabs'>
         <router-link to='/blog/updates/' class='item' active-class='-current'>Updates</router-link>
         <router-link to='/blog/tokenization/' class='item' active-class='-current'>Tokenization</router-link>
-        <router-link to='/blog/how-to-is/' class='item' active-class='-current'>How To’s</router-link>
+        <router-link to='/blog/how-tos/' class='item' active-class='-current'>How To’s</router-link>
       </div>
   </div>
 </div>
@@ -23,17 +23,25 @@ export default {
   methods: {
     getPosition() {      
       window.addEventListener('scroll', () => {               
-        if (window.scrollY > 106) {
-          this.isSticky = true
-        } else {
-          this.isSticky = false
-        }
-      })
+        this.setSticky(window.scrollY)
+      }, false)
     },
+    setSticky(scrollY) {
+      if (scrollY > 106) {
+        this.isSticky = true
+      } else {
+        this.isSticky = false
+      }
+    }
   },
   mounted() {
     this.getPosition()
-  }
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', () => {     
+      this.setSticky(window.scrollY)
+    }, false)
+  },
 } 
 </script>
 

@@ -3,7 +3,7 @@
     <section class='section-content -bg-gray -offset-blog'>
       <ArticlesHeader />
       <SectionName
-        :title='this.$themeLocaleConfig.data.SectionName.news'
+        :title='$themeLocaleConfig.data.SectionName.news'
         positionContainer='bottom-460'
         positionTitle='top'
         colorTheme='colored'
@@ -11,15 +11,19 @@
       />
       <div class='container _container-fix -bg-white -mobile-bg-gray'>
         <div class='article-page'>
-          <img :src="`/assets/img/blog/${this.$page.frontmatter.source.img}-full.jpg`" class='preview' :alt="this.$page.frontmatter.title">
+          <img 
+            :src="`/assets/img/blog/${$page.frontmatter.heroImage}-full.jpg`" 
+            :srcset='`/assets/img/blog/${ $page.frontmatter.heroImage }-full@2x.jpg 2x`'
+            class='preview' :alt="$page.frontmatter.title"
+          >
           <div class="container">
             <div class='header'>
               <div class="left">
                 <time
                   class='date'
-                  :datetime='this.$page.frontmatter.date'
+                  :datetime='$page.frontmatter.date'
                 >
-                  {{ this.$page.frontmatter.date | formatDate }}
+                  {{ $page.frontmatter.date | formatDate }}
                 </time>
                 <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
               </div>
@@ -33,7 +37,7 @@
                 <div class="item -in"><script type="IN/Share" data-url="https://www.linkedin.com"></script></div>
               </div>
             </div>
-            <h1 class='title'>{{this.$page.frontmatter.title}}</h1>
+            <h1 class='title'>{{$page.frontmatter.title}}</h1>
             <div class='wysiwyg'>
               <slot />
             </div>
@@ -41,7 +45,7 @@
           <div class='subscribe'>
             <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>Sign up to get Jibrel Updates</div>
             <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-              <ProjectForm :isJcashOpen='true' eventType='sign-up-success'/>
+              <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='subscribe' />
             </div>
           </div>
         </div>
@@ -49,7 +53,7 @@
     </section>
     <div class='section-content -bg-gray -offset-top -offset-bottom'>
       <div class="_container-fix">
-        <ArticlesPreviews :rootPath='tagRootPath' limit='3' />
+        <ArticlesPreviews :isMainBlogPage='false' limit='3' />
       </div>
     </div>
     <section class='section-content'>
@@ -63,6 +67,7 @@ import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPre
 import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
+import SetScript from '@/Utils/SetScript.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
@@ -94,8 +99,8 @@ export default {
   },
   methods: {
     getTagData(path) {
-      if (path.indexOf('/blog/how-to-is/') !== -1) {
-        this.tagRootPath = 'blog/how-to-is/'
+      if (path.indexOf('/blog/how-tos/') !== -1) {
+        this.tagRootPath = 'blog/how-tos/'
         this.tagName = 'How To’s'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
@@ -130,7 +135,7 @@ export default {
           window.scrollTo({
             'behavior': 'smooth',
             'left': 0,
-            'top': offset - 30
+            'top': offset + 120
           });
           
           return false
@@ -142,25 +147,16 @@ export default {
     this.getTagData(this.$page.path)
   },
   mounted() { 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    
+    SetScript('//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0', 'facebook-jssdk')
+    SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
+    SetScript('//platform.linkedin.com/in.js', 'linkedin-jssdk')
     this.handlingTOC()
     this.pageUrl = window.location
-
-    const twitterWidgetsAPI = document.createElement('script')
-    twitterWidgetsAPI.setAttribute('src', '//platform.twitter.com/widgets.js')
-    document.head.appendChild(twitterWidgetsAPI)
-
-    const linkedinWidgetsAPI = document.createElement('script')
-    linkedinWidgetsAPI.setAttribute('src', '//platform.linkedin.com/in.js')
-    linkedinWidgetsAPI.innerText = 'lang: en_US'    
-    document.head.appendChild(linkedinWidgetsAPI)
+  },
+  beforeDestroy() {
+    document.getElementById('facebook-jssdk').remove()
+    document.getElementById('twitter-jssdk').remove()
+    document.getElementById('linkedin-jssdk').remove()
   }
 }
 </script>
