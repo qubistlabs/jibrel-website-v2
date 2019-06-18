@@ -63,8 +63,13 @@
           </a>
         </div>
         <div class='item'>
-          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium", "close")' class='link' target='_blank'>
+          <a href='https://t.me/jibrel_network' @click='clickLink("Medium", "close")' class='link' target='_blank'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
+          </a>
+        </div>
+        <div class='item'>
+          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Telegram", "close")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Telegram}}
           </a>
         </div>
       </div>
