@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import EventBus from '@/utils/EventBus';
+import EventBus from '@/Utils/EventBus.js';
 import ArticlesSubscribe from './ArticlesSubscribe/ArticlesSubscribe.vue';
 export default {
   name: 'ArticlesPreviews',

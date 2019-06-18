@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import EventBus from '@/utils/EventBus';
+import EventBus from '@/Utils/EventBus.js';
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
   name: 'MorePost',

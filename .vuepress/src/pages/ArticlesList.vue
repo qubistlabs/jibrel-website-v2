@@ -22,7 +22,7 @@
 
 
 <script>
-  import EventBus from '@/utils/EventBus';
+  import EventBus from '@/Utils/EventBus.js';
   import MetaInfo from '@/Utils/MetaInfo.js'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
