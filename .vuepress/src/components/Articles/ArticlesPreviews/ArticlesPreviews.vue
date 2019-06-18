@@ -98,12 +98,9 @@ export default {
       const posts = this.$site.pages
         .filter(x => x.path.startsWith(this.$page.path) && !x.frontmatter.index)
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-        console.log(posts, this.$page);
-
       if (!this.limit) {
         return posts
       }
-      
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
     },
