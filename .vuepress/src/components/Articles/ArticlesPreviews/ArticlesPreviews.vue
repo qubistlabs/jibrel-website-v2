@@ -12,8 +12,8 @@
       <router-link :to='post.path' class='box'>
         <div class='pic'>
           <img
-            :src='`/assets/img/blog/${ post.frontmatter.source.img }${postfixImgToFirstArticle(index)}.jpg`'
-            :srcset='`/assets/img/blog/${ post.frontmatter.source.img }${postfixImgToFirstArticle(index)}@2x.jpg 2x`'
+            :src='`/assets/img/blog/${ post.frontmatter.heroImage }${postfixImgToFirstArticle(index)}.jpg`'
+            :srcset='`/assets/img/blog/${ post.frontmatter.heroImage }${postfixImgToFirstArticle(index)}@2x.jpg 2x`'
             :alt='post.frontmatter.title'
             class='img'
           >
@@ -27,7 +27,7 @@
               {{ post.frontmatter.date | formatDate }}
             </time>
             <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
-            <div class='more' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>Read  •  8 min</button></div>
+            <div class='more' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>Read</button></div>
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
@@ -48,7 +48,6 @@ export default {
     ArticlesSubscribe
   },
   props: { 
-    locale: String,
     isMainBlogPage: Boolean,
     limit: 0,
   },
@@ -71,8 +70,8 @@ export default {
       return 300 + index % 3 * 300
     },
     getTagUrl(path) {
-      if (path.indexOf('/blog/how-to-is/') !== -1) {        
-        return '/blog/how-to-is/'
+      if (path.indexOf('/blog/how-tos/') !== -1) {        
+        return '/blog/how-tos/'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
         return '/blog/updates/'
@@ -82,7 +81,7 @@ export default {
       }
     },
     getTagData(path) {
-      if (path.indexOf('/blog/how-to-is/') !== -1) {
+      if (path.indexOf('/blog/how-tos/') !== -1) {
         return 'How To’s'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
@@ -96,11 +95,13 @@ export default {
   computed: {
     posts() {      
       const posts = this.$site.pages
-        .filter(x => x.path.startsWith(this.$page.path) && !x.frontmatter.index)
+        .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index)
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+        
       if (!this.limit) {
         return posts
       }
+
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
     },

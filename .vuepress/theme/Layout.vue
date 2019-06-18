@@ -77,9 +77,7 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path
-      console.log();
-      
+      const route = this.$route.path      
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
