@@ -1,9 +1,8 @@
 ---
-title: Jibrel – Bringing the benefits of blockchain to the world of commodity trading
+title: Jibrel – Bringing the
 description: Jibrel was recently accepted into the Gulf Bonds and Sukuk Association (GBSA). This is
 date: 2017-11-24
-source:
-    img: test-blog
+heroImage: test-blog
 ---
 [[toc]]
  

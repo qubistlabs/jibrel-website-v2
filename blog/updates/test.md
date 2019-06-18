@@ -2,8 +2,7 @@
 title: What the GBSA Acceptance Means For Jibrel
 description: Jibrel was recently accepted into the Gulf Bonds and Sukuk Association (GBSA). This is
 date: 2018-11-24
-source:
-    img: test-blog
+heroImage: test-blog
 ---
 [[toc]]
 
