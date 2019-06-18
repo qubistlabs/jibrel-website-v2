@@ -28,9 +28,9 @@
                   <div class="fb-share-button" data-layout="button"></div>
                 </div>
                 <div class="item -tw">
-                  <a class="twitter-share-button" :href='`https://twitter.com/intent/tweet?url=${getUrl()}`'></a>
+                  <a class="twitter-share-button" :href='`https://twitter.com/intent/tweet?url=${pageUrl}`'></a>
                 </div>
-                <div class="item -in"></div>
+                <div class="item -in"><script type="IN/Share" data-url="https://www.linkedin.com"></script></div>
               </div>
             </div>
             <h1 class='title'>{{this.$page.frontmatter.title}}</h1>
@@ -82,6 +82,7 @@ export default {
       isOpened: false,
       tagRootPath: '',
       tagName: '',
+      pageUrl: '',
     }
   },
   metaInfo () {
@@ -92,9 +93,6 @@ export default {
     )
   },
   methods: {
-    getUrl() {
-      return window.location
-    },
     getTagData(path) {
       if (path.indexOf('/blog/how-to-is/') !== -1) {
         this.tagRootPath = 'blog/how-to-is/'
@@ -141,6 +139,9 @@ export default {
     }
   },
   created() {
+    this.getTagData(this.$page.path)
+  },
+  mounted() { 
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -148,21 +149,18 @@ export default {
       js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-    this.getTagData(this.$page.path)
-  },
-  mounted() {
+    
     this.handlingTOC()
+    this.pageUrl = window.location
+
     const twitterWidgetsAPI = document.createElement('script')
     twitterWidgetsAPI.setAttribute('src', '//platform.twitter.com/widgets.js')
     document.head.appendChild(twitterWidgetsAPI)
+
     const linkedinWidgetsAPI = document.createElement('script')
-    twitterWidgetsAPI.setAttribute('src', 'https://platform.linkedin.com/in.js')
-    twitterWidgetsAPI.innerText = 'lang: en_US'    
-    document.head.appendChild(twitterWidgetsAPI)
-    const linkedinWidgetsButton = document.createElement('script')
-    linkedinWidgetsButton.setAttribute('type', 'IN/Share')
-    linkedinWidgetsButton.setAttribute('data-url', this.getUrl())
-    document.querySelector('.item.-in').appendChild(linkedinWidgetsButton)
+    linkedinWidgetsAPI.setAttribute('src', '//platform.linkedin.com/in.js')
+    linkedinWidgetsAPI.innerText = 'lang: en_US'    
+    document.head.appendChild(linkedinWidgetsAPI)
   }
 }
 </script>
