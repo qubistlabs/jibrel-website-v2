@@ -53,27 +53,52 @@
           <button class='link' @click='modalOpen'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
         </div>
         <div class='item'>
-          <a href='https://www.facebook.com/jibrelnetwork/' @click='clickLink("Facebook", "close")' class='link' target='_blank' >
+          <a 
+            href='https://www.facebook.com/jibrelnetwork/'
+            class='link'
+            target='_blank' 
+            @click='clickLink("Facebook", "close")'
+          >
             {{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://twitter.com/JibrelNetwork' @click='clickLink("Twitter", "close")' class='link' target='_blank' >
+          <a 
+            href='https://twitter.com/JibrelNetwork'
+            class='link'
+            target='_blank' 
+            @click='clickLink("Twitter", "close")'
+          >
             {{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://www.linkedin.com/company/jibrel-network/' @click='clickLink("Linkedin", "close")' class='link' target='_blank' >
+          <a 
+            href='https://www.linkedin.com/company/jibrel-network/'
+            class='link'
+            target='_blank' 
+            @click='clickLink("Linkedin", "close")'
+          >
             {{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://medium.com/@jibrelnetwork' @click='clickLink("Medium", "close")' class='link' target='_blank'>
+          <a 
+            href='https://medium.com/@jibrelnetwork'
+            class='link'
+            target='_blank' 
+            @click='clickLink("Medium", "close")'
+          >
             {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
           </a>
         </div>
         <div class='item'>
-          <a href='https://open.kakao.com/o/gxNSV4pb' @click='clickLink("Medium", "close")' class='link' target='_blank'>
+          <a 
+            href='https://open.kakao.com/o/gxNSV4pb'
+            class='link'
+            target='_blank' 
+            @click='clickLink("KakaoTalk", "close")'
+          >
             {{this.$themeLocaleConfig.data.ProjectMenu.KakaoTalk}}
           </a>
         </div>
