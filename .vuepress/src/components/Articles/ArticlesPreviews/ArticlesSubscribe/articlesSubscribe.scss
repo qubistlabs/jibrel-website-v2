@@ -15,11 +15,12 @@
 
   @include to-mobile {
     padding: 24px;
+    margin-top: 20px;
   }
 
 
   > .title {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.35;
     color: #fff;
     font-weight: 600;

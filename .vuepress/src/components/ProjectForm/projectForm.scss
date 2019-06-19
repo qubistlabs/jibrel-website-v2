@@ -20,6 +20,17 @@
     }
   }
 
+  &.-h-big {
+    > .container {
+      > .form {
+        > .send.-inline,
+        > .item > .field.-input.-fill {
+          height: 56px;
+        }
+      }
+    }
+  }
+
   > .container {
     max-width: 455px;
     width: 100%;

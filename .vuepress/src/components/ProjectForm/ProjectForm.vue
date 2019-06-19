@@ -1,5 +1,5 @@
 <template>
-  <div class='project-form' :class='templateForm === "subscribe" && "-w-full"' v-if='templateForm === "jcash" || templateForm === "subscribe"'>
+  <div class='project-form' :class='templateForm === "subscribe" && "-w-full -h-big"' v-if='templateForm === "jcash" || templateForm === "subscribe"'>
     <div class='container -no-offset'>
       <form class='form -inline _relative'>
         <label class='item -button-sibling'>
@@ -12,7 +12,9 @@
             required=''
           > 
         </label>
-        <button class='send -inline' type='button' @click='openExternalForm'><span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span></button>
+        <button class='send -inline' type='button' @click='openExternalForm'>
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : "Subscribe"}}</span>
+        </button>
       </form>
     </div>
   </div>
