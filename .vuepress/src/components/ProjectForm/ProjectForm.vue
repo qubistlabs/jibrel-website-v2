@@ -35,8 +35,13 @@
           <span class='label -white'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.message}}</span>
         </label>
         <div class='button'>
-          <button class='j-button -w100' :class='!isSending ? "-fill-on-gray-bg" : "-fill-disabled-on-gray-bg"' type='button' @click='ajaxSend' >
-            <span class='text'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.button}}</span>
+          <button class='j-button -w100' :class='!isSending ? "-fill-on-gray-bg" : "-fill-disabled-on-sky-bg"' type='button' @click='ajaxSend' >
+            <span class='text' v-if='!this.isSending'>{{$themeLocaleConfig.data.FormText.baseForm.textContent.button}}</span>
+            <div class='j-loader -white' v-if='this.isSending'>
+              <div class='dot -first' />
+              <div class='dot -second' />
+              <div class='dot -third' />
+            </div>
           </button>
         </div>
       </form>
