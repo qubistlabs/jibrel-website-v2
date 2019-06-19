@@ -17,6 +17,11 @@
           {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
         </router-link>
       </div>
+      <div class='item' v-if="this.$localeConfig.path === '/'">
+        <router-link to='/blog/' @click.native='clickLink("Blog")' class='link' active-class='-current'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
+          </router-link>
+      </div>
     </div> 
     <div class='box'  data-aos='fade-down' data-aos-duration='600' data-aos-delay="150">
       <div class='title'>{{this.$themeLocaleConfig.data.ProjectMenu.Products}}</div>

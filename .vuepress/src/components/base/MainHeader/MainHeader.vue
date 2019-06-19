@@ -4,7 +4,7 @@
       <div class='container _container-fluid'>
         <ProjectLogo :colorTheme='colorTheme' animationType='fade-down'/>
         <div class='actions'>
-          <SelectLanguage :colorTheme='colorTheme'/>
+          <SelectLanguage :colorTheme='colorTheme' v-if="this.$route.path.indexOf('/blog/') === -1"/>
           <div @click='openMenu'>
             <MenuToggle :colorTheme='colorTheme' />
           </div>

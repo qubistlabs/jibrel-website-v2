@@ -34,6 +34,7 @@
 
 <script>
 import MetaInfo from '@/Utils/MetaInfo.js'
+import SetScript from '@/Utils/SetScript.js'
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
@@ -52,9 +53,7 @@ export default {
     )
   },
   mounted() {
-    const twitterWidgetsAPI = document.createElement('script')
-    twitterWidgetsAPI.setAttribute('src', '//platform.twitter.com/widgets.js')
-    document.head.appendChild(twitterWidgetsAPI)
+    SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
   },
 }
 </script>

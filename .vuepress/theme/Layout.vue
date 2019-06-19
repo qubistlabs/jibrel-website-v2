@@ -9,6 +9,7 @@
     <Content v-if='typePage === "precast-page"'/>
     <News v-if='typePage === "/news/"' > <Content /> </News>
     <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
+    <Article v-if='typePage === "/blog/"' > <Content /> </Article>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
@@ -31,6 +32,7 @@ import 'aos/dist/aos.css'
 
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
+import Article from '@/pages/Article.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
@@ -53,6 +55,7 @@ export default {
     SpriteIcon,
     News,
     Vacancy,
+    Article,
     ModalWindow,
     ProjectForm,
   },
@@ -74,18 +77,24 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path
+      const route = this.$route.path      
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
         this.typePage = '/careers/'
+      } else if (!this.$page.frontmatter.index && route.indexOf(/blog/) !== -1){
+        this.typePage = '/blog/'
       } else {
         this.typePage = 'precast-page'
       }
     },
     getHeaderSize() {
       const route = this.$route.path
-      if (route.indexOf(/news/) !== -1 || route.indexOf(/careers/) !== -1) {
+      if (
+        route.indexOf(/news/) !== -1 || 
+        route.indexOf(/careers/) !== -1 ||
+        route.indexOf(/blog/) !== -1
+      ) {
         this.headerSize = true
       } else {
         this.headerSize = false
