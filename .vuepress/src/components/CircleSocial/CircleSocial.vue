@@ -36,6 +36,7 @@
       href='https://t.me/jibrel_network'
       class='link'
       target='_blank'
+      :title='this.$themeLocaleConfig.data.ProjectMenu.Telegram'
     >
       <SpriteIcon name='s-c-telegram' class='icon'/>
     </a>
