@@ -38,8 +38,21 @@
           height: 415px;
         }
         > .body {
+          @include from-mobile {
+            padding-left: 100px;
+            padding-right: 100px;
+          }
+
           > .row {
             justify-content: flex-start;
+          }
+
+          > .descr {
+            @include from-mobile {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
         }
       }
