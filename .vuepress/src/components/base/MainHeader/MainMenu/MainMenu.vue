@@ -94,6 +94,16 @@
         </div>
         <div class='item'>
           <a 
+            href='https://t.me/jibrel_network'
+            class='link'
+            target='_blank' 
+            @click='clickLink("Telegram", "close")'
+          >
+            {{this.$themeLocaleConfig.data.ProjectMenu.Telegram}}
+          </a>
+        </div>
+        <div class='item'>
+          <a 
             href='https://open.kakao.com/o/gxNSV4pb'
             class='link'
             target='_blank' 
