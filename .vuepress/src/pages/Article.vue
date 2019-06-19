@@ -109,7 +109,7 @@ export default {
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
         this.tagRootPath = 'blog/tokenization/'
-        this.tagName = 'Tokenziation'
+        this.tagName = 'Tokenization'
       }
     },
     handlingTOC() {

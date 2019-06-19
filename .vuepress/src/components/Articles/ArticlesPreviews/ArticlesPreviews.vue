@@ -91,7 +91,7 @@ export default {
         return 'Updates'
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
-        return 'Tokenziation'
+        return 'Tokenization'
       }
     },
   },
