@@ -15,6 +15,9 @@
     <a href='https://t.me/jibrel_network' class='link' target='_blank'>
       <SpriteIcon name='s-c-telegram' class='icon'/>
     </a>
+    <a href='https://open.kakao.com/o/gxNSV4pb' class='link' target='_blank'>
+      <SpriteIcon name='s-c-kakaotalk' class='icon'/>
+    </a>
   </div>
 </template>
 
