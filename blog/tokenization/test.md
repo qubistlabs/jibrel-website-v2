@@ -1,6 +1,6 @@
 ---
 title: What the GBSA Acceptance Means For Jibrel
-description: Jibrel was recently accepted into the Gulf Bonds and Sukuk Association (GBSA). This is
+description: Most people will agree that Ethereum is a valuable addition to the world of cryptocurrency and blockchain. Although the system is not without its flaws, significant progress has been made over the past two and a half years.
 date: 2019-11-24
 heroImage: test-blog
 ---
