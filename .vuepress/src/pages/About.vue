@@ -15,9 +15,9 @@ headerColor: white
       <div class='container -center-box _container-fix'>
         <div class='preview-info'>
           <div class='text '>
-            <h2 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>
+            <h1 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.aboutPage.title}}
-            </h2>
+            </h1>
             <div class='descr -color -white -text-center -box-center -medium-size' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.aboutPage.description}}
             </div>

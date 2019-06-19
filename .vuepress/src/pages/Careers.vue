@@ -9,6 +9,7 @@
         arrow='up'
       />
       <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+        <h1 class='_visibility-hidden'>{{this.$page.frontmatter.title}}</h1>
         <ListVacancies />
       </div>
     </section>

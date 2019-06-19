@@ -7,7 +7,7 @@ source:
     url: https://www.nasdaq.com/article/crypto-trading-and-traditional-assets-new-options-for-investors-cm879469
 ---
 
-![](/assets/img/content/cryptotrading.width-800.wdf34466jh.jpg)
+![Artistic representation of stock exchange chart](/assets/img/content/cryptotrading.width-800.wdf34466jh.jpg)
 
 While trading of crypto-assets is booming, some investors are looking for options to trade traditional assets like stocks via cryptocurrencies. Three new operators are among those developing trading platforms to meet this need, with blockchain-based tokens pegged to the underlying assets.  
 

@@ -19,7 +19,7 @@ Blockchain enthusiasts have had to learn the hard way that the third-parties tru
 
 To counter this problem, the Jibrel Network is working to release jWallet, the first Ethereum wallet designed to be fully compliant with institutional and enterprise-grade security requirements – a much needed feature given the company’s plan to digitize traditional financial assets on the blockchain. Put simply, jWallet is a web-based cryptocurrency wallet that will offer the same security and peace of mind expected of traditional online banking.
 
-![](/assets/img/content/news-2-logo.wf098ojp997.png)
+![Jibrel Network logo](/assets/img/content/news-2-logo.wf098ojp997.png)
 
 With data stored and encrypted locally, users of jWallet are guaranteed the highest level of privacy and security. Moreover, the benefits of locally storing keys means hackers are significantly limited in their ability to maliciously gain access to a user’s funds. There will also be a host of advanced security features to protect against cyberattacks such as the DNS attack experienced by MyEtherWallet last week.
 
@@ -33,7 +33,7 @@ All that is needed to access jWallet is a standard browser and internet connecti
 
 lthough the jWallet is targeted primarily at cryptocurrency users, it is designed at its core as a storage mechanism for a wide variety of digital assets that the Jibrel Network is creating as part of their post-ICO rollout, including bonds, commodities, and equities. There are also some features never before seen in an Ethereum wallet, including a standard URI scheme and a quick-read (QR) code generator.
 
-![](/assets/img/content/22912651-152590429935023.9089988769.png)
+![Jwalet design mockup](/assets/img/content/22912651-152590429935023.9089988769.png)
 
 Alpha testing of the wallet has been underway since late last year, with the Jibrel Network planning a launch of the beta version of jWallet in several weeks. The beta version will include a number of additional features and improvements users are sure to welcome.
 

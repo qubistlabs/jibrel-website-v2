@@ -9,6 +9,7 @@
           arrow='up'
         />
       <div class='container _container-fix'>
+        <h1 class='_visibility-hidden'>{{this.$page.frontmatter.title}}</h1>
         <NewsPreviews />
       </div>
     </section>

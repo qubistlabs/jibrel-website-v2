@@ -11,7 +11,7 @@
       <div class='container -center-box _container-fix'>
         <div class='preview-info -mobile-offset'>
           <div class='text -up-visual-center'>
-            <h2 class='title -text-center -white ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ScreenPreview.enterprisePage.title}}</h2>
+            <h1 class='title -text-center -white ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ScreenPreview.enterprisePage.title}}</h1>
             <div class='descr -medium-size -white -text-center -box-center' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.enterprisePage.description}}
             </div>
