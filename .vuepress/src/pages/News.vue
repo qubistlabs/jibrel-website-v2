@@ -55,9 +55,6 @@ export default {
   mounted() {
     SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
   },
-  beforeDestroy() {
-    document.getElementById('twitter-jssdk').remove()
-  }
 }
 </script>
 

@@ -79,6 +79,9 @@ export default {
       if (path.indexOf('/blog/tokenization/') !== -1) {
         return '/blog/tokenization/'
       }
+      if (path.indexOf('/blog/') !== -1) {
+        return '/blog/'
+      }
     },
     getTagData(path) {
       if (path.indexOf('/blog/how-tos/') !== -1) {
@@ -96,8 +99,7 @@ export default {
     posts() {      
       const posts = this.$site.pages
         .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index)
-        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-        
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));        
       if (!this.limit) {
         return posts
       }

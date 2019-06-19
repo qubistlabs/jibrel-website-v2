@@ -124,7 +124,7 @@ export default {
           TOCContainer.classList.add('-open')
           this.isOpened = true
         }
-      }, false);      
+      });      
 
       link.forEach(element => {
         element.addEventListener('click', function (e) {
@@ -139,7 +139,7 @@ export default {
           });
           
           return false
-        }, false);
+        });
       });
     }
   },
@@ -153,10 +153,5 @@ export default {
     this.handlingTOC()
     this.pageUrl = window.location
   },
-  beforeDestroy() {
-    document.getElementById('facebook-jssdk').remove()
-    document.getElementById('twitter-jssdk').remove()
-    document.getElementById('linkedin-jssdk').remove()
-  }
 }
 </script>

@@ -21,12 +21,8 @@ export default {
     }
   },
   methods: {
-    getPosition() {      
-      window.addEventListener('scroll', () => {               
-        this.setSticky(window.scrollY)
-      }, false)
-    },
-    setSticky(scrollY) {
+    handleScroll() {
+      console.log(window.scrollY);
       if (scrollY > 106) {
         this.isSticky = true
       } else {
@@ -35,12 +31,10 @@ export default {
     }
   },
   mounted() {
-    this.getPosition()
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', () => {     
-      this.setSticky(window.scrollY)
-    }, false)
+    window.removeEventListener('scroll', this.handleScroll)
   },
 } 
 </script>
