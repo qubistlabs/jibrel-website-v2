@@ -30,7 +30,7 @@
   height: 48px;
   font-size: 12px;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   width: 100%;
   text-align: center;
   white-space: nowrap;
@@ -51,6 +51,10 @@
   &.-big-offset {
     padding-left: 45px;
     padding-right: 45px;
+  }
+
+  &.-h-small {
+    height: 32px;
   }
 
   &.-w-limit-180 {
@@ -99,6 +103,11 @@
   &.-fill-white-on-gray-bg {
     padding-top: 13px;
     padding-bottom: 13px;
+    &.-h-small {
+      padding-top: 7px;
+      padding-bottom: 8px;
+    }
+  
   }
 
   &.-fill-on-gray-bg,
@@ -216,12 +225,24 @@
     color: rgba(#fff, 0.7);
     fill: rgba(#fff, 0.7);
     background-color: #d6dae0;
+    box-shadow: none;
+    cursor: default;
   }
 
   &.-fill-disabled-on-blue-bg {
     color: rgba(#fff, 0.4);
     fill: rgba(#fff, 0.4);
-    background-color: #295bcb;
+    background-color: rgba($blue, 0.75);
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &.-fill-disabled-on-sky-bg {
+    color: rgba(#fff, 0.4);
+    fill: rgba(#fff, 0.4);
+    background-color: rgba($light-blue, 0.75);
+    box-shadow: none;
+    cursor: default;
   }
 
   &.-border-on-blue-bg,

@@ -9,7 +9,7 @@ source:
 
 They are currently working with a select number of banking institutions to bring the power of digital currencies to traditional banks
 
-![](/assets/img/content/Screen-Shot-2017-11-14-at-11.17.45-AM.dwdwefwgw445.jpg)
+![Artistic representation of cryptocurrency mining](/assets/img/content/Screen-Shot-2017-11-14-at-11.17.45-AM.dwdwefwgw445.jpg)
 
 One of the biggest issues many traditional investors and people have when discussing cryptocurrency is that, for the most part, it’s backed by literally nothing. While we can sit here and debate the value of things, there is [one company](https://knowtechie.com/pre-sales-cryptowallets-upcoming-ico-digital-currency-startup-jibrel-network-continues-push-forward/) that is looking to blend the best of both worlds through the use of a crypto token that is based on real-world assets, but can still take advantage of everything that makes digital currencies so appealing – the blockchain and smart contracts being two examples.
 

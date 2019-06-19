@@ -7,7 +7,7 @@ source:
     url: https://www.forbes.com/sites/jessedamiani/2018/01/22/jibrel-network-is-bridging-the-gap-between-crypto-and-traditional-markets/#303c9e1d67d3
 ---
 
-![](/assets/img/content/973j9uegb3t8y48tq84-09t.jpg)
+![Jibrel Network logo on blue background](/assets/img/content/973j9uegb3t8y48tq84-09t.jpg)
 
 **Compliance never looked this sexy.**
 

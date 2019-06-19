@@ -8,7 +8,7 @@ source:
 ---
 
 
-![](/assets/img/content/block.wdwfwfef80798.png) Blockchain technologies are taking the world by storm. Pxhere
+![Microchip close-up](/assets/img/content/block.wdwfwfef80798.png)
 
 More than [$3.3 billion](https://www.coindesk.com/ico-tracker/) was raised with Initial Coin Offerings (ICO) this year alone. Total cryptocurrencies market capitalization recently soared past [$400 billion](https://cryptovest.com/news/crypto-market-zooms-past-400b--how-big-is-that/) and Bitcoin accounts for more than 60% of it. If these numbers don’t raise your eyebrows, you still have to admit that emergence of Bitcoin and cryptocurrencies is a fascinating event to watch.
 
