@@ -72,6 +72,11 @@
             {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
           </a>
         </div>
+        <div class='item'>
+          <a href='https://open.kakao.com/o/gxNSV4pb' @click='clickLink("Medium", "close")' class='link' target='_blank'>
+            {{this.$themeLocaleConfig.data.ProjectMenu.KakaoTalk}}
+          </a>
+        </div>
       </div>
     </div>
     <div class='button'>
