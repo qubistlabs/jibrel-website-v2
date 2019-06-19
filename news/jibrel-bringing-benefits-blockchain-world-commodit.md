@@ -7,7 +7,7 @@ source:
     url: https://thebitcoinnews.com/jibrel-bringing-the-benefits-of-blockchain-to-the-world-of-commodity-trading/
 ---
 
-![](/assets/img/content/cc5073d4afddc32fcd2c98eb26cd6e39.jpg)
+![Artistic representation of blockchain and crypto value](/assets/img/content/cc5073d4afddc32fcd2c98eb26cd6e39.jpg)
 
 _Jibrel aims to bring blockchain’s benefits of low transaction costs and streamlined decision-making to traditional commodities and equities to help institutional investors lower the cost of trade while maintaining stability in their investment portfolios_
 
