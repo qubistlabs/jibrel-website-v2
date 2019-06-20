@@ -17,6 +17,9 @@
             :alt='post.frontmatter.title'
             class='img'
           >
+          <div class='overlay' v-if='isMainBlogPage && index !== 0'>
+            <div class='read'><button class="j-button -fill-on-white-bg -h-small">Read</button></div>
+          </div>
         </div>
         <div class='body'>
           <div class='row'>
@@ -27,7 +30,7 @@
               {{ post.frontmatter.date | formatDate }}
             </time>
             <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
-            <div class='more' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>Read</button></div>
+            <div class='read' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>Read</button></div>
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
