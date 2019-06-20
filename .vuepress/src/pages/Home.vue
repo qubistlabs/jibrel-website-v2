@@ -135,7 +135,7 @@ headerColor: white
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
 export default {

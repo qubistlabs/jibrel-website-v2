@@ -11,8 +11,8 @@
       />
       <div class='container _container-fix -bg-white -mobile-bg-gray'>
         <div class='article-page'>
-          <img 
-            :src="`/assets/img/blog/${$page.frontmatter.heroImage}-full.jpg`" 
+          <img
+            :src="`/assets/img/blog/${$page.frontmatter.heroImage}-full.jpg`"
             :srcset='`/assets/img/blog/${ $page.frontmatter.heroImage }-full@2x.jpg 2x`'
             class='preview' :alt="$page.frontmatter.title"
           >
@@ -45,7 +45,7 @@
           <div class='subscribe'>
             <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>Sign up to get Jibrel Updates</div>
             <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-              <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='subscribe' />
+              <Subscribe />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
 
 <script>
 import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
 import SetScript from '@/Utils/SetScript.js'
@@ -79,7 +79,7 @@ export default {
     SectionName,
     SpriteIcon,
     ContactsList,
-    ProjectForm,
+    Subscribe,
     ArticlesPreviews,
   },
   data() {
@@ -124,7 +124,7 @@ export default {
           TOCContainer.classList.add('-open')
           this.isOpened = true
         }
-      });      
+      });
 
       link.forEach(element => {
         element.addEventListener('click', function (e) {
@@ -137,7 +137,7 @@ export default {
             'left': 0,
             'top': offset + 120
           });
-          
+
           return false
         });
       });
@@ -146,7 +146,7 @@ export default {
   created() {
     this.getTagData(this.$page.path)
   },
-  mounted() { 
+  mounted() {
     SetScript('//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0', 'facebook-jssdk')
     SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
     SetScript('//platform.linkedin.com/in.js', 'linkedin-jssdk')
