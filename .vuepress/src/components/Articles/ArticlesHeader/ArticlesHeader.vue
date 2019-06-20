@@ -22,7 +22,6 @@ export default {
   },
   methods: {
     handleScroll() {
-      console.log(window.scrollY);
       if (scrollY > 106) {
         this.isSticky = true
       } else {
@@ -36,7 +35,7 @@ export default {
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
   },
-} 
+}
 </script>
 
 
