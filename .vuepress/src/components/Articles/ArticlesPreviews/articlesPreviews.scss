@@ -34,31 +34,24 @@
       > .box {
         height: auto;
 
-        > .pic {
-          @include from-mobile {
+        @include from-mobile {
+          > .pic {
             height: 415px;
           }
-        }
-        > .body {
-          @include from-mobile {
+
+          > .body {
             padding-left: 100px;
             padding-right: 100px;
-          }
 
-          > .row {
-            @include from-mobile {
+            > .row {
               justify-content: flex-start;
             }
-          }
 
-          > .title {
-            @include from-mobile {
+            > .title {
               font-size: 24px;
             }
-          }
 
-          > .descr {
-            @include from-mobile {
+            > .descr {
               font-size: 18px;
               white-space: nowrap;
               overflow: hidden;
@@ -113,17 +106,26 @@
         }
 
         > .row {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          @include from-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
 
           > .date {
+            @include ls(10);
+
             font-size: 13px;
             line-height: (24/13);
             color: $base-o;
-            margin-right: 30px;
-  
-            @include ls(10);
+
+            @include from-mobile {
+              margin-right: 30px;
+            }
+            @include to-mobile {
+              display: block;
+              margin-bottom: 10px;
+            }
           }
 
           > .tag {

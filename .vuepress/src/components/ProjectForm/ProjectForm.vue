@@ -15,6 +15,11 @@
         <button class='send -inline' type='button' @click='openExternalForm'>
           <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : "Subscribe"}}</span>
         </button>
+        <div class='button -only-mobile' type='button' @click='openExternalForm'>
+          <button class='j-button -w100 -h-big -fill-on-white-bg' type='button' @click='ajaxSend' >
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : "Subscribe"}}</span>
+          </button>
+        </div>
       </form>
     </div>
   </div>

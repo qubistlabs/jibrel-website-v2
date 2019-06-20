@@ -89,9 +89,17 @@
       }
 
       &.-inline {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
+        @include from-mobile {
+          display: flex;
+        }
+        @include to-mobile {
+          > .item {
+            > .field.-input.-fill {
+              border: 1px solid rgba($base, 0.3);
+              box-shadow: none;
+            }
+          }
+        }
       }
 
       > .item {
@@ -103,7 +111,9 @@
         }
 
         &.-button-sibling {
-          width: calc(100% - 80px);
+          @include from-mobile {
+            width: calc(100% - 80px);
+          }
 
           &:not(:last-child) {
             margin-bottom: 0;
@@ -214,8 +224,10 @@
             border: 1px solid transparent;
 
             &.-button-sibling {
-              border-top-right-radius: 0;
-              border-bottom-right-radius: 0;
+              @include from-mobile {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+              }
             }
 
             &:focus {
@@ -323,6 +335,10 @@
             height: 56px;
           }
 
+          @include to-mobile {
+            display: none;
+          }
+
           &:hover {
             color: $light-blue;
           }
@@ -353,6 +369,13 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
+
+        &.-only-mobile {
+          @include from-mobile {
+            display: none;
+          }
+          margin-top: 10px;
+        }
       }
     }
 

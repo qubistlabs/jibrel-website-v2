@@ -6,6 +6,11 @@
   padding-right: 30px;
   position: relative;
   transition: border-color 0.2s ease-in-out;
+  
+  @include to-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
   &:hover {
     border-color: rgba($base, 0.4);
@@ -32,6 +37,9 @@
       position: absolute;
       top: 0;
       right: 30px;
+      @include to-mobile {
+        right: 16px;
+      }
     }
   }
 

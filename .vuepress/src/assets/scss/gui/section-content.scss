@@ -93,6 +93,9 @@
 
   &.-offset-blog {
     padding-top: 235px;
+    @include to-mobile {
+      padding-top: 175px;
+    }
   }
 
   &.-offset-top,

@@ -12,8 +12,9 @@
   z-index: 1;
   background-color: $light-gray;
 
-  @media (max-width: $mobile-width) {
-    top: 98px
+  @include to-mobile {
+    top: 98px;
+    height: 80px;
   }
 
   &.-sticky {
@@ -23,9 +24,16 @@
   }
   
   > .container {
-    @media (min-width: $mobile-width + 1) {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+
+    @include to-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
     }
 
     > .title {
@@ -35,10 +43,14 @@
       font-weight: 600;
       color: $base;
       transition: color 0.2s ease-in-out;
+      margin-right: 20px;
+
+      &:hover {
+        color: $light-blue;
+      }
       
-      @media (min-width: $mobile-width + 1) {
+      @include from-mobile {
         padding-right: 60px;
-        margin-right: 20px;
 
         &:before {
           content: '';
@@ -52,18 +64,16 @@
           right: 0;
         }
       }
-  
-      &:hover {
-        color: $light-blue;
+
+      @include to-mobile {
+        font-size: 16px;
       }
     }
 
     > .tabs {
       display: flex;
       align-items: center;
-      @media (max-width: $mobile-width) {
-        margin-top: 20px;
-      }
+
       > .item {
         color: $base;
         font-size: 16px;
@@ -72,11 +82,9 @@
         position: relative;
         transition: color 0.2s ease-in-out;
 
-        @media (max-width: $mobile-width) {
-          margin-left: 20px;
-          &:first-child {
-            margin-left: 0;
-          }
+        @include to-mobile {
+          padding-right: 20px;
+          margin-left: 0;
         }
     
         &:hover {
