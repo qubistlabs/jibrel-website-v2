@@ -3,14 +3,14 @@
     <div class='container -no-offset'>
       <form class='form -inline _relative'>
         <label class='item -button-sibling'>
-          <input 
-            type='email' 
-            v-model='email' 
-            class='field -button-sibling -input -fill' 
-            :class='emailError && "-error"' 
+          <input
+            type='email'
+            v-model='email'
+            class='field -button-sibling -input -fill'
+            :class='emailError && "-error"'
             :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : $themeLocaleConfig.data.Article.EnterYourEmailAddress'
             required=''
-          > 
+          >
         </label>
         <button class='send -inline' type='button' @click='openExternalForm'>
           <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $themeLocaleConfig.data.Article.Subscribe}}</span>
@@ -256,5 +256,5 @@ export default {
 </script>
 
 <style lang='scss'>
-  @import './projectForm.scss';
+  @import '../forms';
 </style>
