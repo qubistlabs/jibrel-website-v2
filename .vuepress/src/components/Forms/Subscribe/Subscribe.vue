@@ -55,11 +55,11 @@ export default {
         return
       }
 
-      console.log('hey')
-
       const data = {
         contact: {
           Email: this.email,
+          // "Blog" list
+          _autopilot_list: 'contactlist_a0f2dbb0-3981-43cb-b250-f9622c3521a0'
         }
       }
 
