@@ -18,7 +18,7 @@
             class='img'
           >
           <div class='overlay' v-if='isMainBlogPage && index !== 0'>
-            <div class='read'><button class="j-button -fill-on-white-bg -h-small">Read</button></div>
+            <div class='read'><button class="j-button -fill-on-white-bg -h-small">{{$themeLocaleConfig.data.Article.Read}}</button></div>
           </div>
         </div>
         <div class='body'>
@@ -30,7 +30,7 @@
               {{ post.frontmatter.date | formatDate }}
             </time>
             <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
-            <div class='read' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>Read</button></div>
+            <div class='read' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>{{$themeLocaleConfig.data.Article.Read}}</button></div>
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
@@ -88,13 +88,13 @@ export default {
     },
     getTagData(path) {
       if (path.indexOf('/blog/how-tos/') !== -1) {
-        return 'How To’s'
+        return this.$themeLocaleConfig.data.Article.HowTos
       }
       if (path.indexOf('/blog/updates/') !== -1) {
-        return 'Updates'
+        return this.$themeLocaleConfig.data.Article.Updates
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
-        return 'Tokenization'
+        return this.$themeLocaleConfig.data.Article.Tokenization
       }
     },
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="more-post">
-    <button class="j-button -fill-on-white-bg" @click="loadMore()">Show More Posts</button>
+    <button class="j-button -fill-on-white-bg" @click="loadMore()">{{$themeLocaleConfig.data.Article.ShowMore}}</button>
   </div>
 </template>
 

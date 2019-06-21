@@ -37,9 +37,9 @@
                 inline-template
               >
                 <div class="share">
-                  <network network="facebook" class="item -fb">Share</network>
-                  <network network="linkedin" class="item -tw">Share</network>
-                  <network network="twitter" class="item -in">Share</network>
+                  <network network="facebook" class="item -fb">{{$themeLocaleConfig.data.Share.Share}}</network>
+                  <network network="linkedin" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
+                  <network network="twitter" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
                 </div>
               </social-sharing>
             </div>
@@ -49,7 +49,7 @@
             </div>
           </div>
           <div class='subscribe'>
-            <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>Sign up to get Jibrel Updates</div>
+            <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>{{$themeLocaleConfig.data.Article.SubscribeTitle}}</div>
             <div class='form' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
               <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='subscribe' />
             </div>
@@ -108,15 +108,15 @@ export default {
     getTagData(path) {
       if (path.indexOf('/blog/how-tos/') !== -1) {
         this.tagRootPath = 'blog/how-tos/'
-        this.tagName = 'How To’s'
+        this.tagName = this.$themeLocaleConfig.data.Article.HowTos
       }
       if (path.indexOf('/blog/updates/') !== -1) {
         this.tagRootPath = 'blog/updates/'
-        this.tagName = 'Updates'
+        this.tagName = this.$themeLocaleConfig.data.Article.Updates
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
         this.tagRootPath = 'blog/tokenization/'
-        this.tagName = 'Tokenization'
+        this.tagName = this.$themeLocaleConfig.data.Article.Tokenization
       }
     },
     handlingTOC() {
@@ -151,7 +151,7 @@ export default {
   },
   created() {
     this.getTagData(this.$page.path)
-    this.pageUrl = this.$localeConfig.site + this.$page.path
+    this.pageUrl = this.$localeConfig.site + this.$page.path    
   },
   mounted() { 
     this.handlingTOC()
