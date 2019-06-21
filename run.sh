@@ -13,6 +13,9 @@ else
             find /app -type f -name '*.html' -print0 | xargs -0 sed -i -- "s/\[__${envvar}__\]/$(eval echo "\$${envvar}")/g"
         fi
     done
+
+    dockerize -template /etc/nginx/nginx.tpl.conf:/etc/nginx/nginx.conf
+
     echo "Ready"
 
     /usr/sbin/nginx
