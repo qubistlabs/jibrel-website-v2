@@ -38,7 +38,7 @@ import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 
 import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
@@ -77,7 +77,7 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path      
+      const route = this.$route.path
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
@@ -91,7 +91,7 @@ export default {
     getHeaderSize() {
       const route = this.$route.path
       if (
-        route.indexOf(/news/) !== -1 || 
+        route.indexOf(/news/) !== -1 ||
         route.indexOf(/careers/) !== -1 ||
         route.indexOf(/blog/) !== -1
       ) {

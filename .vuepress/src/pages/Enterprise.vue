@@ -25,7 +25,7 @@
           {{$localeConfig.data.JibrelIntegratable.title}}
         </h2>
         <div class='card-tile -offset-top -inner-border-vertical -inner-border-gray'>
-          <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
+          <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
             <div class='box -color'>
               <div class='img -base-icon'>
                 <SpriteIcon name='i-bank' class='icon -stroke -blue'/>
@@ -34,7 +34,7 @@
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_1.description}}</p>
             </div>
           </div>
-          <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"> 
+          <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
             <div class='box -color'>
               <div class='img -base-icon'>
                 <SpriteIcon name='i-store' class='icon -stroke -blue'/>
@@ -43,7 +43,7 @@
               <p class='descr '>{{$localeConfig.data.JibrelIntegratable.card_2.description}}</p>
             </div>
           </div>
-          <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"> 
+          <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
             <div class='box -color'>
               <div class='img -base-icon'>
                 <SpriteIcon name='i-goverment' class='icon -stroke -blue'/>
@@ -64,7 +64,7 @@
           {{$localeConfig.data.EnterpriseSolution.description}}
         </h2>
         <div class='card-tile'>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/stopwatch.svg' class='icon' width='48' height='48' alt='icon'>
@@ -73,7 +73,7 @@
               <p class='descr '>{{$localeConfig.data.EnterpriseSolution.card_1.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/login-lock.svg' class='icon' width='48' height='48' alt='icon'>
@@ -82,7 +82,7 @@
               <p class='descr '>{{$localeConfig.data.EnterpriseSolution.card_2.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/view.svg' class='icon' width='48' height='48' alt='icon'>
@@ -91,7 +91,7 @@
               <p class='descr '>{{$localeConfig.data.EnterpriseSolution.card_3.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="300" data-aos-delay="250"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="300" data-aos-delay="250">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/percent-increase.svg' class='icon' width='48' height='48' alt='icon'>
@@ -100,7 +100,7 @@
               <p class='descr '>{{$localeConfig.data.EnterpriseSolution.card_4.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="600" data-aos-delay="250">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/location-pin.svg' class='icon' width='48' height='48' alt='icon'>
@@ -109,7 +109,7 @@
               <p class='descr '>{{$localeConfig.data.EnterpriseSolution.card_5.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="900" data-aos-delay="250"> 
+          <div class='item -three-col -base-offset' data-aos="fade-down" data-aos-duration="900" data-aos-delay="250">
             <div class='box -color'>
               <div class='img '>
                 <img src='@/assets/img/general/icon/compatible.svg' class='icon' width='48' height='48' alt='icon'>
@@ -175,14 +175,14 @@
     </section>
     <section class='section-content -offset-top -offset-bottom -bg-dark'>
       <div class='container -center-box _container-fix' data-aos='fade-in' data-aos-duration='900' data-aos-delay='150'>
-        <ProjectForm 
+        <ProjectForm
           eventType='product-and-sale-enterprise'
           formName='enquiry'
           :title='$themeLocaleConfig.data.FormText.baseForm.titleProductAndSale'
         />
       </div>
     </section>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -190,7 +190,7 @@ import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 export default {
   components: {
     SectionName,
