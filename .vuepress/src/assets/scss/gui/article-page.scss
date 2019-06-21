@@ -77,24 +77,39 @@
       > .share {
         display: flex;
         align-items: center;
+
         .item {
+          min-width: 86px;
+          width: 100%;
+          height: 30px;
+          border-radius: 3px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          background-repeat: no-repeat;
+          padding-left: 35px;
+          padding-right: 5px;
+          background-size: 24px;
+
           &:not(:first-child) {
             margin-left: 10px;
           }
 
-          &.-fb,
-          &.-in {
-            margin-top: -7px;
-          }
-
           &.-fb {
-            width: 59px;
+            background-color: #3b5a99;
+            background-image: url(../src/assets/img/general/icon/s-facebook.svg);
+            background-position: 2px center;
           }
           &.-tw {
-            width: 61px;
+            background-color: #61ace9;
+            background-position: 2px center;
+            background-image: url(../src/assets/img/general/icon/s-twitter.svg);
           }
           &.-in {
-            width: 62px;
+            background-color: #2277b0;
+            background-position: 2px center;
+            background-image: url(../src/assets/img/general/icon/s-linkedin.svg);
           }
         }
       }

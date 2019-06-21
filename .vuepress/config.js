@@ -70,6 +70,7 @@ module.exports = {
       lang: 'en-US',
       shortLang: 'en',
       title: 'Jibrel Network',
+      site: 'https://jibrel.network',
       data: {
         CareerPage: CareerPageEn,
         EnterpriseSolution: EnterpriseSolutionEn,
@@ -89,6 +90,7 @@ module.exports = {
       lang: 'ko-KR',
       shortLang: 'ko',
       title: 'Jibrel Network',
+      site: 'https://jibrel.network',
       data: {
         CareerPage: CareerPageKo,
         EnterpriseSolution: EnterpriseSolutionKo,

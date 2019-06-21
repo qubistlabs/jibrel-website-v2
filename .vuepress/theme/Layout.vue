@@ -27,6 +27,7 @@
 <script>
 import Vue from 'vue'
 import Meta from 'vue-meta'
+import SocialSharing from 'vue-social-sharing'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -42,10 +43,9 @@ import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
 
 import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
-// import VueRouter from 'vue-router';
-// const router = new VueRouter({ routes, mode, linkActiveClass });
 
 Vue.use(Meta)
+Vue.use(SocialSharing);
 
 export default {
   components: {
@@ -140,8 +140,6 @@ export default {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
       debug: process.env.NODE_ENV === 'development',
-      // vueRouter: router, // Pass the router instance to automatically sync with router (optional)
-      // ignoredViews: ['homepage'] // If router, you can exclude some routes name (case insensitive) (optional)
     })
     Vue.use(VueYandexMetrika, {
       id: process.env.YANDEX_METRIKA_ID,
