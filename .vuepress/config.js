@@ -35,12 +35,16 @@ const ProjectMenuEn = require('./i18n/EnUS/theme/ProjectMenu.json')
 const PageHeaderEn = require('./i18n/EnUS/theme/PageHeader.json')
 const ProjectNewsEn = require('./i18n/EnUS/theme/ProjectNews.json')
 const SectionNameEn = require('./i18n/EnUS/theme/SectionName.json')
+const ShareEn = require('./i18n/EnUS/theme/Share.json')
+const ArticleEn = require('./i18n/EnUS/theme/Article.json')
 
 const FormTextKo = require('./i18n/KoKr/theme/FormText.json')
 const ProjectMenuKo = require('./i18n/KoKr/theme/ProjectMenu.json')
 const PageHeaderKo = require('./i18n/KoKr/theme/PageHeader.json')
 const ProjectNewsKo = require('./i18n/KoKr/theme/ProjectNews.json')
 const SectionNameKo = require('./i18n/KoKr/theme/SectionName.json')
+const ShareKo = require('./i18n/KoKr/theme/Share.json')
+const ArticleKo = require('./i18n/KoKr/theme/Article.json')
 
 module.exports = {
   dest: 'build',
@@ -70,6 +74,7 @@ module.exports = {
       lang: 'en-US',
       shortLang: 'en',
       title: 'Jibrel Network',
+      site: 'https://jibrel.network',
       data: {
         CareerPage: CareerPageEn,
         EnterpriseSolution: EnterpriseSolutionEn,
@@ -89,6 +94,7 @@ module.exports = {
       lang: 'ko-KR',
       shortLang: 'ko',
       title: 'Jibrel Network',
+      site: 'https://jibrel.network',
       data: {
         CareerPage: CareerPageKo,
         EnterpriseSolution: EnterpriseSolutionKo,
@@ -115,6 +121,8 @@ module.exports = {
           ProjectNews: ProjectNewsEn,
           SectionName: SectionNameEn,
           FormText: FormTextEn,
+          Share: ShareEn,
+          Article: ArticleEn,
         },
       },
       '/ko/': {
@@ -125,6 +133,8 @@ module.exports = {
           ProjectNews: ProjectNewsKo,
           SectionName: SectionNameKo,
           FormText: FormTextKo,
+          Share: ShareKo,
+          Article: ArticleKo,
         }
       }
     }

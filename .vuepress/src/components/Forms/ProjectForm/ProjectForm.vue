@@ -1,5 +1,5 @@
 <template>
-  <div class='project-form' :class='templateForm === "subscribe" && "-w-full"' v-if='templateForm === "jcash" || templateForm === "subscribe"'>
+  <div class='project-form' :class='templateForm === "subscribe" && "-w-full -h-big"' v-if='templateForm === "jcash" || templateForm === "subscribe"'>
     <div class='container -no-offset'>
       <form class='form -inline _relative'>
         <label class='item -button-sibling'>
@@ -8,11 +8,18 @@
             v-model='email'
             class='field -button-sibling -input -fill'
             :class='emailError && "-error"'
-            :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : "Enter your email Address"'
+            :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : $themeLocaleConfig.data.Article.EnterYourEmailAddress'
             required=''
           >
         </label>
-        <button class='send -inline' type='button' @click='openExternalForm'><span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span></button>
+        <button class='send -inline' type='button' @click='openExternalForm'>
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $themeLocaleConfig.data.Article.Subscribe}}</span>
+        </button>
+        <div class='button -only-mobile' type='button' @click='openExternalForm'>
+          <button class='j-button -w100 -h-big -fill-on-white-bg' type='button' @click='ajaxSend' >
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $themeLocaleConfig.data.Article.Subscribe}}</span>
+          </button>
+        </div>
       </form>
     </div>
   </div>

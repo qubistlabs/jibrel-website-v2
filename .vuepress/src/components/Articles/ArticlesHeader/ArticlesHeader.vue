@@ -1,11 +1,11 @@
 <template>
   <div class='articles-heaader' :class='isSticky && "-sticky"'>
     <div class='container _container-fix'>
-      <router-link to='/blog/' class="title">Blog</router-link>
+      <router-link to='/blog/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link to='/blog/updates/' class='item' active-class='-current'>Updates</router-link>
-        <router-link to='/blog/tokenization/' class='item' active-class='-current'>Tokenization</router-link>
-        <router-link to='/blog/how-tos/' class='item' active-class='-current'>How To’s</router-link>
+        <router-link to='/blog/updates/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.HowTos}}</router-link>
+        <router-link to='/blog/tokenization/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Updates}}</router-link>
+        <router-link to='/blog/how-tos/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
       </div>
   </div>
 </div>

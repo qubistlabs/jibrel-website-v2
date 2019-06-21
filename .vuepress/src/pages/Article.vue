@@ -27,15 +27,21 @@
                 </time>
                 <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
               </div>
-              <div class="share">
-                <div class="item -fb">
-                  <div class="fb-share-button" data-layout="button"></div>
+              <social-sharing 
+                :url="pageUrl"
+                :title="$page.frontmatter.title"
+                :description="$page.frontmatter.description"
+                :media="`${$page.frontmatter.heroImage}-full.jpg`"
+                network-tag='button'
+                twitter-user="jibrelnetwork"
+                inline-template
+              >
+                <div class="share">
+                  <network network="facebook" class="item -fb">{{$themeLocaleConfig.data.Share.Share}}</network>
+                  <network network="linkedin" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
+                  <network network="twitter" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
                 </div>
-                <div class="item -tw">
-                  <a class="twitter-share-button" :href='`https://twitter.com/intent/tweet?url=${pageUrl}`'></a>
-                </div>
-                <div class="item -in"><script type="IN/Share" data-url="https://www.linkedin.com"></script></div>
-              </div>
+              </social-sharing>
             </div>
             <h1 class='title'>{{$page.frontmatter.title}}</h1>
             <div class='wysiwyg'>
@@ -43,7 +49,7 @@
             </div>
           </div>
           <div class='subscribe'>
-            <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>Sign up to get Jibrel Updates</div>
+            <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>{{$themeLocaleConfig.data.Article.SubscribeTitle}}</div>
             <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
               <Subscribe />
             </div>
@@ -72,12 +78,13 @@ import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
 import { timeout } from 'q';
+
 export default {
   name: 'NewsPage',
   components: {
+    SpriteIcon,
     ArticlesHeader,
     SectionName,
-    SpriteIcon,
     ContactsList,
     Subscribe,
     ArticlesPreviews,
@@ -101,15 +108,15 @@ export default {
     getTagData(path) {
       if (path.indexOf('/blog/how-tos/') !== -1) {
         this.tagRootPath = 'blog/how-tos/'
-        this.tagName = 'How To’s'
+        this.tagName = this.$themeLocaleConfig.data.Article.HowTos
       }
       if (path.indexOf('/blog/updates/') !== -1) {
         this.tagRootPath = 'blog/updates/'
-        this.tagName = 'Updates'
+        this.tagName = this.$themeLocaleConfig.data.Article.Updates
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
         this.tagRootPath = 'blog/tokenization/'
-        this.tagName = 'Tokenziation'
+        this.tagName = this.$themeLocaleConfig.data.Article.Tokenization
       }
     },
     handlingTOC() {
@@ -137,7 +144,6 @@ export default {
             'left': 0,
             'top': offset + 120
           });
-
           return false
         });
       });
@@ -145,13 +151,11 @@ export default {
   },
   created() {
     this.getTagData(this.$page.path)
+    this.pageUrl = this.$localeConfig.site + this.$page.path    
   },
-  mounted() {
-    SetScript('//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0', 'facebook-jssdk')
-    SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
-    SetScript('//platform.linkedin.com/in.js', 'linkedin-jssdk')
+  mounted() { 
     this.handlingTOC()
-    this.pageUrl = window.location
   },
 }
 </script>
+

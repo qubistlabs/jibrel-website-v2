@@ -10,13 +10,18 @@
             autocomplete='email'
             v-model='email'
             class='field -button-sibling -input -fill'
-            placeholder='Enter your email Address'
+            :placeholder='$themeLocaleConfig.data.Article.EnterYourEmailAddress'
             required=''
           >
         </label>
         <button class='send -inline' type='submit'>
-          <span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span>
+          <span class='text'>{{ $themeLocaleConfig.data.Article.Subscribe }}</span>
         </button>
+        <div class='button -only-mobile'>
+          <button class='j-button -w100 -h-big -fill-on-white-bg' type='submit' >
+          <span class='text'>{{ $themeLocaleConfig.data.Article.Subscribe }}</span>
+          </button>
+        </div>
       </form>
     </div>
   </div>
