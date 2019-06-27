@@ -3,7 +3,7 @@
     <section class='section-content -bg-gray -offset-blog'>
       <ArticlesHeader />
       <SectionName
-        :title='$themeLocaleConfig.data.SectionName.news'
+        :title='$themeLocaleConfig.data.SectionName.blog'
         positionContainer='bottom-460'
         positionTitle='top'
         colorTheme='colored'
