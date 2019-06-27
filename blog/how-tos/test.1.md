@@ -21,8 +21,6 @@ The Gulf Bonds and Sukuk Association is a Middle Eastern organization that is fo
 
 This acceptance would help Jibrel gain access to insights and a network of diverse players within the Middle Eastern debt market. Such access would help optimize offerings and create products that are not only in tune with the needs of the current market, but the needs of tomorrow as well. Jibrel would be able to better understand the main pain points of existing processes and design smart contracts and products accordingly.
 
----
-
 The GBSA also assists companies in communication with central banks, governments and regulators. Such assistance is crucial in an industry where regulation and compliance are around every corner. This will serve as another way for Jibrel to open a dialogue with bank, treasury and DCM (debt capital market) teams. The meetings and conferences held by the organization would ensure Jibrel’s voice is heard throughout the region as we forge ties with key institutions and regulators.
 
 ## Middle East: A Growing Force in the Fixed Income Market
