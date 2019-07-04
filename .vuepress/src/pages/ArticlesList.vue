@@ -63,11 +63,11 @@
       // EventBus.$off('load-limit')
       // EventBus.$off('posts-length')
     },
-    metaInfo () {
-      return MetaInfo(
-        this.$route.path,
-        this.$page.frontmatter.title,
-      )
+    metaInfo () {      
+      return MetaInfo({
+        path: this.$route.path,
+        title: this.$page.frontmatter.title,
+      })
     },
   };
 </script>

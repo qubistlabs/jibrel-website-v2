@@ -41,11 +41,11 @@
       ContactsList,
     },
     metaInfo () {
-      return MetaInfo(
-        this.$route.path,
-        this.$page.frontmatter.title,
-        this.$page.frontmatter.description
-      )
+      return MetaInfo({
+        path: this.$route.path,
+        title: this.$page.frontmatter.title,
+        description: this.$page.frontmatter.description
+      })
     },
   };
 </script>

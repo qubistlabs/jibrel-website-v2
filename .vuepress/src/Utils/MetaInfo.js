@@ -1,16 +1,29 @@
-function MetaInfo(
-  url,
-  titlePage,
-  description,
-) {
+function MetaInfo(metaData) {  
   const urlBase = 'https://jibrel.network/'
-  url ? url = urlBase + url : url = urlBase
-  titlePage ? titlePage = `- ${titlePage}` : titlePage = ''
-  description ? description : description = 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain'
+
+  function titlePageFormatter() {
+    if (metaData.isOnlyPageTitle) {
+      return metaData.title
+    }
+    if (metaData.title) {
+      return metaData.title ? `Jibrel Network - ${metaData.title}` : 'Jibrel Network'
+    }
+  }
+
+  function getPath() {
+    return metaData.path ? urlBase + metaData.path : urlBase
+  }
+
+  function getDescription() {
+    return metaData.description ? metaData.description : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain'
+  }
+
+  function getAltSocialImage() {
+    return metaData.heroImage ? urlBase + metaData.heroImage : 'https://jibrel.network/assets/misc/logo.jpg'
+  }
 
   return {
-    title: 'Jibrel Network',
-    titleTemplate: `%s ${titlePage}`,
+    titleTemplate: titlePageFormatter(),
     meta: [
       {'http-equiv': 'cleartype', 'content': 'on'},
       {'name': 'viewport', 'content': 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0'},
@@ -18,12 +31,12 @@ function MetaInfo(
       {'name': 'msapplication-TileColor', 'content': '#da532c'},
       {'name': 'theme-color', 'content': '#003DC6'},
       {'name': 'format-detection', 'content': 'telephone=no'},
-      {'name': 'description', 'content': description},
+      {'name': 'description', 'content': getDescription()},
       {'property': 'og:site_name', 'content': `Jibrel Network`},
-      {'property': 'og:title', 'content': `Jibrel Network ${titlePage}`},
-      {'property': 'og:url', 'content': url},
-      {'property': 'og:description', 'content': description},
-      {'property': 'og:image', 'content': 'https://jibrel.network/assets/misc/logo.jpg'},
+      {'property': 'og:title', 'content': titlePageFormatter()},
+      {'property': 'og:url', 'content': getPath()},
+      {'property': 'og:description', 'content': getDescription()},
+      {'property': 'og:image', 'content': getAltSocialImage()},
       {'property': 'og:image:type', 'content': 'image/jpeg'},
       {'property': 'og:image:width', 'content': '500'},
       {'property': 'og:image:height', 'content': '250'},

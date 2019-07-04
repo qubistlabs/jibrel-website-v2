@@ -38,10 +38,10 @@
       ProjectForm,
     },
     metaInfo () {
-      return MetaInfo(
-        this.$route.path,
-        this.$page.frontmatter.title,
-      )
+      return MetaInfo({
+        path: this.$route.path,
+        title: this.$page.frontmatter.title,
+      })
     },
   };
 </script>

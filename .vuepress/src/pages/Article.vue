@@ -98,11 +98,13 @@ export default {
     }
   },
   metaInfo () {
-    return MetaInfo(
-      this.$route.path,
-      this.$page.frontmatter.title,
-      this.$page.frontmatter.description
-    )
+    return MetaInfo({
+      path: this.$route.path,
+      title: this.$page.frontmatter.title,
+      description: this.$page.frontmatter.description,
+      heroImage: this.$page.frontmatter.heroImage ? `assets/img/blog/${this.$page.frontmatter.heroImage}-full.jpg` : null,
+      isOnlyPageTitle: true
+    })
   },
   methods: {
     getTagData(path) {
