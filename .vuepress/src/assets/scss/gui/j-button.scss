@@ -57,6 +57,10 @@
     height: 32px;
   }
 
+  &.-w-limit-158 {
+    max-width: 158px;
+  }
+
   &.-w-limit-180 {
     max-width: 180px;
   }
@@ -329,6 +333,16 @@
     &:hover {
       border-color: rgba($light-blue, 0.5);
       color: $light-blue;
+    }
+  }
+
+  &.-border-white-bg {
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+      border-color: rgba(#fff, 0.4);
+      color: #fff;
     }
   }
 
