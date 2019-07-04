@@ -33,6 +33,7 @@
     }
 
     @include to-mobile {
+      transition: opacity 0.2s ease-in-out;
       margin-bottom: 30px;
       text-align: center;
       max-width: 180px;
@@ -46,6 +47,100 @@
   > .form {
     @include from-mobile {
       width: calc(100% - 320px);
+    }
+  }
+
+  > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    @include from-mobile {
+      border-radius: 3px;
+    }
+
+    > .loader,
+    > .success,
+    > .error {
+      display: none;
+    }
+
+    > .success,
+    > .error {
+      text-align: center;
+    }
+
+    > .error {
+      @include from-mobile {
+        align-items: center;
+        justify-content: center;
+      }
+      
+      > .msg {
+        @include from-mobile {
+          margin-right: 24px;
+        }
+        @include to-mobile {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &.-success,
+  &.-initial-sending,
+  &.-error,
+  &.-error-retry-sending {
+    > .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &.-success {
+    > .overlay {
+      > .success {
+        display: block;
+      }
+    }
+  }
+  
+  &.-initial-sending {
+    > .overlay {
+      > .loader {
+        display: block;
+      }
+    }
+  }
+
+  &.-error,
+  &.-error-retry-sending {
+    > .overlay {
+      background-color: #f08a8b;
+      > .error {
+        @include from-mobile {
+          display: flex;
+        }
+        @include to-mobile {
+          display: block;
+        }
+      }
     }
   }
 }

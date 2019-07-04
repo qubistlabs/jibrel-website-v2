@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import EventBus from '@/Utils/EventBus.js';
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import axios from 'axios'
 
@@ -53,6 +54,8 @@ export default {
   },
   methods: {
     ajaxSend() {
+      console.log('this.status', this.status);
+      
       if (
         this.status !== STATUSES.INITIAL
         && this.status !== STATUSES.ERROR
@@ -76,8 +79,10 @@ export default {
 
       if (STATUSES.INITIAL) {
         this.status = STATUSES.INITIAL_SENDING
+        EventBus.$emit('subscribeForm', this.status)
       } else {
         this.status = STATUSES.ERROR_RETRY_SENDING
+        EventBus.$emit('subscribeForm', this.status)
       }
 
       axios.post('/api/subscribe', data)
@@ -85,9 +90,11 @@ export default {
           this.status = STATUSES.SUCCESS
           this.email = null
           this.sendGTMEvent()
+          EventBus.$emit('subscribeForm', this.status)
         })
         .catch(response => {
           this.status = STATUSES.ERROR
+          EventBus.$emit('subscribeForm', this.status)
           console.error(response.statusText)
         })
     },
@@ -96,8 +103,16 @@ export default {
         'event': 'AutoEvent',
         'eventCategory': 'Requests',
         'eventAction': 'Newsletter_sign_up',
-      })
+      }) 
     },
+  },
+  created() {
+    EventBus.$on('retrySending', data => {            
+      this.status = data
+    })
+  },
+  beforeDestroy() {
+    EventBus.$off('retrySending')
   },
 }
 </script>
