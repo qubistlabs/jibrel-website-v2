@@ -53,9 +53,7 @@ export default {
     }
   },
   methods: {
-    ajaxSend() {
-      console.log('this.status', this.status);
-      
+    ajaxSend() {      
       if (
         this.status !== STATUSES.INITIAL
         && this.status !== STATUSES.ERROR
