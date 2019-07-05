@@ -12,9 +12,8 @@
       <div class='container _container-fix -bg-white -mobile-bg-gray'>
         <div class='article-page'>
           <img
-            :src="`/assets/img/blog/${$page.frontmatter.heroImage}-full.jpg`"
-            :srcset='`/assets/img/blog/${ $page.frontmatter.heroImage }-full@2x.jpg 2x`'
-            class='preview' :alt="$page.frontmatter.title"
+            :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}.jpg`"
+            class='preview' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
           >
           <div class="container">
             <div class='header'>
@@ -120,6 +119,10 @@ export default {
         this.tagRootPath = 'blog/tokenization/'
         this.tagName = this.$themeLocaleConfig.data.Article.Tokenization
       }
+      if (path.indexOf('/blog/blockchain/') !== -1) {
+        this.tagRootPath = 'blog/blockchain/'
+        this.tagName = this.$themeLocaleConfig.data.Article.Blockchain
+      }
     },
     handlingTOC() {
       const TOCContainer = document.querySelector('.table-of-contents')
@@ -136,6 +139,9 @@ export default {
       });
 
       link.forEach(element => {
+        const href = element.getAttribute('href')
+        element.setAttribute('href', decodeURIComponent(href).replace(/[&\/\\,+()$~%.'":*?<>{}]/g, ""))
+        
         element.addEventListener('click', function (e) {
           e.preventDefault()
           const id = this.getAttribute('href')

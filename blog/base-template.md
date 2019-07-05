@@ -1,8 +1,12 @@
 ---
+index: true
 title: Jibrel – Bringing the
 description: Jibrel was recently accepted into the Gulf Bonds and Sukuk Association (GBSA). This is
 date: 2017-11-24
-heroImage: test-blog
+heroImage: 
+  name: test-blog-full
+  alt: ALT
+wordCount: 1100
 ---
 [[toc]]
  
