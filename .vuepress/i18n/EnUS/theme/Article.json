@@ -2,6 +2,7 @@
   "HowTos": "How To’s",
   "Updates": "Updates",
   "Tokenization": "Tokenization",
+  "Blockchain": "Blockchain",
   "Subscribe": "Subscribe",
   "SubscribeTitle": "Subscribe to receive Jibrel updates",
   "SubscribeSuccess": "You successfully signed up for Jibrel updates",
@@ -12,5 +13,7 @@
   "ShowMore": "Show More Posts",
   "EnterYourEmailAddress": "Enter your email address",
   "Blog": "Blog",
-  "Read": "Read"
+  "Read": "Read",
+  "AverageReadSpeed": 230,
+  "Min": "min"
 }
