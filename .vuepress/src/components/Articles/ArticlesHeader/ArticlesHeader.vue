@@ -3,9 +3,8 @@
     <div class='container _container-fix'>
       <router-link to='/blog/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link to='/blog/updates/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.HowTos}}</router-link>
         <router-link to='/blog/tokenization/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Updates}}</router-link>
-        <router-link to='/blog/how-tos/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
+        <router-link to='/blog/blockchain/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
       </div>
   </div>
 </div>
