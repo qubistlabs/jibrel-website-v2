@@ -12,13 +12,16 @@
       <router-link :to='post.path' class='box'>
         <div class='pic'>
           <img
-            :src='`/assets/img/blog/${ post.frontmatter.heroImage }${postfixImgToFirstArticle(index)}.jpg`'
-            :srcset='`/assets/img/blog/${ post.frontmatter.heroImage }${postfixImgToFirstArticle(index)}@2x.jpg 2x`'
-            :alt='post.frontmatter.title'
+            :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }.jpg`'
+            :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
             class='img'
           >
           <div class='overlay' v-if='isMainBlogPage && index !== 0'>
-            <div class='read'><button class="j-button -fill-on-white-bg -h-small">{{$themeLocaleConfig.data.Article.Read}}</button></div>
+            <div class='read'>
+              <button class="j-button -fill-on-white-bg -h-small">
+                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
+              </button>
+            </div>
           </div>
         </div>
         <div class='body'>
@@ -30,7 +33,11 @@
               {{ post.frontmatter.date | formatDate }}
             </time>
             <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
-            <div class='read' v-if='isMainBlogPage && index === 0'><button class='j-button -fill-on-white-bg -h-small'>{{$themeLocaleConfig.data.Article.Read}}</button></div>
+            <div class='read' v-if='isMainBlogPage && index === 0'>
+              <button class='j-button -fill-on-white-bg -h-small'>
+                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
+              </button>
+            </div>
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
@@ -55,11 +62,8 @@ export default {
     limit: 0,
   },
   methods: {
-    postfixImgToFirstArticle(index) {
-      if (this.isMainBlogPage) {
-        return index === 0 ? '-full' : ''
-      }
-      return ''
+    timeToRead(wordCount) {
+      return Math.round(wordCount / this.$themeLocaleConfig.data.Article.AverageReadSpeed)
     },
     setClassToFirstArticle(index) {
       if (this.isMainBlogPage) {
@@ -82,6 +86,9 @@ export default {
       if (path.indexOf('/blog/tokenization/') !== -1) {
         return '/blog/tokenization/'
       }
+      if (path.indexOf('/blog/blockchain/') !== -1) {
+        return '/blog/blockchain/'
+      }
       if (path.indexOf('/blog/') !== -1) {
         return '/blog/'
       }
@@ -95,6 +102,9 @@ export default {
       }
       if (path.indexOf('/blog/tokenization/') !== -1) {
         return this.$themeLocaleConfig.data.Article.Tokenization
+      }
+      if (path.indexOf('/blog/blockchain/') !== -1) {
+        return this.$themeLocaleConfig.data.Article.Blockchain
       }
     },
   },
