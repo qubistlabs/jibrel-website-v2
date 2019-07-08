@@ -5,9 +5,7 @@ function MetaInfo(metaData) {
     if (metaData.isOnlyPageTitle) {
       return metaData.title
     }
-    if (metaData.title) {
-      return metaData.title ? `Jibrel Network - ${metaData.title}` : 'Jibrel Network'
-    }
+    return metaData.title ? `Jibrel Network - ${metaData.title}` : 'Jibrel Network'
   }
 
   function getPath() {

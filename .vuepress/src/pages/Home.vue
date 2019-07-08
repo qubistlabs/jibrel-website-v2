@@ -147,9 +147,9 @@ export default {
     ContactsList,
   },
   metaInfo () {
-    return MetaInfo(
-      null
-    )
+    return MetaInfo({
+      isOnlyPageTitle: false
+    })
   },
 }
 </script>
