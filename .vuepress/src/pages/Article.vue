@@ -139,8 +139,8 @@ export default {
       });
 
       link.forEach(element => {
-        const href = element.getAttribute('href')
-        element.setAttribute('href', decodeURIComponent(href).replace(/[&\/\\,+()$~%.'":*?<>{}]/g, ""))
+        const href = element.getAttribute('href')        
+        element.setAttribute('href', decodeURIComponent(href).replace(/[&\/\\,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-'))
         
         element.addEventListener('click', function (e) {
           e.preventDefault()
