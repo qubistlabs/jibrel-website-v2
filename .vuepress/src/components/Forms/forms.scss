@@ -374,6 +374,9 @@
           @include from-mobile {
             display: none;
           }
+          @include to-mobile {
+            max-width: none;
+          }
           margin-top: 10px;
         }
       }
