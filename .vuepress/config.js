@@ -70,7 +70,7 @@ module.exports = {
     ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
   ],
   locales: {
-    '/': {
+    '/en/': {
       lang: 'en-US',
       shortLang: 'en',
       title: 'Jibrel Network',
@@ -113,7 +113,7 @@ module.exports = {
   },
   themeConfig: {
     locales: {
-      '/': {
+      '/en/': {
         selectText: 'ENGLISH',
         data: {
           ProjectMenu: ProjectMenuEn,
