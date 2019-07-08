@@ -3,7 +3,7 @@ title: 'DeFI: What is Decentralized Finance?'
 description: DeFi (Decentralized Finance) — the idea that open source decentralized software, such as blockchain, can transform the traditional financial world, its services services and applications. 
 date: 2019-06-05
 heroImage: 
-  name: defi
+  name: defi.jpg
   alt: Decentralized Finance System
 wordCount: 1104
 ---

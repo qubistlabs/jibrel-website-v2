@@ -12,7 +12,7 @@
       <router-link :to='post.path' class='box'>
         <div class='pic'>
           <img
-            :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }.jpg`'
+            :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }`'
             :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
             class='img'
           >

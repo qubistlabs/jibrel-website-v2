@@ -12,7 +12,7 @@
       <div class='container _container-fix -bg-white -mobile-bg-gray'>
         <div class='article-page'>
           <img
-            :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}.jpg`"
+            :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}`"
             class='preview' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
           >
           <div class="container">
@@ -30,7 +30,7 @@
                 :url="pageUrl"
                 :title="$page.frontmatter.title"
                 :description="$page.frontmatter.description"
-                :media="`${$page.frontmatter.heroImage}-full.jpg`"
+                :media="`${$page.frontmatter.heroImage}`"
                 network-tag='button'
                 twitter-user="jibrelnetwork"
                 inline-template
@@ -101,7 +101,7 @@ export default {
       path: this.$route.path,
       title: this.$page.frontmatter.title,
       description: this.$page.frontmatter.description,
-      heroImage: this.$page.frontmatter.heroImage ? `assets/img/blog/${this.$page.frontmatter.heroImage}-full.jpg` : null,
+      heroImage: this.$page.frontmatter.heroImage ? `assets/img/blog/${this.$page.frontmatter.heroImage}` : null,
       isOnlyPageTitle: true
     })
   },
