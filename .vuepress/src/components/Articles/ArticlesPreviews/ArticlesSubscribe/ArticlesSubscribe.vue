@@ -1,9 +1,9 @@
 <template>
-  <div class='articles-subscribe' :class='this.status'>
+  <div class='articles-subscribe' :class='[this.status, isOnArticleSubscribe ? "-on-article" : "-on-list" ]'>
     <h2 class="title">{{$themeLocaleConfig.data.Article.SubscribeTitle}}</h2>
     <div class='form'>
       <Subscribe />
-    </div>
+    </div> 
     <div class='overlay'>
       <div class='loader'>
         <div class='j-loader -white'>
@@ -28,6 +28,12 @@ export default {
   name: 'ArticlesSubscribe',
   components: {
     Subscribe
+  },
+  props: {
+    isOnArticleSubscribe: {
+      type: Boolean,
+      default: false
+    },
   },
   data() {
     return {

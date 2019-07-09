@@ -60,6 +60,7 @@ export default {
   props: { 
     isMainBlogPage: Boolean,
     limit: 0,
+    removeIt: '',
   },
   methods: {
     timeToRead(wordCount) {
@@ -111,15 +112,16 @@ export default {
   computed: {
     posts() {      
       const posts = this.$site.pages
-        .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index)
+        .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index && this.removeIt !== x.key)
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));        
+      
       if (!this.limit) {
         return posts
       }
 
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
-    },
+    }, 
   },
 } 
 </script>
