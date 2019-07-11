@@ -135,24 +135,17 @@ export default {
       this.$emit('close')
     },
     clickLink(label, param) {            
-      if (param === 'close' || this.$localeConfig.path + param === this.$route.path) {
-        this.$emit('close')
-      }
+      this.$emit('close')
       this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
     },
     gtmSend(category, action, label) {
-      this.$gtm.trackView({
+      this.$gtm.trackEvent({
         'event': 'AutoEvent',
         'eventCategory': category,
         'eventAction': action,
         'eventLabel': label,
         'eventValue': '',
       });
-    }
-  },
-  watch: {
-    $page: function () {      
-      this.$emit('close')
     }
   },
 }

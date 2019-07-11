@@ -102,7 +102,7 @@ export default {
     },
     gtmSend() {
       if (this.$gtm) {
-        this.$gtm.trackView({
+        this.$gtm.trackEvent({
           'event': 'virtualPageview',
           'virtualTitle': this.$page.title,
           'virtualUrl': this.$page.path,
@@ -127,7 +127,6 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-
   },
   beforeMount() {
      AOS.init({
@@ -135,11 +134,12 @@ export default {
       once: true,
     })
   },
-  mounted() {
+  mounted() {    
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
       debug: process.env.NODE_ENV === 'development',
+      vueRouter: this.$router,
     })
     Vue.use(VueYandexMetrika, {
       id: process.env.YANDEX_METRIKA_ID,

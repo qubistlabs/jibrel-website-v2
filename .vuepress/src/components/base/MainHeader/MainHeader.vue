@@ -53,7 +53,7 @@ export default {
       this.gtmSend('Menu', 'Open_menu', '')
     },
     gtmSend(category, action, label) {
-      this.$gtm.trackView({
+      this.$gtm.trackEvent({
         'event': 'AutoEvent',
         'eventCategory': category,
         'eventAction': action,
