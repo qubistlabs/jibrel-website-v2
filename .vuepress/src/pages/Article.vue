@@ -138,10 +138,17 @@ export default {
         }
       });
 
+      function anchorFormatter(anchor) {
+        const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-')
+        if (Number(anchorCLeaned.slice(0, 1))) {
+          return '#_' + anchorCLeaned       
+        }
+        return '#' + anchorCLeaned       
+      }
+
       link.forEach(element => {
         const href = element.getAttribute('href')        
-        element.setAttribute('href', decodeURIComponent(href).replace(/[&\/\\,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-'))
-        
+        element.setAttribute('href', anchorFormatter(href))             
         element.addEventListener('click', function (e) {
           e.preventDefault()
           const id = this.getAttribute('href')
