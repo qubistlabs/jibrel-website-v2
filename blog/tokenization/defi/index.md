@@ -29,7 +29,7 @@ The ability for anyone to access a financial system and its vital offerings such
 ### Transparency:
 The availability of the same information to all participants with an emphasis on the preservation of individual privacy. In a DeFi system, governments and institutions cannot restrict information, mislead, sensor or silence the people they are meant to serve.
 
-![decentralized finance applications defi](/assets/img/blog/defi-content.jpg) Decentralized finance applications defi. [Source](https://docs.google.com/presentation/d/1y5WXZOnPwJiuFiE7rAtjTqOFo7gxGlGiFb--ruG-MxE/edit#slide=id.g591dcee029_0_0) 
+![decentralized finance applications defi](/assets/img/blog/defi-content.jpg)
 
 ## What Are DeFi Applications Used For?
 
