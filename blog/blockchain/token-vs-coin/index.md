@@ -5,6 +5,7 @@ date: 2019-06-05
 heroImage: 
   name: coins-vs-tokens.jpg
   alt: Two coins next to each other, one of them is BTC, the other JNT
+  bgColor: '#E7E9EE'
 wordCount: 1067
 ---
 

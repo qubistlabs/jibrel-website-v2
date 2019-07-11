@@ -9,12 +9,14 @@
         colorTheme='colored'
         arrow='up'
       />
-      <div class='container _container-fix -bg-white -mobile-bg-gray'>
+      <div class='container _container-fix'>
         <div class='article-page'>
-          <img
-            :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}`"
-            class='preview' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
-          >
+          <div class="preview" :style="`background-color: ${$page.frontmatter.heroImage.bgColor}`">
+            <img
+              :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}`"
+              class='img' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
+            >
+          </div>
           <div class="container">
             <div class='header'>
               <div class="left">
@@ -47,18 +49,13 @@
               <slot />
             </div>
           </div>
-          <div class='subscribe'>
-            <div class='title' data-aos='fade-in' data-aos-duration='600' data-aos-delay='600'>{{$themeLocaleConfig.data.Article.SubscribeTitle}}</div>
-            <div class='form' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-              <Subscribe />
-            </div>
-          </div>
         </div>
+        <ArticlesSubscribe isOnArticleSubscribe />
       </div>
     </section>
-    <div class='section-content -bg-gray -offset-top -offset-bottom'>
+    <div class='section-content -bg-gray -offset-top -offset-bottom -mobile-small-offsset'>
       <div class="_container-fix">
-        <ArticlesPreviews :isMainBlogPage='false' limit='3' />
+        <ArticlesPreviews :isMainBlogPage='false' limit='3' :removeIt='this.$page.key' />
       </div>
     </div>
     <section class='section-content'>
@@ -76,10 +73,10 @@ import SetScript from '@/Utils/SetScript.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
-import { timeout } from 'q';
+import ArticlesSubscribe from '@/components/Articles/ArticlesPreviews/ArticlesSubscribe/ArticlesSubscribe.vue';
 
 export default {
-  name: 'NewsPage',
+  name: 'NewsPage', 
   components: {
     SpriteIcon,
     ArticlesHeader,
@@ -87,6 +84,7 @@ export default {
     ContactsList,
     Subscribe,
     ArticlesPreviews,
+    ArticlesSubscribe
   },
   data() {
     return {
@@ -157,7 +155,7 @@ export default {
       });
     }
   },
-  created() {
+  created() {    
     this.getTagData(this.$page.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path    
   },

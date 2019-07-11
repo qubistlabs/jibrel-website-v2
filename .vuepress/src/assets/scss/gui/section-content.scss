@@ -108,6 +108,9 @@
       &.-mobile-collapse-offset {
         padding-top: 0;
       }
+      &.-mobile-small-offsset {
+        padding-top: 24px;
+      }
     }
   }
 
@@ -120,6 +123,9 @@
 
       &.-mobile-collapse-offset {
         padding-top: 0;
+      }
+      &.-mobile-small-offsset {
+        padding-top: 24px;
       }
     }
   }
@@ -137,6 +143,10 @@
       > .-mobile-collapse-bottom-offset {
         padding-bottom: 0;
       }
+
+      &.-mobile-small-offsset {
+        padding-bottom: 24px;
+      }
     }
   }
 
@@ -146,6 +156,9 @@
 
     @include to-mobile {
       padding-bottom: 50px;
+      &.-mobile-small-offsset {
+        padding-bottom: 24px;
+      }
     }
   }
   // BG setting block
