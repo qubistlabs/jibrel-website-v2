@@ -16,7 +16,7 @@
             :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
             class='img'
           >
-          <div class='overlay' v-if='isMainBlogPage && index !== 0'>
+          <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage'>
             <div class='read'>
               <button class="j-button -fill-on-white-bg -h-small">
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
