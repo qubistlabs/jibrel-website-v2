@@ -112,7 +112,7 @@
           font-size: 12px;
           background-repeat: no-repeat;
           padding-left: 34px;
-          padding-right: 15 px;
+          padding-right: 15px;
           background-size: 24px;
 
           &:not(:first-child) {
@@ -370,7 +370,7 @@
     
           &:before {
             
-            content: counters(item, ".") " "; 
+            content: counters(item, ".") ".  "; 
             position: absolute;
             top: 0;
             left: 0;
