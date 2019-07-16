@@ -70,7 +70,7 @@ export default {
       this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
     },
     gtmSend(category, action, label) {
-      this.$gtm.trackView({
+      this.$gtm.trackEvent({
         'event': 'AutoEvent',
         'eventCategory': category,
         'eventAction': action,
