@@ -13,6 +13,11 @@
     &.-distribute-evenly {
       justify-content: space-between;
     }
+
+    &.-coverlet-30 {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
   }
 
   @include to-mobile {
@@ -72,6 +77,18 @@
       max-width: 320px;
     }
 
+    &.-w-limit-350 {
+      max-width: 350px;
+    }
+    
+    @include to-tablet-portrait {
+      &.-two-col-tablet {
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
     @include to-mobile {
       width: 100%;
       margin-left: auto;
@@ -94,18 +111,30 @@
       margin-left: auto;
       margin-right: auto;
 
-      @include from-mobile {
+      @include from-tablet-landscape {
         padding-left: 70px;
         padding-right: 70px;
 
+        &.-padding-medium {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+
+      @include to-tablet-landscape {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      @include from-mobile {
         &.-no-offset {
           padding-left: 0;
           padding-right: 0;
         }
 
         &.-padding-small {
-          padding-left: 30px;
-          padding-right: 30px;
+          padding-left: 15px;
+          padding-right: 15px;
         }
       }
 
@@ -388,7 +417,7 @@
   }
 
   &.-inner-grid {
-    @include from-mobile {
+    @include from-tablet-portrait {
       > .item {
         border-width: 1px;
         border-style: solid;
@@ -411,7 +440,7 @@
   }
 
   &.-inner-border-vertical {
-    @include from-mobile {
+    @include from-tablet-portrait {
       > .item {
         border-right-width: 1px;
         border-right-style: solid;
@@ -425,7 +454,7 @@
   }
 
   &.-inner-border-separator {
-    @include from-mobile {
+    @include from-tablet-portrait {
       > .item:not(:last-child) {
         border-right-width: 1px;
         border-right-style: solid;
@@ -434,7 +463,7 @@
   }
 
   &.-inner-border-gray {
-    @include from-mobile {
+    @include from-tablet-portrait {
       &.-inner-border-vertical,
       &.-inner-border-separator {
         > .item {
@@ -460,7 +489,7 @@
   }
 
   &.-inner-border-light-gray {
-    @include from-mobile {
+    @include from-tablet-portrait {
       &.-inner-border-vertical,
       &.-inner-border-separator {
         > .item {
@@ -486,7 +515,7 @@
   }
 
   &.-inner-border-white {
-    @include from-mobile {
+    @include from-tablet-portrait {
       &.-inner-border-vertical,
       &.-inner-grid {
         > .item {

@@ -11,10 +11,6 @@
   box-sizing: border-box;
   position: absolute;
 
-  @include from-mobile {
-    min-width: 1150px;
-  }
-
   @include to-mobile {
     padding-top: 20px;
   }

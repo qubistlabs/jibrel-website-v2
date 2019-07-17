@@ -4,7 +4,7 @@
 .main-footer {
   background-color: #f5f6fa;
 
-  @include to-mobile {
+  @include to-tablet-portrait {
     display: none;
   }
 

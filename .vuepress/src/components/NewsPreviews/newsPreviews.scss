@@ -15,6 +15,14 @@
     margin-left: -21px;
   }
 
+  @media (min-width: 768px) and (max-width: 860px) {
+    &.-last-hide {
+      > .item:last-child {
+        display: none;
+      }
+    }
+  }
+
   > .item {
     box-sizing: border-box;
 
@@ -22,6 +30,10 @@
       margin-bottom: 50px;
       padding-left: 21px;
       padding-right: 21px;
+      width: 50%;
+    }
+
+     @include from-tablet-portrait {
       width: 33.333%;
     }
 
@@ -49,27 +61,23 @@
         overflow: hidden;
         border-radius: 3px 3px 0 0;
 
-        @include to-mobile {
+        @include to-tablet-landscape {
           height: 180px;
         }
 
         > .img {
-          width: 360px;
+          width: calc(100% + 2px);
+          height: 100%;
+          object-fit: cover;
           margin-left: -1px;
           margin-top: -1px;
-
-          @include to-mobile {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
         }
       }
 
       > .body {
         padding: 35px 40px;
 
-        @include to-mobile {
+        @include to-tablet-landscape {
           padding: 15px 20px;
         }
 

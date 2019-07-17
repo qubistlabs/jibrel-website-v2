@@ -42,7 +42,7 @@
       background-color: #fff;
     }
 
-    @include to-mobile {
+    @include to-tablet-portrait {
       padding: 0;
 
       &.-mobile-bg-blue {
@@ -56,7 +56,7 @@
       text-align: center;
       margin-bottom: 55px;
 
-      @include to-mobile {
+      @include to-tablet-portrait {
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 30px;
@@ -67,7 +67,7 @@
       }
 
       &.-mobile-white {
-        @include to-mobile {
+        @include to-tablet-portrait {
           color: #fff;
         }
       }
@@ -89,10 +89,10 @@
       }
 
       &.-inline {
-        @include from-mobile {
+        @include from-tablet-portrait {
           display: flex;
         }
-        @include to-mobile {
+        @include to-tablet-portrait {
           > .item {
             > .field.-input.-fill {
               border: 1px solid rgba($base, 0.3);
@@ -111,7 +111,7 @@
         }
 
         &.-button-sibling {
-          @include from-mobile {
+          @include from-tablet-portrait{
             width: calc(100% - 80px);
           }
 
@@ -149,7 +149,7 @@
           }
 
           &.-mobile-white {
-            @include to-mobile {
+            @include to-tablet-portrait {
               color: rgba(#fff, 0.6);
             }
           }
@@ -166,7 +166,7 @@
           transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
           background-color: transparent;
 
-          @include to-mobile {
+          @include to-tablet-portrait {
             font-size: 14px;
           }
 
@@ -194,7 +194,7 @@
           }
 
           &.-mobile-white {
-            @include to-mobile {
+            @include to-tablet-portrait {
               color: #fff;
               border-color: rgba(#fff, 0.15);
               background-color: transparent;
@@ -224,7 +224,7 @@
             border: 1px solid transparent;
 
             &.-button-sibling {
-              @include from-mobile {
+              @include from-tablet-portrait{
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
               }
@@ -257,7 +257,7 @@
               padding-right: 15px;
             }
 
-            @include to-mobile {
+            @include to-tablet-portrait {
               height: 60px;
             }
 
@@ -280,7 +280,7 @@
             resize: none;
             margin-top: 25px;
 
-            @include to-mobile {
+            @include to-tablet-portrait {
               height: 130px;
             }
           }
@@ -335,7 +335,7 @@
             height: 56px;
           }
 
-          @include to-mobile {
+          @include to-tablet-portrait {
             display: none;
           }
 
@@ -371,10 +371,10 @@
         margin-top: 30px;
 
         &.-only-mobile {
-          @include from-mobile {
+          @include from-tablet-portrait{
             display: none;
           }
-          @include to-mobile {
+          @include to-tablet-portrait {
             max-width: none;
           }
           margin-top: 10px;

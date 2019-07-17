@@ -36,28 +36,28 @@ headerColor: white
     </section>
     <section class='section-content -offset-bottom -offset-top'>
       <div class='container _container-fix'>
-        <div class='card-tile -distribute-evenly'>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+        <div class='card-tile -distribute-evenly -coverlet-30'>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/scale.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_1.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/passport.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_2.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/cloud-data.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_3.title}}</h2>

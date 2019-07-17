@@ -29,19 +29,19 @@ headerColor: white
       <div class='container _container-fix'>
         <div class='card-tile'>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_1.title}}</h2>
               <p class='descr'>{{$localeConfig.data.MissionVisionValues.card_1.description}}</p>
             </div>
           </div>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.MissionVisionValues.card_2.description}}</p>
             </div>
           </div>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_3.title}}</h2>
               <p class='descr '>{{$localeConfig.data.MissionVisionValues.card_3.description}}</p>
             </div>
@@ -56,7 +56,7 @@ headerColor: white
         </h2>
         <div class='card-tile -inner-border-separator -inner-border-gray -offset-top'>
           <div class='item -two-col' data-aos="fade-right" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <div class='img -base-icon'>
                 <img src="@/assets/img/general/icon/i-business-female-chat.svg" class="icon" width="56" height="57" alt="icon">
               </div>
@@ -65,7 +65,7 @@ headerColor: white
             </div>
           </div>
           <div class='item -two-col' data-aos="fade-left" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <div class='img -base-icon'>
                 <SpriteIcon name='i-business-statistics' class='icon -stroke'/>
               </div>
