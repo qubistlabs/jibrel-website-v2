@@ -39,10 +39,10 @@
               >
                 <div class="share">
                   <network network="facebook" class="item -fb">{{$themeLocaleConfig.data.Share.Share}}</network>
-                  <network network="linkedin" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
-                  <network network="twitter" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
+                  <network network="twitter" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
+                  <network network="linkedin" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
                 </div>
-              </social-sharing>
+              </social-sharing> 
             </div>
             <h1 class='title'>{{$page.frontmatter.title}}</h1>
             <div class='wysiwyg'>
