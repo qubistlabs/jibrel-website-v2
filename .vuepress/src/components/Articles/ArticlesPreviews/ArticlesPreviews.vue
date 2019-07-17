@@ -26,12 +26,6 @@
         </div>
         <div class='body'>
           <div class='row'>
-            <time
-              class='date'
-              :datetime='post.frontmatter.date'
-            >
-              {{ post.frontmatter.date | formatDate }}
-            </time>
             <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0'>
               <button class='j-button -fill-on-white-bg -h-small'>
