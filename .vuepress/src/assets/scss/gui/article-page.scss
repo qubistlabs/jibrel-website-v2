@@ -70,15 +70,6 @@
           display: flex;
           align-items: center;
         }
-      
-        > .date {
-          font-size: 13px;
-          color: $base-o;
-          display: block;
-          margin-right: 30px;
-      
-          @include ls(10);
-        }
   
         > .tag {
           background-color: rgba($blue, 0.1);
