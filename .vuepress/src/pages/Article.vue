@@ -20,12 +20,6 @@
           <div class="container">
             <div class='header'>
               <div class="left">
-                <time
-                  class='date'
-                  :datetime='$page.frontmatter.date'
-                >
-                  {{ $page.frontmatter.date | formatDate }}
-                </time>
                 <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
               </div>
               <social-sharing 
