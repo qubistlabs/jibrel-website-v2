@@ -136,22 +136,6 @@
             align-items: center;
           }
 
-          > .date {
-            @include ls(10);
-
-            font-size: 13px;
-            line-height: (24/13);
-            color: $base-o;
-
-            @include from-mobile {
-              margin-right: 30px;
-            }
-            @include to-mobile {
-              display: block;
-              margin-bottom: 10px;
-            }
-          }
-
           > .tag {
             background-color: rgba($blue, 0.1);
             font-size: 13px;
