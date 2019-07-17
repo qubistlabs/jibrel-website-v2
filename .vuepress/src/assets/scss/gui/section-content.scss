@@ -427,11 +427,16 @@
     }
 
     > .descr {
-      max-width: 800px;
+      max-width: 860px;
       font-size: 14px;
       font-weight: normal;
       color: rgba($base, 0.6);
       line-height: (24/14);
+      
+      @include from-mobile {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
 
       &.-white {
         color: rgba(#fff, 0.6);

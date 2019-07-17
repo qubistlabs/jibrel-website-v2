@@ -24,9 +24,16 @@
       padding-right: 21px;
 
       &:not(.-first-card) {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      &:not(.-first-card) {
         width: 33.333%;
       }
     }
+    
 
     &.-first-card {
       width: 100%;
@@ -34,7 +41,7 @@
       > .box {
         height: auto;
 
-        @include from-mobile {
+        @include from-tablet-landscape {
           > .pic {
             height: 415px;
           }
@@ -104,7 +111,7 @@
           background-color: rgba(#fff, 0.8);
           opacity: 0;
           transition: opacity 0.2s ease-in-out;
-          @include to-mobile {
+          @include to-tablet-landscape {
             display: none;
           }
 

@@ -37,11 +37,15 @@
   }
 
   > .container {
-    @include from-mobile {
+    @include from-tablet-portrait {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @include from-tablet-landscape {
       padding-left: 210px;
       padding-right: 210px;
     }
-    @include to-mobile {
+    @include to-tablet-portrait {
       padding-left: 30px;
       padding-right: 30px;
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class='news-preview'>
+  <div class='news-preview' :class="limit === '3' && '-last-hide'">
     <div v-for='(post, index) in posts' class='item' data-aos='fade-down' :data-aos-duration='300 + index % 3 * 300' data-aos-delay='250' :key='post.path'>
       <router-link :to='post.path' class='box' :class='isBordered && "-border"'>
         <div class='pic'>
