@@ -48,7 +48,11 @@
   }
 
   &.-full-screen {
+    min-height: 420px;
     height: 100vh;
+    @include to-mobile {
+      min-height: 0;
+    }
   }
 
   &.-center-child-box {
