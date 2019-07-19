@@ -1,5 +1,5 @@
 <template>
-  <div class='select-language -in-header' :class='isOpened && "-open"'>
+  <div class='select-language' :class='isOpened && "-open"'>
     <button class='toggle' @click='isOpened = true'>
       <span class='current' :class='`-${colorTheme}`'>{{language.current}}</span>
       <SpriteIcon name='i-che-b' :class='`icon -${colorTheme}`'/>
