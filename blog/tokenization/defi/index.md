@@ -20,14 +20,11 @@ Perhaps the most popular application of DeFi is [Bitcoin](https://www.coindesk.c
 The main goal of DeFi is to create a unified and permissionless banking and monetary system on top of which decentralized and censorship-free products could be developed. The decentralized applications built in this system are called [DApps](https://blockchainhub.net/decentralized-applications-dapps/). Instead of running on a centralized server, they run on a peer-to-peer network with no central point of failure. This is quite different to centralized applications that most of us use every day such as Uber, Netflix, YouTube and every social media platform. Such applications are built with three key principles in mind:
 
 
-### Open Source & Interoperability: 
-The commitment of software developers and the systems they create to openly share information with one another. 
+**Open Source & Interoperability:** The commitment of software developers and the systems they create to openly share information with one another. 
 
-### Inclusion & Accessibility:
-Enabling access to the financial system and its vital offerings, such as, mortgages, insurance and business loans to anyone in the world. With over 1.7 billion people still unbanked today, such applications could have a dramatic impact on the planet by removing the barriers that have plagued these people for decades.
+**Inclusion & Accessibility:** Enabling access to the financial system and its vital offerings, such as, mortgages, insurance and business loans to anyone in the world. With over 1.7 billion people still unbanked today, such applications could have a dramatic impact on the planet by removing the barriers that have plagued these people for decades.
 
-### Transparency:
-The availability of the same information to all participants with an emphasis on the preservation of individual privacy. In a DeFi system, governments and institutions cannot restrict information, mislead, sensor or silence the people they are meant to serve.
+**Transparency:** The availability of the same information to all participants with an emphasis on the preservation of individual privacy. In a DeFi system, governments and institutions cannot restrict information, mislead, sensor or silence the people they are meant to serve.
 
 ![decentralized finance applications defi](/assets/img/blog/defi-content.jpg)
 
@@ -35,20 +32,15 @@ The availability of the same information to all participants with an emphasis on
 
 While the full potential of decentralized financial applications is still some years away, there are already many different applications that are in use today. In third world countries, DApps are attempting to provide more life-essential functions such as lending and payments. In more developed countries with fully functioning banking systems, decentralized applications are primarily being used for trading, investing, gaming and gambling. The current biggest use cases are:
 
-### Loans & Lending:
-While traditional lending requires one to go an individual bank to borrow money, a decentralized financial application approach allows a borrower to utilize a wider range of lenders.
+**Loans & Lending:** While traditional lending requires one to go an individual bank to borrow money, a decentralized financial application approach allows a borrower to utilize a wider range of lenders.
 
-### Stablecoins:
-These are digital assets that offer protection against the volatile nature of the markets. They are pegged to underlying assets, such as the US dollar, and allow traders and investors a temporary stable store of value and unit of account when trading cryptocurrencies.
+**Stablecoins:** These are digital assets that offer protection against the volatile nature of the markets. They are pegged to underlying assets, such as the US dollar, and allow traders and investors a temporary stable store of value and unit of account when trading cryptocurrencies.
 
-### Payment Systems:
-Applications like Bitcoin that tend to have their own digital coins or tokens that are used to facilitate transactions, storage etc.  
+**Payment Systems:** Applications like Bitcoin that tend to have their own digital coins or tokens that are used to facilitate transactions, storage etc.  
 
-### Tokenization: 
-This refers to placing real world physical assets, such as [commodities](https://medium.com/jibrel-network/jcom-commodities-on-chain-bbc8e9aa03a8), [real estate](https://medium.com/jibrel-network/how-jibrel-is-tokenizing-real-estate-a2db513666c2), [art](https://medium.com/jibrel-network/7-ways-security-tokens-will-change-the-world-fbf8afee038e) etc., onto the blockchain. Such a process allows for benefits of fractional ownership of physical and non-divisible assets while eliminating many overhead, compliance and middlemen costs associated with these industries. 
+**Tokenization:** This refers to placing real world physical assets, such as [commodities](https://medium.com/jibrel-network/jcom-commodities-on-chain-bbc8e9aa03a8), [real estate](https://medium.com/jibrel-network/how-jibrel-is-tokenizing-real-estate-a2db513666c2), [art](https://medium.com/jibrel-network/7-ways-security-tokens-will-change-the-world-fbf8afee038e) etc., onto the blockchain. Such a process allows for benefits of fractional ownership of physical and non-divisible assets while eliminating many overhead, compliance and middlemen costs associated with these industries. 
 
-### Financial Exchanges: 
-[Decentralized exchanges](https://cryptocurrencyfacts.com/what-is-a-dex/) allow peer-to-peer trading of assets on platforms where users actually hold their funds along with their private keys. This is a stark contrast to centralized exchanges, which are constantly at risk of hacks and [other issues](https://www.coindesk.com/bitfinex-ny-prosecutors-tether-850-million-allege). 
+**Financial Exchanges:** [Decentralized exchanges](https://cryptocurrencyfacts.com/what-is-a-dex/) allow peer-to-peer trading of assets on platforms where users actually hold their funds along with their private keys. This is a stark contrast to centralized exchanges, which are constantly at risk of hacks and [other issues](https://www.coindesk.com/bitfinex-ny-prosecutors-tether-850-million-allege). 
 
 ## What Are Examples of DeFi Applications?
 
