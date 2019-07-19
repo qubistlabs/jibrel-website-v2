@@ -1,12 +1,12 @@
 <template>
   <div class='articles-preview'>
-    <div 
-      v-for='(post, index) in posts' 
-      class='item' 
+    <div
+      v-for='(post, index) in posts'
+      class='item'
       :class='setClassToFirstArticle(index)'
-      data-aos='fade-down' 
-      :data-aos-duration='aosDuration(index)' 
-      data-aos-delay='250' 
+      data-aos='fade-down'
+      :data-aos-duration='aosDuration(index)'
+      data-aos-delay='250'
       :key='post.path'
     >
       <router-link :to='post.path' class='box'>
@@ -38,20 +38,20 @@
           <p class='descr'>{{ post.frontmatter.description }}</p>
         </div>
       </router-link>
-      <ArticlesSubscribe v-if='isMainBlogPage && index === 0' />
+      <Subscribe v-if='isMainBlogPage && index === 0' />
     </div>
   </div>
 </template>
 
 <script>
 import EventBus from '@/Utils/EventBus.js';
-import ArticlesSubscribe from './ArticlesSubscribe/ArticlesSubscribe.vue';
+import Subscribe from '../../Forms/Subscribe/Subscribe.vue';
 export default {
   name: 'ArticlesPreviews',
   components: {
-    ArticlesSubscribe
+    Subscribe,
   },
-  props: { 
+  props: {
     isMainBlogPage: Boolean,
     limit: 0,
     removeIt: '',
@@ -72,7 +72,7 @@ export default {
       return 300 + index % 3 * 300
     },
     getTagUrl(path) {
-      if (path.indexOf('/blog/how-tos/') !== -1) {        
+      if (path.indexOf('/blog/how-tos/') !== -1) {
         return '/blog/how-tos/'
       }
       if (path.indexOf('/blog/updates/') !== -1) {
@@ -104,20 +104,20 @@ export default {
     },
   },
   computed: {
-    posts() {      
+    posts() {
       const posts = this.$site.pages
         .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index && this.removeIt !== x.key)
-        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));        
-      
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+
       if (!this.limit) {
         return posts
       }
 
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
-    }, 
+    },
   },
-} 
+}
 </script>
 
 
