@@ -3,7 +3,7 @@
     <header class='main-header' :class='isSmall && "-small -bg-white"'>
       <div class='container _container-fluid'>
         <ProjectLogo :colorTheme='colorTheme' animationType='fade-down'/>
-        <div class='actions'>
+        <div class='actions' :class="isAnimation && '-animation'">
           <SelectLanguage :colorTheme='colorTheme' v-if="this.$route.path.indexOf('/blog/') === -1"/>
           <div @click='openMenu'>
             <MenuToggle :colorTheme='colorTheme' />
@@ -38,6 +38,7 @@ export default {
   data() {
     return {
       isOpened: false,
+      isAnimation: true,
     }
   },
   methods: {
@@ -61,6 +62,11 @@ export default {
         'eventValue': '',
       });
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isAnimation = false
+    }, 1500);
   }
 }
 </script>
