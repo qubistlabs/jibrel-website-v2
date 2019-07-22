@@ -14,14 +14,15 @@ headerColor: white
       />
       <div class='container -center-box _container-fix'>
         <div class='preview-info -mobile-offset'>
-          <div class='text '>
+          <div class='text'>
+            <h1 class='_visibility-hidden'>Jibrel Network</h1>
             <h2 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ScreenPreview.homePage.title}}</h2>
             <div class='descr -medium-size -white -color -text-center -box-center' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.homePage.description}}
             </div>
           </div>
           <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-            <ProjectForm :isJcashOpen='true' eventType='sign-up-success'/>
+            <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='jcash'/>
           </div>
         </div>
       </div>
@@ -35,28 +36,28 @@ headerColor: white
     </section>
     <section class='section-content -offset-bottom -offset-top'>
       <div class='container _container-fix'>
-        <div class='card-tile -distribute-evenly'>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+        <div class='card-tile -distribute-evenly -coverlet-30'>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/scale.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_1.title}}</h2>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_1.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/passport.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_2.description}}</p>
             </div>
           </div>
-          <div class='item -three-col -w-limit-320' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-            <div class='box -color -no-offset'>
-              <div class='img '>
+          <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
+            <div class='box -color -padding-small'>
+              <div class='img'>
                 <img src='@/assets/img/general/icon/cloud-data.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
               <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_3.title}}</h2>
@@ -134,7 +135,7 @@ headerColor: white
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
 export default {
@@ -146,9 +147,9 @@ export default {
     ContactsList,
   },
   metaInfo () {
-    return MetaInfo(
-      null
-    )
+    return MetaInfo({
+      isOnlyPageTitle: false
+    })
   },
 }
 </script>

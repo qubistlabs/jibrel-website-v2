@@ -48,7 +48,11 @@
   }
 
   &.-full-screen {
+    min-height: 420px;
     height: 100vh;
+    @include to-mobile {
+      min-height: 0;
+    }
   }
 
   &.-center-child-box {
@@ -91,6 +95,13 @@
     }
   }
 
+  &.-offset-blog {
+    padding-top: 235px;
+    @include to-mobile {
+      padding-top: 175px;
+    }
+  }
+
   &.-offset-top,
   > .-offset-top {
     padding-top: 110px;
@@ -100,6 +111,9 @@
 
       &.-mobile-collapse-offset {
         padding-top: 0;
+      }
+      &.-mobile-small-offsset {
+        padding-top: 24px;
       }
     }
   }
@@ -113,6 +127,9 @@
 
       &.-mobile-collapse-offset {
         padding-top: 0;
+      }
+      &.-mobile-small-offsset {
+        padding-top: 24px;
       }
     }
   }
@@ -130,6 +147,10 @@
       > .-mobile-collapse-bottom-offset {
         padding-bottom: 0;
       }
+
+      &.-mobile-small-offsset {
+        padding-bottom: 24px;
+      }
     }
   }
 
@@ -139,6 +160,9 @@
 
     @include to-mobile {
       padding-bottom: 50px;
+      &.-mobile-small-offsset {
+        padding-bottom: 24px;
+      }
     }
   }
   // BG setting block
@@ -407,11 +431,16 @@
     }
 
     > .descr {
-      max-width: 800px;
+      max-width: 860px;
       font-size: 14px;
       font-weight: normal;
       color: rgba($base, 0.6);
       line-height: (24/14);
+      
+      @include from-mobile {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
 
       &.-white {
         color: rgba(#fff, 0.6);

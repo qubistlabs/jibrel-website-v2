@@ -12,8 +12,13 @@
   }
 
   &.-mobile-offset {
+    @include to-tablet-portrait {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
     @include to-mobile {
-      padding-bottom: 7%;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -28,14 +33,24 @@
 
     @include from-mobile {
       &.-inner {
-        padding-left: 95px;
-        box-sizing: border-box;
+        padding-left: 65px;
         padding-top: 65px;
         padding-bottom: 65px;
+        box-sizing: border-box;
 
         &.-reverse {
           flex-direction: row-reverse;
           padding-left: 0;
+          padding-right: 30px;
+        }
+      }
+    }
+
+    @include from-tablet-landscape {
+      &.-inner {
+        padding-left: 95px;
+
+        &.-reverse {
           padding-right: 55px;
         }
       }
@@ -69,7 +84,7 @@
     flex-shrink: 0;
 
     &.-up-visual-center {
-      @include from-mobile {
+      @include from-tablet-portrait {
         padding-bottom: 70px;
       }
     }
@@ -151,7 +166,7 @@
   > .picture {
     position: relative;
 
-    @include from-mobile {
+    @include from-tablet-landscape {
       padding-left: 30px;
     }
 
@@ -177,13 +192,13 @@
       }
 
       &.-jcash-desk {
-        left: -124px;
+        left: -20.5%;
       }
 
       &.-jcash-keyboard {
         position: absolute;
         top: 84%;
-        left: 116px;
+        left: 18%;
       }
 
       &.-enterprise-left,
@@ -252,7 +267,7 @@
     > .picture {
       padding-left: 0;
 
-      @include from-mobile {
+      @include from-tablet-landscape {
         padding-right: 30px;
       }
     }

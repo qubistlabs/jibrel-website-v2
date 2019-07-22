@@ -9,6 +9,7 @@
         arrow='up'
       />
       <div class='container _container-fix-small -bg-white -mobile-bg-gray'>
+        <h1 class='_visibility-hidden'>{{this.$page.frontmatter.title}}</h1>
         <ListVacancies />
       </div>
     </section>
@@ -40,11 +41,11 @@
       ContactsList,
     },
     metaInfo () {
-      return MetaInfo(
-        this.$route.path,
-        this.$page.frontmatter.title,
-        this.$page.frontmatter.description
-      )
+      return MetaInfo({
+        path: this.$route.path,
+        title: this.$page.frontmatter.title,
+        description: this.$page.frontmatter.description
+      })
     },
   };
 </script>

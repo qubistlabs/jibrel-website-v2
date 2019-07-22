@@ -15,9 +15,9 @@ headerColor: white
       <div class='container -center-box _container-fix'>
         <div class='preview-info'>
           <div class='text '>
-            <h2 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>
+            <h1 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.aboutPage.title}}
-            </h2>
+            </h1>
             <div class='descr -color -white -text-center -box-center -medium-size' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
               {{$localeConfig.data.ScreenPreview.aboutPage.description}}
             </div>
@@ -29,19 +29,19 @@ headerColor: white
       <div class='container _container-fix'>
         <div class='card-tile'>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_1.title}}</h2>
               <p class='descr'>{{$localeConfig.data.MissionVisionValues.card_1.description}}</p>
             </div>
           </div>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_2.title}}</h2>
               <p class='descr '>{{$localeConfig.data.MissionVisionValues.card_2.description}}</p>
             </div>
           </div>
           <div class='item -three-col' data-aos="fade-down" data-aos-duration="900" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <h2 class='title -large-size'>{{$localeConfig.data.MissionVisionValues.card_3.title}}</h2>
               <p class='descr '>{{$localeConfig.data.MissionVisionValues.card_3.description}}</p>
             </div>
@@ -56,7 +56,7 @@ headerColor: white
         </h2>
         <div class='card-tile -inner-border-separator -inner-border-gray -offset-top'>
           <div class='item -two-col' data-aos="fade-right" data-aos-duration="300" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <div class='img -base-icon'>
                 <img src="@/assets/img/general/icon/i-business-female-chat.svg" class="icon" width="56" height="57" alt="icon">
               </div>
@@ -65,7 +65,7 @@ headerColor: white
             </div>
           </div>
           <div class='item -two-col' data-aos="fade-left" data-aos-duration="600" data-aos-delay="150">
-            <div class='box -color -padding-small'>
+            <div class='box -color -padding-medium'>
               <div class='img -base-icon'>
                 <SpriteIcon name='i-business-statistics' class='icon -stroke'/>
               </div>
@@ -130,11 +130,11 @@ export default {
     SpriteIcon,
   },
   metaInfo () {
-    return MetaInfo(
-      this.$route.path,
-      this.$page.frontmatter.title,
-      this.$page.frontmatter.description
-    )
+    return MetaInfo({
+      path: this.$route.path,
+      title: this.$page.frontmatter.title,
+      description: this.$page.frontmatter.description
+    })
   },
 }
 </script>

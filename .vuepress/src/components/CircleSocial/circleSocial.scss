@@ -8,7 +8,7 @@
     &:not(:last-child) {
       margin-right: 10px;
 
-      @include to-mobile {
+      @include to-tablet-portrait {
         margin-right: 20px;
       }
     }
@@ -20,7 +20,7 @@
       border-radius: 100px;
       transition: fill 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-      @include to-mobile {
+      @include to-tablet-portrait {
         width: 32px;
         height: 32px;
       }

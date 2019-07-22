@@ -14,8 +14,11 @@
   "GetInTouch": "연락하기",
   "Facebook": "페이스북",
   "Twitter": "트위터",
+  "Telegram": "텔레그램",
   "Linkedin": "링크드인",
   "Medium": "미디엄",
+  "KakaoTalk": "카카오 톡",
   "Social": "소셜",
-  "SignIn": "로그인"
+  "SignIn": "로그인",
+  "Blog": "블로그"
 }

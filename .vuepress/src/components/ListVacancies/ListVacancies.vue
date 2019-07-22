@@ -20,6 +20,11 @@
 
 <script>
 import JobInfo from '@/components/JobInfo/JobInfo.vue'
+const cityOrder = {
+  'Saint-Petersburg, Russia': 0,
+  'New York, USA': 1,
+  'Dubai, UAE': 2,
+}
 export default {
   name: 'ListVacancies',
   components: {
@@ -30,8 +35,10 @@ export default {
   },
   computed: {
     posts() {        
+      
       const posts = this.$site.pages
-        .filter(x => x.path.startsWith(this.$localeConfig.path + 'careers/') && !x.frontmatter.index && x.frontmatter.published)            
+        .filter(x => x.path.startsWith(this.$localeConfig.path + 'careers/') && !x.frontmatter.index && x.frontmatter.published)     
+        .sort((a, b) => cityOrder[a.frontmatter.place] - cityOrder[b.frontmatter.place]) 
       if (!this.limit) {
         return posts
       }

@@ -9,6 +9,7 @@
     <Content v-if='typePage === "precast-page"'/>
     <News v-if='typePage === "/news/"' > <Content /> </News>
     <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
+    <Article v-if='typePage === "/blog/"' > <Content /> </Article>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
@@ -26,24 +27,25 @@
 <script>
 import Vue from 'vue'
 import Meta from 'vue-meta'
+import SocialSharing from 'vue-social-sharing'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
+import Article from '@/pages/Article.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
-import ProjectForm from '@/components/ProjectForm/ProjectForm.vue'
+import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 
 import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
-// import VueRouter from 'vue-router';
-// const router = new VueRouter({ routes, mode, linkActiveClass });
 
 Vue.use(Meta)
+Vue.use(SocialSharing);
 
 export default {
   components: {
@@ -53,6 +55,7 @@ export default {
     SpriteIcon,
     News,
     Vacancy,
+    Article,
     ModalWindow,
     ProjectForm,
   },
@@ -79,13 +82,19 @@ export default {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
         this.typePage = '/careers/'
+      } else if (!this.$page.frontmatter.index && route.indexOf(/blog/) !== -1){
+        this.typePage = '/blog/'
       } else {
         this.typePage = 'precast-page'
       }
     },
     getHeaderSize() {
       const route = this.$route.path
-      if (route.indexOf(/news/) !== -1 || route.indexOf(/careers/) !== -1) {
+      if (
+        route.indexOf(/news/) !== -1 ||
+        route.indexOf(/careers/) !== -1 ||
+        route.indexOf(/blog/) !== -1
+      ) {
         this.headerSize = true
       } else {
         this.headerSize = false
@@ -93,7 +102,7 @@ export default {
     },
     gtmSend() {
       if (this.$gtm) {
-        this.$gtm.trackView({
+        this.$gtm.trackEvent({
           'event': 'virtualPageview',
           'virtualTitle': this.$page.title,
           'virtualUrl': this.$page.path,
@@ -118,7 +127,6 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-
   },
   beforeMount() {
      AOS.init({
@@ -126,13 +134,12 @@ export default {
       once: true,
     })
   },
-  mounted() {
+  mounted() {    
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
       debug: process.env.NODE_ENV === 'development',
-      // vueRouter: router, // Pass the router instance to automatically sync with router (optional)
-      // ignoredViews: ['homepage'] // If router, you can exclude some routes name (case insensitive) (optional)
+      vueRouter: this.$router,
     })
     Vue.use(VueYandexMetrika, {
       id: process.env.YANDEX_METRIKA_ID,

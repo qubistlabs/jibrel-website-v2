@@ -1,0 +1,119 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.articles-heaader {
+  @include all-reset;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 106px;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  background-color: $light-gray;
+
+  @include to-mobile {
+    top: 98px;
+    height: 80px;
+  }
+
+  &.-sticky {
+    box-shadow: 0px 2px 8px #DEE0E8;
+    position: fixed;
+    top: 0;
+  }
+  
+  > .container {
+    display: flex;
+    align-items: center;
+
+    @include to-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+    > .title {
+      font-size: 24px;
+      padding-bottom: 3px;
+      position: relative;
+      font-weight: 600;
+      color: $base;
+      transition: color 0.2s ease-in-out;
+      margin-right: 20px;
+
+      &:hover {
+        color: $light-blue;
+      }
+      
+      @include from-mobile {
+        padding-right: 60px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 32px;
+          background-color: rgba($base, 0.2);
+          position: absolute;
+          top: 50%;
+          margin-top: -16px;
+          right: 0;
+        }
+      }
+
+      @include to-mobile {
+        font-size: 16px;
+      }
+    }
+
+    > .tabs {
+      display: flex;
+      align-items: center;
+
+      > .item {
+        color: $base;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 40px;
+        position: relative;
+        transition: color 0.2s ease-in-out;
+
+        @include to-mobile {
+          padding-right: 20px;
+          margin-left: 0;
+        }
+    
+        &:hover {
+          color: $light-blue;
+        }
+    
+        &:before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 4px;
+          background-color: $blue;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          bottom: -8px;
+          left: 50%;
+          margin-left: -2px;
+        }
+    
+        &.-current {
+          color: $blue;
+    
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  
+  }
+}

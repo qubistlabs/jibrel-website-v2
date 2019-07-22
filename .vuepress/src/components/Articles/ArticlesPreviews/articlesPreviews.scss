@@ -1,0 +1,212 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.articles-preview {
+  @include all-reset;
+
+  @include from-mobile {
+    width: calc(100% + 42px);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -21px;
+  }
+
+  > .item {
+    box-sizing: border-box;
+
+    @include from-mobile {
+      margin-bottom: 50px;
+      padding-left: 21px;
+      padding-right: 21px;
+
+      &:not(.-first-card) {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      &:not(.-first-card) {
+        width: 33.333%;
+      }
+    }
+    
+
+    &.-first-card {
+      width: 100%;
+
+      > .box {
+        height: auto;
+
+        @include from-tablet-landscape {
+          > .pic {
+            height: 415px;
+          }
+
+          > .body {
+            padding-left: 100px;
+            padding-right: 100px;
+
+            > .row {
+              justify-content: flex-start;
+            }
+
+            > .title {
+              font-size: 24px;
+            }
+
+            > .descr {
+              font-size: 18px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+
+    @include to-mobile {
+      margin-bottom: 20px;
+    }
+
+    > .box {
+      height: 100%;
+      display: block;
+      border-radius: 0 0 3px 3px;
+      background-color: #fff;
+
+      @include to-mobile {
+        background-color: #fff;
+      }
+
+      > .pic {
+        height: 245px;
+        overflow: hidden;
+        border-radius: 3px 3px 0 0;
+        position: relative;
+
+        @include to-mobile {
+          height: 180px;
+        }
+
+        > .img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        > .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(#fff, 0.8);
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          @include to-tablet-landscape {
+            display: none;
+          }
+
+          > .read {
+            max-width: 135px;
+            width: 100%;
+          }
+        }
+      }
+
+      > .body {
+        padding: 35px 40px;
+
+        @include to-mobile {
+          padding: 15px 20px;
+        }
+
+        > .row {
+          @include from-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          > .tag {
+            background-color: rgba($blue, 0.1);
+            font-size: 13px;
+            line-height: 18px;
+            display: inline-block;
+            padding: 7px 16px;
+            color: $blue;
+            border-radius: 100px;
+            transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+            &:hover {
+              color: $base;
+              background-color: rgba($base, 0.1);
+            }
+          }
+
+          > .read {
+            margin-left: auto;
+            width: 135px;
+
+            @include to-mobile {
+              display: none;
+            }
+          }
+        }
+
+
+        > .title {
+          font-size: 16px;
+          color: $base;
+          line-height: (30/16);
+          margin-top: 10px;
+          font-weight: 600;
+          transition: color 0.2s ease-in-out;
+
+          @include to-mobile {
+            font-size: 14px;
+          }
+        }
+
+        > .descr {
+          margin-top: 15px;
+          font-size: 13px;
+          line-height: (24/13);
+          color: $base-o;
+
+          @include ls(10);
+        }
+      }
+
+      &:hover {
+        > .pic {
+          > .overlay {
+            opacity: 1;
+          }
+        }
+
+        > .body {
+          > .title {
+            color: $light-blue;
+          }
+        }
+      }
+
+      &:active {
+        > .body {
+          > .title {
+            color: rgba($light-blue, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

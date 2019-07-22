@@ -4,7 +4,7 @@
 .main-footer {
   background-color: #f5f6fa;
 
-  @include to-mobile {
+  @include to-tablet-portrait {
     display: none;
   }
 
@@ -29,6 +29,10 @@
         max-width: 745px;
         width: 100%;
         padding-left: 15px;
+        
+        @include to-tablet-landscape {
+          max-width: 630px;
+        }
       }
     }
 
