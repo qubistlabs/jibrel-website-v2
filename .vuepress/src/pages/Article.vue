@@ -22,7 +22,7 @@
               <div class="left">
                 <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
               </div>
-              <social-sharing 
+              <social-sharing
                 :url="pageUrl"
                 :title="$page.frontmatter.title"
                 :description="$page.frontmatter.description"
@@ -36,7 +36,7 @@
                   <network network="twitter" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
                   <network network="linkedin" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
                 </div>
-              </social-sharing> 
+              </social-sharing>
             </div>
             <h1 class='title'>{{$page.frontmatter.title}}</h1>
             <div class='wysiwyg'>
@@ -44,7 +44,7 @@
             </div>
           </div>
         </div>
-        <ArticlesSubscribe isOnArticleSubscribe />
+        <Subscribe variant='-on-article' />
       </div>
     </section>
     <div class='section-content -bg-gray -offset-top -offset-bottom -mobile-small-offsset'>
@@ -67,10 +67,9 @@ import SetScript from '@/Utils/SetScript.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
-import ArticlesSubscribe from '@/components/Articles/ArticlesPreviews/ArticlesSubscribe/ArticlesSubscribe.vue';
 
 export default {
-  name: 'NewsPage', 
+  name: 'NewsPage',
   components: {
     SpriteIcon,
     ArticlesHeader,
@@ -78,7 +77,7 @@ export default {
     ContactsList,
     Subscribe,
     ArticlesPreviews,
-    ArticlesSubscribe
+    Subscribe
   },
   data() {
     return {
@@ -133,14 +132,14 @@ export default {
       function anchorFormatter(anchor) {
         const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-')
         if (Number(anchorCLeaned.slice(0, 1))) {
-          return '#_' + anchorCLeaned       
+          return '#_' + anchorCLeaned
         }
-        return '#' + anchorCLeaned       
+        return '#' + anchorCLeaned
       }
 
       link.forEach(element => {
-        const href = element.getAttribute('href')        
-        element.setAttribute('href', anchorFormatter(href))             
+        const href = element.getAttribute('href')
+        element.setAttribute('href', anchorFormatter(href))
         element.addEventListener('click', function (e) {
           e.preventDefault()
           const id = this.getAttribute('href')
@@ -156,11 +155,11 @@ export default {
       });
     }
   },
-  created() {    
+  created() {
     this.getTagData(this.$page.path)
-    this.pageUrl = this.$localeConfig.site + this.$page.path    
+    this.pageUrl = this.$localeConfig.site + this.$page.path
   },
-  mounted() { 
+  mounted() {
     this.handlingTOC()
   },
 }
