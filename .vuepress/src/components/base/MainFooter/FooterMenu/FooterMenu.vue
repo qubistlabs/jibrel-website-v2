@@ -17,6 +17,11 @@
           {{this.$themeLocaleConfig.data.ProjectMenu.Careers}}
         </router-link>
       </div>
+      <div class='item'>
+        <a href='https://github.com/jibrelnetwork/white_paper' class='link' @click='clickLink("WhitePaper")' target='_blank' >
+          {{this.$themeLocaleConfig.data.ProjectMenu.WhitePaper}}
+        </a>
+      </div>
       <div class='item' v-if="this.$localeConfig.path === '/'">
         <router-link to='/blog/' @click.native='clickLink("Blog")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
