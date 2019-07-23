@@ -1,0 +1,24 @@
+{
+  "jwallet": {
+    "title": "Jibrel钱包",
+    "description": "<strong>Jwallet<\/strong>提供了一种用户友好和安全的方式来管理您最喜欢的以太坊令牌",
+    "button": "Jwallet"
+  },
+  "jcash": {
+    "title": "Jibrel现金",
+    "description": "<strong>JCash<\/strong>为用户提供了将不稳定的数字资产兑换成法币支持的稳定硬币的能力",
+    "button": "Jcash Alpha"
+  },
+  "enterprise_1": {
+    "title": "交易与数据分析",
+    "description": "寻找数字资产交易和数据分析方案?Jsearch通过一个易于配置的API提供交易和智能合约数据。<strong>Jibrel analytics solution<\/strong>也内置了合规功能，由Jibrel的数字资产AML / KYC解决方案Jclear提供支持"
+  },
+  "enterprise_2": {
+    "title": "实时数字资产价格反馈",
+    "description": "与最新的数字货币兑换价格保持同步可能是一项挑战。 使用<strong>Jticker<\/strong>，您可以确保您的交易柜台和算法具有可靠且可验证的价格"
+  },
+  "enterprise_3": {
+    "title": "可靠的以太坊连接",
+    "description": "联系我们以了解有关企业级以太坊连接<strong>Jnode<\/strong>的更多信息，其正常运行时间为99.99％，是可扩展的以太坊基础设施中最安全可靠的解决方案"
+  }
+}
