@@ -13,6 +13,7 @@
         :exact='true'
         :key='item.text'
         v-for='item in language.items'
+        v-if='item.text !== "root"'
         @click='isOpened = false'
       >
         {{ item.text }}

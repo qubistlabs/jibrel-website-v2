@@ -68,7 +68,7 @@ module.exports = {
   themeConfig: {
     locales: {
       '/': {
-        selectText: 'ENGLISH',
+        selectText: 'root',
         data: themeEn,
       },
       '/en/': {
