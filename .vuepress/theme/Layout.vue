@@ -4,24 +4,26 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=[__GTM_ID__]"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- <SpriteIcon /> -->
-    <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
-    <Content v-if='typePage === "precast-page"'/>
-    <News v-if='typePage === "/news/"' > <Content /> </News>
-    <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
-    <Article v-if='typePage === "/blog/"' > <Content /> </Article>
-    <MainFooter @open="modalOpen"/>
-    <MobileFooter />
-    <ModalWindow :isOpened='isOpened' @close="isOpened=false">
-      <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
-        <ProjectForm
-          @close="isOpened=false"
-          eventType='get-in-touch'
-          formName='message'
-          :title='$themeLocaleConfig.data.FormText.baseForm.titleSendMessage'
-        />
-      </div>
-    </ModalWindow>
+    <div v-if='$route.path !== "/"'>
+      <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
+      <Content v-if='typePage === "precast-page"'/>
+      <News v-if='typePage === "/news/"' > <Content /> </News>
+      <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
+      <Article v-if='typePage === "/blog/"' > <Content /> </Article>
+      <MainFooter @open="modalOpen"/>
+      <MobileFooter />
+      <ModalWindow :isOpened='isOpened' @close="isOpened=false">
+        <div class="container -center-box _container-fix aos-init aos-animate" data-aos="fade-in" data-aos-duration="900" data-aos-delay="150">
+          <ProjectForm
+            @close="isOpened=false"
+            eventType='get-in-touch'
+            formName='message'
+            :title='$themeLocaleConfig.data.FormText.baseForm.titleSendMessage'
+          />
+        </div>
+      </ModalWindow>
+    </div>
+    <Content v-else-if="$route.path === '/'"/>
   </div>
 </template>
 <script>

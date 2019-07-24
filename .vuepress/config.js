@@ -43,6 +43,13 @@ module.exports = {
       site: 'https://jibrel.network',
       data: contentEn,
     },
+    '/en/': {
+      lang: 'en-US',
+      shortLang: 'en',
+      title: 'Jibrel Network',
+      site: 'https://jibrel.network',
+      data: contentEn,
+    },
     '/ko/': {
       lang: 'ko-KR',
       shortLang: 'ko',
@@ -61,6 +68,10 @@ module.exports = {
   themeConfig: {
     locales: {
       '/': {
+        selectText: 'ENGLISH',
+        data: themeEn,
+      },
+      '/en/': {
         selectText: 'ENGLISH',
         data: themeEn,
       },
