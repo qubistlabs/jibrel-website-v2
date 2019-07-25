@@ -1,6 +1,6 @@
 ---
 headerColor: white
-title: 엔터프라이즈
+title: 企业解决方案
 ---
 
 <template>
