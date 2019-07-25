@@ -1,22 +1,22 @@
 {
   "baseForm": {
-    "titleSendMessage": "Send message",
-    "titlePupport": "Technical Support",
-    "titleProductAndSale": "Product & Sales Enquiry Form",
-    "titleMediaAndPR": "Media & PR Inquiries",
+    "titleSendMessage": "发送消息",
+    "titlePupport": "技术支持",
+    "titleProductAndSale": "产品和销售咨询表",
+    "titleMediaAndPR": "媒体及公关咨询",
     "textContent": {
-      "name": "Full Name *",
-      "email": "Email Address *",
-      "message": "Message *",
-      "button": "Send",
-      "successTitle": "Well done.",
-      "seccessMsg": "Message successfully sent!",
-      "errorTitle": "Ooooups!",
-      "errorMsg": "Some error occurred."
+      "name": "全名 *",
+      "email": "邮箱地址 *",
+      "message": "信息 *",
+      "button": "发送",
+      "successTitle": "做得很好.",
+      "seccessMsg": "成功发送消息!",
+      "errorTitle": "噢!",
+      "errorMsg": "发生了一些错误."
     }
   },
   "emailOnly": {
-    "email": "Email Address",
-    "button": "Sign Up"
+    "email": "邮箱地址",
+    "button": "注册"
   }
 }
