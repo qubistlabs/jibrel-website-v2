@@ -1,17 +1,17 @@
 {
   "jwallet": {
     "title": "Jibrel钱包",
-    "description": "<strong>Jwallet<\/strong>提供了一种用户友好和安全的方式来管理您最喜欢的以太坊令牌",
+    "description": "Jwallet 提供了一种用户友好和安全的方式来管理您最喜欢的以太坊令牌",
     "button": "Jwallet"
   },
   "jcash": {
     "title": "Jibrel现金",
-    "description": "<strong>JCash<\/strong>为用户提供了将不稳定的数字资产兑换成法币支持的稳定硬币的能力",
+    "description": "JCash 为用户提供了将不稳定的数字资产兑换成法币支持的稳定硬币的能力",
     "button": "Jcash Alpha"
   },
   "enterprise_1": {
     "title": "交易与数据分析",
-    "description": "寻找数字资产交易和数据分析方案?Jsearch通过一个易于配置的API提供交易和智能合约数据。<strong>Jibrel analytics solution<\/strong>也内置了合规功能，由Jibrel的数字资产AML / KYC解决方案Jclear提供支持"
+    "description": "寻找数字资产交易和数据分析方案? Jsearch 通过一个易于配置的API提供交易和智能合约数据。<strong>Jibrel analytics solution<\/strong>也内置了合规功能，由Jibrel的数字资产AML / KYC解决方案Jclear提供支持"
   },
   "enterprise_2": {
     "title": "实时数字资产价格反馈",

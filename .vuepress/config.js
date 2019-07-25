@@ -69,7 +69,7 @@ module.exports = {
         data: themeKo,
       },
       '/zh/': {
-        selectText: '中国',
+        selectText: '中文',
         data: themeZh,
       }
     }
