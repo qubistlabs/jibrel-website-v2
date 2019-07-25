@@ -1,6 +1,6 @@
 ---
 index: true 
-title: 뉴스 및 미디어
+title: 新闻 & 媒体
 ---
 
 <template>

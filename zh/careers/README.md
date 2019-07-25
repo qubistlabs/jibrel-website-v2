@@ -1,6 +1,6 @@
 ---
 index: true 
-title: 채용
+title: 招聘
 ---
 
 <template>
