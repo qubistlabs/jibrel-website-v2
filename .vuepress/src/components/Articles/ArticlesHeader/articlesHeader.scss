@@ -26,6 +26,7 @@
   > .container {
     display: flex;
     align-items: center;
+    height: 100%;
 
     @include to-mobile {
       padding-left: 30px;
@@ -38,19 +39,19 @@
 
     > .title {
       font-size: 24px;
-      padding-bottom: 3px;
       position: relative;
       font-weight: 600;
       color: $base;
       transition: color 0.2s ease-in-out;
       margin-right: 20px;
-
+      
       &:hover {
         color: $light-blue;
       }
       
       @include from-mobile {
         padding-right: 60px;
+        padding-bottom: 3px;
 
         &:before {
           content: '';
@@ -83,7 +84,7 @@
         transition: color 0.2s ease-in-out;
 
         @include to-mobile {
-          padding-right: 20px;
+          margin-right: 20px;
           margin-left: 0;
         }
     

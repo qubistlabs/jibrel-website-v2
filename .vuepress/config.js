@@ -5,10 +5,12 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 // Content files
 const contentEn = require('./i18n/EnUS/content')
 const contentKo = require('./i18n/KoKr/content')
+const contentZh = require('./i18n/Zh/content')
 
 // Localization theme files
 const themeEn = require('./i18n/EnUS/theme')
 const themeKo = require('./i18n/KoKr/theme')
+const themeZh = require('./i18n/Zh/theme')
 
 module.exports = {
   dest: 'build',
@@ -47,6 +49,13 @@ module.exports = {
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
       data: contentKo,
+    },
+    '/zh/': {
+      lang: 'zh',
+      shortLang: 'zh',
+      title: 'Jibrel Network',
+      site: 'https://jibrel.network',
+      data: contentZh,
     }
   },
   themeConfig: {
@@ -58,6 +67,10 @@ module.exports = {
       '/ko/': {
         selectText: '한국어',
         data: themeKo,
+      },
+      '/zh/': {
+        selectText: '中文',
+        data: themeZh,
       }
     }
   },

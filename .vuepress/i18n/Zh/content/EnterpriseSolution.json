@@ -1,0 +1,28 @@
+{
+  "title": "完整的企业解决方案",
+  "description": "公司和政府正在使用Jibrel来构建未来的金融网络， 我们的企业产品符合最高的技术和合规标准",
+  "card_1": {
+    "title": "即时结算",
+    "description": "在几分钟内结算交易，而不是几天，跨行业和用例"
+  },
+  "card_2": {
+    "title": "符合KYC/AML",
+    "description": "保持合规上链，Jibrel提供即插即用的KYC / AML"
+  },
+  "card_3": {
+    "title": "增加透明度",
+    "description": "使用区块链技术提供完整的可见性和监管"
+  },
+  "card_4": {
+    "title": "减少开销",
+    "description": "通过提高自动化程度和减少手动参与，显著降低成本"
+  },
+  "card_5": {
+    "title": "完美的可追溯性",
+    "description": "更详细地跟踪资产和负债 - 跨用户，地理位置和工作流程"
+  },
+  "card_6": {
+    "title": "兼容旧有系统",
+    "description": "与旧有系统的集成非常简单。 不需要区块链专业知识"
+  }
+}
