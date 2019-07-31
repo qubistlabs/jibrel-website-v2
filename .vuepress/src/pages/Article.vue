@@ -20,7 +20,7 @@
           <div class="container">
             <div class='header'>
               <div class="left">
-                <router-link :to='`/${tagRootPath}`' class='tag'>{{tagName}}</router-link>
+                <router-link :to='category.href' class='tag'>{{category.content}}</router-link>
               </div>
               <social-sharing
                 :url="pageUrl"
@@ -63,13 +63,13 @@ import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPre
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
 import MetaInfo from '@/Utils/MetaInfo.js'
-import SetScript from '@/Utils/SetScript.js'
+import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
 
 export default {
-  name: 'NewsPage',
+  name: 'Article',
   components: {
     SpriteIcon,
     ArticlesHeader,
@@ -77,7 +77,6 @@ export default {
     ContactsList,
     Subscribe,
     ArticlesPreviews,
-    Subscribe
   },
   data() {
     return {
@@ -97,24 +96,6 @@ export default {
     })
   },
   methods: {
-    getTagData(path) {
-      if (path.indexOf('/blog/how-tos/') !== -1) {
-        this.tagRootPath = 'blog/how-tos/'
-        this.tagName = this.$themeLocaleConfig.data.Article.HowTos
-      }
-      if (path.indexOf('/blog/updates/') !== -1) {
-        this.tagRootPath = 'blog/updates/'
-        this.tagName = this.$themeLocaleConfig.data.Article.Updates
-      }
-      if (path.indexOf('/blog/tokenization/') !== -1) {
-        this.tagRootPath = 'blog/tokenization/'
-        this.tagName = this.$themeLocaleConfig.data.Article.Tokenization
-      }
-      if (path.indexOf('/blog/blockchain/') !== -1) {
-        this.tagRootPath = 'blog/blockchain/'
-        this.tagName = this.$themeLocaleConfig.data.Article.Blockchain
-      }
-    },
     handlingTOC() {
       const TOCContainer = document.querySelector('.table-of-contents')
       const toggle = TOCContainer.querySelector('.header')
@@ -156,7 +137,7 @@ export default {
     }
   },
   created() {
-    this.getTagData(this.$page.path)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

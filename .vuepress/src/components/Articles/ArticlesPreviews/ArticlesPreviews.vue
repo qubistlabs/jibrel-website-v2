@@ -26,7 +26,7 @@
         </div>
         <div class='body'>
           <div class='row'>
-            <router-link :to='getTagUrl(post.path)' class='tag'>{{getTagData(post.path)}}</router-link>
+            <router-link :to='post.category.href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0'>
               <button class='j-button -fill-on-white-bg -h-small'>
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
@@ -45,7 +45,9 @@
 
 <script>
 import EventBus from '@/Utils/EventBus.js';
+import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import Subscribe from '../../Forms/Subscribe/Subscribe.vue';
+
 export default {
   name: 'ArticlesPreviews',
   components: {
@@ -71,43 +73,16 @@ export default {
       }
       return 300 + index % 3 * 300
     },
-    getTagUrl(path) {
-      if (path.indexOf('/blog/how-tos/') !== -1) {
-        return '/blog/how-tos/'
-      }
-      if (path.indexOf('/blog/updates/') !== -1) {
-        return '/blog/updates/'
-      }
-      if (path.indexOf('/blog/tokenization/') !== -1) {
-        return '/blog/tokenization/'
-      }
-      if (path.indexOf('/blog/blockchain/') !== -1) {
-        return '/blog/blockchain/'
-      }
-      if (path.indexOf('/blog/') !== -1) {
-        return '/blog/'
-      }
-    },
-    getTagData(path) {
-      if (path.indexOf('/blog/how-tos/') !== -1) {
-        return this.$themeLocaleConfig.data.Article.HowTos
-      }
-      if (path.indexOf('/blog/updates/') !== -1) {
-        return this.$themeLocaleConfig.data.Article.Updates
-      }
-      if (path.indexOf('/blog/tokenization/') !== -1) {
-        return this.$themeLocaleConfig.data.Article.Tokenization
-      }
-      if (path.indexOf('/blog/blockchain/') !== -1) {
-        return this.$themeLocaleConfig.data.Article.Blockchain
-      }
-    },
   },
   computed: {
     posts() {
       const posts = this.$site.pages
-        .filter(x => x.path.startsWith(this.getTagUrl(this.$page.path)) && !x.frontmatter.index && this.removeIt !== x.key)
-        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+        .filter(x => x.path.startsWith(this.category.href) && !x.frontmatter.index && this.removeIt !== x.key)
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+        .map(page => ({
+          ...page,
+          category: getCategoryLink(this.$themeLocaleConfig.data, page.path)
+        }))
 
       if (!this.limit) {
         return posts
@@ -116,6 +91,9 @@ export default {
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
     },
+  },
+  created() {
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
   },
 }
 </script>
