@@ -49,46 +49,30 @@ When choosing the right coin to create a masternode, there are five main questio
 
 Below is a list of the top coins we have compiled based on this criteria. For a complete list of projects that have maternodes, you can [visit this website](https://masternodes.online/). Please note that the data below is subject to change as market conditions vary from day to day. By the time you read this article this data will most likely be different. 
 
-**Coin:** Vechain
-
-**Profile:** Platform Coin | Daily Volume: $24.8m
-
-**Potential Return:** 2.97% a year. ****Pays dividends in VTHO ([See calculator here](https://thorcalculator.com/))
-
-**Capital Requirement:** Different Offerings ([See here](https://thorcalculator.com/))
-
+**Coin:** Vechain<br>
+**Profile:** Platform Coin | Daily Volume: $24.8m<br>
+**Potential Return:** 2.97% a year. ****Pays dividends in VTHO ([See calculator here](https://thorcalculator.com/))<br>
+**Capital Requirement:** Different Offerings ([See here](https://thorcalculator.com/))<br>
 **Comments:** This coin focuses primarily on solving problems for the supply chain management industry. Unlike other coins, it offers a variety of different types of nodes one can run with different amounts of collateral. While a predefined amount of tokens needs to be held by an operator, a simple mobile wallet is sufficient instead of all the typical masternode requirements listed above.
 
-**Coin:** Dash
-
-**Profile:** Privacy Coin | Daily Volume: $158m
-
-**Potential Return:** 6.38% a year
-
-**Capital Requirement:** 1,000 coins = $108,379
-
+**Coin:** Dash<br>
+**Profile:** Privacy Coin | Daily Volume: $158m<br>
+**Potential Return:** 6.38% a year<br>
+**Capital Requirement:** 1,000 coins = $108,379<br>
 **Comments:** Dash is a privacy focused cryptocurrency coin that is open source. It allows for fast, anonymous and untraceable transaction. Initially a fork of Litecoin, Dash was the first coin to offer masternodes.  
 
-**Coin:** PIVX Masternode
-
-**Profile:** Privacy Coin | Daily Volume: $515k
-
-**Potential Return:** 11.06% a year
-
-**Capital Requirement:** 10,000 coins = $4,831
-
+**Coin:** PIVX Masternode<br>
+**Profile:** Privacy Coin | Daily Volume: $515k<br>
+**Potential Return:** 11.06% a year<br>
+**Capital Requirement:** 10,000 coins = $4,831<br>
 **Comments:** This project also offers governance, participation and voting. However, to run this masternode, all requirements listed above need to be met (24/7 internet connection, dedicated IP address, etc.)
 
 While masternodes require collateralized obligations, certain projects will provide dividends no matter how much of the coin you hold. The only requirement is that you hold them in a specific wallet or on a particular exchange. For example, you can still generate GAS from NEO by holding it on the Binance exchange.
 
-**Coin:** NEO 
-
-**Profile:** Platform Coin | Daily Volume: $286m
-
-**Potential Return:** 4.62% a year. Pays dividends in GAS [(See calculator here](https://neotogas.com/))
-
-**Capital Requirement:** None
-
+**Coin:** NEO<br>
+**Profile:** Platform Coin | Daily Volume: $286m<br>
+**Potential Return:** 4.62% a year. Pays dividends in GAS [(See calculator here](https://neotogas.com/))<br>
+**Capital Requirement:** None<br>
 **Comments:** Also known as the "Ethereum of China," NEO has had various interesting projects built on top of it. Currently, NEO does not require any predefined amount of coins to be staked. The project aims to create a "smart economy."
 
 ---
