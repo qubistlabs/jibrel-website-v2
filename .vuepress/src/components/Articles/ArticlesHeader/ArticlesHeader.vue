@@ -5,6 +5,7 @@
       <div class='tabs'>
         <router-link to='/blog/tokenization/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
         <router-link to='/blog/blockchain/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
+        <router-link to='/blog/cryptocurrency/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
       </div>
   </div>
 </div>
