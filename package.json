@@ -1,6 +1,6 @@
 {
   "name": "@jibrelnetwork/website",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Jibrel AG Main Website made with Vue.js",
   "author": "Jibrel AG",
   "private": true,
