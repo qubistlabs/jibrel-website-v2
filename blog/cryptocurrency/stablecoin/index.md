@@ -25,7 +25,7 @@ Stablecoins originally came about as a solution for anyone trading cryptocurrenc
 
 1. Sell back into Bitcoin or Ethereum
 
-2. Exchange Bitcoin or Ethereum for fiat.
+2. Exchange Bitcoin or Ethereum for fiat
 
 Not only was such a system complicated, but it left traders and investors vulnerable to the high volatility in the prices of Bitcoin and Ethereum. Ultimately, this left a big need in the market for a stable cryptocurrency that would protect portfolios from the rollercoaster of price fluctuations.
 
@@ -47,11 +47,11 @@ Certain stablecoins, like Dai, are backed by crypto assets like Ethereum versus 
 
 ### Commodity Collateralized Stablecoins
 
-These are stablecoins that utilize assets such as gold, oil and other real-world assets to collateralize their value. Perhaps the biggest benefit of these coins is that they do not have to be backed by just one commodity. Instead, they can be pegged to a basket of assets to diversify risk. [Tiberius Coin (TCX),](https://www.tiberiuscoin.com/) for example, is backed by seven precious metals. Such coins tend to be viewed as safer alternatives by some as they are collateralized by assets that tend to increase in value as time goes on
+These are stablecoins that utilize assets such as gold, oil and other real-world assets to collateralize their value. Perhaps the biggest benefit of these coins is that they do not have to be backed by just one commodity. Instead, they can be pegged to a basket of assets to diversify risk. [Tiberius Coin (TCX),](https://www.tiberiuscoin.com/) for example, is backed by seven precious metals. Such coins tend to be viewed as safer alternatives by some as they are collateralized by assets that tend to increase in value as time goes on.
 
 ## What Are the Risks of Stablecoins?
 
-While stablecoins regularly act as safe havens for many traders and investors, there are several risks that one should be aware of before engaging with them. .
+While stablecoins regularly act as safe havens for many traders and investors, there are several risks that one should be aware of before engaging with them.
 
 ### Insolvency Risks
 
