@@ -10,7 +10,7 @@
       :key='post.path'
     >
       <router-link :to='post.path' class='box'>
-        <div class='pic'>
+        <div class='pic' :style="`background-color: ${post.frontmatter.heroImage.bgColor}`">
           <img
             :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }`'
             :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
