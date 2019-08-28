@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class='body'>
-          <div class='row'>
+          <div class='row' v-if="category.content === 'Blog'">
             <router-link :to='post.category.href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0'>
               <button class='j-button -fill-on-white-bg -h-small'>
@@ -83,11 +83,10 @@ export default {
           ...page,
           category: getCategoryLink(this.$themeLocaleConfig.data, page.path)
         }))
-
+      
       if (!this.limit) {
         return posts
       }
-
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
     },
