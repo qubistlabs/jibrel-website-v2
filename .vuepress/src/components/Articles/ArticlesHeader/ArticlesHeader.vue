@@ -27,10 +27,21 @@ export default {
       } else {
         this.isSticky = false
       }
-    }
+    },
+    menu() {
+      const items = this.$el.querySelector('.tabs')      
+      const itemCurrent = this.$el.querySelector('.item.-current')
+      const itemsWidth = items.clientWidth
+      const itemPosition = itemCurrent.offsetLeft
+      const itemClientWidth = itemCurrent.clientWidth
+      const scrollTo = itemPosition + itemClientWidth - itemsWidth
+      items.scrollTo({left: scrollTo,});
+      items.addEventListener('scroll', this.handleScroll)
+    },
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
+    this.menu()
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
