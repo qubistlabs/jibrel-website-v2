@@ -10,12 +10,10 @@
       :key='post.path'
     >
       <router-link :to='post.path' class='box'>
-        <div class='pic' :style="`background-color: ${post.frontmatter.heroImage.bgColor}`">
-          <img
-            :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }`'
-            :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
-            class='img'
-          >
+        <div class='pic' :style="`
+          background-color: ${post.frontmatter.heroImage.bgColor};
+          background-image: url(/assets/img/blog/${post.frontmatter.heroImage.name});
+        `">
           <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage'>
             <div class='read'>
               <button class="j-button -fill-on-white-bg -h-small">

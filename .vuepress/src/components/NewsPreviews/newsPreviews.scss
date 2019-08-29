@@ -60,17 +60,12 @@
         height: 245px;
         overflow: hidden;
         border-radius: 3px 3px 0 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
 
         @include to-tablet-landscape {
           height: 180px;
-        }
-
-        > .img {
-          width: calc(100% + 2px);
-          height: 100%;
-          object-fit: cover;
-          margin-left: -1px;
-          margin-top: -1px;
         }
       }
 
