@@ -89,3 +89,11 @@
     }
   }
 }
+
+.article-page > .container > .wysiwyg.-list .table-of-contents {
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
