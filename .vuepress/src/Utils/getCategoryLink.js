@@ -2,27 +2,27 @@ import { get } from 'lodash-es'
 
 const CATEGORIES = [
   {
-    slug: '/blog/how-tos',
+    slug: '/blog/how-tos/',
     id: 'Article.HowTos',
   },
   {
-    slug: '/blog/updates',
+    slug: '/blog/updates/',
     id: 'Article.Updates',
   },
   {
-    slug: '/blog/tokenization',
+    slug: '/blog/tokenization/',
     id: 'Article.Tokenization',
   },
   {
-    slug: '/blog/blockchain',
+    slug: '/blog/blockchain/',
     id: 'Article.Blockchain',
   },
   {
-    slug: '/blog/cryptocurrency',
+    slug: '/blog/cryptocurrency/',
     id: 'Article.Cryptocurrency',
   },
   {
-    slug: '/blog',
+    slug: '/blog/',
     id: 'Article.Blog',
   },
 ]
