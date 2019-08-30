@@ -11,12 +11,10 @@
       />
       <div class='container _container-fix'>
         <div class='article-page'>
-          <div class="preview" :style="`background-color: ${$page.frontmatter.heroImage.bgColor}`">
-            <img
-              :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}`"
-              class='img' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
-            >
-          </div>
+          <div class="preview" :style="`
+            background-color: ${$page.frontmatter.heroImage.bgColor}; 
+            background-image: url(/assets/img/blog/${$page.frontmatter.heroImage.name});
+            `" />
           <div class="container">
             <div class='header'>
               <div class="left">
