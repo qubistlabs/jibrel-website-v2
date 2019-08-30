@@ -2,7 +2,7 @@
 title: 7 Biggest Obstacles for Blockchain in 2019
 description: Obstacles blockchain companies will need to overcome in order to grow from ICO dreams to the Google and Amazons of the next decade.
 date: 2019-08-15
-themePage: list
+theme: list
 heroImage: 
   name: blockchain-obstacles.jpg
   alt: Blockchain obstacles

@@ -91,7 +91,7 @@ export default {
       return posts.slice(0, Number(this.limit))
     },
   },
-  created() {    
+  created() {
     this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
   },
 }

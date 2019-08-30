@@ -39,7 +39,7 @@
               </social-sharing>
             </div>
             <h1 class='title'>{{$page.frontmatter.title}}</h1>
-            <div class='wysiwyg' :class="this.$page.frontmatter.themePage && `-${this.$page.frontmatter.themePage}`">
+            <div class='wysiwyg' :class="this.$page.frontmatter.theme && `-${this.$page.frontmatter.theme}`">
               <slot />
             </div>
           </div>
@@ -136,7 +136,7 @@ export default {
       });
     }
   },
-  created() {    
+  created() {
     this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
