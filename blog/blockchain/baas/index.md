@@ -42,7 +42,7 @@ There are two types of limitations of the Blockchain-as-a-Service business model
 1. Limitations of current blockchains themselves ([interoperability,](https://www.himss.org/library/interoperability-standards/what-is-interoperability) [scalability](https://applicature.com/blog/blockchain-technology/blockchain-scalability), and [energy consumption](https://arstechnica.com/tech-policy/2018/05/new-study-quantifies-bitcoins-ludicrous-energy-consumption/) issues that no blockchain has successfully been able to address thus far.)
 2. One of the main selling points of blockchain and distributed ledger technology is the decentralization that such solutions provide. Yet while Blockchain-as-a-Service solutions would help streamline business activity, they would essentially centralize a decentralized solution. They would act as middlemen that the ethos of blockchain sought to eliminate.
 
-## **Top 5 Blockchain-as-a-Service (Baas) Providers**
+## Top 5 Blockchain-as-a-Service (Baas) Providers
 
 There are currently many different Blockchain-as-a-Service providers with more entering the market every year. Yet there are already very credible companies that have started offering these services to their clients. These include:
 

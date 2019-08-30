@@ -35,7 +35,7 @@ A database can have several parts with access limitations to particular parts of
 
 There are many real-world implementations and use cases of sharding. By segmenting a customer database by location, customers of a business, in various parts of a country, would be placed on different servers. This can be very useful to companies, like Netflix, that run billions of gigabytes of data across the world. Cryptocurrencies, such as Zilliqa, are optimizing their blockchains for the scalability issues that have greatly limited the potential of many prominent blockchains like [Ethereum](https://www.ethereum.org/). In [Zilliqa's case](https://www.ethnews.com/zilliqas-sharding-methods-briefly-explained), they are performing two types of sharding:
 
-### 1. **Network Sharding**
+### 1. Network Sharding
 
 Their network sharding protocol uses Proof-of-Work (PoW) to divide up the task of validating transactions across the network. It does this by choosing and continually updating a directory service committee (DS committee). A DS committee is a group of randomly selected nodes that assign transactions to specific shards and validate blocks of transactions proposed by these shards. Using network sharding, Zilliqa aims to match the transaction processing speeds of Mastercard and Visa. If successful, this will result in lower fees from a system that won't rely on a centralized authority to manage the network. 
 

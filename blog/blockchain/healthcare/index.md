@@ -41,7 +41,7 @@ Cluttered back-end management accounts for almost 20% of all costs in the health
 
 Clinical trials relying on sensitive and timely custody of information can be improved through the use of smart contracts. Not only would the reliability of results increase, but adjacent studies could be easily linked to ongoing ones to boost accuracy and speed up information gathering.
 
-## Adoption **of Blockchain in Healthcare**
+## Adoption of Blockchain in Healthcare
 
 Companies like IBM are consistently filing patents for blockchain-powered solutions to some of the healthcare industry’s most pressing problems. Still, it seems many of these applications are in the early stages of development. Most of the initial healthcare blockchain use cases seem to revolve around streamlining routine back-end operations. These have proven easier to implement and have shown immediate cost savings.
 
