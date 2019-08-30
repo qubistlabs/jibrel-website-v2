@@ -139,11 +139,7 @@
       padding-top: 5px;
 
       &:not(:last-child) {
-        margin-bottom: 76px;
-
-        @include to-mobile {
-          margin-bottom: 30px;
-        }
+        margin-bottom: 30px;
       }
 
       figcaption {
@@ -187,22 +183,14 @@
     }
 
     p,ul,ol  {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
 
     ul ul,
     ol ol,
     ul ol,
     ol ul {
-      margin-top: 25px;
-    }
-
-    li {
-      margin-bottom: 20px;
-
-      @include to-mobile {
-        margin-bottom: 15px;
-      }
+      margin-top: 15px;
     }
 
     ul li,
