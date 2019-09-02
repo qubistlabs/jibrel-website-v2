@@ -95,7 +95,7 @@ export default {
   },
   methods: {
     handlingTOC() {
-      const TOCContainer = document.querySelector('.table-of-contents')
+      const TOCContainer = this.$el.querySelector('.table-of-contents')
       const toggle = TOCContainer.querySelector('.header')
       const link = TOCContainer.querySelectorAll('a')
       toggle.addEventListener('click', function () {
@@ -118,6 +118,8 @@ export default {
 
       link.forEach(element => {
         const href = element.getAttribute('href')
+        const string = element.innerText
+        element.innerText = string.replace(/^\d+\. /g, '')        
         element.setAttribute('href', anchorFormatter(href))
         element.addEventListener('click', function (e) {
           e.preventDefault()
