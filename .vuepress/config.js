@@ -145,19 +145,17 @@ module.exports = {
       hostname: 'https://jibrel.network'
     },
   },
-  markdown: {
-    config: md => {
-      md.use(require("markdown-it-anchor"), {
-        level: [2, 3, 4],
-      })
-      md.use(require("markdown-it-table-of-contents"), {
-        listType: 'ol',
-        includeLevel: [2, 3, 4],
-        containerHeaderHtml: '<div class="header">Table of Contents</div>'
-      })
-      md.use(require('markdown-it-implicit-figures'), {
-        figcaption: true,
-      })
-    },
+  extendMarkdown(md) {
+    md.use(require("markdown-it-anchor"), {
+      level: [2, 3, 4],
+    })
+    md.use(require("markdown-it-table-of-contents"), {
+      listType: 'ol',
+      includeLevel: [2, 3, 4],
+      containerHeaderHtml: '<div class="header">Table of Contents</div>'
+    })
+    md.use(require('markdown-it-implicit-figures'), {
+      figcaption: true,
+    })
   },
 }
