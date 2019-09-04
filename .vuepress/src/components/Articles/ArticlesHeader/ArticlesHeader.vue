@@ -31,6 +31,7 @@ export default {
     menu() {
       const items = this.$el.querySelector('.tabs')      
       const itemCurrent = this.$el.querySelector('.item.-current')
+      if (!itemCurrent) return
       const itemsWidth = items.clientWidth
       const itemPosition = itemCurrent.offsetLeft
       const itemClientWidth = itemCurrent.clientWidth
