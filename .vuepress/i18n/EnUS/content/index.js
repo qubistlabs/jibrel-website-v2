@@ -1,27 +1,88 @@
-const CareerPage = require('./CareerPage.json')
-const EnterpriseSolution = require('./EnterpriseSolution.json')
-const FeaturesProject = require('./FeaturesProject.json')
-const JibrelIntegratable = require('./JibrelIntegratable.json')
-const LinkLanguageVersion = require('./LinkLanguageVersion.json')
-const MissionVisionValues = require('./MissionVisionValues.json')
-const PartnersData = require('./PartnersData.json')
-const ProductInfo = require('./ProductInfo.json')
-const ProjectContact = require('./ProjectContact.json')
-const ProjectError = require('./ProjectError.json')
-const ProvidesConsumerEnterprise = require('./ProvidesConsumerEnterprise.json')
-const ScreenPreview = require('./ScreenPreview.json')
-
 module.exports = {
-  CareerPage,
-  EnterpriseSolution,
-  FeaturesProject,
-  JibrelIntegratable,
-  LinkLanguageVersion,
-  MissionVisionValues,
-  PartnersData,
-  ProductInfo,
-  ProjectContact,
-  ProjectError,
-  ProvidesConsumerEnterprise,
-  ScreenPreview,
+  "CareerPage.title": "Open Positions",
+
+  "EnterpriseSolution.title": "A Complete Enterprise Solution",
+  "EnterpriseSolution.description": "Jibrel is being used by companies and governments to build the financial networks of the future. Our enterprise offering meets the highest standards in technology and compliance",
+  "EnterpriseSolution.instantSettlement.title": "Instant Settlement",
+  "EnterpriseSolution.instantSettlement.description": "Settle transactions in minutes not days, across industries and use-cases",
+  "EnterpriseSolution.kycAmlCompliant.title": "KYC / AML Compliant",
+  "EnterpriseSolution.kycAmlCompliant.description": "Remain compliant on-chain. Jibrel provides plug-and-play KYC / AML",
+  "EnterpriseSolution.increasedTransparency.title": "Increased Transparency",
+  "EnterpriseSolution.increasedTransparency.description": "Provide complete visibility and oversight using blockchain technology",
+  "EnterpriseSolution.reducedOverhead.title": "Reduced Overhead",
+  "EnterpriseSolution.reducedOverhead.description": "Significantly reduce cost through increased automation and reduced manual involvement",
+  "EnterpriseSolution.perfectTraceability.title": "Perfect Traceability",
+  "EnterpriseSolution.perfectTraceability.description": "Track assets and liabilities in greater detail - across users, geographies, and workflows",
+  "EnterpriseSolution.legacyCompatible.title": "Legacy Compatible",
+  "EnterpriseSolution.legacyCompatible.description": "Integration with legacy systems is simple. No blockchain expertise required",
+
+  "FeaturesProject.stable.title": "Stable",
+  "FeaturesProject.stable.description": "Jibrel offers stable coins tethered to currencies, commodities and bonds, as standard ERC-20 tokens, on the Ethereum blockchain",
+  "FeaturesProject.compliant.title": "Compliant",
+  "FeaturesProject.compliant.description": "All network users and digital asset transfers are screened in accordance with relevant KYC, AML, ATF regulation, policies and procedures",
+  "FeaturesProject.convenient.title": "Convenient",
+  "FeaturesProject.convenient.description": "Accessing stable tokens is simple. Exchange your volatile digital assets for stable tethered tokens by using Jcash smart contracts",
+
+  "JibrelIntegratable.title": "Jibrel provides easily integratable enterprise blockchain solutions for financial institutions, corporates, regulators and governments",
+  "JibrelIntegratable.banksAndNonBankFis.title": "Banks & Non-bank FIs",
+  "JibrelIntegratable.banksAndNonBankFis.description": "Financial Institutions are using Jibrel to streamline transacting traditional and digital assets",
+  "JibrelIntegratable.smallAndMediumEnterprises.title": "Small & Medium Enterprises",
+  "JibrelIntegratable.smallAndMediumEnterprises.description": "SMEs are capitalizing on low cost, instant settlement, global payments and transfers",
+  "JibrelIntegratable.governmentsAndRegulators.title": "Governments & Regulators",
+  "JibrelIntegratable.governmentsAndRegulators.description": "Public sector users are using Jibrel to increase operational efficiency, transparency and oversight",
+
+  "LinkLanguageVersion.jwallet": "https://jwallet.network",
+  "LinkLanguageVersion.jcash": "https://jcash.network",
+
+  "MissionVisionValues.mission.title": "Mission",
+  "MissionVisionValues.mission.description": "Jibrel aims to leverage the latest advancements and innovations, in distributed ledger and smart contract technology, to develop the financial infrastructure of the future",
+  "MissionVisionValues.vision.title": "Vision",
+  "MissionVisionValues.vision.description": "Jibrel provides use-case specific blockchain infrastructure components, such as interfaces and explorers, across industries — including; financial services, healthtech and e-governance",
+  "MissionVisionValues.values.title": "Values",
+  "MissionVisionValues.values.description": "Honest and ethical business practices are key to long-term sustainable business. Jibrel prioritizes in-sourcing over outsourcing, and building over marketing",
+
+  "PartnersData.title": "Jibrel is the trusted blockchain development partner for industry leaders, as well as governments and regulators, across the globe",
+
+  "ProductInfo.jwallet.title": "Jibrel Wallet",
+  "ProductInfo.jwallet.description": "Jwallet provides a user-friendly and secure way to transact your favorite Ethereum tokens",
+  "ProductInfo.jwallet.button": "Jwallet",
+  "ProductInfo.jcash.title": "Jibrel Cash",
+  "ProductInfo.jcash.description": "Jcash provides users with the ability to exchange volatile digital assets for currency-backed stable coins",
+  "ProductInfo.jcash.button": "Jcash Alpha",
+  "ProductInfo.transactionAndDataAnalytics.title": "Transaction & Data Analytics",
+  "ProductInfo.transactionAndDataAnalytics.description": "Looking for digital asset transaction and data analytics? <strong>Jsearch<\/strong> provides transfer and smart contract data via an easily configurable API. Jibrel analytics solution also has compliance built-in, powered by <strong>Jclear<\/strong>, Jibrel’s digital asset AML / KYC solution",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.title": "Real-time Digital Asset Price Feeds",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.description": "Keeping up-to-date with latest digital currency exchange prices feeds can be a challenge. With <strong>Jticker<\/strong>, you can ensure your trading desks and algorithms have reliable and verifiable price feeds",
+  "ProductInfo.reliableEthereumConnectivity.title": "Reliable Ethereum Connectivity",
+  "ProductInfo.reliableEthereumConnectivity.description": "Contact us to learn more about <strong>Jnode<\/strong>, an Enterprise-grade Ethereum connection, with 99.99% Uptime, it is the most secure and reliable solution for scalable Ethereum infrastructure",
+
+  "ProjectContact.zug.city": "Zug",
+  "ProjectContact.zug.address": "Baarerstrasse 4, 6300 <br>Canton of Zug, Switzerland",
+  "ProjectContact.newYork.city": "New York",
+  "ProjectContact.newYork.address": "17 John Street, <br>10038 NY, United States ",
+  "ProjectContact.stPetersburg.city": "St. Petersburg",
+  "ProjectContact.stPetersburg.address": "63 Zhukovskogo Street <br>St. Petersburg 191036, Russia  ",
+  "ProjectContact.dubai.city": "Dubai",
+  "ProjectContact.dubai.address": "DIFC Fintech Hive, <br>4th Floor, Gate 5 South, Dubai, United&nbsp;Arab&nbsp;Emirates",
+
+  "ProjectError.back": "Back to Home",
+  "ProjectError.e404.title": "404. Page Not Found.",
+  "ProjectError.e404.descr": "The page you're looking for can't be found. Check the URL and try again.",
+  "ProjectError.e403.title": "403. Forbidden.",
+  "ProjectError.e403.descr": "Sorry, but you don't have permission to access this page.You can do something :)",
+  "ProjectError.e500.title": "500. Internal Server Error.",
+  "ProjectError.e500.descr": "We are working towards creating something better. Won't be long...",
+  
+  "ProvidesConsumerEnterprise.title": "Jibrel provides both Consumer and Enterprise solutions",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.title": "Consumer Products & Services",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.description": "Jibrel is dedicated to providing institutional-grade blockchain and Distributed Ledger Technology (DLT) solutions to the community",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.title": "Enterprise Solutions",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.description": "We’re working with corporates, regulators and governments to bring increased efficiency and transparency to financial services",
+
+  "ScreenPreview.homePage.title": "Compliant Stable Coins",
+  "ScreenPreview.homePage.description": "Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain",
+  "ScreenPreview.aboutPage.title": "About Jibrel Network",
+  "ScreenPreview.aboutPage.description": "Jibrel is a blockchain and smart contract development company. We aim to leverage the latest innovations in cryptography, distributed ledger and smart contract technology to build the financial networks of the future",
+  "ScreenPreview.enterprisePage.title": "Digital Asset Solutions",
+  "ScreenPreview.enterprisePage.description": "We’re helping Banks, Insurers, Regulators and Governments implement enterprise-grade digital asset solutions",
 }

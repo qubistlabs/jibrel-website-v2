@@ -1,27 +1,88 @@
-const CareerPage = require('./CareerPage.json')
-const EnterpriseSolution = require('./EnterpriseSolution.json')
-const FeaturesProject = require('./FeaturesProject.json')
-const JibrelIntegratable = require('./JibrelIntegratable.json')
-const LinkLanguageVersion = require('./LinkLanguageVersion.json')
-const MissionVisionValues = require('./MissionVisionValues.json')
-const PartnersData = require('./PartnersData.json')
-const ProductInfo = require('./ProductInfo.json')
-const ProjectContact = require('./ProjectContact.json')
-const ProjectError = require('./ProjectError.json')
-const ProvidesConsumerEnterprise = require('./ProvidesConsumerEnterprise.json')
-const ScreenPreview = require('./ScreenPreview.json')
-
 module.exports = {
-  CareerPage,
-  EnterpriseSolution,
-  FeaturesProject,
-  JibrelIntegratable,
-  LinkLanguageVersion,
-  MissionVisionValues,
-  PartnersData,
-  ProductInfo,
-  ProjectContact,
-  ProjectError,
-  ProvidesConsumerEnterprise,
-  ScreenPreview,
+  "CareerPage.title": "空缺职位",
+
+  "EnterpriseSolution.title": "完整的企业解决方案",
+  "EnterpriseSolution.description": "公司和政府正在使用Jibrel来构建未来的金融网络， 我们的企业产品符合最高的技术和合规标准",
+  "EnterpriseSolution.instantSettlement.title": "即时结算",
+  "EnterpriseSolution.instantSettlement.description": "在几分钟内结算交易，而不是几天，跨行业和用例",
+  "EnterpriseSolution.kycAmlCompliant.title": "符合KYC/AML",
+  "EnterpriseSolution.kycAmlCompliant.description": "保持合规上链，Jibrel提供即插即用的KYC / AML",
+  "EnterpriseSolution.increasedTransparency.title": "增加透明度",
+  "EnterpriseSolution.increasedTransparency.description": "使用区块链技术提供完整的可见性和监管",
+  "EnterpriseSolution.reducedOverhead.title": "减少开销",
+  "EnterpriseSolution.reducedOverhead.description": "通过提高自动化程度和减少手动参与，显著降低成本",
+  "EnterpriseSolution.perfectTraceability.title": "完美的可追溯性",
+  "EnterpriseSolution.perfectTraceability.description": "更详细地跟踪资产和负债 - 跨用户，地理位置和工作流程",
+  "EnterpriseSolution.legacyCompatible.title": "兼容旧有系统",
+  "EnterpriseSolution.legacyCompatible.description": "与旧有系统的集成非常简单。 不需要区块链专业知识",
+
+  "FeaturesProject.stable.title": "稳定的",
+  "FeaturesProject.stable.description": "Jibrel在以太坊区块链上以标准ERC-20代币的形式提供货币、股票、商品和其他金融资产",
+  "FeaturesProject.compliant.title": "合规的",
+  "FeaturesProject.compliant.description": "所有网络用户和数字资产转移均按照相关的KYC、AML、ATF法规、政策和程序进行审查",
+  "FeaturesProject.convenient.title": "便捷的",
+  "FeaturesProject.convenient.description": "访问稳定令牌非常简单。使用 Jcash 智能合约将您不稳定的数字资产交换为稳定的拴式令牌",
+
+  "JibrelIntegratable.title": "Jibrel为金融机构、企业集团、监管机构和政府提供易于集成的企业区块链解决方案",
+  "JibrelIntegratable.banksAndNonBankFis.title": "银行和非银行金融机构",
+  "JibrelIntegratable.banksAndNonBankFis.description": "金融机构正在利用Jibrel简化传统资产和数字资产的交易",
+  "JibrelIntegratable.smallAndMediumEnterprises.title": "中小型企业",
+  "JibrelIntegratable.smallAndMediumEnterprises.description": "中小企业正在利用低成本、即时结算、全球支付和转移",
+  "JibrelIntegratable.governmentsAndRegulators.title": "政府和监管机构",
+  "JibrelIntegratable.governmentsAndRegulators.description": "公共部门用户正在使用Jibrel提高运营效率、透明度和监督",
+
+  "LinkLanguageVersion.jwallet": "https://jwallet.network",
+  "LinkLanguageVersion.jcash": "https://jcash.network",
+
+  "MissionVisionValues.mission.title": "使命",
+  "MissionVisionValues.mission.description": "Jibrel旨在利用分布式账本和智能合约技术的最新进展和创新，开发未来的金融基础设施",
+  "MissionVisionValues.vision.title": "愿景",
+  "MissionVisionValues.vision.description": "Jibrel提供跨行业的特定于用例的区块链基础设施组件，如接口和浏览器，包括金融服务、医疗技术和电子政务",
+  "MissionVisionValues.values.title": "价值观",
+  "MissionVisionValues.values.description": "诚实和合乎道德的商业行为是长期可持续经营的关键。Jibrel 将内部开发优先于外包,并将建设优先于营销",
+
+  "PartnersData.title": "Jibrel是全球行业领导者、政府和监管机构的可信区块链开发合作伙伴",
+
+  "ProductInfo.jwallet.title": "Jibrel钱包",
+  "ProductInfo.jwallet.description": "Jwallet 提供了一种用户友好和安全的方式来管理您最喜欢的以太坊令牌",
+  "ProductInfo.jwallet.button": "Jwallet",
+  "ProductInfo.jcash.title": "Jibrel现金",
+  "ProductInfo.jcash.description": "JCash为用户提供了将不稳定的数字资产兑换成法币支持的稳定币的能力",
+  "ProductInfo.jcash.button": "Jcash Alpha",
+  "ProductInfo.transactionAndDataAnalytics.title": "交易与数据分析",
+  "ProductInfo.transactionAndDataAnalytics.description": "寻找数字资产交易和数据分析方案? <strong>Jsearch<\/strong> 通过一个易于配置的API提供交易和智能合约数据。Jibrel 分析解决方案 也内置了合规功能，由Jibrel的数字资产AML / KYC解决方案<strong>Jclear<\/strong>提供支持",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.title": "实时数字资产价格反馈",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.description": "与最新的数字货币兑换价格保持同步可能是一项挑战。 使用<strong>Jticker<\/strong>，您可以确保您的交易柜台和算法具有可靠且可验证的价格",
+  "ProductInfo.reliableEthereumConnectivity.title": "可靠的以太坊连接",
+  "ProductInfo.reliableEthereumConnectivity.description": "联系我们以了解有关企业级以太坊连接<strong>Jnode<\/strong>的更多信息，其正常运行时间为99.99％，是可扩展的以太坊基础设施中最安全可靠的解决方案",
+
+  "ProjectContact.zug.city": "楚格",
+  "ProjectContact.zug.address": "Baarerstrasse 4, 6300 <br>瑞士楚格州",
+  "ProjectContact.newYork.city": "纽约市",
+  "ProjectContact.newYork.address": "约翰街17号, <br>美国纽约10038",
+  "ProjectContact.stPetersburg.city": "圣彼得堡",
+  "ProjectContact.stPetersburg.address": "朱可夫斯科戈街63号 <br>俄罗斯，圣彼得堡191036",
+  "ProjectContact.dubai.city": "迪拜",
+  "ProjectContact.dubai.address": "阿联酋，迪拜， <br> DIFC金融科技大厦，南5号门4楼",
+
+  "ProjectError.back": "返回主页",
+  "ProjectError.e404.title": "404. Page Not Found.",
+  "ProjectError.e404.descr": "The page you're looking for can't be found. Check the URL and try again.",
+  "ProjectError.e403.title": "403. Forbidden.",
+  "ProjectError.e403.descr": "Sorry, but you don't have permission to access this page.You can do something :)",
+  "ProjectError.e500.title": "500. Internal Server Error.",
+  "ProjectError.e500.descr": "We are working towards creating something better. Won't be long...",
+  
+  "ProvidesConsumerEnterprise.title": "Jibrel同时提供消费者和企业解决方案",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.title": "消费者产品和服务",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.description": "Jibrel致力于为社区提供机构级区块链和分布式账本技术（DLT）解决方案",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.title": "企业解决方案",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.description": "我们正与企业、监管机构和政府合作，提高金融服务的效率和透明度",
+
+  "ScreenPreview.homePage.title": "合规的稳定币",
+  "ScreenPreview.homePage.description": "Jibrel在以太坊区块链上以标准ERC-20代币的形式提供货币、股票、商品和其他金融资产",
+  "ScreenPreview.aboutPage.title": "关于 Jibrel Network",
+  "ScreenPreview.aboutPage.description": "Jibrel是一家区块链和智能合约开发公司。我们的目标是利用密码学、分布式账本和智能合约技术的最新创新，构建未来的金融网络",
+  "ScreenPreview.enterprisePage.title": "数字资产方案",
+  "ScreenPreview.enterprisePage.description": "我们正在帮助银行、保险公司、监管机构和政府实施企业级数字资产解决方案",
 }

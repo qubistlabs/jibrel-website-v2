@@ -1,27 +1,88 @@
-const CareerPage = require('./CareerPage.json')
-const EnterpriseSolution = require('./EnterpriseSolution.json')
-const FeaturesProject = require('./FeaturesProject.json')
-const JibrelIntegratable = require('./JibrelIntegratable.json')
-const LinkLanguageVersion = require('./LinkLanguageVersion.json')
-const MissionVisionValues = require('./MissionVisionValues.json')
-const PartnersData = require('./PartnersData.json')
-const ProductInfo = require('./ProductInfo.json')
-const ProjectContact = require('./ProjectContact.json')
-const ProjectError = require('./ProjectError.json')
-const ProvidesConsumerEnterprise = require('./ProvidesConsumerEnterprise.json')
-const ScreenPreview = require('./ScreenPreview.json')
-
 module.exports = {
-  CareerPage,
-  EnterpriseSolution,
-  FeaturesProject,
-  JibrelIntegratable,
-  LinkLanguageVersion,
-  MissionVisionValues,
-  PartnersData,
-  ProductInfo,
-  ProjectContact,
-  ProjectError,
-  ProvidesConsumerEnterprise,
-  ScreenPreview,
+  "CareerPage.title": "채용",
+
+  "EnterpriseSolution.title": "전체적인 엔터프라이즈 솔루션",
+  "EnterpriseSolution.description": "Jibrel은 기업 및 정부가 미래의 금융 네트워크를 구축하는 데 사용되고 있습니다. 우리의 엔터프라이즈 오퍼링은 기술 및 컴플라이언스에서 최고의 기준을 충족합니다",
+  "EnterpriseSolution.instantSettlement.title": "즉시 결제",
+  "EnterpriseSolution.instantSettlement.description": "산업 및 이용사례에 상관없이 거래 내역을 몇일이 아닌 몇분 내로 처리하십시오",
+  "EnterpriseSolution.kycAmlCompliant.title": "KYC / AML 규제 준수",
+  "EnterpriseSolution.kycAmlCompliant.description": "블록체인 상에서도 규정을 준수하십시오. Jibrel은 플러그 앤 플레이 KYC / AML 형식을 제공합니다",
+  "EnterpriseSolution.increasedTransparency.title": "향상된 투명성",
+  "EnterpriseSolution.increasedTransparency.description": "블록 체인 기술을 사용하여 완벽한 투명성과 감독을 제공하십시오",
+  "EnterpriseSolution.reducedOverhead.title": "오버헤드 감소",
+  "EnterpriseSolution.reducedOverhead.description": "자동화 증가 및 수동 조작 감소를 통해 비용을 대폭 절감합니다",
+  "EnterpriseSolution.perfectTraceability.title": "완벽한 추정성",
+  "EnterpriseSolution.perfectTraceability.description": "사용자, 지역 및 워크 플로우 전반에서 자산 및 부채를 보다 상세하게 추적합니다",
+  "EnterpriseSolution.legacyCompatible.title": "현 시스템과 호환적",
+  "EnterpriseSolution.legacyCompatible.description": "현 시스템과의 통합은 간단합니다. 블록 체인 전문 지식이 필요하지 않습니다",
+
+  "FeaturesProject.stable.title": "가치안정",
+  "FeaturesProject.stable.description": "Jibrel Network 는 통화, 주식, 상품 및 기타 금융 자산을 이더리움 블록 체인 표준 ERC-20 형식으로 실제 가치를 나타내는 안정적인 코인을 제공합니다",
+  "FeaturesProject.compliant.title": "규정준수",
+  "FeaturesProject.compliant.description": "모든 네트워크 사용자 및 디지털 자산 이전은 관련 KYC, AML, ATF 규정, 정책 및 절차에 따라 심사됩니다",
+  "FeaturesProject.convenient.title": "간편",
+  "FeaturesProject.convenient.description": "안정된 토큰을 이용하는 것은 간단합니다. 변동성이 큰 디지털 자산을 Jcash 스마트 계약을 이용하여 가치안정 토큰으로 교환하면 됩니다",
+
+  "JibrelIntegratable.title": "Jibrel은 금융 기관, 기업, 규제 기관 및 정부 기관을 위해 쉽게 통합 가능한 엔터프라이즈 블록 체인 솔루션을 제공합니다",
+  "JibrelIntegratable.banksAndNonBankFis.title": "은행과 비은행 금융 기관",
+  "JibrelIntegratable.banksAndNonBankFis.description": "금융 기관은 Jibrel을 사용하여 거래하는 전통 및 디지털 자산을 간소화합니다",
+  "JibrelIntegratable.smallAndMediumEnterprises.title": "중소기업",
+  "JibrelIntegratable.smallAndMediumEnterprises.description": "중소기업은 저비용, 즉석 결제, 국제 지불 및 이전을 이용합니다",
+  "JibrelIntegratable.governmentsAndRegulators.title": "정부와 규제기관",
+  "JibrelIntegratable.governmentsAndRegulators.description": "공공 부문 사용자는 Jibrel을 사용하여 운영 효율성, 투명성 및 감독을 향상시키고 있습니다",
+
+  "LinkLanguageVersion.jwallet": "https://jwallet.network/ko.html",
+  "LinkLanguageVersion.jcash": "https://jcash.network",
+
+  "MissionVisionValues.mission.title": "사명",
+  "MissionVisionValues.mission.description": "Jibrel Network는 DLT (분산 원장 기술)의 최신 발전 기술을 활용하여 미래의 금융 인프라를 개발하는 것을 목표로합니다",
+  "MissionVisionValues.vision.title": "비전",
+  "MissionVisionValues.vision.description": "Jibrel은 금융 서비스, 보건 기술 및 전자 규제 등 산업 전반에 걸쳐 인터페이스 및 탐색기와 블록 체인 인프라 구성 요소를 제공합니다",
+  "MissionVisionValues.values.title": "가치",
+  "MissionVisionValues.values.description": "우리는 정직하고 윤리적 인 관행이 장기적이며 지속 가능한 비즈니스의 핵심이라고 믿습니다. 또한 Jibrel은 마케팅이나 아웃소싱 보다 직접 개발에 중점을 둡니다",
+
+  "PartnersData.title": "Jibrel은 전 세계의 업계 리더 및 정부 및 규제 기관에서 신뢰받는 블록 체인 개발 파트너입니다",
+
+  "ProductInfo.jwallet.title": "Jibrel 지갑",
+  "ProductInfo.jwallet.description": "Jwallet은 사용자 친화적이며 안전한 방법으로 Ethereum 토큰을 사용하실수 있도록 합니다",
+  "ProductInfo.jwallet.button": "Jwallet",
+  "ProductInfo.jcash.title": "Jibrel 현금",
+  "ProductInfo.jcash.description": "Jcash는 변동성이 큰 디지털 자산을 Jcash 스마트 계약을 이용, 가치안정 토큰으로 교환할수 있게 합니다",
+  "ProductInfo.jcash.button": "Jcash 알파 버전",
+  "ProductInfo.transactionAndDataAnalytics.title": "거래 및 데이터 분석",
+  "ProductInfo.transactionAndDataAnalytics.description": "디지털 자산 거래 및 데이터 분석을 찾고 계십니까? <strong>Jsearch<\/strong>는 쉽게 구성 가능한 API를 통해 전송 및 스마트 계약 데이터를 제공합니다. Jibrel 분석 솔루션에는 <strong>Jclear<\/strong>, Jibrel의 디지털 자산 인 AML / KYC 솔루션이 제공하는 준수 기능이 내장되어 있습니다",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.title": "실시간 디지털 자산 가격 피드",
+  "ProductInfo.realtimeDigitalAssetPriceFeeds.description": "최신 디지털 환율로 최신 정보를 유지하는 것은 어려울 수 있습니다. <strong>Jticker<\/strong>를 사용하면 거래 데스크 및 알고리즘이 신뢰할 수 있고 검증 가능한 가격 정보를 제공 할 수 있습니다",
+  "ProductInfo.reliableEthereumConnectivity.title": "신뢰할수 있는 이더리움 연결",
+  "ProductInfo.reliableEthereumConnectivity.description": "확장 가능한 Ethereum 인프라 스트럭처를위한 가장 안전하고 신뢰할 수있는 솔루션이자, 99.99 % 가동 시간을 제공하는 엔터프라이즈 급 Ethereum 연결 인 Jnode에 대해 자세히 알아보시려면 연락해 주십시오. ",
+
+  "ProjectContact.zug.city": "Zug",
+  "ProjectContact.zug.address": "Baarerstrasse 4, 6300 <br>Canton of Zug, Switzerland",
+  "ProjectContact.newYork.city": "New York",
+  "ProjectContact.newYork.address": "17 John Street, <br>10038 NY, United States",
+  "ProjectContact.stPetersburg.city": "St. Petersburg",
+  "ProjectContact.stPetersburg.address": "63 Zhukovskogo Street <br>St. Petersburg 191036, Russia",
+  "ProjectContact.dubai.city": "Dubai",
+  "ProjectContact.dubai.address": "DIFC Fintech Hive, <br>4th Floor, Gate 5 South, Dubai, United&nbsp;Arab&nbsp;Emirates",
+
+  "ProjectError.back": "Back to Home",
+  "ProjectError.e404.title": "404. Page Not Found.",
+  "ProjectError.e404.descr": "The page you're looking for can't be found. Check the URL and try again.",
+  "ProjectError.e403.title": "403. Forbidden.",
+  "ProjectError.e403.descr": "Sorry, but you don't have permission to access this page.You can do something :)",
+  "ProjectError.e500.title": "500. Internal Server Error.",
+  "ProjectError.e500.descr": "We are working towards creating something better. Won't be long...",
+  
+  "ProvidesConsumerEnterprise.title": "Jibrel은 소비자 및 엔터프라이즈 솔루션을 모두 제공합니다",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.title": "소비자 상품 및 서비스",
+  "ProvidesConsumerEnterprise.consumerProductsAndServices.description": "Jibrel은 기관 등급 블록 체인 및 분산 원장 기술 (DLT) 솔루션을 커뮤니티에 제공하는 데 전념하고 있습니다",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.title": "엔터프라이즈 솔루션",
+  "ProvidesConsumerEnterprise.enterpriseSolutions.description": "우리는 금융 서비스에 효율성과 투명성을 높이기 위해 기업, 규제 기관 및 정부와 협력하고 있습니다",
+
+  "ScreenPreview.homePage.title": "규정준수 가치안정화폐",
+  "ScreenPreview.homePage.description": "Jibrel Network는 통화, 주식, 상품 및 기타 금융 자산과 상품을 이더리움 블록 체인 표준 ERC-20 토큰으로 제공합니다",
+  "ScreenPreview.aboutPage.title": "Jibrel Network에 대하여",
+  "ScreenPreview.aboutPage.description": "Jibrel은 블록 체인 및 스마트 계약 개발 회사입니다. 우리는 암호화, 분배 원장 및 스마트 계약 기술의 최신 혁신을 활용하여 미래의 금융 네트워크를 구축하는 것을 목표로합니다",
+  "ScreenPreview.enterprisePage.title": "실시간 디지털 자산 가격 피드",
+  "ScreenPreview.enterprisePage.description": "우리는 선도 은행, 규제 기관 및 정부가 엔터프라이즈급 디지털 자산 솔루션을 구현할 수 있도록 지원하고 있습니다",
 }
