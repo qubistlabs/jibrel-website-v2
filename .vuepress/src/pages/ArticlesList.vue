@@ -23,7 +23,6 @@
 
 <script>
   import EventBus from '@/Utils/EventBus.js';
-  import MetaInfo from '@/Utils/MetaInfo.js'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
   import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
@@ -57,16 +56,6 @@
       })
       EventBus.$on('posts-length', data => {      
         this.isShowMoreInfo = data > this.limit ? true : false
-      })
-    },
-    beforeDestroy() {
-      // EventBus.$off('load-limit')
-      // EventBus.$off('posts-length')
-    },
-    metaInfo () {      
-      return MetaInfo({
-        path: this.$route.path,
-        title: this.$page.frontmatter.title,
       })
     },
   };

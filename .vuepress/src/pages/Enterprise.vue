@@ -187,7 +187,6 @@
 
 <script>
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
-import MetaInfo from '@/Utils/MetaInfo.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
@@ -197,13 +196,6 @@ export default {
     PartnersCard,
     ProjectForm,
     SpriteIcon,
-  },
-  metaInfo () {
-    return MetaInfo({
-      path: this.$route.path,
-      title: this.$page.frontmatter.title,
-      description: this.$page.frontmatter.description
-    })
   },
 }
 </script>

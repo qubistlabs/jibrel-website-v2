@@ -26,7 +26,6 @@
 </template>
 <script>
 import Vue from 'vue'
-import Meta from 'vue-meta'
 import SocialSharing from 'vue-social-sharing'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -44,7 +43,6 @@ import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
 
-Vue.use(Meta)
 Vue.use(SocialSharing);
 
 export default {
