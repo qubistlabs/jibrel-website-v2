@@ -27,7 +27,6 @@
 
 
 <script>
-  import MetaInfo from '@/Utils/MetaInfo.js'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
   import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
@@ -36,12 +35,6 @@
       SectionName,
       NewsPreviews,
       ProjectForm,
-    },
-    metaInfo () {
-      return MetaInfo({
-        path: this.$route.path,
-        title: this.$page.frontmatter.title,
-      })
     },
   };
 </script>

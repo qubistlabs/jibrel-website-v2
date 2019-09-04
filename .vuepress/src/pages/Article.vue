@@ -60,7 +60,6 @@
 import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
-import MetaInfo from '@/Utils/MetaInfo.js'
 import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
@@ -83,15 +82,6 @@ export default {
       tagName: '',
       pageUrl: '',
     }
-  },
-  metaInfo () {
-    return MetaInfo({
-      path: this.$route.path,
-      title: this.$page.frontmatter.title,
-      description: this.$page.frontmatter.description,
-      heroImage: this.$page.frontmatter.heroImage ? `assets/img/blog/${this.$page.frontmatter.heroImage}` : null,
-      isOnlyPageTitle: true
-    })
   },
   methods: {
     handlingTOC() {

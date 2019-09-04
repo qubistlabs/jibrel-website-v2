@@ -137,7 +137,6 @@ import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
 import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
-import MetaInfo from '@/Utils/MetaInfo.js'
 export default {
   components: {
     SectionName,
@@ -145,11 +144,6 @@ export default {
     PartnersCard,
     ProjectForm,
     ContactsList,
-  },
-  metaInfo () {
-    return MetaInfo({
-      isOnlyPageTitle: false
-    })
   },
 }
 </script>
