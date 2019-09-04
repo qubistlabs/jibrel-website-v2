@@ -23,7 +23,7 @@ Data on the blockchain cannot be altered by anyone and accessed by everyone. The
 
 ### Information Sharing
 
-By teaming up with several different companies, corporations like [UnitedHealthcare](https://www.uhc.com/) ****are trying to share provider information, cut out various intermediaries, and save time in the process. The collaboration of these giants will ensure a much higher degree of transparency.
+By teaming up with several different companies, corporations like [UnitedHealthcare](https://www.uhc.com/) are trying to share provider information, cut out various intermediaries, and save time in the process. The collaboration of these giants will ensure a much higher degree of transparency.
 
 ### Credential Verification
 

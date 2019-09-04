@@ -214,6 +214,12 @@
       a {
         color: $blue;
         transition: color 0.2s ease-in-out;
+        position: relative;
+        // FIXME Temporary solution. It is necessary to deal with the plugin generating links
+        background-image: url(../src/assets/img/general/icon/external.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-right: 17px;
   
         &:hover {
           color: $light-blue;
@@ -221,6 +227,11 @@
   
         &:active {
           color: rgba($light-blue, 0.5);
+        }
+        
+        // FIXME Temporary solution. It is necessary to deal with the plugin generating links
+        svg {
+          display: none;
         }
       }
   

@@ -23,7 +23,7 @@ Blockchain will enable an interlinked network of devices that automatically adju
 
 ### Peer-to-Peer Energy Trading
 
-Imagine being able to loan out the electricity you do not use on a peer-to-peer network while seeing your electricity bills fall quite significantly. Blockchain would allow those with a surplus of energy to send it back into the grid system and sell it automatically to corresponding buyers. The transaction would be settled via smart contracts ****in seconds.
+Imagine being able to loan out the electricity you do not use on a peer-to-peer network while seeing your electricity bills fall quite significantly. Blockchain would allow those with a surplus of energy to send it back into the grid system and sell it automatically to corresponding buyers. The transaction would be settled via smart contracts in seconds.
 
 ### Smart Meters & Authentication
 
