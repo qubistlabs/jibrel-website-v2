@@ -16,5 +16,4 @@ COPY version.txt /app/
 COPY nginx.tpl.conf /etc/nginx/
 COPY run.sh /bin/run.sh
 
-RUN ["run.sh", "check"]
 CMD ["run.sh", "start"]
