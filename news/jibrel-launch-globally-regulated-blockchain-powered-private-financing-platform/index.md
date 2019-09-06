@@ -4,7 +4,7 @@ description: Jibrel Network will be launching Jibrel.com — a fully regulated b
 date: 2019-09-02
 source:
     id: magnitt
-    url: https://fintechnews.ae/4656/abudhabi/4-startups-selected-for-abu-dhabi-regulatory-lab/
+    url: https://magnitt.com/news/jibrel-launch-globally-regulated-blockchain-powered-private-financing-platform
 ---
 
 [Jibrel Network](https://magnitt.com/startups/jibrel-network), a blockchain-based fintech company headquartered in Zug, Switzerland, announced today that it will be launching Jibrel.com — a fully regulated blockchain-powered private financing platform — after its recent acceptance into the new [ADGM (Abu Dhabi Global Market) RegLab](https://magnitt.com/enablers/reglab) cohort in the UAE. In the words of Yazan Barghuthi, Jibrel’s co-founder and CEO, “We are excited to be launching a vertically integrated private lending platform that will take startups from inception to maturity. The platform will increase investor transparency, simplify regulatory oversight and improve liquidity — by providing a streamlined platform to buy, sell and transact startup equity.” 
