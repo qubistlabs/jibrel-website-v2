@@ -88,15 +88,13 @@
         overflow: hidden;
         border-radius: 3px 3px 0 0;
         position: relative;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+  
 
         @include to-mobile {
           height: 180px;
-        }
-
-        > .img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
         }
 
         > .overlay {
@@ -123,13 +121,15 @@
       }
 
       > .body {
-        padding: 35px 40px;
+        padding: 25px 40px;
 
         @include to-mobile {
           padding: 15px 20px;
         }
 
         > .row {
+          margin-bottom: 10px;
+
           @include from-mobile {
             display: flex;
             justify-content: space-between;
@@ -166,8 +166,7 @@
         > .title {
           font-size: 16px;
           color: $base;
-          line-height: (30/16);
-          margin-top: 10px;
+          line-height: 1.5;
           font-weight: 600;
           transition: color 0.2s ease-in-out;
 
@@ -177,7 +176,7 @@
         }
 
         > .descr {
-          margin-top: 15px;
+          margin-top: 10px;
           font-size: 13px;
           line-height: (24/13);
           color: $base-o;

@@ -21,18 +21,13 @@ module.exports = {
     ['meta', {'name': 'msapplication-TileColor', 'content': '#da532c'}],
     ['meta', {'name': 'theme-color', 'content': '#003DC6'}],
     ['meta', {'name': 'format-detection', 'content': 'telephone=no'}],
-    ['meta', {'property': 'og:site_name', 'content': `Jibrel Network`}],
-    ['meta', {'property': 'og:image', 'content': 'https://jibrel.network/assets/misc/logo.jpg'}],
-    ['meta', {'property': 'og:image:type', 'content': 'image/jpeg'}],
-    ['meta', {'property': 'og:image:width', 'content': '500'}],
-    ['meta', {'property': 'og:image:height', 'content': '250'}],
+    ['meta', {'property': 'og:site_name', 'content': 'Jibrel Network'}],
     ['link', { 'rel': 'apple-touch-icon', 'href': '/assets/misc/apple-touch-icon.png', 'sizes': '180x180' }],
     ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-32x32.png', 'sizes': '32x32' }],
     ['link', { 'rel': 'icon', 'type': 'image/png', 'href': '/assets/misc/favicon-16x16.png', 'sizes': '16x16' }],
     ['link', { 'rel': 'manifest', 'href': '/assets/misc/site.webmanifest.json' }],
     ['link', { 'rel': 'mask-icon', 'href': '/assets/misc/safari-pinned-tab.svg', 'color': '#003dc6' }],
     ['link', { 'rel': 'shortcut icon', 'href': '/assets/misc/favicon.ico' }],
-    ['link', { 'rel': 'image_src', 'href': 'https://jibrel.network/assets/misc/logo.jpg' }],
     ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
   ],
   locales: {
@@ -59,6 +54,8 @@ module.exports = {
     }
   },
   themeConfig: {
+    site: 'https://jibrel.network',
+    twitter: '@jibrelnetwork',
     locales: {
       '/': {
         selectText: 'ENGLISH',
@@ -144,20 +141,44 @@ module.exports = {
     'sitemap': {
       hostname: 'https://jibrel.network'
     },
+    'seo': {
+      title: $page => ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? $page.title : $page.title ? 'Jibrel Network - ' + $page.title : 'Jibrel Network',
+      description: $page => $page.frontmatter.description ? $page.frontmatter.description : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      type: $page => ['news', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+      url: (_, $site, path) => $site.themeConfig.site + path,
+      image: ($page, $site) => $page.frontmatter.heroImage ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name : 'https://jibrel.network/assets/misc/logo.jpg',
+      twitterCard: _ => 'summary_large_image',
+
+      customMeta: (add, context) => {
+        const {
+            $site, 
+            $page, 
+        } = context
+          add('twitter:site', $site.themeConfig.twitter)          
+          add(
+            'og:image:width',
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '1323' : '500', 
+            'property'
+          )
+          add(
+            'og:image:height',
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '901' : '250', 
+            'property'
+          )
+      },
+    }
   },
-  markdown: {
-    config: md => {
-      md.use(require("markdown-it-anchor"), {
-        level: [2, 3, 4],
-      })
-      md.use(require("markdown-it-table-of-contents"), {
-        listType: 'ol',
-        includeLevel: [2, 3, 4],
-        containerHeaderHtml: '<div class="header">Table of Contents</div>'
-      })
-      md.use(require('markdown-it-implicit-figures'), {
-        figcaption: true,
-      })
-    },
+  extendMarkdown(md) {
+    md.use(require("markdown-it-anchor"), {
+      level: [2, 3, 4],
+    })
+    md.use(require("markdown-it-table-of-contents"), {
+      listType: 'ol',
+      includeLevel: [2, 3, 4],
+      containerHeaderHtml: '<div class="header">Table of Contents</div>'
+    })
+    md.use(require('markdown-it-implicit-figures'), {
+      figcaption: true,
+    })
   },
 }

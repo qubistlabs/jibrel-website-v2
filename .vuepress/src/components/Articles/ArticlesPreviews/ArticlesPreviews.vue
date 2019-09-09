@@ -10,12 +10,10 @@
       :key='post.path'
     >
       <router-link :to='post.path' class='box'>
-        <div class='pic'>
-          <img
-            :src='`/assets/img/blog/${ post.frontmatter.heroImage.name }`'
-            :alt='post.frontmatter.heroImage.alt ? post.frontmatter.heroImage.alt : post.frontmatter.title'
-            class='img'
-          >
+        <div class='pic' :style="`
+          background-color: ${post.frontmatter.heroImage.bgColor};
+          background-image: url(/assets/img/blog/${post.frontmatter.heroImage.name});
+        `">
           <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage'>
             <div class='read'>
               <button class="j-button -fill-on-white-bg -h-small">
@@ -25,7 +23,7 @@
           </div>
         </div>
         <div class='body'>
-          <div class='row'>
+          <div class='row' v-if="category.content === 'Blog'">
             <router-link :to='post.category.href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0'>
               <button class='j-button -fill-on-white-bg -h-small'>
@@ -83,11 +81,10 @@ export default {
           ...page,
           category: getCategoryLink(this.$themeLocaleConfig.data, page.path)
         }))
-
+      
       if (!this.limit) {
         return posts
       }
-
       EventBus.$emit('posts-length', posts.length)
       return posts.slice(0, Number(this.limit))
     },

@@ -51,7 +51,7 @@ Below is a list of the top coins we have compiled based on this criteria. For a 
 
 **Coin:** Vechain<br>
 **Profile:** Platform Coin | Daily Volume: $24.8m<br>
-**Potential Return:** 2.97% a year. ****Pays dividends in VTHO ([See calculator here](https://thorcalculator.com/))<br>
+**Potential Return:** 2.97% a year. Pays dividends in VTHO ([See calculator here](https://thorcalculator.com/))<br>
 **Capital Requirement:** Different Offerings ([See here](https://thorcalculator.com/))<br>
 **Comments:** This coin focuses primarily on solving problems for the supply chain management industry. Unlike other coins, it offers a variety of different types of nodes one can run with different amounts of collateral. While a predefined amount of tokens needs to be held by an operator, a simple mobile wallet is sufficient instead of all the typical masternode requirements listed above.
 

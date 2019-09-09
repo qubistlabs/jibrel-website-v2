@@ -11,12 +11,10 @@
       />
       <div class='container _container-fix'>
         <div class='article-page'>
-          <div class="preview" :style="`background-color: ${$page.frontmatter.heroImage.bgColor}`">
-            <img
-              :src="`/assets/img/blog/${$page.frontmatter.heroImage.name}`"
-              class='img' :alt="$page.frontmatter.heroImage.alt ? $page.frontmatter.heroImage.alt : $page.frontmatter.title"
-            >
-          </div>
+          <div class="preview" :style="`
+            background-color: ${$page.frontmatter.heroImage.bgColor}; 
+            background-image: url(/assets/img/blog/${$page.frontmatter.heroImage.name});
+            `" />
           <div class="container">
             <div class='header'>
               <div class="left">
@@ -62,7 +60,6 @@
 import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
-import MetaInfo from '@/Utils/MetaInfo.js'
 import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
@@ -86,18 +83,9 @@ export default {
       pageUrl: '',
     }
   },
-  metaInfo () {
-    return MetaInfo({
-      path: this.$route.path,
-      title: this.$page.frontmatter.title,
-      description: this.$page.frontmatter.description,
-      heroImage: this.$page.frontmatter.heroImage ? `assets/img/blog/${this.$page.frontmatter.heroImage}` : null,
-      isOnlyPageTitle: true
-    })
-  },
   methods: {
     handlingTOC() {
-      const TOCContainer = document.querySelector('.table-of-contents')
+      const TOCContainer = this.$el.querySelector('.table-of-contents')
       const toggle = TOCContainer.querySelector('.header')
       const link = TOCContainer.querySelectorAll('a')
       toggle.addEventListener('click', function () {
@@ -120,6 +108,8 @@ export default {
 
       link.forEach(element => {
         const href = element.getAttribute('href')
+        const string = element.innerText
+        element.innerText = string.replace(/^\d+\. /g, '')        
         element.setAttribute('href', anchorFormatter(href))
         element.addEventListener('click', function (e) {
           e.preventDefault()

@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import MetaInfo from '@/Utils/MetaInfo.js'
 import SetScript from '@/Utils/SetScript.js'
 import PageHeader from '@/components/PageHeader/PageHeader.vue'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
@@ -44,13 +43,6 @@ export default {
     PageHeader,
     SectionName,
     SpriteIcon
-  },
-  metaInfo () {
-    return MetaInfo({
-      path: this.$route.path,
-      title: this.$page.frontmatter.title,
-      description: this.$page.frontmatter.description
-    })
   },
   mounted() {
     SetScript('//platform.twitter.com/widgets.js', 'twitter-jssdk')
