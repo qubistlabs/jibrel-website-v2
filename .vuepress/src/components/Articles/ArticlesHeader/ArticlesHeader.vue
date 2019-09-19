@@ -3,16 +3,16 @@
     <div class='container _container-fix'>
       <router-link to='/blog/articles/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link to='/blog/tokenization/' class='item' :class='catagory === "tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
-        <router-link to='/blog/blockchain/' class='item' :class='catagory === "blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
-        <router-link to='/blog/cryptocurrency/' class='item' :class='catagory === "cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
+        <router-link to='/blog/tokenization/' class='item' :class='catagory === "/blog/tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
+        <router-link to='/blog/blockchain/' class='item' :class='catagory === "/blog/blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
+        <router-link to='/blog/cryptocurrency/' class='item' :class='catagory === "/blog/cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
       </div>
   </div>
 </div>
 </template>
 
 <script>
-
+import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 export default {
   name: 'ArticlesHeader',
   data() {
@@ -41,7 +41,7 @@ export default {
       items.addEventListener('scroll', this.handleScroll)
     },
     setCategory() {
-      this.catagory = this.$page.frontmatter.category      
+      this.catagory = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath).category_href
     }
   },
   mounted() {
@@ -52,8 +52,8 @@ export default {
     this.setCategory()
   },
   watch: {
-    $page(newData) {
-      this.catagory = newData.frontmatter.category
+    $page() {
+      this.setCategory()
     }
   },
   beforeDestroy() {

@@ -25,7 +25,7 @@
         </div>
         <div class='body'>
           <div class='row' v-if="isMainBlogPage">
-            <router-link :to='post.category.catagory_href' class='tag'>{{post.category.content}}</router-link>
+            <router-link :to='post.category.category_href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0 && isFirstPage'>
               <span class='j-button -fill-on-white-bg -h-small'>
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}

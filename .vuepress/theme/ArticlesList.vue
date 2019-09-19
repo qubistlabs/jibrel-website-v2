@@ -57,16 +57,6 @@
       ContactsList,
       VuePaginame
     },
-    props: {
-      mainBlogPage: Boolean
-    },
-    data() {
-      return {
-        limit: 6,
-        isShowMoreInfo: false,
-        comp: null,
-      }
-    },
     computed: {
       arrowLeft() {
         return arrowLeft
@@ -79,21 +69,10 @@
       }
     },
     methods: {
-      currentLimit() {        
-        return this.mainBlogPage ? 0 : this.limit
-      },
       clickCallback(pageNum) {
         const link = this.$pagination.getSpecificPageLink(pageNum - 1)
         this.$router.push(link)
       },
-    },
-    created() {    
-      EventBus.$on('load-limit', data => {      
-        this.limit = data
-      })
-      EventBus.$on('posts-length', data => {      
-        this.isShowMoreInfo = data > this.limit ? true : false
-      })
     },
   };
 </script>

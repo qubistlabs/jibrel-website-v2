@@ -10,7 +10,7 @@
         arrow='up'
       />
       <div class='container _container-fix'>
-        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='false' :curretCategory='curretCategory' />
+        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='false' />
         <MorePost v-if='isShowMoreInfo'/>
        
       </div>
@@ -39,9 +39,6 @@
       MorePost,
       ContactsList,
     },
-    props: {
-      curretCategory: String
-    },
     data() {
       return {
         limit: 6,
@@ -53,7 +50,7 @@
         return this.mainBlogPage ? 0 : this.limit
       },
     },
-    created() {
+    created() {      
       EventBus.$on('load-limit', data => {      
         this.limit = data
       })

@@ -18,7 +18,7 @@
           <div class="container">
             <div class='header'>
               <div class="left">
-                <router-link :to='category.catagory_href' class='tag'>{{category.content}}</router-link>
+                <router-link :to='category.category_href' class='tag'>{{category.content}}</router-link>
               </div>
               <social-sharing
                 :url="pageUrl"
@@ -126,7 +126,7 @@ export default {
       });
     }
   },
-  created() {    
+  created() {
     this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },

@@ -37,7 +37,7 @@ export const getCategoryLink = (translation, url) => {
   }
   
   return {
-    catagory_href: '/blog/' + category.slug,
+    category_href: '/blog/' + category.slug,
     href: '/blog/articles/' + category.slug,
     content: get(translation, category.id),
   }
