@@ -35,7 +35,7 @@ export const getCategoryLink = (translation, url) => {
   if (!category) {
     throw new Error('NO_CATEGORY_DEFINED')
   }
-
+  
   return {
     catagory_href: '/blog/' + category.slug,
     href: '/blog/articles/' + category.slug,

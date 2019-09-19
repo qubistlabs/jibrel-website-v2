@@ -6,11 +6,13 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- <SpriteIcon /> -->
     <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
-    <Content v-if='typePage === "precast-page"'/>
-    <News v-if='typePage === "/news/"' > <Content /> </News>
-    <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
-    <ArticlesList v-if='typePage === "/articles/"' :mainBlogPage='true'> <Content /> </ArticlesList>
-    <Article v-if='typePage === "/article/"' > <Content /> </Article>
+    <slot v-if="isSlot"/>
+    <div v-else>
+      <Content v-if='typePage === "precast-page"'/>
+      <News v-if='typePage === "/news/"' > <Content /> </News>
+      <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
+      <Article v-if='typePage === "/article/"' > <Content /> </Article>
+    </div>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
@@ -34,7 +36,6 @@ import 'aos/dist/aos.css'
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
 import Article from '@/pages/Article.vue'
-import ArticlesList from '@/pages/ArticlesList.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
@@ -56,7 +57,6 @@ export default {
     News,
     Vacancy,
     Article,
-    ArticlesList,
     ModalWindow,
     ProjectForm,
   },
@@ -84,8 +84,6 @@ export default {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
         this.typePage = '/careers/'
-      } else if ((this.$page.frontmatter.index && route.indexOf('/blog/articles/') !== -1 ) || route.indexOf('/blog/articles/page/') !== -1) {
-        this.typePage = '/articles/'
       } else if (!this.$page.frontmatter.index && route.indexOf('/blog/articles/') !== -1){
         this.typePage = '/article/'
       } else {

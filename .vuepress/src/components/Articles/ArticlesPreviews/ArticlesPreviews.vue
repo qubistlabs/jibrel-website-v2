@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class='body'>
-          <div class='row'>
+          <div class='row' v-if="isMainBlogPage">
             <router-link :to='post.category.catagory_href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0 && isFirstPage'>
               <span class='j-button -fill-on-white-bg -h-small'>
@@ -53,7 +53,6 @@ export default {
     Subscribe,
   },
   props: {
-    curretCategory: '',
     isMainBlogPage: Boolean,
     limit: 0,
     removeIt: '',
@@ -93,7 +92,7 @@ export default {
       .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
       .map(page => ({
         ...page,
-        category: getCategoryLink(this.$themeLocaleConfig.data, page.frontmatter.category)
+        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath)
       }))
         
       if (!this.limit) {
@@ -103,9 +102,9 @@ export default {
       return this.pages.slice(0, Number(this.limit))
     },
   },
-  created() {    
+  created() {        
     this.isFirstPage = !(this.$page.regularPath.indexOf('/blog/articles/page/') !== -1)
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.frontmatter.category)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
   },
   watch: {
     $page(newPage) {

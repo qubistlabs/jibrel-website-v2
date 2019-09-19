@@ -127,7 +127,7 @@ export default {
     }
   },
   created() {    
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.frontmatter.category)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

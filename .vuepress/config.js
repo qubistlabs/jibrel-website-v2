@@ -144,12 +144,12 @@ module.exports = {
           id: 'blog',
           dirname: 'blog/articles',
           path: '/blog/articles/',
-          layout: 'Layout',
+          layout: 'ArticlesList',
           itemLayout: 'Layout',
           itemPermalink: '/blog/articles/:slug',
           pagination: {
             lengthPerPage: 10,
-            layout: 'Layout',
+            layout: 'ArticlesList',
           },
           frontmatter: {
             index: true,
