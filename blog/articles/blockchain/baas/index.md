@@ -2,6 +2,7 @@
 title: Blockchain-as-a-Service (Baas) 2019
 description: Enabling the creation of blockchain-powered products while eliminating much of the technical complexity. Much of the creation, implementation, and maintenance of an operational blockchain infrastructure no longer has to be built from scratch.
 date: 2019-08-30
+category: blockchain
 heroImage: 
   name: baas.png
   alt: blockchain as a service

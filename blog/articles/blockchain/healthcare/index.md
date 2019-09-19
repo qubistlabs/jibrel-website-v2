@@ -2,6 +2,7 @@
 title: How Blockchain Will Disrupt Healthcare by 2020
 description: From patient records to supply chain management, these problems can be found at various points throughout the ecosystem.
 date: 2019-08-30
+category: blockchain
 heroImage: 
   name: healthcare.png
   alt: Blockchain Healthcare

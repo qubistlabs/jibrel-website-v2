@@ -1,10 +1,11 @@
 ---
 index: true 
 title: Blog
+category: how-tos
 ---
 
 <template>
-  <ArticlesList />
+  <ArticlesList curretCategory='how-tos' />
 </template>
 
 

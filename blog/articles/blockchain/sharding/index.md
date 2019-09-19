@@ -2,6 +2,7 @@
 title: What is Sharding? A Complete Guide
 description: Sharding is the division of a hard disk that is treated as a separate unit by operating a system. This partitioning allows the drive to operate as several smaller sections to improve efficiency.
 date: 2019-08-30
+category: blockchain
 heroImage: 
   name: sharding.jpg
   alt: Sharding blockchain database

@@ -2,6 +2,7 @@
 title: Coins vs. Tokens - The Complete Guide
 description: Digital tokens live on blockchains that already exist, while digital coins have a specific and unique blockchain that they run on
 date: 2019-06-05
+category: blockchain
 heroImage: 
   name: coins-vs-tokens.jpg
   alt: Two coins next to each other, one of them is BTC, the other JNT

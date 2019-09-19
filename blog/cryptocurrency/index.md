@@ -1,10 +1,11 @@
 ---
 index: true 
 title: Blog
+category: cryptocurrency
 ---
 
 <template>
-  <ArticlesList />
+  <ArticlesList curretCategory='cryptocurrency' />
 </template>
 
 

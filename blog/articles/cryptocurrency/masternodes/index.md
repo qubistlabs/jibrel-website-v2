@@ -2,6 +2,7 @@
 title: 'Masternodes: The Complete Guide'
 description: Masternodes serve as the backbone of the Proof-of-Stake (PoS) blockchain model for certain cryptocurrencies. They run on computers with digital wallets that support the network of a particular coin. 
 date: 2019-07-31
+category: cryptocurrency
 heroImage: 
   name: masternodes.png
   alt: Masternode
