@@ -9,7 +9,8 @@
     <Content v-if='typePage === "precast-page"'/>
     <News v-if='typePage === "/news/"' > <Content /> </News>
     <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
-    <Article v-if='typePage === "/blog/"' > <Content /> </Article>
+    <ArticlesList v-if='typePage === "/articles/"' :mainBlogPage='true'> <Content /> </ArticlesList>
+    <Article v-if='typePage === "/article/"' > <Content /> </Article>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
@@ -33,6 +34,7 @@ import 'aos/dist/aos.css'
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
 import Article from '@/pages/Article.vue'
+import ArticlesList from '@/pages/ArticlesList.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
@@ -54,6 +56,7 @@ export default {
     News,
     Vacancy,
     Article,
+    ArticlesList,
     ModalWindow,
     ProjectForm,
   },
@@ -62,6 +65,7 @@ export default {
       typePage: String,
       headerSize: String,
       isOpened: false,
+      isSlot: true,
     }
   },
   methods: {
@@ -75,13 +79,15 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path
+      const route = this.$route.path      
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
         this.typePage = '/careers/'
-      } else if (!this.$page.frontmatter.index && route.indexOf(/blog/) !== -1){
-        this.typePage = '/blog/'
+      } else if ((this.$page.frontmatter.index && route.indexOf('/blog/articles/') !== -1 ) || route.indexOf('/blog/articles/page/') !== -1) {
+        this.typePage = '/articles/'
+      } else if (!this.$page.frontmatter.index && route.indexOf('/blog/articles/') !== -1){
+        this.typePage = '/article/'
       } else {
         this.typePage = 'precast-page'
       }
@@ -125,6 +131,7 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
+    this.isSlot = Object.keys(this.$slots).length ? true : false  
   },
   beforeMount() {
      AOS.init({
@@ -132,7 +139,7 @@ export default {
       once: true,
     })
   },
-  mounted() {    
+  mounted() {
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
@@ -152,7 +159,7 @@ export default {
     })
     this.gtmSend()
     this.ymTracking()
-  }
+  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Layout>
     <section class='section-content -offset-blog -offset-bottom -bottom-separator -bg-gray'>
       <ArticlesHeader />
       <SectionName
@@ -10,12 +10,10 @@
         arrow='up'
       />
       <div class='container _container-fix'>
-        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='mainBlogPage' :curretCategory='curretCategory' />
-        <MorePost v-if='isShowMoreInfo'/>
+        <ArticlesPreviews :isMainBlogPage='true' />
         <VuePaginame
-          v-if='!isShowMoreInfo'
           :value="page"
-          :page-count="$pagination ? $pagination.length : 0"
+          :page-count="$pagination.length"
           :click-handler="clickCallback"
           :prev-text="arrowLeft + 'Previous'"
           :next-text="'Next' + arrowRight"
@@ -32,11 +30,12 @@
     <section class='section-content'>
       <ContactsList isWhite='true'/>
     </section>
-  </div>
+  </Layout>
 </template>
 
 
 <script>
+  import Layout from './Layout.vue';
   import VuePaginame  from "vuejs-paginate";
   import EventBus from '@/Utils/EventBus.js';
   import SectionName from '@/components/base/SectionName/SectionName.vue'
@@ -50,6 +49,7 @@
 
   export default {
     components: {
+      Layout,
       SectionName,
       ArticlesPreviews,
       ArticlesHeader,
@@ -58,13 +58,13 @@
       VuePaginame
     },
     props: {
-      mainBlogPage: Boolean,
-      curretCategory: String
+      mainBlogPage: Boolean
     },
     data() {
       return {
         limit: 6,
         isShowMoreInfo: false,
+        comp: null,
       }
     },
     computed: {
@@ -75,9 +75,6 @@
         return arrowRight
       },
       page() {
-        if (!this.$pagination) {
-          return
-        }
         return this.$pagination.paginationIndex + 1
       }
     },
@@ -90,7 +87,7 @@
         this.$router.push(link)
       },
     },
-    created() {
+    created() {    
       EventBus.$on('load-limit', data => {      
         this.limit = data
       })

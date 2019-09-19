@@ -2,27 +2,27 @@ import { get } from 'lodash-es'
 
 const CATEGORIES = [
   {
-    slug: '/blog/how-tos',
+    slug: 'how-tos',
     id: 'Article.HowTos',
   },
   {
-    slug: '/blog/updates',
+    slug: 'updates',
     id: 'Article.Updates',
   },
   {
-    slug: '/blog/tokenization',
+    slug: 'tokenization',
     id: 'Article.Tokenization',
   },
   {
-    slug: '/blog/blockchain',
+    slug: 'blockchain',
     id: 'Article.Blockchain',
   },
   {
-    slug: '/blog/cryptocurrency',
+    slug: 'cryptocurrency',
     id: 'Article.Cryptocurrency',
   },
   {
-    slug: '/blog',
+    slug: '',
     id: 'Article.Blog',
   },
 ]
@@ -37,7 +37,8 @@ export const getCategoryLink = (translation, url) => {
   }
 
   return {
-    href: category.slug,
+    catagory_href: '/blog/' + category.slug,
+    href: '/blog/articles/' + category.slug,
     content: get(translation, category.id),
   }
 }

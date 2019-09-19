@@ -1,11 +1,11 @@
 <template>
   <div class='articles-heaader' :class='isSticky && "-sticky"'>
     <div class='container _container-fix'>
-      <router-link to='/blog/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
+      <router-link to='/blog/articles/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link to='/blog/tokenization/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
-        <router-link to='/blog/blockchain/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
-        <router-link to='/blog/cryptocurrency/' class='item' active-class='-current'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
+        <router-link to='/blog/tokenization/' class='item' :class='catagory === "tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
+        <router-link to='/blog/blockchain/' class='item' :class='catagory === "blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
+        <router-link to='/blog/cryptocurrency/' class='item' :class='catagory === "cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
       </div>
   </div>
 </div>
@@ -18,6 +18,7 @@ export default {
   data() {
     return {
       isSticky: false,
+      category: '',
     }
   },
   methods: {
@@ -39,10 +40,21 @@ export default {
       items.scrollTo({left: scrollTo,});
       items.addEventListener('scroll', this.handleScroll)
     },
+    setCategory() {
+      this.catagory = this.$page.frontmatter.category      
+    }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     this.menu()
+  },
+  created() {
+    this.setCategory()
+  },
+  watch: {
+    $page(newData) {
+      this.catagory = newData.frontmatter.category
+    }
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
