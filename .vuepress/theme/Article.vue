@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Layout>
     <section class='section-content -bg-gray -offset-blog'>
       <ArticlesHeader />
       <SectionName
@@ -18,7 +18,7 @@
           <div class="container">
             <div class='header'>
               <div class="left">
-                <router-link :to='category.category_href' class='tag'>{{category.content}}</router-link>
+                <router-link :to='category.href' class='tag'>{{category.content}}</router-link>
               </div>
               <social-sharing
                 :url="pageUrl"
@@ -38,7 +38,7 @@
             </div>
             <h1 class='title'>{{$page.frontmatter.title}}</h1>
             <div class='wysiwyg'>
-              <slot />
+              <Content />
             </div>
           </div>
         </div>
@@ -53,10 +53,11 @@
     <section class='section-content'>
       <ContactsList isWhite='true'/>
     </section>
-  </div>
+  </Layout>
 </template>
 
 <script>
+import Layout from './Layout.vue';
 import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
@@ -68,6 +69,7 @@ import ContactsList from '@/components/ContactsList/ContactsList.vue'
 export default {
   name: 'Article',
   components: {
+    Layout,
     SpriteIcon,
     ArticlesHeader,
     SectionName,
@@ -127,7 +129,7 @@ export default {
     }
   },
   created() {
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

@@ -6,10 +6,13 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- <SpriteIcon /> -->
     <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
-    <Content v-if='typePage === "precast-page"'/>
-    <News v-if='typePage === "/news/"' > <Content /> </News>
-    <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
-    <Article v-if='typePage === "/blog/"' > <Content /> </Article>
+    <slot v-if="isSlot"/>
+    <div v-else>
+      <Content v-if='typePage === "precast-page"'/>
+      <News v-if='typePage === "/news/"' > <Content /> </News>
+      <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
+      <Article v-if='typePage === "/article/"' > <Content /> </Article>
+    </div>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
     <ModalWindow :isOpened='isOpened' @close="isOpened=false">
@@ -62,6 +65,7 @@ export default {
       typePage: String,
       headerSize: String,
       isOpened: false,
+      isSlot: true,
     }
   },
   methods: {
@@ -75,13 +79,13 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path
+      const route = this.$route.path      
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
         this.typePage = '/careers/'
-      } else if (!this.$page.frontmatter.index && route.indexOf(/blog/) !== -1){
-        this.typePage = '/blog/'
+      } else if (!this.$page.frontmatter.index && route.indexOf('/blog/articles/') !== -1){
+        this.typePage = '/article/'
       } else {
         this.typePage = 'precast-page'
       }
@@ -125,6 +129,7 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
+    this.isSlot = Object.keys(this.$slots).length ? true : false  
   },
   beforeMount() {
      AOS.init({
@@ -132,7 +137,7 @@ export default {
       once: true,
     })
   },
-  mounted() {    
+  mounted() {
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
@@ -152,7 +157,7 @@ export default {
     })
     this.gtmSend()
     this.ymTracking()
-  }
+  },
 };
 </script>
 

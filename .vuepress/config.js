@@ -138,6 +138,26 @@ module.exports = {
     ],
   },
   plugins: {
+    '@vuepress/blog': {
+      directories: [
+        {
+          id: 'blog',
+          dirname: 'blog/articles',
+          path: '/blog/articles/',
+          layout: 'ArticlesList',
+          itemLayout: 'Layout',
+          itemPermalink: '/blog/articles/:slug',
+          pagination: {
+            lengthPerPage: 10,
+            layout: 'ArticlesList',
+          },
+          frontmatter: {
+            index: true,
+            category: 'blog',
+          }
+        },
+      ],
+    },
     'sitemap': {
       hostname: 'https://jibrel.network'
     },

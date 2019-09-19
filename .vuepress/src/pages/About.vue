@@ -122,6 +122,7 @@ import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 export default {
+  name: 'About',
   components: {
     SectionName,
     PartnersCard,

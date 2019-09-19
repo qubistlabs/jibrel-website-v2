@@ -1,6 +1,7 @@
 ---
 index: true 
 title: Blog
+category: blockchain
 ---
 
 <template>

@@ -2,41 +2,42 @@
   <div class='articles-preview'>
     <div
       v-for='(post, index) in posts'
+      v-if="post.category.content !== 'Blog'"
       class='item'
       :class='setClassToFirstArticle(index)'
       data-aos='fade-down'
       :data-aos-duration='aosDuration(index)'
       data-aos-delay='250'
-      :key='post.path'
+      :key='post.regularPath'
     >
-      <router-link :to='post.path' class='box'>
+      <router-link :to='post.regularPath' class='box'>
         <div class='pic' :style="`
           background-color: ${post.frontmatter.heroImage.bgColor};
           background-image: url(/assets/img/blog/${post.frontmatter.heroImage.name});
         `">
-          <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage'>
+          <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage || !isFirstPage'>
             <div class='read'>
-              <button class="j-button -fill-on-white-bg -h-small">
+              <span class="j-button -fill-on-white-bg -h-small">
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
-              </button>
+              </span>
             </div>
           </div>
         </div>
         <div class='body'>
-          <div class='row' v-if="category.content === 'Blog'">
-            <router-link :to='post.category.href' class='tag'>{{post.category.content}}</router-link>
-            <div class='read' v-if='isMainBlogPage && index === 0'>
-              <button class='j-button -fill-on-white-bg -h-small'>
+          <div class='row' v-if="isMainBlogPage">
+            <router-link :to='post.category.category_href' class='tag'>{{post.category.content}}</router-link>
+            <div class='read' v-if='isMainBlogPage && index === 0 && isFirstPage'>
+              <span class='j-button -fill-on-white-bg -h-small'>
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
-              </button>
-            </div>
+              </span>
+            </div> 
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
           <p class='descr'>{{ post.frontmatter.description }}</p>
         </div>
       </router-link>
-      <Subscribe v-if='isMainBlogPage && index === 0' />
+      <Subscribe v-if='isMainBlogPage && index === 0 && isFirstPage' />
     </div>
   </div>
 </template>
@@ -56,13 +57,19 @@ export default {
     limit: 0,
     removeIt: '',
   },
+  data() {
+    return {
+      isFirstPage: true,
+      pages: []
+    }
+  },
   methods: {
     timeToRead(wordCount) {
       return Math.round(wordCount / this.$themeLocaleConfig.data.Article.AverageReadSpeed)
     },
     setClassToFirstArticle(index) {
       if (this.isMainBlogPage) {
-        return index === 0 && '-first-card'
+        return index === 0 && this.isFirstPage && '-first-card'
       }
     },
     aosDuration(index) {
@@ -73,25 +80,37 @@ export default {
     },
   },
   computed: {
-    posts() {
-      const posts = this.$site.pages
-        .filter(x => x.path.startsWith(this.category.href) && !x.frontmatter.index && this.removeIt !== x.key)
-        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
-        .map(page => ({
-          ...page,
-          category: getCategoryLink(this.$themeLocaleConfig.data, page.path)
-        }))
-      
+    posts() {      
+      if (this.$pagination) {
+        this.pages = this.$pagination.pages
+      } else {     
+        this.pages = this.$site.pages
+      }     
+
+      this.pages = this.pages
+      .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.title)
+      .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+      .map(page => ({
+        ...page,
+        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath)
+      }))
+        
       if (!this.limit) {
-        return posts
+        return this.pages
       }
-      EventBus.$emit('posts-length', posts.length)
-      return posts.slice(0, Number(this.limit))
+      EventBus.$emit('posts-length', this.pages.length)
+      return this.pages.slice(0, Number(this.limit))
     },
   },
-  created() {
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
+  created() {        
+    this.isFirstPage = !(this.$page.regularPath.indexOf('/blog/articles/page/') !== -1)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
   },
+  watch: {
+    $page(newPage) {
+      this.isFirstPage = !(newPage.regularPath.indexOf('/blog/articles/page/') !== -1)
+    },
+  }
 }
 </script>
 

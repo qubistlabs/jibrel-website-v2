@@ -11,6 +11,7 @@ title: About
 <script>
   import About from '@/pages/About.vue'
   export default {
+  name: 'AboutPage',
   components: {
       About,
     },
