@@ -5,7 +5,7 @@ category: blockchain
 ---
 
 <template>
-  <ArticlesList curretCategory='blockchain' />
+  <ArticlesList />
 </template>
 
 

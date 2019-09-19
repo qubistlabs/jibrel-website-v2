@@ -2,7 +2,6 @@
 title: What Is the Decentralized Internet?
 description: A decentralized internet would utilize a network of computers. Each computer would act as a node in an interlinked chain.
 date: 2019-08-08
-category: blockchain
 heroImage: 
   name: decentralized-internet.jpg
   alt: Decentralized Internet Blockchain Nodes

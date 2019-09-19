@@ -2,7 +2,6 @@
 title: 'What is Disintermediation? The Complete Guide'
 description: The goal of disintermediation is to reduce the number of middlemen and intermediaries between a product and the consumer. 
 date: 2019-07-31
-category: tokenization
 heroImage: 
   name: disintermediation.png
   alt: Disintermediation

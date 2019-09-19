@@ -2,7 +2,6 @@
 title: 'Stablecoins: Everything You Need to Know'
 description: 'Stablecoins are digital cryptocurrencies whose value is pegged to an underlying asset. Coins such as Tether and PAX are pegged 1:1 to the US Dollar.' 
 date: 2019-08-08
-category: cryptocurrency
 heroImage: 
   name: stablecoin.jpg
   alt: Stablecoin digital coin token

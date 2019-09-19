@@ -5,7 +5,7 @@ category: tokenization
 ---
 
 <template>
-  <ArticlesList curretCategory='tokenization' />
+  <ArticlesList />
 </template>
 
 

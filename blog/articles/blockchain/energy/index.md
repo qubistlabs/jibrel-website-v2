@@ -2,7 +2,6 @@
 title: How Blockchain Will Revolutionize The Energy Sector
 description: Blockchain is becoming something that the energy industry can no longer ignore if it is to power the world of the future.
 date: 2019-08-30
-category: blockchain
 heroImage: 
   name: energy.png
   alt: Blockchain energy sector

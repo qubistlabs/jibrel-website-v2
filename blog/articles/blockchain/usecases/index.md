@@ -2,7 +2,6 @@
 title: 12 Ways Blockchain Will Change the World by 2030
 description: There is no denying that blockchain is here to stay. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.
 date: 2019-08-15
-category: blockchain
 heroImage: 
   name: blockchain-usecases.jpg
   alt: Blockchain world

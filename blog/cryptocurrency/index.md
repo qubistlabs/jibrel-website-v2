@@ -5,7 +5,7 @@ category: cryptocurrency
 ---
 
 <template>
-  <ArticlesList curretCategory='cryptocurrency' />
+  <ArticlesList />
 </template>
 
 

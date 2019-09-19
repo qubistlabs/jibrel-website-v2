@@ -5,7 +5,7 @@ category: how-tos
 ---
 
 <template>
-  <ArticlesList curretCategory='how-tos' />
+  <ArticlesList />
 </template>
 
 
