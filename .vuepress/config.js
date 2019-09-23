@@ -139,7 +139,19 @@ module.exports = {
   },
   plugins: {
     'sitemap': {
-      hostname: 'https://jibrel.network'
+      hostname: 'https://jibrel.network',
+    },
+    'robots': {
+      host: 'https://jibrel.network',
+      disallowAll: false,
+      allowAll: true,      
+      sitemap: '/sitemap.xml',
+      policies: [
+        {
+          userAgent: '*',
+          disallow: [],
+        }
+      ]
     },
     'seo': {
       title: $page => ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? $page.title : $page.title ? 'Jibrel Network - ' + $page.title : 'Jibrel Network',
