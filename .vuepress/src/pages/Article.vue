@@ -13,7 +13,7 @@
         <div class='article-page'>
           <div class="preview" :style="`
             background-color: ${$page.frontmatter.heroImage.bgColor}; 
-            background-image: url(/assets/img/blog/${$page.frontmatter.heroImage.name});
+            background-image: url(${getImg});
             `" />
           <div class="container">
             <div class='header'>
@@ -81,6 +81,11 @@ export default {
       tagRootPath: '',
       tagName: '',
       pageUrl: '',
+    }
+  },
+  computed: {
+    getImg() {      
+      return require(`@/../../_img/blog/${this.$page.frontmatter.heroImage.name}`)
     }
   },
   methods: {
