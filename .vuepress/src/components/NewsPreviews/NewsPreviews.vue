@@ -26,6 +26,16 @@ export default {
     locale: String,
     limit: 0,
   },
+  methods: {
+    getImage(name) {
+      try {
+        return require(`@/../../_img/cover/${name}@2x.png`)
+      } catch (e) {
+        console.error(e)
+        return ''
+      }
+    }
+  },
   computed: {
     posts() {
       const posts = this.$site.pages
@@ -33,7 +43,7 @@ export default {
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
         .map(page => ({
           ...page,
-          img: require(`@/../../_img/cover/${page.frontmatter.source.id}@2x.png`)        
+          img: this.getImage(page.frontmatter.source.id)
         }));
       if (!this.limit) {
         return posts

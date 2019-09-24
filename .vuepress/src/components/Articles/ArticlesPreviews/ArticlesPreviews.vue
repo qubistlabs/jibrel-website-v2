@@ -78,6 +78,14 @@ export default {
       }
       return 300 + index % 3 * 300
     },
+    getImage(name) {
+      try {
+        return require(`@/../../_img/blog/${name}`)
+      } catch (e) {
+        console.error(e)
+        return ''
+      }
+    }
   },
   computed: {
     posts() {      
@@ -86,14 +94,13 @@ export default {
       } else {
         this.pages = this.$site.pages
       }
-
       this.pages = this.pages
       .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.title)
       .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
       .map(page => ({
         ...page,
         category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath),
-        img: require(`@/../../_img/blog/${page.frontmatter.heroImage.name}`)        
+        img: this.getImage(page.frontmatter.heroImage.name)        
       }))
       if (!this.limit) {
         return this.pages

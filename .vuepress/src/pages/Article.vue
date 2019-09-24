@@ -13,8 +13,9 @@
         <div class='article-page'>
           <div class="preview" :style="`
             background-color: ${$page.frontmatter.heroImage.bgColor}; 
-            background-image: url(${getImg});
-            `" />
+            background-image: url(${img});`"
+            v-show="img"
+          />
           <div class="container">
             <div class='header'>
               <div class="left">
@@ -84,8 +85,13 @@ export default {
     }
   },
   computed: {
-    getImg() {      
-      return require(`@/../../_img/blog/${this.$page.frontmatter.heroImage.name}`)
+    img() {
+      try {
+        return require(`@/../../_img/blog/${this.$page.frontmatter.heroImage.name}`)
+      } catch (e) {
+        console.error(e)
+        return ''
+      }
     }
   },
   methods: {
