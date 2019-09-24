@@ -12,7 +12,7 @@
       <div class='container _container-fix'>
         <div class='article-page'>
           <div class="preview" :style="`
-            background-color: ${$page.frontmatter.heroImage.bgColor}; 
+            background-color: ${$page.frontmatter.heroImage.bgColor};
             background-image: url(/assets/img/blog/${$page.frontmatter.heroImage.name});
             `" />
           <div class="container">
@@ -109,7 +109,7 @@ export default {
       link.forEach(element => {
         const href = element.getAttribute('href')
         const string = element.innerText
-        element.innerText = string.replace(/^\d+\. /g, '')        
+        element.innerText = string.replace(/^\d+\. /g, '')
         element.setAttribute('href', anchorFormatter(href))
         element.addEventListener('click', function (e) {
           e.preventDefault()
@@ -127,7 +127,7 @@ export default {
     }
   },
   created() {
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

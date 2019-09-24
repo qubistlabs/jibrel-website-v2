@@ -79,7 +79,7 @@ export default {
       return 'colored';
     },
     getTypePage() {
-      const route = this.$route.path      
+      const route = this.$route.path
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
         this.typePage = '/news/'
       } else if (route !== `${this.$localeConfig.path}careers/` && route.indexOf(/careers/) !== -1) {
@@ -107,14 +107,14 @@ export default {
         this.$gtm.trackEvent({
           'event': 'virtualPageview',
           'virtualTitle': this.$page.title,
-          'virtualUrl': this.$page.path,
+          'virtualUrl': this.$page.regularPath,
           'virtualHost': window.location.hostname,
         });
       }
     },
     ymTracking() {
       if (this.$metrika) {
-        this.$metrika.hit(this.$page.path)
+        this.$metrika.hit(this.$page.regularPath)
       }
     }
   },
@@ -129,7 +129,7 @@ export default {
   created() {
     this.getTypePage()
     this.getHeaderSize()
-    this.isSlot = Object.keys(this.$slots).length ? true : false  
+    this.isSlot = Object.keys(this.$slots).length ? true : false
   },
   beforeMount() {
      AOS.init({

@@ -35,7 +35,7 @@
 
 
 <script>
-  import Layout from './Layout.vue';
+  import Layout from './layouts/Layout.vue';
   import VuePaginame  from "vuejs-paginate";
   import EventBus from '@/Utils/EventBus.js';
   import SectionName from '@/components/base/SectionName/SectionName.vue'

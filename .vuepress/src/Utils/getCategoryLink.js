@@ -27,7 +27,7 @@ const CATEGORIES = [
   },
 ]
 
-export const getCategoryLink = (translation, url) => {
+export const getCategoryLink = (translation, url, languagePathPrefix) => {
   const category = CATEGORIES.find(
     c => RegExp(c.slug).test(url)
   )
@@ -35,10 +35,11 @@ export const getCategoryLink = (translation, url) => {
   if (!category) {
     throw new Error('NO_CATEGORY_DEFINED')
   }
-  
+
   return {
-    category_href: '/blog/' + category.slug,
-    href: '/blog/articles/' + category.slug,
+    category_href: languagePathPrefix + 'blog/' + category.slug,
+    href: languagePathPrefix + 'blog/' + category.slug,
+    slug: category.slug,
     content: get(translation, category.id),
   }
 }

@@ -190,7 +190,7 @@
   }
 
   &.-bg-grid {
-    background-image: url(../src/assets/img/general/bg/faded-grid-white.png);
+    background-image: url(../../src/assets/img/general/bg/faded-grid-white.png);
     background-position: top center;
   }
 
@@ -208,7 +208,7 @@
     }
 
     &.-bg-grid {
-      background-image: url(../src/assets/img/general/bg/faded-grid-white-o.png);
+      background-image: url(../../src/assets/img/general/bg/faded-grid-white-o.png);
     }
   }
 
@@ -436,7 +436,7 @@
       font-weight: normal;
       color: rgba($base, 0.6);
       line-height: (24/14);
-      
+
       @include from-mobile {
         padding-left: 30px;
         padding-right: 30px;

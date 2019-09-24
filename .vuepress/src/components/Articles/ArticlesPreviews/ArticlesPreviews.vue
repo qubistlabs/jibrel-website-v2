@@ -30,7 +30,7 @@
               <span class='j-button -fill-on-white-bg -h-small'>
                 {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
               </span>
-            </div> 
+            </div>
             <slot />
           </div>
           <h2 class='title'>{{ post.frontmatter.title }}</h2>
@@ -80,21 +80,21 @@ export default {
     },
   },
   computed: {
-    posts() {      
+    posts() {
       if (this.$pagination) {
         this.pages = this.$pagination.pages
-      } else {     
+      } else {
         this.pages = this.$site.pages
-      }     
+      }
 
       this.pages = this.pages
       .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.title)
       .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
       .map(page => ({
         ...page,
-        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath)
+        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath, this.$localeConfig.path)
       }))
-        
+
       if (!this.limit) {
         return this.pages
       }
@@ -102,13 +102,13 @@ export default {
       return this.pages.slice(0, Number(this.limit))
     },
   },
-  created() {        
-    this.isFirstPage = !(this.$page.regularPath.indexOf('/blog/articles/page/') !== -1)
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath)
+  created() {
+    this.isFirstPage = !(this.$page.regularPath.indexOf('/blog/page/') !== -1)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path)
   },
   watch: {
     $page(newPage) {
-      this.isFirstPage = !(newPage.regularPath.indexOf('/blog/articles/page/') !== -1)
+      this.isFirstPage = !(newPage.regularPath.indexOf('/blog/page/') !== -1)
     },
   }
 }
