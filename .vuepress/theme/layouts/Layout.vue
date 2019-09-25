@@ -28,6 +28,7 @@
 </template>
 <script>
 import Vue from 'vue'
+import VueCookies from 'vue-cookies'
 import SocialSharing from 'vue-social-sharing'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -45,6 +46,7 @@ import VueGtm from 'vue-gtm'
 import VueYandexMetrika from 'vue-yandex-metrika'
 
 Vue.use(SocialSharing);
+Vue.use(VueCookies)
 
 export default {
   components: {
@@ -99,8 +101,9 @@ export default {
         this.headerSize = false
       }
     },
-    gtmSend() {
-      if (this.$gtm) {
+    gtmSend() {      
+      if (this.$gtm) {        
+        this.$gtm.trackView(this.$page.key, this.$page.regularPath);
         this.$gtm.trackEvent({
           'event': 'virtualPageview',
           'virtualTitle': this.$page.title,
@@ -129,22 +132,22 @@ export default {
     this.isSlot = Object.keys(this.$slots).length ? true : false
   },
   beforeMount() {
-     AOS.init({
+    AOS.init({
       disable: "mobile",
       once: true,
     })
   },
   mounted() {
+    this.$cookies.set('lang', this.$localeConfig.shortLang, '360d')
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
       debug: process.env.NODE_ENV === 'development',
-      vueRouter: this.$router,
     })
     Vue.use(VueYandexMetrika, {
       id: process.env.YANDEX_METRIKA_ID,
       env: process.env.NODE_ENV,
-      debug: true,
+      debug: false,
       options: {
         clickmap: true,
         trackLinks: true,
