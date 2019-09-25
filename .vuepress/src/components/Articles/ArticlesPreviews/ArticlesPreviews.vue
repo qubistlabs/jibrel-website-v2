@@ -78,9 +78,9 @@ export default {
       }
       return 300 + index % 3 * 300
     },
-    getImage(name) {
+    getImage(page) {
       try {
-        return require(`@/../../_img/blog/${name}`)
+        return require(`@/../../_img/blog/${page.frontmatter.heroImage.name}`)
       } catch (e) {
         console.error(e)
         return ''
@@ -95,12 +95,12 @@ export default {
         this.pages = this.$site.pages
       }
       this.pages = this.pages
-      .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.title)
+      .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.layout === 'BlogArticleOrCategory')
       .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
       .map(page => ({
         ...page,
         category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath, this.$localeConfig.path),
-        img: this.getImage(page.frontmatter.heroImage.name)        
+        img: this.getImage(page)        
       }))
       if (!this.limit) {
         return this.pages
