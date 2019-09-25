@@ -66,6 +66,9 @@
     color: $base;
     font-size: 14px;
     opacity: 0.8;
+    background: none;
+    padding-right: 0;
+
     &:hover {
       color: $light-blue;
     }
