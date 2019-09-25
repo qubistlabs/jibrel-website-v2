@@ -7,7 +7,7 @@ source:
     url: https://techcrunch.com/2017/11/22/with-ethereum-wallets-under-constant-attack-jibrel-network-decided-to-build-their-own/
 ---
 
-![With Ethereum wallets under constant attack, Jibrel Network decided to build their own](/assets/img/content/gettyimages-675635665.wfwf3556.jpg)
+![With Ethereum wallets under constant attack, Jibrel Network decided to build their own](@/../../_img/content/gettyimages-675635665.wfwf3556.jpg)
 
 Since blockchain technologies appeared people have been trying to figure out how to put traditional assets like currencies, bonds and other financial instruments onto it in a way which has regulatory compliance and is secure. If you could do that you could sell securities in a legitimate way, thus disrupting large swathes of the asset management industry. In case you didn’t happen to know, the asset management industry is worth around $69 trillion or more, globally. But you have to hold these assets in wallets. And it’s not easy getting it right.
 

@@ -7,7 +7,7 @@ source:
     url: https://www.the-blockchain.com/2018/01/17/jibrel-network-announces-jcash-regulated-asset-backed-smart-contracts/
 ---
 
-![jCash – Fiat Currencies on Ethereum](/assets/img/content/DQLVaapWkAAAENs.wigigyogo872x.jpg)
+![jCash – Fiat Currencies on Ethereum](@/../../_img/content/DQLVaapWkAAAENs.wigigyogo872x.jpg)
 
 Jibrel Network announced on Wednesday the launch of jCash, the Jibrel Network’s first tokenized asset used to provide an auditable, fiat-backed cryptographic asset existing off-chain, designed to allow deeper regulatory compliance and lower volatility. The first jCash currencies will be US dollars (USD) and the South Korean Won (KRW).
 
