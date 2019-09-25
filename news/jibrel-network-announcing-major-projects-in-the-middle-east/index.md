@@ -7,7 +7,7 @@ source:
     url: https://www.unlock-bc.com/news/2018-07-18/jibrel-network-announcing-major-projects-in-the-middle-east
 ---
 
-![Jibrel Network announcing major projects in the Middle East](/assets/img/content/talal-pic.jpg)
+![Jibrel Network announcing major projects in the Middle East](@/../../_img/content/talal-pic.jpg)
 
 [Jibrel Network](https://www.unlock-bc.com/news/2017-10-13/jibrel-network-connecting-our-earthly-assets-with-digitized-tokens-on-the-blockchain) has been very active in the blockchain space with a myriad of initiatives and projects, especially in the MENA region, positioning itself as the region’s leader in blockchain for financial assets. Jibrel Network is the first protocol to allow anyone to put traditional assets such as currencies, bonds, and other financial instruments on the blockchain in a form of Crypto Depository Receipts (CryDRs) to enable quick, transparent, and cost effective transfer of these assets.
 

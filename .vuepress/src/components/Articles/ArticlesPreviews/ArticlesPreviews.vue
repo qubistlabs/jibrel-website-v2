@@ -13,7 +13,7 @@
       <router-link :to='post.regularPath' class='box'>
         <div class='pic' :style="`
           background-color: ${post.frontmatter.heroImage.bgColor};
-          background-image: url(/assets/img/blog/${post.frontmatter.heroImage.name});
+          background-image: url(${post.img});
         `">
           <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage || !isFirstPage'>
             <div class='read'>
@@ -78,23 +78,30 @@ export default {
       }
       return 300 + index % 3 * 300
     },
+    getImage(name) {
+      try {
+        return require(`@/../../_img/blog/${name}`)
+      } catch (e) {
+        console.error(e)
+        return ''
+      }
+    }
   },
   computed: {
     posts() {      
       if (this.$pagination) {
         this.pages = this.$pagination.pages
-      } else {     
+      } else {
         this.pages = this.$site.pages
-      }     
-
+      }
       this.pages = this.pages
       .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.title)
       .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
       .map(page => ({
         ...page,
-        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath)
+        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath),
+        img: this.getImage(page.frontmatter.heroImage.name)        
       }))
-        
       if (!this.limit) {
         return this.pages
       }
