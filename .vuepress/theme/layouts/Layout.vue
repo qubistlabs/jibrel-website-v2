@@ -11,7 +11,6 @@
       <Content v-if='typePage === "precast-page"'/>
       <News v-if='typePage === "/news/"' > <Content /> </News>
       <Vacancy v-if='typePage === "/careers/"' > <Content /> </Vacancy>
-      <Article v-if='typePage === "/article/"' > <Content /> </Article>
     </div>
     <MainFooter @open="modalOpen"/>
     <MobileFooter />
@@ -35,7 +34,6 @@ import 'aos/dist/aos.css'
 
 import News from '@/pages/News.vue'
 import Vacancy from '@/pages/Vacancy.vue'
-import Article from '@/pages/Article.vue'
 import MainHeader from '@/components/base/MainHeader/MainHeader.vue'
 import MainFooter from '@/components/base/MainFooter/MainFooter.vue'
 import MobileFooter from '@/components/base/MobileFooter/MobileFooter.vue'
@@ -56,7 +54,6 @@ export default {
     SpriteIcon,
     News,
     Vacancy,
-    Article,
     ModalWindow,
     ProjectForm,
   },
