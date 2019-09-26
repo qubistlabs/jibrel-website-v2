@@ -35,8 +35,8 @@
 
 
 <script>
-  import Layout from './layouts/Layout.vue';
-  import VuePaginame  from 'vuejs-paginate/src/components/Paginate.vue';
+  import Layout from './layouts/Layout.vue'
+  import VuePaginame  from 'vuejs-paginate/src/components/Paginate.vue'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
   import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
