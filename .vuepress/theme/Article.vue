@@ -117,11 +117,13 @@ export default {
           e.preventDefault()
           const id = this.getAttribute('href')
           const offset = document.querySelector(id).offsetTop
-
+          const windowWidth = window.innerWidth
+          const mod = window.innerWidth > 767 ? 120 : 80
+          
           window.scrollTo({
             'behavior': 'smooth',
             'left': 0,
-            'top': offset + 120
+            'top': offset + mod
           });
           return false
         });
