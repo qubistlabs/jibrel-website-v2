@@ -35,9 +35,8 @@
 
 
 <script>
-  import Layout from './Layout.vue';
-  import VuePaginame  from "vuejs-paginate";
-  import EventBus from '@/Utils/EventBus.js';
+  import Layout from './layouts/Layout.vue'
+  import VuePaginame  from 'vuejs-paginate/src/components/Paginate.vue'
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
   import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
@@ -55,7 +54,7 @@
       ArticlesHeader,
       MorePost,
       ContactsList,
-      VuePaginame
+      VuePaginame,
     },
     computed: {
       arrowLeft() {

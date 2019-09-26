@@ -12,9 +12,10 @@
       <div class='container _container-fix'>
         <div class='article-page'>
           <div class="preview" :style="`
-            background-color: ${$page.frontmatter.heroImage.bgColor}; 
-            background-image: url(/assets/img/blog/${$page.frontmatter.heroImage.name});
-            `" />
+            background-color: ${$page.frontmatter.heroImage.bgColor};
+            background-image: url(${img});`"
+            v-show="img"
+          />
           <div class="container">
             <div class='header'>
               <div class="left">
@@ -57,7 +58,7 @@
 </template>
 
 <script>
-import Layout from './Layout.vue';
+import Layout from './layouts/Layout.vue';
 import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
 import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
@@ -83,6 +84,16 @@ export default {
       tagRootPath: '',
       tagName: '',
       pageUrl: '',
+    }
+  },
+  computed: {
+    img() {
+      try {
+        return require(`@/../../_img/blog/${this.$page.frontmatter.heroImage.name}`)
+      } catch (e) {
+        console.error(e)
+        return ''
+      }
     }
   },
   methods: {
@@ -111,7 +122,7 @@ export default {
       link.forEach(element => {
         const href = element.getAttribute('href')
         const string = element.innerText
-        element.innerText = string.replace(/^\d+\. /g, '')        
+        element.innerText = string.replace(/^\d+\. /g, '')
         element.setAttribute('href', anchorFormatter(href))
         element.addEventListener('click', function (e) {
           e.preventDefault()
@@ -129,7 +140,7 @@ export default {
     }
   },
   created() {
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path)
+    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path, this.$localeConfig.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

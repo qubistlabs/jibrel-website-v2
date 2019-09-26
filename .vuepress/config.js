@@ -38,6 +38,13 @@ module.exports = {
       site: 'https://jibrel.network',
       data: contentEn,
     },
+    '/en/': {
+      lang: 'en-US',
+      shortLang: 'en',
+      title: 'Jibrel Network',
+      site: 'https://jibrel.network',
+      data: contentEn,
+    },
     '/ko/': {
       lang: 'ko-KR',
       shortLang: 'ko',
@@ -57,7 +64,7 @@ module.exports = {
     site: 'https://jibrel.network',
     twitter: '@jibrelnetwork',
     locales: {
-      '/': {
+      '/en/': {
         selectText: 'ENGLISH',
         data: themeEn,
       },
@@ -141,12 +148,12 @@ module.exports = {
     '@vuepress/blog': {
       directories: [
         {
-          id: 'blog',
-          dirname: 'blog/articles',
-          path: '/blog/articles/',
+          id: 'en',
+          dirname: 'en/blog',
+          path: '/en/blog/',
           layout: 'ArticlesList',
-          itemLayout: 'Layout',
-          itemPermalink: '/blog/articles/:slug',
+          itemLayout: 'BlogArticleOrCategory',
+          itemPermalink: '../:regular',
           pagination: {
             lengthPerPage: 10,
             layout: 'ArticlesList',
@@ -164,7 +171,7 @@ module.exports = {
     'robots': {
       host: 'https://jibrel.network',
       disallowAll: false,
-      allowAll: true,      
+      allowAll: true,
       sitemap: '/sitemap.xml',
       policies: [
         {
@@ -183,18 +190,18 @@ module.exports = {
 
       customMeta: (add, context) => {
         const {
-            $site, 
-            $page, 
+            $site,
+            $page,
         } = context
-          add('twitter:site', $site.themeConfig.twitter)          
+          add('twitter:site', $site.themeConfig.twitter)
           add(
             'og:image:width',
-            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '1323' : '500', 
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '1323' : '500',
             'property'
           )
           add(
             'og:image:height',
-            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '901' : '250', 
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '901' : '250',
             'property'
           )
       },

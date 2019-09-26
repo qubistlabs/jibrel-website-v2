@@ -6,7 +6,7 @@
   padding-right: 30px;
   position: relative;
   transition: border-color 0.2s ease-in-out;
-  
+
   @include to-mobile {
     padding-left: 16px;
     padding-right: 16px;
@@ -21,14 +21,14 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    
+
     &:active {
       user-select: none;
     }
- 
+
     &:after {
       content: '';
-      background-image: url(../src/assets/img/general/icon/chevron.svg);
+      background-image: url(../../src/assets/img/general/icon/chevron.svg);
       width: 14px;
       height: 56px;
       background-repeat: no-repeat;
@@ -42,12 +42,12 @@
       }
     }
   }
-  
+
   > ol {
     display: none;
     padding-bottom: 20px;
   }
-  
+
   &.-open {
     > ol {
       display: block;
@@ -66,6 +66,9 @@
     color: $base;
     font-size: 14px;
     opacity: 0.8;
+    background: none;
+    padding-right: 0;
+
     &:hover {
       color: $light-blue;
     }

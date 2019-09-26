@@ -1,11 +1,11 @@
 <template>
   <div class='articles-heaader' :class='isSticky && "-sticky"'>
     <div class='container _container-fix'>
-      <router-link to='/blog/articles/' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
+      <router-link :to='`${this.$localeConfig.path}blog/`' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link to='/blog/tokenization/' class='item' :class='catagory === "/blog/tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
-        <router-link to='/blog/blockchain/' class='item' :class='catagory === "/blog/blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
-        <router-link to='/blog/cryptocurrency/' class='item' :class='catagory === "/blog/cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
+        <router-link :to='`${this.$localeConfig.path}blog/tokenization/`' class='item' :class='category === "tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
+        <router-link :to='`${this.$localeConfig.path}blog/blockchain/`' class='item' :class='category === "blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
+        <router-link :to='`${this.$localeConfig.path}blog/cryptocurrency/`' class='item' :class='category === "cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
       </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ export default {
       }
     },
     menu() {
-      const items = this.$el.querySelector('.tabs')      
+      const items = this.$el.querySelector('.tabs')
       const itemCurrent = this.$el.querySelector('.item.-current')
       if (!itemCurrent) return
       const itemsWidth = items.clientWidth
@@ -41,7 +41,7 @@ export default {
       items.addEventListener('scroll', this.handleScroll)
     },
     setCategory() {
-      this.catagory = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath).category_href
+      this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path).slug
     }
   },
   mounted() {
