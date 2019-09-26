@@ -31,6 +31,13 @@ module.exports = {
     ['link', { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' }],
   ],
   locales: {
+    '/': {
+      lang: 'en-US',
+      shortLang: 'en',
+      title: 'Jibrel Network',
+      site: 'https://jibrel.network',
+      data: contentEn,
+    },
     '/en/': {
       lang: 'en-US',
       shortLang: 'en',
