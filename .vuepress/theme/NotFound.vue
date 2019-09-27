@@ -13,15 +13,29 @@
             <p class="descr -e404">The page you&#x27;re looking for can&#x27;t be found. Check the URL and try again.</p>
           </div>
           <div class="back">
-            <router-link :to='this.$localeConfig.path' class='link'>Back to Home</router-link>
+            <router-link :to='homeLink' class='link'>Back to Home</router-link>
           </div>
         </div>
       </div>
     </section>
   </div>
-</template> 
+</template>
 <script>
+const LOCALE_RE = /^\/(en|ko|zh)/
+
 export default {
-  
+  computed: {
+    // FIXME: This hack is used because vuepress passes incorrect environment when it renders this file
+    // This happens, most possibly, because of locale hack for root folder (see config.js > locales['/'])
+    // Maybe we should switch from this hack to defining `base` property, but it will need more workarounds
+    homeLink () {
+      const match = this.$route.path.match(LOCALE_RE)
+      if (!match) {
+        return '/en/'
+      }
+
+      return `/${match[1]}/`
+    }
+  },
 };
 </script>
