@@ -40,16 +40,15 @@ export default {
   computed: {
     language () {
       const locales = this.$site.themeConfig.locales
+      const localesMeta = this.$site.locales
       if (locales && Object.keys(locales).length > 1) {
         const currentLink = this.$page.path
-        const routes = this.$router.options.routes
-        const themeLocales = this.$site.themeConfig.locales || {}
         return {
           current: this.$themeLocaleConfig.selectText,
           items: Object.keys(locales).map(path => {
             const locale = locales[path]
             const text = locale.selectText
-            const lang = this.$localeConfig.shortLang
+            const lang = localesMeta[path].shortLang
             let link
             if (locale.selectText === this.$selectText) {
               link = currentLink
@@ -68,7 +67,7 @@ export default {
     }
   },
   watch: {
-    $page: function (newVal) {      
+    $page: function (newVal) {
       this.isOpened = false
     }
   }

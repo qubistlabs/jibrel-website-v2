@@ -101,8 +101,8 @@ export default {
         this.headerSize = false
       }
     },
-    gtmSend() {      
-      if (this.$gtm) {        
+    gtmSend() {
+      if (this.$gtm) {
         this.$gtm.trackView(this.$page.key, this.$page.regularPath);
         this.$gtm.trackEvent({
           'event': 'virtualPageview',
@@ -138,7 +138,6 @@ export default {
     })
   },
   mounted() {
-    this.$cookies.set('lang', this.$localeConfig.shortLang, '360d')
     Vue.use(VueGtm, {
       id: process.env.GOOGLE_TAG_MANAGER_ID,
       enabled: true,
