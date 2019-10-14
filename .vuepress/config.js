@@ -161,6 +161,7 @@ module.exports = {
           frontmatter: {
             index: true,
             category: 'blog',
+            title: 'Blog',
           }
         },
       ],
