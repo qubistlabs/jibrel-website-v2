@@ -1,6 +1,4 @@
 .j-buttons {
-  @include all-reset;
-  
   display: block;
   width: 100%;
 
@@ -18,8 +16,6 @@
 }
 
 .j-button {
-  @include all-reset;
-
   display: inline-block;
   cursor: pointer;
   padding-left: 20px;
@@ -35,7 +31,6 @@
   text-align: center;
   white-space: nowrap;
   transition: color 0.2s ease-in-out, fill 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  -webkit-text-fill-color: inherit;
 
   @include from-mobile {
     &:not(:last-child) {
