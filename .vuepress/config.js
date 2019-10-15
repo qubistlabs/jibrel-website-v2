@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
+const urlResolve = require('./src/Utils/urlResolve.js')
+
 // Content files
 const contentEn = require('./i18n/EnUS/content')
 const contentKo = require('./i18n/KoKr/content')
@@ -161,6 +163,7 @@ module.exports = {
           frontmatter: {
             index: true,
             category: 'blog',
+            title: 'Blog',
           }
         },
       ],
@@ -181,11 +184,23 @@ module.exports = {
       ]
     },
     'seo': {
-      title: $page => ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? $page.title : $page.title ? 'Jibrel Network - ' + $page.title : 'Jibrel Network',
-      description: $page => $page.frontmatter.description ? $page.frontmatter.description : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      type: $page => ['news', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
-      url: (_, $site, path) => $site.themeConfig.site + path,
-      image: ($page, $site) => $page.frontmatter.heroImage ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name : 'https://jibrel.network/assets/misc/logo.jpg',
+      title: ($page) =>
+        $page.title
+          ? `${$page.title} | Jibrel Network`
+          : 'Jibrel Network',
+      description: $page =>
+        $page.frontmatter.description
+          ? $page.frontmatter.description
+          : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      type: ($page) =>
+        /^\/[\w-]+\/news\/.+/.test($page.regularPath)
+        || /^\/[\w-]+\/blog\/[\w-]+\/.+/.test($page.regularPath)
+          ? 'article'
+          : 'website',
+      url: (_, $site, path) => urlResolve($site.themeConfig.site + path),
+      image: ($page, $site) => $page.frontmatter.heroImage
+        ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name
+        : 'https://jibrel.network/assets/misc/logo.jpg',
       twitterCard: _ => 'summary_large_image',
 
       customMeta: (add, context) => {
