@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
+const urlResolve = require('./src/Utils/urlResolve.js')
+
 // Content files
 const contentEn = require('./i18n/EnUS/content')
 const contentKo = require('./i18n/KoKr/content')
@@ -195,7 +197,7 @@ module.exports = {
         || /^\/[\w-]+\/blog\/[\w-]+\/.+/.test($page.regularPath)
           ? 'article'
           : 'website',
-      url: (_, $site, path) => $site.themeConfig.site + path,
+      url: (_, $site, path) => urlResolve($site.themeConfig.site + path),
       image: ($page, $site) => $page.frontmatter.heroImage
         ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name
         : 'https://jibrel.network/assets/misc/logo.jpg',
