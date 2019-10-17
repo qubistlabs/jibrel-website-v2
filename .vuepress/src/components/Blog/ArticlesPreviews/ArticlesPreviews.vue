@@ -111,6 +111,6 @@ export default {
 
 
 <style lang="scss">
-  @import 'articlesPreviews';
+  @import './articlesPreviews.scss';
 </style>
 
