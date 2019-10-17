@@ -64,6 +64,6 @@ export default {
 
 
 <style lang="scss">
-  @import 'blogHeader';
+  @import './blogHeader.scss';
 </style>
 
