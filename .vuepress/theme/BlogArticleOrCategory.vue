@@ -4,7 +4,7 @@
 
 <script>
 import get from 'lodash-es/get'
-import Article from './Article'
+import Article from './layouts/Article'
 import Layout from './layouts/Layout'
 
 export default {

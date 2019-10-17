@@ -53,6 +53,7 @@ export default {
     Subscribe,
   },
   props: {
+    pages: Array,
     isMainBlogPage: Boolean,
     limit: 0,
     removeIt: '',
@@ -60,7 +61,6 @@ export default {
   data() {
     return {
       isFirstPage: true,
-      pages: []
     }
   },
   methods: {
@@ -89,24 +89,12 @@ export default {
   },
   computed: {
     posts() {
-      if (this.$pagination) {
-        this.pages = this.$pagination.pages
-      } else {
-        this.pages = this.$site.pages
-      }
-      this.pages = this.pages
-      .filter(x => x.regularPath.startsWith(this.category.href) && !x.frontmatter.index && x.frontmatter.layout === 'BlogArticleOrCategory')
-      .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
-      .map(page => ({
-        ...page,
-        category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath, this.$localeConfig.path),
-        img: this.getImage(page)        
-      }))
-      if (!this.limit) {
-        return this.pages
-      }
-      EventBus.$emit('posts-length', this.pages.length)
-      return this.pages.slice(0, Number(this.limit))
+      return this.pages
+        .map(page => ({
+          ...page,
+          category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath, this.$localeConfig.path),
+          img: this.getImage(page)
+        }))
     },
   },
   created() {
@@ -123,6 +111,6 @@ export default {
 
 
 <style lang="scss">
-  @import './articlesPreviews.scss';
+  @import 'articlesPreviews';
 </style>
 

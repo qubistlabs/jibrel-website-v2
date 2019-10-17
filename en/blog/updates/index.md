@@ -1,19 +1,5 @@
 ---
-index: true 
-title: Blog
-category: how-tos
+title: Updates
+layout: BlogCategory
+category: updates
 ---
-
-<template>
-  <ArticlesList />
-</template>
-
-
-<script>
-  import ArticlesList from '@/pages/ArticlesList.vue'
-  export default {
-  components: {
-      ArticlesList,
-    },
-  };
-</script>
