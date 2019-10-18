@@ -1,4 +1,7 @@
+import Promise from 'bluebird'
 import { format } from 'date-fns'
+
+window.Promise = Promise
 
 export default ({
   Vue,
