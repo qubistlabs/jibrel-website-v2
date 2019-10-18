@@ -25,7 +25,7 @@ The main goal of DeFi is to create a unified and permissionless banking and mone
 
 **Transparency:** The availability of the same information to all participants with an emphasis on the preservation of individual privacy. In a DeFi system, governments and institutions cannot restrict information, mislead, sensor or silence the people they are meant to serve.
 
-![Decentralized finance applications defi](/assets/img/blog/defi-content.jpg)
+![Decentralized finance applications defi](./scheme.jpg)
 
 ## What Are DeFi Applications Used For?
 
