@@ -1,0 +1,70 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.jibrelcom-content {
+  width: 100%;
+  height: 100%;
+  max-width: 1364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 100px;
+
+  @include to-tablet-portrait {
+    padding: 64px;
+  }
+}
+
+.jibrelcom-title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 67px;
+  text-align: center;
+  padding-bottom: 64px;
+
+  > em {
+    font-style: normal;
+    color: #003DC6;
+  }
+
+  @include to-tablet-portrait {
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 38px;
+  }
+
+  @media screen and (min-width: #{$tablet-portrait-width + 1}) and (max-height: 700px) {
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 38px;
+  }
+}
+
+.jibrelcom-button {
+  background: linear-gradient(237.65deg, #668BDD -9.43%, #003DC6 45.05%);
+  box-shadow: 0 4px 8px rgba(0, 61, 198, 0.2);
+  border-radius: 32px;
+  padding: 20px 44px;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+
+  @include to-tablet-portrait {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 32px;
+    border-radius: 26px;
+  }
+
+  @media screen and (min-width: #{$tablet-portrait-width + 1}) and (max-height: 700px) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 32px;
+    border-radius: 26px;
+  }
+}
