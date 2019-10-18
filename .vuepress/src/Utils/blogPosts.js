@@ -10,9 +10,17 @@ export const isBlogPostRegularPath = (shortLang, regularPath) => {
 export const getBlogPosts = (shortLang, pages) => {
   return pages
     .filter(page => isBlogPostRegularPath(shortLang, page.regularPath))
-    .sort((a, b) =>
-      new Date(a.frontmatter.date) > new Date(b.frontmatter.date)
-    )
+    .sort((a, b) => {
+      // if published on the same date, sort by name, ascending (a -> z)
+      if (a.frontmatter.date === b.frontmatter.date) {
+        return a.frontmatter.title < b.frontmatter.title
+          ? -1
+          : 1
+      }
+
+      // if dates differ, latest posts go up
+      return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+    })
 }
 
 export const getBlogPostsPage = (shortLang, pages, pageIndex) => {
