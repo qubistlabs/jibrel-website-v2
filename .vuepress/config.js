@@ -7,12 +7,17 @@ const urlResolve = require('./src/Utils/urlResolve.js')
 // Content files
 const contentEn = require('./i18n/EnUS/content')
 const contentKo = require('./i18n/KoKr/content')
-const contentZh = require('./i18n/Zh/content')
+const contentZh = require('./i18n/zh/content')
 
 // Localization theme files
 const themeEn = require('./i18n/EnUS/theme')
 const themeKo = require('./i18n/KoKr/theme')
-const themeZh = require('./i18n/Zh/theme')
+const themeZh = require('./i18n/zh/theme')
+
+// All translation should migrate to these files
+const messagesEn = require('./i18n/en/messages.json')
+const messagesKo = require('./i18n/ko/messages.json')
+const messagesZh = require('./i18n/zh/messages.json')
 
 module.exports = {
   dest: 'build',
@@ -38,28 +43,40 @@ module.exports = {
       shortLang: 'en',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentEn,
+      data: {
+        ...contentEn,
+        ...messagesEn,
+      },
     },
     '/en/': {
       lang: 'en-US',
       shortLang: 'en',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentEn,
+      data: {
+        ...contentEn,
+        ...messagesEn,
+      },
     },
     '/ko/': {
       lang: 'ko-KR',
       shortLang: 'ko',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentKo,
+      data: {
+        ...contentKo,
+        ...messagesKo,
+      },
     },
     '/zh/': {
       lang: 'zh',
       shortLang: 'zh',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentZh,
+      data: {
+        ...contentZh,
+        ...messagesZh,
+      },
     }
   },
   themeConfig: {

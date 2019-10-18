@@ -1,48 +1,18 @@
----
-headerColor: white
----
-
 <template>
   <div>
-    <section class='section-content -full-screen -center-child-box -bg-blue-gradient'>
-      <SectionName
-        :title='$themeLocaleConfig.data.SectionName.welcome'
-        positionContainer='bottom-70'
-        positionTitle='bottom'
-        colorTheme='white'
-        arrow='down'
-      />
-      <div class='container -center-box _container-fix'>
-        <div class='preview-info -mobile-offset'>
-          <div class='text'>
-            <h1 class='_visibility-hidden'>Jibrel Network</h1>
-            <h2 class='title -color -white -text-center ' data-aos='fade-up' data-aos-duration='600' data-aos-delay='150'>{{$localeConfig.data.ScreenPreview.homePage.title}}</h2>
-            <div class='descr -medium-size -white -color -text-center -box-center' data-aos='fade-up' data-aos-duration='900' data-aos-delay='150'>
-              {{$localeConfig.data.ScreenPreview.homePage.description}}
-            </div>
-          </div>
-          <div class='form _mobile-hide' data-aos='fade-in' data-aos-duration='1200' data-aos-delay='600'>
-            <ProjectForm :isJcashOpen='true' eventType='sign-up-success' templateForm='jcash'/>
-          </div>
-        </div>
-      </div>
-      <div class='button-bottom _mobile-visible'>
-        <div class='_container-fix'>
-          <a href='https://jcash.network/auth/signup' target='_blank' class='j-button -fill-on-blue-bg'>
-            <span class='text'>{{$themeLocaleConfig.data.FormText.emailOnly.button}}</span>
-          </a>
-        </div>
-      </div>
-    </section>
+    <JibrelComPromo />
     <section class='section-content -offset-bottom -offset-top'>
       <div class='container _container-fix'>
+        <h2 class='home-section-title'>
+          {{$localeConfig.data['Home.About.title']}}
+        </h2>
         <div class='card-tile -distribute-evenly -coverlet-30'>
           <div class='item -three-col -w-limit-350' data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">
             <div class='box -color -padding-small'>
               <div class='img'>
                 <img src='@/assets/img/general/icon/scale.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
-              <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_1.title}}</h2>
+              <h3 class='title '>{{$localeConfig.data.FeaturesProject.card_1.title}}</h3>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_1.description}}</p>
             </div>
           </div>
@@ -51,7 +21,7 @@ headerColor: white
               <div class='img'>
                 <img src='@/assets/img/general/icon/passport.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
-              <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_2.title}}</h2>
+              <h3 class='title '>{{$localeConfig.data.FeaturesProject.card_2.title}}</h3>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_2.description}}</p>
             </div>
           </div>
@@ -60,7 +30,7 @@ headerColor: white
               <div class='img'>
                 <img src='@/assets/img/general/icon/cloud-data.svg' class='icon' width='60' height='60' alt='icon'>
               </div>
-              <h2 class='title '>{{$localeConfig.data.FeaturesProject.card_3.title}}</h2>
+              <h3 class='title '>{{$localeConfig.data.FeaturesProject.card_3.title}}</h3>
               <p class='descr '>{{$localeConfig.data.FeaturesProject.card_3.description}}</p>
             </div>
           </div>
@@ -132,18 +102,23 @@ headerColor: white
 </template>
 
 <script>
-import SectionName from '@/components/base/SectionName/SectionName.vue'
-import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
-import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
-import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
-import ContactsList from '@/components/ContactsList/ContactsList.vue'
-export default {
-  components: {
-    SectionName,
-    NewsPreviews,
-    PartnersCard,
-    ProjectForm,
-    ContactsList,
-  },
-}
+  import NewsPreviews from '@/components/NewsPreviews/NewsPreviews.vue'
+  import PartnersCard from '@/components/PartnersCard/PartnersCard.vue'
+  import ContactsList from '@/components/ContactsList/ContactsList.vue'
+  import Greeting from './Greeting.vue'
+  import JibrelComPromo from './JibrelComPromo.vue'
+
+  export default {
+    components: {
+      Greeting,
+      JibrelComPromo,
+      NewsPreviews,
+      PartnersCard,
+      ContactsList,
+    },
+  }
 </script>
+
+<style>
+  @import './home.scss';
+</style>
