@@ -1,20 +1,5 @@
 ---
-index: true 
-title: Blog
+title: Cryptocurrency
+layout: BlogCategory
 category: cryptocurrency
 ---
-
-<template>
-  <ArticlesList />
-</template>
-
-
-<script>
-  import ArticlesList from '@/pages/ArticlesList.vue';
-
-  export default {
-    components: {
-      ArticlesList,
-    },
-  };
-</script>

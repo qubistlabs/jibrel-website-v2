@@ -1,7 +1,7 @@
 @import '@/assets/scss/vars.scss';
 @import '@/assets/scss/mixins.scss';
 
-.articles-heaader {
+.blog-header {
   @include all-reset;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
     position: fixed;
     top: 0;
   }
-  
+
   > .container {
     display: flex;
     align-items: center;
@@ -36,11 +36,11 @@
       transition: color 0.2s ease-in-out;
       // margin-right: 20px;
       flex-shrink: 0;
-      
+
       &:hover {
         color: $light-blue;
       }
-      
+
       @include from-mobile {
         padding-right: 60px;
         padding-bottom: 3px;
@@ -62,7 +62,7 @@
         font-size: 16px;
         position: relative;
         z-index: 2;
-  
+
         &:before {
           content: '';
           position: absolute;
@@ -100,11 +100,11 @@
           margin-right: 20px;
           margin-left: 0;
         }
-    
+
         &:hover {
           color: $light-blue;
         }
-    
+
         &:before {
           content: '';
           position: absolute;
@@ -118,16 +118,16 @@
           left: 50%;
           margin-left: -2px;
         }
-    
+
         &.-current {
           color: $blue;
-    
+
           &:before {
             opacity: 1;
           }
         }
       }
     }
-  
+
   }
 }

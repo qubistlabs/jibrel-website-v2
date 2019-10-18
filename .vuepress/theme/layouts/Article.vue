@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class='section-content -bg-gray -offset-blog'>
-      <ArticlesHeader />
+      <BlogHeader />
       <SectionName
         :title='$themeLocaleConfig.data.SectionName.blog'
         positionContainer='bottom-460'
@@ -48,7 +48,10 @@
     </section>
     <div class='section-content -bg-gray -offset-top -offset-bottom -mobile-small-offsset'>
       <div class="_container-fix">
-        <ArticlesPreviews :isMainBlogPage='false' limit='3' :removeIt='this.$page.key' />
+        <ArticlesPreviews
+          :isMainBlogPage='false'
+          :pages='relatedPosts'
+        />
       </div>
     </div>
     <section class='section-content'>
@@ -58,21 +61,22 @@
 </template>
 
 <script>
-import Layout from './layouts/Layout.vue';
-import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
+import Layout from './Layout.vue';
+import ArticlesPreviews from '@/components/Blog/ArticlesPreviews/ArticlesPreviews.vue'
 import Subscribe from '@/components/Forms/Subscribe/Subscribe.vue'
-import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
+import BlogHeader from '@/components/Blog/BlogHeader/BlogHeader.vue'
 import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import SectionName from '@/components/base/SectionName/SectionName.vue'
 import SpriteIcon from '@/components/base/SpriteIcon/SpriteIcon.vue'
 import ContactsList from '@/components/ContactsList/ContactsList.vue'
+import { getBlogPosts } from '@/Utils/blogPosts'
 
 export default {
   name: 'Article',
   components: {
     Layout,
     SpriteIcon,
-    ArticlesHeader,
+    BlogHeader,
     SectionName,
     ContactsList,
     Subscribe,
@@ -94,7 +98,18 @@ export default {
         console.error(e)
         return ''
       }
-    }
+    },
+    relatedPosts() {
+      return getBlogPosts(
+        this.$localeConfig.shortLang,
+        this.$site.pages,
+      )
+        .filter(page =>
+          page.frontmatter.category === this.$page.blog.params.category
+          && page.key !== this.$page.key
+        )
+        .slice(0, 3)
+    },
   },
   methods: {
     handlingTOC() {
@@ -109,7 +124,7 @@ export default {
           TOCContainer.classList.add('-open')
           this.isOpened = true
         }
-      });
+      })
 
       function anchorFormatter(anchor) {
         const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-')
@@ -130,15 +145,15 @@ export default {
           const offset = document.querySelector(id).offsetTop
           const windowWidth = window.innerWidth
           const mod = window.innerWidth > 767 ? 120 : 80
-          
+
           window.scrollTo({
             'behavior': 'smooth',
             'left': 0,
             'top': offset + mod
-          });
+          })
           return false
-        });
-      });
+        })
+      })
     }
   },
   created() {

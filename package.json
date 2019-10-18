@@ -35,7 +35,6 @@
     "vuepress-plugin-sitemap": "2.1.2"
   },
   "devDependencies": {
-    "@vuepress/plugin-blog": "~1.2.5",
     "env-cmd": "8.0.2",
     "node-sass": "4.11.0",
     "postcss-loader": "3.0.0",

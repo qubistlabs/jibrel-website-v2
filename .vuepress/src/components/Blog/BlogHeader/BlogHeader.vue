@@ -1,5 +1,5 @@
 <template>
-  <div class='articles-heaader' :class='isSticky && "-sticky"'>
+  <div class='blog-header' :class='isSticky && "-sticky"'>
     <div class='container _container-fix'>
       <router-link :to='`${this.$localeConfig.path}blog/`' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
@@ -14,7 +14,7 @@
 <script>
 import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 export default {
-  name: 'ArticlesHeader',
+  name: 'BlogHeader',
   data() {
     return {
       isSticky: false,
@@ -64,6 +64,6 @@ export default {
 
 
 <style lang="scss">
-  @import './articlesHeader.scss';
+  @import './blogHeader.scss';
 </style>
 

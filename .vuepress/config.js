@@ -146,32 +146,15 @@ module.exports = {
       new webpack.EnvironmentPlugin({ ...process.env })
     ],
   },
-  plugins: {
-    '@vuepress/blog': {
-      directories: [
-        {
-          id: 'en',
-          dirname: 'en/blog',
-          path: '/en/blog/',
-          layout: 'ArticlesList',
-          itemLayout: 'BlogArticleOrCategory',
-          itemPermalink: '../:regular',
-          pagination: {
-            lengthPerPage: 10,
-            layout: 'ArticlesList',
-          },
-          frontmatter: {
-            index: true,
-            category: 'blog',
-            title: 'Blog',
-          }
-        },
-      ],
-    },
-    'sitemap': {
+  plugins: [
+    // FIXME: Bad API, should refactor
+    [require('./src/plugins/blog'), {
+      regularPathMatcher: '/:lang/blog/:category/:slug/',
+    }],
+    ['sitemap', {
       hostname: 'https://jibrel.network',
-    },
-    'robots': {
+    }],
+    ['robots', {
       host: 'https://jibrel.network',
       disallowAll: false,
       allowAll: true,
@@ -182,8 +165,8 @@ module.exports = {
           disallow: [],
         }
       ]
-    },
-    'seo': {
+    }],
+    ['seo', {
       title: ($page) =>
         $page.title
           ? `${$page.title} | Jibrel Network`
@@ -220,19 +203,23 @@ module.exports = {
             'property'
           )
       },
+    }],
+  ],
+  markdown: {
+    plugins: [
+      ['markdown-it-anchor', {
+        level: [2, 3, 4],
+      }],
+      ['markdown-it-implicit-figures', {
+        figcaption: true,
+      }],
+    ],
+    extendMarkdown: (md) => {
+      md.use(require('markdown-it-table-of-contents'), {
+        listType: 'ol',
+        includeLevel: [2, 3, 4],
+        containerHeaderHtml: '<div class="header">Table of Contents</div>'
+      })
     }
-  },
-  extendMarkdown(md) {
-    md.use(require("markdown-it-anchor"), {
-      level: [2, 3, 4],
-    })
-    md.use(require("markdown-it-table-of-contents"), {
-      listType: 'ol',
-      includeLevel: [2, 3, 4],
-      containerHeaderHtml: '<div class="header">Table of Contents</div>'
-    })
-    md.use(require('markdown-it-implicit-figures'), {
-      figcaption: true,
-    })
   },
 }
