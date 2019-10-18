@@ -37,7 +37,7 @@ export default {
       const itemPosition = itemCurrent.offsetLeft
       const itemClientWidth = itemCurrent.clientWidth
       const scrollTo = itemPosition + itemClientWidth - itemsWidth
-      items.scrollTo({left: scrollTo,});
+      items.scrollTo(scrollTo, 0);
       items.addEventListener('scroll', this.handleScroll)
     },
     setCategory() {
