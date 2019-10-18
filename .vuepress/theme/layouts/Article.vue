@@ -146,11 +146,7 @@ export default {
           const windowWidth = window.innerWidth
           const mod = window.innerWidth > 767 ? 120 : 80
 
-          window.scrollTo({
-            'behavior': 'smooth',
-            'left': 0,
-            'top': offset + mod
-          })
+          window.scrollTo(0, offset + mod)
           return false
         })
       })
