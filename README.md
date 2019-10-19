@@ -26,8 +26,6 @@ Now you can open http://localhost:8081/en/ in your browser – you should see th
 |   |   └── ...
 |   ├── cover
 |   |   └── ...                 // news agencies cover images
-|   ├── partners
-|   |   └── ...                 // partner logos for home page
 ├── {language}
 |   ├── {page-slug}
 |   |   ├── {sub-page-slug}
