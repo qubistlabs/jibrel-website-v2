@@ -97,6 +97,7 @@
     }
   }
 
+  &.-jibrelcom,
   &.-white {
     > .icon {
       fill: #fff;
@@ -123,7 +124,7 @@
       > .text {
         color: $light-blue;
       }
-    } 
+    }
   }
 
   &:active {

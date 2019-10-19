@@ -5,7 +5,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- <SpriteIcon /> -->
-    <MainHeader :colorTheme='getHeaderColor()' :isSmall='headerSize' @open="modalOpen" />
+    <MainHeader :colorTheme='headerStyle' :isSmall='headerSize' @open="modalOpen" />
     <slot v-if="isSlot"/>
     <div v-else>
       <Content v-if='typePage === "precast-page"'/>
@@ -71,12 +71,6 @@ export default {
     modalOpen() {
       this.isOpened = true
     },
-    getHeaderColor() {
-      if (this.$page.frontmatter.headerColor) {
-        return 'white';
-      }
-      return 'colored';
-    },
     getTypePage() {
       const route = this.$route.path
       if (route !== `${this.$localeConfig.path}news/` && route.indexOf(/news/) !== -1) {
@@ -116,6 +110,11 @@ export default {
       if (this.$metrika) {
         this.$metrika.hit(this.$page.regularPath)
       }
+    }
+  },
+  computed: {
+    headerStyle() {
+      return this.$page.frontmatter.headerColor || 'colored'
     }
   },
   watch: {
