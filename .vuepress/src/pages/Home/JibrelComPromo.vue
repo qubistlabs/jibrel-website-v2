@@ -18,7 +18,7 @@
       />
       <a
         class='jibrelcom-button'
-        href='https://jibrel.com'
+        :href='`https://jibrel.com/${jibrelcomlang}`'
         target='_blank'
         data-aos='fade-up'
         data-aos-duration='600'
@@ -37,6 +37,15 @@
     components: {
       SectionName,
     },
+    computed: {
+      jibrelcomlang() {
+        if (this.$localeConfig.shortLang === 'zh') {
+          return 'zh-hans'
+        }
+
+        return this.$localeConfig.shortLang
+      }
+    }
   }
 </script>
 
