@@ -1,3 +1,7 @@
+---
+headerColor: jibrelcom
+---
+
 <template>
   <Home />
 </template>
