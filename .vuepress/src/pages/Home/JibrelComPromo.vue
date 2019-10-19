@@ -11,18 +11,12 @@
       <h1 class='_visibility-hidden'>Jibrel Network</h1>
       <h2
         class='jibrelcom-title'
-        data-aos='fade-up'
-        data-aos-duration='600'
-        data-aos-delay='150'
         v-html="$localeConfig.data['Home.JibrelComPromo.title']"
       />
       <a
         class='jibrelcom-button'
         :href='`https://jibrel.com/${jibrelcomlang}`'
         target='_blank'
-        data-aos='fade-up'
-        data-aos-duration='600'
-        data-aos-delay='150'
       >
         {{ $localeConfig.data['Home.JibrelComPromo.action.learnmore'] }}
       </a>
