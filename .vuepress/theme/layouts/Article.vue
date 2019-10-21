@@ -92,12 +92,7 @@ export default {
   },
   computed: {
     img() {
-      try {
-        return require(`@/../../_img/blog/${this.$page.frontmatter.heroImage.name}`)
-      } catch (e) {
-        console.error(e)
-        return ''
-      }
+      return `/assets/img/blog/${this.$page.frontmatter.heroImage.name}`
     },
     relatedPosts() {
       return getBlogPosts(
