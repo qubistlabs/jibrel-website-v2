@@ -9,6 +9,8 @@ heroImage:
 wordCount: 791
 ---
 
+[[toc]]
+
 Hard forks and soft forks are software updates to the blockchains of cryptocurrencies like Bitcoin. Crypto coins are built on blockchains that run according to a particular set of programmable rules called protocols. These protocols function as the DNA of blockchains, operating on a decentralized network made up of nodes run by network participants. This cryptocurrency "DNA" contains information on mining, block sizes, voting standard, and more. Yet just like any piece of software, protocols need to be updated. Such updates are done via hard forks and soft forks.
 
 ## What Is a Bitcoin Hard Fork?
