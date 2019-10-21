@@ -79,12 +79,7 @@ export default {
       return 300 + index % 3 * 300
     },
     getImage(page) {
-      try {
-        return require(`@/../../_img/blog/${page.frontmatter.heroImage.name}`)
-      } catch (e) {
-        console.error(e)
-        return ''
-      }
+      return `/assets/img/blog/${page.frontmatter.heroImage.name}`
     }
   },
   computed: {
