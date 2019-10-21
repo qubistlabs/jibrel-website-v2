@@ -36,11 +36,10 @@ export default {
   },
   methods: {
     scrollTo(direction) {
-      window.scrollTo({
-        'behavior': 'smooth',
-        'left': 0,
-        'top': direction === 'up' ? 0 : window.innerHeight
-      });
+      window.scrollTo(
+        0,
+        direction === 'up' ? 0 : window.innerHeight
+      )
     }
   }
 }

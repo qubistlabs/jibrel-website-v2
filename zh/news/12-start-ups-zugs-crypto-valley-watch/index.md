@@ -7,7 +7,7 @@ source:
     url: https://www.siliconrepublic.com/start-ups/zug-crypto-valley-cryptocurrency-blockchain
 ---
 
-![Aerial view of Zug, Switzerland. Image: Sam Chadwick/Shutterstock](/assets/img/content/zug_shutterstock_656616277-718x523.wfwfwrqghs54.jpg)
+![Aerial view of Zug, Switzerland. Image: Sam Chadwick/Shutterstock](@/../../_img/content/zug_shutterstock_656616277-718x523.wfwfwrqghs54.jpg)
 
 The Swiss region of Zug is also known as Crypto Valley because it has become an epicentre of fintech, cryptocurrency and blockchain activity.
 

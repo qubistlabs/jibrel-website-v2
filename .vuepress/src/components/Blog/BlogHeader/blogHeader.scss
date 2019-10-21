@@ -1,0 +1,133 @@
+@import '@/assets/scss/vars.scss';
+@import '@/assets/scss/mixins.scss';
+
+.blog-header {
+  @include all-reset;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 106px;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  background-color: $light-gray;
+
+  @include to-mobile {
+    top: 98px;
+    height: 80px;
+  }
+
+  &.-sticky {
+    box-shadow: 0px 2px 8px #DEE0E8;
+    position: fixed;
+    top: 0;
+  }
+
+  > .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    > .title {
+      font-size: 24px;
+      position: relative;
+      font-weight: 600;
+      color: $base;
+      transition: color 0.2s ease-in-out;
+      // margin-right: 20px;
+      flex-shrink: 0;
+
+      &:hover {
+        color: $light-blue;
+      }
+
+      @include from-mobile {
+        padding-right: 60px;
+        padding-bottom: 3px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 32px;
+          background-color: rgba($base, 0.2);
+          position: absolute;
+          top: 50%;
+          margin-top: -16px;
+          right: 0;
+        }
+      }
+
+      @include to-mobile {
+        font-size: 16px;
+        position: relative;
+        z-index: 2;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 100%;
+          height: 100%;
+          width: 30px;
+          background: linear-gradient(to right, rgba(245,246,250,1) 0%, rgba(245,246,250,1) 40%, rgba(245,246,250,0) 100%);
+        }
+      }
+    }
+
+    > .tabs {
+      display: flex;
+      align-items: center;
+
+      @include to-mobile {
+        padding-left: 30px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+
+      > .item {
+        color: $base;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 40px;
+        position: relative;
+        transition: color 0.2s ease-in-out;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        @include to-mobile {
+          margin-right: 20px;
+          margin-left: 0;
+        }
+
+        &:hover {
+          color: $light-blue;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 4px;
+          background-color: $blue;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          bottom: 0;
+          left: 50%;
+          margin-left: -2px;
+        }
+
+        &.-current {
+          color: $blue;
+
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+  }
+}

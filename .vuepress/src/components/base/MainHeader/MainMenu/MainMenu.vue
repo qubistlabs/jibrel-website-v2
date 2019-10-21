@@ -46,8 +46,8 @@
             {{this.$themeLocaleConfig.data.ProjectMenu.WhitePaper}}
           </a>
         </div>
-        <div class='item' v-if="this.$localeConfig.path === '/'">
-          <router-link to='/blog/' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
+        <div class='item' v-if="this.$localeConfig.path === '/en/'">
+          <router-link :to='`${this.$localeConfig.path}blog/`' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
           </router-link>
         </div>
@@ -58,60 +58,60 @@
           <button class='link' @click='modalOpen'>{{this.$themeLocaleConfig.data.ProjectMenu.ContactUs}}</button>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://www.facebook.com/jibrelnetwork/'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("Facebook", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.Facebook}}
           </a>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://twitter.com/JibrelNetwork'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("Twitter", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.Twitter}}
           </a>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://www.linkedin.com/company/jibrel-network/'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("Linkedin", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.Linkedin}}
           </a>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://medium.com/@jibrelnetwork'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("Medium", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.Medium}}
           </a>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://t.me/jibrel_network'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("Telegram", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.Telegram}}
           </a>
         </div>
         <div class='item'>
-          <a 
+          <a
             href='https://open.kakao.com/o/gxNSV4pb'
             class='link'
-            target='_blank' 
+            target='_blank'
             @click='clickLink("KakaoTalk", "close")'
           >
             {{this.$themeLocaleConfig.data.ProjectMenu.KakaoTalk}}
@@ -139,7 +139,7 @@ export default {
     closeMenu() {
       this.$emit('close')
     },
-    clickLink(label, param) {            
+    clickLink(label, param) {
       this.$emit('close')
       this.gtmSend('Menu', 'GoTo', this.$themeLocaleConfig.data.ProjectMenu[label])
     },

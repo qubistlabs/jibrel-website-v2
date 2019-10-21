@@ -1,6 +1,4 @@
 .j-buttons {
-  @include all-reset;
-
   display: block;
   width: 100%;
 
@@ -18,8 +16,6 @@
 }
 
 .j-button {
-  @include all-reset;
-
   display: inline-block;
   cursor: pointer;
   padding-left: 20px;

@@ -13,7 +13,7 @@
         :exact='true'
         :key='item.text'
         v-for='item in language.items'
-        @click='isOpened = false'
+        @click.native="handleClick(item.lang)"
       >
         {{ item.text }}
       </router-link>
@@ -32,7 +32,6 @@ export default {
   data() {
     return {
       isOpened: false,
-      currentLanguage: String
     }
   },
   props: {
@@ -40,30 +39,32 @@ export default {
   },
   computed: {
     language () {
-      const locales = this.$site.themeConfig.locales      
+      const locales = this.$site.themeConfig.locales
+      const localesMeta = this.$site.locales
       if (locales && Object.keys(locales).length > 1) {
         const currentLink = this.$page.path
-        const routes = this.$router.options.routes
-        const themeLocales = this.$site.themeConfig.locales || {}
         return {
           current: this.$themeLocaleConfig.selectText,
           items: Object.keys(locales).map(path => {
             const locale = locales[path]
             const text = locale.selectText
+            const lang = localesMeta[path].shortLang
             let link
             if (locale.selectText === this.$selectText) {
               link = currentLink
             } else {
               link = currentLink.replace(this.$localeConfig.path, path)
-              // if (!routes.some(route => route.path === link)) {
-              //   link = path
-              // }
             }
-            return { text, link }
+            return { text, link, lang }
           })
         }
       }
     },
+  },
+  methods: {
+    handleClick(lang) {
+      this.$cookies.set('lang', lang, '360d')
+    }
   },
   watch: {
     $page: function (newVal) {

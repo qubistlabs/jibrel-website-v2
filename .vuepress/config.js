@@ -2,15 +2,22 @@ const path = require('path')
 const webpack = require('webpack')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
+const urlResolve = require('./src/Utils/urlResolve.js')
+
 // Content files
 const contentEn = require('./i18n/EnUS/content')
 const contentKo = require('./i18n/KoKr/content')
-const contentZh = require('./i18n/Zh/content')
+const contentZh = require('./i18n/zh/content')
 
 // Localization theme files
 const themeEn = require('./i18n/EnUS/theme')
 const themeKo = require('./i18n/KoKr/theme')
-const themeZh = require('./i18n/Zh/theme')
+const themeZh = require('./i18n/zh/theme')
+
+// All translation should migrate to these files
+const messagesEn = require('./i18n/en/messages.json')
+const messagesKo = require('./i18n/ko/messages.json')
+const messagesZh = require('./i18n/zh/messages.json')
 
 module.exports = {
   dest: 'build',
@@ -36,28 +43,47 @@ module.exports = {
       shortLang: 'en',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentEn,
+      data: {
+        ...contentEn,
+        ...messagesEn,
+      },
+    },
+    '/en/': {
+      lang: 'en-US',
+      shortLang: 'en',
+      title: 'Jibrel Network',
+      site: 'https://jibrel.network',
+      data: {
+        ...contentEn,
+        ...messagesEn,
+      },
     },
     '/ko/': {
       lang: 'ko-KR',
       shortLang: 'ko',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentKo,
+      data: {
+        ...contentKo,
+        ...messagesKo,
+      },
     },
     '/zh/': {
       lang: 'zh',
       shortLang: 'zh',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
-      data: contentZh,
+      data: {
+        ...contentZh,
+        ...messagesZh,
+      },
     }
   },
   themeConfig: {
     site: 'https://jibrel.network',
     twitter: '@jibrelnetwork',
     locales: {
-      '/': {
+      '/en/': {
         selectText: 'ENGLISH',
         data: themeEn,
       },
@@ -137,48 +163,78 @@ module.exports = {
       new webpack.EnvironmentPlugin({ ...process.env })
     ],
   },
-  plugins: {
-    'sitemap': {
-      hostname: 'https://jibrel.network'
-    },
-    'seo': {
-      title: $page => ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? $page.title : $page.title ? 'Jibrel Network - ' + $page.title : 'Jibrel Network',
-      description: $page => $page.frontmatter.description ? $page.frontmatter.description : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
-      type: $page => ['news', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
-      url: (_, $site, path) => $site.themeConfig.site + path,
-      image: ($page, $site) => $page.frontmatter.heroImage ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name : 'https://jibrel.network/assets/misc/logo.jpg',
+  plugins: [
+    // FIXME: Bad API, should refactor
+    [require('./src/plugins/blog'), {
+      regularPathMatcher: '/:lang/blog/:category/:slug/',
+    }],
+    ['sitemap', {
+      hostname: 'https://jibrel.network',
+    }],
+    ['robots', {
+      host: 'https://jibrel.network',
+      disallowAll: false,
+      allowAll: true,
+      sitemap: '/sitemap.xml',
+      policies: [
+        {
+          userAgent: '*',
+          disallow: [],
+        }
+      ]
+    }],
+    ['seo', {
+      title: ($page) =>
+        $page.title
+          ? `${$page.title} | Jibrel Network`
+          : 'Jibrel Network',
+      description: $page =>
+        $page.frontmatter.description
+          ? $page.frontmatter.description
+          : 'Jibrel provides currencies, equities, commodities and other financial assets as standard ERC-20 tokens on the Ethereum blockchain',
+      type: ($page) =>
+        /^\/[\w-]+\/news\/.+/.test($page.regularPath)
+        || /^\/[\w-]+\/blog\/[\w-]+\/.+/.test($page.regularPath)
+          ? 'article'
+          : 'website',
+      url: (_, $site, path) => urlResolve($site.themeConfig.site + path),
+      image: ($page, $site) => $page.frontmatter.heroImage
+        ? $site.themeConfig.site + '/assets/img/blog/' + $page.frontmatter.heroImage.name
+        : 'https://jibrel.network/assets/misc/logo.jpg',
       twitterCard: _ => 'summary_large_image',
 
       customMeta: (add, context) => {
         const {
-            $site, 
-            $page, 
+            $site,
+            $page,
         } = context
-          add('twitter:site', $site.themeConfig.twitter)          
+          add('twitter:site', $site.themeConfig.twitter)
           add(
             'og:image:width',
-            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '1323' : '500', 
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '1323' : '500',
             'property'
           )
           add(
             'og:image:height',
-            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '901' : '250', 
+            ['blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? '901' : '250',
             'property'
           )
       },
+    }],
+  ],
+  markdown: {
+    extendMarkdown: (md) => {
+      md.use(require('markdown-it-table-of-contents'), {
+        listType: 'ol',
+        includeLevel: [2, 3, 4],
+        containerHeaderHtml: '<div class="header">Table of Contents</div>'
+      })
+      md.use(require('markdown-it-anchor'), {
+        level: [2, 3, 4],
+      })
+      md.use(require('markdown-it-implicit-figures'), {
+        figcaption: true,
+      })
     }
-  },
-  extendMarkdown(md) {
-    md.use(require("markdown-it-anchor"), {
-      level: [2, 3, 4],
-    })
-    md.use(require("markdown-it-table-of-contents"), {
-      listType: 'ol',
-      includeLevel: [2, 3, 4],
-      containerHeaderHtml: '<div class="header">Table of Contents</div>'
-    })
-    md.use(require('markdown-it-implicit-figures'), {
-      figcaption: true,
-    })
   },
 }

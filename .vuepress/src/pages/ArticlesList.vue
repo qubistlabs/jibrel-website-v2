@@ -10,8 +10,9 @@
         arrow='up'
       />
       <div class='container _container-fix'>
-        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='mainBlogPage' />
+        <ArticlesPreviews :limit='currentLimit()' :isMainBlogPage='false' />
         <MorePost v-if='isShowMoreInfo'/>
+       
       </div>
     </section>
     <section class='section-content'>
@@ -22,12 +23,14 @@
 
 
 <script>
+  
   import EventBus from '@/Utils/EventBus.js';
   import SectionName from '@/components/base/SectionName/SectionName.vue'
   import ArticlesPreviews from '@/components/Articles/ArticlesPreviews/ArticlesPreviews.vue'
   import ArticlesHeader from '@/components/Articles/ArticlesHeader/ArticlesHeader.vue'
   import MorePost from '@/components/Articles/MorePost/MorePost.vue'
   import ContactsList from '@/components/ContactsList/ContactsList.vue'
+
   export default {
     components: {
       SectionName,
@@ -35,9 +38,6 @@
       ArticlesHeader,
       MorePost,
       ContactsList,
-    },
-    props: {
-      mainBlogPage: Boolean
     },
     data() {
       return {
@@ -48,9 +48,9 @@
     methods: {
       currentLimit() {        
         return this.mainBlogPage ? 0 : this.limit
-      }
+      },
     },
-    created() {
+    created() {      
       EventBus.$on('load-limit', data => {      
         this.limit = data
       })

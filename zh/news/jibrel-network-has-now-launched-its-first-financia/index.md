@@ -11,7 +11,7 @@ Will allow users to conduct real world transactions by use of blockchain and sma
 
 What started with cryptocurrencies like Bitcoin, which offered transparent, digital transactions between two people is continuing to evolve and adapt to fit the needs of consumers and investors - and even those still trying to stay within the realm of traditional banking institutions, but who would like some of the advantages of the technologies like blockchain and smart contracts.
 
-![Stock exchange chart](/assets/img/content/180117061900600.hthylk7987979rg.jpg)
+![Stock exchange chart](@/../../_img/content/180117061900600.hthylk7987979rg.jpg)
 
 That's the niche the **Jibrel Network** is trying to fill. Basically, by working with banking institutions and the knowledge they have with crypto, they are combining the best of both worlds through the use of their newly launched token, jCash. Announced at the Blockchain Revolution conference in Seoul, not only will jCash allow traditional bank institutions the ability to work within the world of crypto, but the jCash token is backed by real world assets meaning it does not have to deal with the volatility that comes with many of the "traditional" cryptocurrencies on the market.
 

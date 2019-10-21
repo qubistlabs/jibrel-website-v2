@@ -1,5 +1,5 @@
 ---
-headerColor: white
+headerColor: jibrelcom
 ---
 
 <template>
@@ -8,7 +8,7 @@ headerColor: white
 
 
 <script>
-  import Home from '@/pages/Home.vue'
+  import Home from '@/pages/Home/Home.vue'
   export default {
   components: {
       Home,
