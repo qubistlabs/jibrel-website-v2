@@ -20,8 +20,6 @@ Now you can open http://localhost:8081/en/ in your browser – you should see th
 ```
 .
 ├── _img
-|   ├── blog
-|   |   └── ...                 // blog posts hero images
 |   ├── content
 |   |   └── ...
 |   ├── cover
@@ -50,7 +48,7 @@ title: # The title of the page that will be used both for SEO and as, well, titl
 description: # Short description that will be displayed in the articles list 
 date: # Publishing date is used for sorting
 heroImage: 
-  name: # The name to look for the hero image in the _img/blog directory
+  name: # There is no transparent way to add a hero image right now. Please ask developers to do it 
   alt: # Alt text for hero image (used for SEO, accessibility and unavailable image file)
   bgColor: # The color of the hero image background
 wordCount: # Number of words in the article, used to calculate reading time
