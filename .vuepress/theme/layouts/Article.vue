@@ -127,7 +127,7 @@ export default {
       })
 
       function anchorFormatter(anchor) {
-        const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").replace(/-+/g, '-')
+        const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.":*?<>{}]/g, "").replace(/[-']+/g, '-')
         if (Number(anchorCLeaned.slice(0, 1))) {
           return '#_' + anchorCLeaned
         }
