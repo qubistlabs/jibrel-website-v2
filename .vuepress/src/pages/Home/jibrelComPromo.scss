@@ -53,6 +53,28 @@
   text-align: center;
   font-weight: 700;
   color: #fff;
+  transition: padding .15s ease-in-out, margin .15s ease-in-out, border-radius .15s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(271.58deg, #668BDD 1.23%, #003DC6 168.84%);
+    padding: 24px 52px;
+    margin: -4px 0;
+    border-radius: 36px;
+
+    @include to-tablet-portrait {
+      padding: 20px 40px;
+      border-radius: 30px;
+    }
+
+    @media screen and (min-width: #{$tablet-portrait-width + 1}) and (max-height: 700px) {
+      padding: 20px 40px;
+      border-radius: 30px;
+    }
+  }
+
+  &:active {
+    background: #013EC6;
+  }
 
   @include to-tablet-portrait {
     font-size: 16px;
