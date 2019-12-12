@@ -22,6 +22,14 @@ const CATEGORIES = [
     id: 'Article.Cryptocurrency',
   },
   {
+    slug: 'startups',
+    id: 'Article.Startups',
+  },
+  {
+    slug: 'investing',
+    id: 'Article.Investing',
+  },
+  {
     slug: '',
     id: 'Article.Blog',
   },
