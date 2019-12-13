@@ -13,7 +13,7 @@ wordCount: 573
 
 In the United States, whether or not someone is an accredited investor determines what asset classes one has access to. Historically, non accredited investors have been limited to assets like bonds, mutual funds, 401ks, and stocks. However, those that have met accreditation requirements have had much broader opportunities, which has partially accounted for the growing wealth gap. While amendments to investment regulations such as Reg A, C, and D have taken steps to level the playing field, the definition may soon change even more.
 
-## **What is an Accredited Investor?**
+## What is an Accredited Investor?
 
 When the current accreditation standards were drafted almost 40 years ago, there was no internet, and information was not as easily accessible as it is today. Therefore, accreditation requirements were created to protect everyday people that may be unfamiliar with investing and its risks from potentially losing all of their money. Yet today, we have vast amounts of information at our fingertips, and a few Google searches may yield days or weeks of research done back in the day. Still, the definition has largely remained unchanged. For an individual to qualify to be “accredited,” he/she must have any one of the following:
 
@@ -24,7 +24,7 @@ When the current accreditation standards were drafted almost 40 years ago, there
 
 Currently, federal law allows funds to be raised privately only from accredited investors. Furthermore, those raising funds cannot merely ask investors if they are accredited. Instead, companies must go through the due diligence to verify accreditation. Failure to do so may result in severe consequences. Companies typically do this through third parties.
 
-## **Criticisms of Current Accreditation Standards**
+## Criticisms of Current Accreditation Standards
 
 One of the main issues with accreditation today is that although one may have a particular net worth, they may lack the expertise to make educated financial decisions. Although much wealthier, a professional athlete may have much less investment knowledge than a finance graduate with a far smaller net worth.
 

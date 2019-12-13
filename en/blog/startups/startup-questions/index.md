@@ -83,7 +83,7 @@ If you got a no from an investor:
 
 3. What are some things we overlooked?
 
-## **Questions About My Startup**
+## Questions About My Startup
 
 1. What is your due diligence process like?
 

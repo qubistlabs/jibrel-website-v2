@@ -13,7 +13,7 @@ wordCount: 892
 
 Whether you're an early-stage venture looking to fuel its growth or an established cash business looking for emergency capital, there are numerous ways to acquire capital. Today, the two most popular ones are equity financing and debt financing. Both have their own pros/cons and are preferred under different circumstances. Therefore, it is imperative for business owners and startup founders to be educated enough to make the right decision. Below we speak about the differences between the two and discuss various situations where either method may be preferred.
 
-## **Equity Financing**
+## Equity Financing
 
 Equity financing typically sounds like an appealing to many tech startup founders with companies that may be months/years away from profitability. Equity financing may also suit founders that are profitable but need funding to significantly expand their reach or develop the next phase of their product. The main questions to consider before going down this road are:
 
@@ -21,7 +21,7 @@ Equity financing typically sounds like an appealing to many tech startup founder
 2. How important is it for me to maintain equity and control of my business?
 3. Can I dedicate the time and resources to raising money in this way?
 
-### **Equity Financing Methods**
+### Equity Financing Methods
 
 - **Venture Capital firms:** Financial firms that seek out high potential startups to invest large sums of money in exchange for equity
 - **Angel investors:** Typically individuals with large amounts of money that invest in businesses
@@ -31,7 +31,7 @@ Equity financing typically sounds like an appealing to many tech startup founder
 
 **Cons:** While this may sound like a "no brainer" for certain startups, there are a myriad of factors that need to be taken into account. Equity financing tends to be a full-time job for young founders and investors that have large amounts of capital tend to be bombarded by hundreds of companies. Since investors take all the risk in equity financing, they may take a sizable portion of a business for their capital contribution. Not only does this mean less future capital for founders should the company be successful and go public or get acquired, but it also means that an outside party now has a say in the company's decisions with an expensive buyout being the only way out.
 
-## **Debt Financing**
+## Debt Financing
 
 This method tends to be preferred with companies that already have cash flow and have been in business for at least some time. Companies typically choose this route for shorter-term needs. The main questions to deciding whether this is right for your business depends on the following questions:
 
@@ -39,7 +39,7 @@ This method tends to be preferred with companies that already have cash flow and
 2. Does my business have the appropriate cash flow to repay the debt?
 3. How important is it for me to maintain equity and control of my business?
 
-### **Debt Financing Methods**
+### Debt Financing Methods
 
 - **Term loans:** Loans from alternative lenders that require the borrowing business to make regular fixed payments over time.
 - **Receivables Financing:** These are loans that provide capital against the future income of a business

@@ -33,7 +33,7 @@ After issuing convertible debt, investors look forward to a startup's next equit
 
 **Valuation Cap:** The price limit at which the convertible notes can be converted into equity. Holders usually also receive protection to the extent the company raises its next round at a valuation that exceeds the valuation cap. The reason convertible notes allow more flexibility in price is that valuation caps aren’t actual valuations, and notes are cheap and easy to do. Thus, if you wanted, you could have a separate note with a different cap for each investor.**Interest Rate:** Since convertible notes start as debt instruments, there is usually an outstanding interest rate that accrues over time. However, the total sum of this accumulated interest rate is paid back in the form of shares issued during conversion from a financing round. **Maturity Date:** The date that the note is due and a company must either repay the note or raise capital.
 
-## **Common Stock vs. Preferred Stock**
+## Common Stock vs. Preferred Stock
 
 Common stock is often issued to incubators and friends or family by startups. However, many angels and venture firms will not accept it. This is especially true when convertible notes are issued because preferred stock comes with certain rights and privileges that common stock does that. Some are:
 
