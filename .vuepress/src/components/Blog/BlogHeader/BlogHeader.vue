@@ -6,6 +6,8 @@
         <router-link :to='`${this.$localeConfig.path}blog/tokenization/`' class='item' :class='category === "tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
         <router-link :to='`${this.$localeConfig.path}blog/blockchain/`' class='item' :class='category === "blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
         <router-link :to='`${this.$localeConfig.path}blog/cryptocurrency/`' class='item' :class='category === "cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
+        <router-link :to='`${this.$localeConfig.path}blog/startups/`' class='item' :class='category === "startups" && "-current"'>{{$themeLocaleConfig.data.Article.Startups}}</router-link>
+        <router-link :to='`${this.$localeConfig.path}blog/investing/`' class='item' :class='category === "investing" && "-current"'>{{$themeLocaleConfig.data.Article.Investing}}</router-link>
       </div>
   </div>
 </div>
