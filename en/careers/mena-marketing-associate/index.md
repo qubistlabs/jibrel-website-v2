@@ -10,7 +10,7 @@ Jibrel is hiring a full-time marketer based in Dubai, UAE. The company is lookin
 
 Jibrel is a promising and fully-funded international startup focused on developing blockchain solutions for financial services. The company currently provides both business-to-consumer and business-to-business offerings. Jibrel has a very experienced development team with a track record of building enterprise solutions. In addition, Jibrel’s business team has a strong record of working with Tier 1 financial institutions across North America, Europe, Asia, the Middle East, and North Africa. 
 
-The Jibrel platform [www.jibrel.com](www.jibrel.com) enables startups and investors to connect, in previously unimaginable ways, to create capital formation. Global investors can access investment opportunities in the Middle East and North Africa through a regulated equity management platform. Conversely, Jibrel allows startups to attract, onboard and manage a much larger and more diversified pool of investors. This role will focus primarily on the Jibrel platform. 
+The Jibrel platform [www.jibrel.com](https://jibrel.com/) enables startups and investors to connect, in previously unimaginable ways, to create capital formation. Global investors can access investment opportunities in the Middle East and North Africa through a regulated equity management platform. Conversely, Jibrel allows startups to attract, onboard and manage a much larger and more diversified pool of investors. This role will focus primarily on the Jibrel platform. 
 
 ## Requirements
 
