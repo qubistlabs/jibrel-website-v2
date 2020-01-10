@@ -1,6 +1,6 @@
 ---
 title: '什么是去中介化？- 完整指南'
-description: 减少在产品和顾客之间的中间商和中介 
+description: '减少在产品和顾客之间的中间商和中介'
 date: 2020-01-09
 heroImage: 
   name: disintermediation.png
