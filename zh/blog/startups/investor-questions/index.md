@@ -1,8 +1,8 @@
 ---
 title: '投资者会问你的创业公司的首要问题'
-description: '投资者会问你的创业公司的首要问题' 
-date: 2019-01-10
-heroImage: 
+description: '投资者会问你的创业公司的首要问题'
+date: 2020-01-10
+heroImage:
   name: investor-questions.png
   alt: 创业公司问题
   bgColor: '#e8e9ed'

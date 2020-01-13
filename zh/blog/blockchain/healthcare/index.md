@@ -1,8 +1,8 @@
 ---
-title: 2020年 - 区块链将如何改变医疗保健
-description: 从病历到供给链管理，这些问题存在于生态系统中的各个角落。
+title: '2020年 - 区块链将如何改变医疗保健'
+description: '从病历到供给链管理，这些问题存在于生态系统中的各个角落。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: healthcare.png
   alt: 区块链医疗保健
   bgColor: '#e8e9ed'

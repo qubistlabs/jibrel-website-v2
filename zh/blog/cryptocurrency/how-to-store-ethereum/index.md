@@ -1,8 +1,8 @@
 ---
 title: '如何存储以太坊（ETH）'
-description: '安全地存储以太和其他加密货币是至关重要的。像Jwallet一样的移动钱包是目前最受欢迎的选择之一。' 
+description: '安全地存储以太和其他加密货币是至关重要的。像Jwallet一样的移动钱包是目前最受欢迎的选择之一。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: how-to-store-ethereum.png
   alt: 存储以太坊 加密货币
   bgColor: '#003DC6'

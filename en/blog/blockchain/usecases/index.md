@@ -1,8 +1,8 @@
 ---
-title: 12 Ways Blockchain Will Change the World by 2030
-description: There is no denying that blockchain is here to stay. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.
+title: '12 Ways Blockchain Will Change the World by 2030'
+description: 'There is no denying that blockchain is here to stay. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.'
 date: 2019-08-15
-heroImage: 
+heroImage:
   name: blockchain-usecases.jpg
   alt: Blockchain world
   bgColor: '#E7E9EE'
@@ -39,11 +39,11 @@ Blockchain will enable medical records to be stored on-chain. While this may not
 
 ## 7. Identity & Verification
 
-From opening a new bank account to getting into a bar, proof-of-identity is a central part of everyday life. However, identity is often compromised or stolen with central data storages acting as farms ripe for harvest to the right hackers. In fact, many [big corporate hacks](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html) have resulted in stolen user data. The decentralized nature of blockchain can help prevent such malicious attacks from occurring. From opening a new bank account to getting into a bar, proof of identity is a central part of everyday life. 
+From opening a new bank account to getting into a bar, proof-of-identity is a central part of everyday life. However, identity is often compromised or stolen with central data storages acting as farms ripe for harvest to the right hackers. In fact, many [big corporate hacks](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html) have resulted in stolen user data. The decentralized nature of blockchain can help prevent such malicious attacks from occurring. From opening a new bank account to getting into a bar, proof of identity is a central part of everyday life.
 
 ## 8. Tokenization
 
-A 10 trillion dollar security token market is unfolding, combining the power of blockchain technology with standardized securities. Unlike utility tokens, security tokens are fully compliant representations of ownership in traditional asset classes such as real estate, equities, and art. With these coins set to take the stage in 2019, industries that deal with physical and non-divisible assets will, for the first time, be open to a much broader market. This includes real estate, art, fundraising, intangibles (copyrights, etc.), as well as almost anything else of value we can think of. 
+A 10 trillion dollar security token market is unfolding, combining the power of blockchain technology with standardized securities. Unlike utility tokens, security tokens are fully compliant representations of ownership in traditional asset classes such as real estate, equities, and art. With these coins set to take the stage in 2019, industries that deal with physical and non-divisible assets will, for the first time, be open to a much broader market. This includes real estate, art, fundraising, intangibles (copyrights, etc.), as well as almost anything else of value we can think of.
 
 ## 9. Ownership Transfer
 

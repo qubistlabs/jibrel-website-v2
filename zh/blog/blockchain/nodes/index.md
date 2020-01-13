@@ -1,7 +1,7 @@
 ---
 title: '区块链节点：你需要知道什么'
 description: '节点是区块链和比特币等加密货币的基石。它们由全世界的参与者操作来促进网络运作。'
-date: 2010-01-10
+date: 2020-01-10
 heroImage: 
   name: what-are-nodes.png
   alt: 区块链比特币节点

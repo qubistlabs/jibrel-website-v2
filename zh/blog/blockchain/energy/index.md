@@ -1,8 +1,8 @@
 ---
 title: '区块链怎样革命化能源行业'
 description: '随着为未来的世界提供动力的期望，区块链正在成为能源产业不可忽视的部分。'
-date: 2010-01-10
-heroImage: 
+date: 2020-01-10
+heroImage:
   name: energy.png
   alt: 区块链能源行业
   bgColor: '#e8e9ed'
