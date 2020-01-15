@@ -2,7 +2,7 @@
 title: '什么是去中心化互联网？'
 description: '去中心化互联网利用计算机网络，其中每台计算机都将充当互连链中的网点。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: decentralized-internet.jpg
   alt: 去中心化互联网区块链网点
   bgColor: '#e8e9ed'

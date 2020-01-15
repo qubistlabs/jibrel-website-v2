@@ -1,8 +1,8 @@
 ---
 title: '女巫攻击 加密货币黑客'
-description: '区块链女巫攻击是通过在网络上运行多个节点来实现对网络的多数(至少51%)控制。' 
+description: '区块链女巫攻击是通过在网络上运行多个节点来实现对网络的多数(至少51%)控制。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: sybil.png
   alt: 女巫攻击 加密货币黑客
   bgColor: '#e8e9ed'

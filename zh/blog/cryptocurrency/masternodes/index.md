@@ -2,7 +2,7 @@
 title: '主节点 : 完整指南'
 description: '主节点是某些加密货币的股权证明（POS）区块链模型的主干。它们在装有数字钱包的计算机上运行，这些钱包支持特定虚拟货币的网络。'
 date: 2020-01-09
-heroImage: 
+heroImage:
   name: masternodes.png
   alt: 主节点
   bgColor: '#E7E9EE'
@@ -57,7 +57,7 @@ wordCount: 985
 
 描述: 平台货币 | 日成交量: $12,100,000
 
-潜在回报: 支付 VTHO 红利) ([见计算器](https://thorcalculator.com/)) 
+潜在回报: 支付 VTHO 红利) ([见计算器](https://thorcalculator.com/))
 
 资本需要量: 不同供求 ([见此](https://vechaininsider.com/guides/guide-to-vechain-nodes-and-node-rewards/))
 

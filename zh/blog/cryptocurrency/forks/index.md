@@ -2,7 +2,7 @@
 title: '硬分叉和软分叉'
 description: '硬分叉和软分叉是加密货币的软件更新。货币建立在根据一组名为协议的特定编码规则运行的区块链上。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: forks.png
   alt: 硬分叉和软分叉
   bgColor: '#E7E9EE'

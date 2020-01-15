@@ -1,8 +1,8 @@
 ---
-title: '区块链到2030年将以12种方式改变世界''
+title: '区块链到2030年将以12种方式改变世界'
 description: '下面是我们可能在2030年看到成果的前12个用例的列表。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: blockchain-usecases.jpg
   alt: 区块链星球世界
   bgColor: '#E7E9EE'

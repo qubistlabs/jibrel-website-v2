@@ -1,8 +1,8 @@
 ---
 title: '什么是竞争币？'
-description: '竞争币是由想要改善比特币缺点或创造新的区块链应用的团队构建的。' 
+description: '竞争币是由想要改善比特币缺点或创造新的区块链应用的团队构建的。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: altcoins.png
   alt: 竞争币
   bgColor: '#e8e9ed'

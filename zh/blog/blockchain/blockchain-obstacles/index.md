@@ -2,7 +2,7 @@
 title: '2019年区块链的七大障碍'
 description: '在从 ICO 的梦想发展成为日后的谷歌和亚马逊的过程中，区块链公司需要克服下面7个问题。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: blockchain-obstacles.jpg
   alt: 区块链面前的障碍
   bgColor: '#003DC6'

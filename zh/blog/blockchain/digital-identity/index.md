@@ -1,8 +1,8 @@
 ---
-title: '什么是区块链上的数字身份' 
-description: '尽管身份管理业不常出现在新闻中，这是一个价值80亿美元的行业，并有望在2021年超过140亿。' 
+title: '什么是区块链上的数字身份'
+description: '尽管身份管理业不常出现在新闻中，这是一个价值80亿美元的行业，并有望在2021年超过140亿。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: digital-identity.png
   alt: 数字身份区块链
   bgColor: '#e8e9ed'

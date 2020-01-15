@@ -2,7 +2,7 @@
 title: '区块链即服务 (Baas) 2019'
 description: '从热情的初创公司到大型企业公司，任何人都可以在云端构造区块链应用。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: baas.png
   alt: 区块链即服务
   bgColor: '#e8e9ed'

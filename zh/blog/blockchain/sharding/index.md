@@ -2,7 +2,7 @@
 title: '什么是分片？完整指南'
 description: '分片是对一个被操作系统当做独立单位的硬盘的分解'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: sharding.jpg
   alt: 区块链数据库分片
   bgColor: '#083dc6'

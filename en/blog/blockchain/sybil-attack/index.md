@@ -1,13 +1,15 @@
 ---
 title: 'Sybil Attack: What You Need to Know'
-description: 'Blockchain Sybil attacks are carried out by running numerous nodes on a network in order to achieve a majority, at least 51%, control over the network.' 
+description: 'Blockchain Sybil attacks are carried out by running numerous nodes on a network in order to achieve a majority, at least 51%, control over the network.'
 date: 2019-11-12
-heroImage: 
+heroImage:
   name: sybil.png
-  alt: 
+  alt:
   bgColor: '#e8e9ed'
 wordCount: 557
 ---
+
+[[toc]]
 
 A Sybil attack is an online security breach where a hacker utilizes multiple accounts, nodes, or systems to take over a particular network. Blockchain Sybil attacks of cryptocurrencies are carried out by running numerous nodes on a network to achieve majority, at least 51%, control over the network. Once this is achieved, bad actors can carry out an array of mischievous and fraudulent activities to destabilize the integrity of blockchain's network. While it is almost impossible to avoid Sybil attacks altogether, blockchain protocols have developed various methods to combat such attempts. In this article, we take a deep dive into the nature of Sybil attacks, what they can do to cryptocurrencies, like Bitcoin and Ethereum, and how to prevent them.
 

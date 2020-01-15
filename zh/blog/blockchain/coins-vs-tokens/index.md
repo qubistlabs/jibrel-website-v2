@@ -2,7 +2,7 @@
 title: '数字货币和令牌 - 完整指南'
 description: '数字令牌存在于已有的区块链上，而数字货币则运行在一个特定而独特的区块链上。'
 date: 2020-01-09
-heroImage: 
+heroImage:
   name: coins-vs-tokens.jpg
   alt: 比特币令牌
   bgColor: '#E7E9EE'
