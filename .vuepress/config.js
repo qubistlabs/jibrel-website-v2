@@ -227,7 +227,7 @@ module.exports = {
       md.use(require('markdown-it-table-of-contents'), {
         listType: 'ol',
         includeLevel: [2, 3, 4],
-        containerHeaderHtml: '<div class="header">Table of Contents</div>'
+        containerHeaderHtml: `<div class="header header--en">${messagesEn['Blog.Article.TableOfContents.title']}</div><div class="header header--ko">${messagesKo['Blog.Article.TableOfContents.title']}</div><div class="header header--zh">${messagesZh['Blog.Article.TableOfContents.title']}</div>`
       })
       md.use(require('markdown-it-anchor'), {
         level: [2, 3, 4],

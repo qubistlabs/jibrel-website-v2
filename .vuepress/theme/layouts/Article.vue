@@ -109,17 +109,19 @@ export default {
   methods: {
     handlingTOC() {
       const TOCContainer = this.$el.querySelector('.table-of-contents')
-      const toggle = TOCContainer.querySelector('.header')
+      const toggles = TOCContainer.querySelectorAll('.header')
       const link = TOCContainer.querySelectorAll('a')
-      toggle.addEventListener('click', function () {
-        if (this.isOpened) {
-          TOCContainer.classList.remove('-open')
-          this.isOpened = false
-          } else {
-          TOCContainer.classList.add('-open')
-          this.isOpened = true
-        }
-      })
+      toggles.forEach((toggle) =>
+        toggle.addEventListener('click', function () {
+          if (this.isOpened) {
+            TOCContainer.classList.remove('-open')
+            this.isOpened = false
+            } else {
+            TOCContainer.classList.add('-open')
+            this.isOpened = true
+          }
+        })
+      )
 
       function anchorFormatter(anchor) {
         const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.":*?<>{}]/g, "").replace(/[-']+/g, '-')
