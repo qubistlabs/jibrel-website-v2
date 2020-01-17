@@ -31,9 +31,9 @@
                 inline-template
               >
                 <div class="share">
-                  <network network="facebook" class="item -fb">{{$themeLocaleConfig.data.Share.Share}}</network>
-                  <network network="twitter" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
-                  <network network="linkedin" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
+                  <network network="facebook" class="item -fb">{{$localeConfig.data['Blog.Article.action.share']}}</network>
+                  <network network="twitter" class="item -tw">{{$localeConfig.data['Blog.Article.action.tweet']}}</network>
+                  <network network="linkedin" class="item -in">{{$localeConfig.data['Blog.Article.action.share']}}</network>
                 </div>
               </social-sharing>
             </div>

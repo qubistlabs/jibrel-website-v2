@@ -2,5 +2,7 @@
   "Home.JibrelComPromo.title": "<em>Introducing Jibrel.com</em><br>Redefining how companies are built, funded and managed",
   "Home.JibrelComPromo.action.learnmore": "Learn more",
   "Home.About.title": "About Jibrel.Network",
-  "Blog.Article.TableOfContents.title": "Table of Contents"
+  "Blog.Article.TableOfContents.title": "Table of Contents",
+  "Blog.Article.action.share": "Share",
+  "Blog.Article.action.tweet": "Tweet"
 }
