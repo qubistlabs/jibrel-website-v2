@@ -54,6 +54,9 @@ module.exports = {
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
       readingSpeed: 230, // words per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
+      },
       data: {
         ...contentEn,
         ...messagesEn,
@@ -65,6 +68,9 @@ module.exports = {
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
       readingSpeed: 116, // words per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency'],
+      },
       data: {
         ...contentKo,
         ...messagesKo,
@@ -76,6 +82,9 @@ module.exports = {
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
       readingSpeed: 500, // chars per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
+      },
       data: {
         ...contentZh,
         ...messagesZh,

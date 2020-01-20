@@ -5,5 +5,12 @@
   "Blog.Article.TableOfContents.title": "目录",
   "Blog.Article.action.share": "分享",
   "Blog.Article.action.tweet": "转推",
-  "Blog.Article.minutes": "分钟"
+  "Blog.Article.minutes": "分钟",
+  "Blog.category.blockchain": "区块链",
+  "Blog.category.cryptocurrency": "加密货币",
+  "Blog.category.how-tos": "如何",
+  "Blog.category.investing": "投资者",
+  "Blog.category.startups": "创业公司",
+  "Blog.category.tokenization": "令牌化",
+  "Blog.category.updates": "更新"
 }

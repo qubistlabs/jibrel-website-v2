@@ -3,11 +3,12 @@
     <div class='container _container-fix'>
       <router-link :to='`${this.$localeConfig.path}blog/`' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
       <div class='tabs'>
-        <router-link :to='`${this.$localeConfig.path}blog/tokenization/`' class='item' :class='category === "tokenization" && "-current"'>{{$themeLocaleConfig.data.Article.Tokenization}}</router-link>
-        <router-link :to='`${this.$localeConfig.path}blog/blockchain/`' class='item' :class='category === "blockchain" && "-current"'>{{$themeLocaleConfig.data.Article.Blockchain}}</router-link>
-        <router-link :to='`${this.$localeConfig.path}blog/cryptocurrency/`' class='item' :class='category === "cryptocurrency" && "-current"'>{{$themeLocaleConfig.data.Article.Cryptocurrency}}</router-link>
-        <router-link :to='`${this.$localeConfig.path}blog/startups/`' class='item' :class='category === "startups" && "-current"'>{{$themeLocaleConfig.data.Article.Startups}}</router-link>
-        <router-link :to='`${this.$localeConfig.path}blog/investing/`' class='item' :class='category === "investing" && "-current"'>{{$themeLocaleConfig.data.Article.Investing}}</router-link>
+        <router-link
+            v-for="category in $localeConfig.blog.categories"
+            :to='`${$localeConfig.path}blog/${category}/`'
+            class='item'
+            :class='currentCategory === category && "-current"'
+        >{{$localeConfig.data[`Blog.category.${category}`]}}</router-link>
       </div>
   </div>
 </div>
@@ -20,7 +21,7 @@ export default {
   data() {
     return {
       isSticky: false,
-      category: '',
+      currentCategory: '',
     }
   },
   methods: {
@@ -43,7 +44,7 @@ export default {
       items.addEventListener('scroll', this.handleScroll)
     },
     setCategory() {
-      this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path).slug
+      this.currentCategory = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path).slug
     }
   },
   mounted() {

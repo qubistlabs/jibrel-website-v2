@@ -5,5 +5,12 @@
   "Blog.Article.TableOfContents.title": "Table of Contents",
   "Blog.Article.action.share": "Share",
   "Blog.Article.action.tweet": "Tweet",
-  "Blog.Article.minutes": "min"
+  "Blog.Article.minutes": "min",
+  "Blog.category.blockchain": "Blockchain",
+  "Blog.category.cryptocurrency": "Cryptocurrency",
+  "Blog.category.how-tos": "How To’s",
+  "Blog.category.investing": "Investing",
+  "Blog.category.startups": "Startups",
+  "Blog.category.tokenization": "Tokenization",
+  "Blog.category.updates": "Updates"
 }

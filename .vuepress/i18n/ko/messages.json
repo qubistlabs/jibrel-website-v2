@@ -5,5 +5,12 @@
   "Blog.Article.TableOfContents.title": "목차",
   "Blog.Article.action.share": "몫",
   "Blog.Article.action.tweet": "트윗",
-  "Blog.Article.minutes": "분 소요"
+  "Blog.Article.minutes": "분 소요",
+  "Blog.category.blockchain": "블록체인",
+  "Blog.category.cryptocurrency": "암호화폐",
+  "Blog.category.how-tos": "활용 방법",
+  "Blog.category.investing": "투자",
+  "Blog.category.startups": "스타트업",
+  "Blog.category.tokenization": "토큰화",
+  "Blog.category.updates": "업데이트"
 }
