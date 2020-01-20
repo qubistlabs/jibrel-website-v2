@@ -18,7 +18,7 @@
           <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage || !isFirstPage'>
             <div class='read'>
               <span class="j-button -fill-on-white-bg -h-small">
-                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
+                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
               </span>
             </div>
           </div>
@@ -28,7 +28,7 @@
             <router-link :to='post.category.category_href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0 && isFirstPage'>
               <span class='j-button -fill-on-white-bg -h-small'>
-                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter.wordCount)}} {{$themeLocaleConfig.data.Article.Min}}
+                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
               </span>
             </div>
             <slot />
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-import EventBus from '@/Utils/EventBus.js';
 import { getCategoryLink } from '@/Utils/getCategoryLink.js'
 import Subscribe from '../../Forms/Subscribe/Subscribe.vue';
 
@@ -64,8 +63,22 @@ export default {
     }
   },
   methods: {
-    timeToRead(wordCount) {
-      return Math.round(wordCount / this.$themeLocaleConfig.data.Article.AverageReadSpeed)
+    timeToRead({
+      wordCount,
+      charCount,
+    }) {
+      switch (this.$localeConfig.shortLang) {
+        case 'en':
+        case 'ko': {
+          return Math.round(wordCount / this.$localeConfig.readingSpeed)
+        }
+        case 'zh': {
+          return Math.round(charCount / this.$localeConfig.readingSpeed)
+        }
+        default: {
+          return 0
+        }
+      }
     },
     setClassToFirstArticle(index) {
       if (this.isMainBlogPage) {

@@ -53,6 +53,7 @@ module.exports = {
       shortLang: 'en',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 230, // words per minute
       data: {
         ...contentEn,
         ...messagesEn,
@@ -63,6 +64,7 @@ module.exports = {
       shortLang: 'ko',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 116, // words per minute
       data: {
         ...contentKo,
         ...messagesKo,
@@ -73,6 +75,7 @@ module.exports = {
       shortLang: 'zh',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 500, // chars per minute
       data: {
         ...contentZh,
         ...messagesZh,
