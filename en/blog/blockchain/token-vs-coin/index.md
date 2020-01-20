@@ -6,7 +6,6 @@ heroImage:
   name: coins-vs-tokens.jpg
   alt: Two coins next to each other, one of them is BTC, the other JNT
   bgColor: '#E7E9EE'
-wordCount: 1067
 ---
 
 The main difference between tokens and coins is that digital tokens live on blockchains that already exist while digital coins have a specific and unique blockchain that they run on. While various tokens can be built on top of the blockchain of a coin, a new coin cannot be built on top of a token’s protocol. Understanding the distinctions between tokens and coins are crucial in order to fully grasp digital assets and cryptocurrencies. 

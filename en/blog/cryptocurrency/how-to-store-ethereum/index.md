@@ -6,7 +6,6 @@ heroImage:
   name: how-to-store-ethereum.png
   alt: how to store ethereum
   bgColor: '#003DC6'
-wordCount: 561
 ---
 
 [[toc]]

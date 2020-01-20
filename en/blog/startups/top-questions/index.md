@@ -6,7 +6,6 @@ heroImage:
   name: investor-questions.png
   alt: investor questions
   bgColor: '#e8e9ed'
-wordCount: 1200
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: altcoins.png
   alt: what are altcoins
   bgColor: '#e8e9ed'
-wordCount: 510
 ---
 
 [[toc]]

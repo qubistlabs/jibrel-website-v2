@@ -6,7 +6,6 @@ heroImage:
   name: startup-questions.png
   alt: startup questions
   bgColor: '#e8e9ed'
-wordCount: 571
 ---
 
 [[toc]]

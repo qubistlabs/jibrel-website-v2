@@ -6,7 +6,6 @@ heroImage:
   name: convertible-notes.png
   alt: convertible notes
   bgColor: '#e8e9ed'
-wordCount: 929
 ---
 
 [[toc]]

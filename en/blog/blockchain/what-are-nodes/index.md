@@ -6,7 +6,6 @@ heroImage:
   name: what-are-nodes.png
   alt: blockchain node
   bgColor: '#e8e9ed'
-wordCount: 975
 ---
 
 [[toc]]

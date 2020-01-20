@@ -6,7 +6,6 @@ heroImage:
   name: forks.png
   alt: Hard fork soft fork
   bgColor: '#E7E9EE'
-wordCount: 791
 ---
 
 [[toc]]

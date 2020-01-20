@@ -6,7 +6,6 @@ heroImage:
   name: stablecoin.jpg
   alt: Stablecoin digital coin token
   bgColor: '#003DC6'
-wordCount: 967
 ---
 
 [[toc]]

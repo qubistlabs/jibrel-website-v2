@@ -6,7 +6,6 @@ heroImage:
   name: debt-vs-equity.png
   alt: debt vs equity
   bgColor: '#e8e9ed'
-wordCount: 892
 ---
 
 [[toc]]

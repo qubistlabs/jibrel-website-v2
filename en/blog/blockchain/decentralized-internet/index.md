@@ -6,7 +6,6 @@ heroImage:
   name: decentralized-internet.jpg
   alt: Decentralized Internet Blockchain Nodes
   bgColor: '#e8e9ed'
-wordCount: 1347
 ---
 
 [[toc]]

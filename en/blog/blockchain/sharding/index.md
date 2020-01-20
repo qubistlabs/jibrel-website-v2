@@ -6,7 +6,6 @@ heroImage:
   name: sharding.jpg
   alt: Sharding blockchain database
   bgColor: '#083dc6'
-wordCount: 962
 ---
 
 [[toc]]

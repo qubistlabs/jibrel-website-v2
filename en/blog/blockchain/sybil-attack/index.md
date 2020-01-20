@@ -6,7 +6,6 @@ heroImage:
   name: sybil.png
   alt:
   bgColor: '#e8e9ed'
-wordCount: 557
 ---
 
 [[toc]]
