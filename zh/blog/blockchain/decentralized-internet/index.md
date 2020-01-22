@@ -6,7 +6,6 @@ heroImage:
   name: decentralized-internet.jpg
   alt: 去中心化互联网区块链网点
   bgColor: '#e8e9ed'
-wordCount: 1347
 ---
 
 [[toc]]

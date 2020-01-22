@@ -6,7 +6,6 @@ heroImage:
   name: energy.png
   alt: 블록 체인 에너지 부문
   bgColor: '#e8e9ed'
-wordCount: 1059
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: digital-identity.png
   alt: 数字身份区块链
   bgColor: '#e8e9ed'
-wordCount: 1241
 ---
 
 [[toc]]

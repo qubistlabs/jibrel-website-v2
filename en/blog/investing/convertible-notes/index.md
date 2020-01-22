@@ -1,8 +1,8 @@
 ---
 title: What Are Convertible Notes?
-description: 'When a convertible note is issued, an investor loans money to a startup as a traditional debt lender would, but instead of receiving principle and interest payments, the investor gets company equity in the form of preferred stock.' 
+description: 'When a convertible note is issued, an investor loans money to a startup as a traditional debt lender would, but instead of receiving principle and interest payments, the investor gets company equity in the form of preferred stock.'
 date: 2019-12-12
-heroImage: 
+heroImage:
   name: convertible-notes.png
   alt: convertible notes
   bgColor: '#e8e9ed'
@@ -28,7 +28,7 @@ Convertible notes offer quite a few advantages to young startups in their seed s
 
 After issuing convertible debt, investors look forward to a startup's next equity funding round. How much equity the investor gets upon this conversion event depends on the pricing discount and valuation cap and dividing the purchase price by the convertible price. The parts of a convertible note are:
 
-**Discount Rate:** The discounted valuation that holders receive in relation to future financing rounds as a premium for the additional risk of being first. When a subsequent funding round is raised, early investors get their shares at a discounted price (usually around 20%) while later investors pay a premium. 
+**Discount Rate:** The discounted valuation that holders receive in relation to future financing rounds as a premium for the additional risk of being first. When a subsequent funding round is raised, early investors get their shares at a discounted price (usually around 20%) while later investors pay a premium.
 
 **Valuation Cap:** The price limit at which the convertible notes can be converted into equity. Holders usually also receive protection to the extent the company raises its next round at a valuation that exceeds the valuation cap. The reason convertible notes allow more flexibility in price is that valuation caps aren’t actual valuations, and notes are cheap and easy to do. Thus, if you wanted, you could have a separate note with a different cap for each investor.**Interest Rate:** Since convertible notes start as debt instruments, there is usually an outstanding interest rate that accrues over time. However, the total sum of this accumulated interest rate is paid back in the form of shares issued during conversion from a financing round. **Maturity Date:** The date that the note is due and a company must either repay the note or raise capital.
 

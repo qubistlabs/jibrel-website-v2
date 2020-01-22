@@ -6,7 +6,6 @@ heroImage:
   name: defi.jpg
   alt: Decentralized Finance System
   bgColor: '#E7E9EE'
-wordCount: 1104
 ---
 
 DeFi (Decentralized Finance, 탈중앙화된 금융) — 블록체인과 같은 오픈 소스의 탈중앙화된 소프트웨어가 전통적인 금융 세계, 서비스 및 애플리케이션을 변화시킬 수 있다는 아이디어입니다.

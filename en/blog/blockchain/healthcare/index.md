@@ -2,7 +2,7 @@
 title: How Blockchain Will Disrupt Healthcare by 2020
 description: From patient records to supply chain management, these problems can be found at various points throughout the ecosystem.
 date: 2019-08-30
-heroImage: 
+heroImage:
   name: healthcare.png
   alt: Blockchain Healthcare
   bgColor: '#e8e9ed'
@@ -14,11 +14,11 @@ The healthcare industry today is full of archaic inefficiencies that blockchain 
 
 ## Benefits of Blockchain for Healthcare
 
-In essence, blockchain is an immutable distributed ledger that allows for peer-to-peer trustless consensus. While at first glance, it may seem primarily applicable to industries like finance, the back-end processes of medicine and healthcare have similar needs. Blockchain can help the healthcare industry through:
+In essence, blockchain is an immutable distributed ledger that allows for peer-to-peer trustless consensus. While at first glance, it may seem primarily applicable to [industries like finance](https://jibrel.network/en/blog/tokenization/defi/), the back-end processes of medicine and healthcare have similar needs. Blockchain can help the healthcare industry through:
 
 ### Immutable & Decentralized Medical Records
 
-Data on the blockchain cannot be altered by anyone and accessed by everyone. Therefore, all doctors would have access to the complete and accurate medical history of their patients. They would be able to do so without having to send cumbersome requests to other offices and risk getting incomplete or faulty data. Also, if a doctor’s system goes down or something happens to the doctor, a patient’s records won’t be at the mercy of the centralized point of failure.
+Data on the blockchain cannot be altered by anyone and accessed by everyone. Therefore, all doctors would have access to the [complete and accurate medical history](https://jibrel.network/en/blog/blockchain/digital-identity/) of their patients. They would be able to do so without having to send cumbersome requests to other offices and risk getting incomplete or faulty data. Also, if a doctor’s system goes down or something happens to the doctor, a patient’s records won’t be at the mercy of the centralized point of failure.
 
 ### Information Sharing
 
@@ -48,7 +48,7 @@ Nevertheless, certain complex solutions are currently being implemented as well.
 
 ## Challenges for Blockchain in Healthcare
 
-Healthcare is a multi-trillion dollar industry globally with established technology systems, regulations, and ways of doing things. Any technology that seeks to be genuinely disruptive will most certainly face challenges along the way. Below are some challenges that blockchain is currently facing in the healthcare system.
+Healthcare is a multi-trillion dollar industry globally with established technology systems, regulations, and ways of doing things. Any technology that seeks to be genuinely disruptive will most certainly [face challenges](https://jibrel.network/en/blog/blockchain/obstacles/) along the way. Below are some challenges that blockchain is currently facing in the healthcare system.
 
 ### Scalability
 

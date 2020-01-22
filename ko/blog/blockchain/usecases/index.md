@@ -6,7 +6,6 @@ heroImage:
   name: blockchain-usecases.jpg
   alt: 블록 체인 플래닛 월드
   bgColor: '#E7E9EE'
-wordCount: 1291
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: sharding.jpg
   alt: 区块链数据库分片
   bgColor: '#083dc6'
-wordCount: 962
 ---
 
 [[toc]]

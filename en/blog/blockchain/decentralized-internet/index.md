@@ -2,7 +2,7 @@
 title: What Is the Decentralized Internet?
 description: A decentralized internet would utilize a network of computers. Each computer would act as a node in an interlinked chain.
 date: 2019-08-08
-heroImage: 
+heroImage:
   name: decentralized-internet.jpg
   alt: Decentralized Internet Blockchain Nodes
   bgColor: '#e8e9ed'
@@ -28,21 +28,21 @@ Every view, click and micro-moment is analyzed, optimized and then either sold o
 
 ## What is a Decentralized Web?
 
-Instead of using centralized servers for data storage, a decentralized internet would utilize a network of computers. Each computer would act as a node in an interlinked chain. The elimination of a single storage location would get rid of a central point of failure and the possibility of a concentrated hack or shutdown. Furthermore, there would be no single entity or group that could impose a monopoly or control over such a system.
+Instead of using centralized servers for data storage, a decentralized internet would utilize a network of computers. Each computer would [act as a node](https://jibrel.network/en/blog/blockchain/what-are-nodes/) in an interlinked chain. The elimination of a single storage location would get rid of a central point of failure and the possibility of a concentrated hack or shutdown. Furthermore, there would be no single entity or group that could impose a monopoly or control over such a system.
 
 ## How Do Decentralized Internet Applications Work
 
 When you type anything on a Google Doc or store a photo, song or file on the cloud, you are trusting that the company offering such services will protect your data from hacks and maintain your privacy. Every bit of data you put into such systems gets sent to and stored centralized servers. Your data is only as secure as this server.
 
-When using decentralized internet applications, your work gets backed up locally on your device. It also becomes available on a decentralized network which allows you to share and collaborate. However, since the network is decentralized, the data is encrypted and can only be read if someone has the associated encryption key. The encryption is similar to the mnemonic multi-word phrases that have been used for cryptocurrency wallet security for years. They ensure that private data stays private. Since there is no central server, multiple parts of a given network can fail without compromising the integrity of the decentralized internet as a whole.
+When using [decentralized internet applications](https://jibrel.network/en/blog/tokenization/disintermediation/), your work gets backed up locally on your device. It also becomes available on a decentralized network which allows you to share and collaborate. However, since the network is decentralized, the data is encrypted and can only be read if someone has the associated encryption key. The encryption is similar to the mnemonic multi-word phrases that have been used for cryptocurrency wallet security for years. They ensure that private data stays private. Since there is no central server, multiple parts of a given network can fail without compromising the integrity of the decentralized internet as a whole.
 
 ## Venture Capital is ALL IN on the Decentralized Internet
 
-Venture Capital [investment](https://pitchbook.com/news/articles/the-top-10-vc-investors-in-blockchain) in blockchain and cryptocurrency related companies is up 280% with over $1.3 billion invested just in the top ten deals. Prominent names such as Andreessen Horowitz, Barry Silbert and Tim Draper have all bought into the blockchain revolution becoming proud and vocal advocates for the space. With companies like [Blockstack](https://blockstack.org/), a decentralized application hosting platform and, [Filecoin](https://filecoin.io/), a decentralized storage network for data competing with current cloud storage solutions, achieving multi-million dollar valuations, it seems venture capital funding has definitely gone all in. Ironically, the same funds that were invested in the early Google’s of the world are now betting big on their competitors.
+Venture Capital [investment](https://pitchbook.com/news/articles/the-top-10-vc-investors-in-blockchain) in blockchain and cryptocurrency related companies is up 280% with over $1.3 billion invested just in the top ten deals. Prominent names such as Andreessen Horowitz, Barry Silbert and Tim Draper have all bought into the blockchain revolution becoming proud and vocal advocates for the space. With companies like Blockstack, a decentralized application hosting platform, and Filecoin, a decentralized storage network for data competing with current cloud storage solutions, achieving [multi-million dollar valuations](https://jibrel.network/en/blog/tokenization/defi/), it seems venture capital funding has definitely gone all in. Ironically, the same funds that were invested in the early Google’s of the world are now betting big on their competitors.
 
 ## Challenges of a Decentralized Internet
 
-Despite growing venture capital interest and backing, the decentralized internet is still a very niche island in a world of billion dollar centralized giants. This is because companies like Google have managed to create attractive products, overcome technical difficulties and attract billions of users all over the world. While these internet giants have had a 20+ year head start to get it right, it is exactly what the decentralized companies of the future will need to overcome in order to have the slightest hope of being viewed as real “competitors.”
+Despite growing venture capital interest and backing, the decentralized internet is still a very niche island in a world of billion dollar centralized giants. This is because companies like Google have managed to create attractive products, overcome [technical difficulties](https://jibrel.network/en/blog/blockchain/obstacles/) and attract billions of users all over the world. While these internet giants have had a 20+ year head start to get it right, it is exactly what the [decentralized companies](https://jibrel.network/en/blog/blockchain/baas/) of the future will need to overcome in order to have the slightest hope of being viewed as real “competitors.”
 
 ### Adoption Challenges
 

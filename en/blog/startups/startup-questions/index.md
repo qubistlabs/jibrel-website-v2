@@ -1,8 +1,8 @@
 ---
 title: Questions Every Startup Should Ask Investors
-description: 'A lot of investors have money, but not all are created equal. You want to find a thoughtful, qualified investor and ensure that you get the best deal possible without any surprises down the line. ' 
+description: 'A lot of investors have money, but not all are created equal. You want to find a thoughtful, qualified investor and ensure that you get the best deal possible without any surprises down the line. '
 date: 2019-12-12
-heroImage: 
+heroImage:
   name: startup-questions.png
   alt: startup questions
   bgColor: '#e8e9ed'

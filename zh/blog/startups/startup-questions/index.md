@@ -6,7 +6,6 @@ heroImage:
   name: startup-questions.png
   alt: 每个初创企业都应该问投资者的问题
   bgColor: '#e8e9ed'
-wordCount: 571
 ---
 
 [[toc]]

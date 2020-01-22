@@ -6,7 +6,6 @@ heroImage:
   name: sharding.jpg
   alt: 샤딩 블록 체인 데이터베이스
   bgColor: '#083dc6'
-wordCount: 962
 ---
 
 [[toc]]

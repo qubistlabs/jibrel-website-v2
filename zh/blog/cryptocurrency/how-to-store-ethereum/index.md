@@ -6,7 +6,6 @@ heroImage:
   name: how-to-store-ethereum.png
   alt: 存储以太坊 加密货币
   bgColor: '#003DC6'
-wordCount: 561
 ---
 
 [[toc]]

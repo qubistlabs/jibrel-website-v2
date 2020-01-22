@@ -6,7 +6,6 @@ heroImage:
   name: what-are-nodes.png
   alt: 区块链比特币节点
   bgColor: '#e8e9ed'
-wordCount: 975
 ---
 
 [[toc]]

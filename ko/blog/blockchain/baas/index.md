@@ -6,7 +6,6 @@ heroImage:
   name: baas.png
   alt: 서비스형 블록체인
   bgColor: '#e8e9ed'
-wordCount: 923
 ---
 
 [[toc]]

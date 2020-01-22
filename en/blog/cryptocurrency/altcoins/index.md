@@ -1,8 +1,8 @@
 ---
 title: What are Altcoins?
-description: 'Altcoins were built by teams trying to either improve on the shortcomings of Bitcoin or create entirely new blockchain applications.' 
+description: 'Altcoins were built by teams trying to either improve on the shortcomings of Bitcoin or create entirely new blockchain applications.'
 date: 2019-11-12
-heroImage: 
+heroImage:
   name: altcoins.png
   alt: what are altcoins
   bgColor: '#e8e9ed'
@@ -16,17 +16,17 @@ Altcoins are coins that are "alternative" coins to Bitcoin, the first cryptocurr
 
 ## How Are Altcoins Created?
 
-With Ethereum, development teams no longer had to create separate blockchains but could use Ethereum's network to launch tokens faster and easier. Smart contract technology also created a myriad of possibilities and use cases that stretched beyond the payment and store of value capabilities of Bitcoin. Altcoins could now launch ICOs (Initial Coin Offerings) to crowdfund their ideas and surpass much of the existing financial regulations. Initial Coin Offerings became a revolutionary funding model that circumvented the traditional venture capital, public stock markets, and current crowdfunding models. While they came with their risks and challenges, the ICO model changed startup financing forever. According to [Coinmarketcap.com](http://coinmarketcap.com/), there are currently over 2,300 altcoins. While many of these projects may never succeed, the path of perpetual innovation for eager entrepreneurs has been paved.
+With Ethereum, development teams no longer had to create separate blockchains but could use Ethereum's network to launch tokens faster and easier. Smart contract technology also created a myriad of possibilities and use cases that stretched beyond the payment and [store of value](https://jibrel.network/en/blog/cryptocurrency/stablecoin/) capabilities of Bitcoin. Altcoins could now launch ICOs (Initial Coin Offerings) to crowdfund their ideas and surpass much of the existing financial regulations. Initial Coin Offerings became a revolutionary funding model that circumvented the [traditional venture capital](https://jibrel.network/en/blog/startups/debt-vs-equity/), public stock markets, and current crowdfunding models. While they came with their risks and challenges, the ICO model changed startup financing forever. According to [Coinmarketcap.com](http://coinmarketcap.com/), there are currently over 2,300 altcoins. While many of these projects may never succeed, the path of perpetual innovation for eager entrepreneurs has been paved.
 
 ## What Makes Altcoins Different?
 
-While Bitcoin is known as the unhackable store of value, unit of account, and payment network, it can't do much else. Thus altcoins were built to serve needs in a variety of industries. Most altcoins rely on a P2P (peer-to-peer) protocols that utilize different consensus mechanisms. Increasingly, more altcoins are switching from the Proof-of-Work (PoW) to the Proof-of-Stake (PoS) system. Still, while the basic mechanics of the coins may be similar, their use cases vary greatly. For example:
+While Bitcoin is known as the unhackable store of value, unit of account, and payment network, it can't do much else. Thus altcoins were built to serve needs in a variety of industries. Most altcoins rely on a P2P (peer-to-peer) protocols that utilize different [consensus mechanisms](https://jibrel.network/en/blog/cryptocurrency/forks/). Increasingly, more altcoins are switching from the Proof-of-Work (PoW) to the Proof-of-Stake (PoS) system. Still, while the basic mechanics of the coins may be similar, their use cases vary greatly. For example:
 
 **Vechain:** An altcoin project that seeks to revolutionize the supply chain management industry by increasing transparency and streamlining operations through blockchain.
 
 **Icon:** Based out of South Korea, this altcoin project is attempting to solve the problem of interoperability that blockchains face today.
 
-**Jibrel:** Jibrel provides currencies, equities, commodities, and other financial assets as standard ERC-20 tokens on the Ethereum blockchain.
+**Jibrel:** Jibrel provides currencies, equities, commodities, and other [financial assets](https://jibrel.network/en/blog/tokenization/defi/) as standard ERC-20 tokens on the Ethereum blockchain.
 
 ## Altcoin Scams
 

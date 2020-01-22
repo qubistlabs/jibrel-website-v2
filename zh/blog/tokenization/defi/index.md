@@ -6,7 +6,6 @@ heroImage:
   name: defi.jpg
   alt: 去中心化金融系统
   bgColor: '#E7E9EE'
-wordCount: 1104
 ---
 
 DeFi（去中心化金融）—— 诸如区块链之类的开源去中心化软件，可以改变传统金融世界的服务和应用的方案。

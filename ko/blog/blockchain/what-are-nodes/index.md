@@ -6,7 +6,6 @@ heroImage:
   name: what-are-nodes.png
   alt: 블록체인 노드 비트코인
   bgColor: '#e8e9ed'
-wordCount: 975
 ---
 
 [[toc]]

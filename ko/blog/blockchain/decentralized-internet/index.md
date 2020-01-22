@@ -6,7 +6,6 @@ heroImage:
   name: decentralized-internet.jpg
   alt: 분산 인터넷 블록 체인 노드
   bgColor: '#e8e9ed'
-wordCount: 1347
 ---
 
 [[toc]]

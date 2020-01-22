@@ -1,12 +1,11 @@
 ---
 title: '稳定币：你需要知道的一切'
-description: '稳定币是一种通过与基础资产绑定来保持稳定价格的数字货币。' 
+description: '稳定币是一种通过与基础资产绑定来保持稳定价格的数字货币。'
 date: 2020-01-10
-heroImage: 
+heroImage:
   name: stablecoin.jpg
   alt: 稳定币 数字货币 代币
   bgColor: '#003DC6'
-wordCount: 967
 ---
 
 [[toc]]

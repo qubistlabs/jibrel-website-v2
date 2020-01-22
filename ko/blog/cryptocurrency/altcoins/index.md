@@ -6,7 +6,6 @@ heroImage:
   name: altcoins.png
   alt: 알트코인 이란 무엇인가
   bgColor: '#e8e9ed'
-wordCount: 510
 ---
 
 [[toc]]

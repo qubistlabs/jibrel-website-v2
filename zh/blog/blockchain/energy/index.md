@@ -6,7 +6,6 @@ heroImage:
   name: energy.png
   alt: 区块链能源行业
   bgColor: '#e8e9ed'
-wordCount: 1059
 ---
 
 [[toc]]

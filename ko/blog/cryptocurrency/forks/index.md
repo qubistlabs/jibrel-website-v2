@@ -6,7 +6,6 @@ heroImage:
   name: forks.png
   alt: 하드 포크 소프트 포크
   bgColor: '#E7E9EE'
-wordCount: 791
 ---
 
 [[toc]]

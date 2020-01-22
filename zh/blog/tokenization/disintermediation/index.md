@@ -6,7 +6,6 @@ heroImage:
   name: disintermediation.png
   alt: 去中介化
   bgColor: '#E7E9EE'
-wordCount: 915
 ---
 
 [[toc]]

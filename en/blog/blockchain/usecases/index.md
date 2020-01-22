@@ -1,6 +1,6 @@
 ---
-title: '12 Ways Blockchain Will Change the World by 2030'
-description: 'There is no denying that blockchain is here to stay. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.'
+title: 12 Ways Blockchain Will Change the World by 2030
+description: There is no denying that blockchain is here to stay. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.
 date: 2019-08-15
 heroImage:
   name: blockchain-usecases.jpg
@@ -10,15 +10,15 @@ heroImage:
 
 [[toc]]
 
-There is no denying that blockchain is here to stay. While most people associate blockchain with cryptocurrency and Bitcoin, its reach stretches far beyond. Blockchain already has fundamentally disrupted numerous industries and this will only accelerate as time goes on. While the prices of the cryptocurrency market plummeted in 2018, many companies were hard at work trying to build the future. Their undying dedication to the ethos of a decentralized world has given birth to a myriad of solutions and different use cases. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.
+There is no denying that blockchain is here to stay. While most people associate blockchain with cryptocurrency and Bitcoin, its reach stretches far beyond. Blockchain already has fundamentally disrupted numerous industries and this will only accelerate as time goes on. While the prices of the cryptocurrency market plummeted in 2018, many companies were hard at work trying to build the future. Their undying dedication to the ethos of a [decentralized world](https://jibrel.network/en/blog/tokenization/disintermediation/) has given birth to a myriad of solutions and different use cases. Below is a list of the top 12 use cases we are likely to see come to fruition by 2030.
 
 ## 1. Store of Value
 
-As many countries like Bulgaria, Turkey, and China are beginning to hoard Bitcoin, it seems to be on its way to becoming “digital gold.” Unlike physical gold, Bitcoin does not have the same storage costs and transactional obstacles. Therefore, it is much easier for a country to transfer $1 billion in Bitcoin versus gold. While people in Venezuela and other unbanked countries have flocked to Bitcoin, for reasons other than trading or investing, the price is currently too volatile for it to be truly considered a store of value. Nevertheless, many predict that Bitcoin’s price will stabilize as the asset matures over time.
+As many countries like Bulgaria, Turkey, and China are beginning to hoard Bitcoin, it seems to be on its way to becoming “digital gold.” Unlike physical gold, Bitcoin does not have the same storage costs and transactional obstacles. Therefore, it is much easier for a country to transfer $1 billion in Bitcoin versus gold. While people in Venezuela and other unbanked countries have flocked to Bitcoin, for reasons other than trading or investing, the price is currently too volatile for it to be truly considered a [store of value](https://jibrel.network/en/blog/cryptocurrency/stablecoin/). Nevertheless, many predict that Bitcoin’s price will stabilize as the asset matures over time.
 
 ## 2. Finance
 
-Companies like [Ripple](https://www.ripple.com) and Jibrel are revolutionizing many archaic aspects of Finance. What took days or weeks for departments with thousands of people can now take seconds without much human intervention whatsoever. More and more processes within middle / back office, compliance, and legal departments are becoming increasingly automated as financial products move on-chain. All this is creating a far more efficient system that is less vulnerable to fraud, more inclusive, and much more friendly towards the end consumer.
+Companies like Ripple and Jibrel are revolutionizing many archaic aspects of Finance. What took days or weeks for departments with thousands of people can now take seconds without much human intervention whatsoever. More and more processes within middle / back office, compliance, and legal departments are becoming increasingly automated as [financial products move on-chain](https://jibrel.network/en/blog/tokenization/defi/). All this is creating a far more efficient system that is less vulnerable to fraud, more inclusive, and much more friendly towards the end consumer.
 
 ## 3. Voting
 
@@ -34,11 +34,11 @@ The taxation process involves the collection of funds from the public and distri
 
 ## 6. Healthcare
 
-Blockchain will enable medical records to be stored on-chain. While this may not seem too revolutionary, this would allow information to be easily shared with insurance companies, other doctors, and hospitals. Synchronizing a fragmented system in such a way could lead to a much higher level of care and a reduction in medical errors. Your entire patient history would be in one place, and any doctor you visit would have access instantly. Doctors would no longer have to go through the cumbersome effort piecing it all together from different sources.
+Blockchain will enable [medical records to be stored on-chain](https://jibrel.network/en/blog/blockchain/healthcare/). While this may not seem too revolutionary, this would allow information to be easily shared with insurance companies, other doctors, and hospitals. Synchronizing a fragmented system in such a way could lead to a much higher level of care and a reduction in medical errors. Your entire patient history would be in one place, and any doctor you visit would have access instantly. Doctors would no longer have to go through the cumbersome effort piecing it all together from different sources.
 
 ## 7. Identity & Verification
 
-From opening a new bank account to getting into a bar, proof-of-identity is a central part of everyday life. However, identity is often compromised or stolen with central data storages acting as farms ripe for harvest to the right hackers. In fact, many [big corporate hacks](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html) have resulted in stolen user data. The decentralized nature of blockchain can help prevent such malicious attacks from occurring. From opening a new bank account to getting into a bar, proof of identity is a central part of everyday life.
+From opening a new bank account to getting into a bar, [proof-of-identity](https://jibrel.network/en/blog/blockchain/digital-identity/) is a central part of everyday life. However, identity is often compromised or stolen with central data storages acting as farms ripe for harvest to the right hackers. In fact, many [big corporate hacks](https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html) have resulted in stolen user data. The decentralized nature of blockchain can help prevent such malicious attacks from occurring. From opening a new bank account to getting into a bar, proof of identity is a central part of everyday life.
 
 ## 8. Tokenization
 

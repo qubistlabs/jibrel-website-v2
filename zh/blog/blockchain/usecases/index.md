@@ -6,7 +6,6 @@ heroImage:
   name: blockchain-usecases.jpg
   alt: 区块链星球世界
   bgColor: '#E7E9EE'
-wordCount: 1291
 ---
 
 [[toc]]

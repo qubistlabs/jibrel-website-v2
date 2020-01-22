@@ -6,7 +6,6 @@ heroImage:
   name: masternodes.png
   alt: 마스터노드
   bgColor: '#E7E9EE'
-wordCount: 985
 ---
 
 [[toc]]

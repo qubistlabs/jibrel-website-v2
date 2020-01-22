@@ -6,7 +6,6 @@ heroImage:
   name: disintermediation.png
   alt: 탈중개화 란
   bgColor: '#E7E9EE'
-wordCount: 915
 ---
 
 [[toc]]

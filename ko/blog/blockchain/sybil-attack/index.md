@@ -6,7 +6,6 @@ heroImage:
   name: sybil.png
   alt: 시빌 공격 암호 화폐 해킹
   bgColor: '#e8e9ed'
-wordCount: 557
 ---
 
 [[toc]]

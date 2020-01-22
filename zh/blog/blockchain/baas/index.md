@@ -6,7 +6,6 @@ heroImage:
   name: baas.png
   alt: 区块链即服务
   bgColor: '#e8e9ed'
-wordCount: 923
 ---
 
 [[toc]]

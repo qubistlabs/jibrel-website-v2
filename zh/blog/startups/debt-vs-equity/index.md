@@ -6,7 +6,6 @@ heroImage:
   name: debt-vs-equity.png
   alt: 债券 vs 股权
   bgColor: '#e8e9ed'
-wordCount: 892
 ---
 
 [[toc]]

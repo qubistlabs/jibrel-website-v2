@@ -6,7 +6,6 @@ heroImage:
   name: forks.png
   alt: 硬分叉和软分叉
   bgColor: '#E7E9EE'
-wordCount: 791
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: digital-identity.png
   alt: 블록체인과 디지털 ID의 미래
   bgColor: '#e8e9ed'
-wordCount: 1241
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: masternodes.png
   alt: 主节点
   bgColor: '#E7E9EE'
-wordCount: 985
 ---
 
 [[toc]]

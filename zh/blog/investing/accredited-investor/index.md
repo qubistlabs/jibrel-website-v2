@@ -6,7 +6,6 @@ heroImage:
   name: accredited-investor.png
   alt: 合格投资者
   bgColor: '#e8e9ed'
-wordCount: 573
 ---
 
 [[toc]]

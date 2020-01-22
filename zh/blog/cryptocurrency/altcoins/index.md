@@ -6,7 +6,6 @@ heroImage:
   name: altcoins.png
   alt: 竞争币
   bgColor: '#e8e9ed'
-wordCount: 510
 ---
 
 [[toc]]

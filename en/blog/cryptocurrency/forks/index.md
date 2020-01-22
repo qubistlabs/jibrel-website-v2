@@ -2,7 +2,7 @@
 title: 'Bitcoin: Hard Forks vs. Soft Forks'
 description: Just like any piece of software, protocols need to be updated. Such updates are done via hard forks and soft forks.
 date: 2019-09-27
-heroImage: 
+heroImage:
   name: forks.png
   alt: Hard fork soft fork
   bgColor: '#E7E9EE'
@@ -10,7 +10,7 @@ heroImage:
 
 [[toc]]
 
-Hard forks and soft forks are software updates to the blockchains of cryptocurrencies like Bitcoin. Crypto coins are built on blockchains that run according to a particular set of programmable rules called protocols. These protocols function as the DNA of blockchains, operating on a decentralized network made up of nodes run by network participants. This cryptocurrency "DNA" contains information on mining, block sizes, voting standard, and more. Yet just like any piece of software, protocols need to be updated. Such updates are done via hard forks and soft forks.
+Hard forks and soft forks are software updates to the blockchains of cryptocurrencies like Bitcoin. [Crypto coins](https://jibrel.network/en/blog/blockchain/token-vs-coin/) are built on blockchains that run according to a particular set of programmable rules called protocols. These protocols function as the DNA of blockchains, operating on a decentralized network made up of [nodes run by network participants](https://jibrel.network/en/blog/blockchain/what-are-nodes/). This cryptocurrency "DNA" contains information on mining, block sizes, voting standard, and more. Yet just like any piece of software, protocols need to be updated. Such updates are done via hard forks and soft forks.
 
 ## What Is a Bitcoin Hard Fork?
 
@@ -18,7 +18,7 @@ Hard forks are blockchain protocol updates that split a coin, like Bitcoin, into
 
 *For example, in 2017, a hard fork of Bitcoin's blockchain occurred, [which gave birth to Bitcoin Cash](https://www.investopedia.com/terms/b/bitcoin-cash.asp). Since there is no centralized authority managing Bitcoin, miners and developers had to vote on changes to the protocol. Since no unanimous consensus could be reached, a hard fork occurred. Led by [Roger Ver,](https://en.wikipedia.org/wiki/Roger_Ver) this was the inception of Bitcoin Cash.*
 
-When a hard fork is implemented on a cryptocurrency's blockchain, all of the participating nodes must update as well. Those that do not will no longer be compatible with the newly updated version of the coin. Nodes that don't perform the update will lose the ability to facilitate and process transactions or add blocks to the chain.
+When a hard fork is implemented on a cryptocurrency's blockchain, all of the participating nodes must update as well. Those that do not will no longer be compatible with the newly updated [version of the coin](https://jibrel.network/en/blog/cryptocurrency/altcoins/). Nodes that don't perform the update will lose the ability to facilitate and process transactions or add blocks to the chain.
 
 *For example, let's say that during a Bitcoin's hard fork block size is increased from 1MB to 3MB. If an old node tries to push a former sized block into the updated blockchain protocol, it will be rejected.*
 

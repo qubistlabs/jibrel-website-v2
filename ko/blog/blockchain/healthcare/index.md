@@ -6,7 +6,6 @@ heroImage:
   name: healthcare.png
   alt: 블록체인 건강 관리
   bgColor: '#e8e9ed'
-wordCount: 888
 ---
 
 [[toc]]

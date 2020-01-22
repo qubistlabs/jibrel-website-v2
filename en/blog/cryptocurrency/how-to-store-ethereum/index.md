@@ -1,8 +1,8 @@
 ---
 title: How to Store Ethereum (ETH)
-description: 'Storing Ethereum (ETH) and other cryptocurrencies safely and securely is critical.  Mobile wallets, like Jwallet, are currently one of the most popular options.' 
+description: 'Storing Ethereum (ETH) and other cryptocurrencies safely and securely is critical.  Mobile wallets, like Jwallet, are currently one of the most popular options.'
 date: 2019-11-12
-heroImage: 
+heroImage:
   name: how-to-store-ethereum.png
   alt: how to store ethereum
   bgColor: '#003DC6'
@@ -48,7 +48,7 @@ After creating your wallet name and passcode, it is important to back up your ne
 
 ## To Backup an Existing Wallet
 
-Remember, your mnemonic phrase and private key are the only ways to restore access to your funds! To backup an existing Ethereum (ETH) wallet: 
+Remember, your mnemonic phrase and private key are the only ways to restore access to your funds! To backup an existing Ethereum (ETH) wallet:
 
 - Tap the icon in the top right corner of the home screen to go the **My Wallets** view
 - Tap on the **three dots** on the right side of your wallet’s name to access the menu

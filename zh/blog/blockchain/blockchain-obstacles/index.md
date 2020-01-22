@@ -6,7 +6,6 @@ heroImage:
   name: blockchain-obstacles.jpg
   alt: 区块链面前的障碍
   bgColor: '#003DC6'
-wordCount: 1006
 ---
 
 [[toc]]

@@ -6,7 +6,6 @@ heroImage:
   name: investor-questions.png
   alt: 创业公司问题
   bgColor: '#e8e9ed'
-wordCount: 1200
 ---
 
 [[toc]]
