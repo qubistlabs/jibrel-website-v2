@@ -1,6 +1,6 @@
 <template>
   <div class='articles-subscribe' :class='[this.variant, this.status]'>
-    <h2 class="title">{{$themeLocaleConfig.data.Article.SubscribeTitle}}</h2>
+    <h2 class="title">{{$localeConfig.data['Subscribe.title']}}</h2>
     <div class='form'>
       <div class='project-form -w-full' :class='this.status'>
         <div class='container -no-offset'>
@@ -13,16 +13,16 @@
                   autocomplete='email'
                   v-model='email'
                   class='field -button-sibling -input -fill'
-                  :placeholder='$themeLocaleConfig.data.Article.EnterYourEmailAddress'
+                  :placeholder='$localeConfig.data["Subscribe.input.email.placeholder"]'
                   required=''
               >
             </label>
             <button class='send -inline' type='submit'>
-              <span class='text'>{{ $themeLocaleConfig.data.Article.Subscribe }}</span>
+              <span class='text'>{{ $localeConfig.data['Subscribe.action.submit'] }}</span>
             </button>
             <div class='button -only-mobile'>
               <button class='j-button -w100 -h-big -fill-on-white-bg' type='submit' >
-                <span class='text'>{{ $themeLocaleConfig.data.Article.Subscribe }}</span>
+                <span class='text'>{{ $localeConfig.data['Subscribe.action.submit'] }}</span>
               </button>
             </div>
           </form>
@@ -37,10 +37,10 @@
           <div class='dot -third' />
         </div>
       </div>
-      <div class='success'>{{$themeLocaleConfig.data.Article.SubscribeSuccess}} </div>
+      <div class='success'>{{$localeConfig.data['Subscribe.success']}}</div>
       <div class='error'>
-        <div class='msg'>{{$themeLocaleConfig.data.Article.SubscribeErrorMsg}}</div>
-        <button class='j-button -border-white-bg -w-limit-158' @click='onClickRetry'>{{$themeLocaleConfig.data.Article.SubscribeErrorButton}}</button>
+        <div class='msg'>{{$localeConfig.data['Subscribe.error.general']}}</div>
+        <button class='j-button -border-white-bg -w-limit-158' @click='onClickRetry'>{{$localeConfig.data['Subscribe.action.retry']}}</button>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <section class='section-content -offset-blog -offset-bottom -bottom-separator -bg-gray'>
       <BlogHeader />
       <SectionName
-          :title='$themeLocaleConfig.data.SectionName.blog'
+          :title='$localeConfig.data["Blog.title"]'
           positionContainer='bottom-460'
           positionTitle='bottom'
           colorTheme='colored'

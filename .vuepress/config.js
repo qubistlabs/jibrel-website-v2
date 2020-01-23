@@ -15,9 +15,9 @@ const themeKo = require('./i18n/KoKr/theme')
 const themeZh = require('./i18n/zh/theme')
 
 // All translation should migrate to these files
-const messagesEn = require('./i18n/en/messages.json')
-const messagesKo = require('./i18n/ko/messages.json')
-const messagesZh = require('./i18n/zh/messages.json')
+const messagesEn = require('./i18n/en.json')
+const messagesKo = require('./i18n/ko.json')
+const messagesZh = require('./i18n/zh.json')
 
 module.exports = {
   dest: 'build',
