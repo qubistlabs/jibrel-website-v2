@@ -8,16 +8,16 @@
             v-model='email'
             class='field -button-sibling -input -fill'
             :class='emailError && "-error"'
-            :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : $themeLocaleConfig.data.Article.EnterYourEmailAddress'
+            :placeholder='templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.email : $localeConfig.data["Subscribe.input.email.placeholder"]'
             required=''
           >
         </label>
         <button class='send -inline' type='button' @click='openExternalForm'>
-          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $themeLocaleConfig.data.Article.Subscribe}}</span>
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $localeConfig.data["Subscribe.action.submit"]}}</span>
         </button>
         <div class='button -only-mobile' type='button' @click='openExternalForm'>
           <button class='j-button -w100 -h-big -fill-on-white-bg' type='button' @click='ajaxSend' >
-          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $themeLocaleConfig.data.Article.Subscribe}}</span>
+          <span class='text'>{{ templateForm === "jcash" ? $themeLocaleConfig.data.FormText.emailOnly.button : $localeConfig.data["Subscribe.action.submit"]}}</span>
           </button>
         </div>
       </form>

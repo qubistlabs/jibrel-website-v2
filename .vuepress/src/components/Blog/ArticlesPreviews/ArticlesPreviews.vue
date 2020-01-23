@@ -18,7 +18,7 @@
           <div class='overlay' v-if='(isMainBlogPage && index !== 0) || !isMainBlogPage || !isFirstPage'>
             <div class='read'>
               <span class="j-button -fill-on-white-bg -h-small">
-                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
+                {{$localeConfig.data['Blog.Article.action.read']}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
               </span>
             </div>
           </div>
@@ -28,7 +28,7 @@
             <router-link :to='post.category.category_href' class='tag'>{{post.category.content}}</router-link>
             <div class='read' v-if='isMainBlogPage && index === 0 && isFirstPage'>
               <span class='j-button -fill-on-white-bg -h-small'>
-                {{$themeLocaleConfig.data.Article.Read}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
+                {{$localeConfig.data['Blog.Article.action.read']}} • {{timeToRead(post.frontmatter)}} {{$localeConfig.data['Blog.Article.minutes']}}
               </span>
             </div>
             <slot />
@@ -100,14 +100,14 @@ export default {
       return this.pages
         .map(page => ({
           ...page,
-          category: getCategoryLink(this.$themeLocaleConfig.data, page.regularPath, this.$localeConfig.path),
+          category: getCategoryLink(this.$localeConfig.data, page.regularPath, this.$localeConfig.path),
           img: this.getImage(page)
         }))
     },
   },
   created() {
     this.isFirstPage = !(this.$page.regularPath.indexOf('/blog/page/') !== -1)
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.regularPath, this.$localeConfig.path)
+    this.category = getCategoryLink(this.$localeConfig.data, this.$page.regularPath, this.$localeConfig.path)
   },
   watch: {
     $page(newPage) {

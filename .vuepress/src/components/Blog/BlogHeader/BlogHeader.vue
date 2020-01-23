@@ -1,7 +1,7 @@
 <template>
   <div class='blog-header' :class='isSticky && "-sticky"'>
     <div class='container _container-fix'>
-      <router-link :to='`${this.$localeConfig.path}blog/`' class="title">{{$themeLocaleConfig.data.Article.Blog}}</router-link>
+      <router-link :to='`${this.$localeConfig.path}blog/`' class="title">{{$localeConfig.data["Blog.title"]}}</router-link>
       <div class='tabs'>
         <router-link
             v-for="category in $localeConfig.blog.categories"
