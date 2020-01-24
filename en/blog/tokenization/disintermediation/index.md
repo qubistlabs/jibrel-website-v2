@@ -1,12 +1,11 @@
 ---
 title: 'What is Disintermediation? The Complete Guide'
-description: The goal of disintermediation is to reduce the number of middlemen and intermediaries between a product and the consumer. 
+description: The goal of disintermediation is to reduce the number of middlemen and intermediaries between a product and the consumer.
 date: 2019-07-31
-heroImage: 
+heroImage:
   name: disintermediation.png
   alt: Disintermediation
   bgColor: '#E7E9EE'
-wordCount: 915
 ---
 
 [[toc]]
@@ -19,11 +18,11 @@ The goal of disintermediation is to reduce the number of middlemen and intermedi
 
 While companies like Amazon, Uber and Airbnb created massive disruption in their respective industries, until recently, the financial world was largely excluded from such innovation. Before [Bitcoin,](https://blockgeeks.com/guides/what-is-bitcoin/) all transactions not done in cash or person required third parties such as banks, payment processors, etc. These third parties were usually large institutions with billions in overhead. This not only created a system of incessant fees, but also facilitated the subjugation of customers to the whims of the institutions that they used. However, this all changed in 2009.
 
-For the first time, peer-to-peer transactions no longer had to be conducted in person, but could be done digitally without any oversight. This not only led to the disintermediation of financial institutions through the solution of the [Byzantine Generals’ Problem](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf), but set off the next internet revolution.
+For the first time, peer-to-peer transactions no longer had to be conducted in person, but could be done digitally without any oversight. This not only led to the disintermediation of financial institutions through the solution of the [Byzantine Generals’ Problem](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf), but set off the next [internet revolution](https://jibrel.network/en/blog/blockchain/decentralized-internet/).
 
 ### How does Blockchain Help Disintermediation?
 
-While blockchain may seem like the holy grail to the inefficiencies of today's intermediaries, a lot remains to be seen. Nevertheless, various applications have been released with many more in development. They include:
+While blockchain may seem like the holy grail to the [inefficiencies of today's intermediaries](https://jibrel.network/en/blog/blockchain/baas/), a lot remains to be seen. Nevertheless, various applications have been released with many more in development. They include:
 
 ### Disintermediation in Cryptocurrency Trading
 
@@ -63,13 +62,13 @@ The biggest risk of disintermediation for investors is the burden of due diligen
 
 ### Risk of Centralization
 
-While Bitcoin may be the holy grail of decentralization and disintermediation, many subsequent blockchain applications most certainly were not. While capitalizing on the hype of the blockchain movement, many companies placed themselves in the middle of their decentralized applications. Ultimately, blockchain itself does not automatically guarantee disintermediation and many blockchain companies violate its core principles being: 
+While Bitcoin may be the holy grail of decentralization and disintermediation, many subsequent blockchain applications most certainly were not. While capitalizing on the hype of the blockchain movement, many companies placed themselves in the middle of their [decentralized applications](https://jibrel.network/en/blog/tokenization/defi/). Ultimately, blockchain itself does not automatically guarantee disintermediation and many blockchain companies violate its core principles being:
 
 1. Open
 2. Neutral
-3. Borderless 
+3. Borderless
 4. Censorship Resistant
 
-For example, many blockchains have the power to freeze tokens on their network while some DEXs (Decentralized Exchanges) act as intermediaries in the very transactions they claim to decentralize. Furthermore, the ability of developers to customize smart contracts allows anyone to circumvent any real “consensus mechanism” all the while pushing the utopian idea of decentralization. This led to the creation of Initial Coin Offerings of ERC20 tokens that did not have intrinsic use cases. Instead, they functioned as blockchain-based capital raising methods and glorified databases.
+For example, many blockchains have the power to [freeze tokens](https://jibrel.network/en/blog/blockchain/token-vs-coin/) on their network while some DEXs (Decentralized Exchanges) act as intermediaries in the very transactions they claim to decentralize. Furthermore, the ability of developers to customize smart contracts allows anyone to circumvent any real “consensus mechanism” all the while pushing the utopian idea of decentralization. This led to the creation of Initial Coin Offerings of ERC20 tokens that did not have intrinsic use cases. Instead, they functioned as blockchain-based capital raising methods and glorified databases.
 
 Ultimately, while disintermediation may displace many people and systems offering middleman type services in the short term, it would serve as a net benefit in the long run. From democratizing access to providing lower costs, inclusion and transparency may once again revolutionize our world just like the first wave of the internet in the last century.

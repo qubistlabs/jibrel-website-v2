@@ -2,22 +2,21 @@
 title: Blockchain-as-a-Service (Baas) 2019
 description: Enabling the creation of blockchain-powered products while eliminating much of the technical complexity. Much of the creation, implementation, and maintenance of an operational blockchain infrastructure no longer has to be built from scratch.
 date: 2019-08-30
-heroImage: 
+heroImage:
   name: baas.png
   alt: blockchain as a service
   bgColor: '#e8e9ed'
-wordCount: 923
 ---
 
 [[toc]]
 
 ## What is Blockchain-as-a-Service (Baas)
 
-Blockchain-as-a-Service (BaaS) allows anyone, from enthusiastic startups and large enterprise companies, to create blockchain applications on the cloud. They do so by enabling the creation of blockchain-powered products while eliminating much of the technical complexity. Much of the creation, implementation, and maintenance of an operational blockchain infrastructure no longer has to be built from scratch. With over 90% of banks investing in blockchain, along with many other companies from different industries, the success of Blockchain-as-a-Service providers seems quite likely. BaaS services are especially useful for startups with limited funds and access to talent, which act as barriers to entry to blockchain innovation.
+Blockchain-as-a-Service (BaaS) allows anyone, from enthusiastic startups and large enterprise companies, to [create blockchain applications](https://jibrel.network/en/blog/tokenization/disintermediation/) on the cloud. They do so by enabling the creation of blockchain-powered products while eliminating much of the technical complexity. Much of the creation, implementation, and maintenance of an operational blockchain infrastructure no longer has to be built from scratch. With over 90% of banks [investing in blockchain](https://jibrel.network/en/blog/blockchain/usecases/), along with many other companies from different industries, the success of Blockchain-as-a-Service providers seems quite likely. BaaS services are especially useful for startups with limited funds and access to talent, which act as barriers to entry to blockchain innovation.
 
 ## How Does Blockchain-As-A-Service Work?
 
-The SaaS (Software-as-a-Service) business model has been adopted by some of the most successful companies of today. Companies like [Wordpress](https://wordpress.org/) and [Salesforce](https://www.salesforce.com/) have contributed significantly to the proliferation of the internet by creating useful tools that expanded the capabilities of individuals and businesses while significantly lowering costs.
+The SaaS (Software-as-a-Service) business model has been adopted by some of the most successful companies of today. Companies like Wordpress and Salesforce have contributed significantly to the [proliferation of the internet](https://jibrel.network/en/blog/blockchain/decentralized-internet/) by creating useful tools that expanded the capabilities of individuals and businesses while significantly lowering costs.
 
 *For example, websites used to be notoriously expensive to build and maintain. Yet Wordpress allowed anyone to create a fully functional website with zero coding experience through the use of its plugins and customizable themes.*
 
@@ -33,11 +32,11 @@ Blockchain-as-a-Service is positioning itself to be a catalyst for widespread ad
 
 ## What is the Demand for Blockchain-As-A-Service (Baas)?
 
-Today, there are millions of active Ethereum addresses, while the number of Ethereum blockchain nodes supporting the network is far less. Therefore, most people are not running their own node. Similarly, nodes associated with Blockchain-as-a-Service operations run nodes for businesses. Yet we must also take into account future IoT (Internet of Things) solutions. These devices cannot connect to nodes directly if they are to be feasible on a mass scale. Such products will require Blockchain-as-a-Service solutions to communicate with nodes on their behalf as to not overload the network. Therefore, Blockchain-as-a-Service solutions may be the key to the success and adoption of many future blockchain innovations.
+Today, there are millions of active Ethereum addresses, while the number of Ethereum [blockchain nodes](https://jibrel.network/en/blog/blockchain/what-are-nodes/) supporting the network is far less. Therefore, most people are not running their own node. Similarly, nodes associated with Blockchain-as-a-Service operations run nodes for businesses. Yet we must also take into account future IoT (Internet of Things) solutions. These devices cannot connect to nodes directly if they are to be feasible on a mass scale. Such products will require Blockchain-as-a-Service solutions to communicate with nodes on their behalf as to not overload the network. Therefore, Blockchain-as-a-Service solutions may be the key to the success and adoption of many future blockchain innovations.
 
 ## Limitation of Blockchain-as-a-Service (Baas)
 
-There are two types of limitations of the Blockchain-as-a-Service business model.
+There are two [types of limitations](https://jibrel.network/en/blog/blockchain/obstacles/) of the Blockchain-as-a-Service business model.
 
 1. Limitations of current blockchains themselves ([interoperability,](https://www.himss.org/library/interoperability-standards/what-is-interoperability) [scalability](https://applicature.com/blog/blockchain-technology/blockchain-scalability), and [energy consumption](https://arstechnica.com/tech-policy/2018/05/new-study-quantifies-bitcoins-ludicrous-energy-consumption/) issues that no blockchain has successfully been able to address thus far.)
 2. One of the main selling points of blockchain and distributed ledger technology is the decentralization that such solutions provide. Yet while Blockchain-as-a-Service solutions would help streamline business activity, they would essentially centralize a decentralized solution. They would act as middlemen that the ethos of blockchain sought to eliminate.

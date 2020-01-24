@@ -1,12 +1,11 @@
 ---
 title: 'Stablecoins: Everything You Need to Know'
-description: 'Stablecoins are digital cryptocurrencies whose value is pegged to an underlying asset. Coins such as Tether and PAX are pegged 1:1 to the US Dollar.' 
+description: 'Stablecoins are digital cryptocurrencies whose value is pegged to an underlying asset. Coins such as Tether and PAX are pegged 1:1 to the US Dollar.'
 date: 2019-08-08
-heroImage: 
+heroImage:
   name: stablecoin.jpg
   alt: Stablecoin digital coin token
   bgColor: '#003DC6'
-wordCount: 967
 ---
 
 [[toc]]
@@ -17,11 +16,11 @@ Stablecoins are digital cryptocurrencies whose value is pegged to an underlying 
 
 ## What Are Stablecoins Used For?
 
-Stablecoins serve a variety of functions across the world. They are increasingly becoming an integral part of the cryptocurrency digital asset class and act as a haven for many investors, traders and those without access to traditional banking services. Today, stablecoins are primarily used for:
+Stablecoins serve a variety of functions across the world. They are increasingly becoming an integral part of the cryptocurrency digital asset class and act as a haven for many investors, traders and those without access to [traditional banking services](https://jibrel.network/en/blog/tokenization/defi/). Today, stablecoins are primarily used for:
 
 ### Investing & Trading
 
-Stablecoins originally came about as a solution for anyone trading cryptocurrency coins or tokens other than Bitcoin or Ethereum with fiat. At the time, major cryptocurrency exchanges where altcoins such as Cardano, EOS, and NEO were traded only had Bitcoin or Ethereum trading pairs. Therefore, in order to buy and sell these altcoins, you would have to hold Bitcoin or Ethereum. Exiting your position meant you would need to make two transactions:
+Stablecoins originally came about as a solution for anyone trading cryptocurrency coins or tokens other than Bitcoin or Ethereum with fiat. At the time, major cryptocurrency exchanges where [altcoins](https://jibrel.network/en/blog/cryptocurrency/altcoins/) such as Cardano, EOS, and NEO were traded only had Bitcoin or Ethereum trading pairs. Therefore, in order to buy and sell these altcoins, you would have to hold Bitcoin or Ethereum. Exiting your position meant you would need to make two transactions:
 
 1. Sell back into Bitcoin or Ethereum
 
@@ -43,7 +42,7 @@ Currently, these types of stablecoins are market leaders. The most famous is Tet
 
 ### Cryptocurrency Collateralized Stablecoins
 
-Certain stablecoins, like Dai, are backed by crypto assets like Ethereum versus fiat. This method allows for a far more decentralized alternative to fiat-backed coins like Tether. Crypto backed stablecoins can usually be converted to their underlying asset for a small fee or are backed by various cryptocurrencies to mitigate risk. However, due to the volatile nature of the underlying cryptocurrency used as collateral, this type of collateralization usually requires a higher amount of coins to be put up against any amount of stablecoins issued.
+Certain stablecoins, like Dai, are backed by crypto assets like Ethereum versus fiat. This method allows for a far more [decentralized alternative](https://jibrel.network/en/blog/tokenization/disintermediation/) to fiat-backed coins like Tether. Crypto backed stablecoins can usually be converted to their underlying asset for a small fee or are backed by various cryptocurrencies to mitigate risk. However, due to the volatile nature of the underlying cryptocurrency used as collateral, this type of collateralization usually requires a higher amount of coins to be put up against any amount of stablecoins issued.
 
 ### Commodity Collateralized Stablecoins
 
@@ -63,6 +62,6 @@ In a space largely absent of regulation, stablecoins add fuel to the fire of cry
 
 ### Centralized Trust
 
-The ethos of cryptocurrency and blockchain is to replace centralized human trust with decentralized automated consensus. Arguably, stablecoins go against this. Since a single centralized company creates a coin like Tether, the fate of the stablecoin is inevitably tied to the successes and failures of its parent company.
+The ethos of cryptocurrency and blockchain is to replace centralized human trust with [decentralized automated consensus](https://jibrel.network/en/blog/cryptocurrency/forks/). Arguably, stablecoins go against this. Since a single centralized company creates a coin like Tether, the fate of the stablecoin is inevitably tied to the successes and failures of its parent company.
 
 Ultimately, stablecoins are safe havens against the volatility in the cryptocurrency space. While stablecoins are quite new and have not withstood the test of time, institutional players such as [JP Morgan have solidified the concept](https://www.jpmorgan.com/global/news/digital-coin-payments) in the future of digital assets. Although stablecoins are built to protect against other currency fluctuations, it is essential to always keep up to date with whichever one you may be holding.

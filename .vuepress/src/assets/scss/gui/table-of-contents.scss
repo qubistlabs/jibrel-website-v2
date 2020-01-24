@@ -17,8 +17,8 @@
   }
 
   > .header {
+    display: none;
     height: 56px;
-    display: flex;
     align-items: center;
     cursor: pointer;
 
@@ -40,6 +40,18 @@
       @include to-mobile {
         right: 16px;
       }
+    }
+
+    .g-lang-en &.header--en {
+      display: flex;
+    }
+
+    .g-lang-ko &.header--ko {
+      display: flex;
+    }
+
+    .g-lang-zh &.header--zh {
+      display: flex;
     }
   }
 

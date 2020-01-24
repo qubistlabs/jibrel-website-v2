@@ -1,12 +1,11 @@
 ---
-title: 'What is Digital Identity on Blockchain?' 
-description: 'While the identity management industry is not often in the news, it is an $8 billion industry that is expected to hit over $14 billion by 2021.' 
+title: 'What is Digital Identity on Blockchain?'
+description: 'While the identity management industry is not often in the news, it is an $8 billion industry that is expected to hit over $14 billion by 2021.'
 date: 2019-11-12
-heroImage: 
+heroImage:
   name: digital-identity.png
   alt: Digital Identity Blockchain
   bgColor: '#e8e9ed'
-wordCount: 1241
 ---
 
 [[toc]]
@@ -33,7 +32,7 @@ Even though certain organizations share data, a person usually has to create var
 
 ## Benefits of Blockchain-Powered Digital Identity
 
-The immutable nature of the blockchain facilitates a self-sovereign identity management system that is unhackable and unalterable. Such a system could kill the need for insecure methods of password verification. Once blockchains integrate interoperability into their protocols, digital iDs can be used across multiple platforms and services seamlessly. Users would gain other benefits, such as:
+The immutable nature of the blockchain facilitates a self-sovereign identity management system that is unhackable and unalterable. Such a system could kill the need for insecure methods of password verification. Once blockchains integrate [interoperability into their protocols](https://jibrel.network/en/blog/tokenization/disintermediation/), digital iDs can be used across multiple platforms and services seamlessly. Users would gain other benefits, such as:
 
 ### Increased Control
 
@@ -41,7 +40,7 @@ Over how a user's digital identity is managed and how their private data is stor
 
 ### Greater Access
 
-Updated real-time private information transferred in seconds between any organization a user chooses.
+Updated [real-time private information](https://jibrel.network/en/blog/blockchain/healthcare/) transferred in seconds between any organization a user chooses.
 
 ### Reduced Bureaucracy
 
@@ -61,7 +60,7 @@ There are two types of blockchain operations—read operations and write operati
 
 ### Standardization
 
-While blockchain technology is a revolutionary approach to digital identity, it is not a silver bullet. It needs to work in tandem with a standardized system of processes that ensures all participants in the ecosystem are aligned. All must follow the same set of regulations, guidelines, and standards for authenticating and maintaining identity. The quality of due diligence by an issuing party is also an issue as cross-industry standards may differ along with precision and accuracy.
+While blockchain technology is a revolutionary approach to digital identity, it is not a silver bullet. It needs to work in tandem with a [standardized system of processes](https://jibrel.network/en/blog/blockchain/baas/) that ensures all participants in the ecosystem are aligned. All must follow the same set of regulations, guidelines, and standards for authenticating and maintaining identity. The quality of due diligence by an issuing party is also an issue as cross-industry standards may differ along with precision and accuracy.
 
 ### Login Reset
 

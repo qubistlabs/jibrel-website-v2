@@ -1,12 +1,11 @@
 ---
 title: Debt Vs. Equity Financing
-description: 'Here we speak about the differences between the two and discuss various situations where either method may be preferred.' 
+description: 'Here we speak about the differences between the two and discuss various situations where either method may be preferred.'
 date: 2019-12-12
-heroImage: 
+heroImage:
   name: debt-vs-equity.png
   alt: debt vs equity
   bgColor: '#e8e9ed'
-wordCount: 892
 ---
 
 [[toc]]

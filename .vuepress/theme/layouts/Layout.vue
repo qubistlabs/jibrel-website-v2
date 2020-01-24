@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="globalLanguageClassName">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=[__GTM_ID__]"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -115,7 +115,10 @@ export default {
   computed: {
     headerStyle() {
       return this.$page.frontmatter.headerColor || 'colored'
-    }
+    },
+    globalLanguageClassName() {
+      return `g-lang-${this.$localeConfig.shortLang}`
+    },
   },
   watch: {
     $page: function (newVal) {

@@ -1,12 +1,11 @@
 ---
 title: Top Questions Investors Will Ask Your Startup
-description: 'Your team must demonstrate you have the experience, skills, and tenacity to make investors feel comfortable about their future exit opportunities.' 
+description: 'Your team must demonstrate you have the experience, skills, and tenacity to make investors feel comfortable about their future exit opportunities.'
 date: 2019-12-12
-heroImage: 
+heroImage:
   name: investor-questions.png
   alt: investor questions
   bgColor: '#e8e9ed'
-wordCount: 1200
 ---
 
 [[toc]]

@@ -3,35 +3,27 @@ import { get } from 'lodash-es'
 const CATEGORIES = [
   {
     slug: 'how-tos',
-    id: 'Article.HowTos',
   },
   {
     slug: 'updates',
-    id: 'Article.Updates',
   },
   {
     slug: 'tokenization',
-    id: 'Article.Tokenization',
   },
   {
     slug: 'blockchain',
-    id: 'Article.Blockchain',
   },
   {
     slug: 'cryptocurrency',
-    id: 'Article.Cryptocurrency',
   },
   {
     slug: 'startups',
-    id: 'Article.Startups',
   },
   {
     slug: 'investing',
-    id: 'Article.Investing',
   },
   {
     slug: '',
-    id: 'Article.Blog',
   },
 ]
 
@@ -48,6 +40,6 @@ export const getCategoryLink = (translation, url, languagePathPrefix) => {
     category_href: languagePathPrefix + 'blog/' + category.slug,
     href: languagePathPrefix + 'blog/' + category.slug,
     slug: category.slug,
-    content: get(translation, category.id),
+    content: translation[`Blog.category.${category.slug}`],
   }
 }
