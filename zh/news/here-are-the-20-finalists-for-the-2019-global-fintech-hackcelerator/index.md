@@ -3,7 +3,7 @@ title: 'Here Are the 20 Finalists for the 2019 Global FinTech Hackcelerator'
 description: 'The Monetary Authority of Singapore (MAS) announced  the 20 finalists for the Global FinTech Hackcelerator. The finalists will pitch their solutions at the Global FinTech Hackcelerator Demo Day at the 2019 Singapore FinTech Festival.'
 date: 2019-11-08
 source:
-    id: fintechnews
+    id: fintech
     url: https://fintechnews.sg/34871/fintech/here-are-the-20-finalists-for-the-2019-global-fintech-hackcelerator/
 ---
 
