@@ -69,7 +69,7 @@ module.exports = {
       site: 'https://jibrel.network',
       readingSpeed: 116, // words per minute
       blog: {
-        categories: ['tokenization', 'blockchain', 'cryptocurrency'],
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
       },
       data: {
         ...contentKo,
