@@ -8,6 +8,8 @@ heroImage:
   bgColor: '#e8e9ed'
 ---
 
+[[toc]]
+
 ## What Are ERC721 Tokens?
 
 ERC721 tokens are [non-fungible](https://cointelegraph.com/explained/non-fungible-tokens-explained)  Ethereum tokens that enable data tokenization. Like ERC20 tokens, every ERC721 token on the Ethereum blockchain is a contract interface containing a database ledger that records on-chain activity. However, they do so while drastically reducing storage space on the blockchain.
