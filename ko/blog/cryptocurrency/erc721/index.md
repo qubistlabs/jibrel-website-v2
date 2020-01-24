@@ -8,6 +8,8 @@ heroImage:
   bgColor: '#e8e9ed'
 ---
 
+[[toc]]
+
 ## ERC721 토큰이란 무엇입니까?
 
 ERC721 토큰은 데이터 토큰화를 가능하게 하는 [대체 불가](https://cointelegraph.com/explained/non-fungible-tokens-explained) 이더리움 토큰입니다. ERC20 토큰과 마찬가지로 이더리움 블록체인의 모든 ERC721 토큰은 온체인 활동을 기록하는 데이터베이스 원장을 포함하는 계약 인터페이스입니다. 그러나 블록체인의 저장 공간을 크게 줄이면서 이것을 가능하게 합니다.
