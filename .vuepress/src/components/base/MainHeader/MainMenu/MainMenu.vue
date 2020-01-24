@@ -46,7 +46,7 @@
             {{this.$themeLocaleConfig.data.ProjectMenu.WhitePaper}}
           </a>
         </div>
-        <div class='item' v-if="this.$localeConfig.path === '/en/'">
+        <div class='item'>
           <router-link :to='`${this.$localeConfig.path}blog/`' @click.native='clickLink("Blog", "blog/")' class='link' active-class='-current'>
             {{this.$themeLocaleConfig.data.ProjectMenu.Blog}}
           </router-link>
