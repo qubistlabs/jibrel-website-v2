@@ -15,9 +15,9 @@ const themeKo = require('./i18n/KoKr/theme')
 const themeZh = require('./i18n/zh/theme')
 
 // All translation should migrate to these files
-const messagesEn = require('./i18n/en/messages.json')
-const messagesKo = require('./i18n/ko/messages.json')
-const messagesZh = require('./i18n/zh/messages.json')
+const messagesEn = require('./i18n/en.json')
+const messagesKo = require('./i18n/ko.json')
+const messagesZh = require('./i18n/zh.json')
 
 module.exports = {
   dest: 'build',
@@ -53,6 +53,10 @@ module.exports = {
       shortLang: 'en',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 230, // words per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
+      },
       data: {
         ...contentEn,
         ...messagesEn,
@@ -63,6 +67,10 @@ module.exports = {
       shortLang: 'ko',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 116, // words per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
+      },
       data: {
         ...contentKo,
         ...messagesKo,
@@ -73,6 +81,10 @@ module.exports = {
       shortLang: 'zh',
       title: 'Jibrel Network',
       site: 'https://jibrel.network',
+      readingSpeed: 500, // chars per minute
+      blog: {
+        categories: ['tokenization', 'blockchain', 'cryptocurrency', 'startups', 'investing'],
+      },
       data: {
         ...contentZh,
         ...messagesZh,
@@ -227,7 +239,7 @@ module.exports = {
       md.use(require('markdown-it-table-of-contents'), {
         listType: 'ol',
         includeLevel: [2, 3, 4],
-        containerHeaderHtml: '<div class="header">Table of Contents</div>'
+        containerHeaderHtml: `<div class="header header--en">${messagesEn['Blog.Article.TableOfContents.title']}</div><div class="header header--ko">${messagesKo['Blog.Article.TableOfContents.title']}</div><div class="header header--zh">${messagesZh['Blog.Article.TableOfContents.title']}</div>`
       })
       md.use(require('markdown-it-anchor'), {
         level: [2, 3, 4],

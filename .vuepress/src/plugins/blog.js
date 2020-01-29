@@ -32,10 +32,17 @@ module.exports = (options, ctx) => {
     extendPageData ($page) {
       const regularPathParams = splitPathToParams(regularPathMatcher, $page.regularPath)
       if (regularPathParams) {
+        const parts = $page._content.split('---')
+        const text = parts[0] === ''  && parts.length >= 3
+          ? parts.slice(2).join('')
+          : parts.join('')
+
         $page.frontmatter = {
           layout: 'Article',
           category: regularPathParams.category,
           ...$page.frontmatter,
+          wordCount: text.split(/\s+/).length,
+          charCount: text.length,
         }
         $page.blog = {
           params: regularPathParams,

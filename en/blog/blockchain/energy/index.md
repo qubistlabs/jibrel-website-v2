@@ -2,11 +2,10 @@
 title: How Blockchain Will Revolutionize The Energy Sector
 description: Blockchain is becoming something that the energy industry can no longer ignore if it is to power the world of the future.
 date: 2019-08-30
-heroImage: 
+heroImage:
   name: energy.png
   alt: Blockchain energy sector
   bgColor: '#e8e9ed'
-wordCount: 1059
 ---
 
 [[toc]]
@@ -19,7 +18,7 @@ Most of the attention in the energy sector over the last ten years has been focu
 
 ### Time Pricing Adjustment
 
-Blockchain will enable an interlinked network of devices that automatically adjust power usage and consumption based on real-time energy market data.
+Blockchain will enable an [interlinked network](https://jibrel.network/en/blog/blockchain/decentralized-internet/) of devices that automatically adjust power usage and consumption based on real-time energy market data.
 
 ### Peer-to-Peer Energy Trading
 
@@ -39,7 +38,7 @@ The immutability of blockchain would allow for a comprehensive record of all mai
 
 ## Main Challenges for the Energy Sector
 
-There are many challenges on the road to a blockchain-powered energy sector. Blockchain itself is still in its infancy, and there are still technical and regulatory issues that need to be addressed before mass adoption and implementation can occur. The main challenges currently faced by full-scale adoption of blockchain solutions by the energy sector are:
+There are many challenges on the road to a blockchain-powered energy sector. Blockchain itself is still in its infancy, and there are still [technical and regulatory obstacles](https://jibrel.network/en/blog/blockchain/obstacles/) that need to be addressed before mass adoption and implementation can occur. The main challenges currently faced by full-scale adoption of blockchain solutions by the energy sector are:
 
 ### Scalability Issues
 
@@ -63,4 +62,4 @@ No matter how innovative a smart grid or smart meter will be, if the user experi
 
 ## How Far Are We from Adoption?
 
-While eager companies have identified dozens of use cases, few have been implemented or even piloted. In 2016, Ethereum was used as the blockchain of choice for peer-to-peer energy trading. Since then, more pilots have been conducted in places like Australia by a company known as [Power Ledger](https://www.powerledger.io/). While startup managed to raise [over $30 million](https://techcrunch.com/2018/10/23/power-ledger-launches-token-for-retail-investors-to-back-renewable-energy-projects/) and had successful pilots, scaling these efforts on a global scale will not be easy. It will require the continued dedication and grit of hungry visionaries and entrepreneurs that want to see their vision of a blockchain-powered future come to life.
+While eager companies have identified [dozens of use cases](https://jibrel.network/en/blog/blockchain/usecases/), few have been implemented or even piloted. In 2016, Ethereum was used as the blockchain of choice for peer-to-peer energy trading. Since then, more pilots have been conducted in places like Australia by a company known as Power Ledger. While startup managed to raise [over $30 million](https://techcrunch.com/2018/10/23/power-ledger-launches-token-for-retail-investors-to-back-renewable-energy-projects/) and had successful pilots, scaling these efforts on a global scale will not be easy. It will require the continued dedication and grit of hungry visionaries and entrepreneurs that want to see their vision of a blockchain-powered future come to life.

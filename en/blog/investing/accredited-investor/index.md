@@ -1,12 +1,11 @@
 ---
 title: Does the Definition of "Accredited Investor" Need to Change?
-description: 'While amendments to investment regulations such as Reg A, C, and D have taken steps to level the playing field, the definition may soon change even more.' 
+description: 'While amendments to investment regulations such as Reg A, C, and D have taken steps to level the playing field, the definition may soon change even more.'
 date: 2019-12-12
-heroImage: 
+heroImage:
   name: accredited-investor.png
   alt: accredited investor
   bgColor: '#e8e9ed'
-wordCount: 573
 ---
 
 [[toc]]

@@ -31,9 +31,9 @@
                 inline-template
               >
                 <div class="share">
-                  <network network="facebook" class="item -fb">{{$themeLocaleConfig.data.Share.Share}}</network>
-                  <network network="twitter" class="item -tw">{{$themeLocaleConfig.data.Share.Tweet}}</network>
-                  <network network="linkedin" class="item -in">{{$themeLocaleConfig.data.Share.Share}}</network>
+                  <network network="facebook" class="item -fb">{{$localeConfig.data['Blog.Article.action.share']}}</network>
+                  <network network="twitter" class="item -tw">{{$localeConfig.data['Blog.Article.action.tweet']}}</network>
+                  <network network="linkedin" class="item -in">{{$localeConfig.data['Blog.Article.action.share']}}</network>
                 </div>
               </social-sharing>
             </div>
@@ -109,17 +109,19 @@ export default {
   methods: {
     handlingTOC() {
       const TOCContainer = this.$el.querySelector('.table-of-contents')
-      const toggle = TOCContainer.querySelector('.header')
+      const toggles = TOCContainer.querySelectorAll('.header')
       const link = TOCContainer.querySelectorAll('a')
-      toggle.addEventListener('click', function () {
-        if (this.isOpened) {
-          TOCContainer.classList.remove('-open')
-          this.isOpened = false
-          } else {
-          TOCContainer.classList.add('-open')
-          this.isOpened = true
-        }
-      })
+      toggles.forEach((toggle) =>
+        toggle.addEventListener('click', function () {
+          if (this.isOpened) {
+            TOCContainer.classList.remove('-open')
+            this.isOpened = false
+            } else {
+            TOCContainer.classList.add('-open')
+            this.isOpened = true
+          }
+        })
+      )
 
       function anchorFormatter(anchor) {
         const anchorCLeaned = decodeURIComponent(anchor).replace(/[&\/\\#,+()$~%.":*?<>{}]/g, "").replace(/[-']+/g, '-')
@@ -148,7 +150,7 @@ export default {
     }
   },
   created() {
-    this.category = getCategoryLink(this.$themeLocaleConfig.data, this.$page.path, this.$localeConfig.path)
+    this.category = getCategoryLink(this.$localeConfig.data, this.$page.path, this.$localeConfig.path)
     this.pageUrl = this.$localeConfig.site + this.$page.path
   },
   mounted() {

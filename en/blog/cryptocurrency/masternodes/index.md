@@ -1,19 +1,18 @@
 ---
 title: 'Masternodes: The Complete Guide'
-description: Masternodes serve as the backbone of the Proof-of-Stake (PoS) blockchain model for certain cryptocurrencies. They run on computers with digital wallets that support the network of a particular coin. 
+description: Masternodes serve as the backbone of the Proof-of-Stake (PoS) blockchain model for certain cryptocurrencies. They run on computers with digital wallets that support the network of a particular coin.
 date: 2019-07-31
-heroImage: 
+heroImage:
   name: masternodes.png
   alt: Masternode
   bgColor: '#E7E9EE'
-wordCount: 985
 ---
 
 [[toc]]
 
 ## What Is a Masternode?
 
-Masternodes serve as the backbone for [Proof-of-Stake (PoS)](https://en.wikipedia.org/wiki/Proof-of-stake) based cryptocurrency blockchains. They run on computers with digital wallets that support the network of a particular coin. Unlike Proof of Work (PoW) coins, like Bitcoin, masternodes perform functions outside of record-keeping and validation such as:
+Masternodes serve as the backbone for [Proof-of-Stake (PoS)](https://en.wikipedia.org/wiki/Proof-of-stake) based cryptocurrency blockchains. They run on computers with digital wallets that support the network of a [particular coin](https://jibrel.network/en/blog/cryptocurrency/masternodes/). Unlike Proof of Work (PoW) coins, like Bitcoin, masternodes perform functions outside of record-keeping and validation such as:
 
 - Increasing privacy of transactions
 - Participating in governance and voting
@@ -47,13 +46,13 @@ When choosing the right coin to create a masternode, there are five main questio
 
 ## Examples of Masternode Coins
 
-Below is a list of the top coins we have compiled based on this criteria. For a complete list of projects that have maternodes, you can [visit this website](https://masternodes.online/). Please note that the data below is subject to change as market conditions vary from day to day. By the time you read this article this data will most likely be different. 
+Below is a list of the top coins we have compiled based on this criteria. For a complete list of projects that have maternodes, you can [visit this website](https://masternodes.online/). Please note that the data below is subject to change as market conditions vary from day to day. By the time you read this article this data will most likely be different.
 
 **Coin:** Vechain<br>
 **Profile:** Platform Coin | Daily Volume: $24.8m<br>
 **Potential Return:** 2.97% a year. Pays dividends in VTHO ([See calculator here](https://thorcalculator.com/))<br>
 **Capital Requirement:** Different Offerings ([See here](https://thorcalculator.com/))<br>
-**Comments:** This coin focuses primarily on solving problems for the supply chain management industry. Unlike other coins, it offers a variety of different types of nodes one can run with different amounts of collateral. While a predefined amount of tokens needs to be held by an operator, a simple mobile wallet is sufficient instead of all the typical masternode requirements listed above.
+**Comments:** This coin focuses primarily on solving problems for the supply chain management industry. Unlike other coins, it offers a variety of different [types of nodes](https://jibrel.network/en/blog/blockchain/what-are-nodes/) one can run with different amounts of collateral. While a predefined amount of tokens needs to be held by an operator, a simple mobile wallet is sufficient instead of all the typical masternode requirements listed above.
 
 **Coin:** Dash<br>
 **Profile:** Privacy Coin | Daily Volume: $158m<br>
