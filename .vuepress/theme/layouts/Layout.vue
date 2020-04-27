@@ -43,7 +43,6 @@ import ModalWindow from '@/components/ModalWindow/ModalWindow.vue'
 import ProjectForm from '@/components/Forms/ProjectForm/ProjectForm.vue'
 
 import VueGtm from 'vue-gtm'
-import VueYandexMetrika from 'vue-yandex-metrika'
 
 Vue.use(SocialSharing);
 Vue.use(VueCookies)
@@ -105,11 +104,6 @@ export default {
           'virtualHost': window.location.hostname,
         });
       }
-    },
-    ymTracking() {
-      if (this.$metrika) {
-        this.$metrika.hit(this.$page.regularPath)
-      }
     }
   },
   computed: {
@@ -125,7 +119,6 @@ export default {
       this.getTypePage()
       this.getHeaderSize()
       this.gtmSend()
-      this.ymTracking()
     }
   },
   created() {
@@ -145,19 +138,7 @@ export default {
       enabled: true,
       debug: process.env.NODE_ENV === 'development',
     })
-    Vue.use(VueYandexMetrika, {
-      id: process.env.YANDEX_METRIKA_ID,
-      env: process.env.NODE_ENV,
-      debug: false,
-      options: {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-      }
-    })
     this.gtmSend()
-    this.ymTracking()
   },
 };
 </script>
