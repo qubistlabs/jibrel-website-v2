@@ -31,7 +31,7 @@ module.exports = (options, ctx) => {
     name: '@jibrelnetwork/blog',
     extendPageData ($page) {
       const regularPathParams = splitPathToParams(regularPathMatcher, $page.regularPath)
-      if (regularPathParams) {
+      if (regularPathParams && $page._content) {
         const parts = $page._content.split('---')
         const text = parts[0] === ''  && parts.length >= 3
           ? parts.slice(2).join('')
