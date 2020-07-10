@@ -15,7 +15,7 @@
       />
       <a
         class='jibrelcom-button'
-        :href='`https://jibrel.com/${jibrelcomlang}`'
+        :href='`https://tokenize.jibrel.network/${jibrelcomlang}`'
         target='_blank'
       >
         {{ $localeConfig.data['Home.JibrelComPromo.action.learnmore'] }}
